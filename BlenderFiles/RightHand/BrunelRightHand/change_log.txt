@@ -1,23 +1,11 @@
-Name: Boolean - Conical spring
-Boolean - Conical spring mesh: Boolean - Conical spring
-Boolean - Conical spring transform: X-20.502126693725586 Y-57.49197769165039 Z-2.8204076290130615
-Boolean - Conical spring rotation: X0.0 Y-0.0 Z0.0
-Boolean - Conical spring scale: X0.9999999403953552 Y1.0 Z0.9999999403953552
-Boolean - Conical spring dimensions: X63.74330139160156 Y30.000022888183594 Z16.33634376525879
-Boolean - Conical spring materials: Boolean difference.001, 
-Boolean - Conical spring modifers: 
-  Boolean - Conical spring modifer #0:
-      Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-
-Name: Boolean - PQ12 exteneed 0.3 mm tolerance
-Boolean - PQ12 exteneed 0.3 mm tolerance mesh: Boolean - PQ12 exteneed 0.3 mm tolerance
-Boolean - PQ12 exteneed 0.3 mm tolerance transform: X27.009235382080078 Y-59.47224426269531 Z1.5496773719787598
-Boolean - PQ12 exteneed 0.3 mm tolerance rotation: X-1.6292067073209182e-07 Y3.501773448988388e-07 Z3.1415929794311523
-Boolean - PQ12 exteneed 0.3 mm tolerance scale: X0.9999999403953552 Y0.9999998211860657 Z1.0
-Boolean - PQ12 exteneed 0.3 mm tolerance dimensions: X60.899600982666016 Y68.39857482910156 Z22.099449157714844
-Boolean - PQ12 exteneed 0.3 mm tolerance materials: Boolean difference, 
-Boolean - PQ12 exteneed 0.3 mm tolerance modifers: None
+Name: BOOLEAN PQ12 exteneed 0.3 mm tolerance
+BOOLEAN PQ12 exteneed 0.3 mm tolerance mesh: BOOLEAN PQ12 exteneed 0.3 mm tolerance
+BOOLEAN PQ12 exteneed 0.3 mm tolerance transform: X27.009235382080078 Y-59.47224426269531 Z1.5496773719787598
+BOOLEAN PQ12 exteneed 0.3 mm tolerance rotation: X-1.6292067073209182e-07 Y3.501773448988388e-07 Z3.1415929794311523
+BOOLEAN PQ12 exteneed 0.3 mm tolerance scale: X0.9999999403953552 Y0.9999998211860657 Z1.0
+BOOLEAN PQ12 exteneed 0.3 mm tolerance dimensions: X60.899600982666016 Y68.39857482910156 Z22.099449157714844
+BOOLEAN PQ12 exteneed 0.3 mm tolerance materials: Boolean difference, 
+BOOLEAN PQ12 exteneed 0.3 mm tolerance modifers: None
 
 Name: Conical spring
 Conical spring mesh: Conical spring
@@ -29,7 +17,7 @@ Conical spring materials: Steel,
 Conical spring modifers: None
 
 Name: Finger Sleak flute.1
-Finger Sleak flute.1 mesh: Finger - Sleak flute base
+Finger Sleak flute.1 mesh: Finger Sleak flute base
 Finger Sleak flute.1 transform: X-18.541624069213867 Y-0.28145551681518555 Z-0.7923046350479126
 Finger Sleak flute.1 rotation: X0.0 Y-0.08726643770933151 Z0.0872664600610733
 Finger Sleak flute.1 scale: X0.9999997019767761 Y0.9476726651191711 Z1.0
@@ -43,7 +31,7 @@ Finger Sleak flute.1 modifers:
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Finger Sleak flute.2
-Finger Sleak flute.2 mesh: Finger - Sleak flute base
+Finger Sleak flute.2 mesh: Finger Sleak flute base
 Finger Sleak flute.2 transform: X0.0 Y0.0 Z0.0
 Finger Sleak flute.2 rotation: X0.0 Y0.0 Z0.0
 Finger Sleak flute.2 scale: X1.0 Y1.0757888555526733 Z1.0
@@ -57,7 +45,7 @@ Finger Sleak flute.2 modifers:
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Finger Sleak flute.3
-Finger Sleak flute.3 mesh: Finger - Sleak flute base
+Finger Sleak flute.3 mesh: Finger Sleak flute base
 Finger Sleak flute.3 transform: X18.80593490600586 Y-0.975326657295227 Z-0.8141978979110718
 Finger Sleak flute.3 rotation: X4.674400311266425e-10 Y0.08726643770933151 Z-0.08726643770933151
 Finger Sleak flute.3 scale: X1.0 Y1.0133124589920044 Z1.0
@@ -71,7 +59,7 @@ Finger Sleak flute.3 modifers:
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Finger Sleak flute.4
-Finger Sleak flute.4 mesh: Finger - Sleak flute base
+Finger Sleak flute.4 mesh: Finger Sleak flute base
 Finger Sleak flute.4 transform: X37.268192291259766 Y-3.39612078666687 Z-3.2158241271972656
 Finger Sleak flute.4 rotation: X-0.030609285458922386 Y0.17185471951961517 Z-0.1771697700023651
 Finger Sleak flute.4 scale: X1.0 Y0.8543535470962524 Z0.9999997019767761
