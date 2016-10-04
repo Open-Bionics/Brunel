@@ -1,0 +1,9 @@
+Name: PCB Chestnut
+PCB Chestnut mesh: PCB Chestnut
+PCB Chestnut transform: X0.0 Y0.0 Z0.0
+PCB Chestnut rotation: X0.0 Y0.0 Z0.0
+PCB Chestnut scale: X1.0 Y1.0 Z1.0
+PCB Chestnut dimensions: X45.725399017333984 Y58.17679977416992 Z12.539999961853027
+PCB Chestnut materials: FR4, Component, Black plastic, Firgelli Connector, 
+PCB Chestnut modifers: None
+
