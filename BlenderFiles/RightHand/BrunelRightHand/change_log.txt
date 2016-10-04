@@ -22,7 +22,7 @@ Finger Sleak flute.1 transform: X-18.541624069213867 Y-0.28145551681518555 Z-0.7
 Finger Sleak flute.1 rotation: X0.0 Y-0.08726643770933151 Z0.0872664600610733
 Finger Sleak flute.1 scale: X0.9999997019767761 Y0.9476726651191711 Z1.0
 Finger Sleak flute.1 dimensions: X17.964082717895508 Y71.8987045288086 Z18.195051193237305
-Finger Sleak flute.1 materials: Material, 
+Finger Sleak flute.1 materials: Ninjalfex, 
 Finger Sleak flute.1 modifers: 
   Finger Sleak flute.1 modifer #0:
       Name: Mirror, Type: MIRROR
@@ -36,7 +36,7 @@ Finger Sleak flute.2 transform: X0.0 Y0.0 Z0.0
 Finger Sleak flute.2 rotation: X0.0 Y0.0 Z0.0
 Finger Sleak flute.2 scale: X1.0 Y1.0757888555526733 Z1.0
 Finger Sleak flute.2 dimensions: X17.964088439941406 Y81.61871337890625 Z18.195051193237305
-Finger Sleak flute.2 materials: Material, 
+Finger Sleak flute.2 materials: Ninjalfex, 
 Finger Sleak flute.2 modifers: 
   Finger Sleak flute.2 modifer #0:
       Name: Mirror, Type: MIRROR
@@ -50,7 +50,7 @@ Finger Sleak flute.3 transform: X18.80593490600586 Y-0.975326657295227 Z-0.81419
 Finger Sleak flute.3 rotation: X4.674400311266425e-10 Y0.08726643770933151 Z-0.08726643770933151
 Finger Sleak flute.3 scale: X1.0 Y1.0133124589920044 Z1.0
 Finger Sleak flute.3 dimensions: X17.964088439941406 Y76.87871551513672 Z18.195051193237305
-Finger Sleak flute.3 materials: Material, 
+Finger Sleak flute.3 materials: Ninjalfex, 
 Finger Sleak flute.3 modifers: 
   Finger Sleak flute.3 modifer #0:
       Name: Mirror, Type: MIRROR
@@ -64,7 +64,7 @@ Finger Sleak flute.4 transform: X37.268192291259766 Y-3.39612078666687 Z-3.21582
 Finger Sleak flute.4 rotation: X-0.030609285458922386 Y0.17185471951961517 Z-0.1771697700023651
 Finger Sleak flute.4 scale: X1.0 Y0.8543535470962524 Z0.9999997019767761
 Finger Sleak flute.4 dimensions: X17.964088439941406 Y64.8187026977539 Z18.195045471191406
-Finger Sleak flute.4 materials: Material, 
+Finger Sleak flute.4 materials: Ninjalfex, 
 Finger Sleak flute.4 modifers: 
   Finger Sleak flute.4 modifer #0:
       Name: Mirror, Type: MIRROR
@@ -72,13 +72,24 @@ Finger Sleak flute.4 modifers:
       Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
+Name: Palm Inner
+Palm Inner mesh: Palm Inner
+Palm Inner transform: X6.606559753417969 Y-45.15056610107422 Z-5.340917110443115
+Palm Inner rotation: X0.0 Y0.0 Z0.0
+Palm Inner scale: X1.0 Y1.0 Z1.0
+Palm Inner dimensions: X63.027259826660156 Y72.54913330078125 Z13.803275108337402
+Palm Inner materials: PLA, 
+Palm Inner modifers: 
+  Palm Inner modifer #0:
+      Name: Bevel, Type: BEVEL
+
 Name: Palm.000
 Palm.000 mesh: Palm
 Palm.000 transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
 Palm.000 rotation: X-0.0 Y3.141592502593994 Z-0.0
 Palm.000 scale: X1.0 Y1.0 Z1.0
 Palm.000 dimensions: X80.78610229492188 Y99.39604949951172 Z51.441036224365234
-Palm.000 materials: Material, 
+Palm.000 materials: Ninjalfex, 
 Palm.000 modifers: 
   Palm.000 modifer #0:
       Name: Subsurf, Type: SUBSURF
@@ -90,7 +101,7 @@ Palm.001 transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
 Palm.001 rotation: X-0.0 Y3.141592502593994 Z-0.0
 Palm.001 scale: X1.0 Y1.0 Z1.0
 Palm.001 dimensions: X80.54652404785156 Y100.94808959960938 Z53.93204879760742
-Palm.001 materials: Material, 
+Palm.001 materials: Ninjalfex, 
 Palm.001 modifers: 
   Palm.001 modifer #0:
       Name: Subsurf, Type: SUBSURF
@@ -102,7 +113,7 @@ Palm.002 transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
 Palm.002 rotation: X-0.0 Y3.141592502593994 Z-0.0
 Palm.002 scale: X1.0 Y1.0 Z1.0
 Palm.002 dimensions: X80.5465087890625 Y108.47697448730469 Z54.822967529296875
-Palm.002 materials: Material, 
+Palm.002 materials: Ninjalfex, 
 Palm.002 modifers: 
   Palm.002 modifer #0:
       Name: Subsurf, Type: SUBSURF
@@ -132,7 +143,7 @@ Thumb Sleak flute.0 transform: X-39.059844970703125 Y-61.4339599609375 Z3.838264
 Thumb Sleak flute.0 rotation: X0.0 Y-0.7853981852531433 Z1.2455084323883057
 Thumb Sleak flute.0 scale: X0.9999997019767761 Y0.9476726651191711 Z1.0
 Thumb Sleak flute.0 dimensions: X34.03486633300781 Y79.24284362792969 Z31.678329467773438
-Thumb Sleak flute.0 materials: Material, 
+Thumb Sleak flute.0 materials: Ninjalfex, 
 Thumb Sleak flute.0 modifers: 
   Thumb Sleak flute.0 modifer #0:
       Name: Subsurf, Type: SUBSURF
