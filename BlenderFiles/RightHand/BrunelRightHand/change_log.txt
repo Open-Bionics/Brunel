@@ -1,50 +1,58 @@
 Name: 1st Finger
-1st Finger type: EMPTY
+1st Finger Type: EMPTY
 1st Finger transform: X-18.639799118041992 Y0.8406749963760376 Z-0.7923048138618469
 1st Finger rotation: X-1.0470657230143843e-07 Y-0.08726680278778076 Z0.08726663887500763
 1st Finger scale: X0.8000001907348633 Y0.8000001907348633 Z0.9000000357627869
+1st Finger groups: None
 
 Name: 2nd Finger
-2nd Finger type: EMPTY
+2nd Finger Type: EMPTY
 2nd Finger transform: X0.0 Y0.0 Z0.0
 2nd Finger rotation: X0.0 Y0.0 Z0.0
 2nd Finger scale: X0.800000011920929 Y0.8999999761581421 Z0.8999999761581421
+2nd Finger groups: None
 
 Name: 3rd Finger
-3rd Finger type: EMPTY
+3rd Finger Type: EMPTY
 3rd Finger transform: X19.992399215698242 Y0.2503741383552551 Z-0.8538355827331543
 3rd Finger rotation: X2.2427477119890682e-07 Y0.08220553398132324 Z-0.08726644515991211
 3rd Finger scale: X0.800000011920929 Y0.8500000238418579 Z0.800000011920929
+3rd Finger groups: None
 
 Name: BOOLEAN PQ12 exteneed 0.3 mm tolerance
-BOOLEAN PQ12 exteneed 0.3 mm tolerance type: MESH
+BOOLEAN PQ12 exteneed 0.3 mm tolerance Type: MESH
 BOOLEAN PQ12 exteneed 0.3 mm tolerance transform: X27.009235382080078 Y-59.47224426269531 Z1.5496773719787598
 BOOLEAN PQ12 exteneed 0.3 mm tolerance rotation: X-1.6292067073209182e-07 Y3.501773448988388e-07 Z3.1415929794311523
 BOOLEAN PQ12 exteneed 0.3 mm tolerance scale: X0.9999999403953552 Y0.9999998211860657 Z1.0
+BOOLEAN PQ12 exteneed 0.3 mm tolerance groups: None
+BOOLEAN PQ12 exteneed 0.3 mm tolerance parent: PQ12 extended
 BOOLEAN PQ12 exteneed 0.3 mm tolerance mesh: BOOLEAN PQ12 exteneed 0.3 mm tolerance
 BOOLEAN PQ12 exteneed 0.3 mm tolerance materials: Boolean difference, 
 BOOLEAN PQ12 exteneed 0.3 mm tolerance modifers: None
 
 Name: Conical spring
-Conical spring type: MESH
+Conical spring Type: MESH
 Conical spring transform: X-16.0568904876709 Y-53.75602340698242 Z-4.673169136047363
 Conical spring rotation: X0.0 Y0.0 Z0.0
 Conical spring scale: X0.0009999870089814067 Y0.0009999871253967285 Z0.000999986776150763
+Conical spring groups: None
 Conical spring mesh: Conical spring
 Conical spring materials: Steel, 
 Conical spring modifers: None
 
 Name: Finger
-Finger type: EMPTY
+Finger Type: EMPTY
 Finger transform: X38.23115158081055 Y-2.4619059562683105 Z-3.100600004196167
 Finger rotation: X-0.007619168143719435 Y0.17652077972888947 Z-0.1745329201221466
 Finger scale: X0.800000011920929 Y0.75 Z0.800000011920929
+Finger groups: None
 
 Name: Finger Sleak flute.1
-Finger Sleak flute.1 type: MESH
+Finger Sleak flute.1 Type: MESH
 Finger Sleak flute.1 transform: X-18.541624069213867 Y-0.28145551681518555 Z-0.7923046350479126
 Finger Sleak flute.1 rotation: X0.0 Y-0.08726643770933151 Z0.0872664600610733
 Finger Sleak flute.1 scale: X0.9999997019767761 Y0.9476726651191711 Z1.0
+Finger Sleak flute.1 groups: None
 Finger Sleak flute.1 mesh: Finger Sleak flute base
 Finger Sleak flute.1 materials: Ninjalfex, 
 Finger Sleak flute.1 modifers: 
@@ -53,10 +61,11 @@ Finger Sleak flute.1 modifers:
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Finger Sleak flute.2
-Finger Sleak flute.2 type: MESH
+Finger Sleak flute.2 Type: MESH
 Finger Sleak flute.2 transform: X0.0 Y0.0 Z0.0
 Finger Sleak flute.2 rotation: X0.0 Y0.0 Z0.0
 Finger Sleak flute.2 scale: X1.0 Y1.0757888555526733 Z1.0
+Finger Sleak flute.2 groups: None
 Finger Sleak flute.2 mesh: Finger Sleak flute base
 Finger Sleak flute.2 materials: Ninjalfex, 
 Finger Sleak flute.2 modifers: 
@@ -65,10 +74,11 @@ Finger Sleak flute.2 modifers:
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Finger Sleak flute.3
-Finger Sleak flute.3 type: MESH
+Finger Sleak flute.3 Type: MESH
 Finger Sleak flute.3 transform: X18.80593490600586 Y-0.975326657295227 Z-0.8141978979110718
 Finger Sleak flute.3 rotation: X4.674400311266425e-10 Y0.08726643770933151 Z-0.08726643770933151
 Finger Sleak flute.3 scale: X1.0 Y1.0133124589920044 Z1.0
+Finger Sleak flute.3 groups: None
 Finger Sleak flute.3 mesh: Finger Sleak flute base
 Finger Sleak flute.3 materials: Ninjalfex, 
 Finger Sleak flute.3 modifers: 
@@ -77,10 +87,11 @@ Finger Sleak flute.3 modifers:
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Finger Sleak flute.4
-Finger Sleak flute.4 type: MESH
+Finger Sleak flute.4 Type: MESH
 Finger Sleak flute.4 transform: X37.268192291259766 Y-3.39612078666687 Z-3.2158241271972656
 Finger Sleak flute.4 rotation: X-0.030609285458922386 Y0.17185471951961517 Z-0.1771697700023651
 Finger Sleak flute.4 scale: X1.0 Y0.8543535470962524 Z0.9999997019767761
+Finger Sleak flute.4 groups: None
 Finger Sleak flute.4 mesh: Finger Sleak flute base
 Finger Sleak flute.4 materials: Ninjalfex, 
 Finger Sleak flute.4 modifers: 
@@ -89,10 +100,11 @@ Finger Sleak flute.4 modifers:
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Palm Inner
-Palm Inner type: MESH
+Palm Inner Type: MESH
 Palm Inner transform: X6.606559753417969 Y-45.15056610107422 Z-4.624058723449707
 Palm Inner rotation: X0.0 Y0.0 Z0.0
 Palm Inner scale: X1.0 Y1.0 Z1.0
+Palm Inner groups: None
 Palm Inner mesh: Palm Inner
 Palm Inner materials: PLA, 
 Palm Inner modifers: 
@@ -103,10 +115,11 @@ Palm Inner modifers:
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
 
 Name: Palm Simple
-Palm Simple type: MESH
+Palm Simple Type: MESH
 Palm Simple transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
 Palm Simple rotation: X-0.0 Y3.141592502593994 Z-0.0
 Palm Simple scale: X1.0 Y1.0 Z1.0
+Palm Simple groups: None
 Palm Simple mesh: Palm Simple
 Palm Simple materials: Ninjalfex, 
 Palm Simple modifers: 
@@ -114,10 +127,11 @@ Palm Simple modifers:
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Palm.000
-Palm.000 type: MESH
+Palm.000 Type: MESH
 Palm.000 transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
 Palm.000 rotation: X-0.0 Y3.141592502593994 Z-0.0
 Palm.000 scale: X1.0 Y1.0 Z1.0
+Palm.000 groups: None
 Palm.000 mesh: Palm
 Palm.000 materials: Ninjalfex, 
 Palm.000 modifers: 
@@ -125,10 +139,11 @@ Palm.000 modifers:
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Palm.001
-Palm.001 type: MESH
+Palm.001 Type: MESH
 Palm.001 transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
 Palm.001 rotation: X-0.0 Y3.141592502593994 Z-0.0
 Palm.001 scale: X1.0 Y1.0 Z1.0
+Palm.001 groups: None
 Palm.001 mesh: Palm.001
 Palm.001 materials: Ninjalfex, 
 Palm.001 modifers: 
@@ -136,10 +151,11 @@ Palm.001 modifers:
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Palm.002
-Palm.002 type: MESH
+Palm.002 Type: MESH
 Palm.002 transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
 Palm.002 rotation: X-0.0 Y3.141592502593994 Z-0.0
 Palm.002 scale: X1.0 Y1.0 Z1.0
+Palm.002 groups: None
 Palm.002 mesh: Palm.002
 Palm.002 materials: Ninjalfex, 
 Palm.002 modifers: 
@@ -147,28 +163,31 @@ Palm.002 modifers:
         Levels: 3, Type: CATMULL_CLARK
 
 Name: PCB Chestnut
-PCB Chestnut type: MESH
+PCB Chestnut Type: MESH
 PCB Chestnut transform: X6.6065592765808105 Y-53.69884490966797 Z11.516858100891113
 PCB Chestnut rotation: X0.0 Y-0.0 Z1.570796251296997
 PCB Chestnut scale: X1.0 Y1.0 Z1.0
+PCB Chestnut groups: None
 PCB Chestnut mesh: PCB Chestnut
 PCB Chestnut materials: FR4, Component, Black plastic, Firgelli Connector, 
 PCB Chestnut modifers: None
 
 Name: PQ12 extended
-PQ12 extended type: MESH
+PQ12 extended Type: MESH
 PQ12 extended transform: X6.6065592765808105 Y-38.69884490966797 Z0.7168586254119873
 PQ12 extended rotation: X0.0 Y-0.0 Z3.141592502593994
 PQ12 extended scale: X1.0 Y1.0 Z1.0
+PQ12 extended groups: None
 PQ12 extended mesh: PQ12 extended
 PQ12 extended materials: PQ12 housing plastic, 
 PQ12 extended modifers: None
 
 Name: Thumb Sleak flute.0
-Thumb Sleak flute.0 type: MESH
+Thumb Sleak flute.0 Type: MESH
 Thumb Sleak flute.0 transform: X-39.059844970703125 Y-61.4339599609375 Z3.8382649421691895
 Thumb Sleak flute.0 rotation: X0.0 Y-0.7853981852531433 Z1.2455084323883057
 Thumb Sleak flute.0 scale: X0.9999997019767761 Y0.9476726651191711 Z1.0
+Thumb Sleak flute.0 groups: None
 Thumb Sleak flute.0 mesh: Thumb Sleak flute
 Thumb Sleak flute.0 materials: Ninjalfex, 
 Thumb Sleak flute.0 modifers: 
@@ -176,16 +195,19 @@ Thumb Sleak flute.0 modifers:
         Levels: 3, Type: CATMULL_CLARK
 
 Name: HANDLE Finger
-HANDLE Finger type: EMPTY
+HANDLE Finger Type: EMPTY
 HANDLE Finger transform: X0.0 Y0.0 Z0.0
 HANDLE Finger rotation: X0.0 Y0.0 Z0.0
 HANDLE Finger scale: X1.0 Y1.0 Z1.0
+HANDLE Finger groups: Finger, 
 
 Name: BOOLEAN Finger top cover distal
-BOOLEAN Finger top cover distal type: MESH
+BOOLEAN Finger top cover distal Type: MESH
 BOOLEAN Finger top cover distal transform: X0.0 Y50.5 Z0.0
 BOOLEAN Finger top cover distal rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Finger top cover distal scale: X1.0 Y1.0 Z1.0
+BOOLEAN Finger top cover distal groups: Finger, 
+BOOLEAN Finger top cover distal parent: HANDLE Finger
 BOOLEAN Finger top cover distal mesh: BOOLEAN Finger top cover distal
 BOOLEAN Finger top cover distal materials: Boolean difference, 
 BOOLEAN Finger top cover distal modifers: 
@@ -194,10 +216,12 @@ BOOLEAN Finger top cover distal modifers:
         Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Finger top cover proximal
-BOOLEAN Finger top cover proximal type: MESH
+BOOLEAN Finger top cover proximal Type: MESH
 BOOLEAN Finger top cover proximal transform: X0.0 Y10.0 Z0.0
 BOOLEAN Finger top cover proximal rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Finger top cover proximal scale: X1.0 Y1.0 Z1.0
+BOOLEAN Finger top cover proximal groups: Finger, 
+BOOLEAN Finger top cover proximal parent: HANDLE Finger
 BOOLEAN Finger top cover proximal mesh: BOOLEAN Finger top cover proximal
 BOOLEAN Finger top cover proximal materials: Boolean difference, 
 BOOLEAN Finger top cover proximal modifers: 
@@ -206,10 +230,12 @@ BOOLEAN Finger top cover proximal modifers:
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Finger top cover distal
-Finger top cover distal type: MESH
+Finger top cover distal Type: MESH
 Finger top cover distal transform: X0.0 Y40.5 Z9.5367431640625e-07
 Finger top cover distal rotation: X0.0 Y0.0 Z0.0
 Finger top cover distal scale: X1.0 Y1.0 Z1.0
+Finger top cover distal groups: Finger, 
+Finger top cover distal parent: HANDLE Finger
 Finger top cover distal mesh: Finger top cover distal
 Finger top cover distal materials: None
 Finger top cover distal modifers: 
@@ -220,10 +246,12 @@ Finger top cover distal modifers:
         Operation: DIFFERENCE, Object: BOOLEAN Finger top cover distal
 
 Name: Finger top cover proximal
-Finger top cover proximal type: MESH
+Finger top cover proximal Type: MESH
 Finger top cover proximal transform: X0.0 Y0.0 Z0.0
 Finger top cover proximal rotation: X0.0 Y0.0 Z0.0
 Finger top cover proximal scale: X1.0 Y1.0 Z1.0
+Finger top cover proximal groups: Finger, 
+Finger top cover proximal parent: HANDLE Finger
 Finger top cover proximal mesh: Finger top cover proximal
 Finger top cover proximal materials: None
 Finger top cover proximal modifers: 
