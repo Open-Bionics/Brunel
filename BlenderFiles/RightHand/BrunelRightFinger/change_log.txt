@@ -9,6 +9,11 @@ BOOLEAN Finger top cover distal mesh: BOOLEAN Finger top cover distal
 BOOLEAN Finger top cover distal materials: Boolean difference, 
 BOOLEAN Finger top cover distal modifers: 
   #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
@@ -23,6 +28,11 @@ BOOLEAN Finger top cover proximal mesh: BOOLEAN Finger top cover proximal
 BOOLEAN Finger top cover proximal materials: Boolean difference, 
 BOOLEAN Finger top cover proximal modifers: 
   #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
@@ -37,6 +47,11 @@ Finger top cover distal mesh: Finger top cover distal
 Finger top cover distal materials: None
 Finger top cover distal modifers: 
   #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #3 Name: Boolean.FingerTopCover, Type: BOOLEAN
@@ -53,6 +68,11 @@ Finger top cover proximal mesh: Finger top cover proximal
 Finger top cover proximal materials: None
 Finger top cover proximal modifers: 
   #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #3 Name: Boolean.FingerTopCover, Type: BOOLEAN
@@ -70,11 +90,17 @@ Silicone cover Type: MESH
 Silicone cover transform: X0.0 Y2.0 Z0.0
 Silicone cover rotation: X0.0 Y0.0 Z0.0
 Silicone cover scale: X1.0 Y1.0 Z1.0
-Silicone cover groups: None
+Silicone cover groups: Finger, 
+Silicone cover parent: HANDLE Finger
 Silicone cover mesh: Silicone cover
 Silicone cover materials: None
 Silicone cover modifers: 
   #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
   #2 Name: Solidify, Type: SOLIDIFY
   #3 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
