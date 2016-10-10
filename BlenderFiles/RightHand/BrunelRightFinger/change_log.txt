@@ -1,14 +1,54 @@
-Name: Finger top cover
-Finger top cover type: MESH
-Finger top cover transform: X0.0 Y10.0 Z0.0
-Finger top cover rotation: X0.0 Y0.0 Z0.0
-Finger top cover scale: X1.0 Y1.0 Z1.0
-Finger top cover mesh: Finger top cover
-Finger top cover materials: None
-Finger top cover modifers: 
+Name: BOOLEAN Finger top cover distal
+BOOLEAN Finger top cover distal type: MESH
+BOOLEAN Finger top cover distal transform: X0.0 Y50.5 Z0.0
+BOOLEAN Finger top cover distal rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Finger top cover distal scale: X1.0 Y1.0 Z1.0
+BOOLEAN Finger top cover distal mesh: BOOLEAN Finger top cover distal
+BOOLEAN Finger top cover distal materials: Boolean difference, 
+BOOLEAN Finger top cover distal modifers: 
   #1 Name: Mirror, Type: MIRROR
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN Finger top cover proximal
+BOOLEAN Finger top cover proximal type: MESH
+BOOLEAN Finger top cover proximal transform: X0.0 Y10.0 Z0.0
+BOOLEAN Finger top cover proximal rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Finger top cover proximal scale: X1.0 Y1.0 Z1.0
+BOOLEAN Finger top cover proximal mesh: BOOLEAN Finger top cover proximal
+BOOLEAN Finger top cover proximal materials: Boolean difference, 
+BOOLEAN Finger top cover proximal modifers: 
+  #1 Name: Mirror, Type: MIRROR
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Finger top cover distal
+Finger top cover distal type: MESH
+Finger top cover distal transform: X0.0 Y40.5 Z9.5367431640625e-07
+Finger top cover distal rotation: X0.0 Y0.0 Z0.0
+Finger top cover distal scale: X1.0 Y1.0 Z1.0
+Finger top cover distal mesh: Finger top cover distal
+Finger top cover distal materials: None
+Finger top cover distal modifers: 
+  #1 Name: Mirror, Type: MIRROR
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean.FingerTopCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Finger top cover distal
+
+Name: Finger top cover proximal
+Finger top cover proximal type: MESH
+Finger top cover proximal transform: X0.0 Y0.0 Z0.0
+Finger top cover proximal rotation: X0.0 Y0.0 Z0.0
+Finger top cover proximal scale: X1.0 Y1.0 Z1.0
+Finger top cover proximal mesh: Finger top cover proximal
+Finger top cover proximal materials: None
+Finger top cover proximal modifers: 
+  #1 Name: Mirror, Type: MIRROR
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean.FingerTopCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Finger top cover proximal
 
 Name: HANDLE Finger
 HANDLE Finger type: EMPTY
