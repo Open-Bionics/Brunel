@@ -1,4 +1,5 @@
 Name: Finger top cover
+Finger top cover type: MESH
 Finger top cover transform: X0.0 Y10.0 Z0.0
 Finger top cover rotation: X0.0 Y0.0 Z0.0
 Finger top cover scale: X1.0 Y1.0 Z1.0
@@ -10,6 +11,7 @@ Finger top cover modifers:
         Levels: 3, Type: CATMULL_CLARK
 
 Name: HANDLE Finger
+HANDLE Finger type: EMPTY
 HANDLE Finger transform: X0.0 Y0.0 Z0.0
 HANDLE Finger rotation: X0.0 Y0.0 Z0.0
 HANDLE Finger scale: X1.0 Y1.0 Z1.0
