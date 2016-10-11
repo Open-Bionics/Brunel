@@ -22,50 +22,6 @@ BOOLEAN Silicone cover modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
-Name: Finger top cover distal
-Finger top cover distal Type: MESH
-Finger top cover distal transform: X0.0 Y40.5 Z9.5367431640625e-07
-Finger top cover distal rotation: X0.0 Y0.0 Z0.0
-Finger top cover distal scale: X1.0 Y1.0 Z1.0
-Finger top cover distal groups: Finger, 
-Finger top cover distal parent: HANDLE Finger
-Finger top cover distal mesh: Finger top cover distal
-Finger top cover distal materials: PLA Black, 
-Finger top cover distal modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Mirror object: HANDLE Finger
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: True
-        Vertex group mirroring: True
-  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Boolean.FingerTopCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Silicone cover
-  #4 Name: Boolean.M2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes
-
-Name: Finger top cover proximal
-Finger top cover proximal Type: MESH
-Finger top cover proximal transform: X0.0 Y0.0 Z0.0
-Finger top cover proximal rotation: X0.0 Y0.0 Z0.0
-Finger top cover proximal scale: X1.0 Y1.0 Z1.0
-Finger top cover proximal groups: Finger, 
-Finger top cover proximal parent: HANDLE Finger
-Finger top cover proximal mesh: Finger top cover proximal
-Finger top cover proximal materials: PLA Black, 
-Finger top cover proximal modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Mirror object: HANDLE Finger
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: True
-        Vertex group mirroring: True
-  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Boolean.FingerTopCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Silicone cover
-
 Name: HANDLE Finger
 HANDLE Finger Type: EMPTY
 HANDLE Finger transform: X0.0 Y0.0 Z0.0
@@ -114,6 +70,29 @@ Silicone cover modifiers:
   #3 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
+Name: Top cover distal
+Top cover distal Type: MESH
+Top cover distal transform: X0.0 Y40.5 Z9.5367431640625e-07
+Top cover distal rotation: X0.0 Y0.0 Z0.0
+Top cover distal scale: X1.0 Y1.0 Z1.0
+Top cover distal groups: Finger, 
+Top cover distal parent: HANDLE Finger
+Top cover distal mesh: Top cover distal
+Top cover distal materials: PLA Black, 
+Top cover distal modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean.FingerTopCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Silicone cover
+  #4 Name: Boolean.M2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes
+
 Name: Top cover pad  distal
 Top cover pad  distal Type: MESH
 Top cover pad  distal transform: X0.0 Y40.5 Z9.5367431640625e-07
@@ -152,4 +131,25 @@ Top cover pad proximal modifiers:
   #2 Name: Solidify.001, Type: SOLIDIFY
   #3 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+
+Name: Top cover proximal
+Top cover proximal Type: MESH
+Top cover proximal transform: X0.0 Y0.0 Z0.0
+Top cover proximal rotation: X0.0 Y0.0 Z0.0
+Top cover proximal scale: X1.0 Y1.0 Z1.0
+Top cover proximal groups: Finger, 
+Top cover proximal parent: HANDLE Finger
+Top cover proximal mesh: Top cover proximal
+Top cover proximal materials: PLA Black, 
+Top cover proximal modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean.FingerTopCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Silicone cover
 
