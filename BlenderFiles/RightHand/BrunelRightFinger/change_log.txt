@@ -7,7 +7,7 @@ BOOLEAN Finger top cover distal groups: Finger,
 BOOLEAN Finger top cover distal parent: HANDLE Finger
 BOOLEAN Finger top cover distal mesh: BOOLEAN Finger top cover distal
 BOOLEAN Finger top cover distal materials: Boolean difference, 
-BOOLEAN Finger top cover distal modifers: 
+BOOLEAN Finger top cover distal modifiers: 
   #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE Finger
@@ -26,7 +26,7 @@ BOOLEAN Finger top cover proximal groups: Finger,
 BOOLEAN Finger top cover proximal parent: HANDLE Finger
 BOOLEAN Finger top cover proximal mesh: BOOLEAN Finger top cover proximal
 BOOLEAN Finger top cover proximal materials: Boolean difference, 
-BOOLEAN Finger top cover proximal modifers: 
+BOOLEAN Finger top cover proximal modifiers: 
   #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE Finger
@@ -45,7 +45,7 @@ Finger top cover distal groups: Finger,
 Finger top cover distal parent: HANDLE Finger
 Finger top cover distal mesh: Finger top cover distal
 Finger top cover distal materials: None
-Finger top cover distal modifers: 
+Finger top cover distal modifiers: 
   #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE Finger
@@ -66,7 +66,7 @@ Finger top cover proximal groups: Finger,
 Finger top cover proximal parent: HANDLE Finger
 Finger top cover proximal mesh: Finger top cover proximal
 Finger top cover proximal materials: None
-Finger top cover proximal modifers: 
+Finger top cover proximal modifiers: 
   #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE Finger
@@ -94,7 +94,7 @@ Silicone cover groups: Finger,
 Silicone cover parent: HANDLE Finger
 Silicone cover mesh: Silicone cover
 Silicone cover materials: None
-Silicone cover modifers: 
+Silicone cover modifiers: 
   #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE Finger
