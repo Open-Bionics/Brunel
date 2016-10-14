@@ -1,6 +1,6 @@
 Name: BOOLEAN Ligament
 BOOLEAN Ligament Type: MESH
-BOOLEAN Ligament transform: X0.0 Y40.25 Z0.0
+BOOLEAN Ligament transform: X0.0 Y40.499996185302734 Z0.0
 BOOLEAN Ligament rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Ligament scale: X1.0 Y1.0 Z1.0
 BOOLEAN Ligament groups: None
@@ -81,7 +81,7 @@ Inner proximal modifiers:
 
 Name: Ligament
 Ligament Type: MESH
-Ligament transform: X0.0 Y40.25 Z0.0
+Ligament transform: X0.0 Y40.499996185302734 Z0.0
 Ligament rotation: X0.0 Y0.0 Z0.0
 Ligament scale: X1.0 Y1.0 Z1.0
 Ligament groups: None
