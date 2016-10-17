@@ -24,7 +24,7 @@ BOOLEAN M2 Bolt Holes rotation: X3.141592502593994 Y-0.0 Z0.0
 BOOLEAN M2 Bolt Holes scale: X1.0 Y1.0 Z1.0
 BOOLEAN M2 Bolt Holes groups: Finger, 
 BOOLEAN M2 Bolt Holes parent: HANDLE Finger
-BOOLEAN M2 Bolt Holes mesh: Boolean - Hand M3 Bolt Holes.R
+BOOLEAN M2 Bolt Holes mesh: BOOLEAN M2 Bolt Holes
 BOOLEAN M2 Bolt Holes materials: Boolean difference, 
 BOOLEAN M2 Bolt Holes modifiers: None
 
@@ -76,7 +76,9 @@ Inner proximal modifiers:
         Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Boolean, Type: BOOLEAN
+  #3 Name: Boolean.M2, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes
+  #4 Name: Boolean.Ligament, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament
 
 Name: Ligament
@@ -200,6 +202,6 @@ Top cover proximal modifiers:
         Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Boolean.FingerTopCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
+  #3 Name: Boolean.M2, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes
 
