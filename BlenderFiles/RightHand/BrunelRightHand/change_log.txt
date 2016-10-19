@@ -31,7 +31,7 @@ BOOLEAN Conical spring Type: MESH
 BOOLEAN Conical spring transform: X-16.0568904876709 Y-53.75602340698242 Z-4.673169136047363
 BOOLEAN Conical spring rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Conical spring scale: X0.9999999403953552 Y1.0 Z0.9999999403953552
-BOOLEAN Conical spring groups: None
+BOOLEAN Conical spring groups: Booleans, 
 BOOLEAN Conical spring mesh: BOOLEAN Conical spring
 BOOLEAN Conical spring materials: Boolean difference, 
 BOOLEAN Conical spring modifiers: 
@@ -43,18 +43,28 @@ BOOLEAN PQ12 exteneed 0.3 mm tolerance Type: MESH
 BOOLEAN PQ12 exteneed 0.3 mm tolerance transform: X27.009235382080078 Y-59.47224426269531 Z1.5496773719787598
 BOOLEAN PQ12 exteneed 0.3 mm tolerance rotation: X-1.6292067073209182e-07 Y3.501773448988388e-07 Z3.1415929794311523
 BOOLEAN PQ12 exteneed 0.3 mm tolerance scale: X0.9999999403953552 Y0.9999998211860657 Z1.0
-BOOLEAN PQ12 exteneed 0.3 mm tolerance groups: None
+BOOLEAN PQ12 exteneed 0.3 mm tolerance groups: Booleans, 
 BOOLEAN PQ12 exteneed 0.3 mm tolerance parent: PQ12 extended
 BOOLEAN PQ12 exteneed 0.3 mm tolerance mesh: BOOLEAN PQ12 exteneed 0.3 mm tolerance
 BOOLEAN PQ12 exteneed 0.3 mm tolerance materials: Boolean difference, 
 BOOLEAN PQ12 exteneed 0.3 mm tolerance modifiers: None
+
+Name: BOOLEAN Thumb attahment dowel
+BOOLEAN Thumb attahment dowel Type: MESH
+BOOLEAN Thumb attahment dowel transform: X14.156594276428223 Y-76.26822662353516 Z-4.673170566558838
+BOOLEAN Thumb attahment dowel rotation: X0.0 Y-0.0 Z3.141592502593994
+BOOLEAN Thumb attahment dowel scale: X1.0 Y1.0666667222976685 Z1.0666667222976685
+BOOLEAN Thumb attahment dowel groups: Actuator Block, Booleans, Thumb, 
+BOOLEAN Thumb attahment dowel mesh: BOOLEAN Thumb attahment dowel
+BOOLEAN Thumb attahment dowel materials: Boolean difference.001, 
+BOOLEAN Thumb attahment dowel modifiers: None
 
 Name: Conical spring
 Conical spring Type: MESH
 Conical spring transform: X-16.0568904876709 Y-53.75602340698242 Z-4.673169136047363
 Conical spring rotation: X0.0 Y0.0 Z0.0
 Conical spring scale: X0.0009999870089814067 Y0.0009999871253967285 Z0.000999986776150763
-Conical spring groups: None
+Conical spring groups: Actuator Block, 
 Conical spring mesh: Conical spring
 Conical spring materials: Steel, 
 Conical spring modifiers: None
@@ -156,7 +166,7 @@ Palm Inner Type: MESH
 Palm Inner transform: X6.606559753417969 Y-45.15056610107422 Z-4.624058723449707
 Palm Inner rotation: X0.0 Y0.0 Z0.0
 Palm Inner scale: X1.0 Y1.0 Z1.0
-Palm Inner groups: None
+Palm Inner groups: Actuator Block, 
 Palm Inner mesh: Palm Inner
 Palm Inner materials: PLA, 
 Palm Inner modifiers: 
@@ -165,6 +175,8 @@ Palm Inner modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
   #3 Name: Boolean.ConicalSpring, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Conical spring
+  #4 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel
 
 Name: Palm Simple
 Palm Simple Type: MESH
@@ -229,7 +241,7 @@ PQ12 extended Type: MESH
 PQ12 extended transform: X6.6065592765808105 Y-38.69884490966797 Z0.7168586254119873
 PQ12 extended rotation: X0.0 Y-0.0 Z3.141592502593994
 PQ12 extended scale: X1.0 Y1.0 Z1.0
-PQ12 extended groups: None
+PQ12 extended groups: Actuator Block, 
 PQ12 extended mesh: PQ12 extended
 PQ12 extended materials: PQ12 housing plastic, 
 PQ12 extended modifiers: None
