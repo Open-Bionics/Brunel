@@ -26,6 +26,18 @@ Name: 4th Finger
 4th Finger scale: X0.800000011920929 Y0.75 Z0.800000011920929
 4th Finger groups: None
 
+Name: BOOLEAN Conical spring
+BOOLEAN Conical spring Type: MESH
+BOOLEAN Conical spring transform: X-16.0568904876709 Y-53.75602340698242 Z-4.673169136047363
+BOOLEAN Conical spring rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Conical spring scale: X0.9999999403953552 Y1.0 Z0.9999999403953552
+BOOLEAN Conical spring groups: None
+BOOLEAN Conical spring mesh: BOOLEAN Conical spring
+BOOLEAN Conical spring materials: Boolean difference, 
+BOOLEAN Conical spring modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: BOOLEAN PQ12 exteneed 0.3 mm tolerance
 BOOLEAN PQ12 exteneed 0.3 mm tolerance Type: MESH
 BOOLEAN PQ12 exteneed 0.3 mm tolerance transform: X27.009235382080078 Y-59.47224426269531 Z1.5496773719787598
