@@ -89,6 +89,16 @@ BOOLEAN Thumb pivot dowel.001 mesh: Dowel M3 10mm .002
 BOOLEAN Thumb pivot dowel.001 materials: Boolean difference, 
 BOOLEAN Thumb pivot dowel.001 modifiers: None
 
+Name: BOOLEAN Thumb tendon channel
+BOOLEAN Thumb tendon channel Type: MESH
+BOOLEAN Thumb tendon channel transform: X14.156594276428223 Y-80.26822662353516 Z-4.673170566558838
+BOOLEAN Thumb tendon channel rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Thumb tendon channel scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb tendon channel groups: Actuator Block, Booleans, Thumb, 
+BOOLEAN Thumb tendon channel mesh: BOOLEAN Thumb tendon channel
+BOOLEAN Thumb tendon channel materials: Boolean difference, 
+BOOLEAN Thumb tendon channel modifiers: None
+
 Name: Conical spring
 Conical spring Type: MESH
 Conical spring transform: X-16.0568904876709 Y-53.75602340698242 Z-4.673169136047363
@@ -98,16 +108,6 @@ Conical spring groups: Actuator Block, Thumb,
 Conical spring mesh: Conical spring
 Conical spring materials: Steel, 
 Conical spring modifiers: None
-
-Name: exporter
-exporter Type: MESH
-exporter transform: X0.0 Y0.0 Z0.0
-exporter rotation: X0.0 Y0.0 Z0.0
-exporter scale: X1.0 Y1.0 Z1.0
-exporter groups: None
-exporter mesh: exporter.002
-exporter materials: None
-exporter modifiers: None
 
 Name: Finger Sleak flute.1
 Finger Sleak flute.1 Type: MESH
@@ -211,7 +211,7 @@ Palm Inner mesh: Palm Inner
 Palm Inner materials: PLA, 
 Palm Inner modifiers: 
   #1 Name: Bevel, Type: BEVEL
-  #2 Name: Boolean, Type: BOOLEAN
+  #2 Name: Boolean.PQ12, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
   #3 Name: Boolean.ConicalSpring, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Conical spring
@@ -221,7 +221,9 @@ Palm Inner modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel
   #6 Name: Boolean.ThumbPivotDowel001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel.001
-  #7 Name: Boolean.TendonChannels, Type: BOOLEAN
+  #7 Name: Boolean.ThumbTendonChannel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon channel
+  #8 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon Channels
 
 Name: Palm Simple
