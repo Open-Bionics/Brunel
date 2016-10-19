@@ -62,11 +62,11 @@ BOOLEAN Tendon Channels modifiers: None
 Name: BOOLEAN Thumb attahment dowel
 BOOLEAN Thumb attahment dowel Type: MESH
 BOOLEAN Thumb attahment dowel transform: X14.156594276428223 Y-76.26822662353516 Z-4.673170566558838
-BOOLEAN Thumb attahment dowel rotation: X0.0 Y-0.0 Z3.141592502593994
-BOOLEAN Thumb attahment dowel scale: X1.0 Y1.0666667222976685 Z1.0666667222976685
+BOOLEAN Thumb attahment dowel rotation: X0.0 Y1.5707963705062866 Z0.0
+BOOLEAN Thumb attahment dowel scale: X1.0 Y1.0 Z1.0
 BOOLEAN Thumb attahment dowel groups: Actuator Block, Booleans, Thumb, 
 BOOLEAN Thumb attahment dowel mesh: BOOLEAN Thumb attahment dowel
-BOOLEAN Thumb attahment dowel materials: Boolean difference.001, 
+BOOLEAN Thumb attahment dowel materials: Boolean difference, 
 BOOLEAN Thumb attahment dowel modifiers: None
 
 Name: Conical spring
