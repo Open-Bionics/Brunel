@@ -99,8 +99,6 @@ Ligament modifiers:
         Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #3 Name: CrossSection, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
 
 Name: Silicone cover
 Silicone cover Type: MESH
@@ -180,7 +178,7 @@ Top cover pad proximal modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #2 Name: Solidify.001, Type: SOLIDIFY
+  #2 Name: Solidify, Type: SOLIDIFY
   #3 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
@@ -197,7 +195,7 @@ Top cover proximal modifiers:
   #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE Finger
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Merge: True, Merge Limit: 0.10000000149011612 mm
         Clipping: True
         Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
