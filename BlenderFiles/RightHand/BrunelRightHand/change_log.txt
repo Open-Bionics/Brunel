@@ -7,7 +7,7 @@ Name: 1st Finger
 
 Name: 2nd Finger
 2nd Finger Type: EMPTY
-2nd Finger transform: X0.0 Y0.0 Z0.0
+2nd Finger transform: X0.0 Y2.0 Z0.0
 2nd Finger rotation: X0.0 Y0.0 Z0.0
 2nd Finger scale: X0.800000011920929 Y0.8999999761581421 Z0.8999999761581421
 2nd Finger groups: None
@@ -48,6 +48,16 @@ BOOLEAN PQ12 exteneed 0.3 mm tolerance parent: PQ12 extended
 BOOLEAN PQ12 exteneed 0.3 mm tolerance mesh: BOOLEAN PQ12 exteneed 0.3 mm tolerance
 BOOLEAN PQ12 exteneed 0.3 mm tolerance materials: Boolean difference, 
 BOOLEAN PQ12 exteneed 0.3 mm tolerance modifiers: None
+
+Name: BOOLEAN Tendon Channels
+BOOLEAN Tendon Channels Type: MESH
+BOOLEAN Tendon Channels transform: X-23.19467544555664 Y-29.75583267211914 Z-10.314010620117188
+BOOLEAN Tendon Channels rotation: X1.5707963705062866 Y0.0 Z0.0
+BOOLEAN Tendon Channels scale: X1.0 Y1.0 Z1.0
+BOOLEAN Tendon Channels groups: Actuator Block, Booleans, 
+BOOLEAN Tendon Channels mesh: BOOLEAN Tendon Channels
+BOOLEAN Tendon Channels materials: Boolean difference, 
+BOOLEAN Tendon Channels modifiers: None
 
 Name: BOOLEAN Thumb attahment dowel
 BOOLEAN Thumb attahment dowel Type: MESH
@@ -177,6 +187,8 @@ Palm Inner modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Conical spring
   #4 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel
+  #5 Name: Boolean.TendonChannels, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Tendon Channels
 
 Name: Palm Simple
 Palm Simple Type: MESH
