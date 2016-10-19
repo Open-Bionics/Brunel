@@ -69,15 +69,45 @@ BOOLEAN Thumb attahment dowel mesh: BOOLEAN Thumb attahment dowel
 BOOLEAN Thumb attahment dowel materials: Boolean difference, 
 BOOLEAN Thumb attahment dowel modifiers: None
 
+Name: BOOLEAN Thumb pivot dowel
+BOOLEAN Thumb pivot dowel Type: MESH
+BOOLEAN Thumb pivot dowel transform: X14.156594276428223 Y-80.26822662353516 Z-4.673170566558838
+BOOLEAN Thumb pivot dowel rotation: X-1.570796251296997 Y2.356194496154785 Z-1.570796251296997
+BOOLEAN Thumb pivot dowel scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb pivot dowel groups: Actuator Block, Booleans, Thumb, 
+BOOLEAN Thumb pivot dowel mesh: Cylinder
+BOOLEAN Thumb pivot dowel materials: Boolean difference, 
+BOOLEAN Thumb pivot dowel modifiers: None
+
 Name: Conical spring
 Conical spring Type: MESH
 Conical spring transform: X-16.0568904876709 Y-53.75602340698242 Z-4.673169136047363
 Conical spring rotation: X0.0 Y0.0 Z0.0
 Conical spring scale: X0.0009999870089814067 Y0.0009999871253967285 Z0.000999986776150763
-Conical spring groups: Actuator Block, 
+Conical spring groups: Actuator Block, Thumb, 
 Conical spring mesh: Conical spring
 Conical spring materials: Steel, 
 Conical spring modifiers: None
+
+Name: Dowel M3 10mm 
+Dowel M3 10mm  Type: MESH
+Dowel M3 10mm  transform: X14.156594276428223 Y-80.26822662353516 Z-4.673170566558838
+Dowel M3 10mm  rotation: X-0.0 Y1.570796251296997 Z0.0
+Dowel M3 10mm  scale: X1.0 Y1.0 Z1.0
+Dowel M3 10mm  groups: None
+Dowel M3 10mm  mesh: Dowel M3 10mm 
+Dowel M3 10mm  materials: Steel, 
+Dowel M3 10mm  modifiers: None
+
+Name: exporter
+exporter Type: MESH
+exporter transform: X0.0 Y0.0 Z0.0
+exporter rotation: X0.0 Y0.0 Z0.0
+exporter scale: X1.0 Y1.0 Z1.0
+exporter groups: None
+exporter mesh: exporter.002
+exporter materials: None
+exporter modifiers: None
 
 Name: Finger Sleak flute.1
 Finger Sleak flute.1 Type: MESH
@@ -189,6 +219,8 @@ Palm Inner modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel
   #5 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon Channels
+  #6 Name: Boolean.ThumbPivotDowel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel
 
 Name: Palm Simple
 Palm Simple Type: MESH
