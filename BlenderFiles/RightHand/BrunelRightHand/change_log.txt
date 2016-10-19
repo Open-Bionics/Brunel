@@ -115,6 +115,30 @@ Finger Sleak flute.4 modifiers:
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
+Name: Palm Covered
+Palm Covered Type: MESH
+Palm Covered transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
+Palm Covered rotation: X-0.0 Y3.141592502593994 Z-0.0
+Palm Covered scale: X1.0 Y1.0 Z1.0
+Palm Covered groups: None
+Palm Covered mesh: Palm Covered
+Palm Covered materials: PLA Black, 
+Palm Covered modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Palm Covered top pad
+Palm Covered top pad Type: MESH
+Palm Covered top pad transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
+Palm Covered top pad rotation: X-0.0 Y3.141592502593994 Z-0.0
+Palm Covered top pad scale: X1.0 Y1.0 Z1.0
+Palm Covered top pad groups: None
+Palm Covered top pad mesh: Palm Covered top pad
+Palm Covered top pad materials: NF White, 
+Palm Covered top pad modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: Palm Inner
 Palm Inner Type: MESH
 Palm Inner transform: X6.606559753417969 Y-45.15056610107422 Z-4.624058723449707
@@ -137,20 +161,8 @@ Palm Simple rotation: X-0.0 Y3.141592502593994 Z-0.0
 Palm Simple scale: X1.0 Y1.0 Z1.0
 Palm Simple groups: None
 Palm Simple mesh: Palm Simple
-Palm Simple materials: PLA Black, 
+Palm Simple materials: PLA Black, NF White, 
 Palm Simple modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-
-Name: Palm Simple top pad
-Palm Simple top pad Type: MESH
-Palm Simple top pad transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
-Palm Simple top pad rotation: X-0.0 Y3.141592502593994 Z-0.0
-Palm Simple top pad scale: X1.0 Y1.0 Z1.0
-Palm Simple top pad groups: None
-Palm Simple top pad mesh: Palm Simple.001
-Palm Simple top pad materials: NF White, 
-Palm Simple top pad modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
