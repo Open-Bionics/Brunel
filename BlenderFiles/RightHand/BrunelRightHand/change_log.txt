@@ -59,15 +59,15 @@ BOOLEAN Tendon Channels mesh: BOOLEAN Tendon Channels
 BOOLEAN Tendon Channels materials: Boolean difference, 
 BOOLEAN Tendon Channels modifiers: None
 
-Name: BOOLEAN Thumb attahment dowel
-BOOLEAN Thumb attahment dowel Type: MESH
-BOOLEAN Thumb attahment dowel transform: X14.156594276428223 Y-76.26822662353516 Z-4.673170566558838
-BOOLEAN Thumb attahment dowel rotation: X0.0 Y1.5707963705062866 Z0.0
-BOOLEAN Thumb attahment dowel scale: X1.0 Y1.0 Z1.0
-BOOLEAN Thumb attahment dowel groups: Actuator Block, Booleans, Thumb, 
-BOOLEAN Thumb attahment dowel mesh: BOOLEAN Thumb attahment dowel
-BOOLEAN Thumb attahment dowel materials: Boolean difference, 
-BOOLEAN Thumb attahment dowel modifiers: None
+Name: BOOLEAN Thumb attahment dowel.001
+BOOLEAN Thumb attahment dowel.001 Type: MESH
+BOOLEAN Thumb attahment dowel.001 transform: X14.156594276428223 Y-76.26822662353516 Z-4.673170566558838
+BOOLEAN Thumb attahment dowel.001 rotation: X0.0 Y1.5707963705062866 Z0.0
+BOOLEAN Thumb attahment dowel.001 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb attahment dowel.001 groups: Actuator Block, Booleans, Thumb, 
+BOOLEAN Thumb attahment dowel.001 mesh: BOOLEAN Thumb attahment dowel.001
+BOOLEAN Thumb attahment dowel.001 materials: Boolean difference, 
+BOOLEAN Thumb attahment dowel.001 modifiers: None
 
 Name: BOOLEAN Thumb pivot dowel
 BOOLEAN Thumb pivot dowel Type: MESH
@@ -79,6 +79,16 @@ BOOLEAN Thumb pivot dowel mesh: Cylinder
 BOOLEAN Thumb pivot dowel materials: Boolean difference, 
 BOOLEAN Thumb pivot dowel modifiers: None
 
+Name: BOOLEAN Thumb pivot dowel.001
+BOOLEAN Thumb pivot dowel.001 Type: MESH
+BOOLEAN Thumb pivot dowel.001 transform: X12.656594276428223 Y-80.26822662353516 Z-9.67317008972168
+BOOLEAN Thumb pivot dowel.001 rotation: X-1.570796251296997 Y1.570796251296997 Z0.0
+BOOLEAN Thumb pivot dowel.001 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb pivot dowel.001 groups: Actuator Block, Booleans, Thumb, 
+BOOLEAN Thumb pivot dowel.001 mesh: Dowel M3 10mm .002
+BOOLEAN Thumb pivot dowel.001 materials: Boolean difference, 
+BOOLEAN Thumb pivot dowel.001 modifiers: None
+
 Name: Conical spring
 Conical spring Type: MESH
 Conical spring transform: X-16.0568904876709 Y-53.75602340698242 Z-4.673169136047363
@@ -88,16 +98,6 @@ Conical spring groups: Actuator Block, Thumb,
 Conical spring mesh: Conical spring
 Conical spring materials: Steel, 
 Conical spring modifiers: None
-
-Name: Dowel M3 10mm 
-Dowel M3 10mm  Type: MESH
-Dowel M3 10mm  transform: X14.156594276428223 Y-80.26822662353516 Z-4.673170566558838
-Dowel M3 10mm  rotation: X-0.0 Y1.570796251296997 Z0.0
-Dowel M3 10mm  scale: X1.0 Y1.0 Z1.0
-Dowel M3 10mm  groups: None
-Dowel M3 10mm  mesh: Dowel M3 10mm 
-Dowel M3 10mm  materials: Steel, 
-Dowel M3 10mm  modifiers: None
 
 Name: exporter
 exporter Type: MESH
@@ -216,11 +216,13 @@ Palm Inner modifiers:
   #3 Name: Boolean.ConicalSpring, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Conical spring
   #4 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel
-  #5 Name: Boolean.TendonChannels, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Tendon Channels
-  #6 Name: Boolean.ThumbPivotDowel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel.001
+  #5 Name: Boolean.ThumbPivotDowel000, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel
+  #6 Name: Boolean.ThumbPivotDowel001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel.001
+  #7 Name: Boolean.TendonChannels, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Tendon Channels
 
 Name: Palm Simple
 Palm Simple Type: MESH
@@ -289,6 +291,26 @@ PQ12 extended groups: Actuator Block,
 PQ12 extended mesh: PQ12 extended
 PQ12 extended materials: PQ12 housing plastic, 
 PQ12 extended modifiers: None
+
+Name: Thumb pivot dowel.000
+Thumb pivot dowel.000 Type: MESH
+Thumb pivot dowel.000 transform: X14.156594276428223 Y-80.26822662353516 Z-4.673170566558838
+Thumb pivot dowel.000 rotation: X-0.0 Y1.570796251296997 Z0.0
+Thumb pivot dowel.000 scale: X1.0 Y1.0 Z1.0
+Thumb pivot dowel.000 groups: None
+Thumb pivot dowel.000 mesh: Dowel M3 10mm 
+Thumb pivot dowel.000 materials: Steel, 
+Thumb pivot dowel.000 modifiers: None
+
+Name: Thumb pivot dowel.001
+Thumb pivot dowel.001 Type: MESH
+Thumb pivot dowel.001 transform: X12.656594276428223 Y-80.26822662353516 Z-9.67317008972168
+Thumb pivot dowel.001 rotation: X-1.570796251296997 Y1.570796251296997 Z0.0
+Thumb pivot dowel.001 scale: X1.0 Y1.0 Z1.0
+Thumb pivot dowel.001 groups: Actuator Block, Thumb, 
+Thumb pivot dowel.001 mesh: Dowel M3 10mm .001
+Thumb pivot dowel.001 materials: Steel, 
+Thumb pivot dowel.001 modifiers: None
 
 Name: Thumb Sleak flute.0
 Thumb Sleak flute.0 Type: MESH
