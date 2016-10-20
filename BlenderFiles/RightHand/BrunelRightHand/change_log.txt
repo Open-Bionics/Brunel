@@ -75,7 +75,7 @@ BOOLEAN Thumb pivot dowel transform: X14.156594276428223 Y-80.26822662353516 Z-4
 BOOLEAN Thumb pivot dowel rotation: X-1.570796251296997 Y2.356194496154785 Z-1.570796251296997
 BOOLEAN Thumb pivot dowel scale: X1.0 Y1.0 Z1.0
 BOOLEAN Thumb pivot dowel groups: Actuator Block, Booleans, Thumb, 
-BOOLEAN Thumb pivot dowel mesh: Cylinder
+BOOLEAN Thumb pivot dowel mesh: BOOLEAN Thumb pivot dowel
 BOOLEAN Thumb pivot dowel materials: Boolean difference, 
 BOOLEAN Thumb pivot dowel modifiers: None
 
@@ -85,7 +85,7 @@ BOOLEAN Thumb pivot dowel.001 transform: X12.656594276428223 Y-80.26822662353516
 BOOLEAN Thumb pivot dowel.001 rotation: X-1.570796251296997 Y1.570796251296997 Z0.0
 BOOLEAN Thumb pivot dowel.001 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Thumb pivot dowel.001 groups: Actuator Block, Booleans, Thumb, 
-BOOLEAN Thumb pivot dowel.001 mesh: Dowel M3 10mm .002
+BOOLEAN Thumb pivot dowel.001 mesh: BOOLEAN Thumb pivot dowel.001
 BOOLEAN Thumb pivot dowel.001 materials: Boolean difference, 
 BOOLEAN Thumb pivot dowel.001 modifiers: None
 
