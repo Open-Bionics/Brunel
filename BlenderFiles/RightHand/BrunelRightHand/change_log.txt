@@ -48,6 +48,16 @@ BOOLEAN GALA cover M2 Bolt Hole mesh: BOOLEAN GALA cover M2 Bolt Hole
 BOOLEAN GALA cover M2 Bolt Hole materials: Boolean difference.001, 
 BOOLEAN GALA cover M2 Bolt Hole modifiers: None
 
+Name: BOOLEAN PCB Chestnut
+BOOLEAN PCB Chestnut Type: MESH
+BOOLEAN PCB Chestnut transform: X6.6065592765808105 Y-53.69884490966797 Z11.516858100891113
+BOOLEAN PCB Chestnut rotation: X0.0 Y-0.0 Z1.570796251296997
+BOOLEAN PCB Chestnut scale: X1.0 Y1.0 Z1.0
+BOOLEAN PCB Chestnut groups: Actuator Block, Booleans, 
+BOOLEAN PCB Chestnut mesh: BOOLEAN PCB Chestnut
+BOOLEAN PCB Chestnut materials: Boolean difference, 
+BOOLEAN PCB Chestnut modifiers: None
+
 Name: BOOLEAN PQ12 exteneed 0.3 mm tolerance
 BOOLEAN PQ12 exteneed 0.3 mm tolerance Type: MESH
 BOOLEAN PQ12 exteneed 0.3 mm tolerance transform: X27.009235382080078 Y-59.47224426269531 Z1.5496773719787598
@@ -69,15 +79,15 @@ BOOLEAN Tendon Channels mesh: BOOLEAN Tendon Channels
 BOOLEAN Tendon Channels materials: Boolean difference, 
 BOOLEAN Tendon Channels modifiers: None
 
-Name: BOOLEAN Thumb attahment dowel.001
-BOOLEAN Thumb attahment dowel.001 Type: MESH
-BOOLEAN Thumb attahment dowel.001 transform: X14.156594276428223 Y-76.26822662353516 Z-4.673170566558838
-BOOLEAN Thumb attahment dowel.001 rotation: X0.0 Y1.5707963705062866 Z0.0
-BOOLEAN Thumb attahment dowel.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Thumb attahment dowel.001 groups: Actuator Block, Booleans, Thumb, 
-BOOLEAN Thumb attahment dowel.001 mesh: BOOLEAN Thumb attahment dowel.001
-BOOLEAN Thumb attahment dowel.001 materials: Boolean difference, 
-BOOLEAN Thumb attahment dowel.001 modifiers: None
+Name: BOOLEAN Thumb attahment dowel
+BOOLEAN Thumb attahment dowel Type: MESH
+BOOLEAN Thumb attahment dowel transform: X14.156594276428223 Y-76.26822662353516 Z-4.673170566558838
+BOOLEAN Thumb attahment dowel rotation: X0.0 Y1.5707963705062866 Z0.0
+BOOLEAN Thumb attahment dowel scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb attahment dowel groups: Actuator Block, Booleans, Thumb, 
+BOOLEAN Thumb attahment dowel mesh: BOOLEAN Thumb attahment dowel
+BOOLEAN Thumb attahment dowel materials: Boolean difference, 
+BOOLEAN Thumb attahment dowel modifiers: None
 
 Name: BOOLEAN Thumb pivot dowel
 BOOLEAN Thumb pivot dowel Type: MESH
@@ -199,10 +209,14 @@ GALA cover modifiers:
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Boolean.ConicalSpring, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Conical spring
-  #3 Name: Boolean, Type: BOOLEAN
+  #3 Name: Boolean.GALACoverM2Bolts, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN GALA cover M2 Bolt Hole
   #4 Name: Boolean.PQ12s, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
+  #5 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel
+  #6 Name: Boolean.PCB, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut
 
 Name: Palm Covered
 Palm Covered Type: MESH
@@ -243,7 +257,7 @@ Palm Inner modifiers:
   #3 Name: Boolean.ConicalSpring, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Conical spring
   #4 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel.001
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel
   #5 Name: Boolean.ThumbPivotDowel000, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel
   #6 Name: Boolean.ThumbPivotDowel001, Type: BOOLEAN
@@ -355,6 +369,17 @@ Thumb Sleak flute.0 modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
+Name: BOOLEAN M2 Bolt Holes
+BOOLEAN M2 Bolt Holes Type: MESH
+BOOLEAN M2 Bolt Holes transform: X0.0 Y65.0 Z-1.5
+BOOLEAN M2 Bolt Holes rotation: X3.141592502593994 Y-0.0 Z0.0
+BOOLEAN M2 Bolt Holes scale: X1.0 Y1.0 Z1.0
+BOOLEAN M2 Bolt Holes groups: Finger, 
+BOOLEAN M2 Bolt Holes parent: HANDLE Finger
+BOOLEAN M2 Bolt Holes mesh: Boolean - Hand M3 Bolt Holes.R
+BOOLEAN M2 Bolt Holes materials: Boolean difference, 
+BOOLEAN M2 Bolt Holes modifiers: None
+
 Name: HANDLE Finger
 HANDLE Finger Type: EMPTY
 HANDLE Finger transform: X0.0 Y0.0 Z0.0
@@ -434,17 +459,6 @@ Top cover proximal modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #3 Name: Boolean.FingerTopCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Silicone cover
-
-Name: BOOLEAN M2 Bolt Holes
-BOOLEAN M2 Bolt Holes Type: MESH
-BOOLEAN M2 Bolt Holes transform: X0.0 Y65.0 Z-1.5
-BOOLEAN M2 Bolt Holes rotation: X3.141592502593994 Y-0.0 Z0.0
-BOOLEAN M2 Bolt Holes scale: X1.0 Y1.0 Z1.0
-BOOLEAN M2 Bolt Holes groups: Finger, 
-BOOLEAN M2 Bolt Holes parent: HANDLE Finger
-BOOLEAN M2 Bolt Holes mesh: Boolean - Hand M3 Bolt Holes.R
-BOOLEAN M2 Bolt Holes materials: Boolean difference, 
-BOOLEAN M2 Bolt Holes modifiers: None
 
 Name: Top cover distal
 Top cover distal Type: MESH
