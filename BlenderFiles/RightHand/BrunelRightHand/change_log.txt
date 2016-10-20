@@ -38,6 +38,16 @@ BOOLEAN Conical spring modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
+Name: BOOLEAN GALA cover M2 Bolt Hole
+BOOLEAN GALA cover M2 Bolt Hole Type: MESH
+BOOLEAN GALA cover M2 Bolt Hole transform: X36.62018585205078 Y-81.92051696777344 Z-6.573169231414795
+BOOLEAN GALA cover M2 Bolt Hole rotation: X0.0 Y0.0 Z0.0
+BOOLEAN GALA cover M2 Bolt Hole scale: X1.0 Y1.0 Z1.0
+BOOLEAN GALA cover M2 Bolt Hole groups: Actuator Block, Booleans, 
+BOOLEAN GALA cover M2 Bolt Hole mesh: BOOLEAN GALA cover M2 Bolt Hole
+BOOLEAN GALA cover M2 Bolt Hole materials: Boolean difference.001, 
+BOOLEAN GALA cover M2 Bolt Hole modifiers: None
+
 Name: BOOLEAN PQ12 exteneed 0.3 mm tolerance
 BOOLEAN PQ12 exteneed 0.3 mm tolerance Type: MESH
 BOOLEAN PQ12 exteneed 0.3 mm tolerance transform: X27.009235382080078 Y-59.47224426269531 Z1.5496773719787598
@@ -177,6 +187,23 @@ Finger Sleak flute.4 modifiers:
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
+Name: GALA cover
+GALA cover Type: MESH
+GALA cover transform: X6.606559753417969 Y-45.15056610107422 Z-4.624058723449707
+GALA cover rotation: X0.0 Y0.0 Z0.0
+GALA cover scale: X1.0 Y1.0 Z1.0
+GALA cover groups: Actuator Block, 
+GALA cover mesh: GALA cover
+GALA cover materials: PLA, 
+GALA cover modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean.ConicalSpring, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Conical spring
+  #3 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN GALA cover M2 Bolt Hole
+  #4 Name: Boolean.PQ12s, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
+
 Name: Palm Covered
 Palm Covered Type: MESH
 Palm Covered transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
@@ -225,6 +252,8 @@ Palm Inner modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon channel
   #8 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon Channels
+  #9 Name: Boolean.GALACoverM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN GALA cover M2 Bolt Hole
 
 Name: Palm Simple
 Palm Simple Type: MESH
