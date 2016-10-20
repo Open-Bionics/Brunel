@@ -26,6 +26,16 @@ Name: 4th Finger
 4th Finger scale: X0.800000011920929 Y0.75 Z0.800000011920929
 4th Finger groups: None
 
+Name: BOOLEAN Cable tidy
+BOOLEAN Cable tidy Type: MESH
+BOOLEAN Cable tidy transform: X29.10655975341797 Y-57.19865417480469 Z11.21685791015625
+BOOLEAN Cable tidy rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Cable tidy scale: X1.0 Y1.0 Z1.0
+BOOLEAN Cable tidy groups: Booleans, 
+BOOLEAN Cable tidy mesh: BOOLEAN Cable tidy
+BOOLEAN Cable tidy materials: Boolean difference, 
+BOOLEAN Cable tidy modifiers: None
+
 Name: BOOLEAN Conical spring
 BOOLEAN Conical spring Type: MESH
 BOOLEAN Conical spring transform: X-16.0568904876709 Y-53.75602340698242 Z-4.673169136047363
@@ -217,6 +227,8 @@ GALA cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel
   #6 Name: Boolean.PCB, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut
+  #7 Name: Boolean.CableTidy, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Cable tidy
 
 Name: Palm Covered
 Palm Covered Type: MESH
@@ -322,7 +334,7 @@ PCB Chestnut Type: MESH
 PCB Chestnut transform: X6.6065592765808105 Y-53.69884490966797 Z11.516858100891113
 PCB Chestnut rotation: X0.0 Y-0.0 Z1.570796251296997
 PCB Chestnut scale: X1.0 Y1.0 Z1.0
-PCB Chestnut groups: None
+PCB Chestnut groups: Actuator Block, 
 PCB Chestnut mesh: PCB Chestnut
 PCB Chestnut materials: FR4, Component, Black plastic, Firgelli Connector, 
 PCB Chestnut modifiers: None
