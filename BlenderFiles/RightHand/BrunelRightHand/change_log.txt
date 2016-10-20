@@ -109,6 +109,16 @@ BOOLEAN Thumb pivot dowel mesh: BOOLEAN Thumb pivot dowel
 BOOLEAN Thumb pivot dowel materials: Boolean difference, 
 BOOLEAN Thumb pivot dowel modifiers: None
 
+Name: BOOLEAN Thumb pivot dowel for GALA cover
+BOOLEAN Thumb pivot dowel for GALA cover Type: MESH
+BOOLEAN Thumb pivot dowel for GALA cover transform: X14.156594276428223 Y-80.26822662353516 Z-4.673170566558838
+BOOLEAN Thumb pivot dowel for GALA cover rotation: X-1.570796251296997 Y2.356194496154785 Z-1.570796251296997
+BOOLEAN Thumb pivot dowel for GALA cover scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb pivot dowel for GALA cover groups: Actuator Block, Booleans, Thumb, 
+BOOLEAN Thumb pivot dowel for GALA cover mesh: BOOLEAN Thumb pivot dowel for GALA cover
+BOOLEAN Thumb pivot dowel for GALA cover materials: Boolean difference, 
+BOOLEAN Thumb pivot dowel for GALA cover modifiers: None
+
 Name: BOOLEAN Thumb pivot dowel.001
 BOOLEAN Thumb pivot dowel.001 Type: MESH
 BOOLEAN Thumb pivot dowel.001 transform: X12.656594276428223 Y-80.26822662353516 Z-9.67317008972168
@@ -229,6 +239,8 @@ GALA cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut
   #7 Name: Boolean.CableTidy, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Cable tidy
+  #8 Name: Boolean.ThumbAttachmentDowel.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel for GALA cover
 
 Name: Palm Covered
 Palm Covered Type: MESH
