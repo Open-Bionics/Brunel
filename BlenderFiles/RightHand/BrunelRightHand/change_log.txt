@@ -50,7 +50,7 @@ BOOLEAN Conical spring modifiers:
 
 Name: BOOLEAN GALA cover M2 Bolt Hole
 BOOLEAN GALA cover M2 Bolt Hole Type: MESH
-BOOLEAN GALA cover M2 Bolt Hole transform: X36.62018585205078 Y-81.92051696777344 Z-6.573169231414795
+BOOLEAN GALA cover M2 Bolt Hole transform: X-8.493403434753418 Y-81.92051696777344 Z-4.473169326782227
 BOOLEAN GALA cover M2 Bolt Hole rotation: X0.0 Y0.0 Z0.0
 BOOLEAN GALA cover M2 Bolt Hole scale: X1.0 Y1.0 Z1.0
 BOOLEAN GALA cover M2 Bolt Hole groups: Actuator Block, Booleans, 
@@ -226,20 +226,19 @@ GALA cover groups: Actuator Block,
 GALA cover mesh: GALA cover
 GALA cover materials: PLA, 
 GALA cover modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-  #2 Name: Boolean.ConicalSpring, Type: BOOLEAN
+  #1 Name: Boolean.ConicalSpring, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Conical spring
-  #3 Name: Boolean.GALACoverM2Bolts, Type: BOOLEAN
+  #2 Name: Boolean.GALACoverM2Bolts, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN GALA cover M2 Bolt Hole
-  #4 Name: Boolean.PQ12s, Type: BOOLEAN
+  #3 Name: Boolean.PQ12s, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
-  #5 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
+  #4 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel
-  #6 Name: Boolean.PCB, Type: BOOLEAN
+  #5 Name: Boolean.PCB, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut
-  #7 Name: Boolean.CableTidy, Type: BOOLEAN
+  #6 Name: Boolean.CableTidy, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Cable tidy
-  #8 Name: Boolean.ThumbAttachmentDowel.001, Type: BOOLEAN
+  #7 Name: Boolean.ThumbAttachmentDowel.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel for GALA cover
 
 Name: Palm Covered
