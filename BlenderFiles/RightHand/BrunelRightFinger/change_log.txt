@@ -1,13 +1,31 @@
-Name: BOOLEAN Finger top cover distal
-BOOLEAN Finger top cover distal Type: MESH
-BOOLEAN Finger top cover distal transform: X0.0 Y50.5 Z0.0
-BOOLEAN Finger top cover distal rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Finger top cover distal scale: X1.0 Y1.0 Z1.0
-BOOLEAN Finger top cover distal groups: Finger, 
-BOOLEAN Finger top cover distal parent: HANDLE Finger
-BOOLEAN Finger top cover distal mesh: BOOLEAN Finger top cover distal
-BOOLEAN Finger top cover distal materials: Boolean difference, 
-BOOLEAN Finger top cover distal modifers: 
+Name: BOOLEAN M2 Bolt Holes
+BOOLEAN M2 Bolt Holes Type: MESH
+BOOLEAN M2 Bolt Holes transform: X0.0 Y65.0 Z-1.5
+BOOLEAN M2 Bolt Holes rotation: X3.141592502593994 Y-0.0 Z0.0
+BOOLEAN M2 Bolt Holes scale: X1.0 Y1.0 Z1.0
+BOOLEAN M2 Bolt Holes groups: Finger, 
+BOOLEAN M2 Bolt Holes parent: HANDLE Finger
+BOOLEAN M2 Bolt Holes mesh: BOOLEAN M2 Bolt Holes
+BOOLEAN M2 Bolt Holes materials: Boolean difference, 
+BOOLEAN M2 Bolt Holes modifiers: None
+
+Name: HANDLE Finger
+HANDLE Finger Type: EMPTY
+HANDLE Finger transform: X0.0 Y0.0 Z0.0
+HANDLE Finger rotation: X0.0 Y0.0 Z0.0
+HANDLE Finger scale: X1.0 Y1.0 Z1.0
+HANDLE Finger groups: Finger, 
+
+Name: Inner distal
+Inner distal Type: MESH
+Inner distal transform: X0.0 Y2.0 Z0.0
+Inner distal rotation: X0.0 Y0.0 Z0.0
+Inner distal scale: X1.0 Y1.0 Z1.0
+Inner distal groups: Finger, 
+Inner distal parent: HANDLE Finger
+Inner distal mesh: Inner distal
+Inner distal materials: PLA White, 
+Inner distal modifiers: 
   #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE Finger
@@ -16,17 +34,44 @@ BOOLEAN Finger top cover distal modifers:
         Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean.M2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes
+  #4 Name: Boolean.Ligament, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
 
-Name: BOOLEAN Finger top cover proximal
-BOOLEAN Finger top cover proximal Type: MESH
-BOOLEAN Finger top cover proximal transform: X0.0 Y10.0 Z0.0
-BOOLEAN Finger top cover proximal rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Finger top cover proximal scale: X1.0 Y1.0 Z1.0
-BOOLEAN Finger top cover proximal groups: Finger, 
-BOOLEAN Finger top cover proximal parent: HANDLE Finger
-BOOLEAN Finger top cover proximal mesh: BOOLEAN Finger top cover proximal
-BOOLEAN Finger top cover proximal materials: Boolean difference, 
-BOOLEAN Finger top cover proximal modifers: 
+Name: Inner proximal
+Inner proximal Type: MESH
+Inner proximal transform: X0.0 Y2.0 Z0.0
+Inner proximal rotation: X0.0 Y0.0 Z0.0
+Inner proximal scale: X1.0 Y1.0 Z1.0
+Inner proximal groups: Finger, 
+Inner proximal parent: HANDLE Finger
+Inner proximal mesh: Inner proximal
+Inner proximal materials: PLA White, 
+Inner proximal modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean.M2, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes
+  #4 Name: Boolean.Ligament, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
+
+Name: Ligament
+Ligament Type: MESH
+Ligament transform: X0.0 Y40.499996185302734 Z0.0
+Ligament rotation: X0.0 Y0.0 Z0.0
+Ligament scale: X1.0 Y1.0 Z1.0
+Ligament groups: None
+Ligament parent: HANDLE Finger
+Ligament mesh: Ligament
+Ligament materials: NF Black, 
+Ligament modifiers: 
   #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE Finger
@@ -36,28 +81,28 @@ BOOLEAN Finger top cover proximal modifers:
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
-Name: Finger top cover distal
-Finger top cover distal Type: MESH
-Finger top cover distal transform: X0.0 Y40.5 Z9.5367431640625e-07
-Finger top cover distal rotation: X0.0 Y0.0 Z0.0
-Finger top cover distal scale: X1.0 Y1.0 Z1.0
-Finger top cover distal groups: Finger, 
-Finger top cover distal parent: HANDLE Finger
-Finger top cover distal mesh: Finger top cover distal
-Finger top cover distal materials: None
-Finger top cover distal modifers: 
+Name: Silicone cover
+Silicone cover Type: MESH
+Silicone cover transform: X0.0 Y2.0 Z0.0
+Silicone cover rotation: X0.0 Y0.0 Z0.0
+Silicone cover scale: X1.0 Y1.0 Z1.0
+Silicone cover groups: Finger, 
+Silicone cover parent: HANDLE Finger
+Silicone cover mesh: Silicone cover
+Silicone cover materials: Silicone, 
+Silicone cover modifiers: 
   #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #2 Name: Subsurf, Type: SUBSURF
+  #2 Name: Solidify, Type: SOLIDIFY
+  #3 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Boolean.FingerTopCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Finger top cover distal
-  #4 Name: Boolean.SilcioneCover, Type: BOOLEAN
-stal Type: MESH
+
+Name: Top cover distal
+Top cover distal Type: MESH
 Top cover distal transform: X0.0 Y40.5 Z9.5367431640625e-07
 Top cover distal rotation: X0.0 Y0.0 Z0.0
 Top cover distal scale: X1.0 Y1.0 Z1.0
@@ -75,7 +120,7 @@ Top cover distal modifiers:
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #3 Name: Boolean.FingerTopCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Silicone cover
+        Operation: DIFFERENCE, Object: None
   #4 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes
 
@@ -114,7 +159,7 @@ Top cover pad proximal modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #2 Name: Solidify.001, Type: SOLIDIFY
+  #2 Name: Solidify, Type: SOLIDIFY
   #3 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
@@ -131,11 +176,11 @@ Top cover proximal modifiers:
   #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE Finger
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Merge: True, Merge Limit: 0.10000000149011612 mm
         Clipping: True
         Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Boolean.FingerTopCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Silicone cover
+  #3 Name: Boolean.M2, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes
 
