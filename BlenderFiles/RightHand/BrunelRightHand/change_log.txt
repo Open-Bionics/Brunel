@@ -19,8 +19,6 @@ Name: 3rd Finger
 3rd Finger scale: X0.800000011920929 Y0.8500000238418579 Z0.800000011920929
 3rd Finger groups: None
 
-<<<<<<< HEAD
-=======
 Name: 4th Finger
 4th Finger Type: EMPTY
 4th Finger transform: X38.23115158081055 Y-2.4619059562683105 Z-3.100600004196167
@@ -70,7 +68,6 @@ BOOLEAN PCB Chestnut mesh: BOOLEAN PCB Chestnut
 BOOLEAN PCB Chestnut materials: Boolean difference, 
 BOOLEAN PCB Chestnut modifiers: None
 
->>>>>>> master
 Name: BOOLEAN PQ12 exteneed 0.3 mm tolerance
 BOOLEAN PQ12 exteneed 0.3 mm tolerance Type: MESH
 BOOLEAN PQ12 exteneed 0.3 mm tolerance transform: X27.009235382080078 Y-59.47224426269531 Z1.5496773719787598
@@ -80,7 +77,7 @@ BOOLEAN PQ12 exteneed 0.3 mm tolerance groups: Booleans,
 BOOLEAN PQ12 exteneed 0.3 mm tolerance parent: PQ12 extended
 BOOLEAN PQ12 exteneed 0.3 mm tolerance mesh: BOOLEAN PQ12 exteneed 0.3 mm tolerance
 BOOLEAN PQ12 exteneed 0.3 mm tolerance materials: Boolean difference, 
-BOOLEAN PQ12 exteneed 0.3 mm tolerance modifers: None
+BOOLEAN PQ12 exteneed 0.3 mm tolerance modifiers: None
 
 Name: BOOLEAN Tendon Channels
 BOOLEAN Tendon Channels Type: MESH
@@ -150,14 +147,7 @@ Conical spring scale: X0.0009999870089814067 Y0.0009999871253967285 Z0.000999986
 Conical spring groups: Actuator Block, Thumb, 
 Conical spring mesh: Conical spring
 Conical spring materials: Steel, 
-Conical spring modifers: None
-
-Name: Finger
-Finger Type: EMPTY
-Finger transform: X38.23115158081055 Y-2.4619059562683105 Z-3.100600004196167
-Finger rotation: X-0.007619168143719435 Y0.17652077972888947 Z-0.1745329201221466
-Finger scale: X0.800000011920929 Y0.75 Z0.800000011920929
-Finger groups: None
+Conical spring modifiers: None
 
 Name: Finger Sleak flute.1
 Finger Sleak flute.1 Type: MESH
@@ -167,8 +157,12 @@ Finger Sleak flute.1 scale: X0.9999997019767761 Y0.9476726651191711 Z1.0
 Finger Sleak flute.1 groups: None
 Finger Sleak flute.1 mesh: Finger Sleak flute base
 Finger Sleak flute.1 materials: Ninjalfex, 
-Finger Sleak flute.1 modifers: 
+Finger Sleak flute.1 modifiers: 
   #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
@@ -180,8 +174,12 @@ Finger Sleak flute.2 scale: X1.0 Y1.0757888555526733 Z1.0
 Finger Sleak flute.2 groups: None
 Finger Sleak flute.2 mesh: Finger Sleak flute base
 Finger Sleak flute.2 materials: Ninjalfex, 
-Finger Sleak flute.2 modifers: 
+Finger Sleak flute.2 modifiers: 
   #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
@@ -193,8 +191,12 @@ Finger Sleak flute.3 scale: X1.0 Y1.0133124589920044 Z1.0
 Finger Sleak flute.3 groups: None
 Finger Sleak flute.3 mesh: Finger Sleak flute base
 Finger Sleak flute.3 materials: Ninjalfex, 
-Finger Sleak flute.3 modifers: 
+Finger Sleak flute.3 modifiers: 
   #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
@@ -206,8 +208,12 @@ Finger Sleak flute.4 scale: X1.0 Y0.8543535470962524 Z0.9999997019767761
 Finger Sleak flute.4 groups: None
 Finger Sleak flute.4 mesh: Finger Sleak flute base
 Finger Sleak flute.4 materials: Ninjalfex, 
-Finger Sleak flute.4 modifers: 
+Finger Sleak flute.4 modifiers: 
   #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
@@ -267,7 +273,7 @@ Palm Inner scale: X1.0 Y1.0 Z1.0
 Palm Inner groups: Actuator Block, 
 Palm Inner mesh: Palm Inner
 Palm Inner materials: PLA, 
-Palm Inner modifers: 
+Palm Inner modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Boolean.PQ12, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
@@ -293,13 +299,8 @@ Palm Simple rotation: X-0.0 Y3.141592502593994 Z-0.0
 Palm Simple scale: X1.0 Y1.0 Z1.0
 Palm Simple groups: None
 Palm Simple mesh: Palm Simple
-<<<<<<< HEAD
-Palm Simple materials: Ninjalfex, 
-Palm Simple modifers: 
-=======
 Palm Simple materials: PLA Black, NF White, 
 Palm Simple modifiers: 
->>>>>>> master
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
@@ -311,7 +312,7 @@ Palm.000 scale: X1.0 Y1.0 Z1.0
 Palm.000 groups: None
 Palm.000 mesh: Palm
 Palm.000 materials: Ninjalfex, 
-Palm.000 modifers: 
+Palm.000 modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
@@ -323,7 +324,7 @@ Palm.001 scale: X1.0 Y1.0 Z1.0
 Palm.001 groups: None
 Palm.001 mesh: Palm.001
 Palm.001 materials: Ninjalfex, 
-Palm.001 modifers: 
+Palm.001 modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
@@ -335,7 +336,7 @@ Palm.002 scale: X1.0 Y1.0 Z1.0
 Palm.002 groups: None
 Palm.002 mesh: Palm.002
 Palm.002 materials: Ninjalfex, 
-Palm.002 modifers: 
+Palm.002 modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
@@ -347,7 +348,7 @@ PCB Chestnut scale: X1.0 Y1.0 Z1.0
 PCB Chestnut groups: Actuator Block, 
 PCB Chestnut mesh: PCB Chestnut
 PCB Chestnut materials: FR4, Component, Black plastic, Firgelli Connector, 
-PCB Chestnut modifers: None
+PCB Chestnut modifiers: None
 
 Name: PQ12 extended
 PQ12 extended Type: MESH
@@ -357,7 +358,7 @@ PQ12 extended scale: X1.0 Y1.0 Z1.0
 PQ12 extended groups: Actuator Block, 
 PQ12 extended mesh: PQ12 extended
 PQ12 extended materials: PQ12 housing plastic, 
-PQ12 extended modifers: None
+PQ12 extended modifiers: None
 
 Name: Thumb pivot dowel.000
 Thumb pivot dowel.000 Type: MESH
@@ -387,7 +388,7 @@ Thumb Sleak flute.0 scale: X0.9999997019767761 Y0.9476726651191711 Z1.0
 Thumb Sleak flute.0 groups: None
 Thumb Sleak flute.0 mesh: Thumb Sleak flute
 Thumb Sleak flute.0 materials: Ninjalfex, 
-Thumb Sleak flute.0 modifers: 
+Thumb Sleak flute.0 modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
@@ -398,7 +399,7 @@ BOOLEAN M2 Bolt Holes rotation: X3.141592502593994 Y-0.0 Z0.0
 BOOLEAN M2 Bolt Holes scale: X1.0 Y1.0 Z1.0
 BOOLEAN M2 Bolt Holes groups: Finger, 
 BOOLEAN M2 Bolt Holes parent: HANDLE Finger
-BOOLEAN M2 Bolt Holes mesh: Boolean - Hand M3 Bolt Holes.R
+BOOLEAN M2 Bolt Holes mesh: BOOLEAN M2 Bolt Holes
 BOOLEAN M2 Bolt Holes materials: Boolean difference, 
 BOOLEAN M2 Bolt Holes modifiers: None
 
@@ -409,48 +410,88 @@ HANDLE Finger rotation: X0.0 Y0.0 Z0.0
 HANDLE Finger scale: X1.0 Y1.0 Z1.0
 HANDLE Finger groups: Finger, 
 
-Name: BOOLEAN Finger top cover distal
-BOOLEAN Finger top cover distal Type: MESH
-BOOLEAN Finger top cover distal transform: X0.0 Y50.5 Z0.0
-BOOLEAN Finger top cover distal rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Finger top cover distal scale: X1.0 Y1.0 Z1.0
-BOOLEAN Finger top cover distal groups: Finger, 
-BOOLEAN Finger top cover distal parent: HANDLE Finger
-BOOLEAN Finger top cover distal mesh: BOOLEAN Finger top cover distal
-BOOLEAN Finger top cover distal materials: Boolean difference, 
-BOOLEAN Finger top cover distal modifers: 
+Name: Top cover pad  distal
+Top cover pad  distal Type: MESH
+Top cover pad  distal transform: X0.0 Y40.5 Z9.5367431640625e-07
+Top cover pad  distal rotation: X0.0 Y0.0 Z0.0
+Top cover pad  distal scale: X1.0 Y1.0 Z1.0
+Top cover pad  distal groups: Finger, 
+Top cover pad  distal parent: HANDLE Finger
+Top cover pad  distal mesh: Top cover pad  distal
+Top cover pad  distal materials: NF White, 
+Top cover pad  distal modifiers: 
   #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
-Name: BOOLEAN Finger top cover proximal
-BOOLEAN Finger top cover proximal Type: MESH
-BOOLEAN Finger top cover proximal transform: X0.0 Y10.0 Z0.0
-BOOLEAN Finger top cover proximal rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Finger top cover proximal scale: X1.0 Y1.0 Z1.0
-BOOLEAN Finger top cover proximal groups: Finger, 
-BOOLEAN Finger top cover proximal parent: HANDLE Finger
-BOOLEAN Finger top cover proximal mesh: BOOLEAN Finger top cover proximal
-BOOLEAN Finger top cover proximal materials: Boolean difference, 
-BOOLEAN Finger top cover proximal modifers: 
+Name: Top cover pad proximal
+Top cover pad proximal Type: MESH
+Top cover pad proximal transform: X0.0 Y0.0 Z0.0
+Top cover pad proximal rotation: X0.0 Y0.0 Z0.0
+Top cover pad proximal scale: X1.0 Y1.0 Z1.0
+Top cover pad proximal groups: Finger, 
+Top cover pad proximal parent: HANDLE Finger
+Top cover pad proximal mesh: Top cover pad proximal
+Top cover pad proximal materials: NF White, 
+Top cover pad proximal modifiers: 
   #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #2 Name: Solidify, Type: SOLIDIFY
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Top cover proximal
+Top cover proximal Type: MESH
+Top cover proximal transform: X0.0 Y0.0 Z0.0
+Top cover proximal rotation: X0.0 Y0.0 Z0.0
+Top cover proximal scale: X1.0 Y1.0 Z1.0
+Top cover proximal groups: Finger, 
+Top cover proximal parent: HANDLE Finger
+Top cover proximal mesh: Top cover proximal
+Top cover proximal materials: PLA Black, 
+Top cover proximal modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-<<<<<<< HEAD
+  #3 Name: Boolean.M2, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes
 
-Name: Finger top cover distal
-Finger top cover distal Type: MESH
-Finger top cover distal transform: X0.0 Y40.5 Z9.5367431640625e-07
-Finger top cover distal rotation: X0.0 Y0.0 Z0.0
-Finger top cover distal scale: X1.0 Y1.0 Z1.0
-Finger top cover distal groups: Finger, 
-Finger top cover distal parent: HANDLE Finger
-Finger top cover distal mesh: Finger top cover distal
-Finger top cover distal materials: None
-Finger top cover distal modifers: 
-=======
-  #3 Name: Boolean.FingerTopCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Silicone cover
+Name: Inner proximal
+Inner proximal Type: MESH
+Inner proximal transform: X0.0 Y2.0 Z0.0
+Inner proximal rotation: X0.0 Y0.0 Z0.0
+Inner proximal scale: X1.0 Y1.0 Z1.0
+Inner proximal groups: Finger, 
+Inner proximal parent: HANDLE Finger
+Inner proximal mesh: Inner proximal
+Inner proximal materials: PLA White, 
+Inner proximal modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean.M2, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes
+  #4 Name: Boolean.Ligament, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
 
 Name: Top cover distal
 Top cover distal Type: MESH
@@ -462,26 +503,59 @@ Top cover distal parent: HANDLE Finger
 Top cover distal mesh: Top cover distal
 Top cover distal materials: PLA Black, 
 Top cover distal modifiers: 
->>>>>>> master
   #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #3 Name: Boolean.FingerTopCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Finger top cover distal
+        Operation: DIFFERENCE, Object: None
+  #4 Name: Boolean.M2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes
 
-Name: Finger top cover proximal
-Finger top cover proximal Type: MESH
-Finger top cover proximal transform: X0.0 Y0.0 Z0.0
-Finger top cover proximal rotation: X0.0 Y0.0 Z0.0
-Finger top cover proximal scale: X1.0 Y1.0 Z1.0
-Finger top cover proximal groups: Finger, 
-Finger top cover proximal parent: HANDLE Finger
-Finger top cover proximal mesh: Finger top cover proximal
-Finger top cover proximal materials: None
-Finger top cover proximal modifers: 
+Name: Silicone cover
+Silicone cover Type: MESH
+Silicone cover transform: X0.0 Y2.0 Z0.0
+Silicone cover rotation: X0.0 Y0.0 Z0.0
+Silicone cover scale: X1.0 Y1.0 Z1.0
+Silicone cover groups: Finger, 
+Silicone cover parent: HANDLE Finger
+Silicone cover mesh: Silicone cover
+Silicone cover materials: Silicone, 
+Silicone cover modifiers: 
   #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #2 Name: Solidify, Type: SOLIDIFY
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Inner distal
+Inner distal Type: MESH
+Inner distal transform: X0.0 Y2.0 Z0.0
+Inner distal rotation: X0.0 Y0.0 Z0.0
+Inner distal scale: X1.0 Y1.0 Z1.0
+Inner distal groups: Finger, 
+Inner distal parent: HANDLE Finger
+Inner distal mesh: Inner distal
+Inner distal materials: PLA White, 
+Inner distal modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Boolean.FingerTopCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Finger top cover proximal
+  #3 Name: Boolean.M2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes
+  #4 Name: Boolean.Ligament, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
 
