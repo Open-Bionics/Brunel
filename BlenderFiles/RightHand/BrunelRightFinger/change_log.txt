@@ -1,3 +1,21 @@
+Name: BOOLEAN Ligament
+BOOLEAN Ligament Type: MESH
+BOOLEAN Ligament transform: X0.0 Y40.499996185302734 Z0.0
+BOOLEAN Ligament rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Ligament scale: X1.0 Y1.0 Z1.0
+BOOLEAN Ligament groups: None
+BOOLEAN Ligament parent: HANDLE Finger
+BOOLEAN Ligament mesh: BOOLEAN Ligament
+BOOLEAN Ligament materials: Boolean difference.001, 
+BOOLEAN Ligament modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: BOOLEAN M2 Bolt Holes
 BOOLEAN M2 Bolt Holes Type: MESH
 BOOLEAN M2 Bolt Holes transform: X0.0 Y65.0 Z-1.5
@@ -37,7 +55,7 @@ Inner distal modifiers:
   #3 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes
   #4 Name: Boolean.Ligament, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament
 
 Name: Inner proximal
 Inner proximal Type: MESH
@@ -60,14 +78,14 @@ Inner proximal modifiers:
   #3 Name: Boolean.M2, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes
   #4 Name: Boolean.Ligament, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament
 
 Name: Ligament
 Ligament Type: MESH
 Ligament transform: X0.0 Y40.499996185302734 Z0.0
 Ligament rotation: X0.0 Y0.0 Z0.0
 Ligament scale: X1.0 Y1.0 Z1.0
-Ligament groups: None
+Ligament groups: Finger, 
 Ligament parent: HANDLE Finger
 Ligament mesh: Ligament
 Ligament materials: NF Black, 
