@@ -1,34 +1,34 @@
 Name: 1st Finger
 1st Finger Type: EMPTY
-1st Finger transform: X-20.0 Y1.0 Z-1.0
+1st Finger transform: X-18.0 Y-1.0 Z-1.0
 1st Finger rotation: X-1.0470657230143843e-07 Y-0.08726680278778076 Z0.08726663887500763
 1st Finger scale: X0.8000001907348633 Y0.8000001907348633 Z0.9000000357627869
 1st Finger groups: None
 
 Name: 2nd Finger
 2nd Finger Type: EMPTY
-2nd Finger transform: X0.0 Y2.0 Z0.0
+2nd Finger transform: X0.0 Y0.0 Z0.0
 2nd Finger rotation: X0.0 Y0.0 Z0.0
 2nd Finger scale: X0.800000011920929 Y0.8999999761581421 Z0.8999999761581421
 2nd Finger groups: None
 
 Name: 3rd Finger
 3rd Finger Type: EMPTY
-3rd Finger transform: X20.0 Y0.0 Z-1.0
+3rd Finger transform: X18.0 Y-1.0 Z-1.0
 3rd Finger rotation: X2.2427477119890682e-07 Y0.08220553398132324 Z-0.08726644515991211
 3rd Finger scale: X0.800000011920929 Y0.8500000238418579 Z0.800000011920929
 3rd Finger groups: None
 
 Name: 4th Finger
 4th Finger Type: EMPTY
-4th Finger transform: X38.0 Y-2.5 Z-3.0
+4th Finger transform: X34.0 Y-2.5 Z-3.0
 4th Finger rotation: X-0.007619168143719435 Y0.17652077972888947 Z-0.1745329201221466
 4th Finger scale: X0.800000011920929 Y0.75 Z0.800000011920929
 4th Finger groups: None
 
 Name: Actuator Block
 Actuator Block Type: EMPTY
-Actuator Block transform: X7.5 Y-10.0 Z-5.0
+Actuator Block transform: X7.5 Y-21.0 Z-3.0
 Actuator Block rotation: X0.0 Y0.0 Z0.0
 Actuator Block scale: X1.0 Y1.0 Z1.0
 Actuator Block groups: None
@@ -65,8 +65,28 @@ BOOLEAN GALA cover M2 Bolt Hole scale: X0.9999999403953552 Y0.9999999403953552 Z
 BOOLEAN GALA cover M2 Bolt Hole groups: Actuator Block, Booleans, 
 BOOLEAN GALA cover M2 Bolt Hole parent: Actuator Block
 BOOLEAN GALA cover M2 Bolt Hole mesh: BOOLEAN GALA cover M2 Bolt Hole
-BOOLEAN GALA cover M2 Bolt Hole materials: Boolean difference.001, 
+BOOLEAN GALA cover M2 Bolt Hole materials: Boolean difference, 
 BOOLEAN GALA cover M2 Bolt Hole modifiers: None
+
+Name: BOOLEAN Ligament
+BOOLEAN Ligament Type: MESH
+BOOLEAN Ligament transform: X0.0 Y0.0 Z0.0
+BOOLEAN Ligament rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Ligament scale: X1.0 Y1.0 Z1.0
+BOOLEAN Ligament groups: Booleans, 
+BOOLEAN Ligament mesh: BOOLEAN Ligament
+BOOLEAN Ligament materials: Boolean difference, 
+BOOLEAN Ligament modifiers: None
+
+Name: BOOLEAN Ligament cover M2 bolt hole
+BOOLEAN Ligament cover M2 bolt hole Type: MESH
+BOOLEAN Ligament cover M2 bolt hole transform: X7.25 Y-15.0 Z0.20000000298023224
+BOOLEAN Ligament cover M2 bolt hole rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Ligament cover M2 bolt hole scale: X1.0 Y1.0 Z1.0
+BOOLEAN Ligament cover M2 bolt hole groups: None
+BOOLEAN Ligament cover M2 bolt hole mesh: BOOLEAN Ligament cover M2 bolt hole
+BOOLEAN Ligament cover M2 bolt hole materials: Boolean difference, 
+BOOLEAN Ligament cover M2 bolt hole modifiers: None
 
 Name: BOOLEAN PCB Chestnut
 BOOLEAN PCB Chestnut Type: MESH
@@ -296,21 +316,25 @@ Palm Inner materials: PLA,
 Palm Inner modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Boolean.PQ12, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
+        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
   #3 Name: Boolean.ConicalSpring, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
+        Operation: DIFFERENCE, Object: BOOLEAN Conical spring
   #4 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel
   #5 Name: Boolean.ThumbPivotDowel000, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
+        Operation: DIFFERENCE, Object: Thumb pivot dowel.000
   #6 Name: Boolean.ThumbPivotDowel001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel.001
   #7 Name: Boolean.ThumbTendonChannel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon channel
   #8 Name: Boolean.TendonChannels, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
+        Operation: DIFFERENCE, Object: BOOLEAN Tendon Channels
   #9 Name: Boolean.GALACoverM2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
+        Operation: DIFFERENCE, Object: BOOLEAN GALA cover M2 Bolt Hole
+  #10 Name: Boolean.Ligament, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament
+  #11 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
 
 Name: Palm Simple
 Palm Simple Type: MESH
@@ -417,7 +441,7 @@ Thumb Sleak flute.0 modifiers:
 
 Name: BOOLEAN M2 Bolt Holes
 BOOLEAN M2 Bolt Holes Type: MESH
-BOOLEAN M2 Bolt Holes transform: X0.0 Y65.0 Z-1.5
+BOOLEAN M2 Bolt Holes transform: X0.0 Y63.5 Z-1.5
 BOOLEAN M2 Bolt Holes rotation: X3.141592502593994 Y-0.0 Z0.0
 BOOLEAN M2 Bolt Holes scale: X1.0 Y1.0 Z1.0
 BOOLEAN M2 Bolt Holes groups: Finger, 
@@ -435,7 +459,7 @@ HANDLE Finger groups: Finger,
 
 Name: Top cover pad  distal
 Top cover pad  distal Type: MESH
-Top cover pad  distal transform: X0.0 Y40.5 Z9.5367431640625e-07
+Top cover pad  distal transform: X0.0 Y39.0 Z9.5367431640625e-07
 Top cover pad  distal rotation: X0.0 Y0.0 Z0.0
 Top cover pad  distal scale: X1.0 Y1.0 Z1.0
 Top cover pad  distal groups: Finger, 
@@ -454,7 +478,7 @@ Top cover pad  distal modifiers:
 
 Name: Top cover pad proximal
 Top cover pad proximal Type: MESH
-Top cover pad proximal transform: X0.0 Y0.0 Z0.0
+Top cover pad proximal transform: X0.0 Y-1.5 Z0.0
 Top cover pad proximal rotation: X0.0 Y0.0 Z0.0
 Top cover pad proximal scale: X1.0 Y1.0 Z1.0
 Top cover pad proximal groups: Finger, 
@@ -474,7 +498,7 @@ Top cover pad proximal modifiers:
 
 Name: Top cover proximal
 Top cover proximal Type: MESH
-Top cover proximal transform: X0.0 Y0.0 Z0.0
+Top cover proximal transform: X0.0 Y-1.5 Z0.0
 Top cover proximal rotation: X0.0 Y0.0 Z0.0
 Top cover proximal scale: X1.0 Y1.0 Z1.0
 Top cover proximal groups: Finger, 
@@ -495,7 +519,7 @@ Top cover proximal modifiers:
 
 Name: Top cover distal
 Top cover distal Type: MESH
-Top cover distal transform: X0.0 Y40.5 Z9.5367431640625e-07
+Top cover distal transform: X0.0 Y39.0 Z9.5367431640625e-07
 Top cover distal rotation: X0.0 Y0.0 Z0.0
 Top cover distal scale: X1.0 Y1.0 Z1.0
 Top cover distal groups: Finger, 
@@ -518,7 +542,7 @@ Top cover distal modifiers:
 
 Name: Silicone cover
 Silicone cover Type: MESH
-Silicone cover transform: X0.0 Y2.0 Z0.0
+Silicone cover transform: X0.0 Y0.5 Z0.0
 Silicone cover rotation: X0.0 Y0.0 Z0.0
 Silicone cover scale: X1.0 Y1.0 Z1.0
 Silicone cover groups: Finger, 
@@ -536,9 +560,28 @@ Silicone cover modifiers:
   #3 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
+Name: Ligament
+Ligament Type: MESH
+Ligament transform: X0.0 Y38.999996185302734 Z0.0
+Ligament rotation: X0.0 Y0.0 Z0.0
+Ligament scale: X1.0 Y1.0 Z1.0
+Ligament groups: Finger, 
+Ligament parent: HANDLE Finger
+Ligament mesh: Ligament
+Ligament materials: NF Black, 
+Ligament modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: Inner proximal
 Inner proximal Type: MESH
-Inner proximal transform: X0.0 Y2.0 Z0.0
+Inner proximal transform: X0.0 Y0.5 Z0.0
 Inner proximal rotation: X0.0 Y0.0 Z0.0
 Inner proximal scale: X1.0 Y1.0 Z1.0
 Inner proximal groups: Finger, 
@@ -561,7 +604,7 @@ Inner proximal modifiers:
 
 Name: Inner distal
 Inner distal Type: MESH
-Inner distal transform: X0.0 Y2.0 Z0.0
+Inner distal transform: X0.0 Y0.5 Z0.0
 Inner distal rotation: X0.0 Y0.0 Z0.0
 Inner distal scale: X1.0 Y1.0 Z1.0
 Inner distal groups: Finger, 
@@ -582,39 +625,20 @@ Inner distal modifiers:
   #4 Name: Boolean.Ligament, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament
 
-Name: Ligament
-Ligament Type: MESH
-Ligament transform: X0.0 Y40.499996185302734 Z0.0
-Ligament rotation: X0.0 Y0.0 Z0.0
-Ligament scale: X1.0 Y1.0 Z1.0
-Ligament groups: Finger, 
-Ligament parent: HANDLE Finger
-Ligament mesh: Ligament
-Ligament materials: NF Black, 
-Ligament modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Mirror object: HANDLE Finger
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-
 Name: BOOLEAN Ligament
 BOOLEAN Ligament Type: MESH
-BOOLEAN Ligament transform: X0.0 Y40.499996185302734 Z0.0
+BOOLEAN Ligament transform: X0.0 Y38.999996185302734 Z0.0
 BOOLEAN Ligament rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Ligament scale: X1.0 Y1.0 Z1.0
 BOOLEAN Ligament groups: None
 BOOLEAN Ligament parent: HANDLE Finger
 BOOLEAN Ligament mesh: BOOLEAN Ligament
-BOOLEAN Ligament materials: Boolean difference.001, 
+BOOLEAN Ligament materials: Boolean difference.001, NF Black, 
 BOOLEAN Ligament modifiers: 
   #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
+        Clipping: True
         Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
