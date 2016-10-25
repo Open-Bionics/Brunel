@@ -7,7 +7,7 @@ Name: 1st Finger
 
 Name: 2nd Finger
 2nd Finger Type: EMPTY
-2nd Finger transform: X0.0 Y0.0 Z0.0
+2nd Finger transform: X0.0 Y2.0 Z0.0
 2nd Finger rotation: X0.0 Y0.0 Z0.0
 2nd Finger scale: X0.800000011920929 Y0.8999999761581421 Z0.8999999761581421
 2nd Finger groups: None
@@ -19,23 +19,135 @@ Name: 3rd Finger
 3rd Finger scale: X0.800000011920929 Y0.8500000238418579 Z0.800000011920929
 3rd Finger groups: None
 
+<<<<<<< HEAD
+=======
+Name: 4th Finger
+4th Finger Type: EMPTY
+4th Finger transform: X38.23115158081055 Y-2.4619059562683105 Z-3.100600004196167
+4th Finger rotation: X-0.007619168143719435 Y0.17652077972888947 Z-0.1745329201221466
+4th Finger scale: X0.800000011920929 Y0.75 Z0.800000011920929
+4th Finger groups: None
+
+Name: BOOLEAN Cable tidy
+BOOLEAN Cable tidy Type: MESH
+BOOLEAN Cable tidy transform: X29.10655975341797 Y-57.19865417480469 Z11.21685791015625
+BOOLEAN Cable tidy rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Cable tidy scale: X1.0 Y1.0 Z1.0
+BOOLEAN Cable tidy groups: Booleans, 
+BOOLEAN Cable tidy mesh: BOOLEAN Cable tidy
+BOOLEAN Cable tidy materials: Boolean difference, 
+BOOLEAN Cable tidy modifiers: None
+
+Name: BOOLEAN Conical spring
+BOOLEAN Conical spring Type: MESH
+BOOLEAN Conical spring transform: X-16.0568904876709 Y-53.75602340698242 Z-4.673169136047363
+BOOLEAN Conical spring rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Conical spring scale: X0.9999999403953552 Y1.0 Z0.9999999403953552
+BOOLEAN Conical spring groups: Booleans, 
+BOOLEAN Conical spring mesh: BOOLEAN Conical spring
+BOOLEAN Conical spring materials: Boolean difference, 
+BOOLEAN Conical spring modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN GALA cover M2 Bolt Hole
+BOOLEAN GALA cover M2 Bolt Hole Type: MESH
+BOOLEAN GALA cover M2 Bolt Hole transform: X-8.493403434753418 Y-81.92051696777344 Z-4.473169326782227
+BOOLEAN GALA cover M2 Bolt Hole rotation: X0.0 Y0.0 Z0.0
+BOOLEAN GALA cover M2 Bolt Hole scale: X1.0 Y1.0 Z1.0
+BOOLEAN GALA cover M2 Bolt Hole groups: Actuator Block, Booleans, 
+BOOLEAN GALA cover M2 Bolt Hole mesh: BOOLEAN GALA cover M2 Bolt Hole
+BOOLEAN GALA cover M2 Bolt Hole materials: Boolean difference.001, 
+BOOLEAN GALA cover M2 Bolt Hole modifiers: None
+
+Name: BOOLEAN PCB Chestnut
+BOOLEAN PCB Chestnut Type: MESH
+BOOLEAN PCB Chestnut transform: X6.6065592765808105 Y-53.69884490966797 Z11.516858100891113
+BOOLEAN PCB Chestnut rotation: X0.0 Y-0.0 Z1.570796251296997
+BOOLEAN PCB Chestnut scale: X1.0 Y1.0 Z1.0
+BOOLEAN PCB Chestnut groups: Actuator Block, Booleans, 
+BOOLEAN PCB Chestnut mesh: BOOLEAN PCB Chestnut
+BOOLEAN PCB Chestnut materials: Boolean difference, 
+BOOLEAN PCB Chestnut modifiers: None
+
+>>>>>>> master
 Name: BOOLEAN PQ12 exteneed 0.3 mm tolerance
 BOOLEAN PQ12 exteneed 0.3 mm tolerance Type: MESH
 BOOLEAN PQ12 exteneed 0.3 mm tolerance transform: X27.009235382080078 Y-59.47224426269531 Z1.5496773719787598
 BOOLEAN PQ12 exteneed 0.3 mm tolerance rotation: X-1.6292067073209182e-07 Y3.501773448988388e-07 Z3.1415929794311523
 BOOLEAN PQ12 exteneed 0.3 mm tolerance scale: X0.9999999403953552 Y0.9999998211860657 Z1.0
-BOOLEAN PQ12 exteneed 0.3 mm tolerance groups: None
+BOOLEAN PQ12 exteneed 0.3 mm tolerance groups: Booleans, 
 BOOLEAN PQ12 exteneed 0.3 mm tolerance parent: PQ12 extended
 BOOLEAN PQ12 exteneed 0.3 mm tolerance mesh: BOOLEAN PQ12 exteneed 0.3 mm tolerance
 BOOLEAN PQ12 exteneed 0.3 mm tolerance materials: Boolean difference, 
 BOOLEAN PQ12 exteneed 0.3 mm tolerance modifers: None
+
+Name: BOOLEAN Tendon Channels
+BOOLEAN Tendon Channels Type: MESH
+BOOLEAN Tendon Channels transform: X-23.19467544555664 Y-29.75583267211914 Z-10.314010620117188
+BOOLEAN Tendon Channels rotation: X1.5707963705062866 Y0.0 Z0.0
+BOOLEAN Tendon Channels scale: X1.0 Y1.0 Z1.0
+BOOLEAN Tendon Channels groups: Actuator Block, Booleans, 
+BOOLEAN Tendon Channels mesh: BOOLEAN Tendon Channels
+BOOLEAN Tendon Channels materials: Boolean difference, 
+BOOLEAN Tendon Channels modifiers: None
+
+Name: BOOLEAN Thumb attahment dowel
+BOOLEAN Thumb attahment dowel Type: MESH
+BOOLEAN Thumb attahment dowel transform: X14.156594276428223 Y-76.26822662353516 Z-4.673170566558838
+BOOLEAN Thumb attahment dowel rotation: X0.0 Y1.5707963705062866 Z0.0
+BOOLEAN Thumb attahment dowel scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb attahment dowel groups: Actuator Block, Booleans, Thumb, 
+BOOLEAN Thumb attahment dowel mesh: BOOLEAN Thumb attahment dowel
+BOOLEAN Thumb attahment dowel materials: Boolean difference, 
+BOOLEAN Thumb attahment dowel modifiers: None
+
+Name: BOOLEAN Thumb pivot dowel
+BOOLEAN Thumb pivot dowel Type: MESH
+BOOLEAN Thumb pivot dowel transform: X14.156594276428223 Y-80.26822662353516 Z-4.673170566558838
+BOOLEAN Thumb pivot dowel rotation: X-1.570796251296997 Y2.356194496154785 Z-1.570796251296997
+BOOLEAN Thumb pivot dowel scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb pivot dowel groups: Actuator Block, Booleans, Thumb, 
+BOOLEAN Thumb pivot dowel mesh: BOOLEAN Thumb pivot dowel
+BOOLEAN Thumb pivot dowel materials: Boolean difference, 
+BOOLEAN Thumb pivot dowel modifiers: None
+
+Name: BOOLEAN Thumb pivot dowel for GALA cover
+BOOLEAN Thumb pivot dowel for GALA cover Type: MESH
+BOOLEAN Thumb pivot dowel for GALA cover transform: X14.156594276428223 Y-80.26822662353516 Z-4.673170566558838
+BOOLEAN Thumb pivot dowel for GALA cover rotation: X-1.570796251296997 Y2.356194496154785 Z-1.570796251296997
+BOOLEAN Thumb pivot dowel for GALA cover scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb pivot dowel for GALA cover groups: Actuator Block, Booleans, Thumb, 
+BOOLEAN Thumb pivot dowel for GALA cover mesh: BOOLEAN Thumb pivot dowel for GALA cover
+BOOLEAN Thumb pivot dowel for GALA cover materials: Boolean difference, 
+BOOLEAN Thumb pivot dowel for GALA cover modifiers: None
+
+Name: BOOLEAN Thumb pivot dowel.001
+BOOLEAN Thumb pivot dowel.001 Type: MESH
+BOOLEAN Thumb pivot dowel.001 transform: X12.656594276428223 Y-80.26822662353516 Z-9.67317008972168
+BOOLEAN Thumb pivot dowel.001 rotation: X-1.570796251296997 Y1.570796251296997 Z0.0
+BOOLEAN Thumb pivot dowel.001 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb pivot dowel.001 groups: Actuator Block, Booleans, Thumb, 
+BOOLEAN Thumb pivot dowel.001 mesh: BOOLEAN Thumb pivot dowel.001
+BOOLEAN Thumb pivot dowel.001 materials: Boolean difference, 
+BOOLEAN Thumb pivot dowel.001 modifiers: None
+
+Name: BOOLEAN Thumb tendon channel
+BOOLEAN Thumb tendon channel Type: MESH
+BOOLEAN Thumb tendon channel transform: X14.156594276428223 Y-80.26822662353516 Z-4.673170566558838
+BOOLEAN Thumb tendon channel rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Thumb tendon channel scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb tendon channel groups: Actuator Block, Booleans, Thumb, 
+BOOLEAN Thumb tendon channel mesh: BOOLEAN Thumb tendon channel
+BOOLEAN Thumb tendon channel materials: Boolean difference, 
+BOOLEAN Thumb tendon channel modifiers: None
 
 Name: Conical spring
 Conical spring Type: MESH
 Conical spring transform: X-16.0568904876709 Y-53.75602340698242 Z-4.673169136047363
 Conical spring rotation: X0.0 Y0.0 Z0.0
 Conical spring scale: X0.0009999870089814067 Y0.0009999871253967285 Z0.000999986776150763
-Conical spring groups: None
+Conical spring groups: Actuator Block, Thumb, 
 Conical spring mesh: Conical spring
 Conical spring materials: Steel, 
 Conical spring modifers: None
@@ -99,20 +211,80 @@ Finger Sleak flute.4 modifers:
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
+Name: GALA cover
+GALA cover Type: MESH
+GALA cover transform: X6.606559753417969 Y-45.15056610107422 Z-4.624058723449707
+GALA cover rotation: X0.0 Y0.0 Z0.0
+GALA cover scale: X1.0 Y1.0 Z1.0
+GALA cover groups: Actuator Block, 
+GALA cover mesh: GALA cover
+GALA cover materials: PLA, 
+GALA cover modifiers: 
+  #1 Name: Boolean.ConicalSpring, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Conical spring
+  #2 Name: Boolean.GALACoverM2Bolts, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN GALA cover M2 Bolt Hole
+  #3 Name: Boolean.PQ12s, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
+  #4 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel
+  #5 Name: Boolean.PCB, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut
+  #6 Name: Boolean.CableTidy, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Cable tidy
+  #7 Name: Boolean.ThumbAttachmentDowel.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel for GALA cover
+
+Name: Palm Covered
+Palm Covered Type: MESH
+Palm Covered transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
+Palm Covered rotation: X-0.0 Y3.141592502593994 Z-0.0
+Palm Covered scale: X1.0 Y1.0 Z1.0
+Palm Covered groups: None
+Palm Covered mesh: Palm Covered
+Palm Covered materials: PLA Black, 
+Palm Covered modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Palm Covered top pad
+Palm Covered top pad Type: MESH
+Palm Covered top pad transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
+Palm Covered top pad rotation: X-0.0 Y3.141592502593994 Z-0.0
+Palm Covered top pad scale: X1.0 Y1.0 Z1.0
+Palm Covered top pad groups: None
+Palm Covered top pad mesh: Palm Covered top pad
+Palm Covered top pad materials: NF White, 
+Palm Covered top pad modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: Palm Inner
 Palm Inner Type: MESH
 Palm Inner transform: X6.606559753417969 Y-45.15056610107422 Z-4.624058723449707
 Palm Inner rotation: X0.0 Y0.0 Z0.0
 Palm Inner scale: X1.0 Y1.0 Z1.0
-Palm Inner groups: None
+Palm Inner groups: Actuator Block, 
 Palm Inner mesh: Palm Inner
 Palm Inner materials: PLA, 
 Palm Inner modifers: 
   #1 Name: Bevel, Type: BEVEL
-  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Boolean, Type: BOOLEAN
+  #2 Name: Boolean.PQ12, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
+  #3 Name: Boolean.ConicalSpring, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Conical spring
+  #4 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel
+  #5 Name: Boolean.ThumbPivotDowel000, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel
+  #6 Name: Boolean.ThumbPivotDowel001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel.001
+  #7 Name: Boolean.ThumbTendonChannel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon channel
+  #8 Name: Boolean.TendonChannels, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Tendon Channels
+  #9 Name: Boolean.GALACoverM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN GALA cover M2 Bolt Hole
 
 Name: Palm Simple
 Palm Simple Type: MESH
@@ -121,8 +293,13 @@ Palm Simple rotation: X-0.0 Y3.141592502593994 Z-0.0
 Palm Simple scale: X1.0 Y1.0 Z1.0
 Palm Simple groups: None
 Palm Simple mesh: Palm Simple
+<<<<<<< HEAD
 Palm Simple materials: Ninjalfex, 
 Palm Simple modifers: 
+=======
+Palm Simple materials: PLA Black, NF White, 
+Palm Simple modifiers: 
+>>>>>>> master
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
@@ -167,7 +344,7 @@ PCB Chestnut Type: MESH
 PCB Chestnut transform: X6.6065592765808105 Y-53.69884490966797 Z11.516858100891113
 PCB Chestnut rotation: X0.0 Y-0.0 Z1.570796251296997
 PCB Chestnut scale: X1.0 Y1.0 Z1.0
-PCB Chestnut groups: None
+PCB Chestnut groups: Actuator Block, 
 PCB Chestnut mesh: PCB Chestnut
 PCB Chestnut materials: FR4, Component, Black plastic, Firgelli Connector, 
 PCB Chestnut modifers: None
@@ -177,10 +354,30 @@ PQ12 extended Type: MESH
 PQ12 extended transform: X6.6065592765808105 Y-38.69884490966797 Z0.7168586254119873
 PQ12 extended rotation: X0.0 Y-0.0 Z3.141592502593994
 PQ12 extended scale: X1.0 Y1.0 Z1.0
-PQ12 extended groups: None
+PQ12 extended groups: Actuator Block, 
 PQ12 extended mesh: PQ12 extended
 PQ12 extended materials: PQ12 housing plastic, 
 PQ12 extended modifers: None
+
+Name: Thumb pivot dowel.000
+Thumb pivot dowel.000 Type: MESH
+Thumb pivot dowel.000 transform: X14.156594276428223 Y-80.26822662353516 Z-4.673170566558838
+Thumb pivot dowel.000 rotation: X-0.0 Y1.570796251296997 Z0.0
+Thumb pivot dowel.000 scale: X1.0 Y1.0 Z1.0
+Thumb pivot dowel.000 groups: None
+Thumb pivot dowel.000 mesh: Dowel M3 10mm 
+Thumb pivot dowel.000 materials: Steel, 
+Thumb pivot dowel.000 modifiers: None
+
+Name: Thumb pivot dowel.001
+Thumb pivot dowel.001 Type: MESH
+Thumb pivot dowel.001 transform: X12.656594276428223 Y-80.26822662353516 Z-9.67317008972168
+Thumb pivot dowel.001 rotation: X-1.570796251296997 Y1.570796251296997 Z0.0
+Thumb pivot dowel.001 scale: X1.0 Y1.0 Z1.0
+Thumb pivot dowel.001 groups: Actuator Block, Thumb, 
+Thumb pivot dowel.001 mesh: Dowel M3 10mm .001
+Thumb pivot dowel.001 materials: Steel, 
+Thumb pivot dowel.001 modifiers: None
 
 Name: Thumb Sleak flute.0
 Thumb Sleak flute.0 Type: MESH
@@ -193,6 +390,17 @@ Thumb Sleak flute.0 materials: Ninjalfex,
 Thumb Sleak flute.0 modifers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN M2 Bolt Holes
+BOOLEAN M2 Bolt Holes Type: MESH
+BOOLEAN M2 Bolt Holes transform: X0.0 Y65.0 Z-1.5
+BOOLEAN M2 Bolt Holes rotation: X3.141592502593994 Y-0.0 Z0.0
+BOOLEAN M2 Bolt Holes scale: X1.0 Y1.0 Z1.0
+BOOLEAN M2 Bolt Holes groups: Finger, 
+BOOLEAN M2 Bolt Holes parent: HANDLE Finger
+BOOLEAN M2 Bolt Holes mesh: Boolean - Hand M3 Bolt Holes.R
+BOOLEAN M2 Bolt Holes materials: Boolean difference, 
+BOOLEAN M2 Bolt Holes modifiers: None
 
 Name: HANDLE Finger
 HANDLE Finger Type: EMPTY
@@ -228,6 +436,7 @@ BOOLEAN Finger top cover proximal modifers:
   #1 Name: Mirror, Type: MIRROR
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+<<<<<<< HEAD
 
 Name: Finger top cover distal
 Finger top cover distal Type: MESH
@@ -239,6 +448,21 @@ Finger top cover distal parent: HANDLE Finger
 Finger top cover distal mesh: Finger top cover distal
 Finger top cover distal materials: None
 Finger top cover distal modifers: 
+=======
+  #3 Name: Boolean.FingerTopCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Silicone cover
+
+Name: Top cover distal
+Top cover distal Type: MESH
+Top cover distal transform: X0.0 Y40.5 Z9.5367431640625e-07
+Top cover distal rotation: X0.0 Y0.0 Z0.0
+Top cover distal scale: X1.0 Y1.0 Z1.0
+Top cover distal groups: Finger, 
+Top cover distal parent: HANDLE Finger
+Top cover distal mesh: Top cover distal
+Top cover distal materials: PLA Black, 
+Top cover distal modifiers: 
+>>>>>>> master
   #1 Name: Mirror, Type: MIRROR
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
