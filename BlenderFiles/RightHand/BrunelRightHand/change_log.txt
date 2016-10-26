@@ -68,16 +68,16 @@ BOOLEAN GALA cover M2 Bolt Hole mesh: BOOLEAN GALA cover M2 Bolt Hole
 BOOLEAN GALA cover M2 Bolt Hole materials: Boolean difference, 
 BOOLEAN GALA cover M2 Bolt Hole modifiers: None
 
-Name: BOOLEAN Ligament
-BOOLEAN Ligament Type: MESH
-BOOLEAN Ligament transform: X0.0 Y0.0 Z0.0
-BOOLEAN Ligament rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Ligament scale: X1.0 Y1.0 Z1.0
-BOOLEAN Ligament groups: Actuator Block, Booleans, 
-BOOLEAN Ligament parent: Actuator Block
-BOOLEAN Ligament mesh: BOOLEAN Ligament
-BOOLEAN Ligament materials: Boolean difference, 
-BOOLEAN Ligament modifiers: None
+Name: BOOLEAN Hand Ligament
+BOOLEAN Hand Ligament Type: MESH
+BOOLEAN Hand Ligament transform: X0.0 Y0.0 Z0.0
+BOOLEAN Hand Ligament rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Hand Ligament scale: X1.0 Y1.0 Z1.0
+BOOLEAN Hand Ligament groups: Actuator Block, Booleans, 
+BOOLEAN Hand Ligament parent: Actuator Block
+BOOLEAN Hand Ligament mesh: BOOLEAN Hand Ligament
+BOOLEAN Hand Ligament materials: Boolean difference, 
+BOOLEAN Hand Ligament modifiers: None
 
 Name: BOOLEAN Ligament cover M2 bolt hole
 BOOLEAN Ligament cover M2 bolt hole Type: MESH
@@ -189,6 +189,16 @@ Conical spring mesh: Conical spring
 Conical spring materials: Steel, 
 Conical spring modifiers: None
 
+Name: exporter
+exporter Type: MESH
+exporter transform: X0.0 Y0.0 Z0.0
+exporter rotation: X0.0 Y0.0 Z0.0
+exporter scale: X1.0 Y1.0 Z1.0
+exporter groups: None
+exporter mesh: exporter.003
+exporter materials: None
+exporter modifiers: None
+
 Name: Finger Sleak flute.1
 Finger Sleak flute.1 Type: MESH
 Finger Sleak flute.1 transform: X-18.541624069213867 Y-0.28145551681518555 Z-0.7923046350479126
@@ -282,15 +292,16 @@ GALA cover modifiers:
   #7 Name: Boolean.ThumbAttachmentDowel.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
 
-Name: Ligament
-Ligament Type: MESH
-Ligament transform: X0.0 Y0.0 Z0.0
-Ligament rotation: X0.0 Y0.0 Z0.0
-Ligament scale: X1.0 Y1.0 Z1.0
-Ligament groups: None
-Ligament mesh: Ligament
-Ligament materials: NF Black, 
-Ligament modifiers: None
+Name: Hand Ligament
+Hand Ligament Type: MESH
+Hand Ligament transform: X0.0 Y0.0 Z0.0
+Hand Ligament rotation: X0.0 Y0.0 Z0.0
+Hand Ligament scale: X1.0 Y1.0 Z1.0
+Hand Ligament groups: Actuator Block, 
+Hand Ligament parent: Actuator Block
+Hand Ligament mesh: Hand Ligament
+Hand Ligament materials: NF Black, 
+Hand Ligament modifiers: None
 
 Name: Ligament cover
 Ligament cover Type: MESH
@@ -383,7 +394,7 @@ Palm Inner modifiers:
   #9 Name: Boolean.GALACoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN GALA cover M2 Bolt Hole
   #10 Name: Boolean.Ligament, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Ligament
+        Operation: DIFFERENCE, Object: BOOLEAN Hand Ligament
   #11 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
 
