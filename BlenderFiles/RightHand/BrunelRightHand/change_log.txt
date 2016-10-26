@@ -73,7 +73,8 @@ BOOLEAN Ligament Type: MESH
 BOOLEAN Ligament transform: X0.0 Y0.0 Z0.0
 BOOLEAN Ligament rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Ligament scale: X1.0 Y1.0 Z1.0
-BOOLEAN Ligament groups: Booleans, 
+BOOLEAN Ligament groups: Actuator Block, Booleans, 
+BOOLEAN Ligament parent: Actuator Block
 BOOLEAN Ligament mesh: BOOLEAN Ligament
 BOOLEAN Ligament materials: Boolean difference, 
 BOOLEAN Ligament modifiers: None
@@ -83,7 +84,8 @@ BOOLEAN Ligament cover M2 bolt hole Type: MESH
 BOOLEAN Ligament cover M2 bolt hole transform: X7.25 Y-15.0 Z0.20000000298023224
 BOOLEAN Ligament cover M2 bolt hole rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Ligament cover M2 bolt hole scale: X1.0 Y1.0 Z1.0
-BOOLEAN Ligament cover M2 bolt hole groups: None
+BOOLEAN Ligament cover M2 bolt hole groups: Actuator Block, Booleans, 
+BOOLEAN Ligament cover M2 bolt hole parent: Actuator Block
 BOOLEAN Ligament cover M2 bolt hole mesh: BOOLEAN Ligament cover M2 bolt hole
 BOOLEAN Ligament cover M2 bolt hole materials: Boolean difference, 
 BOOLEAN Ligament cover M2 bolt hole modifiers: None
@@ -280,6 +282,55 @@ GALA cover modifiers:
   #7 Name: Boolean.ThumbAttachmentDowel.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
 
+Name: Ligament
+Ligament Type: MESH
+Ligament transform: X0.0 Y0.0 Z0.0
+Ligament rotation: X0.0 Y0.0 Z0.0
+Ligament scale: X1.0 Y1.0 Z1.0
+Ligament groups: None
+Ligament mesh: Ligament
+Ligament materials: NF Black, 
+Ligament modifiers: None
+
+Name: Ligament cover
+Ligament cover Type: MESH
+Ligament cover transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+Ligament cover rotation: X0.0 Y-0.0 Z0.0
+Ligament cover scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+Ligament cover groups: Actuator Block, 
+Ligament cover parent: Actuator Block
+Ligament cover mesh: Ligament cover
+Ligament cover materials: PLA, 
+Ligament cover modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: UNION, Object: Ligament cover prongs
+
+Name: Ligament cover prong target
+Ligament cover prong target Type: MESH
+Ligament cover prong target transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+Ligament cover prong target rotation: X0.0 Y-0.0 Z0.0
+Ligament cover prong target scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+Ligament cover prong target groups: Actuator Block, 
+Ligament cover prong target parent: Actuator Block
+Ligament cover prong target mesh: Ligament cover
+Ligament cover prong target materials: PLA, 
+Ligament cover prong target modifiers: None
+
+Name: Ligament cover prongs
+Ligament cover prongs Type: MESH
+Ligament cover prongs transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+Ligament cover prongs rotation: X0.0 Y-0.0 Z0.0
+Ligament cover prongs scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+Ligament cover prongs groups: Actuator Block, 
+Ligament cover prongs parent: Actuator Block
+Ligament cover prongs mesh: Ligament cover prongs
+Ligament cover prongs materials: PLA, 
+Ligament cover prongs modifiers: 
+  #1 Name: Shrinkwrap, Type: SHRINKWRAP
+  #2 Name: Solidify, Type: SOLIDIFY
+
 Name: Palm Covered
 Palm Covered Type: MESH
 Palm Covered transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
@@ -322,7 +373,7 @@ Palm Inner modifiers:
   #4 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel
   #5 Name: Boolean.ThumbPivotDowel000, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Thumb pivot dowel.000
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel
   #6 Name: Boolean.ThumbPivotDowel001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel.001
   #7 Name: Boolean.ThumbTendonChannel, Type: BOOLEAN

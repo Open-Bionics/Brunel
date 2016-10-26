@@ -1,0 +1,12 @@
+Name: Ligament
+Ligament Type: MESH
+Ligament transform: X0.0 Y0.0 Z0.0
+Ligament rotation: X0.0 Y0.0 Z0.0
+Ligament scale: X1.0 Y1.0 Z1.0
+Ligament groups: None
+Ligament mesh: Ligament
+Ligament materials: NF Black, 
+Ligament modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
