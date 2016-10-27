@@ -331,13 +331,13 @@ Ligament cover prong target modifiers: None
 
 Name: Ligament cover prongs
 Ligament cover prongs Type: MESH
-Ligament cover prongs transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
-Ligament cover prongs rotation: X0.0 Y-0.0 Z0.0
-Ligament cover prongs scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+Ligament cover prongs transform: X0.0 Y0.0 Z0.0
+Ligament cover prongs rotation: X0.0 Y0.0 Z0.0
+Ligament cover prongs scale: X1.0 Y1.0 Z1.0
 Ligament cover prongs groups: Actuator Block, 
 Ligament cover prongs parent: Actuator Block
 Ligament cover prongs mesh: Ligament cover prongs
-Ligament cover prongs materials: PLA, 
+Ligament cover prongs materials: PLA White, 
 Ligament cover prongs modifiers: 
   #1 Name: Shrinkwrap, Type: SHRINKWRAP
   #2 Name: Solidify, Type: SOLIDIFY
