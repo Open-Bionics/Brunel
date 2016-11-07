@@ -1,29 +1,29 @@
 Name: 1st Finger
 1st Finger Type: EMPTY
 1st Finger transform: X-18.0 Y-1.0 Z-1.0
-1st Finger rotation: X-1.0470657230143843e-07 Y-0.08726680278778076 Z0.08726663887500763
-1st Finger scale: X0.8000001907348633 Y0.8000001907348633 Z0.9000000357627869
+1st Finger rotation: X4.674400311266425e-10 Y-0.08726643770933151 Z0.08726643770933151
+1st Finger scale: X1.0 Y1.0 Z1.0
 1st Finger groups: None
 
 Name: 2nd Finger
 2nd Finger Type: EMPTY
 2nd Finger transform: X0.0 Y0.0 Z0.0
 2nd Finger rotation: X0.0 Y0.0 Z0.0
-2nd Finger scale: X0.800000011920929 Y0.8999999761581421 Z0.8999999761581421
+2nd Finger scale: X1.0 Y1.0 Z1.0
 2nd Finger groups: None
 
 Name: 3rd Finger
 3rd Finger Type: EMPTY
 3rd Finger transform: X18.0 Y-1.0 Z-1.0
 3rd Finger rotation: X2.2427477119890682e-07 Y0.08220553398132324 Z-0.08726644515991211
-3rd Finger scale: X0.800000011920929 Y0.8500000238418579 Z0.800000011920929
+3rd Finger scale: X1.0 Y1.0 Z1.0
 3rd Finger groups: None
 
 Name: 4th Finger
 4th Finger Type: EMPTY
 4th Finger transform: X34.0 Y-2.5 Z-3.0
 4th Finger rotation: X-0.007619168143719435 Y0.17652077972888947 Z-0.1745329201221466
-4th Finger scale: X0.800000011920929 Y0.75 Z0.800000011920929
+4th Finger scale: X1.0 Y1.0 Z1.0
 4th Finger groups: None
 
 Name: Actuator Block
@@ -90,6 +90,16 @@ BOOLEAN Ligament cover M2 bolt hole mesh: BOOLEAN Ligament cover M2 bolt hole
 BOOLEAN Ligament cover M2 bolt hole materials: Boolean difference, 
 BOOLEAN Ligament cover M2 bolt hole modifiers: None
 
+Name: BOOLEAN M2 Bolt Hole
+BOOLEAN M2 Bolt Hole Type: MESH
+BOOLEAN M2 Bolt Hole transform: X-21.824363708496094 Y-63.739891052246094 Z-17.505435943603516
+BOOLEAN M2 Bolt Hole rotation: X0.0 Y0.0 Z0.0
+BOOLEAN M2 Bolt Hole scale: X1.0 Y1.0 Z1.0
+BOOLEAN M2 Bolt Hole groups: None
+BOOLEAN M2 Bolt Hole mesh: BOOLEAN M2 Bolt Hole
+BOOLEAN M2 Bolt Hole materials: Boolean difference.002, 
+BOOLEAN M2 Bolt Hole modifiers: None
+
 Name: BOOLEAN PCB Chestnut
 BOOLEAN PCB Chestnut Type: MESH
 BOOLEAN PCB Chestnut transform: X7.499999523162842 Y-46.44186782836914 Z11.51685905456543
@@ -133,6 +143,50 @@ BOOLEAN Thumb attahment dowel parent: Actuator Block
 BOOLEAN Thumb attahment dowel mesh: BOOLEAN Thumb attahment dowel
 BOOLEAN Thumb attahment dowel materials: Boolean difference, 
 BOOLEAN Thumb attahment dowel modifiers: None
+
+Name: BOOLEAN Thumb ligament cover
+BOOLEAN Thumb ligament cover Type: MESH
+BOOLEAN Thumb ligament cover transform: X-15.940424919128418 Y-47.73994827270508 Z-9.024927139282227
+BOOLEAN Thumb ligament cover rotation: X0.0 Y-0.0 Z-0.17453289031982422
+BOOLEAN Thumb ligament cover scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb ligament cover groups: Actuator Block, Booleans, Thumb, 
+BOOLEAN Thumb ligament cover parent: Actuator Block
+BOOLEAN Thumb ligament cover mesh: BOOLEAN Thumb Ligament Cover
+BOOLEAN Thumb ligament cover materials: Boolean difference, 
+BOOLEAN Thumb ligament cover modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+
+Name: BOOLEAN Thumb ligament cover M2 Bolt Hole
+BOOLEAN Thumb ligament cover M2 Bolt Hole Type: MESH
+BOOLEAN Thumb ligament cover M2 Bolt Hole transform: X9.789173126220703 Y-67.75515747070312 Z-12.044929504394531
+BOOLEAN Thumb ligament cover M2 Bolt Hole rotation: X3.141592502593994 Y4.3971656538133175e-08 Z-7.285712513294129e-07
+BOOLEAN Thumb ligament cover M2 Bolt Hole scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb ligament cover M2 Bolt Hole groups: Actuator Block, Booleans, Thumb, 
+BOOLEAN Thumb ligament cover M2 Bolt Hole parent: Actuator Block
+BOOLEAN Thumb ligament cover M2 Bolt Hole mesh: BOOLEAN Thumb ligament cover M2 Bolt Hole
+BOOLEAN Thumb ligament cover M2 Bolt Hole materials: Boolean difference.001, 
+BOOLEAN Thumb ligament cover M2 Bolt Hole modifiers: None
+
+Name: BOOLEAN Thumb ligament cover M2 bolt hole for thumb
+BOOLEAN Thumb ligament cover M2 bolt hole for thumb Type: MESH
+BOOLEAN Thumb ligament cover M2 bolt hole for thumb transform: X-7.491687774658203 Y-64.51595306396484 Z-31.850818634033203
+BOOLEAN Thumb ligament cover M2 bolt hole for thumb rotation: X4.712274551391602 Y1.3860822916030884 Z1.3951307535171509
+BOOLEAN Thumb ligament cover M2 bolt hole for thumb scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb ligament cover M2 bolt hole for thumb groups: Booleans, Thumb, 
+BOOLEAN Thumb ligament cover M2 bolt hole for thumb parent: Actuator Block
+BOOLEAN Thumb ligament cover M2 bolt hole for thumb mesh: BOOLEAN Thumb ligament cover M2 bolt hole for thumb
+BOOLEAN Thumb ligament cover M2 bolt hole for thumb materials: Boolean difference.001, 
+BOOLEAN Thumb ligament cover M2 bolt hole for thumb modifiers: None
+
+Name: BOOLEAN thumb ligament for thumb
+BOOLEAN thumb ligament for thumb Type: MESH
+BOOLEAN thumb ligament for thumb transform: X-8.440424919128418 Y-68.73994445800781 Z-12.024927139282227
+BOOLEAN thumb ligament for thumb rotation: X0.0 Y0.0 Z-0.1745329201221466
+BOOLEAN thumb ligament for thumb scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+BOOLEAN thumb ligament for thumb groups: Actuator Block, Thumb, 
+BOOLEAN thumb ligament for thumb mesh: BOOLEAN thumb ligament for thumb
+BOOLEAN thumb ligament for thumb materials: Boolean difference, 
+BOOLEAN thumb ligament for thumb modifiers: None
 
 Name: BOOLEAN Thumb pivot dowel
 BOOLEAN Thumb pivot dowel Type: MESH
@@ -188,84 +242,6 @@ Conical spring parent: Actuator Block
 Conical spring mesh: Conical spring
 Conical spring materials: Steel, 
 Conical spring modifiers: None
-
-Name: exporter
-exporter Type: MESH
-exporter transform: X0.0 Y0.0 Z0.0
-exporter rotation: X0.0 Y0.0 Z0.0
-exporter scale: X1.0 Y1.0 Z1.0
-exporter groups: None
-exporter mesh: exporter.003
-exporter materials: None
-exporter modifiers: None
-
-Name: Finger Sleak flute.1
-Finger Sleak flute.1 Type: MESH
-Finger Sleak flute.1 transform: X-18.541624069213867 Y-0.28145551681518555 Z-0.7923046350479126
-Finger Sleak flute.1 rotation: X0.0 Y-0.08726643770933151 Z0.0872664600610733
-Finger Sleak flute.1 scale: X0.9999997019767761 Y0.9476726651191711 Z1.0
-Finger Sleak flute.1 groups: None
-Finger Sleak flute.1 mesh: Finger Sleak flute base
-Finger Sleak flute.1 materials: Ninjalfex, 
-Finger Sleak flute.1 modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-
-Name: Finger Sleak flute.2
-Finger Sleak flute.2 Type: MESH
-Finger Sleak flute.2 transform: X0.0 Y0.0 Z0.0
-Finger Sleak flute.2 rotation: X0.0 Y0.0 Z0.0
-Finger Sleak flute.2 scale: X1.0 Y1.0757888555526733 Z1.0
-Finger Sleak flute.2 groups: None
-Finger Sleak flute.2 mesh: Finger Sleak flute base
-Finger Sleak flute.2 materials: Ninjalfex, 
-Finger Sleak flute.2 modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-
-Name: Finger Sleak flute.3
-Finger Sleak flute.3 Type: MESH
-Finger Sleak flute.3 transform: X18.80593490600586 Y-0.975326657295227 Z-0.8141978979110718
-Finger Sleak flute.3 rotation: X4.674400311266425e-10 Y0.08726643770933151 Z-0.08726643770933151
-Finger Sleak flute.3 scale: X1.0 Y1.0133124589920044 Z1.0
-Finger Sleak flute.3 groups: None
-Finger Sleak flute.3 mesh: Finger Sleak flute base
-Finger Sleak flute.3 materials: Ninjalfex, 
-Finger Sleak flute.3 modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-
-Name: Finger Sleak flute.4
-Finger Sleak flute.4 Type: MESH
-Finger Sleak flute.4 transform: X37.268192291259766 Y-3.39612078666687 Z-3.2158241271972656
-Finger Sleak flute.4 rotation: X-0.030609285458922386 Y0.17185471951961517 Z-0.1771697700023651
-Finger Sleak flute.4 scale: X1.0 Y0.8543535470962524 Z0.9999997019767761
-Finger Sleak flute.4 groups: None
-Finger Sleak flute.4 mesh: Finger Sleak flute base
-Finger Sleak flute.4 materials: Ninjalfex, 
-Finger Sleak flute.4 modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
 
 Name: GALA cover
 GALA cover Type: MESH
@@ -340,6 +316,12 @@ Ligament cover prongs mesh: Ligament cover prongs
 Ligament cover prongs materials: PLA White, 
 Ligament cover prongs modifiers: 
   #1 Name: Shrinkwrap, Type: SHRINKWRAP
+        Target: Ligament cover prong target, Mode: PROJECT, Offset: 0.0 mm
+        Vertex group: Top
+        Projecting in: Z
+        Project in positive direction: True, Negative: False
+        Cull Faces: OFF
+        Subsurf level: 0
   #2 Name: Solidify, Type: SOLIDIFY
 
 Name: Palm Covered
@@ -366,16 +348,16 @@ Palm Covered top pad modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
-Name: Palm Inner
-Palm Inner Type: MESH
-Palm Inner transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
-Palm Inner rotation: X0.0 Y-0.0 Z0.0
-Palm Inner scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
-Palm Inner groups: Actuator Block, 
-Palm Inner parent: Actuator Block
-Palm Inner mesh: Palm Inner
-Palm Inner materials: PLA, 
-Palm Inner modifiers: 
+Name: Palm inner
+Palm inner Type: MESH
+Palm inner transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+Palm inner rotation: X0.0 Y-0.0 Z0.0
+Palm inner scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+Palm inner groups: Actuator Block, 
+Palm inner parent: Actuator Block
+Palm inner mesh: Palm Inner
+Palm inner materials: PLA, 
+Palm inner modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Boolean.PQ12, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
@@ -397,6 +379,10 @@ Palm Inner modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Hand Ligament
   #11 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
+  #12 Name: Boolean.ThumbLigmaentCoverM2BoltHole, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
+  #13 Name: Boolean.ThumbLigmaentCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover
 
 Name: Palm Simple
 Palm Simple Type: MESH
@@ -468,12 +454,67 @@ PQ12 extended mesh: PQ12 extended
 PQ12 extended materials: PQ12 housing plastic, 
 PQ12 extended modifiers: None
 
+Name: Thumb
+Thumb Type: MESH
+Thumb transform: X-10.27562141418457 Y-73.59512329101562 Z-13.199978828430176
+Thumb rotation: X1.5738415718078613 Y-17.283340454101562 Z1.3937076330184937
+Thumb scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+Thumb groups: Thumb, 
+Thumb mesh: Thumb
+Thumb materials: PLA, 
+Thumb modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Boolean.ThumbLigamentForThumb, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN thumb ligament for thumb
+  #3 Name: Boolean,M2BoltHole, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole
+  #4 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 bolt hole for thumb
+
+Name: Thumb ligament 
+Thumb ligament  Type: MESH
+Thumb ligament  transform: X-15.940424919128418 Y-47.73994827270508 Z-8.82492733001709
+Thumb ligament  rotation: X0.0 Y-0.0 Z-0.17453289031982422
+Thumb ligament  scale: X1.0 Y1.0 Z1.0
+Thumb ligament  groups: Thumb, 
+Thumb ligament  parent: Actuator Block
+Thumb ligament  mesh: Thumb Ligament 
+Thumb ligament  materials: Ninjalfex, 
+Thumb ligament  modifiers: None
+
+Name: Thumb ligament bent
+Thumb ligament bent Type: MESH
+Thumb ligament bent transform: X-15.940424919128418 Y-47.73994827270508 Z-9.024927139282227
+Thumb ligament bent rotation: X0.0 Y-0.0 Z-0.17453289031982422
+Thumb ligament bent scale: X1.0 Y1.0 Z1.0
+Thumb ligament bent groups: Actuator Block, Thumb, 
+Thumb ligament bent parent: Actuator Block
+Thumb ligament bent mesh: Thumb ligament bent
+Thumb ligament bent materials: Ninjalfex, 
+Thumb ligament bent modifiers: None
+
+Name: Thumb ligament cover
+Thumb ligament cover Type: MESH
+Thumb ligament cover transform: X-15.940424919128418 Y-47.73994827270508 Z-8.82492733001709
+Thumb ligament cover rotation: X0.0 Y-0.0 Z-0.17453289031982422
+Thumb ligament cover scale: X1.0 Y1.0 Z1.0
+Thumb ligament cover groups: Actuator Block, Thumb, 
+Thumb ligament cover parent: Actuator Block
+Thumb ligament cover mesh: Thumb Ligament Cover
+Thumb ligament cover materials: PLA, 
+Thumb ligament cover modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 Bolt Hole
+
 Name: Thumb pivot dowel.000
 Thumb pivot dowel.000 Type: MESH
 Thumb pivot dowel.000 transform: X14.156594276428223 Y-80.26822662353516 Z-4.673170566558838
 Thumb pivot dowel.000 rotation: X-0.0 Y1.570796251296997 Z0.0
 Thumb pivot dowel.000 scale: X1.0 Y1.0 Z1.0
 Thumb pivot dowel.000 groups: None
+Thumb pivot dowel.000 parent: Actuator Block
 Thumb pivot dowel.000 mesh: Dowel M3 10mm 
 Thumb pivot dowel.000 materials: Steel, 
 Thumb pivot dowel.000 modifiers: None
@@ -485,21 +526,9 @@ Thumb pivot dowel.001 rotation: X-1.570796251296997 Y1.570796251296997 Z0.0
 Thumb pivot dowel.001 scale: X1.0 Y0.9999999403953552 Z0.9999999403953552
 Thumb pivot dowel.001 groups: Actuator Block, Thumb, 
 Thumb pivot dowel.001 parent: Actuator Block
-Thumb pivot dowel.001 mesh: Dowel M3 10mm .001
+Thumb pivot dowel.001 mesh: Thumb pivot dowel.001
 Thumb pivot dowel.001 materials: Steel, 
 Thumb pivot dowel.001 modifiers: None
-
-Name: Thumb Sleak flute.0
-Thumb Sleak flute.0 Type: MESH
-Thumb Sleak flute.0 transform: X-39.059844970703125 Y-61.4339599609375 Z3.8382649421691895
-Thumb Sleak flute.0 rotation: X0.0 Y-0.7853981852531433 Z1.2455084323883057
-Thumb Sleak flute.0 scale: X0.9999997019767761 Y0.9476726651191711 Z1.0
-Thumb Sleak flute.0 groups: None
-Thumb Sleak flute.0 mesh: Thumb Sleak flute
-Thumb Sleak flute.0 materials: Ninjalfex, 
-Thumb Sleak flute.0 modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN M2 Bolt Holes
 BOOLEAN M2 Bolt Holes Type: MESH
