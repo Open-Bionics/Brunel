@@ -6,8 +6,13 @@ BOOLEAN Elastic terminator.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Elastic terminator.004 groups: None
 BOOLEAN Elastic terminator.004 parent: HANDLE 4th Finger
 BOOLEAN Elastic terminator.004 mesh: BOOLEAN Elastic terminator
-BOOLEAN Elastic terminator.004 materials: Boolean difference.002, 
-BOOLEAN Elastic terminator.004 modifiers: None
+BOOLEAN Elastic terminator.004 materials: Boolean difference.003, 
+BOOLEAN Elastic terminator.004 modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
 
 Name: BOOLEAN Ligament.001
 BOOLEAN Ligament.001 Type: MESH
@@ -478,7 +483,12 @@ Elastic terminator.004 groups: None
 Elastic terminator.004 parent: HANDLE 4th Finger
 Elastic terminator.004 mesh: Elastic terminator
 Elastic terminator.004 materials: None
-Elastic terminator.004 modifiers: None
+Elastic terminator.004 modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
 
 Name: HANDLE 1st Finger
 HANDLE 1st Finger Type: EMPTY
