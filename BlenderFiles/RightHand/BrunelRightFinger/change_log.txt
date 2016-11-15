@@ -510,7 +510,7 @@ HANDLE 4th Finger groups: 4th Finger,
 
 Name: HANDLE Distal Joint for BOOLEAN.001
 HANDLE Distal Joint for BOOLEAN.001 Type: MESH
-HANDLE Distal Joint for BOOLEAN.001 transform: X0.0 Y16.0 Z0.0
+HANDLE Distal Joint for BOOLEAN.001 transform: X0.0 Y8.5 Z0.0
 HANDLE Distal Joint for BOOLEAN.001 rotation: X0.0 Y-0.0 Z0.0
 HANDLE Distal Joint for BOOLEAN.001 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint for BOOLEAN.001 groups: 1st Finger, 
@@ -550,7 +550,7 @@ HANDLE Distal Joint for BOOLEAN.004 modifiers: None
 
 Name: HANDLE Distal Joint.001
 HANDLE Distal Joint.001 Type: MESH
-HANDLE Distal Joint.001 transform: X0.0 Y16.0 Z0.0
+HANDLE Distal Joint.001 transform: X0.0 Y8.5 Z0.0
 HANDLE Distal Joint.001 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.001 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.001 groups: 1st Finger, 
@@ -561,7 +561,7 @@ HANDLE Distal Joint.001 modifiers: None
 
 Name: HANDLE Distal Joint.002
 HANDLE Distal Joint.002 Type: MESH
-HANDLE Distal Joint.002 transform: X0.0 Y2.5 Z0.0
+HANDLE Distal Joint.002 transform: X0.0 Y9.5 Z0.0
 HANDLE Distal Joint.002 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.002 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.002 groups: 2nd Finger, 
@@ -572,7 +572,7 @@ HANDLE Distal Joint.002 modifiers: None
 
 Name: HANDLE Distal Joint.003
 HANDLE Distal Joint.003 Type: MESH
-HANDLE Distal Joint.003 transform: X0.0 Y0.0 Z0.0
+HANDLE Distal Joint.003 transform: X0.0 Y8.5 Z0.0
 HANDLE Distal Joint.003 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.003 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.003 groups: 3rd Finger, 
@@ -594,7 +594,7 @@ HANDLE Distal Joint.004 modifiers: None
 
 Name: HANDLE Fingertip for BOOLEAN.001
 HANDLE Fingertip for BOOLEAN.001 Type: MESH
-HANDLE Fingertip for BOOLEAN.001 transform: X19.999998092651367 Y0.0 Z0.0
+HANDLE Fingertip for BOOLEAN.001 transform: X19.999998092651367 Y3.0 Z0.0
 HANDLE Fingertip for BOOLEAN.001 rotation: X0.0 Y-0.0 Z0.0
 HANDLE Fingertip for BOOLEAN.001 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip for BOOLEAN.001 groups: 1st Finger, 
@@ -634,7 +634,7 @@ HANDLE Fingertip for BOOLEAN.004 modifiers: None
 
 Name: HANDLE Fingertip.001
 HANDLE Fingertip.001 Type: MESH
-HANDLE Fingertip.001 transform: X0.0 Y16.0 Z0.0
+HANDLE Fingertip.001 transform: X0.0 Y11.5 Z0.0
 HANDLE Fingertip.001 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.001 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.001 groups: 1st Finger, 
@@ -645,7 +645,7 @@ HANDLE Fingertip.001 modifiers: None
 
 Name: HANDLE Fingertip.002
 HANDLE Fingertip.002 Type: MESH
-HANDLE Fingertip.002 transform: X0.0 Y5.0 Z0.0
+HANDLE Fingertip.002 transform: X0.0 Y12.5 Z0.0
 HANDLE Fingertip.002 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.002 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.002 groups: 2nd Finger, 
@@ -656,7 +656,7 @@ HANDLE Fingertip.002 modifiers: None
 
 Name: HANDLE Fingertip.003
 HANDLE Fingertip.003 Type: MESH
-HANDLE Fingertip.003 transform: X0.0 Y0.0 Z0.0
+HANDLE Fingertip.003 transform: X0.0 Y11.5 Z0.0
 HANDLE Fingertip.003 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.003 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.003 groups: 3rd Finger, 
