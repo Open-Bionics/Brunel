@@ -478,7 +478,7 @@ BOOLEAN Tube modifiers:
 
 Name: Cube
 Cube Type: MESH
-Cube transform: X0.0 Y0.0 Z0.0
+Cube transform: X0.0 Y17.0 Z0.6500009298324585
 Cube rotation: X0.0 Y0.0 Z0.0
 Cube scale: X1.0 Y1.0 Z1.0
 Cube groups: None
@@ -486,9 +486,9 @@ Cube mesh: Cube
 Cube materials: None
 Cube modifiers: 
   #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
+        Reflecting in local: X, Y, 
         Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
+        Clipping: True
         Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
@@ -1260,6 +1260,8 @@ Top cover proximal.004 modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #5 Name: Boolean.M2, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.004
+  #6 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cube
 
 Name: Urethane cover distal.001
 Urethane cover distal.001 Type: MESH
