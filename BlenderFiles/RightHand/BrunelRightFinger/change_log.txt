@@ -389,6 +389,8 @@ BOOLEAN Tendon channels distal.004 modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Tendon channels proximal.001
 BOOLEAN Tendon channels proximal.001 Type: MESH
@@ -472,6 +474,23 @@ BOOLEAN Tube mesh: BOOLEAN Tube
 BOOLEAN Tube materials: Boolean difference, 
 BOOLEAN Tube modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Cube
+Cube Type: MESH
+Cube transform: X0.0 Y0.0 Z0.0
+Cube rotation: X0.0 Y0.0 Z0.0
+Cube scale: X1.0 Y1.0 Z1.0
+Cube groups: None
+Cube mesh: Cube
+Cube materials: None
+Cube modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Elastic terminator.004
