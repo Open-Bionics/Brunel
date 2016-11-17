@@ -79,7 +79,7 @@ BOOLEAN Ligament.004 Type: MESH
 BOOLEAN Ligament.004 transform: X0.0 Y0.0 Z0.0
 BOOLEAN Ligament.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Ligament.004 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Ligament.004 groups: 4th Finger, 
+BOOLEAN Ligament.004 groups: None
 BOOLEAN Ligament.004 parent: HANDLE 4th Finger
 BOOLEAN Ligament.004 mesh: BOOLEAN Ligament
 BOOLEAN Ligament.004 materials: Boolean difference, 
@@ -161,7 +161,7 @@ BOOLEAN MOULD 1st Inner distal Type: MESH
 BOOLEAN MOULD 1st Inner distal transform: X20.0 Y0.0 Z-5.953692942296807e-16
 BOOLEAN MOULD 1st Inner distal rotation: X0.0 Y0.0 Z0.0
 BOOLEAN MOULD 1st Inner distal scale: X1.0 Y1.0 Z1.0
-BOOLEAN MOULD 1st Inner distal groups: 1st Finger, 
+BOOLEAN MOULD 1st Inner distal groups: None
 BOOLEAN MOULD 1st Inner distal mesh: BOOLEAN MOULD Inner distal
 BOOLEAN MOULD 1st Inner distal materials: Boolean difference, 
 BOOLEAN MOULD 1st Inner distal modifiers: 
@@ -180,7 +180,7 @@ BOOLEAN MOULD 1st Inner proximal Type: MESH
 BOOLEAN MOULD 1st Inner proximal transform: X0.0 Y0.0 Z0.0
 BOOLEAN MOULD 1st Inner proximal rotation: X0.0 Y0.0 Z0.0
 BOOLEAN MOULD 1st Inner proximal scale: X1.0 Y1.0 Z1.0
-BOOLEAN MOULD 1st Inner proximal groups: 1st Finger, 
+BOOLEAN MOULD 1st Inner proximal groups: None
 BOOLEAN MOULD 1st Inner proximal mesh: BOOLEAN MOULD Inner Proximal
 BOOLEAN MOULD 1st Inner proximal materials: Boolean difference, 
 BOOLEAN MOULD 1st Inner proximal modifiers: 
@@ -199,7 +199,7 @@ BOOLEAN MOULD 2nd Inner distal  Type: MESH
 BOOLEAN MOULD 2nd Inner distal  transform: X60.0 Y0.0 Z-5.953692942296807e-16
 BOOLEAN MOULD 2nd Inner distal  rotation: X0.0 Y0.0 Z0.0
 BOOLEAN MOULD 2nd Inner distal  scale: X1.0 Y1.0 Z1.0
-BOOLEAN MOULD 2nd Inner distal  groups: 1st Finger, 
+BOOLEAN MOULD 2nd Inner distal  groups: None
 BOOLEAN MOULD 2nd Inner distal  mesh: BOOLEAN MOULD Inner distal
 BOOLEAN MOULD 2nd Inner distal  materials: Boolean difference, 
 BOOLEAN MOULD 2nd Inner distal  modifiers: 
@@ -218,7 +218,7 @@ BOOLEAN MOULD 2nd Inner proximal Type: MESH
 BOOLEAN MOULD 2nd Inner proximal transform: X40.0 Y0.0 Z0.0
 BOOLEAN MOULD 2nd Inner proximal rotation: X0.0 Y0.0 Z0.0
 BOOLEAN MOULD 2nd Inner proximal scale: X1.0 Y1.0 Z1.0
-BOOLEAN MOULD 2nd Inner proximal groups: 1st Finger, 
+BOOLEAN MOULD 2nd Inner proximal groups: None
 BOOLEAN MOULD 2nd Inner proximal mesh: BOOLEAN MOULD Inner Proximal
 BOOLEAN MOULD 2nd Inner proximal materials: Boolean difference, 
 BOOLEAN MOULD 2nd Inner proximal modifiers: 
@@ -237,7 +237,7 @@ BOOLEAN MOULD 3rd Inner distal Type: MESH
 BOOLEAN MOULD 3rd Inner distal transform: X100.0 Y0.0 Z-5.953692942296807e-16
 BOOLEAN MOULD 3rd Inner distal rotation: X0.0 Y0.0 Z0.0
 BOOLEAN MOULD 3rd Inner distal scale: X1.0 Y1.0 Z1.0
-BOOLEAN MOULD 3rd Inner distal groups: 1st Finger, 
+BOOLEAN MOULD 3rd Inner distal groups: None
 BOOLEAN MOULD 3rd Inner distal mesh: BOOLEAN MOULD Inner distal
 BOOLEAN MOULD 3rd Inner distal materials: Boolean difference, 
 BOOLEAN MOULD 3rd Inner distal modifiers: 
@@ -256,7 +256,7 @@ BOOLEAN MOULD 3rd Inner proximal Type: MESH
 BOOLEAN MOULD 3rd Inner proximal transform: X80.0 Y0.0 Z0.0
 BOOLEAN MOULD 3rd Inner proximal rotation: X0.0 Y0.0 Z0.0
 BOOLEAN MOULD 3rd Inner proximal scale: X1.0 Y1.0 Z1.0
-BOOLEAN MOULD 3rd Inner proximal groups: 1st Finger, 
+BOOLEAN MOULD 3rd Inner proximal groups: None
 BOOLEAN MOULD 3rd Inner proximal mesh: BOOLEAN MOULD Inner Proximal
 BOOLEAN MOULD 3rd Inner proximal materials: Boolean difference, 
 BOOLEAN MOULD 3rd Inner proximal modifiers: 
@@ -275,7 +275,7 @@ BOOLEAN MOULD 4th Inner distal Type: MESH
 BOOLEAN MOULD 4th Inner distal transform: X140.0 Y0.0 Z-5.953692942296807e-16
 BOOLEAN MOULD 4th Inner distal rotation: X0.0 Y0.0 Z0.0
 BOOLEAN MOULD 4th Inner distal scale: X1.0 Y1.0 Z1.0
-BOOLEAN MOULD 4th Inner distal groups: 1st Finger, 
+BOOLEAN MOULD 4th Inner distal groups: None
 BOOLEAN MOULD 4th Inner distal mesh: BOOLEAN MOULD Inner distal
 BOOLEAN MOULD 4th Inner distal materials: Boolean difference, 
 BOOLEAN MOULD 4th Inner distal modifiers: 
@@ -294,7 +294,7 @@ BOOLEAN MOULD 4th Inner proximal Type: MESH
 BOOLEAN MOULD 4th Inner proximal transform: X120.0 Y0.0 Z0.0
 BOOLEAN MOULD 4th Inner proximal rotation: X0.0 Y0.0 Z0.0
 BOOLEAN MOULD 4th Inner proximal scale: X1.0 Y1.0 Z1.0
-BOOLEAN MOULD 4th Inner proximal groups: 1st Finger, 
+BOOLEAN MOULD 4th Inner proximal groups: None
 BOOLEAN MOULD 4th Inner proximal mesh: BOOLEAN MOULD Inner Proximal
 BOOLEAN MOULD 4th Inner proximal materials: Boolean difference, 
 BOOLEAN MOULD 4th Inner proximal modifiers: 
@@ -313,7 +313,7 @@ BOOLEAN MOULD M2 Bolt Holes Type: MESH
 BOOLEAN MOULD M2 Bolt Holes transform: X0.0 Y0.0 Z0.0
 BOOLEAN MOULD M2 Bolt Holes rotation: X0.0 Y0.0 Z0.0
 BOOLEAN MOULD M2 Bolt Holes scale: X1.0 Y1.0 Z1.0
-BOOLEAN MOULD M2 Bolt Holes groups: 1st Finger, 
+BOOLEAN MOULD M2 Bolt Holes groups: None
 BOOLEAN MOULD M2 Bolt Holes mesh: MOULD BOOLEAN M2 Bolt Holes
 BOOLEAN MOULD M2 Bolt Holes materials: Boolean difference, 
 BOOLEAN MOULD M2 Bolt Holes modifiers: None
@@ -565,7 +565,7 @@ HANDLE Distal Joint for BOOLEAN.001 Type: MESH
 HANDLE Distal Joint for BOOLEAN.001 transform: X0.0 Y8.5 Z0.0
 HANDLE Distal Joint for BOOLEAN.001 rotation: X0.0 Y-0.0 Z0.0
 HANDLE Distal Joint for BOOLEAN.001 scale: X1.0 Y1.0 Z1.0
-HANDLE Distal Joint for BOOLEAN.001 groups: 1st Finger, 
+HANDLE Distal Joint for BOOLEAN.001 groups: None
 HANDLE Distal Joint for BOOLEAN.001 mesh: HANDLE Distal Joint.001
 HANDLE Distal Joint for BOOLEAN.001 materials: HANDLE, 
 HANDLE Distal Joint for BOOLEAN.001 modifiers: None
@@ -575,7 +575,7 @@ HANDLE Distal Joint for BOOLEAN.002 Type: MESH
 HANDLE Distal Joint for BOOLEAN.002 transform: X40.0 Y0.0 Z0.0
 HANDLE Distal Joint for BOOLEAN.002 rotation: X0.0 Y-0.0 Z0.0
 HANDLE Distal Joint for BOOLEAN.002 scale: X1.0 Y1.0 Z1.0
-HANDLE Distal Joint for BOOLEAN.002 groups: 1st Finger, 
+HANDLE Distal Joint for BOOLEAN.002 groups: None
 HANDLE Distal Joint for BOOLEAN.002 mesh: HANDLE Distal Joint.002
 HANDLE Distal Joint for BOOLEAN.002 materials: HANDLE, 
 HANDLE Distal Joint for BOOLEAN.002 modifiers: None
@@ -585,7 +585,7 @@ HANDLE Distal Joint for BOOLEAN.003 Type: MESH
 HANDLE Distal Joint for BOOLEAN.003 transform: X80.0 Y0.0 Z0.0
 HANDLE Distal Joint for BOOLEAN.003 rotation: X0.0 Y-0.0 Z0.0
 HANDLE Distal Joint for BOOLEAN.003 scale: X1.0 Y1.0 Z1.0
-HANDLE Distal Joint for BOOLEAN.003 groups: 1st Finger, 
+HANDLE Distal Joint for BOOLEAN.003 groups: None
 HANDLE Distal Joint for BOOLEAN.003 mesh: HANDLE Distal Joint.003
 HANDLE Distal Joint for BOOLEAN.003 materials: HANDLE, 
 HANDLE Distal Joint for BOOLEAN.003 modifiers: None
@@ -595,7 +595,7 @@ HANDLE Distal Joint for BOOLEAN.004 Type: MESH
 HANDLE Distal Joint for BOOLEAN.004 transform: X120.0 Y0.0 Z0.0
 HANDLE Distal Joint for BOOLEAN.004 rotation: X0.0 Y-0.0 Z0.0
 HANDLE Distal Joint for BOOLEAN.004 scale: X1.0 Y1.0 Z1.0
-HANDLE Distal Joint for BOOLEAN.004 groups: 1st Finger, 
+HANDLE Distal Joint for BOOLEAN.004 groups: None
 HANDLE Distal Joint for BOOLEAN.004 mesh: HANDLE Distal Joint.004
 HANDLE Distal Joint for BOOLEAN.004 materials: HANDLE, 
 HANDLE Distal Joint for BOOLEAN.004 modifiers: None
@@ -649,7 +649,7 @@ HANDLE Fingertip for BOOLEAN.001 Type: MESH
 HANDLE Fingertip for BOOLEAN.001 transform: X19.999998092651367 Y3.0 Z0.0
 HANDLE Fingertip for BOOLEAN.001 rotation: X0.0 Y-0.0 Z0.0
 HANDLE Fingertip for BOOLEAN.001 scale: X1.0 Y1.0 Z1.0
-HANDLE Fingertip for BOOLEAN.001 groups: 1st Finger, 
+HANDLE Fingertip for BOOLEAN.001 groups: None
 HANDLE Fingertip for BOOLEAN.001 mesh: HANDLE Fingertip.001
 HANDLE Fingertip for BOOLEAN.001 materials: HANDLE, 
 HANDLE Fingertip for BOOLEAN.001 modifiers: None
@@ -659,7 +659,7 @@ HANDLE Fingertip for BOOLEAN.002 Type: MESH
 HANDLE Fingertip for BOOLEAN.002 transform: X60.0 Y0.0 Z0.0
 HANDLE Fingertip for BOOLEAN.002 rotation: X0.0 Y-0.0 Z0.0
 HANDLE Fingertip for BOOLEAN.002 scale: X1.0 Y1.0 Z1.0
-HANDLE Fingertip for BOOLEAN.002 groups: 1st Finger, 
+HANDLE Fingertip for BOOLEAN.002 groups: None
 HANDLE Fingertip for BOOLEAN.002 mesh: HANDLE Fingertip.002
 HANDLE Fingertip for BOOLEAN.002 materials: HANDLE, 
 HANDLE Fingertip for BOOLEAN.002 modifiers: None
@@ -669,7 +669,7 @@ HANDLE Fingertip for BOOLEAN.003 Type: MESH
 HANDLE Fingertip for BOOLEAN.003 transform: X100.0 Y0.0 Z0.0
 HANDLE Fingertip for BOOLEAN.003 rotation: X0.0 Y-0.0 Z0.0
 HANDLE Fingertip for BOOLEAN.003 scale: X1.0 Y1.0 Z1.0
-HANDLE Fingertip for BOOLEAN.003 groups: 1st Finger, 
+HANDLE Fingertip for BOOLEAN.003 groups: None
 HANDLE Fingertip for BOOLEAN.003 mesh: HANDLE Fingertip.003
 HANDLE Fingertip for BOOLEAN.003 materials: HANDLE, 
 HANDLE Fingertip for BOOLEAN.003 modifiers: None
@@ -679,7 +679,7 @@ HANDLE Fingertip for BOOLEAN.004 Type: MESH
 HANDLE Fingertip for BOOLEAN.004 transform: X140.0 Y0.0 Z0.0
 HANDLE Fingertip for BOOLEAN.004 rotation: X0.0 Y-0.0 Z0.0
 HANDLE Fingertip for BOOLEAN.004 scale: X1.0 Y1.0 Z1.0
-HANDLE Fingertip for BOOLEAN.004 groups: 1st Finger, 
+HANDLE Fingertip for BOOLEAN.004 groups: None
 HANDLE Fingertip for BOOLEAN.004 mesh: HANDLE Fingertip.004
 HANDLE Fingertip for BOOLEAN.004 materials: HANDLE, 
 HANDLE Fingertip for BOOLEAN.004 modifiers: None
