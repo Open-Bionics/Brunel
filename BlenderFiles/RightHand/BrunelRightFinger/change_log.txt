@@ -318,6 +318,34 @@ BOOLEAN MOULD M2 Bolt Holes mesh: MOULD BOOLEAN M2 Bolt Holes
 BOOLEAN MOULD M2 Bolt Holes materials: Boolean difference, 
 BOOLEAN MOULD M2 Bolt Holes modifiers: None
 
+Name: BOOLEAN Mould v2 hopper
+BOOLEAN Mould v2 hopper Type: MESH
+BOOLEAN Mould v2 hopper transform: X131.17550659179688 Y-13.764791488647461 Z-3.1374716758728027
+BOOLEAN Mould v2 hopper rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Mould v2 hopper scale: X1.0 Y1.0 Z1.0
+BOOLEAN Mould v2 hopper groups: None
+BOOLEAN Mould v2 hopper mesh: BOOLEAN Mould v2 hopper
+BOOLEAN Mould v2 hopper materials: None
+BOOLEAN Mould v2 hopper modifiers: None
+
+Name: BOOLEAN Proximal elastic channel
+BOOLEAN Proximal elastic channel Type: MESH
+BOOLEAN Proximal elastic channel transform: X0.0 Y17.0 Z0.6500009298324585
+BOOLEAN Proximal elastic channel rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Proximal elastic channel scale: X1.0 Y1.0 Z1.0
+BOOLEAN Proximal elastic channel groups: None
+BOOLEAN Proximal elastic channel parent: HANDLE 4th Finger
+BOOLEAN Proximal elastic channel mesh: BOOLEAN Proximal elastic channel
+BOOLEAN Proximal elastic channel materials: None
+BOOLEAN Proximal elastic channel modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, Y, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: BOOLEAN Tendon channels distal.001
 BOOLEAN Tendon channels distal.001 Type: MESH
 BOOLEAN Tendon channels distal.001 transform: X0.0 Y0.0 Z0.0
@@ -476,21 +504,16 @@ BOOLEAN Tube modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
-Name: Cube
-Cube Type: MESH
-Cube transform: X0.0 Y17.0 Z0.6500009298324585
-Cube rotation: X0.0 Y0.0 Z0.0
-Cube scale: X1.0 Y1.0 Z1.0
-Cube groups: None
-Cube mesh: Cube
-Cube materials: None
-Cube modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, Y, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: True
-        Vertex group mirroring: True
-  #2 Name: Subsurf, Type: SUBSURF
+Name: BOOLEAN Tube v2
+BOOLEAN Tube v2 Type: MESH
+BOOLEAN Tube v2 transform: X20.0 Y0.0 Z-10.0
+BOOLEAN Tube v2 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Tube v2 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Tube v2 groups: None
+BOOLEAN Tube v2 mesh: BOOLEAN Tube v2
+BOOLEAN Tube v2 materials: Boolean difference, 
+BOOLEAN Tube v2 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Elastic terminator.004
@@ -1040,34 +1063,102 @@ MOULD modifiers:
   #11 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
 
-Name: MOULD.001
-MOULD.001 Type: MESH
-MOULD.001 transform: X0.0 Y0.0 Z0.0
-MOULD.001 rotation: X0.0 Y0.0 Z0.0
-MOULD.001 scale: X1.0 Y1.0 Z1.0
-MOULD.001 groups: None
-MOULD.001 mesh: MOULD.001
-MOULD.001 materials: PLA White, 
-MOULD.001 modifiers: 
+Name: MOULD bottom
+MOULD bottom Type: MESH
+MOULD bottom transform: X0.0 Y0.0 Z0.0
+MOULD bottom rotation: X0.0 Y0.0 Z0.0
+MOULD bottom scale: X1.0 Y1.0 Z1.0
+MOULD bottom groups: None
+MOULD bottom mesh: MOULD bottom
+MOULD bottom materials: PLA White, 
+MOULD bottom modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tube
   #3 Name: Boolean.001, Type: BOOLEAN
         Operation: INTERSECT, Object: None
 
-Name: Plane
-Plane Type: MESH
-Plane transform: X-0.019292831420898438 Y19.298141479492188 Z1.2500009536743164
-Plane rotation: X0.0 Y0.0 Z0.0
-Plane scale: X1.0 Y1.0 Z1.0
-Plane groups: None
-Plane mesh: Plane.001
-Plane materials: PLA White, 
-Plane modifiers: 
+Name: MOULD rack
+MOULD rack Type: MESH
+MOULD rack transform: X-0.019292831420898438 Y19.298141479492188 Z1.2500009536743164
+MOULD rack rotation: X0.0 Y0.0 Z0.0
+MOULD rack scale: X1.0 Y1.0 Z1.0
+MOULD rack groups: None
+MOULD rack mesh: MOULD rack
+MOULD rack materials: PLA White, 
+MOULD rack modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #2 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
+
+Name: MOULD v2 Risers
+MOULD v2 Risers Type: MESH
+MOULD v2 Risers transform: X128.4163055419922 Y16.749998092651367 Z0.2500009536743164
+MOULD v2 Risers rotation: X0.0 Y0.0 Z0.0
+MOULD v2 Risers scale: X1.0 Y1.0 Z1.0
+MOULD v2 Risers groups: None
+MOULD v2 Risers mesh: MOULD v2 Risers
+MOULD v2 Risers materials: Boolean difference, 
+MOULD v2 Risers modifiers: None
+
+Name: MOULDv2
+MOULDv2 Type: MESH
+MOULDv2 transform: X131.17550659179688 Y18.252477645874023 Z0.0
+MOULDv2 rotation: X0.0 Y0.0 Z0.0
+MOULDv2 scale: X1.0 Y1.0 Z1.0
+MOULDv2 groups: None
+MOULDv2 mesh: MOULDv2
+MOULDv2 materials: None
+MOULDv2 modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Mould v2 hopper
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN MOULD 4th Inner distal
+  #3 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN MOULD 4th Inner proximal
+  #4 Name: Boolean.003, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Tube v2
+  #5 Name: Boolean.004, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
+
+Name: MOULDv2 Bottom cover
+MOULDv2 Bottom cover Type: MESH
+MOULDv2 Bottom cover transform: X131.17550659179688 Y18.252477645874023 Z0.0
+MOULDv2 Bottom cover rotation: X0.0 Y0.0 Z0.0
+MOULDv2 Bottom cover scale: X1.0 Y1.0 Z1.0
+MOULDv2 Bottom cover groups: None
+MOULDv2 Bottom cover mesh: MOULDv2 Bottom cover
+MOULDv2 Bottom cover materials: None
+MOULDv2 Bottom cover modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Mould v2 hopper
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN MOULD 4th Inner distal
+  #3 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN MOULD 4th Inner proximal
+  #4 Name: Boolean.003, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Tube v2
+
+Name: MOULDv2 Top cover
+MOULDv2 Top cover Type: MESH
+MOULDv2 Top cover transform: X131.17550659179688 Y18.252477645874023 Z0.0
+MOULDv2 Top cover rotation: X0.0 Y0.0 Z0.0
+MOULDv2 Top cover scale: X1.0 Y1.0 Z1.0
+MOULDv2 Top cover groups: None
+MOULDv2 Top cover mesh: MOULDv2 Top cover
+MOULDv2 Top cover materials: None
+MOULDv2 Top cover modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Mould v2 hopper
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN MOULD 4th Inner distal
+  #3 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN MOULD 4th Inner proximal
+  #4 Name: Boolean.003, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Tube v2
+  #5 Name: Boolean.004, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: MOULD v2 Risers
 
 Name: Top cover distal.001
 Top cover distal.001 Type: MESH
@@ -1261,7 +1352,7 @@ Top cover proximal.004 modifiers:
   #5 Name: Boolean.M2, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.004
   #6 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Cube
+        Operation: DIFFERENCE, Object: BOOLEAN Proximal elastic channel
 
 Name: Urethane cover distal.001
 Urethane cover distal.001 Type: MESH
