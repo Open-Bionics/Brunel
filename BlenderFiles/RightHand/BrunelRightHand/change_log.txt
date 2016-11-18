@@ -5,32 +5,12 @@ Name: 1st Finger
 1st Finger scale: X1.0 Y1.0 Z1.0
 1st Finger groups: None
 
-Name: 1st Finger proximal elastic terminator
-1st Finger proximal elastic terminator Type: MESH
-1st Finger proximal elastic terminator transform: X-19.188690185546875 Y-8.543244361877441 Z8.16499137878418
-1st Finger proximal elastic terminator rotation: X3.141592502593994 Y-0.08726643770933151 Z0.08726644515991211
-1st Finger proximal elastic terminator scale: X1.0 Y1.0 Z1.0
-1st Finger proximal elastic terminator groups: None
-1st Finger proximal elastic terminator mesh: Proximal elastic terminator
-1st Finger proximal elastic terminator materials: None
-1st Finger proximal elastic terminator modifiers: None
-
 Name: 2nd Finger
 2nd Finger Type: EMPTY
 2nd Finger transform: X0.0 Y0.0 Z0.0
 2nd Finger rotation: X0.0 Y0.0 Z0.0
 2nd Finger scale: X1.0 Y1.0 Z1.0
 2nd Finger groups: None
-
-Name: 2nd Finger proximal elastic terminator
-2nd Finger proximal elastic terminator Type: MESH
-2nd Finger proximal elastic terminator transform: X0.0 Y-7.0 Z9.199999809265137
-2nd Finger proximal elastic terminator rotation: X3.141592502593994 Y-0.0 Z0.0
-2nd Finger proximal elastic terminator scale: X1.0 Y1.0 Z1.0
-2nd Finger proximal elastic terminator groups: None
-2nd Finger proximal elastic terminator mesh: Proximal elastic terminator
-2nd Finger proximal elastic terminator materials: None
-2nd Finger proximal elastic terminator modifiers: None
 
 Name: 3rd Finger
 3rd Finger Type: EMPTY
@@ -59,8 +39,7 @@ BOOLEAN 1st Finger proximal elastic terminator transform: X0.0 Y-10.0 Z15.297052
 BOOLEAN 1st Finger proximal elastic terminator rotation: X3.141592502593994 Y-0.0 Z0.0
 BOOLEAN 1st Finger proximal elastic terminator scale: X1.0 Y1.0 Z1.0
 BOOLEAN 1st Finger proximal elastic terminator groups: None
-BOOLEAN 1st Finger proximal elastic terminator parent: 1st Finger proximal elastic terminator
-BOOLEAN 1st Finger proximal elastic terminator mesh: BOOLEAN Proximal elastic terminator
+BOOLEAN 1st Finger proximal elastic terminator mesh: BOOLEAN Proximal elastic terminator.001
 BOOLEAN 1st Finger proximal elastic terminator materials: Boolean difference.004, 
 BOOLEAN 1st Finger proximal elastic terminator modifiers: None
 
@@ -70,8 +49,7 @@ BOOLEAN 2nd Finger proximal elastic terminator transform: X0.0 Y-10.0 Z15.297052
 BOOLEAN 2nd Finger proximal elastic terminator rotation: X3.141592502593994 Y-0.0 Z0.0
 BOOLEAN 2nd Finger proximal elastic terminator scale: X1.0 Y1.0 Z1.0
 BOOLEAN 2nd Finger proximal elastic terminator groups: None
-BOOLEAN 2nd Finger proximal elastic terminator parent: 2nd Finger proximal elastic terminator
-BOOLEAN 2nd Finger proximal elastic terminator mesh: BOOLEAN Proximal elastic terminator
+BOOLEAN 2nd Finger proximal elastic terminator mesh: BOOLEAN Proximal elastic terminator.001
 BOOLEAN 2nd Finger proximal elastic terminator materials: Boolean difference.004, 
 BOOLEAN 2nd Finger proximal elastic terminator modifiers: None
 
@@ -163,6 +141,56 @@ BOOLEAN PQ12 exteneed 0.3 mm tolerance parent: PQ12 extended
 BOOLEAN PQ12 exteneed 0.3 mm tolerance mesh: BOOLEAN PQ12 exteneed 0.3 mm tolerance
 BOOLEAN PQ12 exteneed 0.3 mm tolerance materials: Boolean difference, 
 BOOLEAN PQ12 exteneed 0.3 mm tolerance modifiers: None
+
+Name: BOOLEAN Proximal elastic terminator combo
+BOOLEAN Proximal elastic terminator combo Type: MESH
+BOOLEAN Proximal elastic terminator combo transform: X37.999996185302734 Y-3.3999996185302734 Z-3.3999996185302734
+BOOLEAN Proximal elastic terminator combo rotation: X-0.007619168143719435 Y0.17652077972888947 Z-0.1745329201221466
+BOOLEAN Proximal elastic terminator combo scale: X1.0 Y1.0 Z1.0
+BOOLEAN Proximal elastic terminator combo groups: None
+BOOLEAN Proximal elastic terminator combo mesh: BOOLEAN Proximal elastic terminator.002
+BOOLEAN Proximal elastic terminator combo materials: Boolean difference, 
+BOOLEAN Proximal elastic terminator combo modifiers: None
+
+Name: BOOLEAN Proximal elastic terminator.001
+BOOLEAN Proximal elastic terminator.001 Type: MESH
+BOOLEAN Proximal elastic terminator.001 transform: X-18.999996185302734 Y-1.4999983310699463 Z-1.0
+BOOLEAN Proximal elastic terminator.001 rotation: X-1.0610887812845249e-07 Y-0.08726681768894196 Z0.08726660907268524
+BOOLEAN Proximal elastic terminator.001 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Proximal elastic terminator.001 groups: None
+BOOLEAN Proximal elastic terminator.001 mesh: BOOLEAN Proximal elastic terminator
+BOOLEAN Proximal elastic terminator.001 materials: Boolean difference, 
+BOOLEAN Proximal elastic terminator.001 modifiers: None
+
+Name: BOOLEAN Proximal elastic terminator.002
+BOOLEAN Proximal elastic terminator.002 Type: MESH
+BOOLEAN Proximal elastic terminator.002 transform: X0.0 Y0.0 Z0.0
+BOOLEAN Proximal elastic terminator.002 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Proximal elastic terminator.002 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Proximal elastic terminator.002 groups: None
+BOOLEAN Proximal elastic terminator.002 mesh: BOOLEAN Proximal elastic terminator
+BOOLEAN Proximal elastic terminator.002 materials: Boolean difference, 
+BOOLEAN Proximal elastic terminator.002 modifiers: None
+
+Name: BOOLEAN Proximal elastic terminator.003
+BOOLEAN Proximal elastic terminator.003 Type: MESH
+BOOLEAN Proximal elastic terminator.003 transform: X19.000001907348633 Y-1.5 Z-1.0
+BOOLEAN Proximal elastic terminator.003 rotation: X2.200696513909861e-07 Y0.08220556378364563 Z-0.08726643025875092
+BOOLEAN Proximal elastic terminator.003 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Proximal elastic terminator.003 groups: None
+BOOLEAN Proximal elastic terminator.003 mesh: BOOLEAN Proximal elastic terminator
+BOOLEAN Proximal elastic terminator.003 materials: Boolean difference, 
+BOOLEAN Proximal elastic terminator.003 modifiers: None
+
+Name: BOOLEAN Proximal elastic terminator.004
+BOOLEAN Proximal elastic terminator.004 Type: MESH
+BOOLEAN Proximal elastic terminator.004 transform: X37.999996185302734 Y-3.3999996185302734 Z-3.3999996185302734
+BOOLEAN Proximal elastic terminator.004 rotation: X-0.007619168143719435 Y0.17652077972888947 Z-0.1745329201221466
+BOOLEAN Proximal elastic terminator.004 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Proximal elastic terminator.004 groups: None
+BOOLEAN Proximal elastic terminator.004 mesh: BOOLEAN Proximal elastic terminator
+BOOLEAN Proximal elastic terminator.004 materials: Boolean difference, 
+BOOLEAN Proximal elastic terminator.004 modifiers: None
 
 Name: BOOLEAN Tendon Channels
 BOOLEAN Tendon Channels Type: MESH
@@ -379,10 +407,8 @@ Ligament cover modifiers:
         Operation: UNION, Object: Ligament cover prongs
   #2 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
-  #3 Name: Boolean.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN 1st Finger proximal elastic terminator
-  #4 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN 2nd Finger proximal elastic terminator
+  #3 Name: Boolean.ProximalElasticTerminatorCombo, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Proximal elastic terminator combo
 
 Name: Ligament cover prong target
 Ligament cover prong target Type: MESH
