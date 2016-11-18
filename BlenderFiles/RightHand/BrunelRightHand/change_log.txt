@@ -440,6 +440,18 @@ Ligament cover prongs modifiers:
         Subsurf level: 0
   #2 Name: Solidify, Type: SOLIDIFY
 
+Name: Palm clip on pad
+Palm clip on pad Type: MESH
+Palm clip on pad transform: X9.0 Y-48.89358901977539 Z-2.9508910179138184
+Palm clip on pad rotation: X0.0 Y-0.0 Z0.0
+Palm clip on pad scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+Palm clip on pad groups: Actuator Block, 
+Palm clip on pad mesh: Palm Inner.001
+Palm clip on pad materials: PLA, 
+Palm clip on pad modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Solidify, Type: SOLIDIFY
+
 Name: Palm Covered
 Palm Covered Type: MESH
 Palm Covered transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
@@ -511,6 +523,18 @@ Palm Simple groups: None
 Palm Simple mesh: Palm Simple
 Palm Simple materials: PLA Black, NF White, 
 Palm Simple modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Palm Simple.001
+Palm Simple.001 Type: MESH
+Palm Simple.001 transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
+Palm Simple.001 rotation: X-0.0 Y3.141592502593994 Z-0.0
+Palm Simple.001 scale: X1.0 Y1.0 Z1.0
+Palm Simple.001 groups: None
+Palm Simple.001 mesh: Palm Simple.001
+Palm Simple.001 materials: Urethane, 
+Palm Simple.001 modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
