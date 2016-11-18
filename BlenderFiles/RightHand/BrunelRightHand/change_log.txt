@@ -14,15 +14,15 @@ Name: 2nd Finger
 
 Name: 3rd Finger
 3rd Finger Type: EMPTY
-3rd Finger transform: X19.006816864013672 Y-1.5005950927734375 Z-1.000585675239563
+3rd Finger transform: X19.0 Y-1.5 Z-1.0
 3rd Finger rotation: X4.674400311266425e-10 Y0.08726643770933151 Z-0.08726643770933151
 3rd Finger scale: X1.0 Y1.0 Z1.0
 3rd Finger groups: None
 
 Name: 4th Finger
 4th Finger Type: EMPTY
-4th Finger transform: X37.99764633178711 Y-3.3995819091796875 Z-3.3995769023895264
-4th Finger rotation: X0.0 Y0.26179933547973633 Z-0.1745329052209854
+4th Finger transform: X37.999996185302734 Y-3.4000000953674316 Z-3.4000000953674316
+4th Finger rotation: X0.0 Y0.1745329201221466 Z-0.1745329052209854
 4th Finger scale: X1.0 Y1.0 Z1.0
 4th Finger groups: None
 
@@ -32,6 +32,26 @@ Actuator Block transform: X9.0 Y-21.0 Z-3.0
 Actuator Block rotation: X0.0 Y0.0 Z0.0
 Actuator Block scale: X1.0 Y1.0 Z1.0
 Actuator Block groups: None
+
+Name: BOOLEAN 1st Finger proximal elastic terminator
+BOOLEAN 1st Finger proximal elastic terminator Type: MESH
+BOOLEAN 1st Finger proximal elastic terminator transform: X0.0 Y-10.0 Z15.297052383422852
+BOOLEAN 1st Finger proximal elastic terminator rotation: X3.141592502593994 Y-0.0 Z0.0
+BOOLEAN 1st Finger proximal elastic terminator scale: X1.0 Y1.0 Z1.0
+BOOLEAN 1st Finger proximal elastic terminator groups: None
+BOOLEAN 1st Finger proximal elastic terminator mesh: BOOLEAN Proximal elastic terminator.001
+BOOLEAN 1st Finger proximal elastic terminator materials: Boolean difference.004, 
+BOOLEAN 1st Finger proximal elastic terminator modifiers: None
+
+Name: BOOLEAN 2nd Finger proximal elastic terminator
+BOOLEAN 2nd Finger proximal elastic terminator Type: MESH
+BOOLEAN 2nd Finger proximal elastic terminator transform: X0.0 Y-10.0 Z15.297052383422852
+BOOLEAN 2nd Finger proximal elastic terminator rotation: X3.141592502593994 Y-0.0 Z0.0
+BOOLEAN 2nd Finger proximal elastic terminator scale: X1.0 Y1.0 Z1.0
+BOOLEAN 2nd Finger proximal elastic terminator groups: None
+BOOLEAN 2nd Finger proximal elastic terminator mesh: BOOLEAN Proximal elastic terminator.001
+BOOLEAN 2nd Finger proximal elastic terminator materials: Boolean difference.004, 
+BOOLEAN 2nd Finger proximal elastic terminator modifiers: None
 
 Name: BOOLEAN Cable tidy
 BOOLEAN Cable tidy Type: MESH
@@ -75,7 +95,7 @@ BOOLEAN Hand Ligament rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Hand Ligament scale: X1.0 Y1.0 Z1.0
 BOOLEAN Hand Ligament groups: Actuator Block, Booleans, 
 BOOLEAN Hand Ligament parent: Actuator Block
-BOOLEAN Hand Ligament mesh: BOOLEAN Hand Ligament
+BOOLEAN Hand Ligament mesh: BOOLEAN Hand Ligament.001
 BOOLEAN Hand Ligament materials: Boolean difference, 
 BOOLEAN Hand Ligament modifiers: None
 
@@ -121,6 +141,56 @@ BOOLEAN PQ12 exteneed 0.3 mm tolerance parent: PQ12 extended
 BOOLEAN PQ12 exteneed 0.3 mm tolerance mesh: BOOLEAN PQ12 exteneed 0.3 mm tolerance
 BOOLEAN PQ12 exteneed 0.3 mm tolerance materials: Boolean difference, 
 BOOLEAN PQ12 exteneed 0.3 mm tolerance modifiers: None
+
+Name: BOOLEAN Proximal elastic terminator combo
+BOOLEAN Proximal elastic terminator combo Type: MESH
+BOOLEAN Proximal elastic terminator combo transform: X37.999996185302734 Y-3.3999996185302734 Z-3.3999996185302734
+BOOLEAN Proximal elastic terminator combo rotation: X-0.007619168143719435 Y0.17652077972888947 Z-0.1745329201221466
+BOOLEAN Proximal elastic terminator combo scale: X1.0 Y1.0 Z1.0
+BOOLEAN Proximal elastic terminator combo groups: None
+BOOLEAN Proximal elastic terminator combo mesh: BOOLEAN Proximal elastic terminator.002
+BOOLEAN Proximal elastic terminator combo materials: Boolean difference, 
+BOOLEAN Proximal elastic terminator combo modifiers: None
+
+Name: BOOLEAN Proximal elastic terminator.001
+BOOLEAN Proximal elastic terminator.001 Type: MESH
+BOOLEAN Proximal elastic terminator.001 transform: X-18.999996185302734 Y-1.4999983310699463 Z-1.0
+BOOLEAN Proximal elastic terminator.001 rotation: X-1.0610887812845249e-07 Y-0.08726681768894196 Z0.08726660907268524
+BOOLEAN Proximal elastic terminator.001 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Proximal elastic terminator.001 groups: None
+BOOLEAN Proximal elastic terminator.001 mesh: BOOLEAN Proximal elastic terminator
+BOOLEAN Proximal elastic terminator.001 materials: Boolean difference, 
+BOOLEAN Proximal elastic terminator.001 modifiers: None
+
+Name: BOOLEAN Proximal elastic terminator.002
+BOOLEAN Proximal elastic terminator.002 Type: MESH
+BOOLEAN Proximal elastic terminator.002 transform: X0.0 Y0.0 Z0.0
+BOOLEAN Proximal elastic terminator.002 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Proximal elastic terminator.002 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Proximal elastic terminator.002 groups: None
+BOOLEAN Proximal elastic terminator.002 mesh: BOOLEAN Proximal elastic terminator
+BOOLEAN Proximal elastic terminator.002 materials: Boolean difference, 
+BOOLEAN Proximal elastic terminator.002 modifiers: None
+
+Name: BOOLEAN Proximal elastic terminator.003
+BOOLEAN Proximal elastic terminator.003 Type: MESH
+BOOLEAN Proximal elastic terminator.003 transform: X19.000001907348633 Y-1.5 Z-1.0
+BOOLEAN Proximal elastic terminator.003 rotation: X2.200696513909861e-07 Y0.08220556378364563 Z-0.08726643025875092
+BOOLEAN Proximal elastic terminator.003 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Proximal elastic terminator.003 groups: None
+BOOLEAN Proximal elastic terminator.003 mesh: BOOLEAN Proximal elastic terminator
+BOOLEAN Proximal elastic terminator.003 materials: Boolean difference, 
+BOOLEAN Proximal elastic terminator.003 modifiers: None
+
+Name: BOOLEAN Proximal elastic terminator.004
+BOOLEAN Proximal elastic terminator.004 Type: MESH
+BOOLEAN Proximal elastic terminator.004 transform: X37.999996185302734 Y-3.3999996185302734 Z-3.3999996185302734
+BOOLEAN Proximal elastic terminator.004 rotation: X-0.007619168143719435 Y0.17652077972888947 Z-0.1745329201221466
+BOOLEAN Proximal elastic terminator.004 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Proximal elastic terminator.004 groups: None
+BOOLEAN Proximal elastic terminator.004 mesh: BOOLEAN Proximal elastic terminator
+BOOLEAN Proximal elastic terminator.004 materials: Boolean difference, 
+BOOLEAN Proximal elastic terminator.004 modifiers: None
 
 Name: BOOLEAN Tendon Channels
 BOOLEAN Tendon Channels Type: MESH
@@ -333,10 +403,12 @@ Ligament cover parent: Actuator Block
 Ligament cover mesh: Ligament cover
 Ligament cover materials: PLA, 
 Ligament cover modifiers: 
-  #1 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
-  #2 Name: Boolean.001, Type: BOOLEAN
+  #1 Name: Boolean.LigamentCoverProngs, Type: BOOLEAN
         Operation: UNION, Object: Ligament cover prongs
+  #2 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
+  #3 Name: Boolean.ProximalElasticTerminatorCombo, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Proximal elastic terminator combo
 
 Name: Ligament cover prong target
 Ligament cover prong target Type: MESH
@@ -356,8 +428,8 @@ Ligament cover prongs rotation: X0.0 Y0.0 Z0.0
 Ligament cover prongs scale: X1.0 Y1.0 Z1.0
 Ligament cover prongs groups: Actuator Block, 
 Ligament cover prongs parent: Actuator Block
-Ligament cover prongs mesh: Ligament cover prongs
-Ligament cover prongs materials: PLA White, 
+Ligament cover prongs mesh: Hand Ligament.002
+Ligament cover prongs materials: None
 Ligament cover prongs modifiers: 
   #1 Name: Shrinkwrap, Type: SHRINKWRAP
         Target: Ligament cover prong target, Mode: PROJECT, Offset: 0.0 mm
@@ -722,7 +794,7 @@ HANDLE 1st Finger groups: 1st Finger,
 
 Name: HANDLE Fingertip.001
 HANDLE Fingertip.001 Type: MESH
-HANDLE Fingertip.001 transform: X0.0 Y0.0 Z0.0
+HANDLE Fingertip.001 transform: X0.0 Y11.5 Z0.0
 HANDLE Fingertip.001 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.001 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.001 groups: 1st Finger, 
@@ -733,7 +805,7 @@ HANDLE Fingertip.001 modifiers: None
 
 Name: HANDLE Distal Joint.001
 HANDLE Distal Joint.001 Type: MESH
-HANDLE Distal Joint.001 transform: X0.0 Y0.0 Z0.0
+HANDLE Distal Joint.001 transform: X0.0 Y8.5 Z0.0
 HANDLE Distal Joint.001 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.001 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.001 groups: 1st Finger, 
@@ -976,160 +1048,6 @@ Inner distal.001 modifiers:
   #8 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels distal.001
 
-Name: BOOLEAN MOULD 4th Inner proximal
-BOOLEAN MOULD 4th Inner proximal Type: MESH
-BOOLEAN MOULD 4th Inner proximal transform: X120.0 Y0.0 Z0.0
-BOOLEAN MOULD 4th Inner proximal rotation: X0.0 Y0.0 Z0.0
-BOOLEAN MOULD 4th Inner proximal scale: X1.0 Y1.0 Z1.0
-BOOLEAN MOULD 4th Inner proximal groups: 1st Finger, 
-BOOLEAN MOULD 4th Inner proximal mesh: BOOLEAN MOULD 2nd Inner proximal.001
-BOOLEAN MOULD 4th Inner proximal materials: Boolean difference, 
-BOOLEAN MOULD 4th Inner proximal modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: True
-        Vertex group mirroring: True
-  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Solidify, Type: SOLIDIFY
-
-Name: BOOLEAN MOULD 4th Inner distal
-BOOLEAN MOULD 4th Inner distal Type: MESH
-BOOLEAN MOULD 4th Inner distal transform: X140.0 Y0.0 Z-5.953692942296807e-16
-BOOLEAN MOULD 4th Inner distal rotation: X0.0 Y0.0 Z0.0
-BOOLEAN MOULD 4th Inner distal scale: X1.0 Y1.0 Z1.0
-BOOLEAN MOULD 4th Inner distal groups: 1st Finger, 
-BOOLEAN MOULD 4th Inner distal mesh: BOOLEAN MOULD 2nd Inner distal .001
-BOOLEAN MOULD 4th Inner distal materials: Boolean difference, 
-BOOLEAN MOULD 4th Inner distal modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: True
-        Vertex group mirroring: True
-  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Solidify, Type: SOLIDIFY
-
-Name: BOOLEAN MOULD 3rd Inner distal
-BOOLEAN MOULD 3rd Inner distal Type: MESH
-BOOLEAN MOULD 3rd Inner distal transform: X100.0 Y0.0 Z-5.953692942296807e-16
-BOOLEAN MOULD 3rd Inner distal rotation: X0.0 Y0.0 Z0.0
-BOOLEAN MOULD 3rd Inner distal scale: X1.0 Y1.0 Z1.0
-BOOLEAN MOULD 3rd Inner distal groups: 1st Finger, 
-BOOLEAN MOULD 3rd Inner distal mesh: BOOLEAN MOULD 2nd Inner distal .003
-BOOLEAN MOULD 3rd Inner distal materials: Boolean difference, 
-BOOLEAN MOULD 3rd Inner distal modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: True
-        Vertex group mirroring: True
-  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Solidify, Type: SOLIDIFY
-
-Name: BOOLEAN MOULD 3rd Inner proximal
-BOOLEAN MOULD 3rd Inner proximal Type: MESH
-BOOLEAN MOULD 3rd Inner proximal transform: X80.0 Y0.0 Z0.0
-BOOLEAN MOULD 3rd Inner proximal rotation: X0.0 Y0.0 Z0.0
-BOOLEAN MOULD 3rd Inner proximal scale: X1.0 Y1.0 Z1.0
-BOOLEAN MOULD 3rd Inner proximal groups: 1st Finger, 
-BOOLEAN MOULD 3rd Inner proximal mesh: BOOLEAN MOULD 2nd Inner proximal.003
-BOOLEAN MOULD 3rd Inner proximal materials: Boolean difference, 
-BOOLEAN MOULD 3rd Inner proximal modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: True
-        Vertex group mirroring: True
-  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Solidify, Type: SOLIDIFY
-
-Name: BOOLEAN MOULD 1st Inner proximal
-BOOLEAN MOULD 1st Inner proximal Type: MESH
-BOOLEAN MOULD 1st Inner proximal transform: X0.0 Y0.0 Z0.0
-BOOLEAN MOULD 1st Inner proximal rotation: X0.0 Y0.0 Z0.0
-BOOLEAN MOULD 1st Inner proximal scale: X1.0 Y1.0 Z1.0
-BOOLEAN MOULD 1st Inner proximal groups: 1st Finger, 
-BOOLEAN MOULD 1st Inner proximal mesh: BOOLEAN MOULD 2nd Inner proximal.002
-BOOLEAN MOULD 1st Inner proximal materials: Boolean difference, 
-BOOLEAN MOULD 1st Inner proximal modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: True
-        Vertex group mirroring: True
-  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Solidify, Type: SOLIDIFY
-
-Name: BOOLEAN MOULD 1st Inner distal
-BOOLEAN MOULD 1st Inner distal Type: MESH
-BOOLEAN MOULD 1st Inner distal transform: X20.0 Y0.0 Z-5.953692942296807e-16
-BOOLEAN MOULD 1st Inner distal rotation: X0.0 Y0.0 Z0.0
-BOOLEAN MOULD 1st Inner distal scale: X1.0 Y1.0 Z1.0
-BOOLEAN MOULD 1st Inner distal groups: 1st Finger, 
-BOOLEAN MOULD 1st Inner distal mesh: BOOLEAN MOULD 2nd Inner distal .002
-BOOLEAN MOULD 1st Inner distal materials: Boolean difference, 
-BOOLEAN MOULD 1st Inner distal modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: True
-        Vertex group mirroring: True
-  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Solidify, Type: SOLIDIFY
-
-Name: BOOLEAN MOULD 2nd Inner distal 
-BOOLEAN MOULD 2nd Inner distal  Type: MESH
-BOOLEAN MOULD 2nd Inner distal  transform: X60.0 Y0.0 Z-5.953692942296807e-16
-BOOLEAN MOULD 2nd Inner distal  rotation: X0.0 Y0.0 Z0.0
-BOOLEAN MOULD 2nd Inner distal  scale: X1.0 Y1.0 Z1.0
-BOOLEAN MOULD 2nd Inner distal  groups: 1st Finger, 
-BOOLEAN MOULD 2nd Inner distal  mesh: BOOLEAN MOULD 2nd Inner distal 
-BOOLEAN MOULD 2nd Inner distal  materials: Boolean difference, 
-BOOLEAN MOULD 2nd Inner distal  modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: True
-        Vertex group mirroring: True
-  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Solidify, Type: SOLIDIFY
-
-Name: BOOLEAN MOULD 2nd Inner proximal
-BOOLEAN MOULD 2nd Inner proximal Type: MESH
-BOOLEAN MOULD 2nd Inner proximal transform: X40.0 Y0.0 Z0.0
-BOOLEAN MOULD 2nd Inner proximal rotation: X0.0 Y0.0 Z0.0
-BOOLEAN MOULD 2nd Inner proximal scale: X1.0 Y1.0 Z1.0
-BOOLEAN MOULD 2nd Inner proximal groups: 1st Finger, 
-BOOLEAN MOULD 2nd Inner proximal mesh: BOOLEAN MOULD 2nd Inner proximal
-BOOLEAN MOULD 2nd Inner proximal materials: Boolean difference, 
-BOOLEAN MOULD 2nd Inner proximal modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: True
-        Vertex group mirroring: True
-  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Solidify, Type: SOLIDIFY
-
-Name: BOOLEAN MOULD M2 Bolt Holes
-BOOLEAN MOULD M2 Bolt Holes Type: MESH
-BOOLEAN MOULD M2 Bolt Holes transform: X0.0 Y63.5 Z-1.5
-BOOLEAN MOULD M2 Bolt Holes rotation: X3.141592502593994 Y-0.0 Z0.0
-BOOLEAN MOULD M2 Bolt Holes scale: X1.0 Y1.0 Z1.0
-BOOLEAN MOULD M2 Bolt Holes groups: 1st Finger, 
-BOOLEAN MOULD M2 Bolt Holes mesh: MOULD BOOLEAN M2 Bolt Holes
-BOOLEAN MOULD M2 Bolt Holes materials: Boolean difference, 
-BOOLEAN MOULD M2 Bolt Holes modifiers: None
-
 Name: HANDLE 2nd Finger
 HANDLE 2nd Finger Type: EMPTY
 HANDLE 2nd Finger transform: X0.0 Y0.0 Z0.0
@@ -1139,7 +1057,7 @@ HANDLE 2nd Finger groups: 2nd Finger,
 
 Name: HANDLE Distal Joint.002
 HANDLE Distal Joint.002 Type: MESH
-HANDLE Distal Joint.002 transform: X0.0 Y2.5 Z0.0
+HANDLE Distal Joint.002 transform: X0.0 Y9.5 Z0.0
 HANDLE Distal Joint.002 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.002 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.002 groups: 2nd Finger, 
@@ -1206,7 +1124,7 @@ BOOLEAN Tendon channels proximal.002 modifiers:
 
 Name: HANDLE Fingertip.002
 HANDLE Fingertip.002 Type: MESH
-HANDLE Fingertip.002 transform: X0.0 Y5.0 Z0.0
+HANDLE Fingertip.002 transform: X0.0 Y12.5 Z0.0
 HANDLE Fingertip.002 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.002 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.002 groups: 2nd Finger, 
@@ -1227,6 +1145,29 @@ BOOLEAN M2 Bolt Holes.002 materials: Boolean difference,
 BOOLEAN M2 Bolt Holes.002 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
+
+Name: Top cover proximal.002
+Top cover proximal.002 Type: MESH
+Top cover proximal.002 transform: X0.0 Y0.0 Z0.0
+Top cover proximal.002 rotation: X0.0 Y0.0 Z0.0
+Top cover proximal.002 scale: X1.0 Y1.0 Z1.0
+Top cover proximal.002 groups: 2nd Finger, 
+Top cover proximal.002 parent: HANDLE 2nd Finger
+Top cover proximal.002 mesh: Top cover proximal
+Top cover proximal.002 materials: PLA Black, 
+Top cover proximal.002 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Bevel, Type: BEVEL
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 2nd Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #5 Name: Boolean.M2, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.002
 
 Name: Urethane cover distal.002
 Urethane cover distal.002 Type: MESH
@@ -1370,32 +1311,9 @@ Top cover distal.002 modifiers:
   #6 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.002
 
-Name: Top cover proximal.002
-Top cover proximal.002 Type: MESH
-Top cover proximal.002 transform: X0.0 Y0.0 Z0.0
-Top cover proximal.002 rotation: X0.0 Y0.0 Z0.0
-Top cover proximal.002 scale: X1.0 Y1.0 Z1.0
-Top cover proximal.002 groups: 2nd Finger, 
-Top cover proximal.002 parent: HANDLE 2nd Finger
-Top cover proximal.002 mesh: Top cover proximal
-Top cover proximal.002 materials: PLA Black, 
-Top cover proximal.002 modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Bevel, Type: BEVEL
-  #3 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Mirror object: HANDLE 2nd Finger
-        Merge: True, Merge Limit: 0.10000000149011612 mm
-        Clipping: True
-        Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #5 Name: Boolean.M2, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.002
-
 Name: HANDLE Distal Joint.003
 HANDLE Distal Joint.003 Type: MESH
-HANDLE Distal Joint.003 transform: X0.0 Y0.0 Z0.0
+HANDLE Distal Joint.003 transform: X0.0 Y8.5 Z0.0
 HANDLE Distal Joint.003 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.003 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.003 groups: 3rd Finger, 
@@ -1462,7 +1380,7 @@ BOOLEAN Tendon channels proximal.003 modifiers:
 
 Name: HANDLE Fingertip.003
 HANDLE Fingertip.003 Type: MESH
-HANDLE Fingertip.003 transform: X0.0 Y0.0 Z0.0
+HANDLE Fingertip.003 transform: X0.0 Y11.5 Z0.0
 HANDLE Fingertip.003 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.003 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.003 groups: 3rd Finger, 
@@ -1684,6 +1602,8 @@ BOOLEAN Tendon channels distal.004 modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: Urethane cover proximal.004
 Urethane cover proximal.004 Type: MESH
@@ -1769,6 +1689,8 @@ Top cover proximal.004 modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #5 Name: Boolean.M2, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.004
+  #6 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Proximal elastic channel
 
 Name: Top cover distal.004
 Top cover distal.004 Type: MESH
@@ -1790,8 +1712,8 @@ Top cover distal.004 modifiers:
         Vertex group mirroring: True
   #4 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #5 Name: Boolean.FingerTopCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
+  #5 Name: Boolean.ElasticTerminator, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Elastic terminator.004
   #6 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.004
 
@@ -1833,26 +1755,6 @@ Ligament.004 modifiers:
         Mirror object: HANDLE 4th Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
-        Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-
-Name: BOOLEAN Ligament.004
-BOOLEAN Ligament.004 Type: MESH
-BOOLEAN Ligament.004 transform: X0.0 Y0.0 Z0.0
-BOOLEAN Ligament.004 rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Ligament.004 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Ligament.004 groups: 4th Finger, 
-BOOLEAN Ligament.004 parent: HANDLE 4th Finger
-BOOLEAN Ligament.004 mesh: BOOLEAN Ligament
-BOOLEAN Ligament.004 materials: Boolean difference, 
-BOOLEAN Ligament.004 modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: True
         Vertex group mirroring: True
   #4 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
@@ -1911,4 +1813,58 @@ Inner proximal.004 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Ligament.004
   #7 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels proximal.004
+
+Name: BOOLEAN Proximal elastic channel
+BOOLEAN Proximal elastic channel Type: MESH
+BOOLEAN Proximal elastic channel transform: X0.0 Y17.0 Z0.6500009298324585
+BOOLEAN Proximal elastic channel rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Proximal elastic channel scale: X1.0 Y1.0 Z1.0
+BOOLEAN Proximal elastic channel groups: None
+BOOLEAN Proximal elastic channel parent: HANDLE 4th Finger
+BOOLEAN Proximal elastic channel mesh: BOOLEAN Proximal elastic channel
+BOOLEAN Proximal elastic channel materials: None
+BOOLEAN Proximal elastic channel modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, Y, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN Elastic terminator.004
+BOOLEAN Elastic terminator.004 Type: MESH
+BOOLEAN Elastic terminator.004 transform: X0.0 Y42.012149810791016 Z-1.0
+BOOLEAN Elastic terminator.004 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Elastic terminator.004 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Elastic terminator.004 groups: None
+BOOLEAN Elastic terminator.004 parent: HANDLE 4th Finger
+BOOLEAN Elastic terminator.004 mesh: BOOLEAN Elastic terminator
+BOOLEAN Elastic terminator.004 materials: Boolean difference.003, 
+BOOLEAN Elastic terminator.004 modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+
+Name: BOOLEAN Ligament.004
+BOOLEAN Ligament.004 Type: MESH
+BOOLEAN Ligament.004 transform: X0.0 Y0.0 Z0.0
+BOOLEAN Ligament.004 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Ligament.004 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Ligament.004 groups: None
+BOOLEAN Ligament.004 parent: HANDLE 4th Finger
+BOOLEAN Ligament.004 mesh: BOOLEAN Ligament
+BOOLEAN Ligament.004 materials: Boolean difference, 
+BOOLEAN Ligament.004 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
