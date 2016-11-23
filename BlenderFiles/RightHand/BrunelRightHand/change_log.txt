@@ -33,6 +33,18 @@ Actuator Block rotation: X0.0 Y0.0 Z0.0
 Actuator Block scale: X1.0 Y1.0 Z1.0
 Actuator Block groups: None
 
+Name: Back Cover
+Back Cover Type: MESH
+Back Cover transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
+Back Cover rotation: X-0.0 Y3.141592502593994 Z-0.0
+Back Cover scale: X1.0 Y1.0 Z1.0
+Back Cover groups: None
+Back Cover mesh: Back Cover
+Back Cover materials: PLA Black, NF White, 
+Back Cover modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: BOOLEAN 1st Finger proximal elastic terminator
 BOOLEAN 1st Finger proximal elastic terminator Type: MESH
 BOOLEAN 1st Finger proximal elastic terminator transform: X0.0 Y-10.0 Z15.297052383422852
@@ -218,15 +230,14 @@ BOOLEAN Thumb attahment dowel modifiers: None
 
 Name: BOOLEAN Thumb ligament cover
 BOOLEAN Thumb ligament cover Type: MESH
-BOOLEAN Thumb ligament cover transform: X-15.940424919128418 Y-47.73994827270508 Z-9.024927139282227
+BOOLEAN Thumb ligament cover transform: X-6.940424919128418 Y-68.73994445800781 Z-11.82492733001709
 BOOLEAN Thumb ligament cover rotation: X0.0 Y-0.0 Z-0.17453289031982422
 BOOLEAN Thumb ligament cover scale: X1.0 Y1.0 Z1.0
-BOOLEAN Thumb ligament cover groups: Actuator Block, Booleans, Thumb, 
-BOOLEAN Thumb ligament cover parent: Actuator Block
-BOOLEAN Thumb ligament cover mesh: BOOLEAN Thumb Ligament Cover
-BOOLEAN Thumb ligament cover materials: Boolean difference, 
+BOOLEAN Thumb ligament cover groups: Actuator Block, Thumb, 
+BOOLEAN Thumb ligament cover mesh: BOOLEAN Thumb ligament cover
+BOOLEAN Thumb ligament cover materials: PLA, 
 BOOLEAN Thumb ligament cover modifiers: 
-  #1 Name: Solidify, Type: SOLIDIFY
+  #1 Name: Tolerance, Type: SOLIDIFY
 
 Name: BOOLEAN Thumb ligament cover M2 Bolt Hole
 BOOLEAN Thumb ligament cover M2 Bolt Hole Type: MESH
@@ -248,6 +259,18 @@ BOOLEAN Thumb ligament cover M2 bolt hole for thumb groups: Booleans, Thumb,
 BOOLEAN Thumb ligament cover M2 bolt hole for thumb mesh: BOOLEAN Thumb ligament cover M2 bolt hole for thumb
 BOOLEAN Thumb ligament cover M2 bolt hole for thumb materials: Boolean difference.001, 
 BOOLEAN Thumb ligament cover M2 bolt hole for thumb modifiers: None
+
+Name: BOOLEAN Thumb ligament cover.001
+BOOLEAN Thumb ligament cover.001 Type: MESH
+BOOLEAN Thumb ligament cover.001 transform: X-15.940424919128418 Y-47.73994827270508 Z-9.024927139282227
+BOOLEAN Thumb ligament cover.001 rotation: X0.0 Y-0.0 Z-0.17453289031982422
+BOOLEAN Thumb ligament cover.001 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb ligament cover.001 groups: Actuator Block, Booleans, Thumb, 
+BOOLEAN Thumb ligament cover.001 parent: Actuator Block
+BOOLEAN Thumb ligament cover.001 mesh: BOOLEAN Thumb Ligament Cover
+BOOLEAN Thumb ligament cover.001 materials: Boolean difference, 
+BOOLEAN Thumb ligament cover.001 modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
 
 Name: BOOLEAN Thumb ligament for thumb
 BOOLEAN Thumb ligament for thumb Type: MESH
@@ -302,6 +325,16 @@ BOOLEAN Thumb pivot dowel.002 parent: Actuator Block
 BOOLEAN Thumb pivot dowel.002 mesh: BOOLEAN Thumb pivot dowel.002
 BOOLEAN Thumb pivot dowel.002 materials: Boolean difference, 
 BOOLEAN Thumb pivot dowel.002 modifiers: None
+
+Name: BOOLEAN Thumb swept area
+BOOLEAN Thumb swept area Type: MESH
+BOOLEAN Thumb swept area transform: X-8.83842945098877 Y-68.40528106689453 Z-21.11538314819336
+BOOLEAN Thumb swept area rotation: X0.0 Y-0.0 Z-0.17453289031982422
+BOOLEAN Thumb swept area scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb swept area groups: None
+BOOLEAN Thumb swept area mesh: BOOLEAN Thumb swept area
+BOOLEAN Thumb swept area materials: None
+BOOLEAN Thumb swept area modifiers: None
 
 Name: BOOLEAN Thumb tendon channel
 BOOLEAN Thumb tendon channel Type: MESH
@@ -451,6 +484,10 @@ Palm clip on pad materials: PLA,
 Palm clip on pad modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Solidify, Type: SOLIDIFY
+  #3 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area
+  #4 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover
 
 Name: Palm Covered
 Palm Covered Type: MESH
@@ -512,7 +549,7 @@ Palm inner modifiers:
   #13 Name: Boolean.ThumbLigmaentCoverM2BoltHole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 Bolt Hole
   #14 Name: Boolean.ThumbLigmaentCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover.001
 
 Name: Palm Simple
 Palm Simple Type: MESH
@@ -537,6 +574,10 @@ Palm Simple.001 materials: Urethane,
 Palm Simple.001 modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area
+  #3 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover
 
 Name: Palm.000
 Palm.000 Type: MESH
@@ -610,7 +651,7 @@ Tendon pivot dowel modifiers: None
 Name: Thumb
 Thumb Type: MESH
 Thumb transform: X-10.27562141418457 Y-73.59512329101562 Z-13.199978828430176
-Thumb rotation: X1.5738415718078613 Y-17.283340454101562 Z1.3937076330184937
+Thumb rotation: X0.17453297972679138 Y-17.27876091003418 Z0.0
 Thumb scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Thumb groups: Thumb, 
 Thumb mesh: Thumb
@@ -656,7 +697,7 @@ Thumb ligament bent modifiers: None
 Name: Thumb ligament cover
 Thumb ligament cover Type: MESH
 Thumb ligament cover transform: X-15.940424919128418 Y-47.73994827270508 Z-8.82492733001709
-Thumb ligament cover rotation: X0.0 Y-0.0 Z-0.17453289031982422
+Thumb ligament cover rotation: X0.0 Y-0.0 Z-0.17453287541866302
 Thumb ligament cover scale: X1.0 Y1.0 Z1.0
 Thumb ligament cover groups: Actuator Block, Thumb, 
 Thumb ligament cover parent: Actuator Block
