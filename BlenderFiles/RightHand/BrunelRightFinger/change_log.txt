@@ -62,6 +62,25 @@ BOOLEAN Elastic terminator.004 modifiers:
         Clipping: False
         Vertex group mirroring: True
 
+Name: BOOLEAN Inner proximal
+BOOLEAN Inner proximal Type: MESH
+BOOLEAN Inner proximal transform: X0.0 Y0.0 Z0.0
+BOOLEAN Inner proximal rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Inner proximal scale: X1.0 Y1.0 Z1.0
+BOOLEAN Inner proximal groups: 4th Finger, 
+BOOLEAN Inner proximal parent: HANDLE 4th Finger
+BOOLEAN Inner proximal mesh: BOOLEAN Inner proximal
+BOOLEAN Inner proximal materials: Boolean difference, 
+BOOLEAN Inner proximal modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 4th Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #3 Name: Solidify, Type: SOLIDIFY
+
 Name: BOOLEAN Ligament.002
 BOOLEAN Ligament.002 Type: MESH
 BOOLEAN Ligament.002 transform: X0.0 Y0.0 Z0.0
@@ -1473,8 +1492,10 @@ Top cover proximal.004 modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #5 Name: Boolean.M2, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.004
-  #6 Name: Boolean, Type: BOOLEAN
+  #6 Name: Boolean.ProximalElasticChannel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Proximal elastic channel
+  #7 Name: Boolean.ProximalInner, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Inner proximal
 
 Name: Urethane cover distal.001
 Urethane cover distal.001 Type: MESH
