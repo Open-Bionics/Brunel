@@ -252,6 +252,16 @@ BOOLEAN Thumb pivot dowel.002 mesh: BOOLEAN Thumb pivot dowel.002
 BOOLEAN Thumb pivot dowel.002 materials: Boolean difference, 
 BOOLEAN Thumb pivot dowel.002 modifiers: None
 
+Name: BOOLEAN Thumb swept area
+BOOLEAN Thumb swept area Type: MESH
+BOOLEAN Thumb swept area transform: X-8.83842945098877 Y-68.40528106689453 Z-21.11538314819336
+BOOLEAN Thumb swept area rotation: X0.0 Y-0.0 Z-0.17453289031982422
+BOOLEAN Thumb swept area scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb swept area groups: None
+BOOLEAN Thumb swept area mesh: BOOLEAN Thumb swept area
+BOOLEAN Thumb swept area materials: None
+BOOLEAN Thumb swept area modifiers: None
+
 Name: BOOLEAN Thumb tendon channel
 BOOLEAN Thumb tendon channel Type: MESH
 BOOLEAN Thumb tendon channel transform: X15.050033569335938 Y-73.01124572753906 Z-4.673169136047363
@@ -428,6 +438,22 @@ Palm Simple materials: PLA Black, NF White,
 Palm Simple modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+
+Name: Palm Simple.001
+Palm Simple.001 Type: MESH
+Palm Simple.001 transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
+Palm Simple.001 rotation: X-0.0 Y3.141592502593994 Z-0.0
+Palm Simple.001 scale: X1.0 Y1.0 Z1.0
+Palm Simple.001 groups: None
+Palm Simple.001 mesh: Palm Simple.001
+Palm Simple.001 materials: Urethane, 
+Palm Simple.001 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Boolean.ThumbSweptArea, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area
+  #3 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
 
 Name: Palm.000
 Palm.000 Type: MESH
