@@ -284,20 +284,19 @@ GALA cover parent: Actuator Block
 GALA cover mesh: GALA cover
 GALA cover materials: PLA, 
 GALA cover modifiers: 
-  #1 Name: Boolean.ConicalSpring, Type: BOOLEAN
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean.ConicalSpring, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Conical spring
-  #2 Name: Boolean.GALACoverM2Bolts, Type: BOOLEAN
+  #3 Name: Boolean.GALACoverM2Bolts, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN GALA cover M2 Bolt Hole
-  #3 Name: Boolean.PQ12s, Type: BOOLEAN
+  #4 Name: Boolean.PQ12s, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
-  #4 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
+  #5 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel
-  #5 Name: Boolean.PCB, Type: BOOLEAN
+  #6 Name: Boolean.PCB, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut
-  #6 Name: Boolean.CableTidy, Type: BOOLEAN
+  #7 Name: Boolean.CableTidy, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN GALA cover cable tidy
-  #7 Name: Boolean.ThumbAttachmentDowel.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
 
 Name: Hand Ligament
 Hand Ligament Type: MESH
