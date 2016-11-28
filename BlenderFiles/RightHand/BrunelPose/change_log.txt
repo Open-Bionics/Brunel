@@ -1,0 +1,140 @@
+Name: Distal phalanx.001
+Distal phalanx.001 Type: MESH
+Distal phalanx.001 transform: X0.0 Y50.0 Z0.0
+Distal phalanx.001 rotation: X0.0 Y0.0 Z0.0
+Distal phalanx.001 scale: X1.0 Y1.0 Z1.0
+Distal phalanx.001 groups: None
+Distal phalanx.001 parent: Proximal phalanx.001
+Distal phalanx.001 mesh: Distal phalanx.001
+Distal phalanx.001 materials: None
+Distal phalanx.001 modifiers: None
+
+Name: Distal phalanx.002
+Distal phalanx.002 Type: MESH
+Distal phalanx.002 transform: X0.0 Y50.0 Z0.0
+Distal phalanx.002 rotation: X0.0 Y0.0 Z0.0
+Distal phalanx.002 scale: X1.0 Y1.0 Z1.0
+Distal phalanx.002 groups: None
+Distal phalanx.002 parent: Proximal phalanx.002
+Distal phalanx.002 mesh: Distal phalanx.002
+Distal phalanx.002 materials: None
+Distal phalanx.002 modifiers: None
+
+Name: Distal phalanx.003
+Distal phalanx.003 Type: MESH
+Distal phalanx.003 transform: X0.0 Y45.0 Z0.0
+Distal phalanx.003 rotation: X0.0 Y0.0 Z0.0
+Distal phalanx.003 scale: X1.0 Y1.0 Z1.0
+Distal phalanx.003 groups: None
+Distal phalanx.003 parent: Proximal phalanx.003
+Distal phalanx.003 mesh: Distal phalanx.003
+Distal phalanx.003 materials: None
+Distal phalanx.003 modifiers: None
+
+Name: Distal phalanx.004
+Distal phalanx.004 Type: MESH
+Distal phalanx.004 transform: X0.0 Y40.0 Z0.0
+Distal phalanx.004 rotation: X0.0 Y0.0 Z0.0
+Distal phalanx.004 scale: X1.0 Y1.0 Z1.0
+Distal phalanx.004 groups: None
+Distal phalanx.004 parent: Proximal phalanx.004
+Distal phalanx.004 mesh: Distal phalanx.004
+Distal phalanx.004 materials: None
+Distal phalanx.004 modifiers: None
+
+Name: Knuckle.001
+Knuckle.001 Type: EMPTY
+Knuckle.001 transform: X-19.0 Y-1.5 Z-1.0
+Knuckle.001 rotation: X0.0 Y-0.0872664600610733 Z0.0872664600610733
+Knuckle.001 scale: X1.0 Y1.0 Z1.0
+Knuckle.001 groups: None
+
+Name: Knuckle.002
+Knuckle.002 Type: EMPTY
+Knuckle.002 transform: X0.0 Y0.0 Z0.0
+Knuckle.002 rotation: X0.0 Y0.0 Z0.0
+Knuckle.002 scale: X1.0 Y1.0 Z1.0
+Knuckle.002 groups: None
+
+Name: Knuckle.003
+Knuckle.003 Type: EMPTY
+Knuckle.003 transform: X19.0 Y-1.5 Z-1.0
+Knuckle.003 rotation: X0.0 Y0.0872664600610733 Z-0.0872664600610733
+Knuckle.003 scale: X1.0 Y1.0 Z1.0
+Knuckle.003 groups: None
+
+Name: Knuckle.004
+Knuckle.004 Type: EMPTY
+Knuckle.004 transform: X38.0 Y-3.4000000953674316 Z-3.4000000953674316
+Knuckle.004 rotation: X0.0 Y0.1745329201221466 Z-0.1745329201221466
+Knuckle.004 scale: X1.0 Y1.0 Z1.0
+Knuckle.004 groups: None
+
+Name: Proximal phalanx.001
+Proximal phalanx.001 Type: MESH
+Proximal phalanx.001 transform: X0.0 Y0.0 Z0.0
+Proximal phalanx.001 rotation: X0.0 Y0.0 Z0.0
+Proximal phalanx.001 scale: X1.0 Y1.0 Z1.0
+Proximal phalanx.001 groups: None
+Proximal phalanx.001 parent: Knuckle.001
+Proximal phalanx.001 mesh: Proximal phalanx.001
+Proximal phalanx.001 materials: None
+Proximal phalanx.001 modifiers: None
+
+Name: Proximal phalanx.002
+Proximal phalanx.002 Type: MESH
+Proximal phalanx.002 transform: X0.0 Y0.0 Z0.0
+Proximal phalanx.002 rotation: X0.0 Y0.0 Z0.0
+Proximal phalanx.002 scale: X1.0 Y1.0 Z1.0
+Proximal phalanx.002 groups: None
+Proximal phalanx.002 parent: Knuckle.002
+Proximal phalanx.002 mesh: Proximal phalanx.002
+Proximal phalanx.002 materials: None
+Proximal phalanx.002 modifiers: None
+
+Name: Proximal phalanx.003
+Proximal phalanx.003 Type: MESH
+Proximal phalanx.003 transform: X0.0 Y0.0 Z0.0
+Proximal phalanx.003 rotation: X0.0 Y0.0 Z0.0
+Proximal phalanx.003 scale: X1.0 Y1.0 Z1.0
+Proximal phalanx.003 groups: None
+Proximal phalanx.003 parent: Knuckle.003
+Proximal phalanx.003 mesh: Proximal phalanx.003
+Proximal phalanx.003 materials: None
+Proximal phalanx.003 modifiers: None
+
+Name: Proximal phalanx.004
+Proximal phalanx.004 Type: MESH
+Proximal phalanx.004 transform: X0.0 Y0.0 Z0.0
+Proximal phalanx.004 rotation: X0.0 Y0.0 Z0.0
+Proximal phalanx.004 scale: X1.0 Y1.0 Z1.0
+Proximal phalanx.004 groups: None
+Proximal phalanx.004 parent: Knuckle.004
+Proximal phalanx.004 mesh: Proximal phalanx.004
+Proximal phalanx.004 materials: None
+Proximal phalanx.004 modifiers: None
+
+Name: Thumb
+Thumb Type: MESH
+Thumb transform: X-10.27562141418457 Y-73.59512329101562 Z-13.199978828430176
+Thumb rotation: X0.008079949766397476 Y2.0784993466804735e-05 Z-0.18070723116397858
+Thumb scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+Thumb groups: None
+Thumb mesh: Thumb
+Thumb materials: PLA, 
+Thumb modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Boolean.ThumbLigamentForThumb, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
+  #3 Name: Boolean,M2BoltHole, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
+  #4 Name: Boolean.TopCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
+  #5 Name: Boolean.ThumbTendonChannelForThumb, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
+  #6 Name: Boolean.ThumbTendonTerminationM2BoltHole, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
+  #7 Name: Boolean.ThumbLigamentCoverM2BoltHole, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
+
