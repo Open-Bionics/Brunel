@@ -42,9 +42,7 @@ BOOLEAN Conical spring groups: Actuator Block, Booleans,
 BOOLEAN Conical spring parent: Actuator Block
 BOOLEAN Conical spring mesh: BOOLEAN Conical spring
 BOOLEAN Conical spring materials: Boolean difference, 
-BOOLEAN Conical spring modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
+BOOLEAN Conical spring modifiers: None
 
 Name: BOOLEAN GALA cover cable tidy
 BOOLEAN GALA cover cable tidy Type: MESH
@@ -394,8 +392,7 @@ Palm inner mesh: Palm Inner
 Palm inner materials: PLA, 
 Palm inner modifiers: 
   #1 Name: Bevel, Type: BEVEL
-  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Proximal fillet, Type: BEVEL
   #3 Name: Boolean.PQ12, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
   #4 Name: Boolean.ConicalSpring, Type: BOOLEAN
@@ -479,6 +476,17 @@ PCB Chestnut parent: Actuator Block
 PCB Chestnut mesh: PCB Chestnut
 PCB Chestnut materials: FR4, Component, Black plastic, Firgelli Connector, 
 PCB Chestnut modifiers: None
+
+Name: PQ12 Caps
+PQ12 Caps Type: MESH
+PQ12 Caps transform: X-13.649959564208984 Y-80.01123046875 Z-3.00000262260437
+PQ12 Caps rotation: X0.0 Y0.0 Z0.0
+PQ12 Caps scale: X1.0 Y1.0 Z1.0
+PQ12 Caps groups: None
+PQ12 Caps parent: Actuator Block
+PQ12 Caps mesh: PQ12 Caps
+PQ12 Caps materials: PLA, 
+PQ12 Caps modifiers: None
 
 Name: PQ12 extended
 PQ12 extended Type: MESH
