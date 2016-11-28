@@ -33,17 +33,6 @@ Actuator Block rotation: X0.0 Y0.0 Z0.0
 Actuator Block scale: X1.0 Y1.0 Z1.0
 Actuator Block groups: None
 
-Name: BOOLEAN Cable tidy
-BOOLEAN Cable tidy Type: MESH
-BOOLEAN Cable tidy transform: X29.999998092651367 Y-49.94167709350586 Z11.216859817504883
-BOOLEAN Cable tidy rotation: X0.0 Y-0.0 Z0.0
-BOOLEAN Cable tidy scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
-BOOLEAN Cable tidy groups: Actuator Block, Booleans, 
-BOOLEAN Cable tidy parent: Actuator Block
-BOOLEAN Cable tidy mesh: BOOLEAN Cable tidy
-BOOLEAN Cable tidy materials: Boolean difference, 
-BOOLEAN Cable tidy modifiers: None
-
 Name: BOOLEAN Conical spring
 BOOLEAN Conical spring Type: MESH
 BOOLEAN Conical spring transform: X-15.163448333740234 Y-46.499046325683594 Z-4.673167705535889
@@ -56,6 +45,18 @@ BOOLEAN Conical spring materials: Boolean difference,
 BOOLEAN Conical spring modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN GALA cover cable tidy
+BOOLEAN GALA cover cable tidy Type: MESH
+BOOLEAN GALA cover cable tidy transform: X29.999998092651367 Y-49.94167709350586 Z11.216859817504883
+BOOLEAN GALA cover cable tidy rotation: X0.0 Y-0.0 Z0.0
+BOOLEAN GALA cover cable tidy scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+BOOLEAN GALA cover cable tidy groups: Actuator Block, Booleans, 
+BOOLEAN GALA cover cable tidy parent: Actuator Block
+BOOLEAN GALA cover cable tidy mesh: BOOLEAN GALA cover cable tidy
+BOOLEAN GALA cover cable tidy materials: Boolean difference, 
+BOOLEAN GALA cover cable tidy modifiers: 
+  #1 Name: Array, Type: ARRAY
 
 Name: BOOLEAN GALA cover M2 Bolt Hole
 BOOLEAN GALA cover M2 Bolt Hole Type: MESH
@@ -296,7 +297,7 @@ GALA cover modifiers:
   #5 Name: Boolean.PCB, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut
   #6 Name: Boolean.CableTidy, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Cable tidy
+        Operation: DIFFERENCE, Object: BOOLEAN GALA cover cable tidy
   #7 Name: Boolean.ThumbAttachmentDowel.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
 
