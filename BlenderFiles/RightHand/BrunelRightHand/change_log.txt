@@ -89,6 +89,19 @@ BOOLEAN Ligament cover M2 bolt hole mesh: BOOLEAN Ligament cover M2 bolt hole
 BOOLEAN Ligament cover M2 bolt hole materials: Boolean difference, 
 BOOLEAN Ligament cover M2 bolt hole modifiers: None
 
+Name: Boolean Palm Inner
+Boolean Palm Inner Type: MESH
+Boolean Palm Inner transform: X9.0 Y-48.89358901977539 Z-2.9508914947509766
+Boolean Palm Inner rotation: X0.0 Y0.0 Z0.0
+Boolean Palm Inner scale: X1.0 Y1.0 Z1.0
+Boolean Palm Inner groups: None
+Boolean Palm Inner mesh: Palm Inner.003
+Boolean Palm Inner materials: Boolean difference, 
+Boolean Palm Inner modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Proximal Fillet, Type: BEVEL
+  #3 Name: Solidify, Type: SOLIDIFY
+
 Name: BOOLEAN PCB Chestnut
 BOOLEAN PCB Chestnut Type: MESH
 BOOLEAN PCB Chestnut transform: X7.499999523162842 Y-46.44186782836914 Z11.51685905456543
@@ -185,17 +198,30 @@ BOOLEAN Thumb attahment dowel mesh: BOOLEAN Thumb attahment dowel
 BOOLEAN Thumb attahment dowel materials: Boolean difference, 
 BOOLEAN Thumb attahment dowel modifiers: None
 
-Name: BOOLEAN Thumb ligament cover
-BOOLEAN Thumb ligament cover Type: MESH
-BOOLEAN Thumb ligament cover transform: X-15.940424919128418 Y-47.73994827270508 Z-9.024927139282227
-BOOLEAN Thumb ligament cover rotation: X0.0 Y-0.0 Z-0.17453289031982422
-BOOLEAN Thumb ligament cover scale: X1.0 Y1.0 Z1.0
-BOOLEAN Thumb ligament cover groups: Actuator Block, Booleans, Thumb, 
-BOOLEAN Thumb ligament cover parent: Actuator Block
-BOOLEAN Thumb ligament cover mesh: BOOLEAN Thumb Ligament Cover
-BOOLEAN Thumb ligament cover materials: Boolean difference, 
-BOOLEAN Thumb ligament cover modifiers: 
+Name: BOOLEAN Thumb ligament cover for inner palm
+BOOLEAN Thumb ligament cover for inner palm Type: MESH
+BOOLEAN Thumb ligament cover for inner palm transform: X-15.940424919128418 Y-47.73994827270508 Z-9.024927139282227
+BOOLEAN Thumb ligament cover for inner palm rotation: X0.0 Y-0.0 Z-0.17453289031982422
+BOOLEAN Thumb ligament cover for inner palm scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb ligament cover for inner palm groups: Actuator Block, Booleans, Thumb, 
+BOOLEAN Thumb ligament cover for inner palm parent: Actuator Block
+BOOLEAN Thumb ligament cover for inner palm mesh: BOOLEAN Thumb Ligament Cover
+BOOLEAN Thumb ligament cover for inner palm materials: Boolean difference, 
+BOOLEAN Thumb ligament cover for inner palm modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
+
+Name: BOOLEAN Thumb ligament cover for outer palm
+BOOLEAN Thumb ligament cover for outer palm Type: MESH
+BOOLEAN Thumb ligament cover for outer palm transform: X-15.940424919128418 Y-47.73994827270508 Z-8.82492733001709
+BOOLEAN Thumb ligament cover for outer palm rotation: X0.0 Y-0.0 Z-0.17453289031982422
+BOOLEAN Thumb ligament cover for outer palm scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb ligament cover for outer palm groups: Actuator Block, Thumb, 
+BOOLEAN Thumb ligament cover for outer palm parent: Actuator Block
+BOOLEAN Thumb ligament cover for outer palm mesh: BOOLEAN Thumb ligament cover for outer palm
+BOOLEAN Thumb ligament cover for outer palm materials: Boolean difference, 
+BOOLEAN Thumb ligament cover for outer palm modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+  #2 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN Thumb ligament cover M2 Bolt Hole
 BOOLEAN Thumb ligament cover M2 Bolt Hole Type: MESH
@@ -254,12 +280,12 @@ BOOLEAN Thumb pivot dowel.002 modifiers: None
 
 Name: BOOLEAN Thumb swept area
 BOOLEAN Thumb swept area Type: MESH
-BOOLEAN Thumb swept area transform: X-8.83842945098877 Y-68.40528106689453 Z-21.11538314819336
+BOOLEAN Thumb swept area transform: X-6.506304740905762 Y-66.27792358398438 Z-15.024927139282227
 BOOLEAN Thumb swept area rotation: X0.0 Y-0.0 Z-0.17453289031982422
 BOOLEAN Thumb swept area scale: X1.0 Y1.0 Z1.0
 BOOLEAN Thumb swept area groups: None
 BOOLEAN Thumb swept area mesh: BOOLEAN Thumb swept area
-BOOLEAN Thumb swept area materials: None
+BOOLEAN Thumb swept area materials: Boolean difference, 
 BOOLEAN Thumb swept area modifiers: None
 
 Name: BOOLEAN Thumb tendon channel
@@ -425,7 +451,27 @@ Palm inner modifiers:
   #13 Name: Boolean.ThumbLigmaentCoverM2BoltHole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 Bolt Hole
   #14 Name: Boolean.ThumbLigmaentCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for inner palm
+
+Name: Palm outer surface
+Palm outer surface Type: MESH
+Palm outer surface transform: X10.321754455566406 Y-16.049638748168945 Z-22.01079750061035
+Palm outer surface rotation: X0.0 Y0.0 Z0.0
+Palm outer surface scale: X1.0 Y1.0 Z1.0
+Palm outer surface groups: None
+Palm outer surface mesh: Plane
+Palm outer surface materials: Urethane, 
+Palm outer surface modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Chamfer, Type: BEVEL
+  #4 Name: Boolean.InnerPalm, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Boolean Palm Inner
+  #5 Name: Boolean.ThumbSweptArea, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area
+  #6 Name: Boolean.ThumbLigamentCoverForOuterPalm, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for outer palm
 
 Name: Palm Simple
 Palm Simple Type: MESH
@@ -451,7 +497,7 @@ Palm Simple.001 modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #2 Name: Boolean.ThumbSweptArea, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area
+        Operation: DIFFERENCE, Object: None
   #3 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
 
@@ -537,8 +583,8 @@ Tendon pivot dowel modifiers: None
 
 Name: Thumb
 Thumb Type: EMPTY
-Thumb transform: X-7.49111270904541 Y-66.10427856445312 Z-13.024927139282227
-Thumb rotation: X0.0 Y-0.0 Z1.3962633609771729
+Thumb transform: X-7.49111270904541 Y-66.10427856445312 Z-15.024927139282227
+Thumb rotation: X0.0 Y-2.9802318834981634e-08 Z1.3962633609771729
 Thumb scale: X1.0 Y1.0 Z1.0
 Thumb groups: None
 
