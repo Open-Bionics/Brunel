@@ -33,37 +33,52 @@ Actuator Block rotation: X0.0 Y0.0 Z0.0
 Actuator Block scale: X1.0 Y1.0 Z1.0
 Actuator Block groups: None
 
-Name: Back cover wing lateral
-Back cover wing lateral Type: MESH
-Back cover wing lateral transform: X-22.64480972290039 Y-66.827880859375 Z-3.0000014305114746
-Back cover wing lateral rotation: X3.2380853554059286e-10 Y4.381283780219292e-09 Z0.13962633907794952
-Back cover wing lateral scale: X0.26475825905799866 Y0.26475825905799866 Z0.26475822925567627
-Back cover wing lateral groups: None
-Back cover wing lateral parent: Actuator Block
-Back cover wing lateral mesh: Cube
-Back cover wing lateral materials: None
-Back cover wing lateral modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: Y, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: True
-        Vertex group mirroring: True
+Name: Back cover proximal attachment point
+Back cover proximal attachment point Type: MESH
+Back cover proximal attachment point transform: X9.000406265258789 Y-82.0 Z11.703612327575684
+Back cover proximal attachment point rotation: X0.0 Y0.0 Z0.0
+Back cover proximal attachment point scale: X1.0 Y1.0 Z1.0
+Back cover proximal attachment point groups: Actuator Block, 
+Back cover proximal attachment point parent: Actuator Block
+Back cover proximal attachment point mesh: Back cover proximal attachment point
+Back cover proximal attachment point materials: None
+Back cover proximal attachment point modifiers: 
+  #1 Name: Bevel, Type: BEVEL
 
-Name: Back cover wing medial
-Back cover wing medial Type: MESH
-Back cover wing medial transform: X40.62538528442383 Y-66.827880859375 Z-3.0000014305114746
-Back cover wing medial rotation: X3.2380856329616847e-10 Y4.381283780219292e-09 Z3.0019662380218506
-Back cover wing medial scale: X0.26475825905799866 Y0.26475825905799866 Z0.26475822925567627
-Back cover wing medial groups: Actuator Block, 
-Back cover wing medial parent: Actuator Block
-Back cover wing medial mesh: Cube
-Back cover wing medial materials: None
-Back cover wing medial modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: Y, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
+Name: BezierCircle
+BezierCircle Type: CURVE
+BezierCircle transform: X56.3663330078125 Y-1.5168609619140625 Z1.9962692260742188
+BezierCircle rotation: X1.5707963705062866 Y-0.0 Z0.0
+BezierCircle scale: X0.13203547894954681 Y0.13203547894954681 Z0.13203547894954681
+BezierCircle groups: None
+
+Name: BezierCurve
+BezierCurve Type: CURVE
+BezierCurve transform: X56.3663330078125 Y-10.683527946472168 Z1.9962692260742188
+BezierCurve rotation: X0.0 Y-0.0 Z1.5707963705062866
+BezierCurve scale: X1.0 Y1.0 Z1.0
+BezierCurve groups: None
+
+Name: BezierCurve.001
+BezierCurve.001 Type: MESH
+BezierCurve.001 transform: X56.3663330078125 Y-10.683527946472168 Z2.096269130706787
+BezierCurve.001 rotation: X0.0 Y-0.0 Z1.5707963705062866
+BezierCurve.001 scale: X1.0 Y1.0 Z1.0
+BezierCurve.001 groups: None
+BezierCurve.001 mesh: Mesh.003
+BezierCurve.001 materials: None
+BezierCurve.001 modifiers: None
+
+Name: BezierCurve.002
+BezierCurve.002 Type: MESH
+BezierCurve.002 transform: X56.3663330078125 Y-10.683527946472168 Z2.096269130706787
+BezierCurve.002 rotation: X0.0 Y-0.0 Z1.5707963705062866
+BezierCurve.002 scale: X1.0 Y1.0 Z1.0
+BezierCurve.002 groups: None
+BezierCurve.002 mesh: Mesh.004
+BezierCurve.002 materials: None
+BezierCurve.002 modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
 
 Name: BOOLEAN Back cover M2 bolt holes
 BOOLEAN Back cover M2 bolt holes Type: MESH
@@ -140,6 +155,19 @@ Boolean Palm Inner groups: None
 Boolean Palm Inner mesh: Palm Inner.003
 Boolean Palm Inner materials: Boolean difference, 
 Boolean Palm Inner modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Proximal Fillet, Type: BEVEL
+  #3 Name: Solidify, Type: SOLIDIFY
+
+Name: Boolean Palm Inner.001
+Boolean Palm Inner.001 Type: MESH
+Boolean Palm Inner.001 transform: X9.0 Y-48.89358901977539 Z-2.9508914947509766
+Boolean Palm Inner.001 rotation: X0.0 Y0.0 Z0.0
+Boolean Palm Inner.001 scale: X1.0 Y1.0 Z1.0
+Boolean Palm Inner.001 groups: None
+Boolean Palm Inner.001 mesh: Palm Inner.004
+Boolean Palm Inner.001 materials: Boolean difference, 
+Boolean Palm Inner.001 modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Proximal Fillet, Type: BEVEL
   #3 Name: Solidify, Type: SOLIDIFY
@@ -265,6 +293,19 @@ BOOLEAN Thumb ligament cover for outer palm modifiers:
   #1 Name: Solidify, Type: SOLIDIFY
   #2 Name: Bevel, Type: BEVEL
 
+Name: BOOLEAN Thumb ligament cover for outer palm.001
+BOOLEAN Thumb ligament cover for outer palm.001 Type: MESH
+BOOLEAN Thumb ligament cover for outer palm.001 transform: X-15.940424919128418 Y-47.73994827270508 Z-8.82492733001709
+BOOLEAN Thumb ligament cover for outer palm.001 rotation: X0.0 Y-0.0 Z-0.17453289031982422
+BOOLEAN Thumb ligament cover for outer palm.001 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb ligament cover for outer palm.001 groups: Actuator Block, Thumb, 
+BOOLEAN Thumb ligament cover for outer palm.001 parent: Actuator Block
+BOOLEAN Thumb ligament cover for outer palm.001 mesh: BOOLEAN Thumb ligament cover for outer palm.001
+BOOLEAN Thumb ligament cover for outer palm.001 materials: Boolean difference, 
+BOOLEAN Thumb ligament cover for outer palm.001 modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+  #2 Name: Bevel, Type: BEVEL
+
 Name: BOOLEAN Thumb ligament cover M2 Bolt Hole
 BOOLEAN Thumb ligament cover M2 Bolt Hole Type: MESH
 BOOLEAN Thumb ligament cover M2 Bolt Hole transform: X9.789173126220703 Y-67.75515747070312 Z-12.044929504394531
@@ -330,6 +371,16 @@ BOOLEAN Thumb swept area mesh: BOOLEAN Thumb swept area
 BOOLEAN Thumb swept area materials: Boolean difference, 
 BOOLEAN Thumb swept area modifiers: None
 
+Name: BOOLEAN Thumb swept area.001
+BOOLEAN Thumb swept area.001 Type: MESH
+BOOLEAN Thumb swept area.001 transform: X-6.506304740905762 Y-66.27792358398438 Z-15.024927139282227
+BOOLEAN Thumb swept area.001 rotation: X0.0 Y-0.0 Z-0.17453289031982422
+BOOLEAN Thumb swept area.001 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb swept area.001 groups: None
+BOOLEAN Thumb swept area.001 mesh: BOOLEAN Thumb swept area.002
+BOOLEAN Thumb swept area.001 materials: Boolean difference, 
+BOOLEAN Thumb swept area.001 modifiers: None
+
 Name: BOOLEAN Thumb tendon channel
 BOOLEAN Thumb tendon channel Type: MESH
 BOOLEAN Thumb tendon channel transform: X15.050033569335938 Y-73.01124572753906 Z-4.673169136047363
@@ -352,17 +403,6 @@ Conical spring mesh: Conical spring
 Conical spring materials: Steel, 
 Conical spring modifiers: None
 
-Name: Cube
-Cube Type: MESH
-Cube transform: X9.000406265258789 Y-82.0 Z11.703612327575684
-Cube rotation: X0.0 Y0.0 Z0.0
-Cube scale: X1.0 Y1.0 Z1.0
-Cube groups: None
-Cube mesh: Cube.002
-Cube materials: None
-Cube modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-
 Name: GALA cover
 GALA cover Type: MESH
 GALA cover transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
@@ -375,7 +415,7 @@ GALA cover materials: PLA,
 GALA cover modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Boolean, Type: BOOLEAN
-        Operation: UNION, Object: Cube
+        Operation: UNION, Object: Back cover proximal attachment point
   #3 Name: Boolean.ConicalSpring, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Conical spring
   #4 Name: Boolean.GALACoverM2Bolts, Type: BOOLEAN
@@ -449,6 +489,42 @@ Ligament cover prongs modifiers:
         Subsurf level: 0
   #2 Name: Solidify, Type: SOLIDIFY
 
+Name: MOULD Bottom
+MOULD Bottom Type: MESH
+MOULD Bottom transform: X9.0 Y-48.89358901977539 Z-18.838592529296875
+MOULD Bottom rotation: X0.0 Y0.0 Z0.0
+MOULD Bottom scale: X1.0 Y1.0 Z1.0
+MOULD Bottom groups: None
+MOULD Bottom mesh: MOULD Bottom
+MOULD Bottom materials: None
+MOULD Bottom modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Palm outer surface.001
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Boolean Palm Inner.001
+  #3 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BezierCurve.002
+
+Name: MOULD Top
+MOULD Top Type: MESH
+MOULD Top transform: X9.0 Y-48.89358901977539 Z15.861456871032715
+MOULD Top rotation: X0.0 Y0.0 Z0.0
+MOULD Top scale: X1.0 Y1.0 Z1.0
+MOULD Top groups: None
+MOULD Top mesh: MOULD Top
+MOULD Top materials: None
+MOULD Top modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: Boolean Palm Inner.001
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Thumb ligament cover for outer palm.001
+  #3 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area.001
+  #4 Name: Boolean.003, Type: BOOLEAN
+        Operation: UNION, Object: BezierCurve.001
+  #5 Name: Boolean.004, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Runners
+
 Name: Palm Covered
 Palm Covered Type: MESH
 Palm Covered transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
@@ -486,9 +562,9 @@ Palm inner modifiers:
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Proximal fillet, Type: BEVEL
   #3 Name: Boolean.BackCoverWingLateral, Type: BOOLEAN
-        Operation: UNION, Object: Back cover wing lateral
+        Operation: UNION, Object: None
   #4 Name: Boolean.BackCoverWingMedial, Type: BOOLEAN
-        Operation: UNION, Object: Back cover wing medial
+        Operation: UNION, Object: None
   #5 Name: Boolean.PQ12, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
   #6 Name: Boolean.ConicalSpring, Type: BOOLEAN
@@ -535,6 +611,20 @@ Palm outer surface modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area
   #6 Name: Boolean.ThumbLigamentCoverForOuterPalm, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for outer palm
+
+Name: Palm outer surface.001
+Palm outer surface.001 Type: MESH
+Palm outer surface.001 transform: X10.321754455566406 Y-16.049638748168945 Z-22.01079750061035
+Palm outer surface.001 rotation: X0.0 Y0.0 Z0.0
+Palm outer surface.001 scale: X1.0 Y1.0 Z1.0
+Palm outer surface.001 groups: None
+Palm outer surface.001 mesh: Plane.007
+Palm outer surface.001 materials: Boolean difference, 
+Palm outer surface.001 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Chamfer, Type: BEVEL
 
 Name: Palm Simple
 Palm Simple Type: MESH
@@ -632,6 +722,16 @@ PQ12 extended parent: Actuator Block
 PQ12 extended mesh: PQ12 extended
 PQ12 extended materials: PQ12 housing plastic, 
 PQ12 extended modifiers: None
+
+Name: Runners
+Runners Type: MESH
+Runners transform: X-28.644407272338867 Y-28.804271697998047 Z10.5399169921875
+Runners rotation: X0.0 Y0.0 Z0.0
+Runners scale: X1.0 Y1.0 Z1.0
+Runners groups: None
+Runners mesh: Runners
+Runners materials: Boolean difference, 
+Runners modifiers: None
 
 Name: Tendon pivot dowel
 Tendon pivot dowel Type: MESH
