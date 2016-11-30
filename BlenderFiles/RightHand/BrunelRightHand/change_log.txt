@@ -33,6 +33,30 @@ Actuator Block rotation: X0.0 Y0.0 Z0.0
 Actuator Block scale: X1.0 Y1.0 Z1.0
 Actuator Block groups: None
 
+Name: Back cover
+Back cover Type: MESH
+Back cover transform: X0.0 Y0.0 Z0.0
+Back cover rotation: X0.0 Y0.0 Z0.0
+Back cover scale: X1.0 Y1.0 Z1.0
+Back cover groups: None
+Back cover mesh: Plane.001
+Back cover materials: None
+Back cover modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Boolean.WristConnector, Type: BOOLEAN
+        Operation: UNION, Object: Wrist connector
+  #3 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
+  #4 Name: Boolean.PQ12s, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
+  #5 Name: Boolean.GALACover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN GALA cover
+  #6 Name: Boolean.BackCoverProximalAttachmentPoint, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Back cover proximal attachment point
+  #7 Name: Boolean.PCBChestnut, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut
+
 Name: Back cover proximal attachment point
 Back cover proximal attachment point Type: MESH
 Back cover proximal attachment point transform: X9.000406265258789 Y-82.0 Z11.703612327575684
@@ -43,7 +67,8 @@ Back cover proximal attachment point parent: Actuator Block
 Back cover proximal attachment point mesh: Back cover proximal attachment point
 Back cover proximal attachment point materials: None
 Back cover proximal attachment point modifiers: 
-  #1 Name: Bevel, Type: BEVEL
+  #1 Name: Solidify, Type: SOLIDIFY
+  #2 Name: Bevel, Type: BEVEL
 
 Name: BezierCircle
 BezierCircle Type: CURVE
@@ -90,6 +115,18 @@ BOOLEAN Back cover M2 bolt holes mesh: BOOLEAN Back cover M2 bolt holes
 BOOLEAN Back cover M2 bolt holes materials: Boolean difference.003, 
 BOOLEAN Back cover M2 bolt holes modifiers: None
 
+Name: BOOLEAN Back cover proximal attachment point
+BOOLEAN Back cover proximal attachment point Type: MESH
+BOOLEAN Back cover proximal attachment point transform: X9.000406265258789 Y-82.0 Z11.703612327575684
+BOOLEAN Back cover proximal attachment point rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Back cover proximal attachment point scale: X1.0 Y1.0 Z1.0
+BOOLEAN Back cover proximal attachment point groups: Actuator Block, 
+BOOLEAN Back cover proximal attachment point parent: Back cover proximal attachment point
+BOOLEAN Back cover proximal attachment point mesh: Back cover proximal attachment point
+BOOLEAN Back cover proximal attachment point materials: None
+BOOLEAN Back cover proximal attachment point modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
 Name: BOOLEAN Conical spring
 BOOLEAN Conical spring Type: MESH
 BOOLEAN Conical spring transform: X-15.163448333740234 Y-46.499046325683594 Z-4.673167705535889
@@ -100,6 +137,19 @@ BOOLEAN Conical spring parent: Actuator Block
 BOOLEAN Conical spring mesh: BOOLEAN Conical spring
 BOOLEAN Conical spring materials: Boolean difference, 
 BOOLEAN Conical spring modifiers: None
+
+Name: BOOLEAN GALA cover
+BOOLEAN GALA cover Type: MESH
+BOOLEAN GALA cover transform: X9.0 Y-48.89358901977539 Z-2.9508910179138184
+BOOLEAN GALA cover rotation: X0.0 Y0.0 Z0.0
+BOOLEAN GALA cover scale: X1.0 Y1.0 Z1.0
+BOOLEAN GALA cover groups: Actuator Block, Booleans, 
+BOOLEAN GALA cover parent: Actuator Block
+BOOLEAN GALA cover mesh: GALA cover.001
+BOOLEAN GALA cover materials: Boolean difference, 
+BOOLEAN GALA cover modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+  #2 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN GALA cover cable tidy
 BOOLEAN GALA cover cable tidy Type: MESH
@@ -147,15 +197,15 @@ BOOLEAN Ligament cover M2 bolt hole mesh: BOOLEAN Ligament cover M2 bolt hole
 BOOLEAN Ligament cover M2 bolt hole materials: Boolean difference, 
 BOOLEAN Ligament cover M2 bolt hole modifiers: None
 
-Name: Boolean Palm Inner
-Boolean Palm Inner Type: MESH
-Boolean Palm Inner transform: X9.0 Y-48.89358901977539 Z-2.9508914947509766
-Boolean Palm Inner rotation: X0.0 Y0.0 Z0.0
-Boolean Palm Inner scale: X1.0 Y1.0 Z1.0
-Boolean Palm Inner groups: None
-Boolean Palm Inner mesh: Palm Inner.003
-Boolean Palm Inner materials: Boolean difference, 
-Boolean Palm Inner modifiers: 
+Name: Boolean Palm inner
+Boolean Palm inner Type: MESH
+Boolean Palm inner transform: X9.0 Y-48.89358901977539 Z-2.9508914947509766
+Boolean Palm inner rotation: X0.0 Y0.0 Z0.0
+Boolean Palm inner scale: X1.0 Y1.0 Z1.0
+Boolean Palm inner groups: None
+Boolean Palm inner mesh: Palm Inner.003
+Boolean Palm inner materials: Boolean difference, 
+Boolean Palm inner modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Proximal Fillet, Type: BEVEL
   #3 Name: Solidify, Type: SOLIDIFY
@@ -173,35 +223,17 @@ Boolean Palm Inner.001 modifiers:
   #2 Name: Proximal Fillet, Type: BEVEL
   #3 Name: Solidify, Type: SOLIDIFY
 
-Name: Boolean Palm Inner.002
-Boolean Palm Inner.002 Type: MESH
-Boolean Palm Inner.002 transform: X9.0 Y-48.89358901977539 Z-2.9508914947509766
-Boolean Palm Inner.002 rotation: X0.0 Y0.0 Z0.0
-Boolean Palm Inner.002 scale: X1.0 Y1.0 Z1.0
-Boolean Palm Inner.002 groups: None
-Boolean Palm Inner.002 mesh: Palm Inner.001
-Boolean Palm Inner.002 materials: PLA, 
-Boolean Palm Inner.002 modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-  #2 Name: Proximal Fillet, Type: BEVEL
-  #3 Name: Solidify, Type: SOLIDIFY
-  #4 Name: Boolean.ThumbLigamentCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for outer palm
-  #5 Name: Boolean.ThumbSwepthArea, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area
-  #6 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
-
 Name: BOOLEAN PCB Chestnut
 BOOLEAN PCB Chestnut Type: MESH
-BOOLEAN PCB Chestnut transform: X7.499999523162842 Y-46.44186782836914 Z11.51685905456543
+BOOLEAN PCB Chestnut transform: X9.0 Y-57.44186782836914 Z13.190025329589844
 BOOLEAN PCB Chestnut rotation: X0.0 Y-0.0 Z1.5707961320877075
 BOOLEAN PCB Chestnut scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 BOOLEAN PCB Chestnut groups: Actuator Block, Booleans, 
-BOOLEAN PCB Chestnut parent: Actuator Block
+BOOLEAN PCB Chestnut parent: PCB Chestnut
 BOOLEAN PCB Chestnut mesh: BOOLEAN PCB Chestnut
 BOOLEAN PCB Chestnut materials: Boolean difference, 
-BOOLEAN PCB Chestnut modifiers: None
+BOOLEAN PCB Chestnut modifiers: 
+  #1 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN PQ12 exteneed 0.3 mm tolerance
 BOOLEAN PQ12 exteneed 0.3 mm tolerance Type: MESH
@@ -545,19 +577,38 @@ MOULD Top modifiers:
   #5 Name: Boolean.004, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Runners
 
+Name: Outer palm frame
+Outer palm frame Type: MESH
+Outer palm frame transform: X9.0 Y-48.89358901977539 Z-2.9508914947509766
+Outer palm frame rotation: X0.0 Y0.0 Z0.0
+Outer palm frame scale: X1.0 Y1.0 Z1.0
+Outer palm frame groups: None
+Outer palm frame mesh: Outer palm frame.001
+Outer palm frame materials: PLA, 
+Outer palm frame modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Proximal Fillet, Type: BEVEL
+  #3 Name: Solidify, Type: SOLIDIFY
+  #4 Name: Boolean.ThumbLigamentCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for outer palm
+  #5 Name: Boolean.ThumbSwepthArea, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area
+  #6 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
+
 Name: Outer palm skin
 Outer palm skin Type: MESH
 Outer palm skin transform: X10.321754455566406 Y-16.049638748168945 Z-22.01079750061035
 Outer palm skin rotation: X0.0 Y0.0 Z0.0
 Outer palm skin scale: X1.0 Y1.0 Z1.0
 Outer palm skin groups: None
-Outer palm skin mesh: Plane
+Outer palm skin mesh: Outer palm frame
 Outer palm skin materials: Urethane, 
 Outer palm skin modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #2 Name: Boolean.InnerPalm, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Boolean Palm Inner
+        Operation: DIFFERENCE, Object: Boolean Palm inner
   #3 Name: Boolean.ThumbSweptArea, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area
   #4 Name: Boolean.ThumbLigamentCoverForOuterPalm, Type: BOOLEAN
@@ -642,31 +693,15 @@ Palm outer surface.001 modifiers:
 
 Name: Palm Simple
 Palm Simple Type: MESH
-Palm Simple transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
+Palm Simple transform: X4.385656833648682 Y-1.4184389114379883 Z-0.36889559030532837
 Palm Simple rotation: X-0.0 Y3.141592502593994 Z-0.0
-Palm Simple scale: X1.0 Y1.0 Z1.0
+Palm Simple scale: X1.010692834854126 Y1.010692834854126 Z1.010692834854126
 Palm Simple groups: None
 Palm Simple mesh: Palm Simple
 Palm Simple materials: PLA Black, NF White, 
 Palm Simple modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-
-Name: Palm Simple.001
-Palm Simple.001 Type: MESH
-Palm Simple.001 transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
-Palm Simple.001 rotation: X-0.0 Y3.141592502593994 Z-0.0
-Palm Simple.001 scale: X1.0 Y1.0 Z1.0
-Palm Simple.001 groups: None
-Palm Simple.001 mesh: Palm Simple.001
-Palm Simple.001 materials: Urethane, 
-Palm Simple.001 modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #2 Name: Boolean.ThumbSweptArea, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #3 Name: Boolean.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
 
 Name: Palm.000
 Palm.000 Type: MESH
@@ -714,16 +749,6 @@ PCB Chestnut parent: Actuator Block
 PCB Chestnut mesh: PCB Chestnut
 PCB Chestnut materials: FR4, Component, Black plastic, Firgelli Connector, 
 PCB Chestnut modifiers: None
-
-Name: Plane
-Plane Type: MESH
-Plane transform: X9.0 Y-48.89358901977539 Z-2.9508910179138184
-Plane rotation: X0.0 Y0.0 Z0.0
-Plane scale: X1.0 Y1.0 Z1.0
-Plane groups: None
-Plane mesh: Palm Inner
-Plane materials: PLA, 
-Plane modifiers: None
 
 Name: PQ12 Caps
 PQ12 Caps Type: MESH
@@ -836,6 +861,17 @@ Thumb pivot dowel.002 parent: Actuator Block
 Thumb pivot dowel.002 mesh: Thumb pivot dowel.000
 Thumb pivot dowel.002 materials: Steel, 
 Thumb pivot dowel.002 modifiers: None
+
+Name: Wrist connector
+Wrist connector Type: MESH
+Wrist connector transform: X9.0 Y-90.49598693847656 Z9.21213436126709
+Wrist connector rotation: X-0.3490658104419708 Y-0.0 Z0.0
+Wrist connector scale: X1.0 Y1.0 Z1.0
+Wrist connector groups: None
+Wrist connector mesh: Plane.000
+Wrist connector materials: None
+Wrist connector modifiers: 
+  #1 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN M2 Bolt Holes
 BOOLEAN M2 Bolt Holes Type: EMPTY
