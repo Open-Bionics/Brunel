@@ -111,7 +111,8 @@ BOOLEAN GALA cover cable tidy parent: Actuator Block
 BOOLEAN GALA cover cable tidy mesh: BOOLEAN GALA cover cable tidy
 BOOLEAN GALA cover cable tidy materials: Boolean difference, 
 BOOLEAN GALA cover cable tidy modifiers: 
-  #1 Name: Array, Type: ARRAY
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Array, Type: ARRAY
 
 Name: BOOLEAN GALA cover M2 Bolt Hole
 BOOLEAN GALA cover M2 Bolt Hole Type: MESH
@@ -171,6 +172,25 @@ Boolean Palm Inner.001 modifiers:
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Proximal Fillet, Type: BEVEL
   #3 Name: Solidify, Type: SOLIDIFY
+
+Name: Boolean Palm Inner.002
+Boolean Palm Inner.002 Type: MESH
+Boolean Palm Inner.002 transform: X9.0 Y-48.89358901977539 Z-2.9508914947509766
+Boolean Palm Inner.002 rotation: X0.0 Y0.0 Z0.0
+Boolean Palm Inner.002 scale: X1.0 Y1.0 Z1.0
+Boolean Palm Inner.002 groups: None
+Boolean Palm Inner.002 mesh: Palm Inner.001
+Boolean Palm Inner.002 materials: PLA, 
+Boolean Palm Inner.002 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Proximal Fillet, Type: BEVEL
+  #3 Name: Solidify, Type: SOLIDIFY
+  #4 Name: Boolean.ThumbLigamentCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for outer palm
+  #5 Name: Boolean.ThumbSwepthArea, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area
+  #6 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
 
 Name: BOOLEAN PCB Chestnut
 BOOLEAN PCB Chestnut Type: MESH
@@ -525,6 +545,24 @@ MOULD Top modifiers:
   #5 Name: Boolean.004, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Runners
 
+Name: Outer palm skin
+Outer palm skin Type: MESH
+Outer palm skin transform: X10.321754455566406 Y-16.049638748168945 Z-22.01079750061035
+Outer palm skin rotation: X0.0 Y0.0 Z0.0
+Outer palm skin scale: X1.0 Y1.0 Z1.0
+Outer palm skin groups: None
+Outer palm skin mesh: Plane
+Outer palm skin materials: Urethane, 
+Outer palm skin modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Boolean.InnerPalm, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Boolean Palm Inner
+  #3 Name: Boolean.ThumbSweptArea, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area
+  #4 Name: Boolean.ThumbLigamentCoverForOuterPalm, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for outer palm
+
 Name: Palm Covered
 Palm Covered Type: MESH
 Palm Covered transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
@@ -561,56 +599,32 @@ Palm inner materials: PLA,
 Palm inner modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Proximal fillet, Type: BEVEL
-  #3 Name: Boolean.BackCoverWingLateral, Type: BOOLEAN
-        Operation: UNION, Object: None
-  #4 Name: Boolean.BackCoverWingMedial, Type: BOOLEAN
-        Operation: UNION, Object: None
-  #5 Name: Boolean.PQ12, Type: BOOLEAN
+  #3 Name: Boolean.PQ12, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
-  #6 Name: Boolean.ConicalSpring, Type: BOOLEAN
+  #4 Name: Boolean.ConicalSpring, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Conical spring
-  #7 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
+  #5 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel
-  #8 Name: Boolean.ThumbPivotDowel000, Type: BOOLEAN
+  #6 Name: Boolean.ThumbPivotDowel000, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel
-  #9 Name: Boolean.ThumbPivotDowel001, Type: BOOLEAN
+  #7 Name: Boolean.ThumbPivotDowel001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel.001
-  #10 Name: Boolean.ThumbTendonChannel, Type: BOOLEAN
+  #8 Name: Boolean.ThumbTendonChannel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon channel
-  #11 Name: Boolean.TendonChannels, Type: BOOLEAN
+  #9 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon Channels
-  #12 Name: Boolean.GALACoverM2BoltHoles, Type: BOOLEAN
+  #10 Name: Boolean.GALACoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN GALA cover M2 Bolt Hole
-  #13 Name: Boolean.HandLigament, Type: BOOLEAN
+  #11 Name: Boolean.HandLigament, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Hand Ligament
-  #14 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
+  #12 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
-  #15 Name: Boolean.ThumbLigmaentCoverM2BoltHole, Type: BOOLEAN
+  #13 Name: Boolean.ThumbLigmaentCoverM2BoltHole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 Bolt Hole
-  #16 Name: Boolean.ThumbLigmaentCover, Type: BOOLEAN
+  #14 Name: Boolean.ThumbLigmaentCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for inner palm
-  #17 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
+  #15 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
-
-Name: Palm outer surface
-Palm outer surface Type: MESH
-Palm outer surface transform: X10.321754455566406 Y-16.049638748168945 Z-22.01079750061035
-Palm outer surface rotation: X0.0 Y0.0 Z0.0
-Palm outer surface scale: X1.0 Y1.0 Z1.0
-Palm outer surface groups: None
-Palm outer surface mesh: Plane
-Palm outer surface materials: Urethane, 
-Palm outer surface modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Chamfer, Type: BEVEL
-  #4 Name: Boolean.InnerPalm, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Boolean Palm Inner
-  #5 Name: Boolean.ThumbSweptArea, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area
-  #6 Name: Boolean.ThumbLigamentCoverForOuterPalm, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for outer palm
 
 Name: Palm outer surface.001
 Palm outer surface.001 Type: MESH
@@ -700,6 +714,16 @@ PCB Chestnut parent: Actuator Block
 PCB Chestnut mesh: PCB Chestnut
 PCB Chestnut materials: FR4, Component, Black plastic, Firgelli Connector, 
 PCB Chestnut modifiers: None
+
+Name: Plane
+Plane Type: MESH
+Plane transform: X9.0 Y-48.89358901977539 Z-2.9508910179138184
+Plane rotation: X0.0 Y0.0 Z0.0
+Plane scale: X1.0 Y1.0 Z1.0
+Plane groups: None
+Plane mesh: Palm Inner
+Plane materials: PLA, 
+Plane modifiers: None
 
 Name: PQ12 Caps
 PQ12 Caps Type: MESH
