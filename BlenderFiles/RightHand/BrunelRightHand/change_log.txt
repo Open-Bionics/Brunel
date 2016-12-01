@@ -262,7 +262,7 @@ BOOLEAN PCB Chestnut component parts modifiers:
 
 Name: BOOLEAN PQ12 exteneed 0.3 mm tolerance
 BOOLEAN PQ12 exteneed 0.3 mm tolerance Type: MESH
-BOOLEAN PQ12 exteneed 0.3 mm tolerance transform: X27.009235382080078 Y-59.47224426269531 Z1.5496773719787598
+BOOLEAN PQ12 exteneed 0.3 mm tolerance transform: X27.16705894470215 Y-59.46961975097656 Z1.4607595205307007
 BOOLEAN PQ12 exteneed 0.3 mm tolerance rotation: X-1.6292067073209182e-07 Y3.501773448988388e-07 Z3.1415929794311523
 BOOLEAN PQ12 exteneed 0.3 mm tolerance scale: X0.9999999403953552 Y0.9999998211860657 Z1.0
 BOOLEAN PQ12 exteneed 0.3 mm tolerance groups: Booleans, 
