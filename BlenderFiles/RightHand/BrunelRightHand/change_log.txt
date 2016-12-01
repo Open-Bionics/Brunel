@@ -56,6 +56,8 @@ Back cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Back cover proximal attachment point
   #7 Name: Boolean.PCBChestnut, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut
+  #8 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover
 
 Name: Back cover proximal attachment point
 Back cover proximal attachment point Type: MESH
@@ -185,6 +187,18 @@ BOOLEAN Hand Ligament parent: Actuator Block
 BOOLEAN Hand Ligament mesh: BOOLEAN Hand Ligament.001
 BOOLEAN Hand Ligament materials: Boolean difference, 
 BOOLEAN Hand Ligament modifiers: None
+
+Name: BOOLEAN Ligament cover
+BOOLEAN Ligament cover Type: MESH
+BOOLEAN Ligament cover transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+BOOLEAN Ligament cover rotation: X0.0 Y-0.0 Z0.0
+BOOLEAN Ligament cover scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+BOOLEAN Ligament cover groups: Actuator Block, 
+BOOLEAN Ligament cover parent: Actuator Block
+BOOLEAN Ligament cover mesh: BOOLEAN Ligament cover
+BOOLEAN Ligament cover materials: Boolean difference, 
+BOOLEAN Ligament cover modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
 
 Name: BOOLEAN Ligament cover M2 bolt hole
 BOOLEAN Ligament cover M2 bolt hole Type: MESH
