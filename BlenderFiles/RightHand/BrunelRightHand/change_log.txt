@@ -58,6 +58,8 @@ Back cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut
   #8 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover
+  #9 Name: Boolean.HeadphoneJack, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Headphone jack
 
 Name: Back cover proximal attachment point
 Back cover proximal attachment point Type: MESH
@@ -138,7 +140,9 @@ BOOLEAN Conical spring groups: Actuator Block, Booleans,
 BOOLEAN Conical spring parent: Actuator Block
 BOOLEAN Conical spring mesh: BOOLEAN Conical spring
 BOOLEAN Conical spring materials: Boolean difference, 
-BOOLEAN Conical spring modifiers: None
+BOOLEAN Conical spring modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 2, Type: CATMULL_CLARK
 
 Name: BOOLEAN GALA cover
 BOOLEAN GALA cover Type: MESH
@@ -187,6 +191,18 @@ BOOLEAN Hand Ligament parent: Actuator Block
 BOOLEAN Hand Ligament mesh: BOOLEAN Hand Ligament.001
 BOOLEAN Hand Ligament materials: Boolean difference, 
 BOOLEAN Hand Ligament modifiers: None
+
+Name: BOOLEAN Headphone jack
+BOOLEAN Headphone jack Type: MESH
+BOOLEAN Headphone jack transform: X9.0 Y-57.441871643066406 Z13.190025329589844
+BOOLEAN Headphone jack rotation: X-1.4901154976598718e-08 Y-1.4901164746561335e-08 Z1.5707961320877075
+BOOLEAN Headphone jack scale: X0.9999998807907104 Y0.9999998807907104 Z1.0
+BOOLEAN Headphone jack groups: Actuator Block, Booleans, 
+BOOLEAN Headphone jack parent: PCB Chestnut
+BOOLEAN Headphone jack mesh: BOOLEAN Headphone jack
+BOOLEAN Headphone jack materials: Boolean difference, 
+BOOLEAN Headphone jack modifiers: 
+  #1 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN Ligament cover
 BOOLEAN Ligament cover Type: MESH
@@ -526,10 +542,10 @@ GALA cover modifiers:
   #6 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel
   #7 Name: Boolean.PCB, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut component parts
+        Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut
   #8 Name: Boolean.CableTidy, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN GALA cover cable tidy
-  #9 Name: Boolean.001, Type: BOOLEAN
+  #9 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
 
 Name: Hand Ligament
