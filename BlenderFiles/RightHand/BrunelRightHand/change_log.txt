@@ -56,23 +56,10 @@ Back cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Back cover proximal attachment point
   #7 Name: Boolean.PCBChestnut, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut
-  #8 Name: Boolean, Type: BOOLEAN
+  #8 Name: Boolean.LigamentCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover
   #9 Name: Boolean.HeadphoneJack, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Headphone jack
-
-Name: Back cover proximal attachment point
-Back cover proximal attachment point Type: MESH
-Back cover proximal attachment point transform: X9.000406265258789 Y-82.0 Z11.703612327575684
-Back cover proximal attachment point rotation: X0.0 Y0.0 Z0.0
-Back cover proximal attachment point scale: X1.0 Y1.0 Z1.0
-Back cover proximal attachment point groups: Actuator Block, 
-Back cover proximal attachment point parent: Actuator Block
-Back cover proximal attachment point mesh: Back cover proximal attachment point
-Back cover proximal attachment point materials: None
-Back cover proximal attachment point modifiers: 
-  #1 Name: Solidify, Type: SOLIDIFY
-  #2 Name: Bevel, Type: BEVEL
 
 Name: BezierCircle
 BezierCircle Type: CURVE
@@ -119,17 +106,30 @@ BOOLEAN Back cover M2 bolt holes mesh: BOOLEAN Back cover M2 bolt holes
 BOOLEAN Back cover M2 bolt holes materials: Boolean difference.003, 
 BOOLEAN Back cover M2 bolt holes modifiers: None
 
+Name: Back cover proximal attachment point
+Back cover proximal attachment point Type: MESH
+Back cover proximal attachment point transform: X9.000407218933105 Y-82.0 Z11.703612327575684
+Back cover proximal attachment point rotation: X0.0 Y-0.0 Z3.725290298461914e-09
+Back cover proximal attachment point scale: X1.0 Y1.0 Z1.0
+Back cover proximal attachment point groups: Actuator Block, 
+Back cover proximal attachment point parent: Actuator Block
+Back cover proximal attachment point mesh: Back cover proximal attachment point
+Back cover proximal attachment point materials: None
+Back cover proximal attachment point modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
 Name: BOOLEAN Back cover proximal attachment point
 BOOLEAN Back cover proximal attachment point Type: MESH
 BOOLEAN Back cover proximal attachment point transform: X9.000406265258789 Y-82.0 Z11.703612327575684
-BOOLEAN Back cover proximal attachment point rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Back cover proximal attachment point rotation: X0.0 Y-0.0 Z0.0
 BOOLEAN Back cover proximal attachment point scale: X1.0 Y1.0 Z1.0
 BOOLEAN Back cover proximal attachment point groups: Actuator Block, 
 BOOLEAN Back cover proximal attachment point parent: Back cover proximal attachment point
 BOOLEAN Back cover proximal attachment point mesh: Back cover proximal attachment point
 BOOLEAN Back cover proximal attachment point materials: None
 BOOLEAN Back cover proximal attachment point modifiers: 
-  #1 Name: Bevel, Type: BEVEL
+  #1 Name: Solidify, Type: SOLIDIFY
+  #2 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN Conical spring
 BOOLEAN Conical spring Type: MESH
@@ -531,7 +531,7 @@ GALA cover mesh: GALA cover
 GALA cover materials: PLA, 
 GALA cover modifiers: 
   #1 Name: Bevel, Type: BEVEL
-  #2 Name: Boolean, Type: BOOLEAN
+  #2 Name: Boolean.BackCoverProximalAttachmentPoint, Type: BOOLEAN
         Operation: UNION, Object: Back cover proximal attachment point
   #3 Name: Boolean.ConicalSpring, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Conical spring
