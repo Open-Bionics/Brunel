@@ -933,7 +933,7 @@ Inner distal.001 modifiers:
         Clipping: True
         Vertex group mirroring: True
   #4 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
+        Levels: 4, Type: CATMULL_CLARK
   #5 Name: Displace, Type: DISPLACE
   #6 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.001
@@ -1044,7 +1044,7 @@ Inner proximal.001 modifiers:
         Clipping: True
         Vertex group mirroring: True
   #3 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
+        Levels: 4, Type: CATMULL_CLARK
   #4 Name: Displace, Type: DISPLACE
   #5 Name: Boolean.M2, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.001
