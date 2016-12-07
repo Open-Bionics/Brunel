@@ -734,7 +734,7 @@ Outer palm frame modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area.002
   #7 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
-  #8 Name: Boolean, Type: BOOLEAN
+  #8 Name: Boolean.OuterFrameM2BoltHole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Outer frame M2 bolt hole
 
 Name: Outer palm frame distal hook
