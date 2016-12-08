@@ -350,11 +350,11 @@ BOOLEAN PQ12 exteneed 0.3 mm tolerance modifiers: None
 
 Name: BOOLEAN Proximal elastic terminator combo
 BOOLEAN Proximal elastic terminator combo Type: MESH
-BOOLEAN Proximal elastic terminator combo transform: X37.999996185302734 Y-3.3999996185302734 Z-3.3999996185302734
-BOOLEAN Proximal elastic terminator combo rotation: X-0.007619168143719435 Y0.17652077972888947 Z-0.1745329201221466
+BOOLEAN Proximal elastic terminator combo transform: X0.0 Y0.0 Z0.0
+BOOLEAN Proximal elastic terminator combo rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Proximal elastic terminator combo scale: X1.0 Y1.0 Z1.0
 BOOLEAN Proximal elastic terminator combo groups: None
-BOOLEAN Proximal elastic terminator combo mesh: BOOLEAN Proximal elastic terminator.002
+BOOLEAN Proximal elastic terminator combo mesh: BOOLEAN Proximal elastic terminator combo
 BOOLEAN Proximal elastic terminator combo materials: Boolean difference, 
 BOOLEAN Proximal elastic terminator combo modifiers: None
 
@@ -948,6 +948,16 @@ PQ12 extended mesh: PQ12 extended
 PQ12 extended materials: PQ12 housing plastic, 
 PQ12 extended modifiers: None
 
+Name: Proximal elastic terminator
+Proximal elastic terminator Type: MESH
+Proximal elastic terminator transform: X0.0 Y0.0 Z0.0
+Proximal elastic terminator rotation: X0.0 Y0.0 Z0.0
+Proximal elastic terminator scale: X1.0 Y1.0 Z1.0
+Proximal elastic terminator groups: None
+Proximal elastic terminator mesh: Proximal elastic terminator
+Proximal elastic terminator materials: PLA, 
+Proximal elastic terminator modifiers: None
+
 Name: Tendon pivot dowel
 Tendon pivot dowel Type: MESH
 Tendon pivot dowel transform: X-10.42773723602295 Y-15.0 Z-6.5532379150390625
@@ -1118,7 +1128,7 @@ HANDLE 1st Finger groups: 1st Finger,
 
 Name: HANDLE Distal Joint.001
 HANDLE Distal Joint.001 Type: MESH
-HANDLE Distal Joint.001 transform: X0.0 Y34.999996185302734 Z0.0
+HANDLE Distal Joint.001 transform: X0.0 Y45.0 Z0.0
 HANDLE Distal Joint.001 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.001 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.001 groups: 1st Finger, 
@@ -1129,7 +1139,7 @@ HANDLE Distal Joint.001 modifiers: None
 
 Name: HANDLE Fingertip.001
 HANDLE Fingertip.001 Type: MESH
-HANDLE Fingertip.001 transform: X0.0 Y37.999996185302734 Z0.0
+HANDLE Fingertip.001 transform: X0.0 Y45.0 Z0.0
 HANDLE Fingertip.001 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.001 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.001 groups: 1st Finger, 
@@ -1322,7 +1332,7 @@ Inner proximal.001 modifiers:
         Clipping: True
         Vertex group mirroring: True
   #3 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
+        Levels: 4, Type: CATMULL_CLARK
   #4 Name: Displace, Type: DISPLACE
   #5 Name: Boolean.M2, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.001
@@ -1375,7 +1385,7 @@ Inner distal.001 modifiers:
         Clipping: True
         Vertex group mirroring: True
   #4 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
+        Levels: 4, Type: CATMULL_CLARK
   #5 Name: Displace, Type: DISPLACE
   #6 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.001
@@ -1420,7 +1430,7 @@ HANDLE 2nd Finger groups: 2nd Finger,
 
 Name: HANDLE Distal Joint.002
 HANDLE Distal Joint.002 Type: MESH
-HANDLE Distal Joint.002 transform: X0.0 Y35.999996185302734 Z0.0
+HANDLE Distal Joint.002 transform: X0.0 Y45.0 Z0.0
 HANDLE Distal Joint.002 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.002 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.002 groups: 2nd Finger, 
@@ -1431,7 +1441,7 @@ HANDLE Distal Joint.002 modifiers: None
 
 Name: HANDLE Fingertip.002
 HANDLE Fingertip.002 Type: MESH
-HANDLE Fingertip.002 transform: X0.0 Y38.0 Z0.0
+HANDLE Fingertip.002 transform: X0.0 Y45.0 Z0.0
 HANDLE Fingertip.002 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.002 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.002 groups: 2nd Finger, 
@@ -1762,7 +1772,7 @@ HANDLE 3rd Finger groups: 3rd Finger,
 
 Name: HANDLE Distal Joint.003
 HANDLE Distal Joint.003 Type: MESH
-HANDLE Distal Joint.003 transform: X0.0 Y35.0 Z0.0
+HANDLE Distal Joint.003 transform: X0.0 Y45.0 Z0.0
 HANDLE Distal Joint.003 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.003 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.003 groups: 3rd Finger, 
@@ -1773,7 +1783,7 @@ HANDLE Distal Joint.003 modifiers: None
 
 Name: HANDLE Fingertip.003
 HANDLE Fingertip.003 Type: MESH
-HANDLE Fingertip.003 transform: X0.0 Y38.0 Z0.0
+HANDLE Fingertip.003 transform: X0.0 Y40.0 Z0.0
 HANDLE Fingertip.003 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.003 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.003 groups: 3rd Finger, 
@@ -2084,7 +2094,7 @@ HANDLE 4th Finger groups: 4th Finger,
 
 Name: HANDLE Distal Joint.004
 HANDLE Distal Joint.004 Type: MESH
-HANDLE Distal Joint.004 transform: X0.0 Y33.999996185302734 Z0.0
+HANDLE Distal Joint.004 transform: X0.0 Y40.0 Z0.0
 HANDLE Distal Joint.004 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.004 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.004 groups: 4th Finger, 
