@@ -62,6 +62,8 @@ Back cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Headphone jack
   #10 Name: Boolean.DCJack, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN DC Jack
+  #11 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: LABEL Logo
 
 Name: BOOLEAN Back cover M2 bolt holes
 BOOLEAN Back cover M2 bolt holes Type: MESH
@@ -644,6 +646,22 @@ Hand Ligament parent: Actuator Block
 Hand Ligament mesh: Hand Ligament
 Hand Ligament materials: NF Black, 
 Hand Ligament modifiers: None
+
+Name: LABEL Logo
+LABEL Logo Type: MESH
+LABEL Logo transform: X9.468347549438477 Y-42.54774475097656 Z27.15020751953125
+LABEL Logo rotation: X-0.05195975303649902 Y3.1415932178497314 Z2.8459771428401837e-08
+LABEL Logo scale: X2.09895920753479 Y2.09895920753479 Z2.09895920753479
+LABEL Logo groups: None
+LABEL Logo mesh: LABEL Logo
+LABEL Logo materials: None
+LABEL Logo modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Shrinkwrap, Type: SHRINKWRAP
+        Target: Back cover, Mode: NEAREST_SURFACEPOINT, Offset: 0.0 mm
+        Keep above surface: False
+  #3 Name: Solidify, Type: SOLIDIFY
 
 Name: Ligament cover
 Ligament cover Type: MESH
@@ -1313,6 +1331,26 @@ BOOLEAN M2 Bolt Holes.001 materials: Boolean difference,
 BOOLEAN M2 Bolt Holes.001 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
+
+Name: Top cover proximal.000
+Top cover proximal.000 Type: MESH
+Top cover proximal.000 transform: X0.0 Y0.0 Z0.0
+Top cover proximal.000 rotation: X0.0 Y0.0 Z0.0
+Top cover proximal.000 scale: X1.0 Y1.0 Z1.0
+Top cover proximal.000 groups: 1st Finger, 
+Top cover proximal.000 parent: HANDLE 1st Finger
+Top cover proximal.000 mesh: Top cover proximal.001
+Top cover proximal.000 materials: NF Black, 
+Top cover proximal.000 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: Inner proximal.001
 Inner proximal.001 Type: MESH
