@@ -74,12 +74,7 @@ BOOLEAN Thumb ligament for thumb scale: X0.9999998807907104 Y0.9999998211860657 
 BOOLEAN Thumb ligament for thumb groups: Thumb, 
 BOOLEAN Thumb ligament for thumb mesh: BOOLEAN Thumb ligament for thumb
 BOOLEAN Thumb ligament for thumb materials: Boolean difference, 
-BOOLEAN Thumb ligament for thumb modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: Y, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
+BOOLEAN Thumb ligament for thumb modifiers: None
 
 Name: BOOLEAN Thumb ligament for thumb.001
 BOOLEAN Thumb ligament for thumb.001 Type: MESH
@@ -182,12 +177,7 @@ Thumb ligament  groups: Thumb,
 Thumb ligament  mesh: Thumb Ligament 
 Thumb ligament  materials: Ninjalfex, 
 Thumb ligament  modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: Y, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #2 Name: Boolean, Type: BOOLEAN
+  #1 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole.001
 
 Name: Thumb ligament bent
