@@ -1033,7 +1033,9 @@ Thumb ligament cover clip groups: Actuator Block, Thumb,
 Thumb ligament cover clip parent: Actuator Block
 Thumb ligament cover clip mesh: Thumb ligament cover clip
 Thumb ligament cover clip materials: PLA, 
-Thumb ligament cover clip modifiers: None
+Thumb ligament cover clip modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament elastic clamp
 
 Name: Thumb pivot dowel.000
 Thumb pivot dowel.000 Type: MESH
