@@ -112,8 +112,8 @@ BOOLEAN Thumb tendon channel for thumb modifiers:
 
 Name: BOOLEAN Thumb tendon termination M2 bolt hole
 BOOLEAN Thumb tendon termination M2 bolt hole Type: MESH
-BOOLEAN Thumb tendon termination M2 bolt hole transform: X1.7558513879776 Y42.38592529296875 Z-4.76837158203125e-07
-BOOLEAN Thumb tendon termination M2 bolt hole rotation: X-0.2617993652820587 Y-1.570796251296997 Z0.0
+BOOLEAN Thumb tendon termination M2 bolt hole transform: X4.173704147338867 Y40.29088592529297 Z-6.821101692366938e-07
+BOOLEAN Thumb tendon termination M2 bolt hole rotation: X-0.4363322854042053 Y-1.570796251296997 Z0.0
 BOOLEAN Thumb tendon termination M2 bolt hole scale: X1.0 Y0.9999994039535522 Z0.9999999403953552
 BOOLEAN Thumb tendon termination M2 bolt hole groups: Thumb, 
 BOOLEAN Thumb tendon termination M2 bolt hole mesh: BOOLEAN Thumb tendon termination M2 bolt hole
@@ -122,8 +122,8 @@ BOOLEAN Thumb tendon termination M2 bolt hole modifiers: None
 
 Name: BOOLEAN Thumb top cover
 BOOLEAN Thumb top cover Type: MESH
-BOOLEAN Thumb top cover transform: X-8.0 Y45.0 Z0.0
-BOOLEAN Thumb top cover rotation: X0.8726646304130554 Y-1.5707963705062866 Z3.577924966812134
+BOOLEAN Thumb top cover transform: X-4.980005264282227 Y44.55933380126953 Z-2.0527298261185933e-07
+BOOLEAN Thumb top cover rotation: X-2.0071287155151367 Y-1.570796251296997 Z0.0
 BOOLEAN Thumb top cover scale: X1.0 Y1.0 Z0.9999997615814209
 BOOLEAN Thumb top cover groups: Thumb, 
 BOOLEAN Thumb top cover mesh: Thumb top cover
@@ -221,8 +221,8 @@ Thumb target modifiers:
 
 Name: Thumb top cover
 Thumb top cover Type: MESH
-Thumb top cover transform: X-8.0 Y45.0 Z0.0
-Thumb top cover rotation: X0.8726646304130554 Y-1.5707963705062866 Z3.577924966812134
+Thumb top cover transform: X-4.980005264282227 Y44.55933380126953 Z-2.0527298261185933e-07
+Thumb top cover rotation: X-2.0071287155151367 Y-1.570796251296997 Z0.0
 Thumb top cover scale: X1.000000238418579 Y1.0000001192092896 Z0.9999995231628418
 Thumb top cover groups: Thumb, 
 Thumb top cover mesh: Thumb top cover
