@@ -70,10 +70,9 @@ Back cover modifiers:
 Name: Back cover target
 Back cover target Type: MESH
 Back cover target transform: X0.0 Y0.0 Z0.0
-Back cover target rotation: X0.0 Y0.0 Z0.0
+Back cover target rotation: X0.0 Y-0.0 Z0.0
 Back cover target scale: X1.0 Y1.0 Z1.0
 Back cover target groups: None
-Back cover target parent: Back cover
 Back cover target mesh: Back cover
 Back cover target materials: None
 Back cover target modifiers: 
