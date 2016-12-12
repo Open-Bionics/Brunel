@@ -39,7 +39,7 @@ Back cover transform: X0.0 Y0.0 Z0.0
 Back cover rotation: X0.0 Y0.0 Z0.0
 Back cover scale: X1.0 Y1.0 Z1.0
 Back cover groups: None
-Back cover mesh: Plane.001
+Back cover mesh: Back cover
 Back cover materials: None
 Back cover modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
@@ -62,8 +62,23 @@ Back cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Headphone jack
   #10 Name: Boolean.DCJack, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN DC Jack
-  #11 Name: Boolean, Type: BOOLEAN
+  #11 Name: Boolean.Logo, Type: BOOLEAN
         Operation: UNION, Object: LABEL Logo
+  #12 Name: Boolean.PalmOuterFrameForBackCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame for Back cover
+
+Name: Back cover target
+Back cover target Type: MESH
+Back cover target transform: X0.0 Y0.0 Z0.0
+Back cover target rotation: X0.0 Y0.0 Z0.0
+Back cover target scale: X1.0 Y1.0 Z1.0
+Back cover target groups: None
+Back cover target parent: Back cover
+Back cover target mesh: Back cover
+Back cover target materials: None
+Back cover target modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Back cover M2 bolt holes
 BOOLEAN Back cover M2 bolt holes Type: MESH
@@ -291,6 +306,17 @@ BOOLEAN Palm outer frame distal hook parent: Palm outer frame distal hook
 BOOLEAN Palm outer frame distal hook mesh: Palm outer frame distal hook
 BOOLEAN Palm outer frame distal hook materials: None
 BOOLEAN Palm outer frame distal hook modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+
+Name: BOOLEAN Palm outer frame for Back cover
+BOOLEAN Palm outer frame for Back cover Type: MESH
+BOOLEAN Palm outer frame for Back cover transform: X9.0 Y-48.89358901977539 Z-2.9508914947509766
+BOOLEAN Palm outer frame for Back cover rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Palm outer frame for Back cover scale: X1.0 Y1.0 Z1.0
+BOOLEAN Palm outer frame for Back cover groups: None
+BOOLEAN Palm outer frame for Back cover mesh: BOOLEAN Palm outer frame for Back cover
+BOOLEAN Palm outer frame for Back cover materials: Boolean difference, 
+BOOLEAN Palm outer frame for Back cover modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
 
 Name: BOOLEAN Palm outer frame for MOULD Top
@@ -725,7 +751,7 @@ LABEL Logo modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #2 Name: Shrinkwrap, Type: SHRINKWRAP
-        Target: Back cover, Mode: NEAREST_SURFACEPOINT, Offset: 0.0 mm
+        Target: Back cover target, Mode: NEAREST_SURFACEPOINT, Offset: 0.0 mm
         Keep above surface: False
   #3 Name: Solidify, Type: SOLIDIFY
 
