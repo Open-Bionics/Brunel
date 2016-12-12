@@ -86,18 +86,6 @@ BOOLEAN Thumb ligament for thumb mesh: BOOLEAN Thumb ligament for thumb
 BOOLEAN Thumb ligament for thumb materials: Boolean difference, 
 BOOLEAN Thumb ligament for thumb modifiers: None
 
-Name: BOOLEAN Thumb ligament for thumb.001
-BOOLEAN Thumb ligament for thumb.001 Type: MESH
-BOOLEAN Thumb ligament for thumb.001 transform: X-7.62939453125e-06 Y-7.152557373046875e-07 Z0.0
-BOOLEAN Thumb ligament for thumb.001 rotation: X3.7112233286507035e-08 Y-3.88492225056325e-08 Z-1.5707961320877075
-BOOLEAN Thumb ligament for thumb.001 scale: X0.9999998807907104 Y0.9999998211860657 Z1.0
-BOOLEAN Thumb ligament for thumb.001 groups: Thumb, 
-BOOLEAN Thumb ligament for thumb.001 mesh: BOOLEAN Thumb ligament for thumb.003
-BOOLEAN Thumb ligament for thumb.001 materials: PLA White, 
-BOOLEAN Thumb ligament for thumb.001 modifiers: 
-  #1 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole
-
 Name: BOOLEAN Thumb tendon channel for thumb
 BOOLEAN Thumb tendon channel for thumb Type: MESH
 BOOLEAN Thumb tendon channel for thumb transform: X-7.152557373046875e-06 Y-4.76837158203125e-07 Z2.000000476837158
@@ -202,6 +190,18 @@ Thumb ligament bent modifiers:
         Clipping: False
         Vertex group mirroring: True
   #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole
+
+Name: Thumb ligament cover for thumb
+Thumb ligament cover for thumb Type: MESH
+Thumb ligament cover for thumb transform: X-7.62939453125e-06 Y-7.152557373046875e-07 Z0.0
+Thumb ligament cover for thumb rotation: X3.7112233286507035e-08 Y-3.88492225056325e-08 Z-1.5707961320877075
+Thumb ligament cover for thumb scale: X0.9999998807907104 Y0.9999998211860657 Z1.0
+Thumb ligament cover for thumb groups: Thumb, 
+Thumb ligament cover for thumb mesh: BOOLEAN Thumb ligament for thumb.003
+Thumb ligament cover for thumb materials: PLA White, 
+Thumb ligament cover for thumb modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole
 
 Name: Thumb target
