@@ -66,6 +66,8 @@ Back cover modifiers:
         Operation: UNION, Object: LABEL Logo
   #12 Name: Boolean.PalmOuterFrameForBackCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame for Back cover
+  #13 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Connector cover
 
 Name: Back cover target
 Back cover target Type: MESH
@@ -138,6 +140,18 @@ BOOLEAN Conical spring materials: Boolean difference,
 BOOLEAN Conical spring modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 2, Type: CATMULL_CLARK
+
+Name: BOOLEAN Connector cover
+BOOLEAN Connector cover Type: MESH
+BOOLEAN Connector cover transform: X-19.096534729003906 Y-71.34187316894531 Z17.730140686035156
+BOOLEAN Connector cover rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Connector cover scale: X1.0 Y1.0 Z1.0
+BOOLEAN Connector cover groups: None
+BOOLEAN Connector cover parent: Connector cover
+BOOLEAN Connector cover mesh: Connector cover
+BOOLEAN Connector cover materials: PLA, 
+BOOLEAN Connector cover modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
 
 Name: BOOLEAN DC Jack
 BOOLEAN DC Jack Type: MESH
@@ -660,7 +674,7 @@ Connector cover scale: X1.0 Y1.0 Z1.0
 Connector cover groups: None
 Connector cover parent: PCB Chestnut
 Connector cover mesh: Connector cover
-Connector cover materials: None
+Connector cover materials: PLA, 
 Connector cover modifiers: 
   #1 Name: Boolean.PCBChestnutForConnectorCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for connector cover
@@ -668,8 +682,10 @@ Connector cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Headphone jack
   #3 Name: Boolean.Neopixel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Neopixel
-  #4 Name: Boolean, Type: BOOLEAN
+  #4 Name: Boolean.CapacitorsForConnectorCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Capacitors for connector cover
+  #5 Name: Boolean.PQ12, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
 
 Name: CONNECTOR DC Jack male
 CONNECTOR DC Jack male Type: EMPTY
@@ -726,6 +742,8 @@ GALA cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame M2 bolt hole
   #11 Name: Boolean.ThumbPivotDowelForGALACover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel for GALA cover
+  #12 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Connector cover
 
 Name: Hand Ligament
 Hand Ligament Type: MESH
