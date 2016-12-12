@@ -101,6 +101,17 @@ BOOLEAN Back cover proximal attachment point modifiers:
   #2 Name: Solidify, Type: SOLIDIFY
   #3 Name: Bevel, Type: BEVEL
 
+Name: BOOLEAN Capacitors for connector cover
+BOOLEAN Capacitors for connector cover Type: MESH
+BOOLEAN Capacitors for connector cover transform: X-19.600000381469727 Y-64.44186401367188 Z14.730025291442871
+BOOLEAN Capacitors for connector cover rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Capacitors for connector cover scale: X1.0 Y1.0 Z1.0
+BOOLEAN Capacitors for connector cover groups: None
+BOOLEAN Capacitors for connector cover parent: PCB Chestnut
+BOOLEAN Capacitors for connector cover mesh: Plane
+BOOLEAN Capacitors for connector cover materials: Boolean difference, 
+BOOLEAN Capacitors for connector cover modifiers: None
+
 Name: BOOLEAN Conical spring
 BOOLEAN Conical spring Type: MESH
 BOOLEAN Conical spring transform: X-15.163448333740234 Y-46.499046325683594 Z-4.673167705535889
@@ -230,6 +241,18 @@ BOOLEAN MOULD Runners mesh: Runners
 BOOLEAN MOULD Runners materials: Boolean difference, 
 BOOLEAN MOULD Runners modifiers: None
 
+Name: BOOLEAN Neopixel
+BOOLEAN Neopixel Type: MESH
+BOOLEAN Neopixel transform: X9.0 Y-57.44186782836914 Z13.190025329589844
+BOOLEAN Neopixel rotation: X0.0 Y-0.0 Z1.5707961320877075
+BOOLEAN Neopixel scale: X0.9999999403953552 Y0.9999998807907104 Z1.0
+BOOLEAN Neopixel groups: Actuator Block, Booleans, 
+BOOLEAN Neopixel parent: PCB Chestnut
+BOOLEAN Neopixel mesh: BOOLEAN PCB Chestnut component parts.001
+BOOLEAN Neopixel materials: Boolean difference, 
+BOOLEAN Neopixel modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
 Name: BOOLEAN Palm Inner for MOULD
 BOOLEAN Palm Inner for MOULD Type: MESH
 BOOLEAN Palm Inner for MOULD transform: X9.0 Y-48.89358901977539 Z-2.9508910179138184
@@ -325,6 +348,18 @@ BOOLEAN PCB Chestnut for back cover parent: PCB Chestnut
 BOOLEAN PCB Chestnut for back cover mesh: BOOLEAN PCB Chestnut for back cover
 BOOLEAN PCB Chestnut for back cover materials: Boolean difference, 
 BOOLEAN PCB Chestnut for back cover modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN PCB Chestnut for connector cover
+BOOLEAN PCB Chestnut for connector cover Type: MESH
+BOOLEAN PCB Chestnut for connector cover transform: X9.0 Y-57.441871643066406 Z13.190025329589844
+BOOLEAN PCB Chestnut for connector cover rotation: X-1.4901154976598718e-08 Y-1.4901164746561335e-08 Z1.5707961320877075
+BOOLEAN PCB Chestnut for connector cover scale: X0.9999998807907104 Y0.9999998807907104 Z1.0
+BOOLEAN PCB Chestnut for connector cover groups: Actuator Block, Booleans, 
+BOOLEAN PCB Chestnut for connector cover parent: PCB Chestnut
+BOOLEAN PCB Chestnut for connector cover mesh: BOOLEAN PCB Chestnut for GALA cover.001
+BOOLEAN PCB Chestnut for connector cover materials: Boolean difference, 
+BOOLEAN PCB Chestnut for connector cover modifiers: 
   #1 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN PCB Chestnut for GALA cover
@@ -591,6 +626,25 @@ Conical spring parent: Actuator Block
 Conical spring mesh: Conical spring
 Conical spring materials: Steel, 
 Conical spring modifiers: None
+
+Name: Connector cover
+Connector cover Type: MESH
+Connector cover transform: X-19.096534729003906 Y-71.34187316894531 Z17.730140686035156
+Connector cover rotation: X0.0 Y0.0 Z0.0
+Connector cover scale: X1.0 Y1.0 Z1.0
+Connector cover groups: None
+Connector cover parent: PCB Chestnut
+Connector cover mesh: Connector cover
+Connector cover materials: None
+Connector cover modifiers: 
+  #1 Name: Boolean.PCBChestnutForConnectorCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for connector cover
+  #2 Name: Boolean.HeadphoneJack, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Headphone jack
+  #3 Name: Boolean.Neopixel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Neopixel
+  #4 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Capacitors for connector cover
 
 Name: CONNECTOR DC Jack male
 CONNECTOR DC Jack male Type: EMPTY
