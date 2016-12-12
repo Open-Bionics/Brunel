@@ -530,7 +530,7 @@ BOOLEAN Thumb pivot dowel.001 modifiers: None
 
 Name: BOOLEAN Thumb pivot dowel.002
 BOOLEAN Thumb pivot dowel.002 Type: MESH
-BOOLEAN Thumb pivot dowel.002 transform: X6.49200439453125 Y-68.35484313964844 Z-15.405913352966309
+BOOLEAN Thumb pivot dowel.002 transform: X6.40518045425415 Y-68.84724426269531 Z-15.405913352966309
 BOOLEAN Thumb pivot dowel.002 rotation: X0.0 Y-0.0 Z-0.17453287541866302
 BOOLEAN Thumb pivot dowel.002 scale: X1.0 Y0.9999999403953552 Z0.9999999403953552
 BOOLEAN Thumb pivot dowel.002 groups: Actuator Block, Booleans, Thumb, 
@@ -2559,15 +2559,15 @@ BOOLEAN M2 Bolt Hole mesh: BOOLEAN M2 Bolt Hole
 BOOLEAN M2 Bolt Hole materials: Boolean difference, 
 BOOLEAN M2 Bolt Hole modifiers: None
 
-Name: BOOLEAN Thumb ligament for thumb.001
-BOOLEAN Thumb ligament for thumb.001 Type: MESH
-BOOLEAN Thumb ligament for thumb.001 transform: X-7.62939453125e-06 Y-7.152557373046875e-07 Z0.0
-BOOLEAN Thumb ligament for thumb.001 rotation: X3.7112233286507035e-08 Y-3.88492225056325e-08 Z-1.5707961320877075
-BOOLEAN Thumb ligament for thumb.001 scale: X0.9999998807907104 Y0.9999998211860657 Z1.0
-BOOLEAN Thumb ligament for thumb.001 groups: Thumb, 
-BOOLEAN Thumb ligament for thumb.001 mesh: BOOLEAN Thumb ligament for thumb.003
-BOOLEAN Thumb ligament for thumb.001 materials: PLA White, 
-BOOLEAN Thumb ligament for thumb.001 modifiers: 
+Name: Thumb ligament cover for thumb
+Thumb ligament cover for thumb Type: MESH
+Thumb ligament cover for thumb transform: X-7.62939453125e-06 Y-7.152557373046875e-07 Z0.0
+Thumb ligament cover for thumb rotation: X3.7112233286507035e-08 Y-3.88492225056325e-08 Z-1.5707961320877075
+Thumb ligament cover for thumb scale: X0.9999998807907104 Y0.9999998211860657 Z1.0
+Thumb ligament cover for thumb groups: Thumb, 
+Thumb ligament cover for thumb mesh: BOOLEAN Thumb ligament for thumb.003
+Thumb ligament cover for thumb materials: PLA White, 
+Thumb ligament cover for thumb modifiers: 
   #1 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole
 
