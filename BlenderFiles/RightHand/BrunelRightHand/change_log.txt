@@ -603,15 +603,15 @@ CONNECTOR DC Jack male parent: PCB Chestnut
 Name: CONNECTOR Headphone jack male 3.5 mm 4 pole
 CONNECTOR Headphone jack male 3.5 mm 4 pole Type: EMPTY
 CONNECTOR Headphone jack male 3.5 mm 4 pole transform: X-19.596534729003906 Y-71.34187316894531 Z17.730140686035156
-CONNECTOR Headphone jack male 3.5 mm 4 pole rotation: X-1.3311839097696065e-07 Y1.5707961320877075 Z0.0
+CONNECTOR Headphone jack male 3.5 mm 4 pole rotation: X-0.0 Y1.570796251296997 Z0.0
 CONNECTOR Headphone jack male 3.5 mm 4 pole scale: X1.0 Y1.0 Z1.0
 CONNECTOR Headphone jack male 3.5 mm 4 pole groups: None
 CONNECTOR Headphone jack male 3.5 mm 4 pole parent: PCB Chestnut
 
 Name: CONNECTOR USB micro male
 CONNECTOR USB micro male Type: EMPTY
-CONNECTOR USB micro male transform: X-21.659347534179688 Y-57.032588958740234 Z15.968995094299316
-CONNECTOR USB micro male rotation: X-7.450582373280668e-09 Y7.4505797087454084e-09 Z-1.5707964897155762
+CONNECTOR USB micro male transform: X-21.659345626831055 Y-57.03258514404297 Z15.968995094299316
+CONNECTOR USB micro male rotation: X2.980232949312267e-08 Y-2.9802322387695312e-08 Z-1.570796251296997
 CONNECTOR USB micro male scale: X1.0 Y1.0 Z1.0
 CONNECTOR USB micro male groups: None
 CONNECTOR USB micro male parent: PCB Chestnut
@@ -4061,6 +4061,17 @@ DC Jack male modifiers:
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
+Name: CONNECTOR USB micro male
+CONNECTOR USB micro male Type: MESH
+CONNECTOR USB micro male transform: X0.0 Y0.0 Z0.0
+CONNECTOR USB micro male rotation: X0.0 Y0.0 Z0.0
+CONNECTOR USB micro male scale: X1.0 Y1.0 Z1.0
+CONNECTOR USB micro male groups: CONNECTOR USB micro male, 
+CONNECTOR USB micro male mesh: CONNECTOR USB micro male
+CONNECTOR USB micro male materials: Metal, Black, 
+CONNECTOR USB micro male modifiers: 
+  #1 Name: Bevel.001, Type: BEVEL
+
 Name: CONNECTOR Headphone jack male 3.5 mm 4 pole
 CONNECTOR Headphone jack male 3.5 mm 4 pole Type: MESH
 CONNECTOR Headphone jack male 3.5 mm 4 pole transform: X0.0 Y0.0 Z0.0
@@ -5475,4 +5486,14 @@ Varistors.005 mesh: Varistor
 Varistors.005 materials: Steel, White Plastic, Black Plastic, 
 Varistors.005 modifiers: 
   #1 Name: Bevel, Type: BEVEL
+
+Name: CONNECTOR Headphone jack male 3.5 mm 4 pole
+CONNECTOR Headphone jack male 3.5 mm 4 pole Type: MESH
+CONNECTOR Headphone jack male 3.5 mm 4 pole transform: X0.0 Y0.0 Z0.0
+CONNECTOR Headphone jack male 3.5 mm 4 pole rotation: X0.0 Y0.0 Z0.0
+CONNECTOR Headphone jack male 3.5 mm 4 pole scale: X1.0 Y1.0 Z1.0
+CONNECTOR Headphone jack male 3.5 mm 4 pole groups: CONNECTOR Headphone jack male 3.5 mm 4 pole, 
+CONNECTOR Headphone jack male 3.5 mm 4 pole mesh: CONNECTOR Headphone jack male 3.5 mm 4 pole
+CONNECTOR Headphone jack male 3.5 mm 4 pole materials: Metal, Black, 
+CONNECTOR Headphone jack male 3.5 mm 4 pole modifiers: None
 
