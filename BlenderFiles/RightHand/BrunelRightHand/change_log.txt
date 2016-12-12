@@ -643,8 +643,10 @@ GALA cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN GALA cover cable tidy
   #9 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
-  #10 Name: Boolean, Type: BOOLEAN
+  #10 Name: Boolean.PalmOuterFrameM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame M2 bolt hole
+  #11 Name: Boolean.ThumbPivotDowelForGALACover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel for GALA cover
 
 Name: Hand Ligament
 Hand Ligament Type: MESH
