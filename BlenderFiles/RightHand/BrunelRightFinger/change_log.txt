@@ -702,16 +702,16 @@ BOOLEAN Tube v2 modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
-Name: Elastic terminator.000
-Elastic terminator.000 Type: MESH
-Elastic terminator.000 transform: X0.0 Y53.1385498046875 Z0.75
-Elastic terminator.000 rotation: X0.0 Y0.0 Z0.0
-Elastic terminator.000 scale: X1.0 Y1.0 Z1.0
-Elastic terminator.000 groups: None
-Elastic terminator.000 parent: HANDLE 4th Finger
-Elastic terminator.000 mesh: Elastic terminator
-Elastic terminator.000 materials: PLA Black, 
-Elastic terminator.000 modifiers: 
+Name: Elastic terminator.001
+Elastic terminator.001 Type: MESH
+Elastic terminator.001 transform: X0.0 Y53.1385498046875 Z0.75
+Elastic terminator.001 rotation: X0.0 Y0.0 Z0.0
+Elastic terminator.001 scale: X1.0 Y1.0 Z1.0
+Elastic terminator.001 groups: None
+Elastic terminator.001 parent: HANDLE 1st Finger
+Elastic terminator.001 mesh: Elastic terminator
+Elastic terminator.001 materials: PLA Black, 
+Elastic terminator.001 modifiers: 
   #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Merge: True, Merge Limit: 0.0010000000474974513 mm
