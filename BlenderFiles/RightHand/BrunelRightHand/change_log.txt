@@ -39,7 +39,7 @@ Back cover transform: X0.0 Y0.0 Z0.0
 Back cover rotation: X0.0 Y0.0 Z0.0
 Back cover scale: X1.0 Y1.0 Z1.0
 Back cover groups: None
-Back cover mesh: Plane.001
+Back cover mesh: Back cover
 Back cover materials: None
 Back cover modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
@@ -62,8 +62,24 @@ Back cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Headphone jack
   #10 Name: Boolean.DCJack, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN DC Jack
-  #11 Name: Boolean, Type: BOOLEAN
+  #11 Name: Boolean.Logo, Type: BOOLEAN
         Operation: UNION, Object: LABEL Logo
+  #12 Name: Boolean.PalmOuterFrameForBackCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame for Back cover
+  #13 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Connector cover
+
+Name: Back cover target
+Back cover target Type: MESH
+Back cover target transform: X0.0 Y0.0 Z0.0
+Back cover target rotation: X0.0 Y-0.0 Z0.0
+Back cover target scale: X1.0 Y1.0 Z1.0
+Back cover target groups: None
+Back cover target mesh: Back cover
+Back cover target materials: None
+Back cover target modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Back cover M2 bolt holes
 BOOLEAN Back cover M2 bolt holes Type: MESH
@@ -101,6 +117,17 @@ BOOLEAN Back cover proximal attachment point modifiers:
   #2 Name: Solidify, Type: SOLIDIFY
   #3 Name: Bevel, Type: BEVEL
 
+Name: BOOLEAN Capacitors for connector cover
+BOOLEAN Capacitors for connector cover Type: MESH
+BOOLEAN Capacitors for connector cover transform: X-19.600000381469727 Y-64.44186401367188 Z14.730025291442871
+BOOLEAN Capacitors for connector cover rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Capacitors for connector cover scale: X1.0 Y1.0 Z1.0
+BOOLEAN Capacitors for connector cover groups: None
+BOOLEAN Capacitors for connector cover parent: PCB Chestnut
+BOOLEAN Capacitors for connector cover mesh: Plane
+BOOLEAN Capacitors for connector cover materials: Boolean difference, 
+BOOLEAN Capacitors for connector cover modifiers: None
+
 Name: BOOLEAN Conical spring
 BOOLEAN Conical spring Type: MESH
 BOOLEAN Conical spring transform: X-15.163448333740234 Y-46.499046325683594 Z-4.673167705535889
@@ -113,6 +140,18 @@ BOOLEAN Conical spring materials: Boolean difference,
 BOOLEAN Conical spring modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 2, Type: CATMULL_CLARK
+
+Name: BOOLEAN Connector cover
+BOOLEAN Connector cover Type: MESH
+BOOLEAN Connector cover transform: X-19.096534729003906 Y-71.34187316894531 Z17.730140686035156
+BOOLEAN Connector cover rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Connector cover scale: X1.0 Y1.0 Z1.0
+BOOLEAN Connector cover groups: None
+BOOLEAN Connector cover parent: Connector cover
+BOOLEAN Connector cover mesh: Connector cover
+BOOLEAN Connector cover materials: PLA, 
+BOOLEAN Connector cover modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
 
 Name: BOOLEAN DC Jack
 BOOLEAN DC Jack Type: MESH
@@ -230,6 +269,18 @@ BOOLEAN MOULD Runners mesh: Runners
 BOOLEAN MOULD Runners materials: Boolean difference, 
 BOOLEAN MOULD Runners modifiers: None
 
+Name: BOOLEAN Neopixel
+BOOLEAN Neopixel Type: MESH
+BOOLEAN Neopixel transform: X9.0 Y-57.44186782836914 Z13.190025329589844
+BOOLEAN Neopixel rotation: X0.0 Y-0.0 Z1.5707961320877075
+BOOLEAN Neopixel scale: X0.9999999403953552 Y0.9999998807907104 Z1.0
+BOOLEAN Neopixel groups: Actuator Block, Booleans, 
+BOOLEAN Neopixel parent: PCB Chestnut
+BOOLEAN Neopixel mesh: BOOLEAN PCB Chestnut component parts.001
+BOOLEAN Neopixel materials: Boolean difference, 
+BOOLEAN Neopixel modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
 Name: BOOLEAN Palm Inner for MOULD
 BOOLEAN Palm Inner for MOULD Type: MESH
 BOOLEAN Palm Inner for MOULD transform: X9.0 Y-48.89358901977539 Z-2.9508910179138184
@@ -268,6 +319,17 @@ BOOLEAN Palm outer frame distal hook parent: Palm outer frame distal hook
 BOOLEAN Palm outer frame distal hook mesh: Palm outer frame distal hook
 BOOLEAN Palm outer frame distal hook materials: None
 BOOLEAN Palm outer frame distal hook modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+
+Name: BOOLEAN Palm outer frame for Back cover
+BOOLEAN Palm outer frame for Back cover Type: MESH
+BOOLEAN Palm outer frame for Back cover transform: X9.0 Y-48.89358901977539 Z-2.9508914947509766
+BOOLEAN Palm outer frame for Back cover rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Palm outer frame for Back cover scale: X1.0 Y1.0 Z1.0
+BOOLEAN Palm outer frame for Back cover groups: None
+BOOLEAN Palm outer frame for Back cover mesh: BOOLEAN Palm outer frame for Back cover
+BOOLEAN Palm outer frame for Back cover materials: Boolean difference, 
+BOOLEAN Palm outer frame for Back cover modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
 
 Name: BOOLEAN Palm outer frame for MOULD Top
@@ -325,6 +387,18 @@ BOOLEAN PCB Chestnut for back cover parent: PCB Chestnut
 BOOLEAN PCB Chestnut for back cover mesh: BOOLEAN PCB Chestnut for back cover
 BOOLEAN PCB Chestnut for back cover materials: Boolean difference, 
 BOOLEAN PCB Chestnut for back cover modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN PCB Chestnut for connector cover
+BOOLEAN PCB Chestnut for connector cover Type: MESH
+BOOLEAN PCB Chestnut for connector cover transform: X9.0 Y-57.441871643066406 Z13.190025329589844
+BOOLEAN PCB Chestnut for connector cover rotation: X-1.4901154976598718e-08 Y-1.4901164746561335e-08 Z1.5707961320877075
+BOOLEAN PCB Chestnut for connector cover scale: X0.9999998807907104 Y0.9999998807907104 Z1.0
+BOOLEAN PCB Chestnut for connector cover groups: Actuator Block, Booleans, 
+BOOLEAN PCB Chestnut for connector cover parent: PCB Chestnut
+BOOLEAN PCB Chestnut for connector cover mesh: BOOLEAN PCB Chestnut for GALA cover.001
+BOOLEAN PCB Chestnut for connector cover materials: Boolean difference, 
+BOOLEAN PCB Chestnut for connector cover modifiers: 
   #1 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN PCB Chestnut for GALA cover
@@ -592,6 +666,27 @@ Conical spring mesh: Conical spring
 Conical spring materials: Steel, 
 Conical spring modifiers: None
 
+Name: Connector cover
+Connector cover Type: MESH
+Connector cover transform: X-19.096534729003906 Y-71.34187316894531 Z17.730140686035156
+Connector cover rotation: X0.0 Y0.0 Z0.0
+Connector cover scale: X1.0 Y1.0 Z1.0
+Connector cover groups: None
+Connector cover parent: PCB Chestnut
+Connector cover mesh: Connector cover
+Connector cover materials: PLA, 
+Connector cover modifiers: 
+  #1 Name: Boolean.PCBChestnutForConnectorCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for connector cover
+  #2 Name: Boolean.HeadphoneJack, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Headphone jack
+  #3 Name: Boolean.Neopixel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Neopixel
+  #4 Name: Boolean.CapacitorsForConnectorCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Capacitors for connector cover
+  #5 Name: Boolean.PQ12, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
+
 Name: CONNECTOR DC Jack male
 CONNECTOR DC Jack male Type: EMPTY
 CONNECTOR DC Jack male transform: X29.954212188720703 Y-80.48687744140625 Z21.20294952392578
@@ -603,15 +698,15 @@ CONNECTOR DC Jack male parent: PCB Chestnut
 Name: CONNECTOR Headphone jack male 3.5 mm 4 pole
 CONNECTOR Headphone jack male 3.5 mm 4 pole Type: EMPTY
 CONNECTOR Headphone jack male 3.5 mm 4 pole transform: X-19.596534729003906 Y-71.34187316894531 Z17.730140686035156
-CONNECTOR Headphone jack male 3.5 mm 4 pole rotation: X-1.3311839097696065e-07 Y1.5707961320877075 Z0.0
+CONNECTOR Headphone jack male 3.5 mm 4 pole rotation: X-0.0 Y1.570796251296997 Z0.0
 CONNECTOR Headphone jack male 3.5 mm 4 pole scale: X1.0 Y1.0 Z1.0
 CONNECTOR Headphone jack male 3.5 mm 4 pole groups: None
 CONNECTOR Headphone jack male 3.5 mm 4 pole parent: PCB Chestnut
 
 Name: CONNECTOR USB micro male
 CONNECTOR USB micro male Type: EMPTY
-CONNECTOR USB micro male transform: X-21.659347534179688 Y-57.032588958740234 Z15.968995094299316
-CONNECTOR USB micro male rotation: X-7.450582373280668e-09 Y7.4505797087454084e-09 Z-1.5707964897155762
+CONNECTOR USB micro male transform: X-21.659345626831055 Y-57.03258514404297 Z15.968995094299316
+CONNECTOR USB micro male rotation: X2.980232949312267e-08 Y-2.9802322387695312e-08 Z-1.570796251296997
 CONNECTOR USB micro male scale: X1.0 Y1.0 Z1.0
 CONNECTOR USB micro male groups: None
 CONNECTOR USB micro male parent: PCB Chestnut
@@ -647,6 +742,8 @@ GALA cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame M2 bolt hole
   #11 Name: Boolean.ThumbPivotDowelForGALACover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel for GALA cover
+  #12 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Connector cover
 
 Name: Hand Ligament
 Hand Ligament Type: MESH
@@ -671,7 +768,7 @@ LABEL Logo modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #2 Name: Shrinkwrap, Type: SHRINKWRAP
-        Target: Back cover, Mode: NEAREST_SURFACEPOINT, Offset: 0.0 mm
+        Target: Back cover target, Mode: NEAREST_SURFACEPOINT, Offset: 0.0 mm
         Keep above surface: False
   #3 Name: Solidify, Type: SOLIDIFY
 
@@ -4061,6 +4158,17 @@ DC Jack male modifiers:
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
+Name: CONNECTOR USB micro male
+CONNECTOR USB micro male Type: MESH
+CONNECTOR USB micro male transform: X0.0 Y0.0 Z0.0
+CONNECTOR USB micro male rotation: X0.0 Y0.0 Z0.0
+CONNECTOR USB micro male scale: X1.0 Y1.0 Z1.0
+CONNECTOR USB micro male groups: CONNECTOR USB micro male, 
+CONNECTOR USB micro male mesh: CONNECTOR USB micro male
+CONNECTOR USB micro male materials: Metal, Black, 
+CONNECTOR USB micro male modifiers: 
+  #1 Name: Bevel.001, Type: BEVEL
+
 Name: CONNECTOR Headphone jack male 3.5 mm 4 pole
 CONNECTOR Headphone jack male 3.5 mm 4 pole Type: MESH
 CONNECTOR Headphone jack male 3.5 mm 4 pole transform: X0.0 Y0.0 Z0.0
@@ -5475,4 +5583,14 @@ Varistors.005 mesh: Varistor
 Varistors.005 materials: Steel, White Plastic, Black Plastic, 
 Varistors.005 modifiers: 
   #1 Name: Bevel, Type: BEVEL
+
+Name: CONNECTOR Headphone jack male 3.5 mm 4 pole
+CONNECTOR Headphone jack male 3.5 mm 4 pole Type: MESH
+CONNECTOR Headphone jack male 3.5 mm 4 pole transform: X0.0 Y0.0 Z0.0
+CONNECTOR Headphone jack male 3.5 mm 4 pole rotation: X0.0 Y0.0 Z0.0
+CONNECTOR Headphone jack male 3.5 mm 4 pole scale: X1.0 Y1.0 Z1.0
+CONNECTOR Headphone jack male 3.5 mm 4 pole groups: CONNECTOR Headphone jack male 3.5 mm 4 pole, 
+CONNECTOR Headphone jack male 3.5 mm 4 pole mesh: CONNECTOR Headphone jack male 3.5 mm 4 pole
+CONNECTOR Headphone jack male 3.5 mm 4 pole materials: Metal, Black, 
+CONNECTOR Headphone jack male 3.5 mm 4 pole modifiers: None
 
