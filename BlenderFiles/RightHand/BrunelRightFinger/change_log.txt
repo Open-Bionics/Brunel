@@ -1620,6 +1620,26 @@ Top cover proximal.004 modifiers:
   #7 Name: Boolean.ProximalInner, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal.004
 
+Name: Top cover proximal.005
+Top cover proximal.005 Type: MESH
+Top cover proximal.005 transform: X0.0 Y0.0 Z0.0
+Top cover proximal.005 rotation: X0.0 Y0.0 Z0.0
+Top cover proximal.005 scale: X1.0 Y1.0 Z1.0
+Top cover proximal.005 groups: 1st Finger, 
+Top cover proximal.005 parent: HANDLE 1st Finger
+Top cover proximal.005 mesh: Top cover proximal.002
+Top cover proximal.005 materials: NF Black, 
+Top cover proximal.005 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: Urethane cover distal.001
 Urethane cover distal.001 Type: MESH
 Urethane cover distal.001 transform: X0.0 Y0.0 Z0.0
