@@ -1,6 +1,19 @@
+Name: BOOLEAN Palm outer frame
+BOOLEAN Palm outer frame Type: MESH
+BOOLEAN Palm outer frame transform: X9.0 Y-48.89358901977539 Z-2.9508910179138184
+BOOLEAN Palm outer frame rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Palm outer frame scale: X1.0 Y1.0 Z1.0
+BOOLEAN Palm outer frame groups: None
+BOOLEAN Palm outer frame mesh: BOOLEAN Palm outer frame
+BOOLEAN Palm outer frame materials: Boolean difference, 
+BOOLEAN Palm outer frame modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Proximal fillet, Type: BEVEL
+  #3 Name: Solidify, Type: SOLIDIFY
+
 Name: FT.001
 FT.001 Type: MESH
-FT.001 transform: X0.0 Y45.0 Z0.0
+FT.001 transform: X0.0 Y44.0 Z0.0
 FT.001 rotation: X0.0 Y0.0 Z0.0
 FT.001 scale: X1.0 Y1.0 Z1.0
 FT.001 groups: None
@@ -22,7 +35,7 @@ FT.002 modifiers: None
 
 Name: FT.003
 FT.003 Type: MESH
-FT.003 transform: X0.0 Y40.0 Z0.0
+FT.003 transform: X0.0 Y42.0 Z0.0
 FT.003 rotation: X0.0 Y0.0 Z0.0
 FT.003 scale: X1.0 Y1.0 Z1.0
 FT.003 groups: None
@@ -66,7 +79,7 @@ IPJ.002 modifiers: None
 
 Name: IPJ.003
 IPJ.003 Type: MESH
-IPJ.003 transform: X0.0 Y45.0 Z0.0
+IPJ.003 transform: X0.0 Y38.0 Z0.0
 IPJ.003 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
 IPJ.003 scale: X1.0 Y0.9999999403953552 Z1.0
 IPJ.003 groups: None
@@ -77,7 +90,7 @@ IPJ.003 modifiers: None
 
 Name: IPJ.004
 IPJ.004 Type: MESH
-IPJ.004 transform: X0.0 Y40.0 Z0.0
+IPJ.004 transform: X0.0 Y30.0 Z0.0
 IPJ.004 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
 IPJ.004 scale: X1.0 Y0.9999999403953552 Z1.0
 IPJ.004 groups: None
@@ -133,17 +146,17 @@ IPJd.004 modifiers: None
 Name: IPJrot.001
 IPJrot.001 Type: EMPTY
 IPJrot.001 transform: X0.0 Y0.0 Z0.0
-IPJrot.001 rotation: X-0.2617993950843811 Y0.0 Z0.0
+IPJrot.001 rotation: X0.0 Y0.0 Z0.0
 IPJrot.001 scale: X1.0 Y1.0 Z1.0
-IPJrot.001 groups: None
+IPJrot.001 groups: Rotations, 
 IPJrot.001 parent: IPJ.001
 
 Name: IPJrot.002
 IPJrot.002 Type: EMPTY
 IPJrot.002 transform: X0.0 Y0.0 Z0.0
-IPJrot.002 rotation: X-0.2617993950843811 Y0.0 Z0.0
+IPJrot.002 rotation: X0.0 Y0.0 Z0.0
 IPJrot.002 scale: X1.0 Y1.0 Z1.0
-IPJrot.002 groups: None
+IPJrot.002 groups: Rotations, 
 IPJrot.002 parent: IPJ.002
 
 Name: IPJrot.003
@@ -151,7 +164,7 @@ IPJrot.003 Type: EMPTY
 IPJrot.003 transform: X0.0 Y0.0 Z0.0
 IPJrot.003 rotation: X0.0 Y0.0 Z0.0
 IPJrot.003 scale: X1.0 Y1.0 Z1.0
-IPJrot.003 groups: None
+IPJrot.003 groups: Rotations, 
 IPJrot.003 parent: IPJ.003
 
 Name: IPJrot.004
@@ -159,36 +172,48 @@ IPJrot.004 Type: EMPTY
 IPJrot.004 transform: X0.0 Y0.0 Z0.0
 IPJrot.004 rotation: X0.0 Y0.0 Z0.0
 IPJrot.004 scale: X1.0 Y1.0 Z1.0
-IPJrot.004 groups: None
+IPJrot.004 groups: Rotations, 
 IPJrot.004 parent: IPJ.004
 
 Name: MCPJ.001
 MCPJ.001 Type: EMPTY
 MCPJ.001 transform: X-18.999998092651367 Y-1.4999979734420776 Z-1.0
-MCPJ.001 rotation: X-1.7453292608261108 Y-0.0872664600610733 Z0.0872664600610733
+MCPJ.001 rotation: X0.0 Y-0.0872664600610733 Z0.0872664600610733
 MCPJ.001 scale: X1.0 Y1.0 Z1.0
-MCPJ.001 groups: None
+MCPJ.001 groups: Rotations, 
 
 Name: MCPJ.002
 MCPJ.002 Type: EMPTY
 MCPJ.002 transform: X0.0 Y0.0 Z0.0
-MCPJ.002 rotation: X-1.7453292608261108 Y0.0 Z0.0
+MCPJ.002 rotation: X0.0 Y0.0 Z0.0
 MCPJ.002 scale: X1.0 Y1.0 Z1.0
-MCPJ.002 groups: None
+MCPJ.002 groups: Rotations, 
 
 Name: MCPJ.003
 MCPJ.003 Type: EMPTY
 MCPJ.003 transform: X18.999998092651367 Y-1.5 Z-1.0
 MCPJ.003 rotation: X0.0 Y0.0872664600610733 Z-0.0872664600610733
 MCPJ.003 scale: X1.0 Y1.0 Z1.0
-MCPJ.003 groups: None
+MCPJ.003 groups: Rotations, 
 
 Name: MCPJ.004
 MCPJ.004 Type: EMPTY
 MCPJ.004 transform: X37.999996185302734 Y-3.4000000953674316 Z-3.4000000953674316
 MCPJ.004 rotation: X0.0 Y0.1745329201221466 Z-0.1745329201221466
 MCPJ.004 scale: X1.0 Y1.0 Z1.0
-MCPJ.004 groups: None
+MCPJ.004 groups: Rotations, 
+
+Name: Palm Inner
+Palm Inner Type: MESH
+Palm Inner transform: X0.0 Y0.0 Z0.0
+Palm Inner rotation: X0.0 Y0.0 Z0.0
+Palm Inner scale: X1.0 Y1.0 Z1.0
+Palm Inner groups: None
+Palm Inner mesh: Palm Inner
+Palm Inner materials: PLA, 
+Palm Inner modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Bevel.001, Type: BEVEL
 
 Name: Phalanax distal.001
 Phalanax distal.001 Type: MESH
@@ -357,11 +382,13 @@ Skin materials: Urethane,
 Skin modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame
 
 Name: Thumb
 Thumb Type: EMPTY
 Thumb transform: X-7.49111270904541 Y-66.10427856445312 Z-15.024927139282227
-Thumb rotation: X-1.5707963705062866 Y-1.4901159417490817e-08 Z1.3962633609771729
+Thumb rotation: X0.0 Y-1.4901159417490817e-08 Z1.3962633609771729
 Thumb scale: X1.0 Y1.0 Z1.0
 Thumb groups: None
 
