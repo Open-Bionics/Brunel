@@ -1270,7 +1270,7 @@ HANDLE Distal Joint.001 modifiers: None
 
 Name: HANDLE Fingertip.001
 HANDLE Fingertip.001 Type: MESH
-HANDLE Fingertip.001 transform: X0.0 Y45.0 Z0.0
+HANDLE Fingertip.001 transform: X0.0 Y44.0 Z0.0
 HANDLE Fingertip.001 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.001 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.001 groups: 1st Finger, 
@@ -1278,6 +1278,26 @@ HANDLE Fingertip.001 parent: HANDLE Distal Joint.001
 HANDLE Fingertip.001 mesh: HANDLE Fingertip
 HANDLE Fingertip.001 materials: HANDLE, 
 HANDLE Fingertip.001 modifiers: None
+
+Name: Top cover proximal.005
+Top cover proximal.005 Type: MESH
+Top cover proximal.005 transform: X0.0 Y0.0 Z0.0
+Top cover proximal.005 rotation: X0.0 Y0.0 Z0.0
+Top cover proximal.005 scale: X1.0 Y1.0 Z1.0
+Top cover proximal.005 groups: 1st Finger, 
+Top cover proximal.005 parent: HANDLE 1st Finger
+Top cover proximal.005 mesh: Top cover proximal.002
+Top cover proximal.005 materials: NF Black, 
+Top cover proximal.005 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Inner proximal.001
 BOOLEAN Inner proximal.001 Type: MESH
@@ -1923,7 +1943,7 @@ HANDLE 3rd Finger groups: 3rd Finger,
 
 Name: HANDLE Distal Joint.003
 HANDLE Distal Joint.003 Type: MESH
-HANDLE Distal Joint.003 transform: X0.0 Y45.0 Z0.0
+HANDLE Distal Joint.003 transform: X0.0 Y38.0 Z0.0
 HANDLE Distal Joint.003 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.003 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.003 groups: 3rd Finger, 
@@ -1934,7 +1954,7 @@ HANDLE Distal Joint.003 modifiers: None
 
 Name: HANDLE Fingertip.003
 HANDLE Fingertip.003 Type: MESH
-HANDLE Fingertip.003 transform: X0.0 Y40.0 Z0.0
+HANDLE Fingertip.003 transform: X0.0 Y42.0 Z0.0
 HANDLE Fingertip.003 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.003 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.003 groups: 3rd Finger, 
@@ -2245,7 +2265,7 @@ HANDLE 4th Finger groups: 4th Finger,
 
 Name: HANDLE Distal Joint.004
 HANDLE Distal Joint.004 Type: MESH
-HANDLE Distal Joint.004 transform: X0.0 Y40.0 Z0.0
+HANDLE Distal Joint.004 transform: X0.0 Y30.0 Z0.0
 HANDLE Distal Joint.004 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.004 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.004 groups: 4th Finger, 
