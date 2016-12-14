@@ -1,125 +1,552 @@
-Name: Distal phalanx.001
-Distal phalanx.001 Type: MESH
-Distal phalanx.001 transform: X0.0 Y45.0 Z0.0
-Distal phalanx.001 rotation: X-0.3877134919166565 Y0.0 Z0.0
-Distal phalanx.001 scale: X0.9999998807907104 Y0.8999999761581421 Z1.0
-Distal phalanx.001 groups: None
-Distal phalanx.001 parent: Proximal phalanx.001
-Distal phalanx.001 mesh: Distal phalanx.001
-Distal phalanx.001 materials: None
-Distal phalanx.001 modifiers: None
+Name: BOOLEAN Palm outer frame
+BOOLEAN Palm outer frame Type: MESH
+BOOLEAN Palm outer frame transform: X9.0 Y-48.89358901977539 Z-2.9508910179138184
+BOOLEAN Palm outer frame rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Palm outer frame scale: X1.0 Y1.0 Z1.0
+BOOLEAN Palm outer frame groups: None
+BOOLEAN Palm outer frame mesh: BOOLEAN Palm outer frame
+BOOLEAN Palm outer frame materials: Boolean difference, 
+BOOLEAN Palm outer frame modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Proximal fillet, Type: BEVEL
+  #3 Name: Solidify, Type: SOLIDIFY
 
-Name: Distal phalanx.002
-Distal phalanx.002 Type: MESH
-Distal phalanx.002 transform: X0.0 Y45.0 Z0.0
-Distal phalanx.002 rotation: X-0.48829326033592224 Y0.0 Z0.0
-Distal phalanx.002 scale: X0.9999998807907104 Y0.8999999761581421 Z1.0
-Distal phalanx.002 groups: None
-Distal phalanx.002 parent: Proximal phalanx.002
-Distal phalanx.002 mesh: Distal phalanx.002
-Distal phalanx.002 materials: None
-Distal phalanx.002 modifiers: None
+Name: FT.001
+FT.001 Type: MESH
+FT.001 transform: X0.0 Y44.0 Z0.0
+FT.001 rotation: X0.0 Y0.0 Z0.0
+FT.001 scale: X1.0 Y1.0 Z1.0
+FT.001 groups: None
+FT.001 parent: IPJrot.001
+FT.001 mesh: Icosphere
+FT.001 materials: None
+FT.001 modifiers: None
 
-Name: Distal phalanx.003
-Distal phalanx.003 Type: MESH
-Distal phalanx.003 transform: X0.0 Y45.0 Z0.0
-Distal phalanx.003 rotation: X0.0 Y0.0 Z0.0
-Distal phalanx.003 scale: X1.0 Y1.0 Z1.0
-Distal phalanx.003 groups: None
-Distal phalanx.003 parent: Proximal phalanx.003
-Distal phalanx.003 mesh: Distal phalanx.003
-Distal phalanx.003 materials: None
-Distal phalanx.003 modifiers: None
+Name: FT.002
+FT.002 Type: MESH
+FT.002 transform: X0.0 Y45.0 Z0.0
+FT.002 rotation: X0.0 Y0.0 Z0.0
+FT.002 scale: X1.0 Y1.0 Z1.0
+FT.002 groups: None
+FT.002 parent: IPJrot.002
+FT.002 mesh: Icosphere
+FT.002 materials: None
+FT.002 modifiers: None
 
-Name: Distal phalanx.004
-Distal phalanx.004 Type: MESH
-Distal phalanx.004 transform: X0.0 Y40.0 Z0.0
-Distal phalanx.004 rotation: X0.0 Y0.0 Z0.0
-Distal phalanx.004 scale: X1.0 Y1.0 Z1.0
-Distal phalanx.004 groups: None
-Distal phalanx.004 parent: Proximal phalanx.004
-Distal phalanx.004 mesh: Distal phalanx.004
-Distal phalanx.004 materials: None
-Distal phalanx.004 modifiers: None
+Name: FT.003
+FT.003 Type: MESH
+FT.003 transform: X0.0 Y42.0 Z0.0
+FT.003 rotation: X0.0 Y0.0 Z0.0
+FT.003 scale: X1.0 Y1.0 Z1.0
+FT.003 groups: None
+FT.003 parent: IPJrot.003
+FT.003 mesh: Icosphere
+FT.003 materials: None
+FT.003 modifiers: None
 
-Name: Knuckle.001
-Knuckle.001 Type: EMPTY
-Knuckle.001 transform: X-19.0 Y-1.5 Z-1.0
-Knuckle.001 rotation: X4.537856101989746 Y-0.0872664600610733 Z0.0872664600610733
-Knuckle.001 scale: X1.0 Y1.0 Z1.0
-Knuckle.001 groups: None
+Name: FT.004
+FT.004 Type: MESH
+FT.004 transform: X0.0 Y38.0 Z0.0
+FT.004 rotation: X0.0 Y0.0 Z0.0
+FT.004 scale: X1.0 Y1.0 Z1.0
+FT.004 groups: None
+FT.004 parent: IPJrot.004
+FT.004 mesh: Icosphere
+FT.004 materials: None
+FT.004 modifiers: None
 
-Name: Knuckle.002
-Knuckle.002 Type: EMPTY
-Knuckle.002 transform: X0.0 Y0.0 Z0.0
-Knuckle.002 rotation: X4.537856101989746 Y0.0 Z0.0
-Knuckle.002 scale: X1.0 Y1.0 Z1.0
-Knuckle.002 groups: None
+Name: IPJ.001
+IPJ.001 Type: MESH
+IPJ.001 transform: X0.0 Y45.0 Z0.0
+IPJ.001 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
+IPJ.001 scale: X1.0 Y0.9999999403953552 Z1.0
+IPJ.001 groups: None
+IPJ.001 parent: MCPJ.001
+IPJ.001 mesh: Icosphere.001
+IPJ.001 materials: None
+IPJ.001 modifiers: None
 
-Name: Knuckle.003
-Knuckle.003 Type: EMPTY
-Knuckle.003 transform: X19.0 Y-1.5 Z-1.0
-Knuckle.003 rotation: X0.0 Y0.0872664600610733 Z-0.0872664600610733
-Knuckle.003 scale: X1.0 Y1.0 Z1.0
-Knuckle.003 groups: None
+Name: IPJ.002
+IPJ.002 Type: MESH
+IPJ.002 transform: X0.0 Y45.0 Z0.0
+IPJ.002 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
+IPJ.002 scale: X1.0 Y0.9999999403953552 Z1.0
+IPJ.002 groups: None
+IPJ.002 parent: MCPJ.002
+IPJ.002 mesh: Icosphere.001
+IPJ.002 materials: None
+IPJ.002 modifiers: None
 
-Name: Knuckle.004
-Knuckle.004 Type: EMPTY
-Knuckle.004 transform: X38.0 Y-3.4000000953674316 Z-3.4000000953674316
-Knuckle.004 rotation: X0.0 Y0.1745329201221466 Z-0.1745329201221466
-Knuckle.004 scale: X1.0 Y1.0 Z1.0
-Knuckle.004 groups: None
+Name: IPJ.003
+IPJ.003 Type: MESH
+IPJ.003 transform: X0.0 Y38.0 Z0.0
+IPJ.003 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
+IPJ.003 scale: X1.0 Y0.9999999403953552 Z1.0
+IPJ.003 groups: None
+IPJ.003 parent: MCPJ.003
+IPJ.003 mesh: Icosphere.001
+IPJ.003 materials: None
+IPJ.003 modifiers: None
 
-Name: Proximal phalanx.001
-Proximal phalanx.001 Type: MESH
-Proximal phalanx.001 transform: X0.0 Y0.0 Z0.0
-Proximal phalanx.001 rotation: X0.0 Y0.0 Z0.0
-Proximal phalanx.001 scale: X1.0 Y1.0 Z1.0
-Proximal phalanx.001 groups: None
-Proximal phalanx.001 parent: Knuckle.001
-Proximal phalanx.001 mesh: Proximal phalanx.001
-Proximal phalanx.001 materials: None
-Proximal phalanx.001 modifiers: None
+Name: IPJ.004
+IPJ.004 Type: MESH
+IPJ.004 transform: X0.0 Y30.0 Z0.0
+IPJ.004 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
+IPJ.004 scale: X1.0 Y0.9999999403953552 Z1.0
+IPJ.004 groups: None
+IPJ.004 parent: MCPJ.004
+IPJ.004 mesh: Icosphere.001
+IPJ.004 materials: None
+IPJ.004 modifiers: None
 
-Name: Proximal phalanx.002
-Proximal phalanx.002 Type: MESH
-Proximal phalanx.002 transform: X0.0 Y0.0 Z0.0
-Proximal phalanx.002 rotation: X0.0 Y0.0 Z0.0
-Proximal phalanx.002 scale: X1.0 Y1.0 Z1.0
-Proximal phalanx.002 groups: None
-Proximal phalanx.002 parent: Knuckle.002
-Proximal phalanx.002 mesh: Proximal phalanx.002
-Proximal phalanx.002 materials: None
-Proximal phalanx.002 modifiers: None
+Name: IPJd.001
+IPJd.001 Type: MESH
+IPJd.001 transform: X0.0 Y45.0 Z0.0
+IPJd.001 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
+IPJd.001 scale: X1.0 Y0.9999999403953552 Z1.0
+IPJd.001 groups: None
+IPJd.001 parent: IPJrot.001
+IPJd.001 mesh: Icosphere.002
+IPJd.001 materials: None
+IPJd.001 modifiers: None
 
-Name: Proximal phalanx.003
-Proximal phalanx.003 Type: MESH
-Proximal phalanx.003 transform: X0.0 Y0.0 Z0.0
-Proximal phalanx.003 rotation: X0.0 Y0.0 Z0.0
-Proximal phalanx.003 scale: X1.0 Y1.0 Z1.0
-Proximal phalanx.003 groups: None
-Proximal phalanx.003 parent: Knuckle.003
-Proximal phalanx.003 mesh: Proximal phalanx.003
-Proximal phalanx.003 materials: None
-Proximal phalanx.003 modifiers: None
+Name: IPJd.002
+IPJd.002 Type: MESH
+IPJd.002 transform: X0.0 Y45.0 Z0.0
+IPJd.002 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
+IPJd.002 scale: X1.0 Y0.9999999403953552 Z1.0
+IPJd.002 groups: None
+IPJd.002 parent: IPJrot.002
+IPJd.002 mesh: Icosphere.002
+IPJd.002 materials: None
+IPJd.002 modifiers: None
 
-Name: Proximal phalanx.004
-Proximal phalanx.004 Type: MESH
-Proximal phalanx.004 transform: X0.0 Y0.0 Z0.0
-Proximal phalanx.004 rotation: X0.0 Y0.0 Z0.0
-Proximal phalanx.004 scale: X1.0 Y1.0 Z1.0
-Proximal phalanx.004 groups: None
-Proximal phalanx.004 parent: Knuckle.004
-Proximal phalanx.004 mesh: Proximal phalanx.004
-Proximal phalanx.004 materials: None
-Proximal phalanx.004 modifiers: None
+Name: IPJd.003
+IPJd.003 Type: MESH
+IPJd.003 transform: X0.0 Y45.0 Z0.0
+IPJd.003 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
+IPJd.003 scale: X1.0 Y0.9999999403953552 Z1.0
+IPJd.003 groups: None
+IPJd.003 parent: IPJrot.003
+IPJd.003 mesh: Icosphere.002
+IPJd.003 materials: None
+IPJd.003 modifiers: None
+
+Name: IPJd.004
+IPJd.004 Type: MESH
+IPJd.004 transform: X0.0 Y45.0 Z0.0
+IPJd.004 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
+IPJd.004 scale: X1.0 Y0.9999999403953552 Z1.0
+IPJd.004 groups: None
+IPJd.004 parent: IPJrot.004
+IPJd.004 mesh: Icosphere.002
+IPJd.004 materials: None
+IPJd.004 modifiers: None
+
+Name: IPJrot.001
+IPJrot.001 Type: EMPTY
+IPJrot.001 transform: X0.0 Y0.0 Z0.0
+IPJrot.001 rotation: X0.0 Y0.0 Z0.0
+IPJrot.001 scale: X1.0 Y1.0 Z1.0
+IPJrot.001 groups: Rotations, 
+IPJrot.001 parent: IPJ.001
+
+Name: IPJrot.002
+IPJrot.002 Type: EMPTY
+IPJrot.002 transform: X0.0 Y0.0 Z0.0
+IPJrot.002 rotation: X0.0 Y0.0 Z0.0
+IPJrot.002 scale: X1.0 Y1.0 Z1.0
+IPJrot.002 groups: Rotations, 
+IPJrot.002 parent: IPJ.002
+
+Name: IPJrot.003
+IPJrot.003 Type: EMPTY
+IPJrot.003 transform: X0.0 Y0.0 Z0.0
+IPJrot.003 rotation: X0.0 Y0.0 Z0.0
+IPJrot.003 scale: X1.0 Y1.0 Z1.0
+IPJrot.003 groups: Rotations, 
+IPJrot.003 parent: IPJ.003
+
+Name: IPJrot.004
+IPJrot.004 Type: EMPTY
+IPJrot.004 transform: X0.0 Y0.0 Z0.0
+IPJrot.004 rotation: X0.0 Y0.0 Z0.0
+IPJrot.004 scale: X1.0 Y1.0 Z1.0
+IPJrot.004 groups: Rotations, 
+IPJrot.004 parent: IPJ.004
+
+Name: MCPJ.001
+MCPJ.001 Type: EMPTY
+MCPJ.001 transform: X-18.999998092651367 Y-1.4999979734420776 Z-1.0
+MCPJ.001 rotation: X0.0 Y-0.0872664600610733 Z0.0872664600610733
+MCPJ.001 scale: X1.0 Y1.0 Z1.0
+MCPJ.001 groups: Rotations, 
+
+Name: MCPJ.002
+MCPJ.002 Type: EMPTY
+MCPJ.002 transform: X0.0 Y0.0 Z0.0
+MCPJ.002 rotation: X0.0 Y0.0 Z0.0
+MCPJ.002 scale: X1.0 Y1.0 Z1.0
+MCPJ.002 groups: Rotations, 
+
+Name: MCPJ.003
+MCPJ.003 Type: EMPTY
+MCPJ.003 transform: X18.999998092651367 Y-1.5 Z-1.0
+MCPJ.003 rotation: X0.0 Y0.0872664600610733 Z-0.0872664600610733
+MCPJ.003 scale: X1.0 Y1.0 Z1.0
+MCPJ.003 groups: Rotations, 
+
+Name: MCPJ.004
+MCPJ.004 Type: EMPTY
+MCPJ.004 transform: X37.999996185302734 Y-3.4000000953674316 Z-3.4000000953674316
+MCPJ.004 rotation: X0.0 Y0.1745329201221466 Z-0.1745329201221466
+MCPJ.004 scale: X1.0 Y1.0 Z1.0
+MCPJ.004 groups: Rotations, 
+
+Name: Palm Inner
+Palm Inner Type: MESH
+Palm Inner transform: X0.0 Y0.0 Z0.0
+Palm Inner rotation: X0.0 Y0.0 Z0.0
+Palm Inner scale: X1.0 Y1.0 Z1.0
+Palm Inner groups: None
+Palm Inner mesh: Palm Inner
+Palm Inner materials: PLA, 
+Palm Inner modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Bevel.001, Type: BEVEL
+
+Name: Phalanax distal.001
+Phalanax distal.001 Type: MESH
+Phalanax distal.001 transform: X0.0 Y0.0 Z0.0
+Phalanax distal.001 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
+Phalanax distal.001 scale: X0.9999998807907104 Y0.8999999165534973 Z1.0
+Phalanax distal.001 groups: None
+Phalanax distal.001 parent: MCPJ.001
+Phalanax distal.001 mesh: Inner distal
+Phalanax distal.001 materials: PLA White, 
+Phalanax distal.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Phalanax distal.002
+Phalanax distal.002 Type: MESH
+Phalanax distal.002 transform: X0.0 Y0.0 Z0.0
+Phalanax distal.002 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
+Phalanax distal.002 scale: X0.9999998807907104 Y0.8999999165534973 Z1.0
+Phalanax distal.002 groups: None
+Phalanax distal.002 parent: MCPJ.002
+Phalanax distal.002 mesh: Inner distal
+Phalanax distal.002 materials: PLA White, 
+Phalanax distal.002 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Phalanax distal.003
+Phalanax distal.003 Type: MESH
+Phalanax distal.003 transform: X0.0 Y0.0 Z0.0
+Phalanax distal.003 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
+Phalanax distal.003 scale: X0.9999998807907104 Y0.8999999165534973 Z1.0
+Phalanax distal.003 groups: None
+Phalanax distal.003 parent: MCPJ.003
+Phalanax distal.003 mesh: Inner distal
+Phalanax distal.003 materials: PLA White, 
+Phalanax distal.003 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Phalanax distal.004
+Phalanax distal.004 Type: MESH
+Phalanax distal.004 transform: X0.0 Y0.0 Z0.0
+Phalanax distal.004 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
+Phalanax distal.004 scale: X0.9999998807907104 Y0.8999999165534973 Z1.0
+Phalanax distal.004 groups: None
+Phalanax distal.004 parent: MCPJ.004
+Phalanax distal.004 mesh: Inner distal
+Phalanax distal.004 materials: PLA White, 
+Phalanax distal.004 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Phalanax proximal.001
+Phalanax proximal.001 Type: MESH
+Phalanax proximal.001 transform: X0.0 Y0.0 Z0.0
+Phalanax proximal.001 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
+Phalanax proximal.001 scale: X1.0 Y0.9999999403953552 Z1.0
+Phalanax proximal.001 groups: None
+Phalanax proximal.001 parent: MCPJ.001
+Phalanax proximal.001 mesh: Inner proximal
+Phalanax proximal.001 materials: PLA White, 
+Phalanax proximal.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Phalanax proximal.002
+Phalanax proximal.002 Type: MESH
+Phalanax proximal.002 transform: X0.0 Y0.0 Z0.0
+Phalanax proximal.002 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
+Phalanax proximal.002 scale: X1.0 Y0.9999999403953552 Z1.0
+Phalanax proximal.002 groups: None
+Phalanax proximal.002 parent: MCPJ.002
+Phalanax proximal.002 mesh: Inner proximal
+Phalanax proximal.002 materials: PLA White, 
+Phalanax proximal.002 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Phalanax proximal.003
+Phalanax proximal.003 Type: MESH
+Phalanax proximal.003 transform: X0.0 Y0.0 Z0.0
+Phalanax proximal.003 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
+Phalanax proximal.003 scale: X1.0 Y0.9999999403953552 Z1.0
+Phalanax proximal.003 groups: None
+Phalanax proximal.003 parent: MCPJ.003
+Phalanax proximal.003 mesh: Inner proximal
+Phalanax proximal.003 materials: PLA White, 
+Phalanax proximal.003 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Phalanax proximal.004
+Phalanax proximal.004 Type: MESH
+Phalanax proximal.004 transform: X0.0 Y0.0 Z0.0
+Phalanax proximal.004 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
+Phalanax proximal.004 scale: X1.0 Y0.9999999403953552 Z1.0
+Phalanax proximal.004 groups: None
+Phalanax proximal.004 parent: MCPJ.004
+Phalanax proximal.004 mesh: Inner proximal
+Phalanax proximal.004 materials: PLA White, 
+Phalanax proximal.004 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Skin
+Skin Type: MESH
+Skin transform: X10.321754455566406 Y-16.049638748168945 Z-22.01079750061035
+Skin rotation: X0.0 Y0.0 Z0.0
+Skin scale: X1.0 Y1.0 Z1.0
+Skin groups: None
+Skin mesh: Palm outer skin
+Skin materials: Urethane, 
+Skin modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame
 
 Name: Thumb
 Thumb Type: EMPTY
 Thumb transform: X-7.49111270904541 Y-66.10427856445312 Z-15.024927139282227
-Thumb rotation: X-1.5707963705062866 Y-1.4901159417490817e-08 Z1.3962633609771729
+Thumb rotation: X0.0 Y-1.4901159417490817e-08 Z1.3962633609771729
 Thumb scale: X1.0 Y1.0 Z1.0
 Thumb groups: None
+
+Name: Urethane cover distal.001
+Urethane cover distal.001 Type: MESH
+Urethane cover distal.001 transform: X0.0 Y0.0 Z0.0
+Urethane cover distal.001 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
+Urethane cover distal.001 scale: X0.9999998807907104 Y0.8999999165534973 Z1.0
+Urethane cover distal.001 groups: None
+Urethane cover distal.001 parent: MCPJ.001
+Urethane cover distal.001 mesh: Urethane cover distal
+Urethane cover distal.001 materials: Urethane, 
+Urethane cover distal.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Urethane cover distal.002
+Urethane cover distal.002 Type: MESH
+Urethane cover distal.002 transform: X0.0 Y0.0 Z0.0
+Urethane cover distal.002 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
+Urethane cover distal.002 scale: X0.9999998807907104 Y0.8999999165534973 Z1.0
+Urethane cover distal.002 groups: None
+Urethane cover distal.002 parent: MCPJ.002
+Urethane cover distal.002 mesh: Urethane cover distal
+Urethane cover distal.002 materials: Urethane, 
+Urethane cover distal.002 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Urethane cover distal.003
+Urethane cover distal.003 Type: MESH
+Urethane cover distal.003 transform: X0.0 Y0.0 Z0.0
+Urethane cover distal.003 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
+Urethane cover distal.003 scale: X0.9999998807907104 Y0.8999999165534973 Z1.0
+Urethane cover distal.003 groups: None
+Urethane cover distal.003 parent: MCPJ.003
+Urethane cover distal.003 mesh: Urethane cover distal
+Urethane cover distal.003 materials: Urethane, 
+Urethane cover distal.003 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Urethane cover distal.004
+Urethane cover distal.004 Type: MESH
+Urethane cover distal.004 transform: X0.0 Y0.0 Z0.0
+Urethane cover distal.004 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
+Urethane cover distal.004 scale: X0.9999998807907104 Y0.8999999165534973 Z1.0
+Urethane cover distal.004 groups: None
+Urethane cover distal.004 parent: MCPJ.004
+Urethane cover distal.004 mesh: Urethane cover distal
+Urethane cover distal.004 materials: Urethane, 
+Urethane cover distal.004 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Urethane cover proximal.001
+Urethane cover proximal.001 Type: MESH
+Urethane cover proximal.001 transform: X0.0 Y0.0 Z0.0
+Urethane cover proximal.001 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
+Urethane cover proximal.001 scale: X1.0 Y0.9999999403953552 Z1.0
+Urethane cover proximal.001 groups: None
+Urethane cover proximal.001 parent: MCPJ.001
+Urethane cover proximal.001 mesh: Urethane cover proximal
+Urethane cover proximal.001 materials: Urethane, 
+Urethane cover proximal.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Urethane cover proximal.002
+Urethane cover proximal.002 Type: MESH
+Urethane cover proximal.002 transform: X0.0 Y0.0 Z0.0
+Urethane cover proximal.002 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
+Urethane cover proximal.002 scale: X1.0 Y0.9999999403953552 Z1.0
+Urethane cover proximal.002 groups: None
+Urethane cover proximal.002 parent: MCPJ.002
+Urethane cover proximal.002 mesh: Urethane cover proximal
+Urethane cover proximal.002 materials: Urethane, 
+Urethane cover proximal.002 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Urethane cover proximal.003
+Urethane cover proximal.003 Type: MESH
+Urethane cover proximal.003 transform: X0.0 Y0.0 Z0.0
+Urethane cover proximal.003 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
+Urethane cover proximal.003 scale: X1.0 Y0.9999999403953552 Z1.0
+Urethane cover proximal.003 groups: None
+Urethane cover proximal.003 parent: MCPJ.003
+Urethane cover proximal.003 mesh: Urethane cover proximal
+Urethane cover proximal.003 materials: Urethane, 
+Urethane cover proximal.003 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Urethane cover proximal.004
+Urethane cover proximal.004 Type: MESH
+Urethane cover proximal.004 transform: X0.0 Y0.0 Z0.0
+Urethane cover proximal.004 rotation: X-7.450580596923828e-09 Y0.0 Z0.0
+Urethane cover proximal.004 scale: X1.0 Y0.9999999403953552 Z1.0
+Urethane cover proximal.004 groups: None
+Urethane cover proximal.004 parent: MCPJ.004
+Urethane cover proximal.004 mesh: Urethane cover proximal
+Urethane cover proximal.004 materials: Urethane, 
+Urethane cover proximal.004 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN M2 Bolt Hole.001
 BOOLEAN M2 Bolt Hole.001 Type: MESH
@@ -139,12 +566,7 @@ BOOLEAN Thumb ligament for thumb scale: X0.9999998807907104 Y0.9999998211860657 
 BOOLEAN Thumb ligament for thumb groups: Thumb, 
 BOOLEAN Thumb ligament for thumb mesh: BOOLEAN Thumb ligament for thumb
 BOOLEAN Thumb ligament for thumb materials: Boolean difference, 
-BOOLEAN Thumb ligament for thumb modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: Y, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
+BOOLEAN Thumb ligament for thumb modifiers: None
 
 Name: BOOLEAN Mould
 BOOLEAN Mould Type: MESH
@@ -211,12 +633,7 @@ Thumb ligament  groups: Thumb,
 Thumb ligament  mesh: Thumb Ligament 
 Thumb ligament  materials: Ninjalfex, 
 Thumb ligament  modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: Y, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #2 Name: Boolean, Type: BOOLEAN
+  #1 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole.001
 
 Name: BOOLEAN M2 Bolt Hole
@@ -229,21 +646,16 @@ BOOLEAN M2 Bolt Hole mesh: BOOLEAN M2 Bolt Hole
 BOOLEAN M2 Bolt Hole materials: Boolean difference, 
 BOOLEAN M2 Bolt Hole modifiers: None
 
-Name: BOOLEAN Thumb ligament for thumb.001
-BOOLEAN Thumb ligament for thumb.001 Type: MESH
-BOOLEAN Thumb ligament for thumb.001 transform: X-7.62939453125e-06 Y-7.152557373046875e-07 Z0.0
-BOOLEAN Thumb ligament for thumb.001 rotation: X3.7112233286507035e-08 Y-3.88492225056325e-08 Z-1.5707961320877075
-BOOLEAN Thumb ligament for thumb.001 scale: X0.9999998807907104 Y0.9999998211860657 Z1.0
-BOOLEAN Thumb ligament for thumb.001 groups: Thumb, 
-BOOLEAN Thumb ligament for thumb.001 mesh: BOOLEAN Thumb ligament for thumb.003
-BOOLEAN Thumb ligament for thumb.001 materials: PLA White, 
-BOOLEAN Thumb ligament for thumb.001 modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: Y, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #2 Name: Boolean, Type: BOOLEAN
+Name: Thumb ligament cover for thumb
+Thumb ligament cover for thumb Type: MESH
+Thumb ligament cover for thumb transform: X-7.62939453125e-06 Y-7.152557373046875e-07 Z0.0
+Thumb ligament cover for thumb rotation: X3.7112233286507035e-08 Y-3.88492225056325e-08 Z-1.5707961320877075
+Thumb ligament cover for thumb scale: X0.9999998807907104 Y0.9999998211860657 Z1.0
+Thumb ligament cover for thumb groups: Thumb, 
+Thumb ligament cover for thumb mesh: BOOLEAN Thumb ligament for thumb.003
+Thumb ligament cover for thumb materials: PLA White, 
+Thumb ligament cover for thumb modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole
 
 Name: Thumb ligament bent
@@ -287,6 +699,8 @@ Thumb modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon termination M2 bolt hole
   #8 Name: Boolean.ThumbLigamentCoverM2BoltHole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 bolt hole for thumb
+  #9 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Elastic path
 
 Name: Thumb target
 Thumb target Type: MESH
@@ -326,4 +740,14 @@ Thumb urethane pad materials: Urethane,
 Thumb urethane pad modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN Elastic path
+BOOLEAN Elastic path Type: MESH
+BOOLEAN Elastic path transform: X7.499992370605469 Y0.7770576477050781 Z3.000001907348633
+BOOLEAN Elastic path rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Elastic path scale: X1.0 Y1.0 Z1.0
+BOOLEAN Elastic path groups: None
+BOOLEAN Elastic path mesh: BOOLEAN Elastic path
+BOOLEAN Elastic path materials: Boolean difference, 
+BOOLEAN Elastic path modifiers: None
 
