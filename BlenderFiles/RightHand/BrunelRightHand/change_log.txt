@@ -58,16 +58,16 @@ Back cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for back cover
   #8 Name: Boolean.LigamentCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover
-  #9 Name: Boolean.HeadphoneJack, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Headphone jack
+  #9 Name: Boolean.Connectors, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Connectors
   #10 Name: Boolean.DCJack, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN DC Jack
   #11 Name: Boolean.Logo, Type: BOOLEAN
         Operation: UNION, Object: LABEL Logo
   #12 Name: Boolean.PalmOuterFrameForBackCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame for Back cover
-  #13 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Connector cover
+  #13 Name: Boolean.ConnectorCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Connector cover for Back cover
 
 Name: Back cover target
 Back cover target Type: MESH
@@ -141,17 +141,43 @@ BOOLEAN Conical spring modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 2, Type: CATMULL_CLARK
 
-Name: BOOLEAN Connector cover
-BOOLEAN Connector cover Type: MESH
-BOOLEAN Connector cover transform: X-19.096534729003906 Y-71.34187316894531 Z17.730140686035156
-BOOLEAN Connector cover rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Connector cover scale: X1.0 Y1.0 Z1.0
-BOOLEAN Connector cover groups: None
-BOOLEAN Connector cover parent: Connector cover
-BOOLEAN Connector cover mesh: Connector cover
-BOOLEAN Connector cover materials: PLA, 
-BOOLEAN Connector cover modifiers: 
+Name: BOOLEAN Connector cover for Back cover
+BOOLEAN Connector cover for Back cover Type: MESH
+BOOLEAN Connector cover for Back cover transform: X-19.096534729003906 Y-71.34187316894531 Z17.730140686035156
+BOOLEAN Connector cover for Back cover rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Connector cover for Back cover scale: X1.0 Y1.0 Z1.0
+BOOLEAN Connector cover for Back cover groups: None
+BOOLEAN Connector cover for Back cover parent: Connector cover
+BOOLEAN Connector cover for Back cover mesh: Connector cover.002
+BOOLEAN Connector cover for Back cover materials: Boolean difference, 
+BOOLEAN Connector cover for Back cover modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
+  #2 Name: Solidify.001, Type: SOLIDIFY
+
+Name: BOOLEAN Connector cover for GALA cover
+BOOLEAN Connector cover for GALA cover Type: MESH
+BOOLEAN Connector cover for GALA cover transform: X-19.096534729003906 Y-71.34187316894531 Z17.730140686035156
+BOOLEAN Connector cover for GALA cover rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Connector cover for GALA cover scale: X1.0 Y1.0 Z1.0
+BOOLEAN Connector cover for GALA cover groups: None
+BOOLEAN Connector cover for GALA cover parent: Connector cover
+BOOLEAN Connector cover for GALA cover mesh: Connector cover.001
+BOOLEAN Connector cover for GALA cover materials: Boolean difference, 
+BOOLEAN Connector cover for GALA cover modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+  #2 Name: Solidify.001, Type: SOLIDIFY
+
+Name: BOOLEAN Connectors
+BOOLEAN Connectors Type: MESH
+BOOLEAN Connectors transform: X9.0 Y-57.441871643066406 Z13.190025329589844
+BOOLEAN Connectors rotation: X-1.4901154976598718e-08 Y-1.4901164746561335e-08 Z1.5707961320877075
+BOOLEAN Connectors scale: X0.9999998807907104 Y0.9999998807907104 Z1.0
+BOOLEAN Connectors groups: Actuator Block, Booleans, 
+BOOLEAN Connectors parent: PCB Chestnut
+BOOLEAN Connectors mesh: BOOLEAN Headphone jack.001
+BOOLEAN Connectors materials: Boolean difference, 
+BOOLEAN Connectors modifiers: 
+  #1 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN DC Jack
 BOOLEAN DC Jack Type: MESH
@@ -655,6 +681,18 @@ BOOLEAN Thumb tendon channel mesh: BOOLEAN Thumb tendon channel
 BOOLEAN Thumb tendon channel materials: Boolean difference, 
 BOOLEAN Thumb tendon channel modifiers: None
 
+Name: BOOLEAN USB
+BOOLEAN USB Type: MESH
+BOOLEAN USB transform: X9.0 Y-57.441871643066406 Z13.190025329589844
+BOOLEAN USB rotation: X-1.4901154976598718e-08 Y-1.4901164746561335e-08 Z1.5707961320877075
+BOOLEAN USB scale: X0.9999998807907104 Y0.9999998807907104 Z1.0
+BOOLEAN USB groups: Actuator Block, Booleans, 
+BOOLEAN USB parent: PCB Chestnut
+BOOLEAN USB mesh: BOOLEAN PCB Chestnut for back cover.001
+BOOLEAN USB materials: Boolean difference, 
+BOOLEAN USB modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
 Name: Conical spring
 Conical spring Type: MESH
 Conical spring transform: X-15.163448333740234 Y-46.499046325683594 Z-4.673167705535889
@@ -743,7 +781,7 @@ GALA cover modifiers:
   #11 Name: Boolean.ThumbPivotDowelForGALACover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel for GALA cover
   #12 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Connector cover
+        Operation: DIFFERENCE, Object: BOOLEAN Connector cover for GALA cover
 
 Name: Hand Ligament
 Hand Ligament Type: MESH
@@ -1270,7 +1308,7 @@ HANDLE Distal Joint.001 modifiers: None
 
 Name: HANDLE Fingertip.001
 HANDLE Fingertip.001 Type: MESH
-HANDLE Fingertip.001 transform: X0.0 Y45.0 Z0.0
+HANDLE Fingertip.001 transform: X0.0 Y44.0 Z0.0
 HANDLE Fingertip.001 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.001 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.001 groups: 1st Finger, 
@@ -1278,6 +1316,26 @@ HANDLE Fingertip.001 parent: HANDLE Distal Joint.001
 HANDLE Fingertip.001 mesh: HANDLE Fingertip
 HANDLE Fingertip.001 materials: HANDLE, 
 HANDLE Fingertip.001 modifiers: None
+
+Name: Top cover proximal.005
+Top cover proximal.005 Type: MESH
+Top cover proximal.005 transform: X0.0 Y0.0 Z0.0
+Top cover proximal.005 rotation: X0.0 Y0.0 Z0.0
+Top cover proximal.005 scale: X1.0 Y1.0 Z1.0
+Top cover proximal.005 groups: 1st Finger, 
+Top cover proximal.005 parent: HANDLE 1st Finger
+Top cover proximal.005 mesh: Top cover proximal.002
+Top cover proximal.005 materials: NF Black, 
+Top cover proximal.005 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Inner proximal.001
 BOOLEAN Inner proximal.001 Type: MESH
@@ -1923,7 +1981,7 @@ HANDLE 3rd Finger groups: 3rd Finger,
 
 Name: HANDLE Distal Joint.003
 HANDLE Distal Joint.003 Type: MESH
-HANDLE Distal Joint.003 transform: X0.0 Y45.0 Z0.0
+HANDLE Distal Joint.003 transform: X0.0 Y38.0 Z0.0
 HANDLE Distal Joint.003 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.003 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.003 groups: 3rd Finger, 
@@ -1934,7 +1992,7 @@ HANDLE Distal Joint.003 modifiers: None
 
 Name: HANDLE Fingertip.003
 HANDLE Fingertip.003 Type: MESH
-HANDLE Fingertip.003 transform: X0.0 Y40.0 Z0.0
+HANDLE Fingertip.003 transform: X0.0 Y42.0 Z0.0
 HANDLE Fingertip.003 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.003 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.003 groups: 3rd Finger, 
@@ -2245,7 +2303,7 @@ HANDLE 4th Finger groups: 4th Finger,
 
 Name: HANDLE Distal Joint.004
 HANDLE Distal Joint.004 Type: MESH
-HANDLE Distal Joint.004 transform: X0.0 Y40.0 Z0.0
+HANDLE Distal Joint.004 transform: X0.0 Y30.0 Z0.0
 HANDLE Distal Joint.004 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.004 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.004 groups: 4th Finger, 
