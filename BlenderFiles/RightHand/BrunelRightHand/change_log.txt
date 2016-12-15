@@ -68,6 +68,8 @@ Back cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame for Back cover
   #13 Name: Boolean.ConnectorCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Connector cover for Back cover
+  #14 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
 
 Name: Back cover target
 Back cover target Type: MESH
@@ -271,7 +273,7 @@ BOOLEAN Ligament cover M2 bolt hole scale: X1.0 Y1.0 Z1.0
 BOOLEAN Ligament cover M2 bolt hole groups: Actuator Block, Booleans, 
 BOOLEAN Ligament cover M2 bolt hole parent: Actuator Block
 BOOLEAN Ligament cover M2 bolt hole mesh: BOOLEAN Ligament cover M2 bolt hole
-BOOLEAN Ligament cover M2 bolt hole materials: Boolean difference, 
+BOOLEAN Ligament cover M2 bolt hole materials: Boolean difference.005, 
 BOOLEAN Ligament cover M2 bolt hole modifiers: None
 
 Name: BOOLEAN MOULD Locking feature
@@ -818,7 +820,7 @@ Ligament cover scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Ligament cover groups: Actuator Block, 
 Ligament cover parent: Actuator Block
 Ligament cover mesh: Ligament cover
-Ligament cover materials: PLA, 
+Ligament cover materials: PLA.001, 
 Ligament cover modifiers: 
   #1 Name: Boolean.LigamentCoverProngs, Type: BOOLEAN
         Operation: UNION, Object: Ligament cover prongs
@@ -835,7 +837,7 @@ Ligament cover prong target scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Ligament cover prong target groups: Actuator Block, 
 Ligament cover prong target parent: Actuator Block
 Ligament cover prong target mesh: Ligament cover
-Ligament cover prong target materials: PLA, 
+Ligament cover prong target materials: PLA.001, 
 Ligament cover prong target modifiers: None
 
 Name: Ligament cover prongs
@@ -950,8 +952,8 @@ Palm inner rotation: X0.0 Y-0.0 Z0.0
 Palm inner scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Palm inner groups: Actuator Block, 
 Palm inner parent: Actuator Block
-Palm inner mesh: Palm Inner
-Palm inner materials: PLA, 
+Palm inner mesh: Palm Inner.001
+Palm inner materials: PLA.003, 
 Palm inner modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Proximal fillet, Type: BEVEL
