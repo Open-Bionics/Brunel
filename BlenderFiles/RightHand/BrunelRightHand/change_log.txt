@@ -193,6 +193,31 @@ BOOLEAN DC Jack materials: Boolean difference,
 BOOLEAN DC Jack modifiers: 
   #1 Name: Bevel, Type: BEVEL
 
+Name: BOOLEAN DC jack cover for Back cover
+BOOLEAN DC jack cover for Back cover Type: MESH
+BOOLEAN DC jack cover for Back cover transform: X29.954208374023438 Y-80.68687438964844 Z21.20294952392578
+BOOLEAN DC jack cover for Back cover rotation: X1.5707963705062866 Y-0.0 Z0.0
+BOOLEAN DC jack cover for Back cover scale: X1.0 Y1.0 Z1.0
+BOOLEAN DC jack cover for Back cover groups: None
+BOOLEAN DC jack cover for Back cover parent: DC jack cover
+BOOLEAN DC jack cover for Back cover mesh: DC jack cover.002
+BOOLEAN DC jack cover for Back cover materials: Boolean difference, 
+BOOLEAN DC jack cover for Back cover modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+  #2 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN DC jack cover for GALA cover
+BOOLEAN DC jack cover for GALA cover Type: MESH
+BOOLEAN DC jack cover for GALA cover transform: X29.954208374023438 Y-80.68687438964844 Z21.20294952392578
+BOOLEAN DC jack cover for GALA cover rotation: X1.5707963705062866 Y-0.0 Z0.0
+BOOLEAN DC jack cover for GALA cover scale: X1.0 Y1.0 Z1.0
+BOOLEAN DC jack cover for GALA cover groups: None
+BOOLEAN DC jack cover for GALA cover parent: DC jack cover
+BOOLEAN DC jack cover for GALA cover mesh: DC jack cover.001
+BOOLEAN DC jack cover for GALA cover materials: Boolean difference, 
+BOOLEAN DC jack cover for GALA cover modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+
 Name: BOOLEAN GALA cover
 BOOLEAN GALA cover Type: MESH
 BOOLEAN GALA cover transform: X9.0 Y-48.89358901977539 Z-2.9508910179138184
@@ -251,7 +276,8 @@ BOOLEAN Headphone jack parent: PCB Chestnut
 BOOLEAN Headphone jack mesh: BOOLEAN Headphone jack
 BOOLEAN Headphone jack materials: Boolean difference, 
 BOOLEAN Headphone jack modifiers: 
-  #1 Name: Bevel, Type: BEVEL
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Ligament cover
 BOOLEAN Ligament cover Type: MESH
@@ -751,6 +777,27 @@ CONNECTOR USB micro male scale: X1.0 Y1.0 Z1.0
 CONNECTOR USB micro male groups: None
 CONNECTOR USB micro male parent: PCB Chestnut
 
+Name: Cube
+Cube Type: MESH
+Cube transform: X29.954208374023438 Y-80.68687438964844 Z21.20294952392578
+Cube rotation: X0.0 Y0.0 Z0.0
+Cube scale: X1.0 Y1.0 Z1.0
+Cube groups: None
+Cube mesh: Cube
+Cube materials: None
+Cube modifiers: None
+
+Name: DC jack cover
+DC jack cover Type: MESH
+DC jack cover transform: X29.954208374023438 Y-80.68687438964844 Z21.20294952392578
+DC jack cover rotation: X1.5707963705062866 Y-0.0 Z0.0
+DC jack cover scale: X1.0 Y1.0 Z1.0
+DC jack cover groups: None
+DC jack cover parent: PCB Chestnut
+DC jack cover mesh: DC jack cover
+DC jack cover materials: None
+DC jack cover modifiers: None
+
 Name: GALA cover
 GALA cover Type: MESH
 GALA cover transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
@@ -784,6 +831,8 @@ GALA cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel for GALA cover
   #12 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Connector cover for GALA cover
+  #13 Name: Boolean.DCJackCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for GALA cover
 
 Name: Hand Ligament
 Hand Ligament Type: MESH
