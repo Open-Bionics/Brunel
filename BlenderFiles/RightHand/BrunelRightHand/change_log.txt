@@ -72,6 +72,8 @@ Back cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
   #15 Name: Boolean.DCJaceCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for Back cover
+  #16 Name: Boolean.OpenBionics, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Open Bionics
 
 Name: Back cover target
 Back cover target Type: MESH
@@ -92,7 +94,7 @@ BOOLEAN Back cover M2 bolt holes rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Back cover M2 bolt holes scale: X1.0 Y1.0 Z1.0
 BOOLEAN Back cover M2 bolt holes groups: None
 BOOLEAN Back cover M2 bolt holes mesh: BOOLEAN Back cover M2 bolt holes
-BOOLEAN Back cover M2 bolt holes materials: Boolean difference.003, 
+BOOLEAN Back cover M2 bolt holes materials: Boolean difference, 
 BOOLEAN Back cover M2 bolt holes modifiers: None
 
 Name: Back cover proximal attachment point
@@ -312,7 +314,7 @@ BOOLEAN Ligament cover M2 bolt hole scale: X1.0 Y1.0 Z1.0
 BOOLEAN Ligament cover M2 bolt hole groups: Actuator Block, Booleans, 
 BOOLEAN Ligament cover M2 bolt hole parent: Actuator Block
 BOOLEAN Ligament cover M2 bolt hole mesh: BOOLEAN Ligament cover M2 bolt hole
-BOOLEAN Ligament cover M2 bolt hole materials: Boolean difference.005, 
+BOOLEAN Ligament cover M2 bolt hole materials: Boolean difference, 
 BOOLEAN Ligament cover M2 bolt hole modifiers: None
 
 Name: BOOLEAN MOULD Locking feature
@@ -417,7 +419,7 @@ BOOLEAN Palm outer frame M2 bolt hole rotation: X1.5707963705062866 Y-0.0 Z0.0
 BOOLEAN Palm outer frame M2 bolt hole scale: X1.0 Y1.0 Z1.0
 BOOLEAN Palm outer frame M2 bolt hole groups: None
 BOOLEAN Palm outer frame M2 bolt hole mesh: BOOLEAN Palm outer frame M2 bolt hole
-BOOLEAN Palm outer frame M2 bolt hole materials: Boolean difference.004, 
+BOOLEAN Palm outer frame M2 bolt hole materials: Boolean difference, 
 BOOLEAN Palm outer frame M2 bolt hole modifiers: None
 
 Name: BOOLEAN Palm outer skin for MOULD
@@ -549,7 +551,7 @@ BOOLEAN Tendon Channels scale: X0.9999999403953552 Y1.0 Z0.9999999403953552
 BOOLEAN Tendon Channels groups: Actuator Block, Booleans, 
 BOOLEAN Tendon Channels parent: Actuator Block
 BOOLEAN Tendon Channels mesh: BOOLEAN Tendon Channels.001
-BOOLEAN Tendon Channels materials: Boolean difference.002, 
+BOOLEAN Tendon Channels materials: Boolean difference, 
 BOOLEAN Tendon Channels modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
@@ -623,7 +625,7 @@ BOOLEAN Thumb ligament cover M2 Bolt Hole scale: X1.0 Y1.0 Z1.0
 BOOLEAN Thumb ligament cover M2 Bolt Hole groups: Actuator Block, Booleans, Thumb, 
 BOOLEAN Thumb ligament cover M2 Bolt Hole parent: Actuator Block
 BOOLEAN Thumb ligament cover M2 Bolt Hole mesh: BOOLEAN Thumb ligament cover M2 Bolt Hole
-BOOLEAN Thumb ligament cover M2 Bolt Hole materials: Boolean difference.001, 
+BOOLEAN Thumb ligament cover M2 Bolt Hole materials: Boolean difference, 
 BOOLEAN Thumb ligament cover M2 Bolt Hole modifiers: None
 
 Name: BOOLEAN Thumb ligament elastic clamp
@@ -741,7 +743,7 @@ BOOLEAN Wrist connector M2 bolt holes rotation: X5.204799652099609 Y-0.110927321
 BOOLEAN Wrist connector M2 bolt holes scale: X1.0 Y1.0 Z1.0
 BOOLEAN Wrist connector M2 bolt holes groups: None
 BOOLEAN Wrist connector M2 bolt holes mesh: BOOLEAN M2 Bolt Hole.006
-BOOLEAN Wrist connector M2 bolt holes materials: Boolean difference.006, 
+BOOLEAN Wrist connector M2 bolt holes materials: Boolean difference, 
 BOOLEAN Wrist connector M2 bolt holes modifiers: None
 
 Name: Conical spring
@@ -874,6 +876,23 @@ LABEL Logo modifiers:
         Keep above surface: False
   #3 Name: Solidify, Type: SOLIDIFY
 
+Name: LABEL Open Bionics
+LABEL Open Bionics Type: MESH
+LABEL Open Bionics transform: X51.658660888671875 Y-58.78639602661133 Z9.145349502563477
+LABEL Open Bionics rotation: X1.5707963705062866 Y-0.0 Z1.5707963705062866
+LABEL Open Bionics scale: X0.8085255026817322 Y0.8085255026817322 Z0.8085255026817322
+LABEL Open Bionics groups: None
+LABEL Open Bionics mesh: Label - Open Bionics
+LABEL Open Bionics materials: PLA, 
+LABEL Open Bionics modifiers: 
+  #1 Name: Shrinkwrap, Type: SHRINKWRAP
+        Target: Back cover target, Mode: PROJECT, Offset: 0.0 mm
+        Projecting in: Z
+        Project in positive direction: False, Negative: True
+        Cull Faces: BACK
+        Subsurf level: 0
+  #2 Name: Solidify, Type: SOLIDIFY
+
 Name: Ligament cover
 Ligament cover Type: MESH
 Ligament cover transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
@@ -882,7 +901,7 @@ Ligament cover scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Ligament cover groups: Actuator Block, 
 Ligament cover parent: Actuator Block
 Ligament cover mesh: Ligament cover
-Ligament cover materials: PLA.001, 
+Ligament cover materials: PLA, 
 Ligament cover modifiers: 
   #1 Name: Boolean.LigamentCoverProngs, Type: BOOLEAN
         Operation: UNION, Object: Ligament cover prongs
@@ -901,7 +920,7 @@ Ligament cover prong target scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Ligament cover prong target groups: Actuator Block, 
 Ligament cover prong target parent: Actuator Block
 Ligament cover prong target mesh: Ligament cover
-Ligament cover prong target materials: PLA.001, 
+Ligament cover prong target materials: PLA, 
 Ligament cover prong target modifiers: None
 
 Name: Ligament cover prongs
@@ -1017,7 +1036,7 @@ Palm inner scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Palm inner groups: Actuator Block, 
 Palm inner parent: Actuator Block
 Palm inner mesh: Palm Inner.001
-Palm inner materials: PLA.003, 
+Palm inner materials: PLA, 
 Palm inner modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Proximal fillet, Type: BEVEL
@@ -1057,7 +1076,7 @@ Palm outer frame rotation: X0.0 Y0.0 Z0.0
 Palm outer frame scale: X1.0 Y1.0 Z1.0
 Palm outer frame groups: None
 Palm outer frame mesh: Outer palm frame
-Palm outer frame materials: PLA.002, 
+Palm outer frame materials: PLA, 
 Palm outer frame modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Proximal Fillet, Type: BEVEL
@@ -1280,7 +1299,7 @@ Wrist connector rotation: X-0.3490658104419708 Y-0.0 Z0.0
 Wrist connector scale: X1.0 Y1.0 Z1.0
 Wrist connector groups: None
 Wrist connector mesh: Plane.000
-Wrist connector materials: None
+Wrist connector materials: PLA, 
 Wrist connector modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Boolean, Type: BOOLEAN
