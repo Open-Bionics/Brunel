@@ -45,7 +45,7 @@ Back cover modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #2 Name: Boolean.WristConnector, Type: BOOLEAN
-        Operation: UNION, Object: Wrist connector
+        Operation: DIFFERENCE, Object: BOOLEAN Wrist connector M2 bolt holes
   #3 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
   #4 Name: Boolean.PQ12s, Type: BOOLEAN
@@ -70,7 +70,7 @@ Back cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Connector cover for Back cover
   #14 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
-  #15 Name: Boolean.001, Type: BOOLEAN
+  #15 Name: Boolean.DCJaceCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for Back cover
 
 Name: Back cover target
@@ -734,6 +734,16 @@ BOOLEAN USB materials: Boolean difference,
 BOOLEAN USB modifiers: 
   #1 Name: Bevel, Type: BEVEL
 
+Name: BOOLEAN Wrist connector M2 bolt holes
+BOOLEAN Wrist connector M2 bolt holes Type: MESH
+BOOLEAN Wrist connector M2 bolt holes transform: X9.064352035522461 Y-91.38917541503906 Z10.123432159423828
+BOOLEAN Wrist connector M2 bolt holes rotation: X5.204799652099609 Y-0.11092732101678848 Z1.316519856452942
+BOOLEAN Wrist connector M2 bolt holes scale: X1.0 Y1.0 Z1.0
+BOOLEAN Wrist connector M2 bolt holes groups: None
+BOOLEAN Wrist connector M2 bolt holes mesh: BOOLEAN M2 Bolt Hole.006
+BOOLEAN Wrist connector M2 bolt holes materials: Boolean difference.006, 
+BOOLEAN Wrist connector M2 bolt holes modifiers: None
+
 Name: Conical spring
 Conical spring Type: MESH
 Conical spring transform: X-15.163448333740234 Y-46.499046325683594 Z-4.673167705535889
@@ -1265,7 +1275,7 @@ Thumb pivot dowel.002 modifiers: None
 
 Name: Wrist connector
 Wrist connector Type: MESH
-Wrist connector transform: X9.0 Y-89.81194305419922 Z11.091520309448242
+Wrist connector transform: X9.0 Y-90.75166320800781 Z11.433578491210938
 Wrist connector rotation: X-0.3490658104419708 Y-0.0 Z0.0
 Wrist connector scale: X1.0 Y1.0 Z1.0
 Wrist connector groups: None
@@ -1273,6 +1283,8 @@ Wrist connector mesh: Plane.000
 Wrist connector materials: None
 Wrist connector modifiers: 
   #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Wrist connector M2 bolt holes
 
 Name: BOOLEAN M2 Bolt Holes
 BOOLEAN M2 Bolt Holes Type: EMPTY
