@@ -68,8 +68,10 @@ Back cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame for Back cover
   #13 Name: Boolean.ConnectorCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Connector cover for Back cover
-  #14 Name: Boolean, Type: BOOLEAN
+  #14 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
+  #15 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for Back cover
 
 Name: Back cover target
 Back cover target Type: MESH
@@ -85,7 +87,7 @@ Back cover target modifiers:
 
 Name: BOOLEAN Back cover M2 bolt holes
 BOOLEAN Back cover M2 bolt holes Type: MESH
-BOOLEAN Back cover M2 bolt holes transform: X-24.0 Y-22.0 Z0.0
+BOOLEAN Back cover M2 bolt holes transform: X-24.0 Y-22.0 Z0.800000011920929
 BOOLEAN Back cover M2 bolt holes rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Back cover M2 bolt holes scale: X1.0 Y1.0 Z1.0
 BOOLEAN Back cover M2 bolt holes groups: None
@@ -1136,7 +1138,7 @@ Palm.002 modifiers:
 
 Name: PCB Chestnut
 PCB Chestnut Type: EMPTY
-PCB Chestnut transform: X9.0 Y-57.44186782836914 Z13.190025329589844
+PCB Chestnut transform: X9.0 Y-57.44186782836914 Z13.990025520324707
 PCB Chestnut rotation: X0.0 Y-0.0 Z1.5707964897155762
 PCB Chestnut scale: X1.0 Y1.0 Z1.0
 PCB Chestnut groups: None
