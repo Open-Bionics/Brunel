@@ -68,6 +68,10 @@ Back cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame for Back cover
   #13 Name: Boolean.ConnectorCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Connector cover for Back cover
+  #14 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
+  #15 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for Back cover
 
 Name: Back cover target
 Back cover target Type: MESH
@@ -83,7 +87,7 @@ Back cover target modifiers:
 
 Name: BOOLEAN Back cover M2 bolt holes
 BOOLEAN Back cover M2 bolt holes Type: MESH
-BOOLEAN Back cover M2 bolt holes transform: X-24.0 Y-22.0 Z0.0
+BOOLEAN Back cover M2 bolt holes transform: X-24.0 Y-22.0 Z0.800000011920929
 BOOLEAN Back cover M2 bolt holes rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Back cover M2 bolt holes scale: X1.0 Y1.0 Z1.0
 BOOLEAN Back cover M2 bolt holes groups: None
@@ -191,6 +195,31 @@ BOOLEAN DC Jack materials: Boolean difference,
 BOOLEAN DC Jack modifiers: 
   #1 Name: Bevel, Type: BEVEL
 
+Name: BOOLEAN DC jack cover for Back cover
+BOOLEAN DC jack cover for Back cover Type: MESH
+BOOLEAN DC jack cover for Back cover transform: X29.954208374023438 Y-80.68687438964844 Z21.20294952392578
+BOOLEAN DC jack cover for Back cover rotation: X1.5707963705062866 Y-0.0 Z0.0
+BOOLEAN DC jack cover for Back cover scale: X1.0 Y1.0 Z1.0
+BOOLEAN DC jack cover for Back cover groups: None
+BOOLEAN DC jack cover for Back cover parent: DC jack cover
+BOOLEAN DC jack cover for Back cover mesh: DC jack cover.002
+BOOLEAN DC jack cover for Back cover materials: Boolean difference, 
+BOOLEAN DC jack cover for Back cover modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+  #2 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN DC jack cover for GALA cover
+BOOLEAN DC jack cover for GALA cover Type: MESH
+BOOLEAN DC jack cover for GALA cover transform: X29.954208374023438 Y-80.68687438964844 Z21.20294952392578
+BOOLEAN DC jack cover for GALA cover rotation: X1.5707963705062866 Y-0.0 Z0.0
+BOOLEAN DC jack cover for GALA cover scale: X1.0 Y1.0 Z1.0
+BOOLEAN DC jack cover for GALA cover groups: None
+BOOLEAN DC jack cover for GALA cover parent: DC jack cover
+BOOLEAN DC jack cover for GALA cover mesh: DC jack cover.001
+BOOLEAN DC jack cover for GALA cover materials: Boolean difference, 
+BOOLEAN DC jack cover for GALA cover modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+
 Name: BOOLEAN GALA cover
 BOOLEAN GALA cover Type: MESH
 BOOLEAN GALA cover transform: X9.0 Y-48.89358901977539 Z-2.9508910179138184
@@ -249,7 +278,8 @@ BOOLEAN Headphone jack parent: PCB Chestnut
 BOOLEAN Headphone jack mesh: BOOLEAN Headphone jack
 BOOLEAN Headphone jack materials: Boolean difference, 
 BOOLEAN Headphone jack modifiers: 
-  #1 Name: Bevel, Type: BEVEL
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Ligament cover
 BOOLEAN Ligament cover Type: MESH
@@ -263,6 +293,17 @@ BOOLEAN Ligament cover materials: Boolean difference,
 BOOLEAN Ligament cover modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
 
+Name: BOOLEAN Ligament cover corners
+BOOLEAN Ligament cover corners Type: MESH
+BOOLEAN Ligament cover corners transform: X38.502872467041016 Y-24.044910430908203 Z-2.121824264526367
+BOOLEAN Ligament cover corners rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Ligament cover corners scale: X1.0 Y1.0 Z1.0
+BOOLEAN Ligament cover corners groups: None
+BOOLEAN Ligament cover corners parent: Actuator Block
+BOOLEAN Ligament cover corners mesh: Cube.001
+BOOLEAN Ligament cover corners materials: Boolean difference, 
+BOOLEAN Ligament cover corners modifiers: None
+
 Name: BOOLEAN Ligament cover M2 bolt hole
 BOOLEAN Ligament cover M2 bolt hole Type: MESH
 BOOLEAN Ligament cover M2 bolt hole transform: X7.25 Y-15.0 Z0.20000000298023224
@@ -271,7 +312,7 @@ BOOLEAN Ligament cover M2 bolt hole scale: X1.0 Y1.0 Z1.0
 BOOLEAN Ligament cover M2 bolt hole groups: Actuator Block, Booleans, 
 BOOLEAN Ligament cover M2 bolt hole parent: Actuator Block
 BOOLEAN Ligament cover M2 bolt hole mesh: BOOLEAN Ligament cover M2 bolt hole
-BOOLEAN Ligament cover M2 bolt hole materials: Boolean difference, 
+BOOLEAN Ligament cover M2 bolt hole materials: Boolean difference.005, 
 BOOLEAN Ligament cover M2 bolt hole modifiers: None
 
 Name: BOOLEAN MOULD Locking feature
@@ -749,6 +790,17 @@ CONNECTOR USB micro male scale: X1.0 Y1.0 Z1.0
 CONNECTOR USB micro male groups: None
 CONNECTOR USB micro male parent: PCB Chestnut
 
+Name: DC jack cover
+DC jack cover Type: MESH
+DC jack cover transform: X29.954208374023438 Y-80.68687438964844 Z21.20294952392578
+DC jack cover rotation: X1.5707963705062866 Y-0.0 Z0.0
+DC jack cover scale: X1.0 Y1.0 Z1.0
+DC jack cover groups: None
+DC jack cover parent: PCB Chestnut
+DC jack cover mesh: DC jack cover
+DC jack cover materials: None
+DC jack cover modifiers: None
+
 Name: GALA cover
 GALA cover Type: MESH
 GALA cover transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
@@ -782,6 +834,8 @@ GALA cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel for GALA cover
   #12 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Connector cover for GALA cover
+  #13 Name: Boolean.DCJackCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for GALA cover
 
 Name: Hand Ligament
 Hand Ligament Type: MESH
@@ -818,7 +872,7 @@ Ligament cover scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Ligament cover groups: Actuator Block, 
 Ligament cover parent: Actuator Block
 Ligament cover mesh: Ligament cover
-Ligament cover materials: PLA, 
+Ligament cover materials: PLA.001, 
 Ligament cover modifiers: 
   #1 Name: Boolean.LigamentCoverProngs, Type: BOOLEAN
         Operation: UNION, Object: Ligament cover prongs
@@ -826,6 +880,8 @@ Ligament cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
   #3 Name: Boolean.ProximalElasticTerminatorCombo, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Proximal elastic terminator combo
+  #4 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover corners
 
 Name: Ligament cover prong target
 Ligament cover prong target Type: MESH
@@ -835,7 +891,7 @@ Ligament cover prong target scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Ligament cover prong target groups: Actuator Block, 
 Ligament cover prong target parent: Actuator Block
 Ligament cover prong target mesh: Ligament cover
-Ligament cover prong target materials: PLA, 
+Ligament cover prong target materials: PLA.001, 
 Ligament cover prong target modifiers: None
 
 Name: Ligament cover prongs
@@ -950,8 +1006,8 @@ Palm inner rotation: X0.0 Y-0.0 Z0.0
 Palm inner scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Palm inner groups: Actuator Block, 
 Palm inner parent: Actuator Block
-Palm inner mesh: Palm Inner
-Palm inner materials: PLA, 
+Palm inner mesh: Palm Inner.001
+Palm inner materials: PLA.003, 
 Palm inner modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Proximal fillet, Type: BEVEL
@@ -1085,7 +1141,7 @@ Palm.002 modifiers:
 
 Name: PCB Chestnut
 PCB Chestnut Type: EMPTY
-PCB Chestnut transform: X9.0 Y-57.44186782836914 Z13.190025329589844
+PCB Chestnut transform: X9.0 Y-57.44186782836914 Z13.990025520324707
 PCB Chestnut rotation: X0.0 Y-0.0 Z1.5707964897155762
 PCB Chestnut scale: X1.0 Y1.0 Z1.0
 PCB Chestnut groups: None
