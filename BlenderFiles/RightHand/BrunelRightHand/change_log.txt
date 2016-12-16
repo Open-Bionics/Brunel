@@ -293,6 +293,17 @@ BOOLEAN Ligament cover materials: Boolean difference,
 BOOLEAN Ligament cover modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
 
+Name: BOOLEAN Ligament cover corners
+BOOLEAN Ligament cover corners Type: MESH
+BOOLEAN Ligament cover corners transform: X38.502872467041016 Y-24.044910430908203 Z-2.121824264526367
+BOOLEAN Ligament cover corners rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Ligament cover corners scale: X1.0 Y1.0 Z1.0
+BOOLEAN Ligament cover corners groups: None
+BOOLEAN Ligament cover corners parent: Actuator Block
+BOOLEAN Ligament cover corners mesh: Cube.001
+BOOLEAN Ligament cover corners materials: Boolean difference, 
+BOOLEAN Ligament cover corners modifiers: None
+
 Name: BOOLEAN Ligament cover M2 bolt hole
 BOOLEAN Ligament cover M2 bolt hole Type: MESH
 BOOLEAN Ligament cover M2 bolt hole transform: X7.25 Y-15.0 Z0.20000000298023224
@@ -779,16 +790,6 @@ CONNECTOR USB micro male scale: X1.0 Y1.0 Z1.0
 CONNECTOR USB micro male groups: None
 CONNECTOR USB micro male parent: PCB Chestnut
 
-Name: Cube
-Cube Type: MESH
-Cube transform: X29.954208374023438 Y-80.68687438964844 Z21.20294952392578
-Cube rotation: X0.0 Y0.0 Z0.0
-Cube scale: X1.0 Y1.0 Z1.0
-Cube groups: None
-Cube mesh: Cube
-Cube materials: None
-Cube modifiers: None
-
 Name: DC jack cover
 DC jack cover Type: MESH
 DC jack cover transform: X29.954208374023438 Y-80.68687438964844 Z21.20294952392578
@@ -879,6 +880,8 @@ Ligament cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
   #3 Name: Boolean.ProximalElasticTerminatorCombo, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Proximal elastic terminator combo
+  #4 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover corners
 
 Name: Ligament cover prong target
 Ligament cover prong target Type: MESH
