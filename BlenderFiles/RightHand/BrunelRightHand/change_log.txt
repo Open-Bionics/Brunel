@@ -811,7 +811,8 @@ DC jack cover groups: None
 DC jack cover parent: PCB Chestnut
 DC jack cover mesh: DC jack cover
 DC jack cover materials: None
-DC jack cover modifiers: None
+DC jack cover modifiers: 
+  #1 Name: Bevel, Type: BEVEL
 
 Name: GALA cover
 GALA cover Type: MESH
