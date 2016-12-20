@@ -879,9 +879,9 @@ LABEL Logo modifiers:
 
 Name: LABEL Open Bionics
 LABEL Open Bionics Type: MESH
-LABEL Open Bionics transform: X51.658660888671875 Y-58.78639602661133 Z9.145349502563477
+LABEL Open Bionics transform: X51.658660888671875 Y-60.78639602661133 Z9.145349502563477
 LABEL Open Bionics rotation: X1.5707963705062866 Y-0.0 Z1.5707963705062866
-LABEL Open Bionics scale: X0.8085255026817322 Y0.8085255026817322 Z0.8085255026817322
+LABEL Open Bionics scale: X1.0 Y1.0 Z1.0
 LABEL Open Bionics groups: None
 LABEL Open Bionics mesh: Label - Open Bionics
 LABEL Open Bionics materials: PLA, 
@@ -1738,7 +1738,7 @@ HANDLE Distal Joint.002 modifiers: None
 
 Name: HANDLE Fingertip.002
 HANDLE Fingertip.002 Type: MESH
-HANDLE Fingertip.002 transform: X0.0 Y45.0 Z0.0
+HANDLE Fingertip.002 transform: X0.0 Y44.999996185302734 Z0.0
 HANDLE Fingertip.002 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.002 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.002 groups: 2nd Finger, 
@@ -2080,7 +2080,7 @@ HANDLE Distal Joint.003 modifiers: None
 
 Name: HANDLE Fingertip.003
 HANDLE Fingertip.003 Type: MESH
-HANDLE Fingertip.003 transform: X0.0 Y42.0 Z0.0
+HANDLE Fingertip.003 transform: X0.0 Y41.999996185302734 Z0.0
 HANDLE Fingertip.003 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.003 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.003 groups: 3rd Finger, 
