@@ -1363,6 +1363,85 @@ Top cover distal.004 modifiers:
   #6 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.004
 
+Name: Top cover pad proximal.001
+Top cover pad proximal.001 Type: MESH
+Top cover pad proximal.001 transform: X0.0 Y0.0 Z0.0
+Top cover pad proximal.001 rotation: X0.0 Y0.0 Z0.0
+Top cover pad proximal.001 scale: X1.0 Y1.0 Z1.0
+Top cover pad proximal.001 groups: 1st Finger, 
+Top cover pad proximal.001 parent: HANDLE 1st Finger
+Top cover pad proximal.001 mesh: Top cover pad proximal
+Top cover pad proximal.001 materials: NF Black, 
+Top cover pad proximal.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Top cover pad proximal.002
+Top cover pad proximal.002 Type: MESH
+Top cover pad proximal.002 transform: X0.0 Y0.0 Z0.0
+Top cover pad proximal.002 rotation: X0.0 Y-0.0 Z0.0
+Top cover pad proximal.002 scale: X1.0 Y1.0 Z1.0
+Top cover pad proximal.002 groups: 1st Finger, 
+Top cover pad proximal.002 parent: HANDLE 2nd Finger
+Top cover pad proximal.002 mesh: Top cover pad proximal
+Top cover pad proximal.002 materials: NF Black, 
+Top cover pad proximal.002 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Top cover pad proximal.003
+Top cover pad proximal.003 Type: MESH
+Top cover pad proximal.003 transform: X0.0 Y0.0 Z0.0
+Top cover pad proximal.003 rotation: X0.0 Y-0.0 Z0.0
+Top cover pad proximal.003 scale: X1.0 Y1.0 Z1.0
+Top cover pad proximal.003 groups: 1st Finger, 
+Top cover pad proximal.003 parent: HANDLE 3rd Finger
+Top cover pad proximal.003 mesh: Top cover pad proximal
+Top cover pad proximal.003 materials: NF Black, 
+Top cover pad proximal.003 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Top cover pad proximal.004
+Top cover pad proximal.004 Type: MESH
+Top cover pad proximal.004 transform: X0.0 Y0.0 Z0.0
+Top cover pad proximal.004 rotation: X0.0 Y-0.0 Z0.0
+Top cover pad proximal.004 scale: X1.0 Y1.0 Z1.0
+Top cover pad proximal.004 groups: 1st Finger, 
+Top cover pad proximal.004 mesh: Top cover pad proximal
+Top cover pad proximal.004 materials: NF Black, 
+Top cover pad proximal.004 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: Top cover proximal.000
 Top cover proximal.000 Type: MESH
 Top cover proximal.000 transform: X0.0 Y0.0 Z0.0
@@ -1490,26 +1569,6 @@ Top cover proximal.004 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Proximal elastic channel
   #7 Name: Boolean.ProximalInner, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal.004
-
-Name: Top cover proximal.005
-Top cover proximal.005 Type: MESH
-Top cover proximal.005 transform: X0.0 Y0.0 Z0.0
-Top cover proximal.005 rotation: X0.0 Y0.0 Z0.0
-Top cover proximal.005 scale: X1.0 Y1.0 Z1.0
-Top cover proximal.005 groups: 1st Finger, 
-Top cover proximal.005 parent: HANDLE 1st Finger
-Top cover proximal.005 mesh: Top cover proximal.002
-Top cover proximal.005 materials: NF Black, 
-Top cover proximal.005 modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Mirror object: HANDLE 1st Finger
-        Merge: True, Merge Limit: 0.10000000149011612 mm
-        Clipping: True
-        Vertex group mirroring: True
-  #3 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
 
 Name: Urethane cover distal.001
 Urethane cover distal.001 Type: MESH
