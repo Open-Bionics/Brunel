@@ -40,7 +40,7 @@ Back cover rotation: X0.0 Y0.0 Z0.0
 Back cover scale: X1.0 Y1.0 Z1.0
 Back cover groups: None
 Back cover mesh: Back cover
-Back cover materials: None
+Back cover materials: PLA Black, 
 Back cover modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
@@ -63,7 +63,7 @@ Back cover modifiers:
   #10 Name: Boolean.DCJack, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN DC Jack
   #11 Name: Boolean.Logo, Type: BOOLEAN
-        Operation: UNION, Object: LABEL Logo
+        Operation: DIFFERENCE, Object: LABEL Logo
   #12 Name: Boolean.PalmOuterFrameForBackCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame for Back cover
   #13 Name: Boolean.ConnectorCover, Type: BOOLEAN
@@ -72,8 +72,12 @@ Back cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
   #15 Name: Boolean.DCJaceCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for Back cover
-  #16 Name: Boolean.OpenBionics, Type: BOOLEAN
+  #16 Name: Boolean.OpenBionicsTwoTone, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Plane
+  #17 Name: Boolean.OpenBionics, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Open Bionics
+  #18 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Back cover.001 target
 
 Name: Back cover target
 Back cover target Type: MESH
@@ -82,8 +86,46 @@ Back cover target rotation: X0.0 Y-0.0 Z0.0
 Back cover target scale: X1.0 Y1.0 Z1.0
 Back cover target groups: None
 Back cover target mesh: Back cover
-Back cover target materials: None
+Back cover target materials: PLA Black, 
 Back cover target modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Back cover.001
+Back cover.001 Type: MESH
+Back cover.001 transform: X0.0 Y0.0 Z0.0
+Back cover.001 rotation: X0.0 Y0.0 Z0.0
+Back cover.001 scale: X1.0 Y1.0 Z1.0
+Back cover.001 groups: None
+Back cover.001 mesh: Back cover.001
+Back cover.001 materials: PLA White, 
+Back cover.001 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
+  #3 Name: Boolean.PQ12s, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
+  #4 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Connectors
+  #5 Name: Boolean.GALACover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN GALA cover
+  #6 Name: Boolean.LigamentCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover
+  #7 Name: Boolean.Logo, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Logo
+  #8 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for Back cover
+
+Name: Back cover.001 target
+Back cover.001 target Type: MESH
+Back cover.001 target transform: X0.0 Y0.0 Z0.0
+Back cover.001 target rotation: X0.0 Y0.0 Z0.0
+Back cover.001 target scale: X1.0 Y1.0 Z1.0
+Back cover.001 target groups: None
+Back cover.001 target mesh: Back cover.003
+Back cover.001 target materials: PLA Black, 
+Back cover.001 target modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
@@ -862,12 +904,12 @@ Hand Ligament modifiers: None
 
 Name: LABEL Logo
 LABEL Logo Type: MESH
-LABEL Logo transform: X9.468347549438477 Y-42.54774475097656 Z27.15020751953125
+LABEL Logo transform: X9.468347549438477 Y-52.250152587890625 Z27.15020751953125
 LABEL Logo rotation: X-0.05195975303649902 Y3.1415932178497314 Z2.8459771428401837e-08
 LABEL Logo scale: X2.09895920753479 Y2.09895920753479 Z2.09895920753479
 LABEL Logo groups: None
 LABEL Logo mesh: LABEL Logo
-LABEL Logo materials: None
+LABEL Logo materials: PLA Black, 
 LABEL Logo modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
@@ -1175,6 +1217,25 @@ PCB Chestnut rotation: X0.0 Y-0.0 Z1.5707964897155762
 PCB Chestnut scale: X1.0 Y1.0 Z1.0
 PCB Chestnut groups: None
 PCB Chestnut parent: Actuator Block
+
+Name: Plane
+Plane Type: MESH
+Plane transform: X68.15314483642578 Y-53.18141555786133 Z9.126782417297363
+Plane rotation: X-0.0 Y1.570796251296997 Z0.0
+Plane scale: X1.0 Y1.0 Z1.0
+Plane groups: None
+Plane mesh: Plane.001
+Plane materials: PLA White, 
+Plane modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Shrinkwrap, Type: SHRINKWRAP
+        Target: Back cover target, Mode: PROJECT, Offset: -0.4000000059604645 mm
+        Projecting in: Z
+        Project in positive direction: True, Negative: True
+        Cull Faces: OFF
+        Subsurf level: 0
+  #3 Name: Solidify, Type: SOLIDIFY
 
 Name: PQ12 Caps
 PQ12 Caps Type: MESH
