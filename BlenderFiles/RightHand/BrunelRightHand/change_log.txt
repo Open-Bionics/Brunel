@@ -185,6 +185,19 @@ BOOLEAN Connectors materials: Boolean difference,
 BOOLEAN Connectors modifiers: 
   #1 Name: Bevel, Type: BEVEL
 
+Name: BOOLEAN DC Cable
+BOOLEAN DC Cable Type: MESH
+BOOLEAN DC Cable transform: X53.463340759277344 Y-116.92205810546875 Z23.447330474853516
+BOOLEAN DC Cable rotation: X-6.632251262664795 Y-0.0 Z0.0
+BOOLEAN DC Cable scale: X1.0 Y1.0 Z1.0
+BOOLEAN DC Cable groups: None
+BOOLEAN DC Cable mesh: BOOLEAN DC Cable
+BOOLEAN DC Cable materials: Boolean difference, 
+BOOLEAN DC Cable modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: BOOLEAN DC Jack
 BOOLEAN DC Jack Type: MESH
 BOOLEAN DC Jack transform: X9.0 Y-57.441871643066406 Z13.190025329589844
@@ -194,8 +207,7 @@ BOOLEAN DC Jack groups: Actuator Block, Booleans,
 BOOLEAN DC Jack parent: PCB Chestnut
 BOOLEAN DC Jack mesh: BOOLEAN PCB Chestnut.001
 BOOLEAN DC Jack materials: Boolean difference, 
-BOOLEAN DC Jack modifiers: 
-  #1 Name: Bevel, Type: BEVEL
+BOOLEAN DC Jack modifiers: None
 
 Name: BOOLEAN DC jack cover for Back cover
 BOOLEAN DC jack cover for Back cover Type: MESH
@@ -221,6 +233,19 @@ BOOLEAN DC jack cover for GALA cover mesh: DC jack cover.001
 BOOLEAN DC jack cover for GALA cover materials: Boolean difference, 
 BOOLEAN DC jack cover for GALA cover modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
+
+Name: BOOLEAN DC Jack for Stand
+BOOLEAN DC Jack for Stand Type: MESH
+BOOLEAN DC Jack for Stand transform: X9.0 Y-57.441871643066406 Z13.190025329589844
+BOOLEAN DC Jack for Stand rotation: X-1.4901154976598718e-08 Y-1.4901164746561335e-08 Z1.5707961320877075
+BOOLEAN DC Jack for Stand scale: X0.9999998807907104 Y0.9999998807907104 Z1.0
+BOOLEAN DC Jack for Stand groups: Actuator Block, Booleans, 
+BOOLEAN DC Jack for Stand parent: PCB Chestnut
+BOOLEAN DC Jack for Stand mesh: BOOLEAN PCB Chestnut.000
+BOOLEAN DC Jack for Stand materials: Boolean difference, 
+BOOLEAN DC Jack for Stand modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN GALA cover
 BOOLEAN GALA cover Type: MESH
@@ -543,6 +568,35 @@ BOOLEAN Proximal elastic terminator.004 mesh: BOOLEAN Proximal elastic terminato
 BOOLEAN Proximal elastic terminator.004 materials: Boolean difference, 
 BOOLEAN Proximal elastic terminator.004 modifiers: None
 
+Name: BOOLEAN Stand foot
+BOOLEAN Stand foot Type: MESH
+BOOLEAN Stand foot transform: X9.06684684753418 Y-91.03321075439453 Z14.024567604064941
+BOOLEAN Stand foot rotation: X-1.919862151145935 Y0.0 Z0.0
+BOOLEAN Stand foot scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+BOOLEAN Stand foot groups: None
+BOOLEAN Stand foot mesh: Back cover.002
+BOOLEAN Stand foot materials: Boolean difference, 
+BOOLEAN Stand foot modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, Y, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN Stand foot.001
+BOOLEAN Stand foot.001 Type: MESH
+BOOLEAN Stand foot.001 transform: X9.06684684753418 Y-91.02381134033203 Z14.021147727966309
+BOOLEAN Stand foot.001 rotation: X-1.919862151145935 Y0.0 Z0.0
+BOOLEAN Stand foot.001 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+BOOLEAN Stand foot.001 groups: None
+BOOLEAN Stand foot.001 mesh: Back cover.003
+BOOLEAN Stand foot.001 materials: Boolean difference, 
+BOOLEAN Stand foot.001 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: BOOLEAN Tendon Channels
 BOOLEAN Tendon Channels Type: MESH
 BOOLEAN Tendon Channels transform: X-22.301233291625977 Y-22.498855590820312 Z-10.314008712768555
@@ -735,6 +789,18 @@ BOOLEAN USB mesh: BOOLEAN PCB Chestnut for back cover.001
 BOOLEAN USB materials: Boolean difference, 
 BOOLEAN USB modifiers: 
   #1 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN Wrist connector
+BOOLEAN Wrist connector Type: MESH
+BOOLEAN Wrist connector transform: X9.0 Y-90.75166320800781 Z11.433578491210938
+BOOLEAN Wrist connector rotation: X-0.3490658104419708 Y-0.0 Z0.0
+BOOLEAN Wrist connector scale: X1.0 Y1.0 Z1.0
+BOOLEAN Wrist connector groups: None
+BOOLEAN Wrist connector mesh: Plane.001
+BOOLEAN Wrist connector materials: Boolean difference, 
+BOOLEAN Wrist connector modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+  #2 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN Wrist connector M2 bolt holes
 BOOLEAN Wrist connector M2 bolt holes Type: MESH
@@ -1207,6 +1273,34 @@ Proximal elastic terminator groups: None
 Proximal elastic terminator mesh: Proximal elastic terminator
 Proximal elastic terminator materials: PLA, 
 Proximal elastic terminator modifiers: None
+
+Name: Stand
+Stand Type: MESH
+Stand transform: X9.06684684753418 Y-90.09352111816406 Z13.682547569274902
+Stand rotation: X-1.919862151145935 Y0.0 Z0.0
+Stand scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+Stand groups: None
+Stand mesh: Back cover.001
+Stand materials: None
+Stand modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, Y, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #2 Name: Bevel, Type: BEVEL
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #4 Name: Boolean.DCJack, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN DC Jack for Stand
+  #5 Name: Boolean.WristConnector, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Wrist connector
+  #6 Name: Boolean.WristConnectorM3, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Wrist connector M2 bolt holes
+  #7 Name: Boolean.DCCable, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN DC Cable
+  #8 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Stand foot.001
 
 Name: Tendon pivot dowel
 Tendon pivot dowel Type: MESH
@@ -2705,6 +2799,19 @@ BOOLEAN Ligament.004 modifiers:
   #4 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
+Name: BOOLEAN Thumb
+BOOLEAN Thumb Type: MESH
+BOOLEAN Thumb transform: X-7.62939453125e-06 Y-7.152557373046875e-07 Z0.0
+BOOLEAN Thumb rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Thumb scale: X0.9999999403953552 Y0.9999998807907104 Z0.9999998807907104
+BOOLEAN Thumb groups: Thumb, 
+BOOLEAN Thumb mesh: Thumb.001
+BOOLEAN Thumb materials: Boolean difference, 
+BOOLEAN Thumb modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Solidify, Type: SOLIDIFY
+
 Name: BOOLEAN M2 Bolt Hole.001
 BOOLEAN M2 Bolt Hole.001 Type: MESH
 BOOLEAN M2 Bolt Hole.001 transform: X1.4861307136015967e-06 Y8.061606407165527 Z-1.9065473079681396
@@ -2724,18 +2831,6 @@ BOOLEAN Thumb ligament for thumb groups: Thumb,
 BOOLEAN Thumb ligament for thumb mesh: BOOLEAN Thumb ligament for thumb
 BOOLEAN Thumb ligament for thumb materials: Boolean difference, 
 BOOLEAN Thumb ligament for thumb modifiers: None
-
-Name: BOOLEAN Mould
-BOOLEAN Mould Type: MESH
-BOOLEAN Mould transform: X-7.62939453125e-06 Y-7.152557373046875e-07 Z2.0
-BOOLEAN Mould rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Mould scale: X0.9999999403953552 Y0.9999998807907104 Z0.9999998807907104
-BOOLEAN Mould groups: Thumb, 
-BOOLEAN Mould mesh: BOOLEAN Mould
-BOOLEAN Mould materials: PLA White, 
-BOOLEAN Mould modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Thumb tendon termination M2 bolt hole
 BOOLEAN Thumb tendon termination M2 bolt hole Type: MESH
