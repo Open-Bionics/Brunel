@@ -40,7 +40,7 @@ BOOLEAN M3 bolt hole modifiers: None
 
 Name: BOOLEAN MOULD Riser
 BOOLEAN MOULD Riser Type: MESH
-BOOLEAN MOULD Riser transform: X18.021074295043945 Y88.15628051757812 Z0.5009518265724182
+BOOLEAN MOULD Riser transform: X17.244617462158203 Y85.25849914550781 Z0.5009517669677734
 BOOLEAN MOULD Riser rotation: X0.2617993652820587 Y1.570796251296997 Z0.0
 BOOLEAN MOULD Riser scale: X1.0 Y1.0 Z1.0
 BOOLEAN MOULD Riser groups: None
@@ -227,7 +227,7 @@ Thumb mesh: Thumb
 Thumb materials: PLA White, 
 Thumb modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
+        Levels: 4, Type: CATMULL_CLARK
   #2 Name: Displace, Type: DISPLACE
   #3 Name: Boolean.ThumbLigamentForThumb, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament for thumb
@@ -241,7 +241,7 @@ Thumb modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon termination M2 bolt hole
   #8 Name: Boolean.ThumbLigamentCoverM2BoltHole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 bolt hole for thumb
-  #9 Name: Boolean, Type: BOOLEAN
+  #9 Name: Boolean.ElasticPath, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Elastic path
 
 Name: Thumb ligament 
