@@ -338,15 +338,25 @@ BOOLEAN MOULD 4th Inner distal modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #3 Name: Solidify, Type: SOLIDIFY
 
-Name: BOOLEAN MOULD Tube
-BOOLEAN MOULD Tube Type: MESH
-BOOLEAN MOULD Tube transform: X0.0 Y21.799489974975586 Z-10.989999771118164
-BOOLEAN MOULD Tube rotation: X0.0 Y0.0 Z0.0
-BOOLEAN MOULD Tube scale: X1.0 Y1.0 Z1.0
-BOOLEAN MOULD Tube groups: None
-BOOLEAN MOULD Tube mesh: BOOLEAN Tube v2.001
-BOOLEAN MOULD Tube materials: Boolean difference, 
-BOOLEAN MOULD Tube modifiers: 
+Name: BOOLEAN MOULD Risers
+BOOLEAN MOULD Risers Type: MESH
+BOOLEAN MOULD Risers transform: X51.654762268066406 Y51.654762268066406 Z0.6500009298324585
+BOOLEAN MOULD Risers rotation: X1.5707963705062866 Y0.7853981852531433 Z0.7853982448577881
+BOOLEAN MOULD Risers scale: X1.0 Y1.0 Z1.0
+BOOLEAN MOULD Risers groups: None
+BOOLEAN MOULD Risers mesh: Cylinder
+BOOLEAN MOULD Risers materials: Boolean difference, 
+BOOLEAN MOULD Risers modifiers: None
+
+Name: BOOLEAN MOULD Runners
+BOOLEAN MOULD Runners Type: MESH
+BOOLEAN MOULD Runners transform: X0.0 Y21.799489974975586 Z-10.989999771118164
+BOOLEAN MOULD Runners rotation: X0.0 Y0.0 Z0.0
+BOOLEAN MOULD Runners scale: X1.0 Y1.0 Z1.0
+BOOLEAN MOULD Runners groups: None
+BOOLEAN MOULD Runners mesh: BOOLEAN MOULD Runners
+BOOLEAN MOULD Runners materials: Boolean difference, 
+BOOLEAN MOULD Runners modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
@@ -354,11 +364,21 @@ Name: BOOLEAN Mould v2 hopper
 BOOLEAN Mould v2 hopper Type: MESH
 BOOLEAN Mould v2 hopper transform: X0.0 Y0.0 Z-5.0
 BOOLEAN Mould v2 hopper rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Mould v2 hopper scale: X2.5 Y2.5 Z1.0
+BOOLEAN Mould v2 hopper scale: X1.0 Y1.0 Z1.0
 BOOLEAN Mould v2 hopper groups: None
 BOOLEAN Mould v2 hopper mesh: BOOLEAN Mould v2 hopper
 BOOLEAN Mould v2 hopper materials: Boolean difference, 
 BOOLEAN Mould v2 hopper modifiers: None
+
+Name: BOOLEAN Mould v2 hopper.001
+BOOLEAN Mould v2 hopper.001 Type: MESH
+BOOLEAN Mould v2 hopper.001 transform: X0.0 Y0.0 Z-5.0
+BOOLEAN Mould v2 hopper.001 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Mould v2 hopper.001 scale: X2.5 Y2.5 Z1.0
+BOOLEAN Mould v2 hopper.001 groups: None
+BOOLEAN Mould v2 hopper.001 mesh: BOOLEAN Mould v2 hopper.002
+BOOLEAN Mould v2 hopper.001 materials: Boolean difference, 
+BOOLEAN Mould v2 hopper.001 modifiers: None
 
 Name: BOOLEAN MOULD Wedges
 BOOLEAN MOULD Wedges Type: MESH
@@ -602,6 +622,121 @@ BOOLEAN Tendon channels proximal.004 modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
+
+Name: Cylinder.008
+Cylinder.008 Type: MESH
+Cylinder.008 transform: X73.05086517333984 Y0.0 Z0.7500008940696716
+Cylinder.008 rotation: X1.5707963705062866 Y0.7853981256484985 Z0.0
+Cylinder.008 scale: X1.0 Y1.0 Z1.0
+Cylinder.008 groups: None
+Cylinder.008 mesh: Cylinder.008
+Cylinder.008 materials: Boolean difference, 
+Cylinder.008 modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: Z, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+
+Name: Cylinder.009
+Cylinder.009 Type: MESH
+Cylinder.009 transform: X52.36597442626953 Y-52.3659782409668 Z0.7603273987770081
+Cylinder.009 rotation: X1.5707963705062866 Y0.7853981852531433 Z-0.7853981852531433
+Cylinder.009 scale: X1.0 Y1.0 Z1.0
+Cylinder.009 groups: None
+Cylinder.009 mesh: Cylinder.009
+Cylinder.009 materials: Boolean difference, 
+Cylinder.009 modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: Z, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+
+Name: Cylinder.010
+Cylinder.010 Type: MESH
+Cylinder.010 transform: X0.0 Y-73.05086517333984 Z0.7500008344650269
+Cylinder.010 rotation: X1.5707963705062866 Y0.7853980660438538 Z4.7123894691467285
+Cylinder.010 scale: X1.0 Y1.0 Z1.0
+Cylinder.010 groups: None
+Cylinder.010 mesh: Cylinder.010
+Cylinder.010 materials: Boolean difference, 
+Cylinder.010 modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: Z, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+
+Name: Cylinder.011
+Cylinder.011 Type: MESH
+Cylinder.011 transform: X-50.09121322631836 Y-50.09121322631836 Z0.7272990345954895
+Cylinder.011 rotation: X1.5707963705062866 Y0.7853981852531433 Z3.9269912242889404
+Cylinder.011 scale: X1.0 Y1.0 Z1.0
+Cylinder.011 groups: None
+Cylinder.011 mesh: Cylinder.011
+Cylinder.011 materials: Boolean difference, 
+Cylinder.011 modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: Z, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+
+Name: Cylinder.012
+Cylinder.012 Type: MESH
+Cylinder.012 transform: X-73.05086517333984 Y0.0 Z0.7500008940696716
+Cylinder.012 rotation: X1.5707963705062866 Y0.7853981256484985 Z3.1415929794311523
+Cylinder.012 scale: X1.0 Y1.0 Z1.0
+Cylinder.012 groups: None
+Cylinder.012 mesh: Cylinder.012
+Cylinder.012 materials: Boolean difference, 
+Cylinder.012 modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: Z, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+
+Name: Cylinder.013
+Cylinder.013 Type: MESH
+Cylinder.013 transform: X-49.33333969116211 Y49.333335876464844 Z0.7162950038909912
+Cylinder.013 rotation: X1.5707963705062866 Y0.7853981256484985 Z2.356194496154785
+Cylinder.013 scale: X1.0 Y1.0 Z1.0
+Cylinder.013 groups: None
+Cylinder.013 mesh: Cylinder.013
+Cylinder.013 materials: Boolean difference, 
+Cylinder.013 modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: Z, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+
+Name: Cylinder.014
+Cylinder.014 Type: MESH
+Cylinder.014 transform: X0.0 Y73.05086517333984 Z0.7500009536743164
+Cylinder.014 rotation: X1.5707963705062866 Y0.7853981852531433 Z1.5707963705062866
+Cylinder.014 scale: X1.0 Y1.0 Z1.0
+Cylinder.014 groups: None
+Cylinder.014 mesh: Cylinder.014
+Cylinder.014 materials: Boolean difference, 
+Cylinder.014 modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: Z, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+
+Name: Cylinder.015
+Cylinder.015 Type: MESH
+Cylinder.015 transform: X51.654762268066406 Y51.654762268066406 Z0.7500009536743164
+Cylinder.015 rotation: X1.5707963705062866 Y0.7853981852531433 Z0.7853982448577881
+Cylinder.015 scale: X1.0 Y1.0 Z1.0
+Cylinder.015 groups: None
+Cylinder.015 mesh: Cylinder.015
+Cylinder.015 materials: Boolean difference, 
+Cylinder.015 modifiers: None
 
 Name: Elastic terminator.001
 Elastic terminator.001 Type: MESH
@@ -1134,7 +1269,7 @@ MOULD Bottom rotation: X0.0 Y0.0 Z0.0
 MOULD Bottom scale: X1.0 Y1.0 Z1.0
 MOULD Bottom groups: None
 MOULD Bottom mesh: Circle
-MOULD Bottom materials: None
+MOULD Bottom materials: NF Black, 
 MOULD Bottom modifiers: 
   #1 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN MOULD Wedges
@@ -1155,9 +1290,11 @@ MOULD Bottom modifiers:
   #9 Name: Boolean.008, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN MOULD 4th Inner distal
   #10 Name: Boolean.009, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Mould v2 hopper
+        Operation: DIFFERENCE, Object: BOOLEAN Mould v2 hopper.001
   #11 Name: Boolean.010, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN MOULD Tube
+        Operation: DIFFERENCE, Object: BOOLEAN MOULD Runners
+  #12 Name: Boolean.011, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN MOULD Risers
 
 Name: MOULD Bottom tray
 MOULD Bottom tray Type: MESH
@@ -1168,11 +1305,12 @@ MOULD Bottom tray groups: None
 MOULD Bottom tray mesh: Circle.004
 MOULD Bottom tray materials: None
 MOULD Bottom tray modifiers: 
-  #1 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN MOULD Tube
-  #2 Name: Boolean.001, Type: BOOLEAN
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN MOULD Runners
+  #3 Name: Boolean.001, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN MOULD Wedges.001
-  #3 Name: Boolean.002, Type: BOOLEAN
+  #4 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M3 bolt hole
 
 Name: MOULD Plunger
@@ -1231,7 +1369,7 @@ MOULD Top modifiers:
   #10 Name: Boolean.009, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Mould v2 hopper
   #11 Name: Boolean.010, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN MOULD Tube
+        Operation: DIFFERENCE, Object: BOOLEAN MOULD Runners
 
 Name: MOULD Top tray
 MOULD Top tray Type: MESH
