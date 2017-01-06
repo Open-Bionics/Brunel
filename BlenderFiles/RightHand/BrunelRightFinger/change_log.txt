@@ -1326,18 +1326,7 @@ MOULD Plunger modifiers:
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #3 Name: Boolean, Type: BOOLEAN
-        Operation: UNION, Object: MOULD Plunger beam
-
-Name: MOULD Plunger beam
-MOULD Plunger beam Type: MESH
-MOULD Plunger beam transform: X0.0 Y0.0 Z-2.5568184852600098
-MOULD Plunger beam rotation: X1.5707963705062866 Y-0.0 Z0.0
-MOULD Plunger beam scale: X1.0 Y1.0 Z1.0
-MOULD Plunger beam groups: None
-MOULD Plunger beam mesh: Plane
-MOULD Plunger beam materials: None
-MOULD Plunger beam modifiers: 
-  #1 Name: Solidify, Type: SOLIDIFY
+        Operation: UNION, Object: None
 
 Name: MOULD Top
 MOULD Top Type: MESH
