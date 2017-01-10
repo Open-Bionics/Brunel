@@ -136,7 +136,7 @@ HANDLE Fingertip.004 modifiers: None
 
 Name: HANDLE Thickness.003
 HANDLE Thickness.003 Type: MESH
-HANDLE Thickness.003 transform: X0.0 Y0.0 Z0.24899999797344208
+HANDLE Thickness.003 transform: X0.0 Y0.0 Z0.6000000238418579
 HANDLE Thickness.003 rotation: X0.0 Y0.0 Z0.0
 HANDLE Thickness.003 scale: X1.0 Y1.0 Z1.0
 HANDLE Thickness.003 groups: None
@@ -147,7 +147,7 @@ HANDLE Thickness.003 modifiers: None
 
 Name: HANDLE Thickness.004
 HANDLE Thickness.004 Type: MESH
-HANDLE Thickness.004 transform: X0.0 Y0.0 Z0.24899999797344208
+HANDLE Thickness.004 transform: X0.0 Y0.0 Z0.6000000238418579
 HANDLE Thickness.004 rotation: X0.0 Y0.0 Z0.0
 HANDLE Thickness.004 scale: X1.0 Y1.0 Z1.0
 HANDLE Thickness.004 groups: None
