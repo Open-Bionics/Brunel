@@ -197,7 +197,7 @@ BOOLEAN Connector cover for Back cover scale: X1.0 Y1.0 Z1.0
 BOOLEAN Connector cover for Back cover groups: None
 BOOLEAN Connector cover for Back cover parent: Connector cover
 BOOLEAN Connector cover for Back cover mesh: BOOLEAN Connector cover for Back cover
-BOOLEAN Connector cover for Back cover materials: Boolean difference, 
+BOOLEAN Connector cover for Back cover materials: Boolean difference.001, 
 BOOLEAN Connector cover for Back cover modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
   #2 Name: Solidify.001, Type: SOLIDIFY
@@ -210,7 +210,7 @@ BOOLEAN Connector cover for GALA cover scale: X1.0 Y1.0 Z1.0
 BOOLEAN Connector cover for GALA cover groups: None
 BOOLEAN Connector cover for GALA cover parent: Connector cover
 BOOLEAN Connector cover for GALA cover mesh: BOOLEAN Connector cover for GALA cover
-BOOLEAN Connector cover for GALA cover materials: Boolean difference, 
+BOOLEAN Connector cover for GALA cover materials: Boolean difference.002, 
 BOOLEAN Connector cover for GALA cover modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
   #2 Name: Solidify.001, Type: SOLIDIFY
@@ -247,7 +247,7 @@ BOOLEAN DC jack cover for Back cover scale: X1.0 Y1.0 Z1.0
 BOOLEAN DC jack cover for Back cover groups: None
 BOOLEAN DC jack cover for Back cover parent: DC jack cover
 BOOLEAN DC jack cover for Back cover mesh: BOOLEAN DC jack cover for Back cover
-BOOLEAN DC jack cover for Back cover materials: Boolean difference, 
+BOOLEAN DC jack cover for Back cover materials: Boolean difference.001, 
 BOOLEAN DC jack cover for Back cover modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
   #2 Name: Bevel, Type: BEVEL
@@ -807,7 +807,7 @@ Connector cover scale: X1.0 Y1.0 Z1.0
 Connector cover groups: None
 Connector cover parent: PCB Chestnut
 Connector cover mesh: Connector cover
-Connector cover materials: PLA, 
+Connector cover materials: PLA.001, 
 Connector cover modifiers: 
   #1 Name: Boolean.PCBChestnutForConnectorCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for connector cover
