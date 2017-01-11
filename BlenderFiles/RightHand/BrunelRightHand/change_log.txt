@@ -98,7 +98,7 @@ Back cover.001 rotation: X0.0 Y0.0 Z0.0
 Back cover.001 scale: X1.0 Y1.0 Z1.0
 Back cover.001 groups: None
 Back cover.001 mesh: Back cover.001
-Back cover.001 materials: PLA White, 
+Back cover.001 materials: PLA, 
 Back cover.001 modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
@@ -123,8 +123,8 @@ Back cover.001 target transform: X0.0 Y0.0 Z0.0
 Back cover.001 target rotation: X0.0 Y0.0 Z0.0
 Back cover.001 target scale: X1.0 Y1.0 Z1.0
 Back cover.001 target groups: None
-Back cover.001 target mesh: Back cover.003
-Back cover.001 target materials: PLA Black, 
+Back cover.001 target mesh: Back cover.001
+Back cover.001 target materials: PLA, 
 Back cover.001 target modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
