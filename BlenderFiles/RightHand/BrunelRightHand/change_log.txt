@@ -80,6 +80,8 @@ Back cover modifiers:
         Operation: DIFFERENCE, Object: Back cover.001 target
   #19 Name: Boolean.001, Type: BOOLEAN
         Operation: UNION, Object: LABEL Logo
+  #20 Name: Boolean.BackCoverM2BoltHolesVeneer, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes veneer
 
 Name: Back cover target
 Back cover target Type: MESH
@@ -104,21 +106,23 @@ Back cover.001 materials: PLA,
 Back cover.001 modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #2 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
+  #2 Name: Boolean.BackCoverM2BoltHoleVeneer, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Back cover M2 bolt holes veneer
+  #3 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
-  #3 Name: Boolean.PQ12s, Type: BOOLEAN
+  #4 Name: Boolean.PQ12s, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
-  #4 Name: Boolean.Connectors, Type: BOOLEAN
+  #5 Name: Boolean.Connectors, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Connectors
-  #5 Name: Boolean.GALACover, Type: BOOLEAN
+  #6 Name: Boolean.GALACover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN GALA cover
-  #6 Name: Boolean.LigamentCover, Type: BOOLEAN
+  #7 Name: Boolean.LigamentCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover
-  #7 Name: Boolean.Logo, Type: BOOLEAN
+  #8 Name: Boolean.Logo, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Logo
-  #8 Name: Boolean.DCJackCover, Type: BOOLEAN
+  #9 Name: Boolean.DCJackCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for Back cover
-  #9 Name: Boolean, Type: BOOLEAN
+  #10 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for back cover
 
 Name: Back cover.001 target
@@ -154,6 +158,23 @@ Back cover proximal attachment point mesh: Back cover proximal attachment point
 Back cover proximal attachment point materials: None
 Back cover proximal attachment point modifiers: 
   #1 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN Back cover M2 bolt holes veneer
+BOOLEAN Back cover M2 bolt holes veneer Type: MESH
+BOOLEAN Back cover M2 bolt holes veneer transform: X-24.0 Y-22.0 Z0.800000011920929
+BOOLEAN Back cover M2 bolt holes veneer rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Back cover M2 bolt holes veneer scale: X1.0 Y1.0 Z1.0
+BOOLEAN Back cover M2 bolt holes veneer groups: None
+BOOLEAN Back cover M2 bolt holes veneer mesh: BOOLEAN Back cover M2 bolt holes veneer
+BOOLEAN Back cover M2 bolt holes veneer materials: PLA, 
+BOOLEAN Back cover M2 bolt holes veneer modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+  #2 Name: Shrinkwrap, Type: SHRINKWRAP
+        Target: Back cover.001 target, Mode: PROJECT, Offset: -1.0 mm
+        Projecting in: Z
+        Project in positive direction: False, Negative: True
+        Cull Faces: OFF
+        Subsurf level: 0
 
 Name: BOOLEAN Back cover proximal attachment point
 BOOLEAN Back cover proximal attachment point Type: MESH
