@@ -196,7 +196,7 @@ BOOLEAN Connector cover for Back cover rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Connector cover for Back cover scale: X1.0 Y1.0 Z1.0
 BOOLEAN Connector cover for Back cover groups: None
 BOOLEAN Connector cover for Back cover parent: Connector cover
-BOOLEAN Connector cover for Back cover mesh: Connector cover.002
+BOOLEAN Connector cover for Back cover mesh: BOOLEAN Connector cover for Back cover
 BOOLEAN Connector cover for Back cover materials: Boolean difference, 
 BOOLEAN Connector cover for Back cover modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
@@ -209,7 +209,7 @@ BOOLEAN Connector cover for GALA cover rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Connector cover for GALA cover scale: X1.0 Y1.0 Z1.0
 BOOLEAN Connector cover for GALA cover groups: None
 BOOLEAN Connector cover for GALA cover parent: Connector cover
-BOOLEAN Connector cover for GALA cover mesh: Connector cover.001
+BOOLEAN Connector cover for GALA cover mesh: BOOLEAN Connector cover for GALA cover
 BOOLEAN Connector cover for GALA cover materials: Boolean difference, 
 BOOLEAN Connector cover for GALA cover modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
@@ -246,7 +246,7 @@ BOOLEAN DC jack cover for Back cover rotation: X1.5707963705062866 Y-0.0 Z0.0
 BOOLEAN DC jack cover for Back cover scale: X1.0 Y1.0 Z1.0
 BOOLEAN DC jack cover for Back cover groups: None
 BOOLEAN DC jack cover for Back cover parent: DC jack cover
-BOOLEAN DC jack cover for Back cover mesh: DC jack cover.002
+BOOLEAN DC jack cover for Back cover mesh: BOOLEAN DC jack cover for Back cover
 BOOLEAN DC jack cover for Back cover materials: Boolean difference, 
 BOOLEAN DC jack cover for Back cover modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
@@ -259,7 +259,7 @@ BOOLEAN DC jack cover for GALA cover rotation: X1.5707963705062866 Y-0.0 Z0.0
 BOOLEAN DC jack cover for GALA cover scale: X1.0 Y1.0 Z1.0
 BOOLEAN DC jack cover for GALA cover groups: None
 BOOLEAN DC jack cover for GALA cover parent: DC jack cover
-BOOLEAN DC jack cover for GALA cover mesh: DC jack cover.001
+BOOLEAN DC jack cover for GALA cover mesh: BOOLEAN DC jack cover for GALA cover
 BOOLEAN DC jack cover for GALA cover materials: Boolean difference, 
 BOOLEAN DC jack cover for GALA cover modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
