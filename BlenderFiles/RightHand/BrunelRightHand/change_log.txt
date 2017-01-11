@@ -78,6 +78,8 @@ Back cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN LABEL Open Bionics
   #18 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Back cover.001 target
+  #19 Name: Boolean.001, Type: BOOLEAN
+        Operation: UNION, Object: LABEL Logo
 
 Name: Back cover target
 Back cover target Type: MESH
@@ -106,7 +108,7 @@ Back cover.001 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
   #3 Name: Boolean.PQ12s, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
-  #4 Name: Boolean, Type: BOOLEAN
+  #4 Name: Boolean.Connectors, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Connectors
   #5 Name: Boolean.GALACover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN GALA cover
@@ -114,8 +116,10 @@ Back cover.001 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover
   #7 Name: Boolean.Logo, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Logo
-  #8 Name: Boolean.001, Type: BOOLEAN
+  #8 Name: Boolean.DCJackCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for Back cover
+  #9 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for back cover
 
 Name: Back cover.001 target
 Back cover.001 target Type: MESH
