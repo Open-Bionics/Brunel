@@ -1191,6 +1191,21 @@ Proximal elastic terminator mesh: Proximal elastic terminator
 Proximal elastic terminator materials: PLA, 
 Proximal elastic terminator modifiers: None
 
+Name: REFERENCE Wrist Plane
+REFERENCE Wrist Plane Type: MESH
+REFERENCE Wrist Plane transform: X9.066847801208496 Y-90.09370422363281 Z13.682619094848633
+REFERENCE Wrist Plane rotation: X-0.3490658104419708 Y-0.0 Z0.0
+REFERENCE Wrist Plane scale: X1.0 Y1.0000001192092896 Z0.9999999403953552
+REFERENCE Wrist Plane groups: None
+REFERENCE Wrist Plane mesh: REFERENCE Wrist Plane
+REFERENCE Wrist Plane materials: PLA, 
+REFERENCE Wrist Plane modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, Z, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+
 Name: Tendon pivot dowel
 Tendon pivot dowel Type: MESH
 Tendon pivot dowel transform: X-10.42773723602295 Y-15.0 Z-6.5532379150390625
