@@ -73,9 +73,9 @@ Back cover modifiers:
   #15 Name: Boolean.DCJaceCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for Back cover
   #16 Name: Boolean.OpenBionicsTwoTone, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Plane
+        Operation: DIFFERENCE, Object: None
   #17 Name: Boolean.OpenBionics, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: LABEL Open Bionics
+        Operation: DIFFERENCE, Object: BOOLEAN LABEL Open Bionics
   #18 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Back cover.001 target
 
@@ -324,6 +324,24 @@ BOOLEAN Headphone jack materials: Boolean difference,
 BOOLEAN Headphone jack modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN LABEL Open Bionics
+BOOLEAN LABEL Open Bionics Type: MESH
+BOOLEAN LABEL Open Bionics transform: X51.658660888671875 Y-58.78639602661133 Z9.145349502563477
+BOOLEAN LABEL Open Bionics rotation: X1.5707963705062866 Y-0.0 Z1.5707963705062866
+BOOLEAN LABEL Open Bionics scale: X0.8085255026817322 Y0.8085255026817322 Z0.8085255026817322
+BOOLEAN LABEL Open Bionics groups: None
+BOOLEAN LABEL Open Bionics parent: LABEL Open Bionics
+BOOLEAN LABEL Open Bionics mesh: Label - Open Bionics
+BOOLEAN LABEL Open Bionics materials: PLA, 
+BOOLEAN LABEL Open Bionics modifiers: 
+  #1 Name: Shrinkwrap, Type: SHRINKWRAP
+        Target: Back cover target, Mode: PROJECT, Offset: -1.0 mm
+        Projecting in: Z
+        Project in positive direction: False, Negative: True
+        Cull Faces: BACK
+        Subsurf level: 0
+  #2 Name: Solidify, Type: SOLIDIFY
 
 Name: BOOLEAN Ligament cover
 BOOLEAN Ligament cover Type: MESH
@@ -928,7 +946,7 @@ LABEL Open Bionics mesh: Label - Open Bionics
 LABEL Open Bionics materials: PLA, 
 LABEL Open Bionics modifiers: 
   #1 Name: Shrinkwrap, Type: SHRINKWRAP
-        Target: Back cover target, Mode: PROJECT, Offset: 0.0 mm
+        Target: Back cover target, Mode: PROJECT, Offset: -1.0 mm
         Projecting in: Z
         Project in positive direction: False, Negative: True
         Cull Faces: BACK
@@ -1217,25 +1235,6 @@ PCB Chestnut rotation: X0.0 Y-0.0 Z1.5707964897155762
 PCB Chestnut scale: X1.0 Y1.0 Z1.0
 PCB Chestnut groups: None
 PCB Chestnut parent: Actuator Block
-
-Name: Plane
-Plane Type: MESH
-Plane transform: X68.15314483642578 Y-53.18141555786133 Z9.126782417297363
-Plane rotation: X-0.0 Y1.570796251296997 Z0.0
-Plane scale: X1.0 Y1.0 Z1.0
-Plane groups: None
-Plane mesh: Plane.001
-Plane materials: PLA White, 
-Plane modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #2 Name: Shrinkwrap, Type: SHRINKWRAP
-        Target: Back cover target, Mode: PROJECT, Offset: -0.4000000059604645 mm
-        Projecting in: Z
-        Project in positive direction: True, Negative: True
-        Cull Faces: OFF
-        Subsurf level: 0
-  #3 Name: Solidify, Type: SOLIDIFY
 
 Name: PQ12 Caps
 PQ12 Caps Type: MESH
