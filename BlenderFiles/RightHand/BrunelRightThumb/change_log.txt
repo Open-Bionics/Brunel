@@ -97,8 +97,8 @@ BOOLEAN Thumb tendon channel for thumb transform: X-7.152557373046875e-06 Y-4.76
 BOOLEAN Thumb tendon channel for thumb rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Thumb tendon channel for thumb scale: X1.0 Y0.9999999403953552 Z0.9999998807907104
 BOOLEAN Thumb tendon channel for thumb groups: Thumb, 
-BOOLEAN Thumb tendon channel for thumb mesh: BOOLEAN Thumb tendon channel for thumb
-BOOLEAN Thumb tendon channel for thumb materials: Boolean difference, 
+BOOLEAN Thumb tendon channel for thumb mesh: BOOLEAN Thumb tendon channel for thumb.001
+BOOLEAN Thumb tendon channel for thumb materials: Boolean difference.003, 
 BOOLEAN Thumb tendon channel for thumb modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
