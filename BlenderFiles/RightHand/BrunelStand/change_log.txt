@@ -1,0 +1,87 @@
+Name: BOOLEAN DC Cable
+BOOLEAN DC Cable Type: MESH
+BOOLEAN DC Cable transform: X44.39649200439453 Y-3.814697265625e-06 Z-28.55029296875
+BOOLEAN DC Cable rotation: X0.0 Y0.0 Z0.0
+BOOLEAN DC Cable scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+BOOLEAN DC Cable groups: None
+BOOLEAN DC Cable mesh: BOOLEAN DC Cable
+BOOLEAN DC Cable materials: Boolean difference.001, 
+BOOLEAN DC Cable modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN DC Jack for Stand
+BOOLEAN DC Jack for Stand Type: MESH
+BOOLEAN DC Jack for Stand transform: X-0.06684684753417969 Y-10.704703330993652 Z30.850971221923828
+BOOLEAN DC Jack for Stand rotation: X-1.4115302349182457e-07 Y-1.9198616743087769 Z1.570796012878418
+BOOLEAN DC Jack for Stand scale: X0.9999998807907104 Y0.9999998211860657 Z1.0
+BOOLEAN DC Jack for Stand groups: None
+BOOLEAN DC Jack for Stand mesh: BOOLEAN DC Jack for Stand
+BOOLEAN DC Jack for Stand materials: Boolean difference.001, 
+BOOLEAN DC Jack for Stand modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN Stand foot
+BOOLEAN Stand foot Type: MESH
+BOOLEAN Stand foot transform: X-9.5367431640625e-07 Y-3.814697265625e-06 Z-0.989990234375
+BOOLEAN Stand foot rotation: X-1.490115231206346e-08 Y-3.299535649148311e-07 Z-6.38683914644389e-08
+BOOLEAN Stand foot scale: X0.9999998807907104 Y0.9999999403953552 Z0.9999999403953552
+BOOLEAN Stand foot groups: None
+BOOLEAN Stand foot mesh: BOOLEAN Stand foot
+BOOLEAN Stand foot materials: Boolean difference, 
+BOOLEAN Stand foot modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN Wrist connector for Stand
+BOOLEAN Wrist connector for Stand Type: MESH
+BOOLEAN Wrist connector for Stand transform: X-0.0668478012084961 Y2.3384342193603516 Z0.1507415771484375
+BOOLEAN Wrist connector for Stand rotation: X1.5707964897155762 Y-2.6003638708971266e-07 Z-3.9954920794116333e-07
+BOOLEAN Wrist connector for Stand scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+BOOLEAN Wrist connector for Stand groups: None
+BOOLEAN Wrist connector for Stand mesh: BOOLEAN Wrist connector for Stand
+BOOLEAN Wrist connector for Stand materials: Boolean difference, 
+BOOLEAN Wrist connector for Stand modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+  #2 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN Wrist connector M2 bolt holes for Stand
+BOOLEAN Wrist connector M2 bolt holes for Stand Type: MESH
+BOOLEAN Wrist connector M2 bolt holes for Stand transform: X-0.0024957656860351562 Y3.7876129150390625 Z-0.00022125244140625
+BOOLEAN Wrist connector M2 bolt holes for Stand rotation: X4.712389945983887 Y-2.094393730163574 Z2.094393491744995
+BOOLEAN Wrist connector M2 bolt holes for Stand scale: X1.0000001192092896 Y0.9999999403953552 Z0.9999998807907104
+BOOLEAN Wrist connector M2 bolt holes for Stand groups: None
+BOOLEAN Wrist connector M2 bolt holes for Stand mesh: BOOLEAN Wrist connector M2 bolt holes for Stand
+BOOLEAN Wrist connector M2 bolt holes for Stand materials: Boolean difference.001, 
+BOOLEAN Wrist connector M2 bolt holes for Stand modifiers: None
+
+Name: Stand
+Stand Type: MESH
+Stand transform: X0.0 Y0.0 Z0.0
+Stand rotation: X0.0 Y0.0 Z0.0
+Stand scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+Stand groups: Stand, 
+Stand mesh: Back cover.001
+Stand materials: None
+Stand modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, Y, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #2 Name: Bevel, Type: BEVEL
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #4 Name: Boolean.DCJack, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN DC Jack for Stand
+  #5 Name: Boolean.WristConnector, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Wrist connector for Stand
+  #6 Name: Boolean.WristConnectorM3, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Wrist connector M2 bolt holes for Stand
+  #7 Name: Boolean.DCCable, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN DC Cable
+  #8 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Stand foot
+
