@@ -124,6 +124,8 @@ Back cover.001 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for Back cover
   #10 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for back cover
+  #11 Name: Boolean.001, Type: BOOLEAN
+        Operation: UNION, Object: LABEL Open Bionics
 
 Name: Back cover.001 target
 Back cover.001 target Type: MESH
