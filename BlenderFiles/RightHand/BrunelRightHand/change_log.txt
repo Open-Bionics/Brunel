@@ -1862,7 +1862,7 @@ HANDLE Distal Joint.002 modifiers: None
 
 Name: HANDLE Fingertip.002
 HANDLE Fingertip.002 Type: MESH
-HANDLE Fingertip.002 transform: X0.0 Y44.999996185302734 Z0.0
+HANDLE Fingertip.002 transform: X0.0 Y45.0 Z0.0
 HANDLE Fingertip.002 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.002 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.002 groups: 2nd Finger, 
@@ -2240,7 +2240,7 @@ HANDLE Distal Joint.003 modifiers: None
 
 Name: HANDLE Fingertip.003
 HANDLE Fingertip.003 Type: MESH
-HANDLE Fingertip.003 transform: X0.0 Y41.999996185302734 Z0.0
+HANDLE Fingertip.003 transform: X0.0 Y42.0 Z0.0
 HANDLE Fingertip.003 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.003 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.003 groups: 3rd Finger, 
