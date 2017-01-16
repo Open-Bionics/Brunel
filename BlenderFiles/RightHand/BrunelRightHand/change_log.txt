@@ -512,7 +512,7 @@ BOOLEAN Proximal elastic terminator combo rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Proximal elastic terminator combo scale: X1.0 Y1.0 Z1.0
 BOOLEAN Proximal elastic terminator combo groups: None
 BOOLEAN Proximal elastic terminator combo mesh: BOOLEAN Proximal elastic terminator combo
-BOOLEAN Proximal elastic terminator combo materials: Boolean difference, 
+BOOLEAN Proximal elastic terminator combo materials: Boolean difference.003, 
 BOOLEAN Proximal elastic terminator combo modifiers: None
 
 Name: BOOLEAN Proximal elastic terminator.001
@@ -2427,13 +2427,14 @@ Ligament.003 materials: NF Black,
 Ligament.003 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
+  #3 Name: Hook.002, Type: HOOK
+  #4 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 3rd Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
+  #5 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Ligament.003
@@ -2448,12 +2449,13 @@ BOOLEAN Ligament.003 materials: Boolean difference,
 BOOLEAN Ligament.003 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
+  #3 Name: Hook.002, Type: HOOK
+  #4 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
+  #5 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Inner distal.003
@@ -2602,7 +2604,7 @@ HANDLE 4th Finger groups: 4th Finger,
 
 Name: HANDLE Distal Joint.004
 HANDLE Distal Joint.004 Type: MESH
-HANDLE Distal Joint.004 transform: X0.0 Y30.0 Z0.0
+HANDLE Distal Joint.004 transform: X0.0 Y29.999998092651367 Z0.0
 HANDLE Distal Joint.004 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.004 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.004 groups: 4th Finger, 
@@ -2739,27 +2741,6 @@ Urethane cover distal.004 modifiers:
   #4 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
-Name: Ligament.004
-Ligament.004 Type: MESH
-Ligament.004 transform: X0.0 Y0.0 Z0.0
-Ligament.004 rotation: X0.0 Y0.0 Z0.0
-Ligament.004 scale: X1.0 Y1.0 Z1.0
-Ligament.004 groups: 4th Finger, 
-Ligament.004 parent: HANDLE 4th Finger
-Ligament.004 mesh: Ligament
-Ligament.004 materials: NF Black, 
-Ligament.004 modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Mirror object: HANDLE 4th Finger
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-
 Name: BOOLEAN Inner proximal.004
 BOOLEAN Inner proximal.004 Type: MESH
 BOOLEAN Inner proximal.004 transform: X0.0 Y0.0 Z0.0
@@ -2805,6 +2786,64 @@ Top cover proximal.004 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Proximal elastic channel
   #7 Name: Boolean.ProximalInner, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal.004
+
+Name: BOOLEAN MOULD 4th Inner proximal
+BOOLEAN MOULD 4th Inner proximal Type: MESH
+BOOLEAN MOULD 4th Inner proximal transform: X-30.0 Y-1.9073486328125e-06 Z0.0
+BOOLEAN MOULD 4th Inner proximal rotation: X0.0 Y-0.0 Z1.5707963705062866
+BOOLEAN MOULD 4th Inner proximal scale: X1.0 Y1.0 Z1.0
+BOOLEAN MOULD 4th Inner proximal groups: 4th Finger, 
+BOOLEAN MOULD 4th Inner proximal mesh: Inner proximal.004
+BOOLEAN MOULD 4th Inner proximal materials: Boolean difference, 
+BOOLEAN MOULD 4th Inner proximal modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Solidify, Type: SOLIDIFY
+
+Name: BOOLEAN MOULD 4th Inner distal
+BOOLEAN MOULD 4th Inner distal Type: MESH
+BOOLEAN MOULD 4th Inner distal transform: X-21.21320343017578 Y21.21320343017578 Z-5.953692942296807e-16
+BOOLEAN MOULD 4th Inner distal rotation: X0.0 Y-0.0 Z0.7853981852531433
+BOOLEAN MOULD 4th Inner distal scale: X1.0 Y1.0 Z1.0
+BOOLEAN MOULD 4th Inner distal groups: 4th Finger, 
+BOOLEAN MOULD 4th Inner distal mesh: Inner distal.004
+BOOLEAN MOULD 4th Inner distal materials: Boolean difference, 
+BOOLEAN MOULD 4th Inner distal modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Solidify, Type: SOLIDIFY
+
+Name: Ligament.004
+Ligament.004 Type: MESH
+Ligament.004 transform: X0.0 Y0.0 Z0.0
+Ligament.004 rotation: X0.0 Y0.0 Z0.0
+Ligament.004 scale: X1.0 Y1.0 Z1.0
+Ligament.004 groups: 4th Finger, 
+Ligament.004 parent: HANDLE 4th Finger
+Ligament.004 mesh: Ligament
+Ligament.004 materials: NF Black, 
+Ligament.004 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Hook.002, Type: HOOK
+  #4 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 4th Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #5 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: Inner distal.004
 Inner distal.004 Type: MESH
@@ -2861,41 +2900,16 @@ Inner proximal.004 modifiers:
   #7 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels proximal.004
 
-Name: BOOLEAN MOULD 4th Inner proximal
-BOOLEAN MOULD 4th Inner proximal Type: MESH
-BOOLEAN MOULD 4th Inner proximal transform: X-30.0 Y-1.9073486328125e-06 Z0.0
-BOOLEAN MOULD 4th Inner proximal rotation: X0.0 Y-0.0 Z1.5707963705062866
-BOOLEAN MOULD 4th Inner proximal scale: X1.0 Y1.0 Z1.0
-BOOLEAN MOULD 4th Inner proximal groups: 4th Finger, 
-BOOLEAN MOULD 4th Inner proximal mesh: Inner proximal.004
-BOOLEAN MOULD 4th Inner proximal materials: Boolean difference, 
-BOOLEAN MOULD 4th Inner proximal modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: True
-        Vertex group mirroring: True
-  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Solidify, Type: SOLIDIFY
-
-Name: BOOLEAN MOULD 4th Inner distal
-BOOLEAN MOULD 4th Inner distal Type: MESH
-BOOLEAN MOULD 4th Inner distal transform: X-21.21320343017578 Y21.21320343017578 Z-5.953692942296807e-16
-BOOLEAN MOULD 4th Inner distal rotation: X0.0 Y-0.0 Z0.7853981852531433
-BOOLEAN MOULD 4th Inner distal scale: X1.0 Y1.0 Z1.0
-BOOLEAN MOULD 4th Inner distal groups: 4th Finger, 
-BOOLEAN MOULD 4th Inner distal mesh: Inner distal.004
-BOOLEAN MOULD 4th Inner distal materials: Boolean difference, 
-BOOLEAN MOULD 4th Inner distal modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: True
-        Vertex group mirroring: True
-  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Solidify, Type: SOLIDIFY
+Name: HANDLE Thickness.003
+HANDLE Thickness.003 Type: MESH
+HANDLE Thickness.003 transform: X0.0 Y0.0 Z0.6000000238418579
+HANDLE Thickness.003 rotation: X0.0 Y0.0 Z0.0
+HANDLE Thickness.003 scale: X1.0 Y1.0 Z1.0
+HANDLE Thickness.003 groups: None
+HANDLE Thickness.003 parent: HANDLE 3rd Finger
+HANDLE Thickness.003 mesh: Plane
+HANDLE Thickness.003 materials: None
+HANDLE Thickness.003 modifiers: None
 
 Name: BOOLEAN Elastic terminator.004
 BOOLEAN Elastic terminator.004 Type: MESH
@@ -2933,6 +2947,16 @@ BOOLEAN Proximal elastic channel modifiers:
   #3 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
+Name: HANDLE Thickness.004
+HANDLE Thickness.004 Type: MESH
+HANDLE Thickness.004 transform: X0.0 Y0.0 Z0.6000000238418579
+HANDLE Thickness.004 rotation: X0.0 Y0.0 Z0.0
+HANDLE Thickness.004 scale: X1.0 Y1.0 Z1.0
+HANDLE Thickness.004 groups: None
+HANDLE Thickness.004 mesh: Plane.001
+HANDLE Thickness.004 materials: None
+HANDLE Thickness.004 modifiers: None
+
 Name: BOOLEAN Ligament.004
 BOOLEAN Ligament.004 Type: MESH
 BOOLEAN Ligament.004 transform: X0.0 Y0.0 Z0.0
@@ -2945,12 +2969,13 @@ BOOLEAN Ligament.004 materials: Boolean difference,
 BOOLEAN Ligament.004 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
+  #3 Name: Hook.002, Type: HOOK
+  #4 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
+  #5 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Thumb
