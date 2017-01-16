@@ -194,12 +194,13 @@ BOOLEAN Ligament.003 materials: Boolean difference,
 BOOLEAN Ligament.003 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
+  #3 Name: Hook.002, Type: HOOK
+  #4 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
+  #5 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Ligament.004
@@ -214,12 +215,13 @@ BOOLEAN Ligament.004 materials: Boolean difference,
 BOOLEAN Ligament.004 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
+  #3 Name: Hook.002, Type: HOOK
+  #4 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
+  #5 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN M2 Bolt Holes.001
@@ -833,7 +835,7 @@ HANDLE Distal Joint.003 modifiers: None
 
 Name: HANDLE Distal Joint.004
 HANDLE Distal Joint.004 Type: MESH
-HANDLE Distal Joint.004 transform: X0.0 Y30.0 Z0.0
+HANDLE Distal Joint.004 transform: X0.0 Y29.999998092651367 Z0.0
 HANDLE Distal Joint.004 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.004 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.004 groups: 4th Finger, 
@@ -885,6 +887,27 @@ HANDLE Fingertip.004 parent: HANDLE Distal Joint.004
 HANDLE Fingertip.004 mesh: HANDLE Fingertip
 HANDLE Fingertip.004 materials: HANDLE, 
 HANDLE Fingertip.004 modifiers: None
+
+Name: HANDLE Thickness.003
+HANDLE Thickness.003 Type: MESH
+HANDLE Thickness.003 transform: X0.0 Y0.0 Z0.6000000238418579
+HANDLE Thickness.003 rotation: X0.0 Y0.0 Z0.0
+HANDLE Thickness.003 scale: X1.0 Y1.0 Z1.0
+HANDLE Thickness.003 groups: None
+HANDLE Thickness.003 parent: HANDLE 3rd Finger
+HANDLE Thickness.003 mesh: Plane
+HANDLE Thickness.003 materials: None
+HANDLE Thickness.003 modifiers: None
+
+Name: HANDLE Thickness.004
+HANDLE Thickness.004 Type: MESH
+HANDLE Thickness.004 transform: X0.0 Y0.0 Z0.6000000238418579
+HANDLE Thickness.004 rotation: X0.0 Y0.0 Z0.0
+HANDLE Thickness.004 scale: X1.0 Y1.0 Z1.0
+HANDLE Thickness.004 groups: None
+HANDLE Thickness.004 mesh: Plane.001
+HANDLE Thickness.004 materials: None
+HANDLE Thickness.004 modifiers: None
 
 Name: Inner distal.001
 Inner distal.001 Type: MESH
@@ -1232,13 +1255,14 @@ Ligament.003 materials: NF Black,
 Ligament.003 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
+  #3 Name: Hook.002, Type: HOOK
+  #4 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 3rd Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
+  #5 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Ligament.004
@@ -1253,13 +1277,14 @@ Ligament.004 materials: NF Black,
 Ligament.004 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
+  #3 Name: Hook.002, Type: HOOK
+  #4 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 4th Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
+  #5 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: MOULD Bottom
