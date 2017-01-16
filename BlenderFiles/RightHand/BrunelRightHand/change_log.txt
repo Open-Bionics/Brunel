@@ -40,7 +40,7 @@ Back cover rotation: X0.0 Y0.0 Z0.0
 Back cover scale: X1.0 Y1.0 Z1.0
 Back cover groups: None
 Back cover mesh: Back cover
-Back cover materials: None
+Back cover materials: PLA.001, 
 Back cover modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
@@ -82,7 +82,7 @@ Back cover target rotation: X0.0 Y-0.0 Z0.0
 Back cover target scale: X1.0 Y1.0 Z1.0
 Back cover target groups: None
 Back cover target mesh: Back cover
-Back cover target materials: None
+Back cover target materials: PLA.001, 
 Back cover target modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
@@ -254,8 +254,8 @@ BOOLEAN GALA cover cable tidy rotation: X0.0 Y-0.0 Z0.0
 BOOLEAN GALA cover cable tidy scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 BOOLEAN GALA cover cable tidy groups: Actuator Block, Booleans, 
 BOOLEAN GALA cover cable tidy parent: Actuator Block
-BOOLEAN GALA cover cable tidy mesh: BOOLEAN GALA cover cable tidy
-BOOLEAN GALA cover cable tidy materials: Boolean difference, 
+BOOLEAN GALA cover cable tidy mesh: BOOLEAN GALA cover cable tidy.001
+BOOLEAN GALA cover cable tidy materials: Boolean difference.002, 
 BOOLEAN GALA cover cable tidy modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Array, Type: ARRAY
@@ -440,7 +440,7 @@ BOOLEAN Palm outer skin for MOULD transform: X10.321754455566406 Y-16.0496387481
 BOOLEAN Palm outer skin for MOULD rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Palm outer skin for MOULD scale: X1.0 Y1.0 Z1.0
 BOOLEAN Palm outer skin for MOULD groups: None
-BOOLEAN Palm outer skin for MOULD mesh: Palm outer skin
+BOOLEAN Palm outer skin for MOULD mesh: Palm outer skin.002
 BOOLEAN Palm outer skin for MOULD materials: Urethane, 
 BOOLEAN Palm outer skin for MOULD modifiers: 
   #1 Name: Displace, Type: DISPLACE
@@ -1131,7 +1131,7 @@ Palm outer skin transform: X10.321754455566406 Y-16.049638748168945 Z-22.0107975
 Palm outer skin rotation: X0.0 Y0.0 Z0.0
 Palm outer skin scale: X1.0 Y1.0 Z1.0
 Palm outer skin groups: None
-Palm outer skin mesh: Palm outer skin
+Palm outer skin mesh: Palm outer skin.002
 Palm outer skin materials: Urethane, 
 Palm outer skin modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
@@ -1230,6 +1230,21 @@ Proximal elastic terminator groups: None
 Proximal elastic terminator mesh: Proximal elastic terminator
 Proximal elastic terminator materials: PLA, 
 Proximal elastic terminator modifiers: None
+
+Name: REFERENCE Wrist Plane
+REFERENCE Wrist Plane Type: MESH
+REFERENCE Wrist Plane transform: X9.066847801208496 Y-90.09370422363281 Z13.682619094848633
+REFERENCE Wrist Plane rotation: X-0.3490658104419708 Y-0.0 Z0.0
+REFERENCE Wrist Plane scale: X1.0 Y1.0000001192092896 Z0.9999999403953552
+REFERENCE Wrist Plane groups: None
+REFERENCE Wrist Plane mesh: REFERENCE Wrist Plane
+REFERENCE Wrist Plane materials: PLA.002, 
+REFERENCE Wrist Plane modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, Z, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
 
 Name: Stand
 Stand Type: EMPTY
