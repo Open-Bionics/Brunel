@@ -1101,18 +1101,19 @@ Palm outer frame groups: None
 Palm outer frame mesh: Outer palm frame
 Palm outer frame materials: PLA, 
 Palm outer frame modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-  #2 Name: Proximal Fillet, Type: BEVEL
-  #3 Name: Solidify, Type: SOLIDIFY
-  #4 Name: Boolean.OuterPalmFrameDistalHook, Type: BOOLEAN
+  #1 Name: Bevel.PalmarFillet, Type: BEVEL
+  #2 Name: Bevel.ExteriorPalmarFillet, Type: BEVEL
+  #3 Name: Bevel.ProximalFillet, Type: BEVEL
+  #4 Name: Bevel.ExteriorProximalFillet, Type: BEVEL
+  #5 Name: Boolean.OuterPalmFrameDistalHook, Type: BOOLEAN
         Operation: UNION, Object: Palm outer frame distal hook
-  #5 Name: Boolean.ThumbLigamentCover, Type: BOOLEAN
+  #6 Name: Boolean.ThumbLigamentCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for outer palm.002
-  #6 Name: Boolean.ThumbSweptArea, Type: BOOLEAN
+  #7 Name: Boolean.ThumbSweptArea, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area for Palm outer frame
-  #7 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
+  #8 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
-  #8 Name: Boolean.OuterFrameM2BoltHole, Type: BOOLEAN
+  #9 Name: Boolean.OuterFrameM2BoltHole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame M2 bolt hole
 
 Name: Palm outer frame distal hook
