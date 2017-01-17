@@ -1128,15 +1128,17 @@ Palm outer frame modifiers:
         Project in positive direction: True, Negative: True
         Cull Faces: OFF
         Subsurf level: 0
-  #10 Name: Boolean.OuterPalmFrameDistalHook, Type: BOOLEAN
+  #10 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #11 Name: Boolean.OuterPalmFrameDistalHook, Type: BOOLEAN
         Operation: UNION, Object: Palm outer frame distal hook
-  #11 Name: Boolean.ThumbLigamentCover, Type: BOOLEAN
+  #12 Name: Boolean.ThumbLigamentCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for outer palm.002
-  #12 Name: Boolean.ThumbSweptArea, Type: BOOLEAN
+  #13 Name: Boolean.ThumbSweptArea, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area for Palm outer frame
-  #13 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
+  #14 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
-  #14 Name: Boolean.OuterFrameM2BoltHole, Type: BOOLEAN
+  #15 Name: Boolean.OuterFrameM2BoltHole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame M2 bolt hole
 
 Name: Palm outer frame distal hook
