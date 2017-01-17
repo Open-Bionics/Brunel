@@ -440,7 +440,7 @@ BOOLEAN Palm outer skin for MOULD transform: X10.321754455566406 Y-16.0496387481
 BOOLEAN Palm outer skin for MOULD rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Palm outer skin for MOULD scale: X1.0 Y1.0 Z1.0
 BOOLEAN Palm outer skin for MOULD groups: None
-BOOLEAN Palm outer skin for MOULD mesh: Palm outer skin.002
+BOOLEAN Palm outer skin for MOULD mesh: Palm outer skin
 BOOLEAN Palm outer skin for MOULD materials: Urethane, 
 BOOLEAN Palm outer skin for MOULD modifiers: 
   #1 Name: Displace, Type: DISPLACE
@@ -1105,15 +1105,38 @@ Palm outer frame modifiers:
   #2 Name: Bevel.ExteriorPalmarFillet, Type: BEVEL
   #3 Name: Bevel.ProximalFillet, Type: BEVEL
   #4 Name: Bevel.ExteriorProximalFillet, Type: BEVEL
-  #5 Name: Boolean.OuterPalmFrameDistalHook, Type: BOOLEAN
+  #5 Name: Bevel.LipFillet, Type: BEVEL
+  #6 Name: Bevel, Type: BEVEL
+  #7 Name: Shrinkwrap.SurfaceX, Type: SHRINKWRAP
+        Target: Palm outer skin target, Mode: PROJECT, Offset: 0.0 mm
+        Vertex group: Surface X
+        Projecting in: X, 
+        Project in positive direction: True, Negative: True
+        Cull Faces: OFF
+        Subsurf level: 0
+  #8 Name: Shrinkwrap.SurfaceY, Type: SHRINKWRAP
+        Target: Palm outer skin target, Mode: PROJECT, Offset: 0.0 mm
+        Vertex group: Surface Y
+        Projecting in: Y, 
+        Project in positive direction: True, Negative: True
+        Cull Faces: OFF
+        Subsurf level: 0
+  #9 Name: Shrinkwrap.SurfaceZ, Type: SHRINKWRAP
+        Target: Palm outer skin target, Mode: PROJECT, Offset: 0.0 mm
+        Vertex group: Surface Z
+        Projecting in: Z
+        Project in positive direction: True, Negative: True
+        Cull Faces: OFF
+        Subsurf level: 0
+  #10 Name: Boolean.OuterPalmFrameDistalHook, Type: BOOLEAN
         Operation: UNION, Object: Palm outer frame distal hook
-  #6 Name: Boolean.ThumbLigamentCover, Type: BOOLEAN
+  #11 Name: Boolean.ThumbLigamentCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for outer palm.002
-  #7 Name: Boolean.ThumbSweptArea, Type: BOOLEAN
+  #12 Name: Boolean.ThumbSweptArea, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area for Palm outer frame
-  #8 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
+  #13 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
-  #9 Name: Boolean.OuterFrameM2BoltHole, Type: BOOLEAN
+  #14 Name: Boolean.OuterFrameM2BoltHole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame M2 bolt hole
 
 Name: Palm outer frame distal hook
@@ -1132,9 +1155,27 @@ Palm outer skin transform: X10.321754455566406 Y-16.049638748168945 Z-22.0107975
 Palm outer skin rotation: X0.0 Y0.0 Z0.0
 Palm outer skin scale: X1.0 Y1.0 Z1.0
 Palm outer skin groups: None
-Palm outer skin mesh: Palm outer skin.002
+Palm outer skin mesh: Palm outer skin
 Palm outer skin materials: Urethane, 
 Palm outer skin modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Boolean.PalmOuterFrame, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame
+  #3 Name: Boolean.ThumbSweptArea, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area
+  #4 Name: Boolean.ThumbLigamentCoverForOuterPalm, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for outer palm
+
+Name: Palm outer skin target
+Palm outer skin target Type: MESH
+Palm outer skin target transform: X10.321754455566406 Y-16.049638748168945 Z-22.01079750061035
+Palm outer skin target rotation: X0.0 Y0.0 Z0.0
+Palm outer skin target scale: X1.0 Y1.0 Z1.0
+Palm outer skin target groups: None
+Palm outer skin target mesh: Palm outer skin target
+Palm outer skin target materials: Urethane, 
+Palm outer skin target modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #2 Name: Boolean.PalmOuterFrame, Type: BOOLEAN
@@ -1239,7 +1280,7 @@ REFERENCE Wrist Plane rotation: X-0.3490658104419708 Y-0.0 Z0.0
 REFERENCE Wrist Plane scale: X1.0 Y1.0000001192092896 Z0.9999999403953552
 REFERENCE Wrist Plane groups: None
 REFERENCE Wrist Plane mesh: REFERENCE Wrist Plane
-REFERENCE Wrist Plane materials: PLA.002, 
+REFERENCE Wrist Plane materials: PLA.002, PLA, 
 REFERENCE Wrist Plane modifiers: 
   #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, Z, 
