@@ -1151,6 +1151,29 @@ Palm outer frame distal hook mesh: Palm outer frame distal hook
 Palm outer frame distal hook materials: None
 Palm outer frame distal hook modifiers: None
 
+Name: Palm outer frame.001
+Palm outer frame.001 Type: MESH
+Palm outer frame.001 transform: X9.0 Y-48.89358901977539 Z-2.9508914947509766
+Palm outer frame.001 rotation: X0.0 Y0.0 Z0.0
+Palm outer frame.001 scale: X1.0 Y1.0 Z1.0
+Palm outer frame.001 groups: None
+Palm outer frame.001 mesh: Outer palm frame.003
+Palm outer frame.001 materials: PLA, 
+Palm outer frame.001 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 4, Type: CATMULL_CLARK
+  #2 Name: Displace, Type: DISPLACE
+  #3 Name: Boolean.OuterPalmFrameDistalHook, Type: BOOLEAN
+        Operation: UNION, Object: Palm outer frame distal hook
+  #4 Name: Boolean.ThumbLigamentCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for outer palm.002
+  #5 Name: Boolean.ThumbSweptArea, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area for Palm outer frame
+  #6 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
+  #7 Name: Boolean.OuterFrameM2BoltHole, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame M2 bolt hole
+
 Name: Palm outer skin
 Palm outer skin Type: MESH
 Palm outer skin transform: X10.321754455566406 Y-16.049638748168945 Z-22.01079750061035
