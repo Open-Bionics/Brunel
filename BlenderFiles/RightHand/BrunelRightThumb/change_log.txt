@@ -187,6 +187,10 @@ MOULD Outer dorsal.001 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Syringe
   #3 Name: Boolean.M3, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M3 bolt hole
+  #4 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: MOULD Inner dorsal
+  #5 Name: Boolean.Thumb, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb
 
 Name: MOULD Outer palmar
 MOULD Outer palmar Type: MESH
@@ -201,6 +205,8 @@ MOULD Outer palmar modifiers:
   #2 Name: Solidify, Type: SOLIDIFY
   #3 Name: Boolean.Syringe, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Syringe
+  #4 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: MOULD Inner palmar
 
 Name: MOULD Outer palmar.001
 MOULD Outer palmar.001 Type: MESH
@@ -216,6 +222,10 @@ MOULD Outer palmar.001 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Syringe
   #3 Name: Boolean.M3, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M3 bolt hole
+  #4 Name: Boolean.InnerPalmar, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: MOULD Inner palmar
+  #5 Name: Boolean.Thumb, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb
 
 Name: Thumb
 Thumb Type: MESH
