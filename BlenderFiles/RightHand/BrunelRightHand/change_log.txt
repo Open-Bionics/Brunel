@@ -800,14 +800,6 @@ Connector cover modifiers:
   #5 Name: Boolean.PQ12, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
 
-Name: CONNECTOR DC Jack male
-CONNECTOR DC Jack male Type: EMPTY
-CONNECTOR DC Jack male transform: X29.954212188720703 Y-80.48687744140625 Z21.20294952392578
-CONNECTOR DC Jack male rotation: X-1.5707964897155762 Y2.235175244891252e-08 Z1.4056894315217505e-07
-CONNECTOR DC Jack male scale: X1.0 Y1.0 Z1.0
-CONNECTOR DC Jack male groups: None
-CONNECTOR DC Jack male parent: PCB Chestnut
-
 Name: CONNECTOR Headphone jack male 3.5 mm 4 pole
 CONNECTOR Headphone jack male 3.5 mm 4 pole Type: EMPTY
 CONNECTOR Headphone jack male 3.5 mm 4 pole transform: X-19.596534729003906 Y-71.34187316894531 Z17.730140686035156
@@ -835,6 +827,14 @@ DC jack cover mesh: DC jack cover
 DC jack cover materials: None
 DC jack cover modifiers: 
   #1 Name: Bevel, Type: BEVEL
+
+Name: CONNECTOR DC Jack male
+CONNECTOR DC Jack male Type: EMPTY
+CONNECTOR DC Jack male transform: X29.95421600341797 Y-80.48687744140625 Z22.002948760986328
+CONNECTOR DC Jack male rotation: X-1.5707964897155762 Y2.235175955433988e-08 Z1.4056895736302977e-07
+CONNECTOR DC Jack male scale: X1.0 Y1.0 Z1.0
+CONNECTOR DC Jack male groups: None
+CONNECTOR DC Jack male parent: PCB Chestnut
 
 Name: GALA cover
 GALA cover Type: MESH
@@ -4573,6 +4573,19 @@ DC Jack male groups: DC Jack male,
 DC Jack male mesh: DC Jack male
 DC Jack male materials: Black, Metal, 
 DC Jack male modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: DC Jack male Supplied with Ada and Brunel
+DC Jack male Supplied with Ada and Brunel Type: MESH
+DC Jack male Supplied with Ada and Brunel transform: X0.0 Y0.0 Z0.0
+DC Jack male Supplied with Ada and Brunel rotation: X0.0 Y0.0 Z0.0
+DC Jack male Supplied with Ada and Brunel scale: X1.0 Y1.0 Z1.0
+DC Jack male Supplied with Ada and Brunel groups: DC Jack male Ada and Brunel, 
+DC Jack male Supplied with Ada and Brunel mesh: DC Jack male.001
+DC Jack male Supplied with Ada and Brunel materials: Black, Metal, 
+DC Jack male Supplied with Ada and Brunel modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
