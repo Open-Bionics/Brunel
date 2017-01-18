@@ -1203,12 +1203,6 @@ Palm outer skin target materials: Urethane,
 Palm outer skin target modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #2 Name: Boolean.PalmOuterFrame, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame
-  #3 Name: Boolean.ThumbSweptArea, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area
-  #4 Name: Boolean.ThumbLigamentCoverForOuterPalm, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for outer palm
 
 Name: Palm Simple
 Palm Simple Type: MESH
