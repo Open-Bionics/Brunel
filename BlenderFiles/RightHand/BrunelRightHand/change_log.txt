@@ -62,18 +62,60 @@ Back cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Connectors
   #10 Name: Boolean.DCJack, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN DC Jack
-  #11 Name: Boolean.Logo, Type: BOOLEAN
-        Operation: UNION, Object: LABEL Logo
-  #12 Name: Boolean.PalmOuterFrameForBackCover, Type: BOOLEAN
+  #11 Name: Boolean.PalmOuterFrameForBackCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame for Back cover
-  #13 Name: Boolean.ConnectorCover, Type: BOOLEAN
+  #12 Name: Boolean.ConnectorCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Connector cover for Back cover
-  #14 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
+  #13 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
-  #15 Name: Boolean.DCJaceCover, Type: BOOLEAN
+  #14 Name: Boolean.DCJaceCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for Back cover
-  #16 Name: Boolean.OpenBionics, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: LABEL Open Bionics
+  #15 Name: Boolean.OpenBionics, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN LABEL Open Bionics
+  #16 Name: Boolean.BackCoverHightlightTarget, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Back cover highlight target
+  #17 Name: Boolean.BackCoverM2BoltHolesVeneer, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes veneer
+  #18 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: LABEL Logo
+
+Name: Back cover highlight
+Back cover highlight Type: MESH
+Back cover highlight transform: X0.0 Y0.0 Z0.0
+Back cover highlight rotation: X0.0 Y0.0 Z0.0
+Back cover highlight scale: X1.0 Y1.0 Z1.0
+Back cover highlight groups: None
+Back cover highlight mesh: Back cover highlight.001
+Back cover highlight materials: PLA Black, 
+Back cover highlight modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Boolean.BackCoverM2BoltHoleVeneer, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Back cover M2 bolt holes veneer
+  #3 Name: Boolean.Label Open Bionics, Type: BOOLEAN
+        Operation: UNION, Object: LABEL Open Bionics
+  #4 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
+  #5 Name: Boolean.Connectors, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Connectors
+  #6 Name: Boolean.Logo, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Logo
+  #7 Name: Boolean.DCJackCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for Back cover
+  #8 Name: Boolean.PCBChestnutForBackCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for back cover
+
+Name: Back cover highlight target
+Back cover highlight target Type: MESH
+Back cover highlight target transform: X0.0 Y0.0 Z0.0
+Back cover highlight target rotation: X0.0 Y0.0 Z0.0
+Back cover highlight target scale: X1.0 Y1.0 Z1.0
+Back cover highlight target groups: None
+Back cover highlight target mesh: Back cover highlight.001
+Back cover highlight target materials: PLA Black, 
+Back cover highlight target modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: Back cover target
 Back cover target Type: MESH
@@ -108,6 +150,23 @@ Back cover proximal attachment point mesh: Back cover proximal attachment point
 Back cover proximal attachment point materials: None
 Back cover proximal attachment point modifiers: 
   #1 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN Back cover M2 bolt holes veneer
+BOOLEAN Back cover M2 bolt holes veneer Type: MESH
+BOOLEAN Back cover M2 bolt holes veneer transform: X-24.0 Y-22.0 Z0.800000011920929
+BOOLEAN Back cover M2 bolt holes veneer rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Back cover M2 bolt holes veneer scale: X1.0 Y1.0 Z1.0
+BOOLEAN Back cover M2 bolt holes veneer groups: None
+BOOLEAN Back cover M2 bolt holes veneer mesh: BOOLEAN Back cover M2 bolt holes veneer
+BOOLEAN Back cover M2 bolt holes veneer materials: PLA.003, 
+BOOLEAN Back cover M2 bolt holes veneer modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+  #2 Name: Shrinkwrap, Type: SHRINKWRAP
+        Target: Back cover highlight target, Mode: PROJECT, Offset: -1.0 mm
+        Projecting in: Z
+        Project in positive direction: False, Negative: True
+        Cull Faces: OFF
+        Subsurf level: 0
 
 Name: BOOLEAN Back cover proximal attachment point
 BOOLEAN Back cover proximal attachment point Type: MESH
@@ -294,6 +353,23 @@ BOOLEAN Headphone jack materials: Boolean difference,
 BOOLEAN Headphone jack modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN LABEL Open Bionics
+BOOLEAN LABEL Open Bionics Type: MESH
+BOOLEAN LABEL Open Bionics transform: X51.658660888671875 Y-58.78639602661133 Z9.145349502563477
+BOOLEAN LABEL Open Bionics rotation: X1.5707963705062866 Y-0.0 Z1.5707963705062866
+BOOLEAN LABEL Open Bionics scale: X0.8085255026817322 Y0.8085255026817322 Z0.8085255026817322
+BOOLEAN LABEL Open Bionics groups: None
+BOOLEAN LABEL Open Bionics mesh: Label - Open Bionics
+BOOLEAN LABEL Open Bionics materials: PLA.004, 
+BOOLEAN LABEL Open Bionics modifiers: 
+  #1 Name: Shrinkwrap, Type: SHRINKWRAP
+        Target: Back cover target, Mode: PROJECT, Offset: -1.0 mm
+        Projecting in: Z
+        Project in positive direction: False, Negative: True
+        Cull Faces: BACK
+        Subsurf level: 0
+  #2 Name: Solidify, Type: SOLIDIFY
 
 Name: BOOLEAN Ligament cover
 BOOLEAN Ligament cover Type: MESH
@@ -885,12 +961,12 @@ Hand Ligament modifiers: None
 
 Name: LABEL Logo
 LABEL Logo Type: MESH
-LABEL Logo transform: X9.468347549438477 Y-42.54774475097656 Z27.15020751953125
+LABEL Logo transform: X9.468347549438477 Y-47.020164489746094 Z27.15020751953125
 LABEL Logo rotation: X-0.05195975303649902 Y3.1415932178497314 Z2.8459771428401837e-08
 LABEL Logo scale: X2.09895920753479 Y2.09895920753479 Z2.09895920753479
 LABEL Logo groups: None
 LABEL Logo mesh: LABEL Logo
-LABEL Logo materials: None
+LABEL Logo materials: PLA Black, 
 LABEL Logo modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
@@ -901,15 +977,15 @@ LABEL Logo modifiers:
 
 Name: LABEL Open Bionics
 LABEL Open Bionics Type: MESH
-LABEL Open Bionics transform: X51.658660888671875 Y-60.78639602661133 Z9.145349502563477
+LABEL Open Bionics transform: X51.658660888671875 Y-58.78639602661133 Z9.145349502563477
 LABEL Open Bionics rotation: X1.5707963705062866 Y-0.0 Z1.5707963705062866
-LABEL Open Bionics scale: X1.0 Y1.0 Z1.0
+LABEL Open Bionics scale: X0.8085255026817322 Y0.8085255026817322 Z0.8085255026817322
 LABEL Open Bionics groups: None
-LABEL Open Bionics mesh: Label - Open Bionics
-LABEL Open Bionics materials: PLA, 
+LABEL Open Bionics mesh: LABEL Open Bionics
+LABEL Open Bionics materials: PLA.003, 
 LABEL Open Bionics modifiers: 
   #1 Name: Shrinkwrap, Type: SHRINKWRAP
-        Target: Back cover target, Mode: PROJECT, Offset: 0.0 mm
+        Target: Back cover target, Mode: PROJECT, Offset: -1.0 mm
         Projecting in: Z
         Project in positive direction: False, Negative: True
         Cull Faces: BACK
