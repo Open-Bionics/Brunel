@@ -80,6 +80,8 @@ Back cover modifiers:
         Operation: UNION, Object: LABEL Logo
   #19 Name: Boolean.BackCoverM2BoltHolesVeneer, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes veneer
+  #20 Name: Boolean.LabelBrunel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Brunel logo
 
 Name: Back cover highlight
 Back cover highlight Type: MESH
@@ -944,6 +946,16 @@ Hand Ligament parent: Actuator Block
 Hand Ligament mesh: Hand Ligament
 Hand Ligament materials: NF Black, 
 Hand Ligament modifiers: None
+
+Name: LABEL Brunel logo
+LABEL Brunel logo Type: MESH
+LABEL Brunel logo transform: X9.307502746582031 Y-45.51295852661133 Z19.83002471923828
+LABEL Brunel logo rotation: X-0.0 Y3.1415929794311523 Z-0.0
+LABEL Brunel logo scale: X1.0 Y1.0 Z1.0
+LABEL Brunel logo groups: None
+LABEL Brunel logo mesh: Combo
+LABEL Brunel logo materials: Boolean difference, 
+LABEL Brunel logo modifiers: None
 
 Name: LABEL Logo
 LABEL Logo Type: MESH
