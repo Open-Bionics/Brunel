@@ -836,16 +836,6 @@ BOOLEAN Wrist connector M2 bolt holes mesh: BOOLEAN M2 Bolt Hole.006
 BOOLEAN Wrist connector M2 bolt holes materials: Boolean difference, 
 BOOLEAN Wrist connector M2 bolt holes modifiers: None
 
-Name: BOOLEAN Wrist connector M2 bolt holes.001
-BOOLEAN Wrist connector M2 bolt holes.001 Type: MESH
-BOOLEAN Wrist connector M2 bolt holes.001 transform: X9.064352035522461 Y-91.38917541503906 Z10.123432159423828
-BOOLEAN Wrist connector M2 bolt holes.001 rotation: X5.204799652099609 Y-0.11092732101678848 Z1.316519856452942
-BOOLEAN Wrist connector M2 bolt holes.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Wrist connector M2 bolt holes.001 groups: None
-BOOLEAN Wrist connector M2 bolt holes.001 mesh: BOOLEAN M2 Bolt Hole.000
-BOOLEAN Wrist connector M2 bolt holes.001 materials: Boolean difference.001, 
-BOOLEAN Wrist connector M2 bolt holes.001 modifiers: None
-
 Name: Conical spring
 Conical spring Type: MESH
 Conical spring transform: X-15.163448333740234 Y-46.499046325683594 Z-4.673167705535889
@@ -1240,42 +1230,6 @@ Palm Simple groups: None
 Palm Simple mesh: Palm Simple
 Palm Simple materials: PLA Black, NF White, 
 Palm Simple modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-
-Name: Palm.000
-Palm.000 Type: MESH
-Palm.000 transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
-Palm.000 rotation: X-0.0 Y3.141592502593994 Z-0.0
-Palm.000 scale: X1.0 Y1.0 Z1.0
-Palm.000 groups: None
-Palm.000 mesh: Palm
-Palm.000 materials: Ninjalfex, 
-Palm.000 modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-
-Name: Palm.001
-Palm.001 Type: MESH
-Palm.001 transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
-Palm.001 rotation: X-0.0 Y3.141592502593994 Z-0.0
-Palm.001 scale: X1.0 Y1.0 Z1.0
-Palm.001 groups: None
-Palm.001 mesh: Palm.001
-Palm.001 materials: Ninjalfex, 
-Palm.001 modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-
-Name: Palm.002
-Palm.002 Type: MESH
-Palm.002 transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
-Palm.002 rotation: X-0.0 Y3.141592502593994 Z-0.0
-Palm.002 scale: X1.0 Y1.0 Z1.0
-Palm.002 groups: None
-Palm.002 mesh: Palm.002
-Palm.002 materials: Ninjalfex, 
-Palm.002 modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
