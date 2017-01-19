@@ -1024,8 +1024,6 @@ MOULD Top modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN MOULD Runners
   #5 Name: Boolean.PalmOuterFrameForMOULDTop, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame for MOULD Top
-  #6 Name: Boolean.OuterFrameDistalHook, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame distal hook
 
 Name: Palm Covered
 Palm Covered Type: MESH
