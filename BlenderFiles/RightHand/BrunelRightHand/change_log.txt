@@ -80,6 +80,8 @@ Back cover modifiers:
         Operation: UNION, Object: LABEL Logo
   #19 Name: Boolean.Brunel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Brunel logo
+  #20 Name: Boolean.LabelPCBLines, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL PCB lines
 
 Name: Back cover highlight
 Back cover highlight Type: MESH
@@ -993,6 +995,25 @@ LABEL Open Bionics modifiers:
         Cull Faces: BACK
         Subsurf level: 0
   #2 Name: Solidify, Type: SOLIDIFY
+
+Name: LABEL PCB lines
+LABEL PCB lines Type: MESH
+LABEL PCB lines transform: X-18.933151245117188 Y-58.44664001464844 Z14.50477409362793
+LABEL PCB lines rotation: X-1.5707963705062866 Y-0.0 Z1.5707963705062866
+LABEL PCB lines scale: X1.491065263748169 Y1.491065263748169 Z1.491065263748169
+LABEL PCB lines groups: None
+LABEL PCB lines mesh: Mesh.006
+LABEL PCB lines materials: None
+LABEL PCB lines modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 4, Type: CATMULL_CLARK
+  #2 Name: Shrinkwrap, Type: SHRINKWRAP
+        Target: Back cover target, Mode: PROJECT, Offset: 0.0 mm
+        Projecting in: Z
+        Project in positive direction: True, Negative: False
+        Cull Faces: OFF
+        Subsurf level: 0
+  #3 Name: Solidify, Type: SOLIDIFY
 
 Name: Ligament cover
 Ligament cover Type: MESH
