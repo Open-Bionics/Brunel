@@ -1492,7 +1492,7 @@ HANDLE 1st Finger groups: 1st Finger,
 
 Name: HANDLE Distal Joint.001
 HANDLE Distal Joint.001 Type: MESH
-HANDLE Distal Joint.001 transform: X0.0 Y45.0 Z0.0
+HANDLE Distal Joint.001 transform: X0.0 Y44.999996185302734 Z0.0
 HANDLE Distal Joint.001 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.001 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.001 groups: 1st Finger, 
@@ -1698,24 +1698,23 @@ BOOLEAN M2 Bolt Holes.001 modifiers:
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
 
-Name: Top cover proximal.000
-Top cover proximal.000 Type: MESH
-Top cover proximal.000 transform: X0.0 Y0.0 Z0.0
-Top cover proximal.000 rotation: X0.0 Y0.0 Z0.0
-Top cover proximal.000 scale: X1.0 Y1.0 Z1.0
-Top cover proximal.000 groups: 1st Finger, 
-Top cover proximal.000 parent: HANDLE 1st Finger
-Top cover proximal.000 mesh: Top cover proximal.001
-Top cover proximal.000 materials: NF Black, 
-Top cover proximal.000 modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Mirror, Type: MIRROR
+Name: Top cover distal.001
+Top cover distal.001 Type: MESH
+Top cover distal.001 transform: X0.0 Y0.0 Z0.0
+Top cover distal.001 rotation: X0.0 Y0.0 Z0.0
+Top cover distal.001 scale: X1.0 Y1.0 Z1.0
+Top cover distal.001 groups: 1st Finger, 
+Top cover distal.001 parent: HANDLE 1st Finger
+Top cover distal.001 mesh: Top cover proximal.001
+Top cover distal.001 materials: NF Black, 
+Top cover distal.001 modifiers: 
+  #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 1st Finger
         Merge: True, Merge Limit: 0.10000000149011612 mm
         Clipping: True
         Vertex group mirroring: True
-  #3 Name: Subsurf, Type: SUBSURF
+  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Inner proximal.001
@@ -1745,16 +1744,16 @@ Inner proximal.001 modifiers:
   #7 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels proximal.001
 
-Name: Top cover distal.001
-Top cover distal.001 Type: MESH
-Top cover distal.001 transform: X0.0 Y0.0 Z0.0
-Top cover distal.001 rotation: X0.0 Y0.0 Z0.0
-Top cover distal.001 scale: X1.0 Y1.0 Z1.0
-Top cover distal.001 groups: 1st Finger, 
-Top cover distal.001 parent: HANDLE 1st Finger
-Top cover distal.001 mesh: Top cover distal
-Top cover distal.001 materials: PLA Black, 
-Top cover distal.001 modifiers: 
+Name: Top cover distal.000
+Top cover distal.000 Type: MESH
+Top cover distal.000 transform: X0.0 Y0.0 Z0.0
+Top cover distal.000 rotation: X0.0 Y0.0 Z0.0
+Top cover distal.000 scale: X1.0 Y1.0 Z1.0
+Top cover distal.000 groups: 1st Finger, 
+Top cover distal.000 parent: HANDLE 1st Finger
+Top cover distal.000 mesh: Top cover distal
+Top cover distal.000 materials: PLA Black, 
+Top cover distal.000 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
   #3 Name: Mirror, Type: MIRROR
