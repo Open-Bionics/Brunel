@@ -96,7 +96,7 @@ Back cover highlight modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #2 Name: Boolean.BackCoverM2BoltHoleVeneer, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Back cover M2 bolt holes veneer
-  #3 Name: Boolean.Label Open Bionics, Type: BOOLEAN
+  #3 Name: Boolean.LabelOpen Bionics, Type: BOOLEAN
         Operation: UNION, Object: LABEL Open Bionics
   #4 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
@@ -1187,7 +1187,7 @@ Palm inner materials: PLA,
 Palm inner modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Proximal fillet, Type: BEVEL
-  #3 Name: Boolean.001, Type: BOOLEAN
+  #3 Name: Boolean.LigamentCoverPlatform, Type: BOOLEAN
         Operation: UNION, Object: Ligament Cover M2 bolt hole platforms
   #4 Name: Boolean.PQ12, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
