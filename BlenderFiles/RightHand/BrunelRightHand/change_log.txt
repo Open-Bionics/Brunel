@@ -96,7 +96,7 @@ Back cover highlight modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #2 Name: Boolean.BackCoverM2BoltHoleVeneer, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Back cover M2 bolt holes veneer
-  #3 Name: Boolean.Label Open Bionics, Type: BOOLEAN
+  #3 Name: Boolean.LabelOpen Bionics, Type: BOOLEAN
         Operation: UNION, Object: LABEL Open Bionics
   #4 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
@@ -199,7 +199,7 @@ BOOLEAN Capacitors for connector cover modifiers: None
 
 Name: BOOLEAN Conical spring
 BOOLEAN Conical spring Type: MESH
-BOOLEAN Conical spring transform: X-15.163448333740234 Y-46.499046325683594 Z-4.673167705535889
+BOOLEAN Conical spring transform: X-15.163448333740234 Y-46.498046875 Z-4.673167705535889
 BOOLEAN Conical spring rotation: X0.0 Y-0.0 Z0.0
 BOOLEAN Conical spring scale: X0.9999998807907104 Y0.9999999403953552 Z0.9999999403953552
 BOOLEAN Conical spring groups: Actuator Block, Booleans, 
@@ -408,6 +408,18 @@ BOOLEAN Ligament cover M2 bolt hole parent: Actuator Block
 BOOLEAN Ligament cover M2 bolt hole mesh: BOOLEAN Ligament cover M2 bolt hole
 BOOLEAN Ligament cover M2 bolt hole materials: Boolean difference, 
 BOOLEAN Ligament cover M2 bolt hole modifiers: None
+
+Name: BOOLEAN Ligament Cover M2 bolt hole platforms
+BOOLEAN Ligament Cover M2 bolt hole platforms Type: MESH
+BOOLEAN Ligament Cover M2 bolt hole platforms transform: X23.75 Y-15.000001907348633 Z2.1999988555908203
+BOOLEAN Ligament Cover M2 bolt hole platforms rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Ligament Cover M2 bolt hole platforms scale: X1.0 Y1.0 Z1.0
+BOOLEAN Ligament Cover M2 bolt hole platforms groups: None
+BOOLEAN Ligament Cover M2 bolt hole platforms parent: Ligament Cover M2 bolt hole platforms
+BOOLEAN Ligament Cover M2 bolt hole platforms mesh: Cube
+BOOLEAN Ligament Cover M2 bolt hole platforms materials: PLA, 
+BOOLEAN Ligament Cover M2 bolt hole platforms modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
 
 Name: BOOLEAN MOULD Locking feature
 BOOLEAN MOULD Locking feature Type: MESH
@@ -1033,6 +1045,19 @@ Ligament cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Proximal elastic terminator combo
   #4 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover corners
+  #5 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament Cover M2 bolt hole platforms
+
+Name: Ligament Cover M2 bolt hole platforms
+Ligament Cover M2 bolt hole platforms Type: MESH
+Ligament Cover M2 bolt hole platforms transform: X23.75 Y-15.000001907348633 Z2.1999988555908203
+Ligament Cover M2 bolt hole platforms rotation: X0.0 Y0.0 Z0.0
+Ligament Cover M2 bolt hole platforms scale: X1.0 Y1.0 Z1.0
+Ligament Cover M2 bolt hole platforms groups: None
+Ligament Cover M2 bolt hole platforms parent: Actuator Block
+Ligament Cover M2 bolt hole platforms mesh: Cube
+Ligament Cover M2 bolt hole platforms materials: PLA, 
+Ligament Cover M2 bolt hole platforms modifiers: None
 
 Name: Ligament cover prong target
 Ligament cover prong target Type: MESH
@@ -1162,33 +1187,35 @@ Palm inner materials: PLA,
 Palm inner modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Proximal fillet, Type: BEVEL
-  #3 Name: Boolean.PQ12, Type: BOOLEAN
+  #3 Name: Boolean.LigamentCoverPlatform, Type: BOOLEAN
+        Operation: UNION, Object: Ligament Cover M2 bolt hole platforms
+  #4 Name: Boolean.PQ12, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
-  #4 Name: Boolean.ConicalSpring, Type: BOOLEAN
+  #5 Name: Boolean.ConicalSpring, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Conical spring
-  #5 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
+  #6 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel
-  #6 Name: Boolean.ThumbPivotDowel000, Type: BOOLEAN
+  #7 Name: Boolean.ThumbPivotDowel000, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel
-  #7 Name: Boolean.ThumbPivotDowel001, Type: BOOLEAN
+  #8 Name: Boolean.ThumbPivotDowel001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel.001
-  #8 Name: Boolean.ThumbTendonChannel, Type: BOOLEAN
+  #9 Name: Boolean.ThumbTendonChannel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon channel
-  #9 Name: Boolean.TendonChannels, Type: BOOLEAN
+  #10 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon Channels
-  #10 Name: Boolean.GALACoverM2BoltHoles, Type: BOOLEAN
+  #11 Name: Boolean.GALACoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN GALA cover M2 Bolt Hole
-  #11 Name: Boolean.HandLigament, Type: BOOLEAN
+  #12 Name: Boolean.HandLigament, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Hand Ligament
-  #12 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
+  #13 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
-  #13 Name: Boolean.ThumbLigmaentCoverM2BoltHole, Type: BOOLEAN
+  #14 Name: Boolean.ThumbLigmaentCoverM2BoltHole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 Bolt Hole
-  #14 Name: Boolean.ThumbLigmaentCover, Type: BOOLEAN
+  #15 Name: Boolean.ThumbLigmaentCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for inner palm
-  #15 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
+  #16 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
-  #16 Name: Boolean, Type: BOOLEAN
+  #17 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame distal hook
 
 Name: Palm outer frame
@@ -1269,7 +1296,7 @@ PQ12 Caps rotation: X0.0 Y0.0 Z0.0
 PQ12 Caps scale: X1.0 Y1.0 Z1.0
 PQ12 Caps groups: None
 PQ12 Caps parent: Actuator Block
-PQ12 Caps mesh: PQ12 Caps
+PQ12 Caps mesh: Cap
 PQ12 Caps materials: PLA, 
 PQ12 Caps modifiers: None
 
