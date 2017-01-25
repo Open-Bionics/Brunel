@@ -1296,8 +1296,8 @@ PQ12 Caps rotation: X0.0 Y0.0 Z0.0
 PQ12 Caps scale: X1.0 Y1.0 Z1.0
 PQ12 Caps groups: None
 PQ12 Caps parent: Actuator Block
-PQ12 Caps mesh: Cap
-PQ12 Caps materials: PLA, 
+PQ12 Caps mesh: PQ12 Caps
+PQ12 Caps materials: None
 PQ12 Caps modifiers: None
 
 Name: PQ12 extended
