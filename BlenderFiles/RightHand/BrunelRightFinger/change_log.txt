@@ -340,6 +340,19 @@ BOOLEAN MOULD 4th Inner distal modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #3 Name: Solidify, Type: SOLIDIFY
 
+Name: BOOLEAN MOULD Location feature
+BOOLEAN MOULD Location feature Type: MESH
+BOOLEAN MOULD Location feature transform: X-81.05793762207031 Y0.12131214141845703 Z-10.250000953674316
+BOOLEAN MOULD Location feature rotation: X0.0 Y0.0 Z0.0
+BOOLEAN MOULD Location feature scale: X1.0 Y1.0 Z1.0
+BOOLEAN MOULD Location feature groups: None
+BOOLEAN MOULD Location feature parent: MOULD Location feature
+BOOLEAN MOULD Location feature mesh: MOULD Location feature
+BOOLEAN MOULD Location feature materials: Material, 
+BOOLEAN MOULD Location feature modifiers: 
+  #1 Name: Displace, Type: DISPLACE
+  #2 Name: Solidify, Type: SOLIDIFY
+
 Name: BOOLEAN MOULD Risers
 BOOLEAN MOULD Risers Type: MESH
 BOOLEAN MOULD Risers transform: X51.654762268066406 Y51.654762268066406 Z0.6500009298324585
@@ -1435,6 +1448,8 @@ MOULD Bottom modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN MOULD Runners
   #12 Name: Boolean.011, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN MOULD Risers
+  #13 Name: Boolean.012, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN MOULD Location feature
 
 Name: MOULD Bottom tray
 MOULD Bottom tray Type: MESH
@@ -1452,10 +1467,22 @@ MOULD Bottom tray modifiers:
         Operation: UNION, Object: BOOLEAN MOULD Wedges.001
   #4 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M3 bolt hole
+  #5 Name: Boolean.003, Type: BOOLEAN
+        Operation: UNION, Object: MOULD Location feature
+
+Name: MOULD Location feature
+MOULD Location feature Type: MESH
+MOULD Location feature transform: X-81.05793762207031 Y0.12131214141845703 Z-10.250000953674316
+MOULD Location feature rotation: X0.0 Y0.0 Z0.0
+MOULD Location feature scale: X1.0 Y1.0 Z1.0
+MOULD Location feature groups: None
+MOULD Location feature mesh: MOULD Location feature
+MOULD Location feature materials: Material, 
+MOULD Location feature modifiers: None
 
 Name: MOULD Plunger
 MOULD Plunger Type: MESH
-MOULD Plunger transform: X0.0 Y0.0 Z-5.0
+MOULD Plunger transform: X0.0 Y0.0 Z-1.371211051940918
 MOULD Plunger rotation: X0.0 Y0.0 Z0.0
 MOULD Plunger scale: X1.0 Y1.0 Z1.0
 MOULD Plunger groups: None
@@ -1499,6 +1526,8 @@ MOULD Top modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Mould v2 hopper
   #11 Name: Boolean.010, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN MOULD Runners
+  #12 Name: Boolean.011, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN MOULD Location feature
 
 Name: MOULD Top tray
 MOULD Top tray Type: MESH
@@ -1517,6 +1546,8 @@ MOULD Top tray modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Mould v2 hopper
   #4 Name: Boolean.003, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M3 bolt hole
+  #5 Name: Boolean.004, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN MOULD Location feature
 
 Name: MOULD Top tray.001
 MOULD Top tray.001 Type: MESH
