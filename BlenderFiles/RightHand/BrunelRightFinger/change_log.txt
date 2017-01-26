@@ -1201,6 +1201,121 @@ Inner proximal.004 modifiers:
   #7 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels proximal.004
 
+Name: LABEL PCB lines.001
+LABEL PCB lines.001 Type: MESH
+LABEL PCB lines.001 transform: X0.0 Y0.0 Z0.0
+LABEL PCB lines.001 rotation: X0.0 Y0.0 Z0.0
+LABEL PCB lines.001 scale: X1.0 Y1.0 Z1.0
+LABEL PCB lines.001 groups: 1st Finger, 
+LABEL PCB lines.001 parent: HANDLE 1st Finger
+LABEL PCB lines.001 mesh: LABEL PCB lines
+LABEL PCB lines.001 materials: None
+LABEL PCB lines.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 2, Type: CATMULL_CLARK
+  #4 Name: Shrinkwrap, Type: SHRINKWRAP
+        Target: Top cover target proximal.001, Mode: PROJECT, Offset: 0.0 mm
+        Projecting in: X, 
+        Project in positive direction: True, Negative: True
+        Cull Faces: OFF
+        Subsurf level: 0
+        Auxiliary target: Top cover target distal.001
+  #5 Name: Solidify, Type: SOLIDIFY
+  #6 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+
+Name: LABEL PCB lines.002
+LABEL PCB lines.002 Type: MESH
+LABEL PCB lines.002 transform: X0.0 Y0.0 Z0.0
+LABEL PCB lines.002 rotation: X0.0 Y0.0 Z0.0
+LABEL PCB lines.002 scale: X1.0 Y1.0 Z1.0
+LABEL PCB lines.002 groups: 1st Finger, 
+LABEL PCB lines.002 parent: HANDLE 2nd Finger
+LABEL PCB lines.002 mesh: LABEL PCB lines
+LABEL PCB lines.002 materials: None
+LABEL PCB lines.002 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 2, Type: CATMULL_CLARK
+  #4 Name: Shrinkwrap, Type: SHRINKWRAP
+        Target: Top cover target proximal.002, Mode: PROJECT, Offset: 0.0 mm
+        Projecting in: None
+        Project in positive direction: True, Negative: True
+        Cull Faces: OFF
+        Subsurf level: 0
+        Auxiliary target: Top cover target distal.002
+  #5 Name: Solidify, Type: SOLIDIFY
+  #6 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+
+Name: LABEL PCB lines.003
+LABEL PCB lines.003 Type: MESH
+LABEL PCB lines.003 transform: X0.0 Y0.0 Z0.0
+LABEL PCB lines.003 rotation: X0.0 Y0.0 Z0.0
+LABEL PCB lines.003 scale: X1.0 Y1.0 Z1.0
+LABEL PCB lines.003 groups: 1st Finger, 
+LABEL PCB lines.003 parent: HANDLE 3rd Finger
+LABEL PCB lines.003 mesh: LABEL PCB lines
+LABEL PCB lines.003 materials: None
+LABEL PCB lines.003 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 2, Type: CATMULL_CLARK
+  #4 Name: Shrinkwrap, Type: SHRINKWRAP
+        Target: Top cover target proximal.003, Mode: PROJECT, Offset: 0.0 mm
+        Projecting in: X, 
+        Project in positive direction: True, Negative: True
+        Cull Faces: OFF
+        Subsurf level: 0
+        Auxiliary target: Top cover target distal.003
+  #5 Name: Solidify, Type: SOLIDIFY
+  #6 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+
+Name: LABEL PCB lines.004
+LABEL PCB lines.004 Type: MESH
+LABEL PCB lines.004 transform: X0.0 Y0.0 Z0.0
+LABEL PCB lines.004 rotation: X0.0 Y0.0 Z0.0
+LABEL PCB lines.004 scale: X1.0 Y1.0 Z1.0
+LABEL PCB lines.004 groups: 1st Finger, 
+LABEL PCB lines.004 mesh: LABEL PCB lines
+LABEL PCB lines.004 materials: None
+LABEL PCB lines.004 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 2, Type: CATMULL_CLARK
+  #4 Name: Shrinkwrap, Type: SHRINKWRAP
+        Target: Top cover target proximal.004, Mode: PROJECT, Offset: 0.0 mm
+        Projecting in: None
+        Project in positive direction: True, Negative: True
+        Cull Faces: OFF
+        Subsurf level: 0
+        Auxiliary target: Top cover target distal.004
+  #5 Name: Solidify, Type: SOLIDIFY
+  #6 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+
 Name: Ligament.001
 Ligament.001 Type: MESH
 Ligament.001 transform: X0.0 Y0.0 Z0.0
@@ -1423,7 +1538,7 @@ Top cover distal.001 scale: X1.0 Y1.0 Z1.0
 Top cover distal.001 groups: 1st Finger, 
 Top cover distal.001 parent: HANDLE 1st Finger
 Top cover distal.001 mesh: Top cover distal
-Top cover distal.001 materials: PLA Black, 
+Top cover distal.001 materials: PLA White, 
 Top cover distal.001 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
@@ -1439,6 +1554,8 @@ Top cover distal.001 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.001
   #6 Name: Boolean.ElasticTerminator, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Elastic terminator.001
+  #7 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL PCB lines.001
 
 Name: Top cover distal.002
 Top cover distal.002 Type: MESH
@@ -1448,7 +1565,7 @@ Top cover distal.002 scale: X1.0 Y1.0 Z1.0
 Top cover distal.002 groups: 2nd Finger, 
 Top cover distal.002 parent: HANDLE 2nd Finger
 Top cover distal.002 mesh: Top cover distal
-Top cover distal.002 materials: PLA Black, 
+Top cover distal.002 materials: PLA White, 
 Top cover distal.002 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
@@ -1464,6 +1581,8 @@ Top cover distal.002 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.002
   #6 Name: Boolean.ElasticTerminator, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Elastic terminator.002
+  #7 Name: Boolean.LabelPCBLines, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL PCB lines.002
 
 Name: Top cover distal.003
 Top cover distal.003 Type: MESH
@@ -1473,7 +1592,7 @@ Top cover distal.003 scale: X1.0 Y1.0 Z1.0
 Top cover distal.003 groups: 3rd Finger, 
 Top cover distal.003 parent: HANDLE 3rd Finger
 Top cover distal.003 mesh: Top cover distal
-Top cover distal.003 materials: PLA Black, 
+Top cover distal.003 materials: PLA White, 
 Top cover distal.003 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
@@ -1489,6 +1608,8 @@ Top cover distal.003 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.003
   #6 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Elastic terminator.003
+  #7 Name: Boolean.LablePCBLines, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL PCB lines.003
 
 Name: Top cover distal.004
 Top cover distal.004 Type: MESH
@@ -1498,7 +1619,7 @@ Top cover distal.004 scale: X1.0 Y1.0 Z1.0
 Top cover distal.004 groups: 4th Finger, 
 Top cover distal.004 parent: HANDLE 4th Finger
 Top cover distal.004 mesh: Top cover distal
-Top cover distal.004 materials: PLA Black, 
+Top cover distal.004 materials: PLA White, 
 Top cover distal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
@@ -1514,6 +1635,8 @@ Top cover distal.004 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Elastic terminator.004
   #6 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.004
+  #7 Name: Boolean.LablePCBLines, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL PCB lines.004
 
 Name: Top cover pad distal.001
 Top cover pad distal.001 Type: MESH
@@ -1525,13 +1648,78 @@ Top cover pad distal.001 parent: HANDLE 1st Finger
 Top cover pad distal.001 mesh: Top cover pad distal
 Top cover pad distal.001 materials: NF Black, 
 Top cover pad distal.001 modifiers: 
-  #1 Name: Mirror, Type: MIRROR
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 1st Finger
         Merge: True, Merge Limit: 0.10000000149011612 mm
         Clipping: True
         Vertex group mirroring: True
-  #2 Name: Subsurf, Type: SUBSURF
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Top cover pad distal.002
+Top cover pad distal.002 Type: MESH
+Top cover pad distal.002 transform: X0.0 Y0.0 Z0.0
+Top cover pad distal.002 rotation: X0.0 Y0.0 Z0.0
+Top cover pad distal.002 scale: X1.0 Y1.0 Z1.0
+Top cover pad distal.002 groups: 1st Finger, 
+Top cover pad distal.002 parent: HANDLE 2nd Finger
+Top cover pad distal.002 mesh: Top cover pad distal
+Top cover pad distal.002 materials: NF Black, 
+Top cover pad distal.002 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Top cover pad distal.003
+Top cover pad distal.003 Type: MESH
+Top cover pad distal.003 transform: X0.0 Y0.0 Z0.0
+Top cover pad distal.003 rotation: X0.0 Y0.0 Z0.0
+Top cover pad distal.003 scale: X1.0 Y1.0 Z1.0
+Top cover pad distal.003 groups: 1st Finger, 
+Top cover pad distal.003 parent: HANDLE 3rd Finger
+Top cover pad distal.003 mesh: Top cover pad distal
+Top cover pad distal.003 materials: NF Black, 
+Top cover pad distal.003 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Top cover pad distal.004
+Top cover pad distal.004 Type: MESH
+Top cover pad distal.004 transform: X0.0 Y0.0 Z0.0
+Top cover pad distal.004 rotation: X0.0 Y0.0 Z0.0
+Top cover pad distal.004 scale: X1.0 Y1.0 Z1.0
+Top cover pad distal.004 groups: 1st Finger, 
+Top cover pad distal.004 parent: HANDLE 4th Finger
+Top cover pad distal.004 mesh: Top cover pad distal
+Top cover pad distal.004 materials: NF Black, 
+Top cover pad distal.004 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Top cover pad proximal.001
@@ -1621,7 +1809,7 @@ Top cover proximal.001 scale: X1.0 Y1.0 Z1.0
 Top cover proximal.001 groups: 1st Finger, 
 Top cover proximal.001 parent: HANDLE 1st Finger
 Top cover proximal.001 mesh: Top cover proximal
-Top cover proximal.001 materials: PLA Black, 
+Top cover proximal.001 materials: PLA White, Lego, 
 Top cover proximal.001 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Bevel, Type: BEVEL
@@ -1639,6 +1827,8 @@ Top cover proximal.001 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Proximal elastic channel.001
   #7 Name: Boolean.ProximalInner, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal.001
+  #8 Name: Boolean.LabelPCBLines, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL PCB lines.001
 
 Name: Top cover proximal.002
 Top cover proximal.002 Type: MESH
@@ -1648,7 +1838,7 @@ Top cover proximal.002 scale: X1.0 Y1.0 Z1.0
 Top cover proximal.002 groups: 2nd Finger, 
 Top cover proximal.002 parent: HANDLE 2nd Finger
 Top cover proximal.002 mesh: Top cover proximal
-Top cover proximal.002 materials: PLA Black, 
+Top cover proximal.002 materials: PLA White, Lego, 
 Top cover proximal.002 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Bevel, Type: BEVEL
@@ -1666,6 +1856,8 @@ Top cover proximal.002 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Proximal elastic channel.002
   #7 Name: Boolean.InnerProximal, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal.002
+  #8 Name: Boolean.LabelPCBLines, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL PCB lines.002
 
 Name: Top cover proximal.003
 Top cover proximal.003 Type: MESH
@@ -1675,7 +1867,7 @@ Top cover proximal.003 scale: X1.0 Y1.0 Z1.0
 Top cover proximal.003 groups: 3rd Finger, 
 Top cover proximal.003 parent: HANDLE 3rd Finger
 Top cover proximal.003 mesh: Top cover proximal
-Top cover proximal.003 materials: PLA Black, 
+Top cover proximal.003 materials: PLA White, Lego, 
 Top cover proximal.003 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Bevel, Type: BEVEL
@@ -1693,6 +1885,8 @@ Top cover proximal.003 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Proximal elastic channel.003
   #7 Name: Boolean.InnerProximal, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal.003
+  #8 Name: Boolean.LablePCBLines, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL PCB lines.003
 
 Name: Top cover proximal.004
 Top cover proximal.004 Type: MESH
@@ -1702,7 +1896,7 @@ Top cover proximal.004 scale: X1.0 Y1.0 Z1.0
 Top cover proximal.004 groups: 4th Finger, 
 Top cover proximal.004 parent: HANDLE 4th Finger
 Top cover proximal.004 mesh: Top cover proximal
-Top cover proximal.004 materials: PLA Black, 
+Top cover proximal.004 materials: PLA White, Lego, 
 Top cover proximal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Bevel, Type: BEVEL
@@ -1720,6 +1914,191 @@ Top cover proximal.004 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Proximal elastic channel
   #7 Name: Boolean.ProximalInner, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal.004
+  #8 Name: Boolean.LabelPCBLines, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL PCB lines.004
+
+Name: Top cover target distal.001
+Top cover target distal.001 Type: MESH
+Top cover target distal.001 transform: X0.0 Y0.0 Z0.0
+Top cover target distal.001 rotation: X0.0 Y0.0 Z0.0
+Top cover target distal.001 scale: X1.0 Y1.0 Z1.0
+Top cover target distal.001 groups: 1st Finger, 
+Top cover target distal.001 parent: HANDLE 1st Finger
+Top cover target distal.001 mesh: Top cover distal
+Top cover target distal.001 materials: PLA White, 
+Top cover target distal.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #5 Name: Boolean.M2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.001
+  #6 Name: Boolean.ElasticTerminator, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Elastic terminator.001
+
+Name: Top cover target distal.002
+Top cover target distal.002 Type: MESH
+Top cover target distal.002 transform: X0.0 Y0.0 Z0.0
+Top cover target distal.002 rotation: X0.0 Y0.0 Z0.0
+Top cover target distal.002 scale: X1.0 Y1.0 Z1.0
+Top cover target distal.002 groups: 2nd Finger, 
+Top cover target distal.002 parent: HANDLE 2nd Finger
+Top cover target distal.002 mesh: Top cover distal
+Top cover target distal.002 materials: PLA White, 
+Top cover target distal.002 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 2nd Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Top cover target distal.003
+Top cover target distal.003 Type: MESH
+Top cover target distal.003 transform: X0.0 Y0.0 Z0.0
+Top cover target distal.003 rotation: X0.0 Y0.0 Z0.0
+Top cover target distal.003 scale: X1.0 Y1.0 Z1.0
+Top cover target distal.003 groups: 3rd Finger, 
+Top cover target distal.003 parent: HANDLE 3rd Finger
+Top cover target distal.003 mesh: Top cover distal
+Top cover target distal.003 materials: PLA White, 
+Top cover target distal.003 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 3rd Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Top cover target distal.004
+Top cover target distal.004 Type: MESH
+Top cover target distal.004 transform: X0.0 Y0.0 Z0.0
+Top cover target distal.004 rotation: X0.0 Y0.0 Z0.0
+Top cover target distal.004 scale: X1.0 Y1.0 Z1.0
+Top cover target distal.004 groups: 4th Finger, 
+Top cover target distal.004 parent: HANDLE 4th Finger
+Top cover target distal.004 mesh: Top cover distal
+Top cover target distal.004 materials: PLA White, 
+Top cover target distal.004 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 4th Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #5 Name: Boolean.ElasticTerminator, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Elastic terminator.004
+  #6 Name: Boolean.M2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.004
+
+Name: Top cover target proximal.001
+Top cover target proximal.001 Type: MESH
+Top cover target proximal.001 transform: X0.0 Y0.0 Z0.0
+Top cover target proximal.001 rotation: X0.0 Y0.0 Z0.0
+Top cover target proximal.001 scale: X1.0 Y1.0 Z1.0
+Top cover target proximal.001 groups: 1st Finger, 
+Top cover target proximal.001 parent: HANDLE 1st Finger
+Top cover target proximal.001 mesh: Top cover proximal
+Top cover target proximal.001 materials: PLA White, Lego, 
+Top cover target proximal.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Top cover target proximal.002
+Top cover target proximal.002 Type: MESH
+Top cover target proximal.002 transform: X0.0 Y0.0 Z0.0
+Top cover target proximal.002 rotation: X0.0 Y0.0 Z0.0
+Top cover target proximal.002 scale: X1.0 Y1.0 Z1.0
+Top cover target proximal.002 groups: 2nd Finger, 
+Top cover target proximal.002 parent: HANDLE 2nd Finger
+Top cover target proximal.002 mesh: Top cover proximal
+Top cover target proximal.002 materials: PLA White, Lego, 
+Top cover target proximal.002 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Bevel, Type: BEVEL
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 2nd Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Top cover target proximal.003
+Top cover target proximal.003 Type: MESH
+Top cover target proximal.003 transform: X0.0 Y0.0 Z0.0
+Top cover target proximal.003 rotation: X0.0 Y0.0 Z0.0
+Top cover target proximal.003 scale: X1.0 Y1.0 Z1.0
+Top cover target proximal.003 groups: 3rd Finger, 
+Top cover target proximal.003 parent: HANDLE 3rd Finger
+Top cover target proximal.003 mesh: Top cover proximal
+Top cover target proximal.003 materials: PLA White, Lego, 
+Top cover target proximal.003 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Bevel, Type: BEVEL
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 3rd Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Top cover target proximal.004
+Top cover target proximal.004 Type: MESH
+Top cover target proximal.004 transform: X0.0 Y0.0 Z0.0
+Top cover target proximal.004 rotation: X0.0 Y0.0 Z0.0
+Top cover target proximal.004 scale: X1.0 Y1.0 Z1.0
+Top cover target proximal.004 groups: 4th Finger, 
+Top cover target proximal.004 parent: HANDLE 4th Finger
+Top cover target proximal.004 mesh: Top cover proximal
+Top cover target proximal.004 materials: PLA White, Lego, 
+Top cover target proximal.004 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Bevel, Type: BEVEL
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 4th Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #5 Name: Boolean.M2, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.004
+  #6 Name: Boolean.ProximalElasticChannel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Proximal elastic channel
+  #7 Name: Boolean.ProximalInner, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Inner proximal.004
+  #8 Name: Boolean, Type: BOOLEAN
+        Operation: INTERSECT, Object: None
 
 Name: Urethane cover distal.001
 Urethane cover distal.001 Type: MESH
