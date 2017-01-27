@@ -340,6 +340,19 @@ BOOLEAN MOULD 4th Inner distal modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #3 Name: Solidify, Type: SOLIDIFY
 
+Name: BOOLEAN MOULD Location feature
+BOOLEAN MOULD Location feature Type: MESH
+BOOLEAN MOULD Location feature transform: X-81.05793762207031 Y0.12131214141845703 Z-10.250000953674316
+BOOLEAN MOULD Location feature rotation: X0.0 Y0.0 Z0.0
+BOOLEAN MOULD Location feature scale: X1.0 Y1.0 Z1.0
+BOOLEAN MOULD Location feature groups: None
+BOOLEAN MOULD Location feature parent: MOULD Location feature
+BOOLEAN MOULD Location feature mesh: MOULD Location feature
+BOOLEAN MOULD Location feature materials: Material, 
+BOOLEAN MOULD Location feature modifiers: 
+  #1 Name: Displace, Type: DISPLACE
+  #2 Name: Solidify, Type: SOLIDIFY
+
 Name: BOOLEAN MOULD Risers
 BOOLEAN MOULD Risers Type: MESH
 BOOLEAN MOULD Risers transform: X51.654762268066406 Y51.654762268066406 Z0.6500009298324585
@@ -802,7 +815,7 @@ HANDLE 4th Finger groups: 4th Finger,
 
 Name: HANDLE Distal Joint.001
 HANDLE Distal Joint.001 Type: MESH
-HANDLE Distal Joint.001 transform: X0.0 Y45.0 Z0.0
+HANDLE Distal Joint.001 transform: X0.0 Y44.999996185302734 Z0.0
 HANDLE Distal Joint.001 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.001 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.001 groups: 1st Finger, 
@@ -909,6 +922,116 @@ HANDLE Thickness.004 mesh: Plane.001
 HANDLE Thickness.004 materials: None
 HANDLE Thickness.004 modifiers: None
 
+Name: ID.000
+ID.000 Type: MESH
+ID.000 transform: X12.0 Y50.0 Z0.5626349449157715
+ID.000 rotation: X0.0 Y-0.0 Z3.1415929794311523
+ID.000 scale: X1.0 Y1.0 Z1.0
+ID.000 groups: None
+ID.000 parent: MOULD Identifiers
+ID.000 mesh: MOULD Identifier
+ID.000 materials: None
+ID.000 modifiers: 
+  #1 Name: Array, Type: ARRAY
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: ID.001
+  #3 Name: Boolean.003, Type: BOOLEAN
+        Operation: UNION, Object: ID.002
+  #4 Name: Boolean.002, Type: BOOLEAN
+        Operation: UNION, Object: ID.003
+  #5 Name: Boolean.001, Type: BOOLEAN
+        Operation: UNION, Object: ID.004
+  #6 Name: Boolean.004, Type: BOOLEAN
+        Operation: UNION, Object: ID.005
+  #7 Name: Boolean.006, Type: BOOLEAN
+        Operation: UNION, Object: ID.006
+  #8 Name: Boolean.005, Type: BOOLEAN
+        Operation: UNION, Object: ID.007
+
+Name: ID.001
+ID.001 Type: MESH
+ID.001 transform: X43.84062194824219 Y26.870058059692383 Z0.5626349449157715
+ID.001 rotation: X0.0 Y0.0 Z2.3561947345733643
+ID.001 scale: X1.0 Y1.0 Z1.0
+ID.001 groups: None
+ID.001 parent: MOULD Identifiers
+ID.001 mesh: MOULD Identifier
+ID.001 materials: None
+ID.001 modifiers: 
+  #1 Name: Array, Type: ARRAY
+
+Name: ID.002
+ID.002 Type: MESH
+ID.002 transform: X50.0 Y-11.999998092651367 Z0.5626349449157715
+ID.002 rotation: X0.0 Y-0.0 Z1.5707966089248657
+ID.002 scale: X1.0 Y1.0 Z1.0
+ID.002 groups: None
+ID.002 parent: MOULD Identifiers
+ID.002 mesh: MOULD Identifier
+ID.002 materials: None
+ID.002 modifiers: 
+  #1 Name: Array, Type: ARRAY
+
+Name: ID.003
+ID.003 Type: MESH
+ID.003 transform: X26.870059967041016 Y-43.84061813354492 Z0.5626349449157715
+ID.003 rotation: X0.0 Y-0.0 Z0.7853984236717224
+ID.003 scale: X1.0 Y1.0 Z1.0
+ID.003 groups: None
+ID.003 parent: MOULD Identifiers
+ID.003 mesh: MOULD Identifier
+ID.003 materials: None
+ID.003 modifiers: 
+  #1 Name: Array, Type: ARRAY
+
+Name: ID.004
+ID.004 Type: MESH
+ID.004 transform: X-11.999996185302734 Y-50.0 Z0.5626349449157715
+ID.004 rotation: X0.0 Y-0.0 Z2.682209014892578e-07
+ID.004 scale: X1.0 Y1.0 Z1.0
+ID.004 groups: None
+ID.004 parent: MOULD Identifiers
+ID.004 mesh: MOULD Identifier
+ID.004 materials: None
+ID.004 modifiers: 
+  #1 Name: Array, Type: ARRAY
+
+Name: ID.005
+ID.005 Type: MESH
+ID.005 transform: X-43.84061813354492 Y-26.870059967041016 Z0.5626349449157715
+ID.005 rotation: X0.0 Y-0.0 Z-0.7853978872299194
+ID.005 scale: X1.0 Y1.0 Z1.0
+ID.005 groups: None
+ID.005 parent: MOULD Identifiers
+ID.005 mesh: MOULD Identifier
+ID.005 materials: None
+ID.005 modifiers: 
+  #1 Name: Array, Type: ARRAY
+
+Name: ID.006
+ID.006 Type: MESH
+ID.006 transform: X-43.872840881347656 Y11.999996185302734 Z0.5626349449157715
+ID.006 rotation: X0.0 Y-0.0 Z-1.570796012878418
+ID.006 scale: X1.0 Y1.0 Z1.0
+ID.006 groups: None
+ID.006 parent: MOULD Identifiers
+ID.006 mesh: MOULD Identifier
+ID.006 materials: None
+ID.006 modifiers: 
+  #1 Name: Array, Type: ARRAY
+
+Name: ID.007
+ID.007 Type: MESH
+ID.007 transform: X-26.870059967041016 Y43.84061813354492 Z0.5626349449157715
+ID.007 rotation: X0.0 Y-0.0 Z-2.356194257736206
+ID.007 scale: X1.0 Y1.0 Z1.0
+ID.007 groups: None
+ID.007 parent: MOULD Identifiers
+ID.007 mesh: MOULD Identifier
+ID.007 materials: None
+ID.007 modifiers: 
+  #1 Name: Array, Type: ARRAY
+
 Name: Inner distal.001
 Inner distal.001 Type: MESH
 Inner distal.001 transform: X0.0 Y0.0 Z0.0
@@ -936,6 +1059,8 @@ Inner distal.001 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Ligament.001
   #8 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels distal.001
+  #9 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.001
 
 Name: Inner distal.002
 Inner distal.002 Type: MESH
@@ -964,6 +1089,8 @@ Inner distal.002 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Ligament.002
   #8 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels distal.002
+  #9 Name: Boolean.ID, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.002
 
 Name: Inner distal.003
 Inner distal.003 Type: MESH
@@ -992,6 +1119,8 @@ Inner distal.003 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Ligament.003
   #8 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels distal.003
+  #9 Name: Boolean.ID, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.003
 
 Name: Inner distal.004
 Inner distal.004 Type: MESH
@@ -1020,6 +1149,8 @@ Inner distal.004 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Ligament.004
   #8 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels distal.004
+  #9 Name: Boolean.ID, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.004
 
 Name: BOOLEAN MOULD 2nd Inner distal 
 BOOLEAN MOULD 2nd Inner distal  Type: MESH
@@ -1119,6 +1250,8 @@ Inner proximal.001 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Ligament.001
   #7 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels proximal.001
+  #8 Name: Boolean.LabelIdentifier, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.001
 
 Name: Inner proximal.002
 Inner proximal.002 Type: MESH
@@ -1146,6 +1279,8 @@ Inner proximal.002 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Ligament.002
   #7 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels proximal.002
+  #8 Name: Boolean.ID, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.002
 
 Name: Inner proximal.003
 Inner proximal.003 Type: MESH
@@ -1173,6 +1308,8 @@ Inner proximal.003 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Ligament.003
   #7 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels proximal.003
+  #8 Name: Boolean.ID, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.003
 
 Name: Inner proximal.004
 Inner proximal.004 Type: MESH
@@ -1200,6 +1337,340 @@ Inner proximal.004 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Ligament.004
   #7 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels proximal.004
+  #8 Name: Boolean.ID, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.004
+
+Name: LABEL Identifier Inner distal.001
+LABEL Identifier Inner distal.001 Type: MESH
+LABEL Identifier Inner distal.001 transform: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner distal.001 rotation: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner distal.001 scale: X1.0 Y1.0 Z1.0
+LABEL Identifier Inner distal.001 groups: None
+LABEL Identifier Inner distal.001 parent: HANDLE 1st Finger
+LABEL Identifier Inner distal.001 mesh: LABEL Identifier Inner
+LABEL Identifier Inner distal.001 materials: BOOL Dif, 
+LABEL Identifier Inner distal.001 modifiers: 
+  #1 Name: Array, Type: ARRAY
+  #2 Name: Hook, Type: HOOK
+  #3 Name: Hook.001, Type: HOOK
+
+Name: LABEL Identifier Inner distal.002
+LABEL Identifier Inner distal.002 Type: MESH
+LABEL Identifier Inner distal.002 transform: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner distal.002 rotation: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner distal.002 scale: X1.0 Y1.0 Z1.0
+LABEL Identifier Inner distal.002 groups: None
+LABEL Identifier Inner distal.002 parent: HANDLE 2nd Finger
+LABEL Identifier Inner distal.002 mesh: LABEL Identifier Inner
+LABEL Identifier Inner distal.002 materials: BOOL Dif, 
+LABEL Identifier Inner distal.002 modifiers: 
+  #1 Name: Array, Type: ARRAY
+  #2 Name: Hook, Type: HOOK
+  #3 Name: Hook.001, Type: HOOK
+
+Name: LABEL Identifier Inner distal.003
+LABEL Identifier Inner distal.003 Type: MESH
+LABEL Identifier Inner distal.003 transform: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner distal.003 rotation: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner distal.003 scale: X1.0 Y1.0 Z1.0
+LABEL Identifier Inner distal.003 groups: None
+LABEL Identifier Inner distal.003 parent: HANDLE 3rd Finger
+LABEL Identifier Inner distal.003 mesh: LABEL Identifier Inner
+LABEL Identifier Inner distal.003 materials: BOOL Dif, 
+LABEL Identifier Inner distal.003 modifiers: 
+  #1 Name: Array, Type: ARRAY
+  #2 Name: Hook, Type: HOOK
+  #3 Name: Hook.001, Type: HOOK
+
+Name: LABEL Identifier Inner distal.004
+LABEL Identifier Inner distal.004 Type: MESH
+LABEL Identifier Inner distal.004 transform: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner distal.004 rotation: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner distal.004 scale: X1.0 Y1.0 Z1.0
+LABEL Identifier Inner distal.004 groups: None
+LABEL Identifier Inner distal.004 parent: HANDLE 4th Finger
+LABEL Identifier Inner distal.004 mesh: LABEL Identifier Inner
+LABEL Identifier Inner distal.004 materials: BOOL Dif, 
+LABEL Identifier Inner distal.004 modifiers: 
+  #1 Name: Array, Type: ARRAY
+  #2 Name: Hook, Type: HOOK
+  #3 Name: Hook.001, Type: HOOK
+
+Name: LABEL Identifier Inner proximal.001
+LABEL Identifier Inner proximal.001 Type: MESH
+LABEL Identifier Inner proximal.001 transform: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner proximal.001 rotation: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner proximal.001 scale: X1.0 Y1.0 Z1.0
+LABEL Identifier Inner proximal.001 groups: None
+LABEL Identifier Inner proximal.001 parent: HANDLE 1st Finger
+LABEL Identifier Inner proximal.001 mesh: LABEL Identifier Inner
+LABEL Identifier Inner proximal.001 materials: BOOL Dif, 
+LABEL Identifier Inner proximal.001 modifiers: 
+  #1 Name: Array, Type: ARRAY
+  #2 Name: Hook, Type: HOOK
+
+Name: LABEL Identifier Inner proximal.002
+LABEL Identifier Inner proximal.002 Type: MESH
+LABEL Identifier Inner proximal.002 transform: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner proximal.002 rotation: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner proximal.002 scale: X1.0 Y1.0 Z1.0
+LABEL Identifier Inner proximal.002 groups: None
+LABEL Identifier Inner proximal.002 parent: HANDLE 2nd Finger
+LABEL Identifier Inner proximal.002 mesh: LABEL Identifier Inner
+LABEL Identifier Inner proximal.002 materials: BOOL Dif, 
+LABEL Identifier Inner proximal.002 modifiers: 
+  #1 Name: Array, Type: ARRAY
+  #2 Name: Hook, Type: HOOK
+
+Name: LABEL Identifier Inner proximal.003
+LABEL Identifier Inner proximal.003 Type: MESH
+LABEL Identifier Inner proximal.003 transform: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner proximal.003 rotation: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner proximal.003 scale: X1.0 Y1.0 Z1.0
+LABEL Identifier Inner proximal.003 groups: None
+LABEL Identifier Inner proximal.003 parent: HANDLE 3rd Finger
+LABEL Identifier Inner proximal.003 mesh: LABEL Identifier Inner
+LABEL Identifier Inner proximal.003 materials: BOOL Dif, 
+LABEL Identifier Inner proximal.003 modifiers: 
+  #1 Name: Array, Type: ARRAY
+  #2 Name: Hook, Type: HOOK
+
+Name: LABEL Identifier Inner proximal.004
+LABEL Identifier Inner proximal.004 Type: MESH
+LABEL Identifier Inner proximal.004 transform: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner proximal.004 rotation: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner proximal.004 scale: X1.0 Y1.0 Z1.0
+LABEL Identifier Inner proximal.004 groups: None
+LABEL Identifier Inner proximal.004 parent: HANDLE 4th Finger
+LABEL Identifier Inner proximal.004 mesh: LABEL Identifier Inner
+LABEL Identifier Inner proximal.004 materials: BOOL Dif, 
+LABEL Identifier Inner proximal.004 modifiers: 
+  #1 Name: Array, Type: ARRAY
+  #2 Name: Hook, Type: HOOK
+
+Name: LABEL Identifier Top distal.001
+LABEL Identifier Top distal.001 Type: MESH
+LABEL Identifier Top distal.001 transform: X0.0 Y0.0 Z0.0
+LABEL Identifier Top distal.001 rotation: X0.0 Y0.0 Z0.0
+LABEL Identifier Top distal.001 scale: X1.0 Y1.0 Z1.0
+LABEL Identifier Top distal.001 groups: None
+LABEL Identifier Top distal.001 parent: HANDLE 1st Finger
+LABEL Identifier Top distal.001 mesh: LABEL Identifier top distal
+LABEL Identifier Top distal.001 materials: Material.001, 
+LABEL Identifier Top distal.001 modifiers: 
+  #1 Name: Array, Type: ARRAY
+  #2 Name: Hook, Type: HOOK
+  #3 Name: Hook.001, Type: HOOK
+
+Name: LABEL Identifier Top distal.002
+LABEL Identifier Top distal.002 Type: MESH
+LABEL Identifier Top distal.002 transform: X0.0 Y0.0 Z0.0
+LABEL Identifier Top distal.002 rotation: X0.0 Y0.0 Z0.0
+LABEL Identifier Top distal.002 scale: X1.0 Y1.0 Z1.0
+LABEL Identifier Top distal.002 groups: None
+LABEL Identifier Top distal.002 parent: HANDLE 2nd Finger
+LABEL Identifier Top distal.002 mesh: LABEL Identifier top distal
+LABEL Identifier Top distal.002 materials: Material.001, 
+LABEL Identifier Top distal.002 modifiers: 
+  #1 Name: Array, Type: ARRAY
+  #2 Name: Hook, Type: HOOK
+  #3 Name: Hook.001, Type: HOOK
+
+Name: LABEL Identifier Top distal.003
+LABEL Identifier Top distal.003 Type: MESH
+LABEL Identifier Top distal.003 transform: X0.0 Y0.0 Z0.0
+LABEL Identifier Top distal.003 rotation: X0.0 Y0.0 Z0.0
+LABEL Identifier Top distal.003 scale: X1.0 Y1.0 Z1.0
+LABEL Identifier Top distal.003 groups: None
+LABEL Identifier Top distal.003 parent: HANDLE 3rd Finger
+LABEL Identifier Top distal.003 mesh: LABEL Identifier top distal
+LABEL Identifier Top distal.003 materials: Material.001, 
+LABEL Identifier Top distal.003 modifiers: 
+  #1 Name: Array, Type: ARRAY
+  #2 Name: Hook, Type: HOOK
+  #3 Name: Hook.001, Type: HOOK
+
+Name: LABEL Identifier Top distal.004
+LABEL Identifier Top distal.004 Type: MESH
+LABEL Identifier Top distal.004 transform: X0.0 Y0.0 Z0.0
+LABEL Identifier Top distal.004 rotation: X0.0 Y0.0 Z0.0
+LABEL Identifier Top distal.004 scale: X1.0 Y1.0 Z1.0
+LABEL Identifier Top distal.004 groups: None
+LABEL Identifier Top distal.004 parent: HANDLE 4th Finger
+LABEL Identifier Top distal.004 mesh: LABEL Identifier top distal
+LABEL Identifier Top distal.004 materials: Material.001, 
+LABEL Identifier Top distal.004 modifiers: 
+  #1 Name: Array, Type: ARRAY
+  #2 Name: Hook, Type: HOOK
+  #3 Name: Hook.001, Type: HOOK
+
+Name: LABEL Identifier Top proximal.001
+LABEL Identifier Top proximal.001 Type: MESH
+LABEL Identifier Top proximal.001 transform: X0.0 Y0.0 Z0.0
+LABEL Identifier Top proximal.001 rotation: X0.0 Y0.0 Z0.0
+LABEL Identifier Top proximal.001 scale: X1.0 Y1.0 Z1.0
+LABEL Identifier Top proximal.001 groups: None
+LABEL Identifier Top proximal.001 parent: HANDLE 1st Finger
+LABEL Identifier Top proximal.001 mesh: LABEL Identifier top proximal
+LABEL Identifier Top proximal.001 materials: Material.001, 
+LABEL Identifier Top proximal.001 modifiers: 
+  #1 Name: Array, Type: ARRAY
+  #2 Name: Hook, Type: HOOK
+
+Name: LABEL Identifier Top proximal.002
+LABEL Identifier Top proximal.002 Type: MESH
+LABEL Identifier Top proximal.002 transform: X0.0 Y0.0 Z0.0
+LABEL Identifier Top proximal.002 rotation: X0.0 Y0.0 Z0.0
+LABEL Identifier Top proximal.002 scale: X1.0 Y1.0 Z1.0
+LABEL Identifier Top proximal.002 groups: None
+LABEL Identifier Top proximal.002 parent: HANDLE 2nd Finger
+LABEL Identifier Top proximal.002 mesh: LABEL Identifier top proximal
+LABEL Identifier Top proximal.002 materials: Material.001, 
+LABEL Identifier Top proximal.002 modifiers: 
+  #1 Name: Array, Type: ARRAY
+  #2 Name: Hook, Type: HOOK
+
+Name: LABEL Identifier Top proximal.003
+LABEL Identifier Top proximal.003 Type: MESH
+LABEL Identifier Top proximal.003 transform: X0.0 Y0.0 Z0.0
+LABEL Identifier Top proximal.003 rotation: X0.0 Y0.0 Z0.0
+LABEL Identifier Top proximal.003 scale: X1.0 Y1.0 Z1.0
+LABEL Identifier Top proximal.003 groups: None
+LABEL Identifier Top proximal.003 parent: HANDLE 3rd Finger
+LABEL Identifier Top proximal.003 mesh: LABEL Identifier top proximal
+LABEL Identifier Top proximal.003 materials: Material.001, 
+LABEL Identifier Top proximal.003 modifiers: 
+  #1 Name: Array, Type: ARRAY
+  #2 Name: Hook, Type: HOOK
+
+Name: LABEL Identifier Top proximal.004
+LABEL Identifier Top proximal.004 Type: MESH
+LABEL Identifier Top proximal.004 transform: X0.0 Y0.0 Z0.0
+LABEL Identifier Top proximal.004 rotation: X0.0 Y0.0 Z0.0
+LABEL Identifier Top proximal.004 scale: X1.0 Y1.0 Z1.0
+LABEL Identifier Top proximal.004 groups: None
+LABEL Identifier Top proximal.004 parent: HANDLE 4th Finger
+LABEL Identifier Top proximal.004 mesh: LABEL Identifier top proximal
+LABEL Identifier Top proximal.004 materials: Material.001, 
+LABEL Identifier Top proximal.004 modifiers: 
+  #1 Name: Array, Type: ARRAY
+  #2 Name: Hook, Type: HOOK
+
+Name: LABEL PCB lines.001
+LABEL PCB lines.001 Type: MESH
+LABEL PCB lines.001 transform: X0.0 Y0.0 Z0.0
+LABEL PCB lines.001 rotation: X0.0 Y0.0 Z0.0
+LABEL PCB lines.001 scale: X1.0 Y1.0 Z1.0
+LABEL PCB lines.001 groups: 1st Finger, 
+LABEL PCB lines.001 parent: HANDLE 1st Finger
+LABEL PCB lines.001 mesh: LABEL PCB lines
+LABEL PCB lines.001 materials: BOOL Dif, 
+LABEL PCB lines.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 2, Type: CATMULL_CLARK
+  #4 Name: Shrinkwrap, Type: SHRINKWRAP
+        Target: Top cover target proximal.001, Mode: PROJECT, Offset: 0.0 mm
+        Projecting in: X, 
+        Project in positive direction: True, Negative: True
+        Cull Faces: OFF
+        Subsurf level: 0
+        Auxiliary target: Top cover target distal.001
+  #5 Name: Solidify, Type: SOLIDIFY
+  #6 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+
+Name: LABEL PCB lines.002
+LABEL PCB lines.002 Type: MESH
+LABEL PCB lines.002 transform: X0.0 Y0.0 Z0.0
+LABEL PCB lines.002 rotation: X0.0 Y0.0 Z0.0
+LABEL PCB lines.002 scale: X1.0 Y1.0 Z1.0
+LABEL PCB lines.002 groups: 1st Finger, 
+LABEL PCB lines.002 parent: HANDLE 2nd Finger
+LABEL PCB lines.002 mesh: LABEL PCB lines
+LABEL PCB lines.002 materials: BOOL Dif, 
+LABEL PCB lines.002 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 2, Type: CATMULL_CLARK
+  #4 Name: Shrinkwrap, Type: SHRINKWRAP
+        Target: Top cover target proximal.002, Mode: PROJECT, Offset: 0.0 mm
+        Projecting in: None
+        Project in positive direction: True, Negative: True
+        Cull Faces: OFF
+        Subsurf level: 0
+        Auxiliary target: Top cover target distal.002
+  #5 Name: Solidify, Type: SOLIDIFY
+  #6 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+
+Name: LABEL PCB lines.003
+LABEL PCB lines.003 Type: MESH
+LABEL PCB lines.003 transform: X0.0 Y0.0 Z0.0
+LABEL PCB lines.003 rotation: X0.0 Y0.0 Z0.0
+LABEL PCB lines.003 scale: X1.0 Y1.0 Z1.0
+LABEL PCB lines.003 groups: 1st Finger, 
+LABEL PCB lines.003 parent: HANDLE 3rd Finger
+LABEL PCB lines.003 mesh: LABEL PCB lines
+LABEL PCB lines.003 materials: BOOL Dif, 
+LABEL PCB lines.003 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 2, Type: CATMULL_CLARK
+  #4 Name: Shrinkwrap, Type: SHRINKWRAP
+        Target: Top cover target proximal.003, Mode: PROJECT, Offset: 0.0 mm
+        Projecting in: X, 
+        Project in positive direction: True, Negative: True
+        Cull Faces: OFF
+        Subsurf level: 0
+        Auxiliary target: Top cover target distal.003
+  #5 Name: Solidify, Type: SOLIDIFY
+  #6 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+
+Name: LABEL PCB lines.004
+LABEL PCB lines.004 Type: MESH
+LABEL PCB lines.004 transform: X0.0 Y0.0 Z0.0
+LABEL PCB lines.004 rotation: X0.0 Y0.0 Z0.0
+LABEL PCB lines.004 scale: X1.0 Y1.0 Z1.0
+LABEL PCB lines.004 groups: 1st Finger, 
+LABEL PCB lines.004 parent: HANDLE 4th Finger
+LABEL PCB lines.004 mesh: LABEL PCB lines
+LABEL PCB lines.004 materials: BOOL Dif, 
+LABEL PCB lines.004 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 2, Type: CATMULL_CLARK
+  #4 Name: Shrinkwrap, Type: SHRINKWRAP
+        Target: Top cover target proximal.004, Mode: PROJECT, Offset: 0.0 mm
+        Projecting in: None
+        Project in positive direction: True, Negative: True
+        Cull Faces: OFF
+        Subsurf level: 0
+        Auxiliary target: Top cover target distal.004
+  #5 Name: Solidify, Type: SOLIDIFY
+  #6 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
 
 Name: Ligament.001
 Ligament.001 Type: MESH
@@ -1320,6 +1791,10 @@ MOULD Bottom modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN MOULD Runners
   #12 Name: Boolean.011, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN MOULD Risers
+  #13 Name: Boolean.012, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN MOULD Location feature
+  #14 Name: Boolean.013, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: ID.000
 
 Name: MOULD Bottom tray
 MOULD Bottom tray Type: MESH
@@ -1337,10 +1812,29 @@ MOULD Bottom tray modifiers:
         Operation: UNION, Object: BOOLEAN MOULD Wedges.001
   #4 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M3 bolt hole
+  #5 Name: Boolean.003, Type: BOOLEAN
+        Operation: UNION, Object: MOULD Location feature
+
+Name: MOULD Identifiers
+MOULD Identifiers Type: EMPTY
+MOULD Identifiers transform: X0.0 Y0.0 Z0.0
+MOULD Identifiers rotation: X0.0 Y0.0 Z0.0
+MOULD Identifiers scale: X1.0 Y1.0 Z1.0
+MOULD Identifiers groups: None
+
+Name: MOULD Location feature
+MOULD Location feature Type: MESH
+MOULD Location feature transform: X-81.05793762207031 Y0.12131214141845703 Z-10.250000953674316
+MOULD Location feature rotation: X0.0 Y0.0 Z0.0
+MOULD Location feature scale: X1.0 Y1.0 Z1.0
+MOULD Location feature groups: None
+MOULD Location feature mesh: MOULD Location feature
+MOULD Location feature materials: Material, 
+MOULD Location feature modifiers: None
 
 Name: MOULD Plunger
 MOULD Plunger Type: MESH
-MOULD Plunger transform: X0.0 Y0.0 Z-5.0
+MOULD Plunger transform: X0.0 Y0.0 Z-1.371211051940918
 MOULD Plunger rotation: X0.0 Y0.0 Z0.0
 MOULD Plunger scale: X1.0 Y1.0 Z1.0
 MOULD Plunger groups: None
@@ -1384,6 +1878,8 @@ MOULD Top modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Mould v2 hopper
   #11 Name: Boolean.010, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN MOULD Runners
+  #12 Name: Boolean.011, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN MOULD Location feature
 
 Name: MOULD Top tray
 MOULD Top tray Type: MESH
@@ -1402,6 +1898,8 @@ MOULD Top tray modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Mould v2 hopper
   #4 Name: Boolean.003, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M3 bolt hole
+  #5 Name: Boolean.004, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN MOULD Location feature
 
 Name: MOULD Top tray.001
 MOULD Top tray.001 Type: MESH
@@ -1423,7 +1921,7 @@ Top cover distal.001 scale: X1.0 Y1.0 Z1.0
 Top cover distal.001 groups: 1st Finger, 
 Top cover distal.001 parent: HANDLE 1st Finger
 Top cover distal.001 mesh: Top cover distal
-Top cover distal.001 materials: PLA Black, 
+Top cover distal.001 materials: PLA White, 
 Top cover distal.001 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
@@ -1439,6 +1937,10 @@ Top cover distal.001 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.001
   #6 Name: Boolean.ElasticTerminator, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Elastic terminator.001
+  #7 Name: Boolean.LabelPCBLines, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL PCB lines.001
+  #8 Name: Boolean.ID, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Top distal.001
 
 Name: Top cover distal.002
 Top cover distal.002 Type: MESH
@@ -1448,7 +1950,7 @@ Top cover distal.002 scale: X1.0 Y1.0 Z1.0
 Top cover distal.002 groups: 2nd Finger, 
 Top cover distal.002 parent: HANDLE 2nd Finger
 Top cover distal.002 mesh: Top cover distal
-Top cover distal.002 materials: PLA Black, 
+Top cover distal.002 materials: PLA White, 
 Top cover distal.002 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
@@ -1464,6 +1966,10 @@ Top cover distal.002 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.002
   #6 Name: Boolean.ElasticTerminator, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Elastic terminator.002
+  #7 Name: Boolean.LabelPCBLines, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL PCB lines.002
+  #8 Name: Boolean.ID, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Top distal.002
 
 Name: Top cover distal.003
 Top cover distal.003 Type: MESH
@@ -1473,7 +1979,7 @@ Top cover distal.003 scale: X1.0 Y1.0 Z1.0
 Top cover distal.003 groups: 3rd Finger, 
 Top cover distal.003 parent: HANDLE 3rd Finger
 Top cover distal.003 mesh: Top cover distal
-Top cover distal.003 materials: PLA Black, 
+Top cover distal.003 materials: PLA White, 
 Top cover distal.003 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
@@ -1489,6 +1995,10 @@ Top cover distal.003 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.003
   #6 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Elastic terminator.003
+  #7 Name: Boolean.LablePCBLines, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL PCB lines.003
+  #8 Name: Boolean.ID, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Top distal.003
 
 Name: Top cover distal.004
 Top cover distal.004 Type: MESH
@@ -1498,7 +2008,7 @@ Top cover distal.004 scale: X1.0 Y1.0 Z1.0
 Top cover distal.004 groups: 4th Finger, 
 Top cover distal.004 parent: HANDLE 4th Finger
 Top cover distal.004 mesh: Top cover distal
-Top cover distal.004 materials: PLA Black, 
+Top cover distal.004 materials: PLA White, 
 Top cover distal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
@@ -1514,6 +2024,100 @@ Top cover distal.004 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Elastic terminator.004
   #6 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.004
+  #7 Name: Boolean.LablePCBLines, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL PCB lines.004
+  #8 Name: Boolean.ID, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Top distal.004
+
+Name: Top cover pad distal.001
+Top cover pad distal.001 Type: MESH
+Top cover pad distal.001 transform: X0.0 Y0.0 Z0.0
+Top cover pad distal.001 rotation: X0.0 Y0.0 Z0.0
+Top cover pad distal.001 scale: X1.0 Y1.0 Z1.0
+Top cover pad distal.001 groups: 1st Finger, 
+Top cover pad distal.001 parent: HANDLE 1st Finger
+Top cover pad distal.001 mesh: Top cover pad distal
+Top cover pad distal.001 materials: NF Black, 
+Top cover pad distal.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #5 Name: Boolean.ID, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Top distal.001
+
+Name: Top cover pad distal.002
+Top cover pad distal.002 Type: MESH
+Top cover pad distal.002 transform: X0.0 Y0.0 Z0.0
+Top cover pad distal.002 rotation: X0.0 Y0.0 Z0.0
+Top cover pad distal.002 scale: X1.0 Y1.0 Z1.0
+Top cover pad distal.002 groups: 1st Finger, 
+Top cover pad distal.002 parent: HANDLE 2nd Finger
+Top cover pad distal.002 mesh: Top cover pad distal
+Top cover pad distal.002 materials: NF Black, 
+Top cover pad distal.002 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Top cover pad distal.003
+Top cover pad distal.003 Type: MESH
+Top cover pad distal.003 transform: X0.0 Y0.0 Z0.0
+Top cover pad distal.003 rotation: X0.0 Y0.0 Z0.0
+Top cover pad distal.003 scale: X1.0 Y1.0 Z1.0
+Top cover pad distal.003 groups: 1st Finger, 
+Top cover pad distal.003 parent: HANDLE 3rd Finger
+Top cover pad distal.003 mesh: Top cover pad distal
+Top cover pad distal.003 materials: NF Black, 
+Top cover pad distal.003 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #5 Name: Boolean.ID, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Top distal.003
+
+Name: Top cover pad distal.004
+Top cover pad distal.004 Type: MESH
+Top cover pad distal.004 transform: X0.0 Y0.0 Z0.0
+Top cover pad distal.004 rotation: X0.0 Y0.0 Z0.0
+Top cover pad distal.004 scale: X1.0 Y1.0 Z1.0
+Top cover pad distal.004 groups: 1st Finger, 
+Top cover pad distal.004 parent: HANDLE 4th Finger
+Top cover pad distal.004 mesh: Top cover pad distal
+Top cover pad distal.004 materials: NF Black, 
+Top cover pad distal.004 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #5 Name: Boolean.ID, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Top distal.004
 
 Name: Top cover pad proximal.001
 Top cover pad proximal.001 Type: MESH
@@ -1534,6 +2138,8 @@ Top cover pad proximal.001 modifiers:
         Vertex group mirroring: True
   #3 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+  #4 Name: Boolean.ID, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Top proximal.001
 
 Name: Top cover pad proximal.002
 Top cover pad proximal.002 Type: MESH
@@ -1574,6 +2180,8 @@ Top cover pad proximal.003 modifiers:
         Vertex group mirroring: True
   #3 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+  #4 Name: Boolean.ID, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Top proximal.003
 
 Name: Top cover pad proximal.004
 Top cover pad proximal.004 Type: MESH
@@ -1581,6 +2189,7 @@ Top cover pad proximal.004 transform: X0.0 Y0.0 Z0.0
 Top cover pad proximal.004 rotation: X0.0 Y-0.0 Z0.0
 Top cover pad proximal.004 scale: X1.0 Y1.0 Z1.0
 Top cover pad proximal.004 groups: 1st Finger, 
+Top cover pad proximal.004 parent: HANDLE 4th Finger
 Top cover pad proximal.004 mesh: Top cover pad proximal
 Top cover pad proximal.004 materials: NF Black, 
 Top cover pad proximal.004 modifiers: 
@@ -1593,26 +2202,8 @@ Top cover pad proximal.004 modifiers:
         Vertex group mirroring: True
   #3 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-
-Name: Top cover proximal.000
-Top cover proximal.000 Type: MESH
-Top cover proximal.000 transform: X0.0 Y0.0 Z0.0
-Top cover proximal.000 rotation: X0.0 Y0.0 Z0.0
-Top cover proximal.000 scale: X1.0 Y1.0 Z1.0
-Top cover proximal.000 groups: 1st Finger, 
-Top cover proximal.000 parent: HANDLE 1st Finger
-Top cover proximal.000 mesh: Top cover proximal.001
-Top cover proximal.000 materials: NF Black, 
-Top cover proximal.000 modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Mirror object: HANDLE 1st Finger
-        Merge: True, Merge Limit: 0.10000000149011612 mm
-        Clipping: True
-        Vertex group mirroring: True
-  #3 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
+  #4 Name: Boolean.ID, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Top proximal.004
 
 Name: Top cover proximal.001
 Top cover proximal.001 Type: MESH
@@ -1622,7 +2213,7 @@ Top cover proximal.001 scale: X1.0 Y1.0 Z1.0
 Top cover proximal.001 groups: 1st Finger, 
 Top cover proximal.001 parent: HANDLE 1st Finger
 Top cover proximal.001 mesh: Top cover proximal
-Top cover proximal.001 materials: PLA Black, 
+Top cover proximal.001 materials: PLA White, Lego, 
 Top cover proximal.001 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Bevel, Type: BEVEL
@@ -1636,10 +2227,12 @@ Top cover proximal.001 modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #5 Name: Boolean.M2, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.001
-  #6 Name: Boolean.ProximalElasticChannel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Proximal elastic channel.001
-  #7 Name: Boolean.ProximalInner, Type: BOOLEAN
+  #6 Name: Boolean.ProximalInner, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal.001
+  #7 Name: Boolean.LabelPCBLines, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL PCB lines.001
+  #8 Name: Boolean.ID, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Top proximal.001
 
 Name: Top cover proximal.002
 Top cover proximal.002 Type: MESH
@@ -1649,7 +2242,7 @@ Top cover proximal.002 scale: X1.0 Y1.0 Z1.0
 Top cover proximal.002 groups: 2nd Finger, 
 Top cover proximal.002 parent: HANDLE 2nd Finger
 Top cover proximal.002 mesh: Top cover proximal
-Top cover proximal.002 materials: PLA Black, 
+Top cover proximal.002 materials: PLA White, Lego, 
 Top cover proximal.002 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Bevel, Type: BEVEL
@@ -1667,6 +2260,10 @@ Top cover proximal.002 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Proximal elastic channel.002
   #7 Name: Boolean.InnerProximal, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal.002
+  #8 Name: Boolean.LabelPCBLines, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL PCB lines.002
+  #9 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Top proximal.002
 
 Name: Top cover proximal.003
 Top cover proximal.003 Type: MESH
@@ -1676,7 +2273,7 @@ Top cover proximal.003 scale: X1.0 Y1.0 Z1.0
 Top cover proximal.003 groups: 3rd Finger, 
 Top cover proximal.003 parent: HANDLE 3rd Finger
 Top cover proximal.003 mesh: Top cover proximal
-Top cover proximal.003 materials: PLA Black, 
+Top cover proximal.003 materials: PLA White, Lego, 
 Top cover proximal.003 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Bevel, Type: BEVEL
@@ -1694,6 +2291,10 @@ Top cover proximal.003 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Proximal elastic channel.003
   #7 Name: Boolean.InnerProximal, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal.003
+  #8 Name: Boolean.LablePCBLines, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL PCB lines.003
+  #9 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Top proximal.003
 
 Name: Top cover proximal.004
 Top cover proximal.004 Type: MESH
@@ -1703,7 +2304,7 @@ Top cover proximal.004 scale: X1.0 Y1.0 Z1.0
 Top cover proximal.004 groups: 4th Finger, 
 Top cover proximal.004 parent: HANDLE 4th Finger
 Top cover proximal.004 mesh: Top cover proximal
-Top cover proximal.004 materials: PLA Black, 
+Top cover proximal.004 materials: PLA White, Lego, 
 Top cover proximal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Bevel, Type: BEVEL
@@ -1721,6 +2322,193 @@ Top cover proximal.004 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Proximal elastic channel
   #7 Name: Boolean.ProximalInner, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal.004
+  #8 Name: Boolean.LabelPCBLines, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL PCB lines.004
+  #9 Name: Boolean.ID, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Top proximal.004
+
+Name: Top cover target distal.001
+Top cover target distal.001 Type: MESH
+Top cover target distal.001 transform: X0.0 Y0.0 Z0.0
+Top cover target distal.001 rotation: X0.0 Y0.0 Z0.0
+Top cover target distal.001 scale: X1.0 Y1.0 Z1.0
+Top cover target distal.001 groups: 1st Finger, 
+Top cover target distal.001 parent: HANDLE 1st Finger
+Top cover target distal.001 mesh: Top cover distal
+Top cover target distal.001 materials: PLA White, 
+Top cover target distal.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #5 Name: Boolean.M2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.001
+  #6 Name: Boolean.ElasticTerminator, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Elastic terminator.001
+
+Name: Top cover target distal.002
+Top cover target distal.002 Type: MESH
+Top cover target distal.002 transform: X0.0 Y0.0 Z0.0
+Top cover target distal.002 rotation: X0.0 Y0.0 Z0.0
+Top cover target distal.002 scale: X1.0 Y1.0 Z1.0
+Top cover target distal.002 groups: 2nd Finger, 
+Top cover target distal.002 parent: HANDLE 2nd Finger
+Top cover target distal.002 mesh: Top cover distal
+Top cover target distal.002 materials: PLA White, 
+Top cover target distal.002 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 2nd Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Top cover target distal.003
+Top cover target distal.003 Type: MESH
+Top cover target distal.003 transform: X0.0 Y0.0 Z0.0
+Top cover target distal.003 rotation: X0.0 Y0.0 Z0.0
+Top cover target distal.003 scale: X1.0 Y1.0 Z1.0
+Top cover target distal.003 groups: 3rd Finger, 
+Top cover target distal.003 parent: HANDLE 3rd Finger
+Top cover target distal.003 mesh: Top cover distal
+Top cover target distal.003 materials: PLA White, 
+Top cover target distal.003 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 3rd Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Top cover target distal.004
+Top cover target distal.004 Type: MESH
+Top cover target distal.004 transform: X0.0 Y0.0 Z0.0
+Top cover target distal.004 rotation: X0.0 Y0.0 Z0.0
+Top cover target distal.004 scale: X1.0 Y1.0 Z1.0
+Top cover target distal.004 groups: 4th Finger, 
+Top cover target distal.004 parent: HANDLE 4th Finger
+Top cover target distal.004 mesh: Top cover distal
+Top cover target distal.004 materials: PLA White, 
+Top cover target distal.004 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 4th Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #5 Name: Boolean.ElasticTerminator, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Elastic terminator.004
+  #6 Name: Boolean.M2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.004
+
+Name: Top cover target proximal.001
+Top cover target proximal.001 Type: MESH
+Top cover target proximal.001 transform: X0.0 Y0.0 Z0.0
+Top cover target proximal.001 rotation: X0.0 Y0.0 Z0.0
+Top cover target proximal.001 scale: X1.0 Y1.0 Z1.0
+Top cover target proximal.001 groups: 1st Finger, 
+Top cover target proximal.001 parent: HANDLE 1st Finger
+Top cover target proximal.001 mesh: Top cover proximal
+Top cover target proximal.001 materials: PLA White, Lego, 
+Top cover target proximal.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Top cover target proximal.002
+Top cover target proximal.002 Type: MESH
+Top cover target proximal.002 transform: X0.0 Y0.0 Z0.0
+Top cover target proximal.002 rotation: X0.0 Y0.0 Z0.0
+Top cover target proximal.002 scale: X1.0 Y1.0 Z1.0
+Top cover target proximal.002 groups: 2nd Finger, 
+Top cover target proximal.002 parent: HANDLE 2nd Finger
+Top cover target proximal.002 mesh: Top cover proximal
+Top cover target proximal.002 materials: PLA White, Lego, 
+Top cover target proximal.002 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Bevel, Type: BEVEL
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 2nd Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Top cover target proximal.003
+Top cover target proximal.003 Type: MESH
+Top cover target proximal.003 transform: X0.0 Y0.0 Z0.0
+Top cover target proximal.003 rotation: X0.0 Y0.0 Z0.0
+Top cover target proximal.003 scale: X1.0 Y1.0 Z1.0
+Top cover target proximal.003 groups: 3rd Finger, 
+Top cover target proximal.003 parent: HANDLE 3rd Finger
+Top cover target proximal.003 mesh: Top cover proximal
+Top cover target proximal.003 materials: PLA White, Lego, 
+Top cover target proximal.003 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Bevel, Type: BEVEL
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 3rd Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Top cover target proximal.004
+Top cover target proximal.004 Type: MESH
+Top cover target proximal.004 transform: X0.0 Y0.0 Z0.0
+Top cover target proximal.004 rotation: X0.0 Y0.0 Z0.0
+Top cover target proximal.004 scale: X1.0 Y1.0 Z1.0
+Top cover target proximal.004 groups: 4th Finger, 
+Top cover target proximal.004 parent: HANDLE 4th Finger
+Top cover target proximal.004 mesh: Top cover proximal
+Top cover target proximal.004 materials: PLA White, Lego, 
+Top cover target proximal.004 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Bevel, Type: BEVEL
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 4th Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #5 Name: Boolean.M2, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.004
+  #6 Name: Boolean.ProximalElasticChannel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Proximal elastic channel
+  #7 Name: Boolean.ProximalInner, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Inner proximal.004
+  #8 Name: Boolean, Type: BOOLEAN
+        Operation: INTERSECT, Object: None
 
 Name: Urethane cover distal.001
 Urethane cover distal.001 Type: MESH
