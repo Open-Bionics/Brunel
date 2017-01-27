@@ -1100,7 +1100,7 @@ Palm outer frame mesh: Outer palm frame
 Palm outer frame materials: PLA, 
 Palm outer frame modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
-        Levels: 4, Type: CATMULL_CLARK
+        Levels: 5, Type: CATMULL_CLARK
   #2 Name: Displace, Type: DISPLACE
   #3 Name: Boolean.OuterPalmFrameDistalHook, Type: BOOLEAN
         Operation: UNION, Object: Palm outer frame distal hook
