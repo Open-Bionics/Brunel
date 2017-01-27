@@ -511,8 +511,8 @@ BOOLEAN Palm outer frame for MOULD Top transform: X9.0 Y-48.89358901977539 Z-2.9
 BOOLEAN Palm outer frame for MOULD Top rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Palm outer frame for MOULD Top scale: X1.0 Y1.0 Z1.0
 BOOLEAN Palm outer frame for MOULD Top groups: None
-BOOLEAN Palm outer frame for MOULD Top mesh: BOOLEAN Palm outer frame for MOULD Top.002
-BOOLEAN Palm outer frame for MOULD Top materials: PLA, 
+BOOLEAN Palm outer frame for MOULD Top mesh: BOOLEAN Palm outer frame for MOULD Top
+BOOLEAN Palm outer frame for MOULD Top materials: PLA.005, 
 BOOLEAN Palm outer frame for MOULD Top modifiers: 
   #1 Name: Solidify.001, Type: SOLIDIFY
 
@@ -1224,9 +1224,38 @@ Palm outer frame transform: X9.0 Y-48.89358901977539 Z-2.9508914947509766
 Palm outer frame rotation: X0.0 Y0.0 Z0.0
 Palm outer frame scale: X1.0 Y1.0 Z1.0
 Palm outer frame groups: None
-Palm outer frame mesh: Outer palm frame
-Palm outer frame materials: PLA, 
+Palm outer frame mesh: Palm outer frame
+Palm outer frame materials: PLA.006, 
 Palm outer frame modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 5, Type: CATMULL_CLARK
+  #2 Name: Displace, Type: DISPLACE
+  #3 Name: Boolean.ThumbLigamentCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for outer palm
+  #4 Name: Boolean.ThumbSweptArea, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area
+  #5 Name: Boolean.OuterFrameM2BoltHole, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame M2 bolt hole
+
+Name: Palm outer frame distal hook
+Palm outer frame distal hook Type: MESH
+Palm outer frame distal hook transform: X9.009696006774902 Y-20.460037231445312 Z-11.283198356628418
+Palm outer frame distal hook rotation: X0.0 Y-0.0 Z3.1415929794311523
+Palm outer frame distal hook scale: X1.0 Y1.0 Z1.0
+Palm outer frame distal hook groups: None
+Palm outer frame distal hook mesh: Palm outer frame distal hook
+Palm outer frame distal hook materials: None
+Palm outer frame distal hook modifiers: None
+
+Name: Palm outer frame Thin wall
+Palm outer frame Thin wall Type: MESH
+Palm outer frame Thin wall transform: X9.0 Y-48.89358901977539 Z-2.9508914947509766
+Palm outer frame Thin wall rotation: X0.0 Y0.0 Z0.0
+Palm outer frame Thin wall scale: X1.0 Y1.0 Z1.0
+Palm outer frame Thin wall groups: None
+Palm outer frame Thin wall mesh: Outer palm frame Thin Wall
+Palm outer frame Thin wall materials: PLA, 
+Palm outer frame Thin wall modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Proximal Fillet, Type: BEVEL
   #3 Name: Solidify, Type: SOLIDIFY
@@ -1241,15 +1270,50 @@ Palm outer frame modifiers:
   #8 Name: Boolean.OuterFrameM2BoltHole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame M2 bolt hole
 
-Name: Palm outer frame distal hook
-Palm outer frame distal hook Type: MESH
-Palm outer frame distal hook transform: X9.009696006774902 Y-20.460037231445312 Z-11.283198356628418
-Palm outer frame distal hook rotation: X0.0 Y-0.0 Z3.1415929794311523
-Palm outer frame distal hook scale: X1.0 Y1.0 Z1.0
-Palm outer frame distal hook groups: None
-Palm outer frame distal hook mesh: Palm outer frame distal hook
-Palm outer frame distal hook materials: None
-Palm outer frame distal hook modifiers: None
+Name: Palm outer frame Unapplied
+Palm outer frame Unapplied Type: MESH
+Palm outer frame Unapplied transform: X9.0 Y-48.89358901977539 Z-2.9508914947509766
+Palm outer frame Unapplied rotation: X0.0 Y0.0 Z0.0
+Palm outer frame Unapplied scale: X1.0 Y1.0 Z1.0
+Palm outer frame Unapplied groups: None
+Palm outer frame Unapplied mesh: Palm outer frame Unapplied
+Palm outer frame Unapplied materials: PLA.007, 
+Palm outer frame Unapplied modifiers: 
+  #1 Name: Bevel.PalmarFillet, Type: BEVEL
+  #2 Name: Bevel.ExteriorPalmarFillet, Type: BEVEL
+  #3 Name: Bevel.ProximalFillet, Type: BEVEL
+  #4 Name: Bevel.ExteriorProximalFillet, Type: BEVEL
+  #5 Name: Bevel.LipFillet, Type: BEVEL
+  #6 Name: Bevel, Type: BEVEL
+  #7 Name: Shrinkwrap.SurfaceX, Type: SHRINKWRAP
+        Target: Palm outer skin target, Mode: PROJECT, Offset: 0.0 mm
+        Vertex group: Surface X
+        Projecting in: X, 
+        Project in positive direction: True, Negative: True
+        Cull Faces: OFF
+        Subsurf level: 0
+  #8 Name: Shrinkwrap.SurfaceY, Type: SHRINKWRAP
+        Target: Palm outer skin target, Mode: PROJECT, Offset: 0.0 mm
+        Vertex group: Surface Y
+        Projecting in: Y, 
+        Project in positive direction: True, Negative: True
+        Cull Faces: OFF
+        Subsurf level: 0
+  #9 Name: Shrinkwrap.SurfaceZ, Type: SHRINKWRAP
+        Target: Palm outer skin target, Mode: PROJECT, Offset: 0.0 mm
+        Vertex group: Surface Z
+        Projecting in: Z
+        Project in positive direction: True, Negative: True
+        Cull Faces: OFF
+        Subsurf level: 0
+  #10 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #11 Name: Boolean.ThumbLigamentCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for outer palm
+  #12 Name: Boolean.ThumbSweptArea, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area for Palm outer frame
+  #13 Name: Boolean.OuterFrameM2BoltHole, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame M2 bolt hole
 
 Name: Palm outer skin
 Palm outer skin Type: MESH
@@ -1268,6 +1332,18 @@ Palm outer skin modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area
   #4 Name: Boolean.ThumbLigamentCoverForOuterPalm, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for outer palm
+
+Name: Palm outer skin target
+Palm outer skin target Type: MESH
+Palm outer skin target transform: X10.321754455566406 Y-16.049638748168945 Z-22.01079750061035
+Palm outer skin target rotation: X0.0 Y0.0 Z0.0
+Palm outer skin target scale: X1.0 Y1.0 Z1.0
+Palm outer skin target groups: None
+Palm outer skin target mesh: Palm outer skin target
+Palm outer skin target materials: Urethane.001, 
+Palm outer skin target modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: Palm Simple
 Palm Simple Type: MESH
