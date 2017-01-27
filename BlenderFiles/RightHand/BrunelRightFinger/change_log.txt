@@ -922,6 +922,116 @@ HANDLE Thickness.004 mesh: Plane.001
 HANDLE Thickness.004 materials: None
 HANDLE Thickness.004 modifiers: None
 
+Name: ID.000
+ID.000 Type: MESH
+ID.000 transform: X12.0 Y50.0 Z0.5626349449157715
+ID.000 rotation: X0.0 Y-0.0 Z3.1415929794311523
+ID.000 scale: X1.0 Y1.0 Z1.0
+ID.000 groups: None
+ID.000 parent: MOULD Identifiers
+ID.000 mesh: MOULD Identifier
+ID.000 materials: None
+ID.000 modifiers: 
+  #1 Name: Array, Type: ARRAY
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: ID.001
+  #3 Name: Boolean.003, Type: BOOLEAN
+        Operation: UNION, Object: ID.002
+  #4 Name: Boolean.002, Type: BOOLEAN
+        Operation: UNION, Object: ID.003
+  #5 Name: Boolean.001, Type: BOOLEAN
+        Operation: UNION, Object: ID.004
+  #6 Name: Boolean.004, Type: BOOLEAN
+        Operation: UNION, Object: ID.005
+  #7 Name: Boolean.006, Type: BOOLEAN
+        Operation: UNION, Object: ID.006
+  #8 Name: Boolean.005, Type: BOOLEAN
+        Operation: UNION, Object: ID.007
+
+Name: ID.001
+ID.001 Type: MESH
+ID.001 transform: X43.84062194824219 Y26.870058059692383 Z0.5626349449157715
+ID.001 rotation: X0.0 Y0.0 Z2.3561947345733643
+ID.001 scale: X1.0 Y1.0 Z1.0
+ID.001 groups: None
+ID.001 parent: MOULD Identifiers
+ID.001 mesh: MOULD Identifier
+ID.001 materials: None
+ID.001 modifiers: 
+  #1 Name: Array, Type: ARRAY
+
+Name: ID.002
+ID.002 Type: MESH
+ID.002 transform: X50.0 Y-11.999998092651367 Z0.5626349449157715
+ID.002 rotation: X0.0 Y-0.0 Z1.5707966089248657
+ID.002 scale: X1.0 Y1.0 Z1.0
+ID.002 groups: None
+ID.002 parent: MOULD Identifiers
+ID.002 mesh: MOULD Identifier
+ID.002 materials: None
+ID.002 modifiers: 
+  #1 Name: Array, Type: ARRAY
+
+Name: ID.003
+ID.003 Type: MESH
+ID.003 transform: X26.870059967041016 Y-43.84061813354492 Z0.5626349449157715
+ID.003 rotation: X0.0 Y-0.0 Z0.7853984236717224
+ID.003 scale: X1.0 Y1.0 Z1.0
+ID.003 groups: None
+ID.003 parent: MOULD Identifiers
+ID.003 mesh: MOULD Identifier
+ID.003 materials: None
+ID.003 modifiers: 
+  #1 Name: Array, Type: ARRAY
+
+Name: ID.004
+ID.004 Type: MESH
+ID.004 transform: X-11.999996185302734 Y-50.0 Z0.5626349449157715
+ID.004 rotation: X0.0 Y-0.0 Z2.682209014892578e-07
+ID.004 scale: X1.0 Y1.0 Z1.0
+ID.004 groups: None
+ID.004 parent: MOULD Identifiers
+ID.004 mesh: MOULD Identifier
+ID.004 materials: None
+ID.004 modifiers: 
+  #1 Name: Array, Type: ARRAY
+
+Name: ID.005
+ID.005 Type: MESH
+ID.005 transform: X-43.84061813354492 Y-26.870059967041016 Z0.5626349449157715
+ID.005 rotation: X0.0 Y-0.0 Z-0.7853978872299194
+ID.005 scale: X1.0 Y1.0 Z1.0
+ID.005 groups: None
+ID.005 parent: MOULD Identifiers
+ID.005 mesh: MOULD Identifier
+ID.005 materials: None
+ID.005 modifiers: 
+  #1 Name: Array, Type: ARRAY
+
+Name: ID.006
+ID.006 Type: MESH
+ID.006 transform: X-43.872840881347656 Y11.999996185302734 Z0.5626349449157715
+ID.006 rotation: X0.0 Y-0.0 Z-1.570796012878418
+ID.006 scale: X1.0 Y1.0 Z1.0
+ID.006 groups: None
+ID.006 parent: MOULD Identifiers
+ID.006 mesh: MOULD Identifier
+ID.006 materials: None
+ID.006 modifiers: 
+  #1 Name: Array, Type: ARRAY
+
+Name: ID.007
+ID.007 Type: MESH
+ID.007 transform: X-26.870059967041016 Y43.84061813354492 Z0.5626349449157715
+ID.007 rotation: X0.0 Y-0.0 Z-2.356194257736206
+ID.007 scale: X1.0 Y1.0 Z1.0
+ID.007 groups: None
+ID.007 parent: MOULD Identifiers
+ID.007 mesh: MOULD Identifier
+ID.007 materials: None
+ID.007 modifiers: 
+  #1 Name: Array, Type: ARRAY
+
 Name: Inner distal.001
 Inner distal.001 Type: MESH
 Inner distal.001 transform: X0.0 Y0.0 Z0.0
@@ -1683,6 +1793,8 @@ MOULD Bottom modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN MOULD Risers
   #13 Name: Boolean.012, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN MOULD Location feature
+  #14 Name: Boolean.013, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: ID.000
 
 Name: MOULD Bottom tray
 MOULD Bottom tray Type: MESH
@@ -1702,6 +1814,13 @@ MOULD Bottom tray modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN M3 bolt hole
   #5 Name: Boolean.003, Type: BOOLEAN
         Operation: UNION, Object: MOULD Location feature
+
+Name: MOULD Identifiers
+MOULD Identifiers Type: EMPTY
+MOULD Identifiers transform: X0.0 Y0.0 Z0.0
+MOULD Identifiers rotation: X0.0 Y0.0 Z0.0
+MOULD Identifiers scale: X1.0 Y1.0 Z1.0
+MOULD Identifiers groups: None
 
 Name: MOULD Location feature
 MOULD Location feature Type: MESH
