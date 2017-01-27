@@ -199,11 +199,11 @@ BOOLEAN Capacitors for connector cover modifiers: None
 
 Name: BOOLEAN Conical spring
 BOOLEAN Conical spring Type: MESH
-BOOLEAN Conical spring transform: X-15.163448333740234 Y-46.498046875 Z-4.673167705535889
+BOOLEAN Conical spring transform: X-13.663448333740234 Y-57.498046875 Z-3.0000014305114746
 BOOLEAN Conical spring rotation: X0.0 Y-0.0 Z0.0
 BOOLEAN Conical spring scale: X0.9999998807907104 Y0.9999999403953552 Z0.9999999403953552
 BOOLEAN Conical spring groups: Actuator Block, Booleans, 
-BOOLEAN Conical spring parent: Actuator Block
+BOOLEAN Conical spring parent: Conical spring
 BOOLEAN Conical spring mesh: BOOLEAN Conical spring
 BOOLEAN Conical spring materials: Boolean difference, 
 BOOLEAN Conical spring modifiers: 
