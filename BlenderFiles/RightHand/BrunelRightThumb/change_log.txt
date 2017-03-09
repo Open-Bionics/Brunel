@@ -40,8 +40,8 @@ BOOLEAN M3 bolt hole modifiers: None
 
 Name: BOOLEAN MOULD Riser
 BOOLEAN MOULD Riser Type: MESH
-BOOLEAN MOULD Riser transform: X17.244617462158203 Y85.25849914550781 Z0.5009517669677734
-BOOLEAN MOULD Riser rotation: X0.2617993652820587 Y1.570796251296997 Z0.0
+BOOLEAN MOULD Riser transform: X46.40957260131836 Y80.39488220214844 Z0.5009517669677734
+BOOLEAN MOULD Riser rotation: X0.4864174723625183 Y1.5811325311660767 Z-0.41729384660720825
 BOOLEAN MOULD Riser scale: X1.0 Y1.0 Z1.0
 BOOLEAN MOULD Riser groups: None
 BOOLEAN MOULD Riser mesh: BOOLEAN MOULD Runner
@@ -51,7 +51,7 @@ BOOLEAN MOULD Riser modifiers: None
 Name: BOOLEAN Syringe
 BOOLEAN Syringe Type: MESH
 BOOLEAN Syringe transform: X21.010498046875 Y27.835588455200195 Z-6.247751298360527e-05
-BOOLEAN Syringe rotation: X-1.5707963705062866 Y0.0 Z-1.832595705986023
+BOOLEAN Syringe rotation: X1.5707963705062866 Y6.070491790771484 Z1.409172534942627
 BOOLEAN Syringe scale: X1.0 Y1.0 Z1.0
 BOOLEAN Syringe groups: None
 BOOLEAN Syringe mesh: BOOLEAN Syringe
@@ -142,6 +142,42 @@ MOULD Inner dorsal modifiers:
   #4 Name: Boolean.Syringe, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Syringe
 
+Name: MOULD Inner dorsal 2
+MOULD Inner dorsal 2 Type: MESH
+MOULD Inner dorsal 2 transform: X14.834102630615234 Y39.16205596923828 Z-4.8160552978515625e-05
+MOULD Inner dorsal 2 rotation: X0.0 Y-0.0 Z-0.2617993950843811
+MOULD Inner dorsal 2 scale: X1.0 Y1.0 Z1.0
+MOULD Inner dorsal 2 groups: None
+MOULD Inner dorsal 2 mesh: MOULD.007
+MOULD Inner dorsal 2 materials: None
+MOULD Inner dorsal 2 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean.Thumb, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb
+  #3 Name: Boolean.MouldRiser, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN MOULD Riser
+  #4 Name: Boolean.Syringe, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Syringe
+
+Name: MOULD Inner dorsal OFFSET
+MOULD Inner dorsal OFFSET Type: MESH
+MOULD Inner dorsal OFFSET transform: X14.834102630615234 Y39.16205596923828 Z-4.8160552978515625e-05
+MOULD Inner dorsal OFFSET rotation: X0.0 Y-0.0 Z-0.2617993950843811
+MOULD Inner dorsal OFFSET scale: X1.0 Y1.0 Z1.0
+MOULD Inner dorsal OFFSET groups: None
+MOULD Inner dorsal OFFSET parent: MOULD Inner dorsal 2
+MOULD Inner dorsal OFFSET mesh: MOULD.007
+MOULD Inner dorsal OFFSET materials: None
+MOULD Inner dorsal OFFSET modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean.Thumb, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb
+  #3 Name: Boolean.MouldRiser, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN MOULD Riser
+  #4 Name: Boolean.Syringe, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Syringe
+  #5 Name: Solidify, Type: SOLIDIFY
+
 Name: MOULD Inner palmar
 MOULD Inner palmar Type: MESH
 MOULD Inner palmar transform: X14.834102630615234 Y39.16205596923828 Z-4.8160552978515625e-05
@@ -159,6 +195,42 @@ MOULD Inner palmar modifiers:
   #4 Name: Boolean.Syringe, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Syringe
 
+Name: MOULD Inner palmar 2
+MOULD Inner palmar 2 Type: MESH
+MOULD Inner palmar 2 transform: X14.834102630615234 Y39.16205596923828 Z-4.8160552978515625e-05
+MOULD Inner palmar 2 rotation: X0.0 Y-0.0 Z-0.2617993950843811
+MOULD Inner palmar 2 scale: X1.0 Y1.0 Z1.0
+MOULD Inner palmar 2 groups: None
+MOULD Inner palmar 2 mesh: MOULD.006
+MOULD Inner palmar 2 materials: None
+MOULD Inner palmar 2 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean.Thumb, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb
+  #3 Name: Boolean.MouldRiser, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN MOULD Riser
+  #4 Name: Boolean.Syringe, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Syringe
+
+Name: MOULD Inner palmar 2 OFFSET
+MOULD Inner palmar 2 OFFSET Type: MESH
+MOULD Inner palmar 2 OFFSET transform: X14.834102630615234 Y39.16205596923828 Z-4.8160552978515625e-05
+MOULD Inner palmar 2 OFFSET rotation: X0.0 Y-0.0 Z-0.2617993950843811
+MOULD Inner palmar 2 OFFSET scale: X1.0 Y1.0 Z1.0
+MOULD Inner palmar 2 OFFSET groups: None
+MOULD Inner palmar 2 OFFSET parent: MOULD Inner palmar 2
+MOULD Inner palmar 2 OFFSET mesh: MOULD.006
+MOULD Inner palmar 2 OFFSET materials: None
+MOULD Inner palmar 2 OFFSET modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean.Thumb, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb
+  #3 Name: Boolean.MouldRiser, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN MOULD Riser
+  #4 Name: Boolean.Syringe, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Syringe
+  #5 Name: Solidify, Type: SOLIDIFY
+
 Name: MOULD Outer dorsal
 MOULD Outer dorsal Type: MESH
 MOULD Outer dorsal transform: X14.834102630615234 Y39.16205596923828 Z-4.8160552978515625e-05
@@ -172,6 +244,24 @@ MOULD Outer dorsal modifiers:
   #2 Name: Solidify, Type: SOLIDIFY
   #3 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Syringe
+
+Name: MOULD Outer dorsal 2
+MOULD Outer dorsal 2 Type: MESH
+MOULD Outer dorsal 2 transform: X14.834102630615234 Y39.16205596923828 Z-4.8160552978515625e-05
+MOULD Outer dorsal 2 rotation: X0.0 Y-0.0 Z-0.2617993950843811
+MOULD Outer dorsal 2 scale: X1.0 Y1.0 Z1.0
+MOULD Outer dorsal 2 groups: None
+MOULD Outer dorsal 2 mesh: MOULD.009
+MOULD Outer dorsal 2 materials: None
+MOULD Outer dorsal 2 modifiers: 
+  #1 Name: Boolean.Thumb, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb
+  #2 Name: Boolean.Syringe, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Syringe
+  #3 Name: Boolean.M3 bolt hole, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M3 bolt hole
+  #4 Name: Boolean.offset, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: MOULD Inner dorsal OFFSET
 
 Name: MOULD Outer dorsal.001
 MOULD Outer dorsal.001 Type: MESH
@@ -207,6 +297,24 @@ MOULD Outer palmar modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Syringe
   #4 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: MOULD Inner palmar
+
+Name: MOULD Outer palmar 2
+MOULD Outer palmar 2 Type: MESH
+MOULD Outer palmar 2 transform: X14.834102630615234 Y39.16205596923828 Z-4.8160552978515625e-05
+MOULD Outer palmar 2 rotation: X0.0 Y-0.0 Z-0.2617993950843811
+MOULD Outer palmar 2 scale: X1.0 Y1.0 Z1.0
+MOULD Outer palmar 2 groups: None
+MOULD Outer palmar 2 mesh: MOULD.008
+MOULD Outer palmar 2 materials: None
+MOULD Outer palmar 2 modifiers: 
+  #1 Name: Boolean.Syringe, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Syringe
+  #2 Name: Boolean.thumb, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb
+  #3 Name: Boolean.offset, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: MOULD Inner palmar 2 OFFSET
+  #4 Name: Boolean.M3 bolt hole, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M3 bolt hole
 
 Name: MOULD Outer palmar.001
 MOULD Outer palmar.001 Type: MESH
