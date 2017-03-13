@@ -535,7 +535,7 @@ BOOLEAN Tendon channels distal.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels distal.003 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Tendon channels distal.003 groups: 3rd Finger, 
 BOOLEAN Tendon channels distal.003 parent: HANDLE 3rd Finger
-BOOLEAN Tendon channels distal.003 mesh: BOOLEAN Tendon channels distal
+BOOLEAN Tendon channels distal.003 mesh: BOOLEAN Tendon channels distal 3rd finger
 BOOLEAN Tendon channels distal.003 materials: Boolean difference, 
 BOOLEAN Tendon channels distal.003 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -545,6 +545,7 @@ BOOLEAN Tendon channels distal.003 modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
+  #3 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN Tendon channels distal.004
 BOOLEAN Tendon channels distal.004 Type: MESH
@@ -553,7 +554,7 @@ BOOLEAN Tendon channels distal.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels distal.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Tendon channels distal.004 groups: 4th Finger, 
 BOOLEAN Tendon channels distal.004 parent: HANDLE 4th Finger
-BOOLEAN Tendon channels distal.004 mesh: BOOLEAN Tendon channels distal
+BOOLEAN Tendon channels distal.004 mesh: BOOLEAN Tendon channels distal 4th finger
 BOOLEAN Tendon channels distal.004 materials: Boolean difference, 
 BOOLEAN Tendon channels distal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -565,6 +566,7 @@ BOOLEAN Tendon channels distal.004 modifiers:
         Vertex group mirroring: True
   #3 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+  #4 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN Tendon channels proximal.001
 BOOLEAN Tendon channels proximal.001 Type: MESH
@@ -609,7 +611,7 @@ BOOLEAN Tendon channels proximal.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels proximal.003 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Tendon channels proximal.003 groups: 3rd Finger, 
 BOOLEAN Tendon channels proximal.003 parent: HANDLE 3rd Finger
-BOOLEAN Tendon channels proximal.003 mesh: BOOLEAN Tendon channels proximal
+BOOLEAN Tendon channels proximal.003 mesh: BOOLEAN Tendon channels proximal 3rd finger
 BOOLEAN Tendon channels proximal.003 materials: Boolean difference, 
 BOOLEAN Tendon channels proximal.003 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -619,6 +621,7 @@ BOOLEAN Tendon channels proximal.003 modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
+  #3 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN Tendon channels proximal.004
 BOOLEAN Tendon channels proximal.004 Type: MESH
@@ -627,7 +630,7 @@ BOOLEAN Tendon channels proximal.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels proximal.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Tendon channels proximal.004 groups: 4th Finger, 
 BOOLEAN Tendon channels proximal.004 parent: HANDLE 4th Finger
-BOOLEAN Tendon channels proximal.004 mesh: BOOLEAN Tendon channels proximal
+BOOLEAN Tendon channels proximal.004 mesh: BOOLEAN Tendon channels proximal 4th finger
 BOOLEAN Tendon channels proximal.004 materials: Boolean difference, 
 BOOLEAN Tendon channels proximal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -637,6 +640,7 @@ BOOLEAN Tendon channels proximal.004 modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
+  #3 Name: Bevel, Type: BEVEL
 
 Name: Cylinder.008
 Cylinder.008 Type: MESH
@@ -815,7 +819,7 @@ HANDLE 4th Finger groups: 4th Finger,
 
 Name: HANDLE Distal Joint.001
 HANDLE Distal Joint.001 Type: MESH
-HANDLE Distal Joint.001 transform: X0.0 Y44.999996185302734 Z0.0
+HANDLE Distal Joint.001 transform: X0.0 Y45.0 Z0.0
 HANDLE Distal Joint.001 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.001 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.001 groups: 1st Finger, 
@@ -848,7 +852,7 @@ HANDLE Distal Joint.003 modifiers: None
 
 Name: HANDLE Distal Joint.004
 HANDLE Distal Joint.004 Type: MESH
-HANDLE Distal Joint.004 transform: X0.0 Y29.999998092651367 Z0.0
+HANDLE Distal Joint.004 transform: X0.0 Y30.0 Z0.0
 HANDLE Distal Joint.004 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.004 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.004 groups: 4th Finger, 
@@ -892,7 +896,7 @@ HANDLE Fingertip.003 modifiers: None
 
 Name: HANDLE Fingertip.004
 HANDLE Fingertip.004 Type: MESH
-HANDLE Fingertip.004 transform: X0.0 Y37.999996185302734 Z0.0
+HANDLE Fingertip.004 transform: X0.0 Y38.0 Z0.0
 HANDLE Fingertip.004 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.004 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.004 groups: 4th Finger, 
@@ -2036,8 +2040,8 @@ Top cover pad distal.001 rotation: X0.0 Y0.0 Z0.0
 Top cover pad distal.001 scale: X1.0 Y1.0 Z1.0
 Top cover pad distal.001 groups: 1st Finger, 
 Top cover pad distal.001 parent: HANDLE 1st Finger
-Top cover pad distal.001 mesh: Top cover pad distal
-Top cover pad distal.001 materials: NF Black, 
+Top cover pad distal.001 mesh: Top cover pad distal.001
+Top cover pad distal.001 materials: NF Black.001, 
 Top cover pad distal.001 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
@@ -2059,8 +2063,8 @@ Top cover pad distal.002 rotation: X0.0 Y0.0 Z0.0
 Top cover pad distal.002 scale: X1.0 Y1.0 Z1.0
 Top cover pad distal.002 groups: 1st Finger, 
 Top cover pad distal.002 parent: HANDLE 2nd Finger
-Top cover pad distal.002 mesh: Top cover pad distal
-Top cover pad distal.002 materials: NF Black, 
+Top cover pad distal.002 mesh: Top cover pad distal.001
+Top cover pad distal.002 materials: NF Black.001, 
 Top cover pad distal.002 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
@@ -2080,8 +2084,8 @@ Top cover pad distal.003 rotation: X0.0 Y0.0 Z0.0
 Top cover pad distal.003 scale: X1.0 Y1.0 Z1.0
 Top cover pad distal.003 groups: 1st Finger, 
 Top cover pad distal.003 parent: HANDLE 3rd Finger
-Top cover pad distal.003 mesh: Top cover pad distal
-Top cover pad distal.003 materials: NF Black, 
+Top cover pad distal.003 mesh: Top cover pad distal.001
+Top cover pad distal.003 materials: NF Black.001, 
 Top cover pad distal.003 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
@@ -2103,8 +2107,8 @@ Top cover pad distal.004 rotation: X0.0 Y0.0 Z0.0
 Top cover pad distal.004 scale: X1.0 Y1.0 Z1.0
 Top cover pad distal.004 groups: 1st Finger, 
 Top cover pad distal.004 parent: HANDLE 4th Finger
-Top cover pad distal.004 mesh: Top cover pad distal
-Top cover pad distal.004 materials: NF Black, 
+Top cover pad distal.004 mesh: Top cover pad distal.001
+Top cover pad distal.004 materials: NF Black.001, 
 Top cover pad distal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
@@ -2126,8 +2130,8 @@ Top cover pad proximal.001 rotation: X0.0 Y0.0 Z0.0
 Top cover pad proximal.001 scale: X1.0 Y1.0 Z1.0
 Top cover pad proximal.001 groups: 1st Finger, 
 Top cover pad proximal.001 parent: HANDLE 1st Finger
-Top cover pad proximal.001 mesh: Top cover pad proximal
-Top cover pad proximal.001 materials: NF Black, 
+Top cover pad proximal.001 mesh: Top cover pad proximal.001
+Top cover pad proximal.001 materials: NF Black.001, 
 Top cover pad proximal.001 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Mirror, Type: MIRROR
@@ -2148,8 +2152,8 @@ Top cover pad proximal.002 rotation: X0.0 Y-0.0 Z0.0
 Top cover pad proximal.002 scale: X1.0 Y1.0 Z1.0
 Top cover pad proximal.002 groups: 1st Finger, 
 Top cover pad proximal.002 parent: HANDLE 2nd Finger
-Top cover pad proximal.002 mesh: Top cover pad proximal
-Top cover pad proximal.002 materials: NF Black, 
+Top cover pad proximal.002 mesh: Top cover pad proximal.001
+Top cover pad proximal.002 materials: NF Black.001, 
 Top cover pad proximal.002 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Mirror, Type: MIRROR
@@ -2168,8 +2172,8 @@ Top cover pad proximal.003 rotation: X0.0 Y-0.0 Z0.0
 Top cover pad proximal.003 scale: X1.0 Y1.0 Z1.0
 Top cover pad proximal.003 groups: 1st Finger, 
 Top cover pad proximal.003 parent: HANDLE 3rd Finger
-Top cover pad proximal.003 mesh: Top cover pad proximal
-Top cover pad proximal.003 materials: NF Black, 
+Top cover pad proximal.003 mesh: Top cover pad proximal.001
+Top cover pad proximal.003 materials: NF Black.001, 
 Top cover pad proximal.003 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Mirror, Type: MIRROR
@@ -2190,8 +2194,8 @@ Top cover pad proximal.004 rotation: X0.0 Y-0.0 Z0.0
 Top cover pad proximal.004 scale: X1.0 Y1.0 Z1.0
 Top cover pad proximal.004 groups: 1st Finger, 
 Top cover pad proximal.004 parent: HANDLE 4th Finger
-Top cover pad proximal.004 mesh: Top cover pad proximal
-Top cover pad proximal.004 materials: NF Black, 
+Top cover pad proximal.004 mesh: Top cover pad proximal.001
+Top cover pad proximal.004 materials: NF Black.001, 
 Top cover pad proximal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Mirror, Type: MIRROR
