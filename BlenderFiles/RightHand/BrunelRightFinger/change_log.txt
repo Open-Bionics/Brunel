@@ -1649,7 +1649,7 @@ Inner Distal 1 BLANK modifiers:
         Clipping: False
         Vertex group mirroring: True
   #4 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
+        Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner Distal 1 MOULD
 Inner Distal 1 MOULD Type: MESH
@@ -1670,7 +1670,7 @@ Inner Distal 1 MOULD modifiers:
         Vertex group mirroring: True
   #4 Name: Solidify, Type: SOLIDIFY
   #5 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
+        Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner Distal 2 BLANK
 Inner Distal 2 BLANK Type: MESH
@@ -1690,7 +1690,7 @@ Inner Distal 2 BLANK modifiers:
         Clipping: False
         Vertex group mirroring: True
   #4 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
+        Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner Distal 2 MOULD
 Inner Distal 2 MOULD Type: MESH
@@ -1711,7 +1711,7 @@ Inner Distal 2 MOULD modifiers:
         Vertex group mirroring: True
   #4 Name: Solidify, Type: SOLIDIFY
   #5 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
+        Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner Distal 3 BLANK
 Inner Distal 3 BLANK Type: MESH
@@ -1731,7 +1731,7 @@ Inner Distal 3 BLANK modifiers:
         Clipping: False
         Vertex group mirroring: True
   #4 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
+        Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner Distal 3 MOULD
 Inner Distal 3 MOULD Type: MESH
@@ -1752,7 +1752,7 @@ Inner Distal 3 MOULD modifiers:
         Vertex group mirroring: True
   #4 Name: Solidify, Type: SOLIDIFY
   #5 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
+        Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner Distal 4 BLANK
 Inner Distal 4 BLANK Type: MESH
@@ -1772,7 +1772,7 @@ Inner Distal 4 BLANK modifiers:
         Clipping: False
         Vertex group mirroring: True
   #4 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
+        Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner Distal 4 MOULD
 Inner Distal 4 MOULD Type: MESH
@@ -1793,7 +1793,7 @@ Inner Distal 4 MOULD modifiers:
         Vertex group mirroring: True
   #4 Name: Solidify, Type: SOLIDIFY
   #5 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
+        Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner distal.001
 Inner distal.001 Type: MESH
@@ -2005,7 +2005,7 @@ Inner proximal 1 BLANK modifiers:
   #2 Name: Hook, Type: HOOK
   #3 Name: Hook.001, Type: HOOK
   #4 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
+        Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner proximal 1 MOULD
 Inner proximal 1 MOULD Type: MESH
@@ -2026,7 +2026,7 @@ Inner proximal 1 MOULD modifiers:
   #3 Name: Hook.001, Type: HOOK
   #4 Name: Solidify, Type: SOLIDIFY
   #5 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
+        Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner proximal 2 BLANK
 Inner proximal 2 BLANK Type: MESH
@@ -2046,7 +2046,7 @@ Inner proximal 2 BLANK modifiers:
   #2 Name: Hook, Type: HOOK
   #3 Name: Hook.001, Type: HOOK
   #4 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
+        Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner proximal 2 MOULD
 Inner proximal 2 MOULD Type: MESH
@@ -2067,7 +2067,7 @@ Inner proximal 2 MOULD modifiers:
   #3 Name: Hook.001, Type: HOOK
   #4 Name: Solidify, Type: SOLIDIFY
   #5 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
+        Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner proximal 3 BLANK
 Inner proximal 3 BLANK Type: MESH
@@ -2087,7 +2087,7 @@ Inner proximal 3 BLANK modifiers:
   #2 Name: Hook, Type: HOOK
   #3 Name: Hook.001, Type: HOOK
   #4 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
+        Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner proximal 3 MOULD
 Inner proximal 3 MOULD Type: MESH
@@ -2108,7 +2108,7 @@ Inner proximal 3 MOULD modifiers:
   #3 Name: Hook.001, Type: HOOK
   #4 Name: Solidify, Type: SOLIDIFY
   #5 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
+        Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner proximal 4 BLANK
 Inner proximal 4 BLANK Type: MESH
@@ -2128,7 +2128,7 @@ Inner proximal 4 BLANK modifiers:
   #2 Name: Hook, Type: HOOK
   #3 Name: Hook.001, Type: HOOK
   #4 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
+        Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner proximal 4 MOULD
 Inner proximal 4 MOULD Type: MESH
@@ -2149,7 +2149,7 @@ Inner proximal 4 MOULD modifiers:
   #3 Name: Hook.001, Type: HOOK
   #4 Name: Solidify, Type: SOLIDIFY
   #5 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
+        Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner proximal.001
 Inner proximal.001 Type: MESH
