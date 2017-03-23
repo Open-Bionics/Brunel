@@ -368,7 +368,7 @@ BOOLEAN LABEL Open Bionics mesh: Label - Open Bionics
 BOOLEAN LABEL Open Bionics materials: PLA.004, 
 BOOLEAN LABEL Open Bionics modifiers: 
   #1 Name: Shrinkwrap, Type: SHRINKWRAP
-        Target: Back cover target, Mode: PROJECT, Offset: -1.0 mm
+        Target: Back cover target, Mode: PROJECT, Offset: 0.0 mm
         Projecting in: Z
         Project in positive direction: False, Negative: True
         Cull Faces: BACK
