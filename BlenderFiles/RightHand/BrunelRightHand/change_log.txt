@@ -431,6 +431,8 @@ BOOLEAN MOULD Locking feature mesh: MOULD Locking feature
 BOOLEAN MOULD Locking feature materials: None
 BOOLEAN MOULD Locking feature modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN MOULD Runners
 BOOLEAN MOULD Runners Type: MESH
@@ -532,8 +534,8 @@ BOOLEAN Palm outer skin for MOULD transform: X10.321754455566406 Y-16.0496387481
 BOOLEAN Palm outer skin for MOULD rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Palm outer skin for MOULD scale: X1.0 Y1.0 Z1.0
 BOOLEAN Palm outer skin for MOULD groups: None
-BOOLEAN Palm outer skin for MOULD mesh: Palm outer skin.002
-BOOLEAN Palm outer skin for MOULD materials: Urethane, 
+BOOLEAN Palm outer skin for MOULD mesh: Palm outer skin target
+BOOLEAN Palm outer skin for MOULD materials: Urethane.001, 
 BOOLEAN Palm outer skin for MOULD modifiers: 
   #1 Name: Displace, Type: DISPLACE
   #2 Name: Subsurf, Type: SUBSURF
@@ -1100,10 +1102,10 @@ MOULD Bottom materials: None
 MOULD Bottom modifiers: 
   #1 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm outer skin for MOULD
-  #2 Name: Boolean.002, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN MOULD Locking feature
-  #3 Name: Boolean.003, Type: BOOLEAN
+  #2 Name: Boolean.003, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Thumb swept area for MOULD Top
+  #3 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN MOULD Locking feature
 
 Name: MOULD Locking feature
 MOULD Locking feature Type: MESH
@@ -1142,14 +1144,16 @@ MOULD Top modifiers:
         Operation: UNION, Object: BOOLEAN Palm Inner for MOULD
   #2 Name: Boolean.ThumbLigamentCoverForMOULDTop, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Thumb ligament cover for MOULD Top
-  #3 Name: Boolean.MOULDLockingFeature, Type: BOOLEAN
-        Operation: UNION, Object: MOULD Locking feature
-  #4 Name: Boolean.MOULDRunners, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN MOULD Runners
-  #5 Name: Boolean.PalmOuterFrameForMOULDTop, Type: BOOLEAN
+  #3 Name: Boolean.PalmOuterFrameForMOULDTop, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame for MOULD Top
-  #6 Name: Boolean.OuterFrameDistalHook, Type: BOOLEAN
+  #4 Name: Boolean.OuterFrameDistalHook, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame distal hook
+  #5 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: Palm outer frame.001
+  #6 Name: Boolean.001, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN MOULD Locking feature
+  #7 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN MOULD Runners
 
 Name: Palm Covered
 Palm Covered Type: MESH
@@ -1313,6 +1317,25 @@ Palm outer frame Unapplied modifiers:
   #12 Name: Boolean.ThumbSweptArea, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area for Palm outer frame
   #13 Name: Boolean.OuterFrameM2BoltHole, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame M2 bolt hole
+
+Name: Palm outer frame.001
+Palm outer frame.001 Type: MESH
+Palm outer frame.001 transform: X9.0 Y-48.89358901977539 Z-2.9508914947509766
+Palm outer frame.001 rotation: X0.0 Y0.0 Z0.0
+Palm outer frame.001 scale: X1.0 Y1.0 Z1.0
+Palm outer frame.001 groups: None
+Palm outer frame.001 mesh: Palm outer frame.001
+Palm outer frame.001 materials: Boolean Dif, 
+Palm outer frame.001 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 5, Type: CATMULL_CLARK
+  #2 Name: Displace, Type: DISPLACE
+  #3 Name: Boolean.ThumbLigamentCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for outer palm
+  #4 Name: Boolean.ThumbSweptArea, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area
+  #5 Name: Boolean.OuterFrameM2BoltHole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame M2 bolt hole
 
 Name: Palm outer skin
