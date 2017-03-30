@@ -1105,7 +1105,7 @@ MOULD Bottom modifiers:
   #2 Name: Boolean.003, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Thumb swept area for MOULD Top
   #3 Name: Boolean.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN MOULD Locking feature
+        Operation: DIFFERENCE, Object: MOULD Locking feature BOTTOM
 
 Name: MOULD Locking feature
 MOULD Locking feature Type: MESH
@@ -1115,7 +1115,22 @@ MOULD Locking feature scale: X1.0 Y1.0 Z1.0
 MOULD Locking feature groups: None
 MOULD Locking feature mesh: MOULD Locking feature
 MOULD Locking feature materials: None
-MOULD Locking feature modifiers: None
+MOULD Locking feature modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: MOULD Locking feature BOTTOM
+MOULD Locking feature BOTTOM Type: MESH
+MOULD Locking feature BOTTOM transform: X56.3663330078125 Y-10.683527946472168 Z1.9962692260742188
+MOULD Locking feature BOTTOM rotation: X0.0 Y-0.0 Z1.5707963705062866
+MOULD Locking feature BOTTOM scale: X1.0 Y1.0 Z1.0
+MOULD Locking feature BOTTOM groups: None
+MOULD Locking feature BOTTOM mesh: MOULD Locking feature.001
+MOULD Locking feature BOTTOM materials: None
+MOULD Locking feature BOTTOM modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Solidify, Type: SOLIDIFY
 
 Name: MOULD Locking feature cross section
 MOULD Locking feature cross section Type: CURVE
