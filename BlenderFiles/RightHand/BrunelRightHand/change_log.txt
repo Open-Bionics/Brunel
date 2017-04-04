@@ -421,6 +421,69 @@ BOOLEAN Ligament Cover M2 bolt hole platforms materials: PLA,
 BOOLEAN Ligament Cover M2 bolt hole platforms modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
 
+Name: BOOLEAN Ligament.001
+BOOLEAN Ligament.001 Type: MESH
+BOOLEAN Ligament.001 transform: X0.0 Y0.0 Z0.0
+BOOLEAN Ligament.001 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Ligament.001 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Ligament.001 groups: None
+BOOLEAN Ligament.001 mesh: BOOLEAN Ligament
+BOOLEAN Ligament.001 materials: Boolean difference.004, 
+BOOLEAN Ligament.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN Ligament.004
+BOOLEAN Ligament.004 Type: MESH
+BOOLEAN Ligament.004 transform: X0.0 Y0.0 Z0.0
+BOOLEAN Ligament.004 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Ligament.004 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Ligament.004 groups: None
+BOOLEAN Ligament.004 mesh: BOOLEAN Ligament.001
+BOOLEAN Ligament.004 materials: Boolean difference.005, 
+BOOLEAN Ligament.004 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Hook.002, Type: HOOK
+  #4 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #5 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN M2 Bolt Holes.001
+BOOLEAN M2 Bolt Holes.001 Type: MESH
+BOOLEAN M2 Bolt Holes.001 transform: X0.0 Y0.0 Z0.0
+BOOLEAN M2 Bolt Holes.001 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN M2 Bolt Holes.001 scale: X1.0 Y1.0 Z1.0
+BOOLEAN M2 Bolt Holes.001 groups: None
+BOOLEAN M2 Bolt Holes.001 mesh: BOOLEAN M2 Bolt Holes
+BOOLEAN M2 Bolt Holes.001 materials: Boolean difference.004, 
+BOOLEAN M2 Bolt Holes.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+
+Name: BOOLEAN M2 Bolt Holes.004
+BOOLEAN M2 Bolt Holes.004 Type: MESH
+BOOLEAN M2 Bolt Holes.004 transform: X0.0 Y0.0 Z0.0
+BOOLEAN M2 Bolt Holes.004 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN M2 Bolt Holes.004 scale: X1.0 Y1.0 Z1.0
+BOOLEAN M2 Bolt Holes.004 groups: None
+BOOLEAN M2 Bolt Holes.004 mesh: BOOLEAN M2 Bolt Holes.001
+BOOLEAN M2 Bolt Holes.004 materials: Boolean difference.005, 
+BOOLEAN M2 Bolt Holes.004 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+
 Name: BOOLEAN MOULD Locking feature
 BOOLEAN MOULD Locking feature Type: MESH
 BOOLEAN MOULD Locking feature transform: X56.3663330078125 Y-10.683527946472168 Z1.9962692260742188
@@ -659,6 +722,39 @@ BOOLEAN Tendon Channels materials: Boolean difference,
 BOOLEAN Tendon Channels modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN Tendon channels proximal.001
+BOOLEAN Tendon channels proximal.001 Type: MESH
+BOOLEAN Tendon channels proximal.001 transform: X0.0 Y0.0 Z0.0
+BOOLEAN Tendon channels proximal.001 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Tendon channels proximal.001 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Tendon channels proximal.001 groups: None
+BOOLEAN Tendon channels proximal.001 mesh: BOOLEAN Tendon channels proximal
+BOOLEAN Tendon channels proximal.001 materials: Boolean difference.004, 
+BOOLEAN Tendon channels proximal.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+
+Name: BOOLEAN Tendon channels proximal.004
+BOOLEAN Tendon channels proximal.004 Type: MESH
+BOOLEAN Tendon channels proximal.004 transform: X0.0 Y0.0 Z0.0
+BOOLEAN Tendon channels proximal.004 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Tendon channels proximal.004 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Tendon channels proximal.004 groups: None
+BOOLEAN Tendon channels proximal.004 mesh: BOOLEAN Tendon channels proximal 4th finger
+BOOLEAN Tendon channels proximal.004 materials: Boolean difference.005, 
+BOOLEAN Tendon channels proximal.004 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #3 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN Thumb attahment dowel
 BOOLEAN Thumb attahment dowel Type: MESH
@@ -974,6 +1070,30 @@ LABEL Brunel logo groups: None
 LABEL Brunel logo mesh: Combo
 LABEL Brunel logo materials: Boolean difference.006, 
 LABEL Brunel logo modifiers: None
+
+Name: LABEL Identifier Inner proximal.001
+LABEL Identifier Inner proximal.001 Type: MESH
+LABEL Identifier Inner proximal.001 transform: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner proximal.001 rotation: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner proximal.001 scale: X1.0 Y1.0 Z1.0
+LABEL Identifier Inner proximal.001 groups: None
+LABEL Identifier Inner proximal.001 mesh: LABEL Identifier Inner
+LABEL Identifier Inner proximal.001 materials: BOOL Dif, 
+LABEL Identifier Inner proximal.001 modifiers: 
+  #1 Name: Array, Type: ARRAY
+  #2 Name: Hook, Type: HOOK
+
+Name: LABEL Identifier Inner proximal.004
+LABEL Identifier Inner proximal.004 Type: MESH
+LABEL Identifier Inner proximal.004 transform: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner proximal.004 rotation: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner proximal.004 scale: X1.0 Y1.0 Z1.0
+LABEL Identifier Inner proximal.004 groups: None
+LABEL Identifier Inner proximal.004 mesh: LABEL Identifier Inner.001
+LABEL Identifier Inner proximal.004 materials: BOOL Dif.001, 
+LABEL Identifier Inner proximal.004 modifiers: 
+  #1 Name: Array, Type: ARRAY
+  #2 Name: Hook, Type: HOOK
 
 Name: LABEL Logo
 LABEL Logo Type: MESH
