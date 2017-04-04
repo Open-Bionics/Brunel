@@ -61,8 +61,8 @@ BOOLEAN Elastic terminator.001 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Elastic terminator.001 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Elastic terminator.001 groups: 1st Finger, 
 BOOLEAN Elastic terminator.001 parent: HANDLE 1st Finger
-BOOLEAN Elastic terminator.001 mesh: BOOLEAN Elastic terminator
-BOOLEAN Elastic terminator.001 materials: Boolean difference.003, 
+BOOLEAN Elastic terminator.001 mesh: BOOLEAN Elastic terminator.001
+BOOLEAN Elastic terminator.001 materials: Boolean difference.001, 
 BOOLEAN Elastic terminator.001 modifiers: 
   #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
@@ -78,8 +78,8 @@ BOOLEAN Elastic terminator.002 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Elastic terminator.002 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Elastic terminator.002 groups: 2nd Finger, 
 BOOLEAN Elastic terminator.002 parent: HANDLE 2nd Finger
-BOOLEAN Elastic terminator.002 mesh: BOOLEAN Elastic terminator
-BOOLEAN Elastic terminator.002 materials: Boolean difference.003, 
+BOOLEAN Elastic terminator.002 mesh: BOOLEAN Elastic terminator.001
+BOOLEAN Elastic terminator.002 materials: Boolean difference.001, 
 BOOLEAN Elastic terminator.002 modifiers: 
   #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
@@ -95,8 +95,8 @@ BOOLEAN Elastic terminator.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Elastic terminator.003 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Elastic terminator.003 groups: 3rd Finger, 
 BOOLEAN Elastic terminator.003 parent: HANDLE 3rd Finger
-BOOLEAN Elastic terminator.003 mesh: BOOLEAN Elastic terminator
-BOOLEAN Elastic terminator.003 materials: Boolean difference.003, 
+BOOLEAN Elastic terminator.003 mesh: BOOLEAN Elastic terminator.001
+BOOLEAN Elastic terminator.003 materials: Boolean difference.001, 
 BOOLEAN Elastic terminator.003 modifiers: 
   #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
@@ -112,8 +112,8 @@ BOOLEAN Elastic terminator.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Elastic terminator.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Elastic terminator.004 groups: None
 BOOLEAN Elastic terminator.004 parent: HANDLE 4th Finger
-BOOLEAN Elastic terminator.004 mesh: BOOLEAN Elastic terminator
-BOOLEAN Elastic terminator.004 materials: Boolean difference.003, 
+BOOLEAN Elastic terminator.004 mesh: BOOLEAN Elastic terminator.001
+BOOLEAN Elastic terminator.004 materials: Boolean difference.001, 
 BOOLEAN Elastic terminator.004 modifiers: 
   #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
@@ -1096,16 +1096,16 @@ Cylinder.015 mesh: Cylinder.015
 Cylinder.015 materials: Boolean difference, 
 Cylinder.015 modifiers: None
 
-Name: Elastic terminator.001
-Elastic terminator.001 Type: MESH
-Elastic terminator.001 transform: X0.0 Y53.1385498046875 Z0.75
-Elastic terminator.001 rotation: X0.0 Y0.0 Z0.0
-Elastic terminator.001 scale: X1.0 Y1.0 Z1.0
-Elastic terminator.001 groups: None
-Elastic terminator.001 parent: HANDLE 1st Finger
-Elastic terminator.001 mesh: Elastic terminator
-Elastic terminator.001 materials: PLA Black, 
-Elastic terminator.001 modifiers: 
+Name: Elastic terminator distal
+Elastic terminator distal Type: MESH
+Elastic terminator distal transform: X0.0 Y53.1385498046875 Z0.75
+Elastic terminator distal rotation: X0.0 Y0.0 Z0.0
+Elastic terminator distal scale: X1.0 Y1.0 Z1.0
+Elastic terminator distal groups: None
+Elastic terminator distal parent: HANDLE 1st Finger
+Elastic terminator distal mesh: Elastic terminator.001
+Elastic terminator distal materials: PLA Black.001, 
+Elastic terminator distal modifiers: 
   #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Merge: True, Merge Limit: 0.0010000000474974513 mm
@@ -1119,8 +1119,8 @@ Elastic terminator.004 rotation: X0.0 Y0.0 Z0.0
 Elastic terminator.004 scale: X1.0 Y1.0 Z1.0
 Elastic terminator.004 groups: None
 Elastic terminator.004 parent: HANDLE 4th Finger
-Elastic terminator.004 mesh: Elastic terminator
-Elastic terminator.004 materials: PLA Black, 
+Elastic terminator.004 mesh: Elastic terminator.001
+Elastic terminator.004 materials: PLA Black.001, 
 Elastic terminator.004 modifiers: 
   #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
@@ -1283,6 +1283,16 @@ HANDLE distal fingertip 4 rotation: X0.0 Y0.0 Z0.0
 HANDLE distal fingertip 4 scale: X1.0 Y1.0 Z1.0
 HANDLE distal fingertip 4 groups: None
 HANDLE distal fingertip 4 parent: HANDLE distal base 4
+
+Name: HANDLE Distal Joint.000
+HANDLE Distal Joint.000 Type: MESH
+HANDLE Distal Joint.000 transform: X0.0 Y45.0 Z0.0
+HANDLE Distal Joint.000 rotation: X0.0 Y0.0 Z0.0
+HANDLE Distal Joint.000 scale: X1.0 Y1.0 Z1.0
+HANDLE Distal Joint.000 groups: None
+HANDLE Distal Joint.000 mesh: HANDLE Distal Joint.001
+HANDLE Distal Joint.000 materials: HANDLE.001, 
+HANDLE Distal Joint.000 modifiers: None
 
 Name: HANDLE Distal Joint.001
 HANDLE Distal Joint.001 Type: MESH
