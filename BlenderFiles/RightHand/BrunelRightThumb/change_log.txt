@@ -167,11 +167,7 @@ MOULD BOOLEAN cavity groups: None
 MOULD BOOLEAN cavity mesh: MOULD bottom.003
 MOULD BOOLEAN cavity materials: Urethane, 
 MOULD BOOLEAN cavity modifiers: 
-  #1 Name: Boolean, Type: BOOLEAN
-        Operation: INTERSECT, Object: BOOLEAN Thumb
-  #2 Name: Boolean.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: MOULD BOOLEAN seal bottom
-  #3 Name: Solidify, Type: SOLIDIFY
+  #1 Name: Solidify, Type: SOLIDIFY
 
 Name: MOULD BOOLEAN seal bottom
 MOULD BOOLEAN seal bottom Type: MESH
