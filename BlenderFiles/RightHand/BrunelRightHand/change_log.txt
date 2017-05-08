@@ -40,7 +40,7 @@ Back cover rotation: X0.0 Y0.0 Z0.0
 Back cover scale: X1.0 Y1.0 Z1.0
 Back cover groups: None
 Back cover mesh: Back cover
-Back cover materials: PLA.001, 
+Back cover materials: PLA, 
 Back cover modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
@@ -128,7 +128,7 @@ Back cover target rotation: X0.0 Y-0.0 Z0.0
 Back cover target scale: X1.0 Y1.0 Z1.0
 Back cover target groups: None
 Back cover target mesh: Back cover
-Back cover target materials: PLA.001, 
+Back cover target materials: PLA, 
 Back cover target modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
@@ -162,7 +162,7 @@ BOOLEAN Back cover M2 bolt holes veneer rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Back cover M2 bolt holes veneer scale: X1.0 Y1.0 Z1.0
 BOOLEAN Back cover M2 bolt holes veneer groups: None
 BOOLEAN Back cover M2 bolt holes veneer mesh: BOOLEAN Back cover M2 bolt holes veneer
-BOOLEAN Back cover M2 bolt holes veneer materials: PLA.003, 
+BOOLEAN Back cover M2 bolt holes veneer materials: PLA, 
 BOOLEAN Back cover M2 bolt holes veneer modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
   #2 Name: Shrinkwrap, Type: SHRINKWRAP
@@ -292,7 +292,7 @@ BOOLEAN DC Jack for Stand rotation: X-1.4901154976598718e-08 Y-1.490116474656133
 BOOLEAN DC Jack for Stand scale: X0.9999998807907104 Y0.9999998807907104 Z1.0
 BOOLEAN DC Jack for Stand groups: None
 BOOLEAN DC Jack for Stand mesh: BOOLEAN PCB Chestnut.000
-BOOLEAN DC Jack for Stand materials: Boolean difference.001, 
+BOOLEAN DC Jack for Stand materials: Boolean difference, 
 BOOLEAN DC Jack for Stand modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
@@ -318,7 +318,7 @@ BOOLEAN GALA cover cable tidy scale: X0.9999999403953552 Y0.9999999403953552 Z1.
 BOOLEAN GALA cover cable tidy groups: Actuator Block, Booleans, 
 BOOLEAN GALA cover cable tidy parent: Actuator Block
 BOOLEAN GALA cover cable tidy mesh: BOOLEAN GALA cover cable tidy.001
-BOOLEAN GALA cover cable tidy materials: Boolean difference.002, 
+BOOLEAN GALA cover cable tidy materials: Boolean difference, 
 BOOLEAN GALA cover cable tidy modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Array, Type: ARRAY
@@ -365,7 +365,7 @@ BOOLEAN LABEL Open Bionics rotation: X1.5707963705062866 Y-0.0 Z1.57079637050628
 BOOLEAN LABEL Open Bionics scale: X0.8085255026817322 Y0.8085255026817322 Z0.8085255026817322
 BOOLEAN LABEL Open Bionics groups: None
 BOOLEAN LABEL Open Bionics mesh: Label - Open Bionics
-BOOLEAN LABEL Open Bionics materials: PLA.004, 
+BOOLEAN LABEL Open Bionics materials: PLA, 
 BOOLEAN LABEL Open Bionics modifiers: 
   #1 Name: Shrinkwrap, Type: SHRINKWRAP
         Target: Back cover target, Mode: PROJECT, Offset: 0.0 mm
@@ -514,7 +514,7 @@ BOOLEAN Palm outer frame for MOULD Top rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Palm outer frame for MOULD Top scale: X1.0 Y1.0 Z1.0
 BOOLEAN Palm outer frame for MOULD Top groups: None
 BOOLEAN Palm outer frame for MOULD Top mesh: BOOLEAN Palm outer frame for MOULD Top
-BOOLEAN Palm outer frame for MOULD Top materials: PLA.005, 
+BOOLEAN Palm outer frame for MOULD Top materials: PLA, 
 BOOLEAN Palm outer frame for MOULD Top modifiers: 
   #1 Name: Solidify.001, Type: SOLIDIFY
 
@@ -535,7 +535,7 @@ BOOLEAN Palm outer skin for MOULD rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Palm outer skin for MOULD scale: X1.0 Y1.0 Z1.0
 BOOLEAN Palm outer skin for MOULD groups: None
 BOOLEAN Palm outer skin for MOULD mesh: Palm outer skin target
-BOOLEAN Palm outer skin for MOULD materials: Urethane.001, 
+BOOLEAN Palm outer skin for MOULD materials: Urethane, 
 BOOLEAN Palm outer skin for MOULD modifiers: 
   #1 Name: Displace, Type: DISPLACE
   #2 Name: Subsurf, Type: SUBSURF
@@ -606,7 +606,7 @@ BOOLEAN Proximal elastic terminator combo rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Proximal elastic terminator combo scale: X1.0 Y1.0 Z1.0
 BOOLEAN Proximal elastic terminator combo groups: None
 BOOLEAN Proximal elastic terminator combo mesh: BOOLEAN Proximal elastic terminator combo
-BOOLEAN Proximal elastic terminator combo materials: Boolean difference.003, 
+BOOLEAN Proximal elastic terminator combo materials: Boolean difference, 
 BOOLEAN Proximal elastic terminator combo modifiers: None
 
 Name: BOOLEAN Proximal elastic terminator.001
@@ -974,7 +974,7 @@ LABEL Brunel logo rotation: X-0.0 Y3.1415929794311523 Z-0.0
 LABEL Brunel logo scale: X1.0 Y1.0 Z1.0
 LABEL Brunel logo groups: None
 LABEL Brunel logo mesh: Combo
-LABEL Brunel logo materials: Boolean difference.006, 
+LABEL Brunel logo materials: Boolean difference, 
 LABEL Brunel logo modifiers: None
 
 Name: LABEL Logo
@@ -1000,7 +1000,7 @@ LABEL Open Bionics rotation: X1.5707963705062866 Y-0.0 Z1.5707963705062866
 LABEL Open Bionics scale: X0.8085255026817322 Y0.8085255026817322 Z0.8085255026817322
 LABEL Open Bionics groups: None
 LABEL Open Bionics mesh: LABEL Open Bionics
-LABEL Open Bionics materials: PLA.003, 
+LABEL Open Bionics materials: PLA, 
 LABEL Open Bionics modifiers: 
   #1 Name: Shrinkwrap, Type: SHRINKWRAP
         Target: Back cover target, Mode: PROJECT, Offset: -1.0 mm
@@ -1100,11 +1100,11 @@ MOULD Bottom groups: None
 MOULD Bottom mesh: MOULD Bottom
 MOULD Bottom materials: None
 MOULD Bottom modifiers: 
-  #1 Name: Boolean, Type: BOOLEAN
+  #1 Name: Boolean palm skin, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm outer skin for MOULD
-  #2 Name: Boolean.003, Type: BOOLEAN
+  #2 Name: Boolean thumb area, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Thumb swept area for MOULD Top
-  #3 Name: Boolean.001, Type: BOOLEAN
+  #3 Name: Boolean locking feature, Type: BOOLEAN
         Operation: DIFFERENCE, Object: MOULD Locking feature BOTTOM
 
 Name: MOULD Locking feature
@@ -1131,20 +1131,6 @@ MOULD Locking feature BOTTOM modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #2 Name: Solidify, Type: SOLIDIFY
-
-Name: MOULD Locking feature cross section
-MOULD Locking feature cross section Type: CURVE
-MOULD Locking feature cross section transform: X56.3663330078125 Y-1.5168609619140625 Z1.9962692260742188
-MOULD Locking feature cross section rotation: X1.5707963705062866 Y-0.0 Z0.0
-MOULD Locking feature cross section scale: X0.13203547894954681 Y0.13203547894954681 Z0.13203547894954681
-MOULD Locking feature cross section groups: None
-
-Name: MOULD Locking feature path
-MOULD Locking feature path Type: CURVE
-MOULD Locking feature path transform: X56.3663330078125 Y-10.683527946472168 Z1.9962692260742188
-MOULD Locking feature path rotation: X0.0 Y-0.0 Z1.5707963705062866
-MOULD Locking feature path scale: X1.0 Y1.0 Z1.0
-MOULD Locking feature path groups: None
 
 Name: MOULD Top
 MOULD Top Type: MESH
@@ -1244,7 +1230,7 @@ Palm outer frame rotation: X0.0 Y0.0 Z0.0
 Palm outer frame scale: X1.0 Y1.0 Z1.0
 Palm outer frame groups: None
 Palm outer frame mesh: Palm outer frame
-Palm outer frame materials: PLA.006, 
+Palm outer frame materials: PLA, 
 Palm outer frame modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 5, Type: CATMULL_CLARK
@@ -1296,7 +1282,7 @@ Palm outer frame Unapplied rotation: X0.0 Y0.0 Z0.0
 Palm outer frame Unapplied scale: X1.0 Y1.0 Z1.0
 Palm outer frame Unapplied groups: None
 Palm outer frame Unapplied mesh: Palm outer frame Unapplied
-Palm outer frame Unapplied materials: PLA.007, 
+Palm outer frame Unapplied materials: PLA, 
 Palm outer frame Unapplied modifiers: 
   #1 Name: Bevel.PalmarFillet, Type: BEVEL
   #2 Name: Bevel.ExteriorPalmarFillet, Type: BEVEL
@@ -1341,7 +1327,7 @@ Palm outer frame.001 rotation: X0.0 Y0.0 Z0.0
 Palm outer frame.001 scale: X1.0 Y1.0 Z1.0
 Palm outer frame.001 groups: None
 Palm outer frame.001 mesh: Palm outer frame.001
-Palm outer frame.001 materials: Boolean Dif, 
+Palm outer frame.001 materials: Boolean difference, 
 Palm outer frame.001 modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 5, Type: CATMULL_CLARK
@@ -1378,7 +1364,7 @@ Palm outer skin target rotation: X0.0 Y0.0 Z0.0
 Palm outer skin target scale: X1.0 Y1.0 Z1.0
 Palm outer skin target groups: None
 Palm outer skin target mesh: Palm outer skin target
-Palm outer skin target materials: Urethane.001, 
+Palm outer skin target materials: Urethane, 
 Palm outer skin target modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
@@ -1442,7 +1428,7 @@ REFERENCE Wrist Plane rotation: X-0.3490658104419708 Y-0.0 Z0.0
 REFERENCE Wrist Plane scale: X1.0 Y1.0000001192092896 Z0.9999999403953552
 REFERENCE Wrist Plane groups: None
 REFERENCE Wrist Plane mesh: REFERENCE Wrist Plane
-REFERENCE Wrist Plane materials: PLA.002, 
+REFERENCE Wrist Plane materials: PLA, 
 REFERENCE Wrist Plane modifiers: 
   #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, Z, 
