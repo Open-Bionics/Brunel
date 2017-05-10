@@ -35,8 +35,18 @@ BOOLEAN M3 bolt hole rotation: X0.0 Y0.0 Z0.0
 BOOLEAN M3 bolt hole scale: X1.0000001192092896 Y1.0000001192092896 Z1.0000001192092896
 BOOLEAN M3 bolt hole groups: None
 BOOLEAN M3 bolt hole mesh: BOOLEAN M3 bolt hole
-BOOLEAN M3 bolt hole materials: Boolean difference.002, 
+BOOLEAN M3 bolt hole materials: Boolean difference, 
 BOOLEAN M3 bolt hole modifiers: None
+
+Name: BOOLEAN M3 bolt hole.001
+BOOLEAN M3 bolt hole.001 Type: MESH
+BOOLEAN M3 bolt hole.001 transform: X4.963139533996582 Y32.29368209838867 Z32.280128479003906
+BOOLEAN M3 bolt hole.001 rotation: X-1.6074501276016235 Y-1.0616658926010132 Z1.0447168350219727
+BOOLEAN M3 bolt hole.001 scale: X1.0000001192092896 Y1.0000001192092896 Z1.0000001192092896
+BOOLEAN M3 bolt hole.001 groups: None
+BOOLEAN M3 bolt hole.001 mesh: BOOLEAN M3 bolt hole.001
+BOOLEAN M3 bolt hole.001 materials: Boolean difference, 
+BOOLEAN M3 bolt hole.001 modifiers: None
 
 Name: BOOLEAN MOULD Riser
 BOOLEAN MOULD Riser Type: MESH
@@ -55,7 +65,7 @@ BOOLEAN Syringe rotation: X-1.5707963705062866 Y0.0 Z-1.832595705986023
 BOOLEAN Syringe scale: X1.0 Y1.0 Z1.0
 BOOLEAN Syringe groups: None
 BOOLEAN Syringe mesh: BOOLEAN Syringe
-BOOLEAN Syringe materials: Boolean difference.001, 
+BOOLEAN Syringe materials: Boolean difference, 
 BOOLEAN Syringe modifiers: None
 
 Name: BOOLEAN Thumb
@@ -98,7 +108,7 @@ BOOLEAN Thumb tendon channel for thumb rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Thumb tendon channel for thumb scale: X1.0 Y0.9999999403953552 Z0.9999998807907104
 BOOLEAN Thumb tendon channel for thumb groups: Thumb, 
 BOOLEAN Thumb tendon channel for thumb mesh: BOOLEAN Thumb tendon channel for thumb.001
-BOOLEAN Thumb tendon channel for thumb materials: Boolean difference.003, 
+BOOLEAN Thumb tendon channel for thumb materials: Boolean difference, 
 BOOLEAN Thumb tendon channel for thumb modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
@@ -125,107 +135,120 @@ BOOLEAN Thumb top cover modifiers:
   #1 Name: Solidify, Type: SOLIDIFY
   #2 Name: Bevel, Type: BEVEL
 
-Name: MOULD Inner dorsal
-MOULD Inner dorsal Type: MESH
-MOULD Inner dorsal transform: X14.834102630615234 Y39.16205596923828 Z-4.8160552978515625e-05
-MOULD Inner dorsal rotation: X0.0 Y-0.0 Z-0.2617993950843811
-MOULD Inner dorsal scale: X1.0 Y1.0 Z1.0
-MOULD Inner dorsal groups: None
-MOULD Inner dorsal mesh: MOULD.001
-MOULD Inner dorsal materials: None
-MOULD Inner dorsal modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-  #2 Name: Boolean.Thumb, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb
-  #3 Name: Boolean.MouldRiser, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN MOULD Riser
-  #4 Name: Boolean.Syringe, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Syringe
+Name: MOULD BOOLEAN blank
+MOULD BOOLEAN blank Type: MESH
+MOULD BOOLEAN blank transform: X16.266080856323242 Y29.993362426757812 Z-3.038175582885742
+MOULD BOOLEAN blank rotation: X0.014887658879160881 Y-0.024207716807723045 Z-0.5515589714050293
+MOULD BOOLEAN blank scale: X1.0 Y1.0 Z1.0
+MOULD BOOLEAN blank groups: None
+MOULD BOOLEAN blank mesh: Cube.001
+MOULD BOOLEAN blank materials: None
+MOULD BOOLEAN blank modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: INTERSECT, Object: Thumb
 
-Name: MOULD Inner palmar
-MOULD Inner palmar Type: MESH
-MOULD Inner palmar transform: X14.834102630615234 Y39.16205596923828 Z-4.8160552978515625e-05
-MOULD Inner palmar rotation: X0.0 Y-0.0 Z-0.2617993950843811
-MOULD Inner palmar scale: X1.0 Y1.0 Z1.0
-MOULD Inner palmar groups: None
-MOULD Inner palmar mesh: MOULD
-MOULD Inner palmar materials: None
-MOULD Inner palmar modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-  #2 Name: Boolean.Thumb, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb
-  #3 Name: Boolean.MouldRiser, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN MOULD Riser
-  #4 Name: Boolean.Syringe, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Syringe
+Name: MOULD BOOLEAN bottom
+MOULD BOOLEAN bottom Type: MESH
+MOULD BOOLEAN bottom transform: X28.90887451171875 Y48.9874267578125 Z0.5725380182266235
+MOULD BOOLEAN bottom rotation: X0.01489074807614088 Y-0.024206627160310745 Z-0.5515626072883606
+MOULD BOOLEAN bottom scale: X1.0 Y2.7500722408294678 Z1.8485746383666992
+MOULD BOOLEAN bottom groups: None
+MOULD BOOLEAN bottom mesh: MOULD bottom.001
+MOULD BOOLEAN bottom materials: Boolean difference, 
+MOULD BOOLEAN bottom modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
 
-Name: MOULD Outer dorsal
-MOULD Outer dorsal Type: MESH
-MOULD Outer dorsal transform: X14.834102630615234 Y39.16205596923828 Z-4.8160552978515625e-05
-MOULD Outer dorsal rotation: X0.0 Y-0.0 Z-0.2617993950843811
-MOULD Outer dorsal scale: X1.0 Y1.0 Z1.0
-MOULD Outer dorsal groups: None
-MOULD Outer dorsal mesh: MOULD.002
-MOULD Outer dorsal materials: None
-MOULD Outer dorsal modifiers: 
-  #1 Name: Bevel, Type: BEVEL
+Name: MOULD BOOLEAN cavity
+MOULD BOOLEAN cavity Type: MESH
+MOULD BOOLEAN cavity transform: X28.90887451171875 Y48.9874267578125 Z0.5725380182266235
+MOULD BOOLEAN cavity rotation: X0.01489074807614088 Y-0.024206627160310745 Z-0.5515626072883606
+MOULD BOOLEAN cavity scale: X1.0 Y2.7500722408294678 Z1.8485746383666992
+MOULD BOOLEAN cavity groups: None
+MOULD BOOLEAN cavity mesh: MOULD bottom.003
+MOULD BOOLEAN cavity materials: Urethane, 
+MOULD BOOLEAN cavity modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+
+Name: MOULD BOOLEAN seal bottom
+MOULD BOOLEAN seal bottom Type: MESH
+MOULD BOOLEAN seal bottom transform: X7.554476261138916 Y34.64931869506836 Z15.889122009277344
+MOULD BOOLEAN seal bottom rotation: X1.5642648935317993 Y-0.024207687005400658 Z-0.5515589714050293
+MOULD BOOLEAN seal bottom scale: X0.12467500567436218 Y0.12467500567436218 Z0.12467505037784576
+MOULD BOOLEAN seal bottom groups: None
+MOULD BOOLEAN seal bottom mesh: Cylinder
+MOULD BOOLEAN seal bottom materials: Boolean difference, 
+MOULD BOOLEAN seal bottom modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 4, Type: CATMULL_CLARK
   #2 Name: Solidify, Type: SOLIDIFY
-  #3 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Syringe
 
-Name: MOULD Outer dorsal.001
-MOULD Outer dorsal.001 Type: MESH
-MOULD Outer dorsal.001 transform: X14.834102630615234 Y39.16205596923828 Z-4.8160552978515625e-05
-MOULD Outer dorsal.001 rotation: X0.0 Y-0.0 Z-0.2617993950843811
-MOULD Outer dorsal.001 scale: X1.0 Y1.0 Z1.0
-MOULD Outer dorsal.001 groups: None
-MOULD Outer dorsal.001 mesh: MOULD.004
-MOULD Outer dorsal.001 materials: None
-MOULD Outer dorsal.001 modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-  #2 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Syringe
-  #3 Name: Boolean.M3, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M3 bolt hole
-  #4 Name: Boolean.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: MOULD Inner dorsal
-  #5 Name: Boolean.Thumb, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb
+Name: MOULD BOOLEAN seal top
+MOULD BOOLEAN seal top Type: MESH
+MOULD BOOLEAN seal top transform: X7.554476261138916 Y34.64931869506836 Z15.889122009277344
+MOULD BOOLEAN seal top rotation: X1.5642648935317993 Y-0.024207687005400658 Z-0.5515589714050293
+MOULD BOOLEAN seal top scale: X0.12467500567436218 Y0.12467500567436218 Z0.12467505037784576
+MOULD BOOLEAN seal top groups: None
+MOULD BOOLEAN seal top mesh: Cylinder.001
+MOULD BOOLEAN seal top materials: Boolean difference, 
+MOULD BOOLEAN seal top modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 4, Type: CATMULL_CLARK
 
-Name: MOULD Outer palmar
-MOULD Outer palmar Type: MESH
-MOULD Outer palmar transform: X14.834102630615234 Y39.16205596923828 Z-4.8160552978515625e-05
-MOULD Outer palmar rotation: X0.0 Y-0.0 Z-0.2617993950843811
-MOULD Outer palmar scale: X1.0 Y1.0 Z1.0
-MOULD Outer palmar groups: None
-MOULD Outer palmar mesh: MOULD.003
-MOULD Outer palmar materials: None
-MOULD Outer palmar modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-  #2 Name: Solidify, Type: SOLIDIFY
-  #3 Name: Boolean.Syringe, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Syringe
-  #4 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: MOULD Inner palmar
+Name: MOULD bottom
+MOULD bottom Type: MESH
+MOULD bottom transform: X28.90887451171875 Y48.9874267578125 Z0.5725380182266235
+MOULD bottom rotation: X0.0 Y0.0 Z0.0
+MOULD bottom scale: X1.0 Y1.0 Z1.0
+MOULD bottom groups: None
+MOULD bottom mesh: MOULD bottom
+MOULD bottom materials: Urethane, 
+MOULD bottom modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: MOULD BOOLEAN cavity
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: MOULD BOOLEAN seal bottom
 
-Name: MOULD Outer palmar.001
-MOULD Outer palmar.001 Type: MESH
-MOULD Outer palmar.001 transform: X14.834102630615234 Y39.16205596923828 Z-4.8160552978515625e-05
-MOULD Outer palmar.001 rotation: X0.0 Y-0.0 Z-0.2617993950843811
-MOULD Outer palmar.001 scale: X1.0 Y1.0 Z1.0
-MOULD Outer palmar.001 groups: None
-MOULD Outer palmar.001 mesh: MOULD.005
-MOULD Outer palmar.001 materials: None
-MOULD Outer palmar.001 modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-  #2 Name: Boolean.Syringe, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Syringe
-  #3 Name: Boolean.M3, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M3 bolt hole
-  #4 Name: Boolean.InnerPalmar, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: MOULD Inner palmar
-  #5 Name: Boolean.Thumb, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb
+Name: MOULD bottom housing
+MOULD bottom housing Type: MESH
+MOULD bottom housing transform: X33.27974319458008 Y46.298221588134766 Z0.69678795337677
+MOULD bottom housing rotation: X0.0 Y0.0 Z0.0
+MOULD bottom housing scale: X1.0 Y1.0 Z1.0
+MOULD bottom housing groups: None
+MOULD bottom housing mesh: MOULD bottom.002
+MOULD bottom housing materials: PLA White, 
+MOULD bottom housing modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: MOULD BOOLEAN bottom
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M3 bolt hole.001
+
+Name: MOULD top
+MOULD top Type: MESH
+MOULD top transform: X-4.088983535766602 Y42.51686096191406 Z-3.6168313026428223
+MOULD top rotation: X0.0 Y0.0 Z0.0
+MOULD top scale: X1.0 Y1.0 Z1.0
+MOULD top groups: None
+MOULD top mesh: Cube.002
+MOULD top materials: None
+MOULD top modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: MOULD BOOLEAN blank
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: UNION, Object: MOULD BOOLEAN seal top
+  #3 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M3 bolt hole.001
+  #4 Name: Boolean.003, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Riser channels
+
+Name: Riser channels
+Riser channels Type: MESH
+Riser channels transform: X10.582950592041016 Y40.646541595458984 Z-7.9659576416015625
+Riser channels rotation: X1.556581735610962 Y1.0149182081222534 Z0.9973511695861816
+Riser channels scale: X0.07451240718364716 Y0.07451242208480835 Z1.3724210262298584
+Riser channels groups: None
+Riser channels mesh: Cylinder.002
+Riser channels materials: Boolean difference, 
+Riser channels modifiers: None
 
 Name: Thumb
 Thumb Type: MESH
