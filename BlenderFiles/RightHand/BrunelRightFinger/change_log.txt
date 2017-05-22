@@ -192,7 +192,8 @@ BOOLEAN Inner proximal.001 modifiers:
         Clipping: True
         Vertex group mirroring: True
   #3 Name: Solidify, Type: SOLIDIFY
-
+        Thickness: 0.20, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True
 Name: BOOLEAN Inner proximal.002
 BOOLEAN Inner proximal.002 Type: MESH
 BOOLEAN Inner proximal.002 transform: X0.0 Y0.0 Z0.0
@@ -211,7 +212,8 @@ BOOLEAN Inner proximal.002 modifiers:
         Clipping: True
         Vertex group mirroring: True
   #3 Name: Solidify, Type: SOLIDIFY
-
+        Thickness: 0.20, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True
 Name: BOOLEAN Inner proximal.003
 BOOLEAN Inner proximal.003 Type: MESH
 BOOLEAN Inner proximal.003 transform: X0.0 Y0.0 Z0.0
@@ -230,7 +232,8 @@ BOOLEAN Inner proximal.003 modifiers:
         Clipping: True
         Vertex group mirroring: True
   #3 Name: Solidify, Type: SOLIDIFY
-
+        Thickness: 0.20, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True
 Name: BOOLEAN Inner proximal.004
 BOOLEAN Inner proximal.004 Type: MESH
 BOOLEAN Inner proximal.004 transform: X0.0 Y0.0 Z0.0
@@ -249,7 +252,8 @@ BOOLEAN Inner proximal.004 modifiers:
         Clipping: True
         Vertex group mirroring: True
   #3 Name: Solidify, Type: SOLIDIFY
-
+        Thickness: 0.20, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True
 Name: BOOLEAN Ligament.001
 BOOLEAN Ligament.001 Type: MESH
 BOOLEAN Ligament.001 transform: X0.0 Y0.0 Z0.0
@@ -426,7 +430,8 @@ BOOLEAN MOULD Location feature materials: Material,
 BOOLEAN MOULD Location feature modifiers: 
   #1 Name: Displace, Type: DISPLACE
   #2 Name: Solidify, Type: SOLIDIFY
-
+        Thickness: 0.20, Offset: 1.00 
+        Even thickness: True, High Quality Normals: False
 Name: BOOLEAN MOULD Risers
 BOOLEAN MOULD Risers Type: MESH
 BOOLEAN MOULD Risers transform: X51.654762268066406 Y51.654762268066406 Z0.6500009298324585
@@ -1041,6 +1046,24 @@ Cylinder.015 mesh: Cylinder.015
 Cylinder.015 materials: Boolean difference, 
 Cylinder.015 modifiers: None
 
+Name: Distal target
+Distal target Type: MESH
+Distal target transform: X0.0 Y0.0 Z0.0
+Distal target rotation: X0.0 Y0.0 Z0.0
+Distal target scale: X1.0 Y1.0 Z1.0
+Distal target groups: 1st Finger, 
+Distal target parent: HANDLE 1st Finger
+Distal target mesh: Top cover distal.001
+Distal target materials: PLA White, Urethane, 
+Distal target modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: Elastic terminator distal
 Elastic terminator distal Type: MESH
 Elastic terminator distal transform: X0.0 Y53.1385498046875 Z0.75
@@ -1614,7 +1637,8 @@ Inner Distal 1 MOULD modifiers:
         Clipping: False
         Vertex group mirroring: True
   #4 Name: Solidify, Type: SOLIDIFY
-  #5 Name: Subsurf, Type: SUBSURF
+        Thickness: 0.10, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #5 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner Distal 2 BLANK
@@ -1655,7 +1679,8 @@ Inner Distal 2 MOULD modifiers:
         Clipping: False
         Vertex group mirroring: True
   #4 Name: Solidify, Type: SOLIDIFY
-  #5 Name: Subsurf, Type: SUBSURF
+        Thickness: 0.10, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #5 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner Distal 3 BLANK
@@ -1696,7 +1721,8 @@ Inner Distal 3 MOULD modifiers:
         Clipping: False
         Vertex group mirroring: True
   #4 Name: Solidify, Type: SOLIDIFY
-  #5 Name: Subsurf, Type: SUBSURF
+        Thickness: 0.10, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #5 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner Distal 4 BLANK
@@ -1737,7 +1763,8 @@ Inner Distal 4 MOULD modifiers:
         Clipping: False
         Vertex group mirroring: True
   #4 Name: Solidify, Type: SOLIDIFY
-  #5 Name: Subsurf, Type: SUBSURF
+        Thickness: 0.10, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #5 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner distal.001
@@ -1894,7 +1921,8 @@ Inner proximal 1 MOULD modifiers:
   #2 Name: Hook, Type: HOOK
   #3 Name: Hook.001, Type: HOOK
   #4 Name: Solidify, Type: SOLIDIFY
-  #5 Name: Subsurf, Type: SUBSURF
+        Thickness: 0.10, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #5 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner proximal 2 BLANK
@@ -1935,7 +1963,8 @@ Inner proximal 2 MOULD modifiers:
   #2 Name: Hook, Type: HOOK
   #3 Name: Hook.001, Type: HOOK
   #4 Name: Solidify, Type: SOLIDIFY
-  #5 Name: Subsurf, Type: SUBSURF
+        Thickness: 0.10, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #5 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner proximal 3 BLANK
@@ -1976,7 +2005,8 @@ Inner proximal 3 MOULD modifiers:
   #2 Name: Hook, Type: HOOK
   #3 Name: Hook.001, Type: HOOK
   #4 Name: Solidify, Type: SOLIDIFY
-  #5 Name: Subsurf, Type: SUBSURF
+        Thickness: 0.10, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #5 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner proximal 4 BLANK
@@ -2017,7 +2047,8 @@ Inner proximal 4 MOULD modifiers:
   #2 Name: Hook, Type: HOOK
   #3 Name: Hook.001, Type: HOOK
   #4 Name: Solidify, Type: SOLIDIFY
-  #5 Name: Subsurf, Type: SUBSURF
+        Thickness: 0.10, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #5 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner proximal.001
@@ -2370,7 +2401,8 @@ LABEL PCB lines.001 modifiers:
         Subsurf level: 0
         Auxiliary target: Top cover target distal.001
   #5 Name: Solidify, Type: SOLIDIFY
-  #6 Name: Mirror, Type: MIRROR
+        Thickness: 0.50, Offset: 0.00 
+        Even thickness: False, High Quality Normals: False  #6 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 1st Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
@@ -2399,7 +2431,8 @@ LABEL PCB lines.002 modifiers:
         Subsurf level: 0
         Auxiliary target: Top cover target distal.002
   #5 Name: Solidify, Type: SOLIDIFY
-  #6 Name: Mirror, Type: MIRROR
+        Thickness: 0.50, Offset: 0.00 
+        Even thickness: False, High Quality Normals: False  #6 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 1st Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
@@ -2428,7 +2461,8 @@ LABEL PCB lines.003 modifiers:
         Subsurf level: 0
         Auxiliary target: Top cover target distal.003
   #5 Name: Solidify, Type: SOLIDIFY
-  #6 Name: Mirror, Type: MIRROR
+        Thickness: 0.50, Offset: 0.00 
+        Even thickness: False, High Quality Normals: False  #6 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 1st Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
@@ -2457,7 +2491,8 @@ LABEL PCB lines.004 modifiers:
         Subsurf level: 0
         Auxiliary target: Top cover target distal.004
   #5 Name: Solidify, Type: SOLIDIFY
-  #6 Name: Mirror, Type: MIRROR
+        Thickness: 0.50, Offset: 0.00 
+        Even thickness: False, High Quality Normals: False  #6 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 1st Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
