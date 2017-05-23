@@ -1046,16 +1046,34 @@ Cylinder.015 mesh: Cylinder.015
 Cylinder.015 materials: Boolean difference, 
 Cylinder.015 modifiers: None
 
-Name: Distal target
-Distal target Type: MESH
-Distal target transform: X0.0 Y0.0 Z0.0
-Distal target rotation: X0.0 Y0.0 Z0.0
-Distal target scale: X1.0 Y1.0 Z1.0
-Distal target groups: 1st Finger, 
-Distal target parent: HANDLE 1st Finger
-Distal target mesh: Top cover distal.001
-Distal target materials: PLA White, Urethane, 
-Distal target modifiers: 
+Name: Distal Phalanx
+Distal Phalanx Type: MESH
+Distal Phalanx transform: X0.0 Y0.0 Z0.0
+Distal Phalanx rotation: X0.0 Y0.0 Z0.0
+Distal Phalanx scale: X1.0 Y1.0 Z1.0
+Distal Phalanx groups: 1st Finger, 
+Distal Phalanx parent: HANDLE 1st Finger
+Distal Phalanx mesh: Top cover distal.002
+Distal Phalanx materials: PLA White, 
+Distal Phalanx modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Distal Phalanx Target
+Distal Phalanx Target Type: MESH
+Distal Phalanx Target transform: X0.0 Y0.0 Z0.0
+Distal Phalanx Target rotation: X0.0 Y0.0 Z0.0
+Distal Phalanx Target scale: X1.0 Y1.0 Z1.0
+Distal Phalanx Target groups: 1st Finger, 
+Distal Phalanx Target parent: HANDLE 1st Finger
+Distal Phalanx Target mesh: Top cover distal.003
+Distal Phalanx Target materials: PLA White, 
+Distal Phalanx Target modifiers: 
   #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Merge: True, Merge Limit: 0.0010000000474974513 mm
@@ -2498,6 +2516,27 @@ LABEL PCB lines.004 modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
+
+Name: Ligament New
+Ligament New Type: MESH
+Ligament New transform: X0.0 Y0.0 Z0.0
+Ligament New rotation: X0.0 Y0.0 Z0.0
+Ligament New scale: X1.0 Y1.0 Z1.0
+Ligament New groups: 1st Finger, 
+Ligament New parent: HANDLE 1st Finger
+Ligament New mesh: Ligament.001
+Ligament New materials: NF Black, 
+Ligament New modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: Ligament.001
 Ligament.001 Type: MESH
