@@ -2773,7 +2773,7 @@ MOULD Top modifiers:
 
 Name: Slot
 Slot Type: MESH
-Slot transform: X-4.25 Y64.65299987792969 Z-3.274113178253174
+Slot transform: X-4.25 Y63.17578887939453 Z-3.534585475921631
 Slot rotation: X0.1745329201221466 Y0.0 Z0.0
 Slot scale: X1.0 Y1.0 Z1.0
 Slot groups: None
@@ -2783,16 +2783,14 @@ Slot modifiers: None
 
 Name: Slot add
 Slot add Type: MESH
-Slot add transform: X-4.25 Y64.65299987792969 Z-3.274113178253174
+Slot add transform: X-4.25 Y64.16059875488281 Z-3.3609373569488525
 Slot add rotation: X0.1745329201221466 Y0.0 Z0.0
 Slot add scale: X1.0 Y1.0 Z1.0
 Slot add groups: None
-Slot add mesh: Cube.004
+Slot add mesh: Cube.003
 Slot add materials: Boolean difference, 
 Slot add modifiers: 
-  #1 Name: Solidify, Type: SOLIDIFY
-        Thickness: 1.00, Offset: 1.00 
-        Even thickness: True, High Quality Normals: True  #2 Name: Boolean, Type: BOOLEAN
+  #1 Name: Boolean, Type: BOOLEAN
         Operation: INTERSECT, Object: Distal Phalanx Target
 
 Name: Top cover distal.001
