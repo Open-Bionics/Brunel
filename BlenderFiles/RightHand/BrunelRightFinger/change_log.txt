@@ -1,6 +1,6 @@
 Name: Bolt hole
 Bolt hole Type: MESH
-Bolt hole transform: X0.0 Y85.54924011230469 Z2.1691036224365234
+Bolt hole transform: X0.0 Y84.5644302368164 Z1.9954553842544556
 Bolt hole rotation: X-1.3962633609771729 Y0.0 Z0.0
 Bolt hole scale: X1.0 Y1.0 Z1.0
 Bolt hole groups: None
@@ -10,7 +10,7 @@ Bolt hole modifiers: None
 
 Name: Bolt hole add
 Bolt hole add Type: MESH
-Bolt hole add transform: X0.0 Y85.54924011230469 Z2.1691036224365234
+Bolt hole add transform: X0.0 Y84.5644302368164 Z1.9954553842544556
 Bolt hole add rotation: X-1.3962633609771729 Y0.0 Z0.0
 Bolt hole add scale: X1.0 Y1.0 Z1.0
 Bolt hole add groups: None
