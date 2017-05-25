@@ -1,3 +1,27 @@
+Name: Bolt hole
+Bolt hole Type: MESH
+Bolt hole transform: X0.0 Y85.54924011230469 Z2.1691036224365234
+Bolt hole rotation: X-1.3962633609771729 Y0.0 Z0.0
+Bolt hole scale: X1.0 Y1.0 Z1.0
+Bolt hole groups: None
+Bolt hole mesh: Cylinder.001
+Bolt hole materials: Boolean difference, 
+Bolt hole modifiers: None
+
+Name: Bolt hole add
+Bolt hole add Type: MESH
+Bolt hole add transform: X0.0 Y85.54924011230469 Z2.1691036224365234
+Bolt hole add rotation: X-1.3962633609771729 Y0.0 Z0.0
+Bolt hole add scale: X1.0 Y1.0 Z1.0
+Bolt hole add groups: None
+Bolt hole add mesh: Cylinder.001
+Bolt hole add materials: Boolean difference, 
+Bolt hole add modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 1.00, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #2 Name: Boolean, Type: BOOLEAN
+        Operation: INTERSECT, Object: Distal Phalanx Target
+
 Name: BOOLEAN Distal 1 BLANK
 BOOLEAN Distal 1 BLANK Type: EMPTY
 BOOLEAN Distal 1 BLANK transform: X0.0 Y0.0 Z0.0
@@ -474,6 +498,24 @@ BOOLEAN MOULD Wedges.001 mesh: Circle.005
 BOOLEAN MOULD Wedges.001 materials: PLA Black, 
 BOOLEAN MOULD Wedges.001 modifiers: 
   #1 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN New Tendon channels
+BOOLEAN New Tendon channels Type: MESH
+BOOLEAN New Tendon channels transform: X0.0 Y0.0 Z0.0
+BOOLEAN New Tendon channels rotation: X0.0 Y0.0 Z0.0
+BOOLEAN New Tendon channels scale: X1.0 Y1.0 Z1.0
+BOOLEAN New Tendon channels groups: 1st Finger, 
+BOOLEAN New Tendon channels parent: HANDLE 1st Finger
+BOOLEAN New Tendon channels mesh: BOOLEAN Tendon channels distal.001
+BOOLEAN New Tendon channels materials: Boolean difference, 
+BOOLEAN New Tendon channels modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
 
 Name: BOOLEAN Proximal 1 BLANK
 BOOLEAN Proximal 1 BLANK Type: EMPTY
@@ -1063,6 +1105,18 @@ Distal Phalanx modifiers:
         Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: Bolt hole add
+  #4 Name: Boolean.001, Type: BOOLEAN
+        Operation: UNION, Object: Slot add
+  #5 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Bolt hole
+  #6 Name: Boolean.003, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Slot
+  #7 Name: Boolean.004, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament.001
+  #8 Name: Boolean.005, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN New Tendon channels
 
 Name: Distal Phalanx Target
 Distal Phalanx Target Type: MESH
@@ -2716,6 +2770,30 @@ MOULD Top modifiers:
         Operation: UNION, Object: BOOLEAN finger sections combined (top)
   #6 Name: Boolean risers, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN riser combo
+
+Name: Slot
+Slot Type: MESH
+Slot transform: X-4.25 Y64.65299987792969 Z-3.274113178253174
+Slot rotation: X0.1745329201221466 Y0.0 Z0.0
+Slot scale: X1.0 Y1.0 Z1.0
+Slot groups: None
+Slot mesh: Cube.004
+Slot materials: Boolean difference, 
+Slot modifiers: None
+
+Name: Slot add
+Slot add Type: MESH
+Slot add transform: X-4.25 Y64.65299987792969 Z-3.274113178253174
+Slot add rotation: X0.1745329201221466 Y0.0 Z0.0
+Slot add scale: X1.0 Y1.0 Z1.0
+Slot add groups: None
+Slot add mesh: Cube.004
+Slot add materials: Boolean difference, 
+Slot add modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 1.00, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #2 Name: Boolean, Type: BOOLEAN
+        Operation: INTERSECT, Object: Distal Phalanx Target
 
 Name: Top cover distal.001
 Top cover distal.001 Type: MESH
