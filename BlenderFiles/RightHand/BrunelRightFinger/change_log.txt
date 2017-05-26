@@ -1,22 +1,22 @@
-Name: Bolt hole
-Bolt hole Type: MESH
-Bolt hole transform: X0.0 Y84.5644302368164 Z1.9954553842544556
-Bolt hole rotation: X-1.3962633609771729 Y0.0 Z0.0
-Bolt hole scale: X1.0 Y1.0 Z1.0
-Bolt hole groups: None
-Bolt hole mesh: Cylinder.001
-Bolt hole materials: Boolean difference, 
-Bolt hole modifiers: None
+Name: BOOLEAN Bolt hole
+BOOLEAN Bolt hole Type: MESH
+BOOLEAN Bolt hole transform: X0.0 Y84.5644302368164 Z1.9954553842544556
+BOOLEAN Bolt hole rotation: X-1.3962633609771729 Y0.0 Z0.0
+BOOLEAN Bolt hole scale: X1.0 Y1.0 Z1.0
+BOOLEAN Bolt hole groups: None
+BOOLEAN Bolt hole mesh: Cylinder.001
+BOOLEAN Bolt hole materials: Boolean difference, 
+BOOLEAN Bolt hole modifiers: None
 
-Name: Bolt hole add
-Bolt hole add Type: MESH
-Bolt hole add transform: X0.0 Y84.5644302368164 Z1.9954553842544556
-Bolt hole add rotation: X-1.3962633609771729 Y0.0 Z0.0
-Bolt hole add scale: X1.0 Y1.0 Z1.0
-Bolt hole add groups: None
-Bolt hole add mesh: Cylinder.001
-Bolt hole add materials: Boolean difference, 
-Bolt hole add modifiers: 
+Name: BOOLEAN Bolt hole add
+BOOLEAN Bolt hole add Type: MESH
+BOOLEAN Bolt hole add transform: X0.0 Y84.5644302368164 Z1.9954553842544556
+BOOLEAN Bolt hole add rotation: X-1.3962633609771729 Y0.0 Z0.0
+BOOLEAN Bolt hole add scale: X1.0 Y1.0 Z1.0
+BOOLEAN Bolt hole add groups: None
+BOOLEAN Bolt hole add mesh: Cylinder.001
+BOOLEAN Bolt hole add materials: Boolean difference, 
+BOOLEAN Bolt hole add modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
         Thickness: 1.00, Offset: 1.00 
         Even thickness: True, High Quality Normals: True  #2 Name: Boolean, Type: BOOLEAN
@@ -285,7 +285,7 @@ BOOLEAN Ligament.001 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Ligament.001 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Ligament.001 groups: 2nd Finger, 
 BOOLEAN Ligament.001 parent: HANDLE 1st Finger
-BOOLEAN Ligament.001 mesh: BOOLEAN Ligament
+BOOLEAN Ligament.001 mesh: BOOLEAN Ligament New
 BOOLEAN Ligament.001 materials: Boolean difference, 
 BOOLEAN Ligament.001 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -683,6 +683,28 @@ BOOLEAN riser combo modifiers:
         Operation: UNION, Object: BOOLEAN top riser proximal 4.1
   #12 Name: Boolean.011, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN top riser proximal 4.2
+
+Name: BOOLEAN Slot
+BOOLEAN Slot Type: MESH
+BOOLEAN Slot transform: X-4.25 Y63.17578887939453 Z-3.534585475921631
+BOOLEAN Slot rotation: X0.1745329201221466 Y0.0 Z0.0
+BOOLEAN Slot scale: X1.0 Y1.0 Z1.0
+BOOLEAN Slot groups: None
+BOOLEAN Slot mesh: Cube.004
+BOOLEAN Slot materials: Boolean difference, 
+BOOLEAN Slot modifiers: None
+
+Name: BOOLEAN Slot add
+BOOLEAN Slot add Type: MESH
+BOOLEAN Slot add transform: X-4.25 Y64.16059875488281 Z-3.3609373569488525
+BOOLEAN Slot add rotation: X0.1745329201221466 Y0.0 Z0.0
+BOOLEAN Slot add scale: X1.0 Y1.0 Z1.0
+BOOLEAN Slot add groups: None
+BOOLEAN Slot add mesh: Cube.003
+BOOLEAN Slot add materials: Boolean difference, 
+BOOLEAN Slot add modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: INTERSECT, Object: Distal Phalanx Target
 
 Name: BOOLEAN Tendon channels distal.001
 BOOLEAN Tendon channels distal.001 Type: MESH
@@ -1106,16 +1128,16 @@ Distal Phalanx modifiers:
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #3 Name: Boolean, Type: BOOLEAN
-        Operation: UNION, Object: Bolt hole add
-  #4 Name: Boolean.001, Type: BOOLEAN
-        Operation: UNION, Object: Slot add
-  #5 Name: Boolean.002, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Bolt hole
-  #6 Name: Boolean.003, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Slot
-  #7 Name: Boolean.004, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Bolt hole add
+  #4 Name: BOOLEAN Slot add, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Slot add
+  #5 Name: BOOLEAN Bolt hole, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Bolt hole
+  #6 Name: BOOLEAN Slot, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Slot
+  #7 Name: BOOLEAN Ligament.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament.001
-  #8 Name: Boolean.005, Type: BOOLEAN
+  #8 Name: BOOLEAN New Tendon channels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN New Tendon channels
 
 Name: Distal Phalanx Target
@@ -1862,7 +1884,7 @@ Inner distal.001 modifiers:
   #5 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.001
   #6 Name: Boolean.Ligament, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Ligament.001
+        Operation: DIFFERENCE, Object: None
   #7 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels distal.001
   #8 Name: Boolean, Type: BOOLEAN
@@ -2145,7 +2167,7 @@ Inner proximal.001 modifiers:
   #4 Name: Boolean.M2, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.001
   #5 Name: Boolean.Ligament, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Ligament.001
+        Operation: DIFFERENCE, Object: None
   #6 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels proximal.001
   #7 Name: Boolean.LabelIdentifier, Type: BOOLEAN
@@ -2770,28 +2792,6 @@ MOULD Top modifiers:
         Operation: UNION, Object: BOOLEAN finger sections combined (top)
   #6 Name: Boolean risers, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN riser combo
-
-Name: Slot
-Slot Type: MESH
-Slot transform: X-4.25 Y63.17578887939453 Z-3.534585475921631
-Slot rotation: X0.1745329201221466 Y0.0 Z0.0
-Slot scale: X1.0 Y1.0 Z1.0
-Slot groups: None
-Slot mesh: Cube.004
-Slot materials: Boolean difference, 
-Slot modifiers: None
-
-Name: Slot add
-Slot add Type: MESH
-Slot add transform: X-4.25 Y64.16059875488281 Z-3.3609373569488525
-Slot add rotation: X0.1745329201221466 Y0.0 Z0.0
-Slot add scale: X1.0 Y1.0 Z1.0
-Slot add groups: None
-Slot add mesh: Cube.003
-Slot add materials: Boolean difference, 
-Slot add modifiers: 
-  #1 Name: Boolean, Type: BOOLEAN
-        Operation: INTERSECT, Object: Distal Phalanx Target
 
 Name: Top cover distal.001
 Top cover distal.001 Type: MESH
