@@ -22,6 +22,16 @@ BOOLEAN Bolt hole add modifiers:
         Even thickness: True, High Quality Normals: True  #2 Name: Boolean, Type: BOOLEAN
         Operation: INTERSECT, Object: Distal Phalanx Target
 
+Name: BOOLEAN Bolt hole Top Cover
+BOOLEAN Bolt hole Top Cover Type: MESH
+BOOLEAN Bolt hole Top Cover transform: X1.672293782234192 Y48.989376068115234 Z4.496944904327393
+BOOLEAN Bolt hole Top Cover rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Bolt hole Top Cover scale: X1.0 Y1.0 Z1.0
+BOOLEAN Bolt hole Top Cover groups: None
+BOOLEAN Bolt hole Top Cover mesh: Cylinder.003
+BOOLEAN Bolt hole Top Cover materials: Boolean difference, 
+BOOLEAN Bolt hole Top Cover modifiers: None
+
 Name: BOOLEAN Distal 1 BLANK
 BOOLEAN Distal 1 BLANK Type: EMPTY
 BOOLEAN Distal 1 BLANK transform: X0.0 Y0.0 Z0.0
@@ -2908,6 +2918,18 @@ Top cover distal.004 modifiers:
         Operation: DIFFERENCE, Object: LABEL PCB lines.004
   #8 Name: Boolean.ID, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Top distal.004
+
+Name: Top Cover New
+Top Cover New Type: MESH
+Top Cover New transform: X-4.25 Y63.17578887939453 Z-3.534585475921631
+Top Cover New rotation: X0.1745329201221466 Y0.0 Z0.0
+Top Cover New scale: X1.0 Y1.0 Z1.0
+Top Cover New groups: None
+Top Cover New mesh: Cube.010
+Top Cover New materials: Boolean difference, 
+Top Cover New modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Bolt hole Top Cover
 
 Name: Top cover pad distal.001
 Top cover pad distal.001 Type: MESH
