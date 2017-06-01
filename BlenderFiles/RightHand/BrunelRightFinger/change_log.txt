@@ -2803,6 +2803,39 @@ MOULD Top modifiers:
   #6 Name: Boolean risers, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN riser combo
 
+Name: Top Cover 1
+Top Cover 1 Type: MESH
+Top Cover 1 transform: X-4.25 Y63.17578887939453 Z-3.534585475921631
+Top Cover 1 rotation: X0.1745329201221466 Y0.0 Z0.0
+Top Cover 1 scale: X1.0 Y1.0 Z1.0
+Top Cover 1 groups: None
+Top Cover 1 mesh: Cube.005
+Top Cover 1 materials: Boolean difference, 
+Top Cover 1 modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: Top Cover 2
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: INTERSECT, Object: Distal Phalanx Target
+
+Name: Top Cover 2
+Top Cover 2 Type: MESH
+Top Cover 2 transform: X0.0 Y0.0 Z0.0
+Top Cover 2 rotation: X0.0 Y0.0 Z0.0
+Top Cover 2 scale: X1.0 Y1.0 Z1.0
+Top Cover 2 groups: 2nd Finger, 
+Top Cover 2 mesh: BOOLEAN Ligament New.001
+Top Cover 2 materials: Boolean difference, 
+Top Cover 2 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: Top cover distal.001
 Top cover distal.001 Type: MESH
 Top cover distal.001 transform: X0.0 Y0.0 Z0.0
@@ -2918,18 +2951,6 @@ Top cover distal.004 modifiers:
         Operation: DIFFERENCE, Object: LABEL PCB lines.004
   #8 Name: Boolean.ID, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Top distal.004
-
-Name: Top Cover New
-Top Cover New Type: MESH
-Top Cover New transform: X-4.25 Y63.17578887939453 Z-3.534585475921631
-Top Cover New rotation: X0.1745329201221466 Y0.0 Z0.0
-Top Cover New scale: X1.0 Y1.0 Z1.0
-Top Cover New groups: None
-Top Cover New mesh: Cube.010
-Top Cover New materials: Boolean difference, 
-Top Cover New modifiers: 
-  #1 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Bolt hole Top Cover
 
 Name: Top cover pad distal.001
 Top cover pad distal.001 Type: MESH
@@ -3411,6 +3432,42 @@ Top cover target proximal.004 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal.004
   #8 Name: Boolean, Type: BOOLEAN
         Operation: INTERSECT, Object: None
+
+Name: Top Cover V1
+Top Cover V1 Type: MESH
+Top Cover V1 transform: X-4.25 Y63.17578887939453 Z-3.534585475921631
+Top Cover V1 rotation: X0.1745329201221466 Y0.0 Z0.0
+Top Cover V1 scale: X1.0 Y1.0 Z1.0
+Top Cover V1 groups: None
+Top Cover V1 mesh: Cube.010
+Top Cover V1 materials: Boolean difference, 
+Top Cover V1 modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Bolt hole Top Cover
+
+Name: Top Cover V1.1
+Top Cover V1.1 Type: MESH
+Top Cover V1.1 transform: X-4.25 Y63.17578887939453 Z-3.534585475921631
+Top Cover V1.1 rotation: X0.1745329201221466 Y0.0 Z0.0
+Top Cover V1.1 scale: X1.0 Y1.0 Z1.0
+Top Cover V1.1 groups: None
+Top Cover V1.1 mesh: Cube.006
+Top Cover V1.1 materials: Boolean difference, 
+Top Cover V1.1 modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Bolt hole Top Cover
+
+Name: Top Cover V1.2
+Top Cover V1.2 Type: MESH
+Top Cover V1.2 transform: X-4.25 Y63.17578887939453 Z-3.534585475921631
+Top Cover V1.2 rotation: X0.1745329201221466 Y0.0 Z0.0
+Top Cover V1.2 scale: X1.0 Y1.0 Z1.0
+Top Cover V1.2 groups: None
+Top Cover V1.2 mesh: Cube.007
+Top Cover V1.2 materials: Boolean difference, 
+Top Cover V1.2 modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Bolt hole Top Cover
 
 Name: Urethane cover distal.001
 Urethane cover distal.001 Type: MESH
