@@ -32,6 +32,27 @@ BOOLEAN Bolt hole Top Cover mesh: Cylinder.003
 BOOLEAN Bolt hole Top Cover materials: Boolean difference, 
 BOOLEAN Bolt hole Top Cover modifiers: None
 
+Name: BOOLEAN Cheetah Cover New
+BOOLEAN Cheetah Cover New Type: MESH
+BOOLEAN Cheetah Cover New transform: X0.0 Y0.0 Z0.0
+BOOLEAN Cheetah Cover New rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Cheetah Cover New scale: X1.0 Y1.0 Z1.0
+BOOLEAN Cheetah Cover New groups: 1st Finger, 
+BOOLEAN Cheetah Cover New parent: HANDLE 1st Finger
+BOOLEAN Cheetah Cover New mesh: Top cover distal.001
+BOOLEAN Cheetah Cover New materials: Boolean difference, 
+BOOLEAN Cheetah Cover New modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: BOOLEAN Distal 1 BLANK
 BOOLEAN Distal 1 BLANK Type: EMPTY
 BOOLEAN Distal 1 BLANK transform: X0.0 Y0.0 Z0.0
@@ -370,16 +391,16 @@ BOOLEAN Ligament.004 modifiers:
   #5 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
-Name: BOOLEAN M2 Bolt Holes.001
-BOOLEAN M2 Bolt Holes.001 Type: MESH
-BOOLEAN M2 Bolt Holes.001 transform: X0.0 Y0.0 Z0.0
-BOOLEAN M2 Bolt Holes.001 rotation: X0.0 Y0.0 Z0.0
-BOOLEAN M2 Bolt Holes.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN M2 Bolt Holes.001 groups: 1st Finger, 
-BOOLEAN M2 Bolt Holes.001 parent: HANDLE 1st Finger
-BOOLEAN M2 Bolt Holes.001 mesh: BOOLEAN M2 Bolt Holes
-BOOLEAN M2 Bolt Holes.001 materials: Boolean difference, 
-BOOLEAN M2 Bolt Holes.001 modifiers: 
+Name: BOOLEAN M2 Bolt Hole
+BOOLEAN M2 Bolt Hole Type: MESH
+BOOLEAN M2 Bolt Hole transform: X0.0 Y0.0 Z0.0
+BOOLEAN M2 Bolt Hole rotation: X0.0 Y0.0 Z0.0
+BOOLEAN M2 Bolt Hole scale: X1.0 Y1.0 Z1.0
+BOOLEAN M2 Bolt Hole groups: 1st Finger, 
+BOOLEAN M2 Bolt Hole parent: HANDLE 1st Finger
+BOOLEAN M2 Bolt Hole mesh: BOOLEAN M2 Bolt Holes.001
+BOOLEAN M2 Bolt Hole materials: Boolean difference, 
+BOOLEAN M2 Bolt Hole modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
 
@@ -1149,6 +1170,10 @@ Distal Phalanx modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Ligament.001
   #8 Name: BOOLEAN New Tendon channels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN New Tendon channels
+  #9 Name: BOOLEAN Bolt hole Top Cover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Bolt hole Top Cover
+  #10 Name: BOOLEAN Cheetah Cover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Cheetah Cover New
 
 Name: Distal Phalanx Target
 Distal Phalanx Target Type: MESH
@@ -1892,7 +1917,7 @@ Inner distal.001 modifiers:
   #4 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
   #5 Name: Boolean.M2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.001
+        Operation: DIFFERENCE, Object: None
   #6 Name: Boolean.Ligament, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
   #7 Name: Boolean.TendonChannels, Type: BOOLEAN
@@ -2175,7 +2200,7 @@ Inner proximal.001 modifiers:
   #3 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
   #4 Name: Boolean.M2, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.001
+        Operation: DIFFERENCE, Object: None
   #5 Name: Boolean.Ligament, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
   #6 Name: Boolean.TendonChannels, Type: BOOLEAN
@@ -2810,7 +2835,7 @@ Top Cover 1 rotation: X0.1745329201221466 Y0.0 Z0.0
 Top Cover 1 scale: X1.0 Y1.0 Z1.0
 Top Cover 1 groups: None
 Top Cover 1 mesh: Cube.005
-Top Cover 1 materials: Boolean difference, 
+Top Cover 1 materials: PLA Black, 
 Top Cover 1 modifiers: 
   #1 Name: Boolean, Type: BOOLEAN
         Operation: UNION, Object: Top Cover 2
@@ -2824,7 +2849,7 @@ Top Cover 2 rotation: X0.0 Y0.0 Z0.0
 Top Cover 2 scale: X1.0 Y1.0 Z1.0
 Top Cover 2 groups: 2nd Finger, 
 Top Cover 2 mesh: BOOLEAN Ligament New.001
-Top Cover 2 materials: Boolean difference, 
+Top Cover 2 materials: PLA Black, 
 Top Cover 2 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
@@ -2857,7 +2882,7 @@ Top cover distal.001 modifiers:
   #4 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #5 Name: Boolean.M2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.001
+        Operation: DIFFERENCE, Object: None
   #6 Name: Boolean.ElasticTerminator, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Elastic terminator.001
   #7 Name: Boolean.LabelPCBLines, Type: BOOLEAN
@@ -3149,7 +3174,7 @@ Top cover proximal.001 modifiers:
   #4 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #5 Name: Boolean.M2, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.001
+        Operation: DIFFERENCE, Object: None
   #6 Name: Boolean.ProximalInner, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal.001
   #7 Name: Boolean.LabelPCBLines, Type: BOOLEAN
@@ -3271,7 +3296,7 @@ Top cover target distal.001 modifiers:
   #4 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #5 Name: Boolean.M2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.001
+        Operation: DIFFERENCE, Object: None
   #6 Name: Boolean.ElasticTerminator, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Elastic terminator.001
 
@@ -3440,7 +3465,7 @@ Top Cover V1 rotation: X0.1745329201221466 Y0.0 Z0.0
 Top Cover V1 scale: X1.0 Y1.0 Z1.0
 Top Cover V1 groups: None
 Top Cover V1 mesh: Cube.010
-Top Cover V1 materials: Boolean difference, 
+Top Cover V1 materials: PLA Black, 
 Top Cover V1 modifiers: 
   #1 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Bolt hole Top Cover
@@ -3452,7 +3477,7 @@ Top Cover V1.1 rotation: X0.1745329201221466 Y0.0 Z0.0
 Top Cover V1.1 scale: X1.0 Y1.0 Z1.0
 Top Cover V1.1 groups: None
 Top Cover V1.1 mesh: Cube.006
-Top Cover V1.1 materials: Boolean difference, 
+Top Cover V1.1 materials: PLA Black, 
 Top Cover V1.1 modifiers: 
   #1 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Bolt hole Top Cover
@@ -3464,10 +3489,24 @@ Top Cover V1.2 rotation: X0.1745329201221466 Y0.0 Z0.0
 Top Cover V1.2 scale: X1.0 Y1.0 Z1.0
 Top Cover V1.2 groups: None
 Top Cover V1.2 mesh: Cube.007
-Top Cover V1.2 materials: Boolean difference, 
+Top Cover V1.2 materials: PLA Black, 
 Top Cover V1.2 modifiers: 
   #1 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Bolt hole Top Cover
+
+Name: Top Cover V1.3
+Top Cover V1.3 Type: MESH
+Top Cover V1.3 transform: X-4.25 Y63.17578887939453 Z-3.534585475921631
+Top Cover V1.3 rotation: X0.1745329201221466 Y0.0 Z0.0
+Top Cover V1.3 scale: X1.0 Y1.0 Z1.0
+Top Cover V1.3 groups: None
+Top Cover V1.3 mesh: Cube.008
+Top Cover V1.3 materials: PLA Black, 
+Top Cover V1.3 modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Bolt hole Top Cover
+  #2 Name: Cheetah cover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Cheetah Cover New
 
 Name: Urethane cover distal.001
 Urethane cover distal.001 Type: MESH
