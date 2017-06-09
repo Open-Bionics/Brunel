@@ -4,6 +4,7 @@ BOOLEAN Bolt hole transform: X0.0 Y84.5644302368164 Z1.9954553842544556
 BOOLEAN Bolt hole rotation: X-1.3962633609771729 Y0.0 Z0.0
 BOOLEAN Bolt hole scale: X1.0 Y1.0 Z1.0
 BOOLEAN Bolt hole groups: None
+BOOLEAN Bolt hole parent: New Tendon Attachment
 BOOLEAN Bolt hole mesh: Cylinder.001
 BOOLEAN Bolt hole materials: Boolean difference, 
 BOOLEAN Bolt hole modifiers: None
@@ -14,6 +15,7 @@ BOOLEAN Bolt hole add transform: X0.0 Y84.5644302368164 Z1.9954553842544556
 BOOLEAN Bolt hole add rotation: X-1.3962633609771729 Y0.0 Z0.0
 BOOLEAN Bolt hole add scale: X1.0 Y1.0 Z1.0
 BOOLEAN Bolt hole add groups: None
+BOOLEAN Bolt hole add parent: New Tendon Attachment
 BOOLEAN Bolt hole add mesh: Cylinder.001
 BOOLEAN Bolt hole add materials: Boolean difference, 
 BOOLEAN Bolt hole add modifiers: 
@@ -24,10 +26,11 @@ BOOLEAN Bolt hole add modifiers:
 
 Name: BOOLEAN Bolt hole Top Cover
 BOOLEAN Bolt hole Top Cover Type: MESH
-BOOLEAN Bolt hole Top Cover transform: X1.672293782234192 Y48.989376068115234 Z4.496944904327393
+BOOLEAN Bolt hole Top Cover transform: X1.672293782234192 Y48.989376068115234 Z3.4969449043273926
 BOOLEAN Bolt hole Top Cover rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Bolt hole Top Cover scale: X1.0 Y1.0 Z1.0
 BOOLEAN Bolt hole Top Cover groups: None
+BOOLEAN Bolt hole Top Cover parent: New Tendon Attachment
 BOOLEAN Bolt hole Top Cover mesh: Cylinder.003
 BOOLEAN Bolt hole Top Cover materials: Boolean difference, 
 BOOLEAN Bolt hole Top Cover modifiers: None
@@ -38,7 +41,7 @@ BOOLEAN Cheetah Cover New transform: X0.0 Y0.0 Z0.0
 BOOLEAN Cheetah Cover New rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Cheetah Cover New scale: X1.0 Y1.0 Z1.0
 BOOLEAN Cheetah Cover New groups: 1st Finger, 
-BOOLEAN Cheetah Cover New parent: HANDLE 1st Finger
+BOOLEAN Cheetah Cover New parent: New Tendon Attachment
 BOOLEAN Cheetah Cover New mesh: Top cover distal.001
 BOOLEAN Cheetah Cover New materials: Boolean difference, 
 BOOLEAN Cheetah Cover New modifiers: 
@@ -109,6 +112,39 @@ BOOLEAN Distal 4 MOULD rotation: X0.0 Y-0.0 Z-3.9269907474517822
 BOOLEAN Distal 4 MOULD scale: X1.0 Y1.0 Z1.0
 BOOLEAN Distal 4 MOULD groups: None
 
+Name: BOOLEAN Elastic Slot
+BOOLEAN Elastic Slot Type: MESH
+BOOLEAN Elastic Slot transform: X2.227689743041992 Y57.45037841796875 Z5.3587212562561035
+BOOLEAN Elastic Slot rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Elastic Slot scale: X1.0 Y1.0 Z1.0
+BOOLEAN Elastic Slot groups: None
+BOOLEAN Elastic Slot parent: New Tendon Attachment
+BOOLEAN Elastic Slot mesh: Cube.009
+BOOLEAN Elastic Slot materials: Boolean difference, 
+BOOLEAN Elastic Slot modifiers: None
+
+Name: BOOLEAN Elastic Terminator Cover
+BOOLEAN Elastic Terminator Cover Type: MESH
+BOOLEAN Elastic Terminator Cover transform: X1.3322142362594604 Y55.83176803588867 Z3.0364081859588623
+BOOLEAN Elastic Terminator Cover rotation: X4.71238899230957 Y-0.0 Z0.0
+BOOLEAN Elastic Terminator Cover scale: X1.0 Y1.0 Z1.0
+BOOLEAN Elastic Terminator Cover groups: None
+BOOLEAN Elastic Terminator Cover parent: New Tendon Attachment
+BOOLEAN Elastic Terminator Cover mesh: Elastic terminator.000
+BOOLEAN Elastic Terminator Cover materials: Boolean difference, 
+BOOLEAN Elastic Terminator Cover modifiers: None
+
+Name: BOOLEAN Elastic Terminator Distal Phalanx
+BOOLEAN Elastic Terminator Distal Phalanx Type: MESH
+BOOLEAN Elastic Terminator Distal Phalanx transform: X0.38121917843818665 Y57.466590881347656 Z1.4232678413391113
+BOOLEAN Elastic Terminator Distal Phalanx rotation: X1.5707963705062866 Y-0.0 Z0.0
+BOOLEAN Elastic Terminator Distal Phalanx scale: X1.0 Y1.0 Z1.0
+BOOLEAN Elastic Terminator Distal Phalanx groups: 1st Finger, 
+BOOLEAN Elastic Terminator Distal Phalanx parent: New Tendon Attachment
+BOOLEAN Elastic Terminator Distal Phalanx mesh: BOOLEAN Elastic terminator.000
+BOOLEAN Elastic Terminator Distal Phalanx materials: Boolean difference, 
+BOOLEAN Elastic Terminator Distal Phalanx modifiers: None
+
 Name: BOOLEAN Elastic terminator.001
 BOOLEAN Elastic terminator.001 Type: MESH
 BOOLEAN Elastic terminator.001 transform: X0.0 Y0.0 Z0.0
@@ -176,6 +212,41 @@ BOOLEAN Elastic terminator.004 modifiers:
         Clipping: False
         Vertex group mirroring: True
   #2 Name: Hook, Type: HOOK
+
+Name: BOOLEAN Finger Nail
+BOOLEAN Finger Nail Type: MESH
+BOOLEAN Finger Nail transform: X1.0029062032699585 Y96.8373794555664 Z0.8937151432037354
+BOOLEAN Finger Nail rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Finger Nail scale: X1.0 Y1.0 Z1.0
+BOOLEAN Finger Nail groups: None
+BOOLEAN Finger Nail parent: New Tendon Attachment
+BOOLEAN Finger Nail mesh: Cylinder.004
+BOOLEAN Finger Nail materials: Boolean difference, 
+BOOLEAN Finger Nail modifiers: None
+
+Name: BOOLEAN Finger Nail Add
+BOOLEAN Finger Nail Add Type: MESH
+BOOLEAN Finger Nail Add transform: X9.5367431640625e-07 Y100.87542724609375 Z5.8937273025512695
+BOOLEAN Finger Nail Add rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Finger Nail Add scale: X1.0 Y1.000043272972107 Z1.0
+BOOLEAN Finger Nail Add groups: None
+BOOLEAN Finger Nail Add parent: New Tendon Attachment
+BOOLEAN Finger Nail Add mesh: Cylinder.005
+BOOLEAN Finger Nail Add materials: Boolean difference, 
+BOOLEAN Finger Nail Add modifiers: 
+  #1 Name: BOOLEAN Distal Phalanx Target, Type: BOOLEAN
+        Operation: INTERSECT, Object: Distal Phalanx Target
+
+Name: BOOLEAN Finger Nail Attachment
+BOOLEAN Finger Nail Attachment Type: MESH
+BOOLEAN Finger Nail Attachment transform: X1.7097628116607666 Y82.25009155273438 Z1.9906131029129028
+BOOLEAN Finger Nail Attachment rotation: X1.7453292608261108 Y0.0 Z0.0
+BOOLEAN Finger Nail Attachment scale: X1.0 Y1.0 Z1.0
+BOOLEAN Finger Nail Attachment groups: None
+BOOLEAN Finger Nail Attachment parent: New Tendon Attachment
+BOOLEAN Finger Nail Attachment mesh: Cylinder.006
+BOOLEAN Finger Nail Attachment materials: Boolean difference, 
+BOOLEAN Finger Nail Attachment modifiers: None
 
 Name: BOOLEAN finger sections combined (Bottom)
 BOOLEAN finger sections combined (Bottom) Type: MESH
@@ -536,7 +607,7 @@ BOOLEAN New Tendon channels transform: X0.0 Y0.0 Z0.0
 BOOLEAN New Tendon channels rotation: X0.0 Y0.0 Z0.0
 BOOLEAN New Tendon channels scale: X1.0 Y1.0 Z1.0
 BOOLEAN New Tendon channels groups: 1st Finger, 
-BOOLEAN New Tendon channels parent: HANDLE 1st Finger
+BOOLEAN New Tendon channels parent: New Tendon Attachment
 BOOLEAN New Tendon channels mesh: BOOLEAN Tendon channels distal.001
 BOOLEAN New Tendon channels materials: Boolean difference, 
 BOOLEAN New Tendon channels modifiers: 
@@ -721,6 +792,7 @@ BOOLEAN Slot transform: X-4.25 Y63.17578887939453 Z-3.534585475921631
 BOOLEAN Slot rotation: X0.1745329201221466 Y0.0 Z0.0
 BOOLEAN Slot scale: X1.0 Y1.0 Z1.0
 BOOLEAN Slot groups: None
+BOOLEAN Slot parent: New Tendon Attachment
 BOOLEAN Slot mesh: Cube.004
 BOOLEAN Slot materials: Boolean difference, 
 BOOLEAN Slot modifiers: None
@@ -731,6 +803,7 @@ BOOLEAN Slot add transform: X-4.25 Y64.16059875488281 Z-3.3609373569488525
 BOOLEAN Slot add rotation: X0.1745329201221466 Y0.0 Z0.0
 BOOLEAN Slot add scale: X1.0 Y1.0 Z1.0
 BOOLEAN Slot add groups: None
+BOOLEAN Slot add parent: New Tendon Attachment
 BOOLEAN Slot add mesh: Cube.003
 BOOLEAN Slot add materials: Boolean difference, 
 BOOLEAN Slot add modifiers: 
@@ -1147,7 +1220,7 @@ Distal Phalanx transform: X0.0 Y0.0 Z0.0
 Distal Phalanx rotation: X0.0 Y0.0 Z0.0
 Distal Phalanx scale: X1.0 Y1.0 Z1.0
 Distal Phalanx groups: 1st Finger, 
-Distal Phalanx parent: HANDLE 1st Finger
+Distal Phalanx parent: New Tendon Attachment
 Distal Phalanx mesh: Top cover distal.002
 Distal Phalanx materials: PLA White, 
 Distal Phalanx modifiers: 
@@ -1158,7 +1231,7 @@ Distal Phalanx modifiers:
         Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Boolean, Type: BOOLEAN
+  #3 Name: BOOLEAN Bolt Hole Add, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Bolt hole add
   #4 Name: BOOLEAN Slot add, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Slot add
@@ -1174,6 +1247,8 @@ Distal Phalanx modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Bolt hole Top Cover
   #10 Name: BOOLEAN Cheetah Cover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Cheetah Cover New
+  #11 Name: BOOLEAN Elastic Terminator Distal Phalanx, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Elastic Terminator Distal Phalanx
 
 Name: Distal Phalanx Target
 Distal Phalanx Target Type: MESH
@@ -1181,7 +1256,7 @@ Distal Phalanx Target transform: X0.0 Y0.0 Z0.0
 Distal Phalanx Target rotation: X0.0 Y0.0 Z0.0
 Distal Phalanx Target scale: X1.0 Y1.0 Z1.0
 Distal Phalanx Target groups: 1st Finger, 
-Distal Phalanx Target parent: HANDLE 1st Finger
+Distal Phalanx Target parent: New Tendon Attachment
 Distal Phalanx Target mesh: Top cover distal.003
 Distal Phalanx Target materials: PLA White, 
 Distal Phalanx Target modifiers: 
@@ -1224,6 +1299,41 @@ Elastic terminator.004 modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
+
+Name: Finger Nail
+Finger Nail Type: MESH
+Finger Nail transform: X-7.617473784193862e-06 Y80.8677749633789 Z0.9937295317649841
+Finger Nail rotation: X0.0 Y0.0 Z0.0
+Finger Nail scale: X1.100000023841858 Y1.100000023841858 Z1.100000023841858
+Finger Nail groups: None
+Finger Nail parent: New Tendon Attachment
+Finger Nail mesh: Cylinder.016
+Finger Nail materials: NF Black, 
+Finger Nail modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Distal Phalanx
+
+Name: Finger Nail Applied V1
+Finger Nail Applied V1 Type: MESH
+Finger Nail Applied V1 transform: X2.747058153152466 Y82.25020599365234 Z2.8937387466430664
+Finger Nail Applied V1 rotation: X0.0 Y0.0 Z0.0
+Finger Nail Applied V1 scale: X1.0 Y1.0 Z1.0
+Finger Nail Applied V1 groups: None
+Finger Nail Applied V1 parent: New Tendon Attachment
+Finger Nail Applied V1 mesh: Cylinder.018
+Finger Nail Applied V1 materials: NF Black, 
+Finger Nail Applied V1 modifiers: None
+
+Name: Finger Nail Applied V2
+Finger Nail Applied V2 Type: MESH
+Finger Nail Applied V2 transform: X-7.617473784193862e-06 Y80.8677749633789 Z0.9937295317649841
+Finger Nail Applied V2 rotation: X0.0 Y0.0 Z0.0
+Finger Nail Applied V2 scale: X1.100000023841858 Y1.100000023841858 Z1.100000023841858
+Finger Nail Applied V2 groups: None
+Finger Nail Applied V2 parent: New Tendon Attachment
+Finger Nail Applied V2 mesh: Cylinder.017
+Finger Nail Applied V2 materials: NF Black, 
+Finger Nail Applied V2 modifiers: None
 
 Name: HANDLE 1st Finger
 HANDLE 1st Finger Type: EMPTY
@@ -2634,7 +2744,7 @@ Ligament New transform: X0.0 Y0.0 Z0.0
 Ligament New rotation: X0.0 Y0.0 Z0.0
 Ligament New scale: X1.0 Y1.0 Z1.0
 Ligament New groups: 1st Finger, 
-Ligament New parent: HANDLE 1st Finger
+Ligament New parent: New Tendon Attachment
 Ligament New mesh: Ligament.001
 Ligament New materials: NF Black, 
 Ligament New modifiers: 
@@ -2828,12 +2938,20 @@ MOULD Top modifiers:
   #6 Name: Boolean risers, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN riser combo
 
+Name: New Tendon Attachment
+New Tendon Attachment Type: EMPTY
+New Tendon Attachment transform: X-36.16011047363281 Y86.99639892578125 Z-39.21775817871094
+New Tendon Attachment rotation: X0.0 Y0.0 Z0.0
+New Tendon Attachment scale: X1.0 Y1.0 Z1.0
+New Tendon Attachment groups: None
+
 Name: Top Cover 1
 Top Cover 1 Type: MESH
 Top Cover 1 transform: X-4.25 Y63.17578887939453 Z-3.534585475921631
 Top Cover 1 rotation: X0.1745329201221466 Y0.0 Z0.0
 Top Cover 1 scale: X1.0 Y1.0 Z1.0
 Top Cover 1 groups: None
+Top Cover 1 parent: New Tendon Attachment
 Top Cover 1 mesh: Cube.005
 Top Cover 1 materials: PLA Black, 
 Top Cover 1 modifiers: 
@@ -2848,6 +2966,7 @@ Top Cover 2 transform: X0.0 Y0.0 Z0.0
 Top Cover 2 rotation: X0.0 Y0.0 Z0.0
 Top Cover 2 scale: X1.0 Y1.0 Z1.0
 Top Cover 2 groups: 2nd Finger, 
+Top Cover 2 parent: New Tendon Attachment
 Top Cover 2 mesh: BOOLEAN Ligament New.001
 Top Cover 2 materials: PLA Black, 
 Top Cover 2 modifiers: 
@@ -3152,6 +3271,19 @@ Top cover pad proximal.004 modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #4 Name: Boolean.ID, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Top proximal.004
+
+Name: Top Cover Prototype
+Top Cover Prototype Type: MESH
+Top Cover Prototype transform: X-4.25 Y63.17578887939453 Z-3.534585475921631
+Top Cover Prototype rotation: X0.1745329201221466 Y0.0 Z0.0
+Top Cover Prototype scale: X1.0 Y1.0 Z1.0
+Top Cover Prototype groups: None
+Top Cover Prototype parent: New Tendon Attachment
+Top Cover Prototype mesh: Cube.010
+Top Cover Prototype materials: PLA Black, 
+Top Cover Prototype modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Bolt hole Top Cover
 
 Name: Top cover proximal.001
 Top cover proximal.001 Type: MESH
@@ -3464,49 +3596,44 @@ Top Cover V1 transform: X-4.25 Y63.17578887939453 Z-3.534585475921631
 Top Cover V1 rotation: X0.1745329201221466 Y0.0 Z0.0
 Top Cover V1 scale: X1.0 Y1.0 Z1.0
 Top Cover V1 groups: None
-Top Cover V1 mesh: Cube.010
+Top Cover V1 parent: New Tendon Attachment
+Top Cover V1 mesh: Cube.006
 Top Cover V1 materials: PLA Black, 
 Top Cover V1 modifiers: 
   #1 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Bolt hole Top Cover
 
-Name: Top Cover V1.1
-Top Cover V1.1 Type: MESH
-Top Cover V1.1 transform: X-4.25 Y63.17578887939453 Z-3.534585475921631
-Top Cover V1.1 rotation: X0.1745329201221466 Y0.0 Z0.0
-Top Cover V1.1 scale: X1.0 Y1.0 Z1.0
-Top Cover V1.1 groups: None
-Top Cover V1.1 mesh: Cube.006
-Top Cover V1.1 materials: PLA Black, 
-Top Cover V1.1 modifiers: 
+Name: Top Cover V2
+Top Cover V2 Type: MESH
+Top Cover V2 transform: X-4.25 Y63.17578887939453 Z-3.534585475921631
+Top Cover V2 rotation: X0.1745329201221466 Y0.0 Z0.0
+Top Cover V2 scale: X1.0 Y1.0 Z1.0
+Top Cover V2 groups: None
+Top Cover V2 parent: New Tendon Attachment
+Top Cover V2 mesh: Cube.007
+Top Cover V2 materials: PLA Black, 
+Top Cover V2 modifiers: 
   #1 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Bolt hole Top Cover
 
-Name: Top Cover V1.2
-Top Cover V1.2 Type: MESH
-Top Cover V1.2 transform: X-4.25 Y63.17578887939453 Z-3.534585475921631
-Top Cover V1.2 rotation: X0.1745329201221466 Y0.0 Z0.0
-Top Cover V1.2 scale: X1.0 Y1.0 Z1.0
-Top Cover V1.2 groups: None
-Top Cover V1.2 mesh: Cube.007
-Top Cover V1.2 materials: PLA Black, 
-Top Cover V1.2 modifiers: 
-  #1 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Bolt hole Top Cover
-
-Name: Top Cover V1.3
-Top Cover V1.3 Type: MESH
-Top Cover V1.3 transform: X-4.25 Y63.17578887939453 Z-3.534585475921631
-Top Cover V1.3 rotation: X0.1745329201221466 Y0.0 Z0.0
-Top Cover V1.3 scale: X1.0 Y1.0 Z1.0
-Top Cover V1.3 groups: None
-Top Cover V1.3 mesh: Cube.008
-Top Cover V1.3 materials: PLA Black, 
-Top Cover V1.3 modifiers: 
+Name: Top Cover V3
+Top Cover V3 Type: MESH
+Top Cover V3 transform: X-4.25 Y63.17578887939453 Z-3.534585475921631
+Top Cover V3 rotation: X0.1745329201221466 Y0.0 Z0.0
+Top Cover V3 scale: X1.0 Y1.0 Z1.0
+Top Cover V3 groups: None
+Top Cover V3 parent: New Tendon Attachment
+Top Cover V3 mesh: Cube.008
+Top Cover V3 materials: PLA Black, 
+Top Cover V3 modifiers: 
   #1 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Bolt hole Top Cover
   #2 Name: Cheetah cover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Cheetah Cover New
+  #3 Name: BOOLEAN Elastic Slot, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Elastic Slot
+  #4 Name: BOOLEAN Elastic Terminator Cover, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Elastic Terminator Cover
 
 Name: Urethane cover distal.001
 Urethane cover distal.001 Type: MESH
