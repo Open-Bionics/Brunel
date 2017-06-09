@@ -3096,6 +3096,29 @@ Top cover distal.004 modifiers:
   #8 Name: Boolean.ID, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Top distal.004
 
+Name: Top cover pad distal
+Top cover pad distal Type: MESH
+Top cover pad distal transform: X0.0 Y0.0 Z0.0
+Top cover pad distal rotation: X0.0 Y0.0 Z0.0
+Top cover pad distal scale: X1.0 Y1.0 Z1.0
+Top cover pad distal groups: 1st Finger, 
+Top cover pad distal parent: New Tendon Attachment
+Top cover pad distal mesh: Top cover pad distal.000
+Top cover pad distal materials: NF Black, 
+Top cover pad distal modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.10000000149011612 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #5 Name: Boolean.ID, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Top distal.001
+
 Name: Top cover pad distal.001
 Top cover pad distal.001 Type: MESH
 Top cover pad distal.001 transform: X0.0 Y0.0 Z0.0
