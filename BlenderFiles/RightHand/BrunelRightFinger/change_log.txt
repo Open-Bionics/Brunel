@@ -24,6 +24,17 @@ BOOLEAN Bolt hole add modifiers:
         Even thickness: True, High Quality Normals: True  #2 Name: Boolean, Type: BOOLEAN
         Operation: INTERSECT, Object: Distal Phalanx Target
 
+Name: BOOLEAN Bolt hole Finger Nail
+BOOLEAN Bolt hole Finger Nail Type: MESH
+BOOLEAN Bolt hole Finger Nail transform: X0.0 Y85.36528015136719 Z2.136667490005493
+BOOLEAN Bolt hole Finger Nail rotation: X-1.3962633609771729 Y0.0 Z0.0
+BOOLEAN Bolt hole Finger Nail scale: X0.9449999332427979 Y0.9450000524520874 Z0.9450000524520874
+BOOLEAN Bolt hole Finger Nail groups: None
+BOOLEAN Bolt hole Finger Nail parent: New Tendon Attachment
+BOOLEAN Bolt hole Finger Nail mesh: Cylinder.007
+BOOLEAN Bolt hole Finger Nail materials: Boolean difference, 
+BOOLEAN Bolt hole Finger Nail modifiers: None
+
 Name: BOOLEAN Bolt hole Top Cover
 BOOLEAN Bolt hole Top Cover Type: MESH
 BOOLEAN Bolt hole Top Cover transform: X1.672293782234192 Y48.989376068115234 Z3.4969449043273926
@@ -125,7 +136,7 @@ BOOLEAN Elastic Slot modifiers: None
 
 Name: BOOLEAN Elastic Terminator Cover
 BOOLEAN Elastic Terminator Cover Type: MESH
-BOOLEAN Elastic Terminator Cover transform: X1.3322142362594604 Y55.83176803588867 Z3.0364081859588623
+BOOLEAN Elastic Terminator Cover transform: X1.3322142362594604 Y55.83176803588867 Z2.2864081859588623
 BOOLEAN Elastic Terminator Cover rotation: X4.71238899230957 Y-0.0 Z0.0
 BOOLEAN Elastic Terminator Cover scale: X1.0 Y1.0 Z1.0
 BOOLEAN Elastic Terminator Cover groups: None
@@ -136,7 +147,7 @@ BOOLEAN Elastic Terminator Cover modifiers: None
 
 Name: BOOLEAN Elastic Terminator Distal Phalanx
 BOOLEAN Elastic Terminator Distal Phalanx Type: MESH
-BOOLEAN Elastic Terminator Distal Phalanx transform: X0.38121917843818665 Y57.466590881347656 Z1.4232678413391113
+BOOLEAN Elastic Terminator Distal Phalanx transform: X-2.086162567138672e-07 Y57.16387939453125 Z4.801275730133057
 BOOLEAN Elastic Terminator Distal Phalanx rotation: X1.5707963705062866 Y-0.0 Z0.0
 BOOLEAN Elastic Terminator Distal Phalanx scale: X1.0 Y1.0 Z1.0
 BOOLEAN Elastic Terminator Distal Phalanx groups: 1st Finger, 
@@ -1249,6 +1260,8 @@ Distal Phalanx modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Cheetah Cover New
   #11 Name: BOOLEAN Elastic Terminator Distal Phalanx, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Elastic Terminator Distal Phalanx
+  #12 Name: BOOLEAN Finger Nail V2, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Finger Nail Applied V2
 
 Name: Distal Phalanx Target
 Distal Phalanx Target Type: MESH
@@ -1326,14 +1339,16 @@ Finger Nail Applied V1 modifiers: None
 
 Name: Finger Nail Applied V2
 Finger Nail Applied V2 Type: MESH
-Finger Nail Applied V2 transform: X-7.617473784193862e-06 Y80.8677749633789 Z0.9937295317649841
+Finger Nail Applied V2 transform: X0.0003829002380371094 Y80.86781311035156 Z5.250128269195557
 Finger Nail Applied V2 rotation: X0.0 Y0.0 Z0.0
-Finger Nail Applied V2 scale: X1.100000023841858 Y1.100000023841858 Z1.100000023841858
+Finger Nail Applied V2 scale: X1.0138366222381592 Y1.0472484827041626 Z1.0371383428573608
 Finger Nail Applied V2 groups: None
 Finger Nail Applied V2 parent: New Tendon Attachment
 Finger Nail Applied V2 mesh: Cylinder.017
 Finger Nail Applied V2 materials: NF Black, 
-Finger Nail Applied V2 modifiers: None
+Finger Nail Applied V2 modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Bolt hole Finger Nail
 
 Name: HANDLE 1st Finger
 HANDLE 1st Finger Type: EMPTY
