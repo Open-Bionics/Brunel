@@ -155,7 +155,7 @@ BOOLEAN Elastic Slot modifiers: None
 
 Name: BOOLEAN Elastic Terminator Cover
 BOOLEAN Elastic Terminator Cover Type: MESH
-BOOLEAN Elastic Terminator Cover transform: X1.3322142362594604 Y55.83176803588867 Z3.2864081859588623
+BOOLEAN Elastic Terminator Cover transform: X1.3322142362594604 Y55.83176803588867 Z2.7864081859588623
 BOOLEAN Elastic Terminator Cover rotation: X4.71238899230957 Y-0.0 Z0.0
 BOOLEAN Elastic Terminator Cover scale: X1.0 Y1.0 Z1.0
 BOOLEAN Elastic Terminator Cover groups: None
@@ -271,7 +271,22 @@ BOOLEAN Finger Nail op2 modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #2 Name: Solidify, Type: SOLIDIFY
-        Thickness: 1.00, Offset: 1.00 
+        Thickness: 1.50, Offset: 0.00 
+        Even thickness: True, High Quality Normals: True
+Name: BOOLEAN Finger Nail op2 ADD
+BOOLEAN Finger Nail op2 ADD Type: MESH
+BOOLEAN Finger Nail op2 ADD transform: X1.0029062032699585 Y96.8373794555664 Z0.8937151432037354
+BOOLEAN Finger Nail op2 ADD rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Finger Nail op2 ADD scale: X1.0 Y1.0 Z1.0
+BOOLEAN Finger Nail op2 ADD groups: None
+BOOLEAN Finger Nail op2 ADD parent: New Tendon Attachment
+BOOLEAN Finger Nail op2 ADD mesh: Cylinder.005
+BOOLEAN Finger Nail op2 ADD materials: Boolean difference, 
+BOOLEAN Finger Nail op2 ADD modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Solidify, Type: SOLIDIFY
+        Thickness: 1.50, Offset: -1.00 
         Even thickness: True, High Quality Normals: True
 Name: BOOLEAN Finger Nail Outline
 BOOLEAN Finger Nail Outline Type: MESH
@@ -1294,24 +1309,63 @@ Distal Phalanx modifiers:
         Operation: UNION, Object: BOOLEAN Bolt hole add
   #4 Name: BOOLEAN Slot add, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Slot add
-  #5 Name: BOOLEAN Bolt hole, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Bolt hole
-  #6 Name: BOOLEAN Slot, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Slot
-  #7 Name: BOOLEAN Ligament.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Ligament.001
-  #8 Name: BOOLEAN New Tendon channels, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Tendon Channels
-  #9 Name: BOOLEAN Bolt hole Top Cover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Bolt hole Top Cover
-  #10 Name: BOOLEAN Cheetah Cover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Cheetah Cover
-  #11 Name: BOOLEAN Elastic Terminator Distal Phalanx, Type: BOOLEAN
-        Operation: UNION, Object: BOOLEAN Elastic Terminator Distal Phalanx
-  #12 Name: BOOLEAN Finger Nail op1, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Finger Nail op1
-  #13 Name: BOOLEAN Finger Nail op2, Type: BOOLEAN
+  #5 Name: BOOLEAN Finger Nail op2 ADD, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Finger Nail op2 ADD
+  #6 Name: BOOLEAN Finger Nail op2, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Finger Nail op2
+  #7 Name: BOOLEAN Bolt hole, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Bolt hole
+  #8 Name: BOOLEAN Slot, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Slot
+  #9 Name: BOOLEAN Ligament.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament.001
+  #10 Name: BOOLEAN New Tendon channels, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Tendon Channels
+  #11 Name: BOOLEAN Bolt hole Top Cover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Bolt hole Top Cover
+  #12 Name: BOOLEAN Cheetah Cover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Cheetah Cover
+  #13 Name: BOOLEAN Elastic Terminator Distal Phalanx, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Elastic Terminator Distal Phalanx
+  #14 Name: BOOLEAN Finger Nail op1, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Finger Nail op1
+
+Name: Distal Phalanx op1 Print test
+Distal Phalanx op1 Print test Type: MESH
+Distal Phalanx op1 Print test transform: X0.0 Y0.0 Z0.0
+Distal Phalanx op1 Print test rotation: X0.0 Y0.0 Z0.0
+Distal Phalanx op1 Print test scale: X1.0 Y1.0 Z1.0
+Distal Phalanx op1 Print test groups: 1st Finger, 
+Distal Phalanx op1 Print test parent: New Tendon Attachment
+Distal Phalanx op1 Print test mesh: Top cover distal.004
+Distal Phalanx op1 Print test materials: PLA White, 
+Distal Phalanx op1 Print test modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: Distal Phalanx Print Test Base
+
+Name: Distal Phalanx op2 Print test
+Distal Phalanx op2 Print test Type: MESH
+Distal Phalanx op2 Print test transform: X0.0 Y0.0 Z0.0
+Distal Phalanx op2 Print test rotation: X0.0 Y0.0 Z0.0
+Distal Phalanx op2 Print test scale: X1.0 Y1.0 Z1.0
+Distal Phalanx op2 Print test groups: 1st Finger, 
+Distal Phalanx op2 Print test parent: New Tendon Attachment
+Distal Phalanx op2 Print test mesh: Top cover distal.005
+Distal Phalanx op2 Print test materials: PLA White, 
+Distal Phalanx op2 Print test modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: Distal Phalanx Print Test Base
+
+Name: Distal Phalanx Print Test Base
+Distal Phalanx Print Test Base Type: MESH
+Distal Phalanx Print Test Base transform: X0.0 Y-1.8082013130187988 Z0.0
+Distal Phalanx Print Test Base rotation: X0.0 Y0.0 Z0.0
+Distal Phalanx Print Test Base scale: X1.0 Y1.0 Z1.0
+Distal Phalanx Print Test Base groups: 1st Finger, 
+Distal Phalanx Print Test Base parent: New Tendon Attachment
+Distal Phalanx Print Test Base mesh: Top cover distal.006
+Distal Phalanx Print Test Base materials: PLA White, 
+Distal Phalanx Print Test Base modifiers: None
 
 Name: Distal Phalanx Target
 Distal Phalanx Target Type: MESH
