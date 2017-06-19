@@ -6,7 +6,7 @@ Back Cover scale: X1.0 Y1.0 Z1.0
 Back Cover groups: None
 Back Cover parent: New Tendon Attachment
 Back Cover mesh: Cube.008
-Back Cover materials: PLA Black, 
+Back Cover materials: PLA White, 
 Back Cover modifiers: 
   #1 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Bolt hole Top Cover
