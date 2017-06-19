@@ -210,6 +210,19 @@ BOOLEAN Conical spring modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 2, Type: CATMULL_CLARK
 
+Name: BOOLEAN Conical spring for palm inner
+BOOLEAN Conical spring for palm inner Type: MESH
+BOOLEAN Conical spring for palm inner transform: X-13.663448333740234 Y-57.498046875 Z-3.0000014305114746
+BOOLEAN Conical spring for palm inner rotation: X0.0 Y-0.0 Z0.0
+BOOLEAN Conical spring for palm inner scale: X0.9999998807907104 Y0.9999999403953552 Z0.9999999403953552
+BOOLEAN Conical spring for palm inner groups: Actuator Block, Booleans, 
+BOOLEAN Conical spring for palm inner parent: Conical spring
+BOOLEAN Conical spring for palm inner mesh: BOOLEAN Conical spring.001
+BOOLEAN Conical spring for palm inner materials: Boolean difference, 
+BOOLEAN Conical spring for palm inner modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 2, Type: CATMULL_CLARK
+
 Name: BOOLEAN Connector cover for Back cover
 BOOLEAN Connector cover for Back cover Type: MESH
 BOOLEAN Connector cover for Back cover transform: X-19.096534729003906 Y-71.34187316894531 Z17.730140686035156
@@ -455,6 +468,43 @@ BOOLEAN Neopixel mesh: BOOLEAN PCB Chestnut component parts.001
 BOOLEAN Neopixel materials: Boolean difference, 
 BOOLEAN Neopixel modifiers: 
   #1 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN new gala cover
+BOOLEAN new gala cover Type: MESH
+BOOLEAN new gala cover transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+BOOLEAN new gala cover rotation: X0.0 Y-0.0 Z0.0
+BOOLEAN new gala cover scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+BOOLEAN new gala cover groups: Actuator Block, 
+BOOLEAN new gala cover parent: Actuator Block
+BOOLEAN new gala cover mesh: GALA cover.002
+BOOLEAN new gala cover materials: Boolean difference, 
+BOOLEAN new gala cover modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean.BackCoverProximalAttachmentPoint, Type: BOOLEAN
+        Operation: UNION, Object: Back cover proximal attachment point
+  #3 Name: Boolean.ConicalSpring, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Conical spring
+  #4 Name: Boolean.GALACoverM2Bolts, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN GALA cover M2 Bolt Hole
+  #5 Name: Boolean.PQ12s, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
+  #6 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel
+  #7 Name: Boolean.PCB, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for GALA cover
+  #8 Name: Boolean.CableTidy, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN GALA cover cable tidy
+  #9 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
+  #10 Name: Boolean.PalmOuterFrameM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame M2 bolt hole
+  #11 Name: Boolean.ThumbPivotDowelForGALACover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel for GALA cover
+  #12 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Connector cover for GALA cover
+  #13 Name: Boolean.DCJackCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for GALA cover
+  #14 Name: Solidify, Type: SOLIDIFY
 
 Name: BOOLEAN Palm Inner for MOULD
 BOOLEAN Palm Inner for MOULD Type: MESH
@@ -1156,6 +1206,42 @@ MOULD Top modifiers:
   #7 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN MOULD Runners
 
+Name: New gala cover
+New gala cover Type: MESH
+New gala cover transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+New gala cover rotation: X0.0 Y-0.0 Z0.0
+New gala cover scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+New gala cover groups: Actuator Block, 
+New gala cover parent: Actuator Block
+New gala cover mesh: GALA cover.002
+New gala cover materials: Boolean difference, 
+New gala cover modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean.BackCoverProximalAttachmentPoint, Type: BOOLEAN
+        Operation: UNION, Object: Back cover proximal attachment point
+  #3 Name: Boolean.ConicalSpring, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Conical spring
+  #4 Name: Boolean.GALACoverM2Bolts, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN GALA cover M2 Bolt Hole
+  #5 Name: Boolean.PQ12s, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
+  #6 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel
+  #7 Name: Boolean.PCB, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for GALA cover
+  #8 Name: Boolean.CableTidy, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN GALA cover cable tidy
+  #9 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
+  #10 Name: Boolean.PalmOuterFrameM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame M2 bolt hole
+  #11 Name: Boolean.ThumbPivotDowelForGALACover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel for GALA cover
+  #12 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Connector cover for GALA cover
+  #13 Name: Boolean.DCJackCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for GALA cover
+
 Name: Palm Covered
 Palm Covered Type: MESH
 Palm Covered transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
@@ -1197,7 +1283,7 @@ Palm inner modifiers:
   #4 Name: Boolean.PQ12, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
   #5 Name: Boolean.ConicalSpring, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Conical spring
+        Operation: DIFFERENCE, Object: BOOLEAN Conical spring for palm inner
   #6 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel
   #7 Name: Boolean.ThumbPivotDowel000, Type: BOOLEAN
@@ -1222,6 +1308,8 @@ Palm inner modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
   #17 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame distal hook
+  #18 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN new gala cover
 
 Name: Palm outer frame
 Palm outer frame Type: MESH
