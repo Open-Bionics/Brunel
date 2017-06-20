@@ -794,6 +794,24 @@ BOOLEAN Thumb ligament elastic clamp mesh: BOOLEAN Thumb ligament elastic clamp
 BOOLEAN Thumb ligament elastic clamp materials: Boolean difference, 
 BOOLEAN Thumb ligament elastic clamp modifiers: None
 
+Name: BOOLEAN Thumb pivot combined
+BOOLEAN Thumb pivot combined Type: MESH
+BOOLEAN Thumb pivot combined transform: X-23.537893295288086 Y-77.7562026977539 Z-4.8428544998168945
+BOOLEAN Thumb pivot combined rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Thumb pivot combined scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb pivot combined groups: None
+BOOLEAN Thumb pivot combined mesh: Cube.002
+BOOLEAN Thumb pivot combined materials: Boolean difference, 
+BOOLEAN Thumb pivot combined modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Thumb attahment dowel
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Thumb pivot dowel
+  #3 Name: Boolean.002, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Thumb pivot dowel.001
+  #4 Name: Boolean.003, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Thumb tendon channel
+
 Name: BOOLEAN Thumb pivot dowel
 BOOLEAN Thumb pivot dowel Type: MESH
 BOOLEAN Thumb pivot dowel transform: X15.050033569335938 Y-73.01124572753906 Z-4.673169136047363
@@ -1306,10 +1324,12 @@ Palm inner modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
   #16 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame distal hook
-  #17 Name: Boolean.001, Type: BOOLEAN
+  #17 Name: Boolean.NewGALACover , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN New gala cover
   #18 Name: Boolean.ThumbTendonChannel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon channel
+  #19 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot combined
 
 Name: Palm outer frame
 Palm outer frame Type: MESH
