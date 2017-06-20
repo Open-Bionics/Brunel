@@ -725,7 +725,7 @@ BOOLEAN Thumb attahment dowel modifiers: None
 
 Name: BOOLEAN Thumb ligament cover for inner palm
 BOOLEAN Thumb ligament cover for inner palm Type: MESH
-BOOLEAN Thumb ligament cover for inner palm transform: X-15.940424919128418 Y-47.73994827270508 Z-9.024927139282227
+BOOLEAN Thumb ligament cover for inner palm transform: X-15.940424919128418 Y-47.73994827270508 Z-10.991230010986328
 BOOLEAN Thumb ligament cover for inner palm rotation: X0.0 Y-0.0 Z-0.17453289031982422
 BOOLEAN Thumb ligament cover for inner palm scale: X1.0 Y1.0 Z1.0
 BOOLEAN Thumb ligament cover for inner palm groups: Actuator Block, Booleans, Thumb, 
