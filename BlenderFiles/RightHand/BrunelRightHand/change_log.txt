@@ -775,7 +775,7 @@ BOOLEAN Thumb ligament cover for outer palm.002 modifiers:
 
 Name: BOOLEAN Thumb ligament cover M2 Bolt Hole
 BOOLEAN Thumb ligament cover M2 Bolt Hole Type: MESH
-BOOLEAN Thumb ligament cover M2 Bolt Hole transform: X9.789173126220703 Y-67.75515747070312 Z-12.044929504394531
+BOOLEAN Thumb ligament cover M2 Bolt Hole transform: X9.789173126220703 Y-67.75515747070312 Z-14.330352783203125
 BOOLEAN Thumb ligament cover M2 Bolt Hole rotation: X3.141592502593994 Y4.3971656538133175e-08 Z-7.285712513294129e-07
 BOOLEAN Thumb ligament cover M2 Bolt Hole scale: X1.0 Y1.0 Z1.0
 BOOLEAN Thumb ligament cover M2 Bolt Hole groups: Actuator Block, Booleans, Thumb, 
@@ -967,6 +967,16 @@ CONNECTOR USB micro male rotation: X2.980232949312267e-08 Y-2.9802322387695312e-
 CONNECTOR USB micro male scale: X1.0 Y1.0 Z1.0
 CONNECTOR USB micro male groups: None
 CONNECTOR USB micro male parent: PCB Chestnut
+
+Name: Cube
+Cube Type: MESH
+Cube transform: X16.320232391357422 Y-98.69027709960938 Z-5.427752494812012
+Cube rotation: X0.0 Y0.0 Z0.0
+Cube scale: X1.0 Y1.0 Z1.0
+Cube groups: None
+Cube mesh: Cube.003
+Cube materials: None
+Cube modifiers: None
 
 Name: DC jack cover
 DC jack cover Type: MESH
@@ -1571,7 +1581,7 @@ Thumb groups: None
 
 Name: Thumb ligament cover
 Thumb ligament cover Type: MESH
-Thumb ligament cover transform: X-15.940424919128418 Y-47.73994827270508 Z-8.82492733001709
+Thumb ligament cover transform: X-15.940424919128418 Y-47.73994827270508 Z-11.033199310302734
 Thumb ligament cover rotation: X0.0 Y-0.0 Z-0.17453289031982422
 Thumb ligament cover scale: X1.0 Y1.0 Z1.0
 Thumb ligament cover groups: Actuator Block, Thumb, 
