@@ -520,6 +520,51 @@ BOOLEAN Palm Inner for MOULD modifiers:
   #3 Name: Boolean, Type: BOOLEAN
         Operation: INTERSECT, Object: BOOLEAN Palm outer skin for MOULD
 
+Name: BOOLEAN Palm Inner simplified
+BOOLEAN Palm Inner simplified Type: MESH
+BOOLEAN Palm Inner simplified transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+BOOLEAN Palm Inner simplified rotation: X0.0 Y-0.0 Z0.0
+BOOLEAN Palm Inner simplified scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+BOOLEAN Palm Inner simplified groups: Actuator Block, 
+BOOLEAN Palm Inner simplified parent: Actuator Block
+BOOLEAN Palm Inner simplified mesh: Palm Inner.002
+BOOLEAN Palm Inner simplified materials: PLA, 
+BOOLEAN Palm Inner simplified modifiers: 
+  #1 Name: Boolean.LigamentCoverPlatform, Type: BOOLEAN
+        Operation: UNION, Object: Ligament Cover M2 bolt hole platforms
+  #2 Name: Boolean.PQ12, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
+  #3 Name: Boolean.ConicalSpring, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Conical spring for palm inner
+  #4 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel
+  #5 Name: Boolean.ThumbPivotDowel000, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel
+  #6 Name: Boolean.ThumbPivotDowel001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel.001
+  #7 Name: Boolean.TendonChannels, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Tendon Channels
+  #8 Name: Boolean.GALACoverM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN GALA cover M2 Bolt Hole
+  #9 Name: Boolean.HandLigament, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Hand Ligament
+  #10 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
+  #11 Name: Boolean.ThumbLigmaentCoverM2BoltHole, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 Bolt Hole
+  #12 Name: Boolean.ThumbLigmaentCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for inner palm
+  #13 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
+  #14 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame distal hook
+  #15 Name: Boolean.NewGALACover , Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN New gala cover
+  #16 Name: Boolean.ThumbTendonChannel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon channel
+  #17 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot combined
+
 Name: BOOLEAN Palm outer frame
 BOOLEAN Palm outer frame Type: MESH
 BOOLEAN Palm outer frame transform: X9.0 Y-48.89358901977539 Z-2.9508914947509766
@@ -712,6 +757,16 @@ BOOLEAN Tendon Channels modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
+Name: BOOLEAN thumb access
+BOOLEAN thumb access Type: MESH
+BOOLEAN thumb access transform: X8.596158027648926 Y-97.47817993164062 Z-6.4416184425354
+BOOLEAN thumb access rotation: X0.0 Y0.0 Z0.0
+BOOLEAN thumb access scale: X1.0 Y1.0 Z1.0
+BOOLEAN thumb access groups: None
+BOOLEAN thumb access mesh: Cube.004
+BOOLEAN thumb access materials: Boolean difference, 
+BOOLEAN thumb access modifiers: None
+
 Name: BOOLEAN Thumb attahment dowel
 BOOLEAN Thumb attahment dowel Type: MESH
 BOOLEAN Thumb attahment dowel transform: X15.050033569335938 Y-69.01124572753906 Z-4.673169136047363
@@ -746,6 +801,19 @@ BOOLEAN Thumb ligament cover for MOULD Top mesh: BOOLEAN Thumb ligament cover fo
 BOOLEAN Thumb ligament cover for MOULD Top materials: Boolean difference, 
 BOOLEAN Thumb ligament cover for MOULD Top modifiers: 
   #1 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN Thumb ligament cover for new palm
+BOOLEAN Thumb ligament cover for new palm Type: MESH
+BOOLEAN Thumb ligament cover for new palm transform: X-15.940424919128418 Y-47.73994827270508 Z-8.82492733001709
+BOOLEAN Thumb ligament cover for new palm rotation: X0.0 Y-0.0 Z-0.17453289031982422
+BOOLEAN Thumb ligament cover for new palm scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb ligament cover for new palm groups: Actuator Block, Thumb, 
+BOOLEAN Thumb ligament cover for new palm parent: Actuator Block
+BOOLEAN Thumb ligament cover for new palm mesh: BOOLEAN Thumb ligament cover for outer palm.001
+BOOLEAN Thumb ligament cover for new palm materials: Boolean difference, 
+BOOLEAN Thumb ligament cover for new palm modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+  #2 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN Thumb ligament cover for outer palm
 BOOLEAN Thumb ligament cover for outer palm Type: MESH
@@ -967,16 +1035,6 @@ CONNECTOR USB micro male rotation: X2.980232949312267e-08 Y-2.9802322387695312e-
 CONNECTOR USB micro male scale: X1.0 Y1.0 Z1.0
 CONNECTOR USB micro male groups: None
 CONNECTOR USB micro male parent: PCB Chestnut
-
-Name: Cube
-Cube Type: MESH
-Cube transform: X16.320232391357422 Y-98.69027709960938 Z-5.427752494812012
-Cube rotation: X0.0 Y0.0 Z0.0
-Cube scale: X1.0 Y1.0 Z1.0
-Cube groups: None
-Cube mesh: Cube.003
-Cube materials: None
-Cube modifiers: None
 
 Name: DC jack cover
 DC jack cover Type: MESH
@@ -1573,7 +1631,7 @@ Tendon pivot dowel modifiers: None
 
 Name: Thumb
 Thumb Type: EMPTY
-Thumb transform: X-7.49111270904541 Y-66.10427856445312 Z-15.024927139282227
+Thumb transform: X-7.49111270904541 Y-66.10427856445312 Z-17.934730529785156
 Thumb rotation: X0.0 Y-2.9802318834981634e-08 Z1.3962633609771729
 Thumb scale: X1.0 Y1.0 Z1.0
 Thumb groups: None
@@ -1643,6 +1701,27 @@ Thumb pivot dowel.002 parent: Actuator Block
 Thumb pivot dowel.002 mesh: Thumb pivot dowel.000
 Thumb pivot dowel.002 materials: Steel, 
 Thumb pivot dowel.002 modifiers: None
+
+Name: Urethane Pad
+Urethane Pad Type: MESH
+Urethane Pad transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+Urethane Pad rotation: X0.0 Y-0.0 Z0.0
+Urethane Pad scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+Urethane Pad groups: Actuator Block, 
+Urethane Pad parent: Actuator Block
+Urethane Pad mesh: Palm Inner.003
+Urethane Pad materials: Urethane, 
+Urethane Pad modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Boolean.PalmInner, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm Inner simplified
+  #3 Name: Boolean.ThumbLigamentCoverforNewPalm, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for new palm
+  #4 Name: Boolean.ThumbSweptArea, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area
+  #5 Name: Boolean.ThumbAccess, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN thumb access
 
 Name: Wrist connector
 Wrist connector Type: MESH
