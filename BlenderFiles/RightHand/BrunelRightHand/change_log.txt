@@ -408,6 +408,22 @@ BOOLEAN DC Jack.001 materials: Boolean difference,
 BOOLEAN DC Jack.001 modifiers: 
   #1 Name: Bevel, Type: BEVEL
 
+Name: BOOLEAN Flex Bracket
+BOOLEAN Flex Bracket Type: MESH
+BOOLEAN Flex Bracket transform: X-11.954208374023438 Y-98.3869400024414 Z14.455009460449219
+BOOLEAN Flex Bracket rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Flex Bracket scale: X1.0 Y1.0 Z1.0
+BOOLEAN Flex Bracket groups: None
+BOOLEAN Flex Bracket mesh: Cube.006
+BOOLEAN Flex Bracket materials: Boolean difference, 
+BOOLEAN Flex Bracket modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: Y, 
+        Mirror object: PCB Chestnut FLIPPED
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+
 Name: BOOLEAN GALA cover
 BOOLEAN GALA cover Type: MESH
 BOOLEAN GALA cover transform: X9.0 Y-48.89358901977539 Z-2.9508910179138184
@@ -1286,6 +1302,26 @@ DC jack cover.001 materials: None
 DC jack cover.001 modifiers: 
   #1 Name: Bevel, Type: BEVEL
 
+Name: Flex Bracket
+Flex Bracket Type: MESH
+Flex Bracket transform: X-11.954208374023438 Y-98.3869400024414 Z14.455009460449219
+Flex Bracket rotation: X0.0 Y0.0 Z0.0
+Flex Bracket scale: X1.0 Y1.0 Z1.0
+Flex Bracket groups: None
+Flex Bracket mesh: Cube.003
+Flex Bracket materials: PLA, 
+Flex Bracket modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: Y, 
+        Mirror object: PCB Chestnut FLIPPED
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN USB.001
+  #3 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Headphone jack.001
+
 Name: GALA cover
 GALA cover Type: MESH
 GALA cover transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
@@ -1557,6 +1593,8 @@ New gala cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Connector cover for GALA cover
   #13 Name: Boolean.DCJackCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for GALA cover
+  #14 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Flex Bracket
 
 Name: Palm Covered
 Palm Covered Type: MESH
