@@ -444,6 +444,7 @@ BOOLEAN flex bracket for back cover modifiers:
   #3 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Headphone jack.001
   #4 Name: Solidify, Type: SOLIDIFY
+  #5 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN GALA cover
 BOOLEAN GALA cover Type: MESH
@@ -1379,6 +1380,7 @@ Flex Bracket modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN USB.001
   #3 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Headphone jack.001
+  #4 Name: Bevel, Type: BEVEL
 
 Name: GALA cover
 GALA cover Type: MESH
