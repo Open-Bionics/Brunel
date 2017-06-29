@@ -704,6 +704,54 @@ BOOLEAN New gala cover for back cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for GALA cover
   #14 Name: Solidify, Type: SOLIDIFY
 
+Name: BOOLEAN Palm Inner
+BOOLEAN Palm Inner Type: MESH
+BOOLEAN Palm Inner transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+BOOLEAN Palm Inner rotation: X0.0 Y-0.0 Z0.0
+BOOLEAN Palm Inner scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+BOOLEAN Palm Inner groups: Actuator Block, 
+BOOLEAN Palm Inner parent: Actuator Block
+BOOLEAN Palm Inner mesh: Palm Inner.001
+BOOLEAN Palm Inner materials: PLA, 
+BOOLEAN Palm Inner modifiers: 
+  #1 Name: Proximal fillet, Type: BEVEL
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean.LigamentCoverPlatform, Type: BOOLEAN
+        Operation: UNION, Object: Ligament Cover M2 bolt hole platforms
+  #4 Name: Boolean.PQ12, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
+  #5 Name: Boolean.ConicalSpring, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Conical spring for palm inner
+  #6 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel
+  #7 Name: Boolean.ThumbPivotDowel000, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel
+  #8 Name: Boolean.ThumbPivotDowel001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel.001
+  #9 Name: Boolean.TendonChannels, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Tendon Channels
+  #10 Name: Boolean.GALACoverM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN GALA cover M2 Bolt Hole
+  #11 Name: Boolean.HandLigament, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Hand Ligament
+  #12 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
+  #13 Name: Boolean.ThumbLigmaentCoverM2BoltHole, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 Bolt Hole
+  #14 Name: Boolean.ThumbLigmaentCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for inner palm
+  #15 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
+  #16 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame distal hook
+  #17 Name: Boolean.NewGALACover , Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN New gala cover
+  #18 Name: Boolean.ThumbTendonChannel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon channel
+  #19 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot combined
+
 Name: BOOLEAN Palm Inner for MOULD
 BOOLEAN Palm Inner for MOULD Type: MESH
 BOOLEAN Palm Inner for MOULD transform: X9.0 Y-48.89358901977539 Z-2.9508910179138184
