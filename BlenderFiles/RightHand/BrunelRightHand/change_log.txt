@@ -77,7 +77,7 @@ Back cover modifiers:
   #17 Name: Boolean.BackCoverM2BoltHolesVeneer, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes veneer
   #18 Name: Boolean.LabelLogo, Type: BOOLEAN
-        Operation: UNION, Object: LABEL Logo
+        Operation: DIFFERENCE, Object: LABEL Logo
   #19 Name: Boolean.Brunel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Brunel logo
   #20 Name: Boolean.LabelPCBLines, Type: BOOLEAN
@@ -185,6 +185,17 @@ BOOLEAN Back cover proximal attachment point modifiers:
   #1 Name: Displace, Type: DISPLACE
   #2 Name: Solidify, Type: SOLIDIFY
   #3 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN bottom cover
+BOOLEAN bottom cover Type: MESH
+BOOLEAN bottom cover transform: X21.218528747558594 Y-94.53303527832031 Z1.499997615814209
+BOOLEAN bottom cover rotation: X0.0 Y0.0 Z0.0
+BOOLEAN bottom cover scale: X1.0 Y1.0 Z1.0
+BOOLEAN bottom cover groups: None
+BOOLEAN bottom cover mesh: Cube.008
+BOOLEAN bottom cover materials: Boolean difference, 
+BOOLEAN bottom cover modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
 
 Name: BOOLEAN Capacitors for connector cover
 BOOLEAN Capacitors for connector cover Type: MESH
@@ -1284,6 +1295,17 @@ BOOLEAN Wrist connector M2 bolt holes mesh: BOOLEAN M2 Bolt Hole.006
 BOOLEAN Wrist connector M2 bolt holes materials: Boolean difference, 
 BOOLEAN Wrist connector M2 bolt holes modifiers: None
 
+Name: Bottom cover
+Bottom cover Type: MESH
+Bottom cover transform: X21.218528747558594 Y-94.53303527832031 Z1.499997615814209
+Bottom cover rotation: X0.0 Y0.0 Z0.0
+Bottom cover scale: X1.0 Y1.0 Z1.0
+Bottom cover groups: None
+Bottom cover mesh: Cube.005
+Bottom cover materials: None
+Bottom cover modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
 Name: Conical spring
 Conical spring Type: MESH
 Conical spring transform: X-15.163448333740234 Y-46.499046325683594 Z-4.673167705535889
@@ -1496,6 +1518,22 @@ LABEL Logo groups: None
 LABEL Logo mesh: LABEL Logo
 LABEL Logo materials: PLA Black, 
 LABEL Logo modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Shrinkwrap, Type: SHRINKWRAP
+        Target: Back cover target, Mode: NEAREST_SURFACEPOINT, Offset: 0.0 mm
+        Keep above surface: False
+  #3 Name: Solidify, Type: SOLIDIFY
+
+Name: LABEL Logo (flat)
+LABEL Logo (flat) Type: MESH
+LABEL Logo (flat) transform: X9.468347549438477 Y-47.020164489746094 Z27.15020751953125
+LABEL Logo (flat) rotation: X-0.05195975303649902 Y3.1415932178497314 Z2.8459771428401837e-08
+LABEL Logo (flat) scale: X2.09895920753479 Y2.09895920753479 Z2.09895920753479
+LABEL Logo (flat) groups: None
+LABEL Logo (flat) mesh: LABEL Logo.001
+LABEL Logo (flat) materials: PLA Black, 
+LABEL Logo (flat) modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #2 Name: Shrinkwrap, Type: SHRINKWRAP
@@ -1775,6 +1813,8 @@ Palm inner modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon channel
   #19 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot combined
+  #20 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN bottom cover
 
 Name: Palm outer frame
 Palm outer frame Type: MESH
