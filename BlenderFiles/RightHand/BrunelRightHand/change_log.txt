@@ -186,6 +186,17 @@ BOOLEAN Back cover proximal attachment point modifiers:
   #2 Name: Solidify, Type: SOLIDIFY
   #3 Name: Bevel, Type: BEVEL
 
+Name: BOOLEAN bottom cover
+BOOLEAN bottom cover Type: MESH
+BOOLEAN bottom cover transform: X21.218528747558594 Y-94.53303527832031 Z1.499997615814209
+BOOLEAN bottom cover rotation: X0.0 Y0.0 Z0.0
+BOOLEAN bottom cover scale: X1.0 Y1.0 Z1.0
+BOOLEAN bottom cover groups: None
+BOOLEAN bottom cover mesh: Cube.008
+BOOLEAN bottom cover materials: Boolean difference, 
+BOOLEAN bottom cover modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+
 Name: BOOLEAN Capacitors for connector cover
 BOOLEAN Capacitors for connector cover Type: MESH
 BOOLEAN Capacitors for connector cover transform: X-19.600000381469727 Y-64.44186401367188 Z14.730025291442871
@@ -1284,6 +1295,17 @@ BOOLEAN Wrist connector M2 bolt holes mesh: BOOLEAN M2 Bolt Hole.006
 BOOLEAN Wrist connector M2 bolt holes materials: Boolean difference, 
 BOOLEAN Wrist connector M2 bolt holes modifiers: None
 
+Name: Bottom cover
+Bottom cover Type: MESH
+Bottom cover transform: X21.218528747558594 Y-94.53303527832031 Z1.499997615814209
+Bottom cover rotation: X0.0 Y0.0 Z0.0
+Bottom cover scale: X1.0 Y1.0 Z1.0
+Bottom cover groups: None
+Bottom cover mesh: Cube.005
+Bottom cover materials: None
+Bottom cover modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
 Name: Conical spring
 Conical spring Type: MESH
 Conical spring transform: X-15.163448333740234 Y-46.499046325683594 Z-4.673167705535889
@@ -1775,6 +1797,8 @@ Palm inner modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon channel
   #19 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot combined
+  #20 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN bottom cover
 
 Name: Palm outer frame
 Palm outer frame Type: MESH
