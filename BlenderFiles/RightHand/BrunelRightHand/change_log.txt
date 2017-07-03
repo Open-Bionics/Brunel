@@ -45,7 +45,7 @@ Back cover modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #2 Name: Boolean.WristConnector, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Wrist connector M2 bolt holes
+        Operation: DIFFERENCE, Object: BOOLEAN New Wrist connector M2 bolt holes
   #3 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
   #4 Name: Boolean.PQ12s, Type: BOOLEAN
@@ -714,6 +714,16 @@ BOOLEAN New gala cover for back cover modifiers:
   #13 Name: Boolean.DCJackCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for GALA cover
   #14 Name: Solidify, Type: SOLIDIFY
+
+Name: BOOLEAN New Wrist connector M2 bolt holes
+BOOLEAN New Wrist connector M2 bolt holes Type: MESH
+BOOLEAN New Wrist connector M2 bolt holes transform: X9.064352035522461 Y-91.38917541503906 Z10.123432159423828
+BOOLEAN New Wrist connector M2 bolt holes rotation: X5.204799652099609 Y-0.11092732101678848 Z1.316519856452942
+BOOLEAN New Wrist connector M2 bolt holes scale: X1.0 Y1.0 Z1.0
+BOOLEAN New Wrist connector M2 bolt holes groups: None
+BOOLEAN New Wrist connector M2 bolt holes mesh: BOOLEAN M2 Bolt Hole.000
+BOOLEAN New Wrist connector M2 bolt holes materials: Boolean difference, 
+BOOLEAN New Wrist connector M2 bolt holes modifiers: None
 
 Name: BOOLEAN Palm Inner
 BOOLEAN Palm Inner Type: MESH
@@ -1742,6 +1752,19 @@ New gala cover modifiers:
   #14 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Flex Bracket
 
+Name: New Wrist Connector
+New Wrist Connector Type: MESH
+New Wrist Connector transform: X8.986015319824219 Y-113.17459106445312 Z20.293886184692383
+New Wrist Connector rotation: X-0.34906575083732605 Y1.4901161193847656e-08 Z1.4901161193847656e-08
+New Wrist Connector scale: X1.0 Y1.0 Z1.0
+New Wrist Connector groups: None
+New Wrist Connector mesh: Cube.009
+New Wrist Connector materials: None
+New Wrist Connector modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN New Wrist connector M2 bolt holes
+
 Name: Palm Covered
 Palm Covered Type: MESH
 Palm Covered transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
@@ -1815,6 +1838,8 @@ Palm inner modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot combined
   #20 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN bottom cover
+  #21 Name: Boolean.003, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN New Wrist connector M2 bolt holes
 
 Name: Palm outer frame
 Palm outer frame Type: MESH
