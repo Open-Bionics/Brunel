@@ -1316,6 +1316,16 @@ Bottom cover materials: None
 Bottom cover modifiers: 
   #1 Name: Bevel, Type: BEVEL
 
+Name: Circle
+Circle Type: MESH
+Circle transform: X9.066848754882812 Y-91.61183166503906 Z9.511549949645996
+Circle rotation: X1.2217305898666382 Y-0.0 Z0.0
+Circle scale: X3.3106915950775146 Y1.3456685543060303 Z3.1222684383392334
+Circle groups: None
+Circle mesh: Circle
+Circle materials: None
+Circle modifiers: None
+
 Name: Conical spring
 Conical spring Type: MESH
 Conical spring transform: X-15.163448333740234 Y-46.499046325683594 Z-4.673167705535889

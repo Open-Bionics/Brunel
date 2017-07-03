@@ -3,7 +3,7 @@ BOOLEAN DC Cable Type: MESH
 BOOLEAN DC Cable transform: X44.39649200439453 Y-3.814697265625e-06 Z-28.55029296875
 BOOLEAN DC Cable rotation: X0.0 Y0.0 Z0.0
 BOOLEAN DC Cable scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
-BOOLEAN DC Cable groups: None
+BOOLEAN DC Cable groups: Stand, 
 BOOLEAN DC Cable mesh: BOOLEAN DC Cable
 BOOLEAN DC Cable materials: Boolean difference.001, 
 BOOLEAN DC Cable modifiers: 
@@ -16,19 +16,43 @@ BOOLEAN DC Jack for Stand Type: MESH
 BOOLEAN DC Jack for Stand transform: X-0.06684684753417969 Y-10.704703330993652 Z30.850971221923828
 BOOLEAN DC Jack for Stand rotation: X-1.4115302349182457e-07 Y-1.9198616743087769 Z1.570796012878418
 BOOLEAN DC Jack for Stand scale: X0.9999998807907104 Y0.9999998211860657 Z1.0
-BOOLEAN DC Jack for Stand groups: None
+BOOLEAN DC Jack for Stand groups: Stand, 
 BOOLEAN DC Jack for Stand mesh: BOOLEAN DC Jack for Stand
 BOOLEAN DC Jack for Stand materials: Boolean difference.001, 
 BOOLEAN DC Jack for Stand modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
+Name: BOOLEAN New Wrist connector
+BOOLEAN New Wrist connector Type: MESH
+BOOLEAN New Wrist connector transform: X0.28434276580810547 Y0.46332502365112305 Z-7.423567295074463
+BOOLEAN New Wrist connector rotation: X-4.709762096405029 Y-1.9122337491239705e-08 Z8.855811195473962e-09
+BOOLEAN New Wrist connector scale: X1.0 Y1.0 Z1.0
+BOOLEAN New Wrist connector groups: None
+BOOLEAN New Wrist connector mesh: Cube.000
+BOOLEAN New Wrist connector materials: Boolean difference, 
+BOOLEAN New Wrist connector modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN New Wrist connector M2 bolt holes
+  #3 Name: Solidify, Type: SOLIDIFY
+
+Name: BOOLEAN New Wrist connector M2 bolt holes
+BOOLEAN New Wrist connector M2 bolt holes Type: MESH
+BOOLEAN New Wrist connector M2 bolt holes transform: X4.922379493713379 Y3.4026999473571777 Z-7.922478199005127
+BOOLEAN New Wrist connector M2 bolt holes rotation: X1.5734134912490845 Y-1.044922113418579 Z-1.049462914466858
+BOOLEAN New Wrist connector M2 bolt holes scale: X1.0 Y1.0 Z1.0
+BOOLEAN New Wrist connector M2 bolt holes groups: None
+BOOLEAN New Wrist connector M2 bolt holes mesh: BOOLEAN M2 Bolt Hole.000
+BOOLEAN New Wrist connector M2 bolt holes materials: Boolean difference.002, 
+BOOLEAN New Wrist connector M2 bolt holes modifiers: None
+
 Name: BOOLEAN Stand foot
 BOOLEAN Stand foot Type: MESH
 BOOLEAN Stand foot transform: X-9.5367431640625e-07 Y-3.814697265625e-06 Z-0.989990234375
 BOOLEAN Stand foot rotation: X-1.490115231206346e-08 Y-3.299535649148311e-07 Z-6.38683914644389e-08
 BOOLEAN Stand foot scale: X0.9999998807907104 Y0.9999999403953552 Z0.9999999403953552
-BOOLEAN Stand foot groups: None
+BOOLEAN Stand foot groups: Stand, 
 BOOLEAN Stand foot mesh: BOOLEAN Stand foot
 BOOLEAN Stand foot materials: Boolean difference, 
 BOOLEAN Stand foot modifiers: 
@@ -40,7 +64,7 @@ BOOLEAN Wrist connector for Stand Type: MESH
 BOOLEAN Wrist connector for Stand transform: X-0.0668478012084961 Y2.3384342193603516 Z0.1507415771484375
 BOOLEAN Wrist connector for Stand rotation: X1.5707964897155762 Y-2.6003638708971266e-07 Z-3.9954920794116333e-07
 BOOLEAN Wrist connector for Stand scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
-BOOLEAN Wrist connector for Stand groups: None
+BOOLEAN Wrist connector for Stand groups: Stand, 
 BOOLEAN Wrist connector for Stand mesh: BOOLEAN Wrist connector for Stand
 BOOLEAN Wrist connector for Stand materials: Boolean difference, 
 BOOLEAN Wrist connector for Stand modifiers: 
@@ -52,10 +76,40 @@ BOOLEAN Wrist connector M2 bolt holes for Stand Type: MESH
 BOOLEAN Wrist connector M2 bolt holes for Stand transform: X-0.0024957656860351562 Y3.7876129150390625 Z-0.00022125244140625
 BOOLEAN Wrist connector M2 bolt holes for Stand rotation: X4.712389945983887 Y-2.094393730163574 Z2.094393491744995
 BOOLEAN Wrist connector M2 bolt holes for Stand scale: X1.0000001192092896 Y0.9999999403953552 Z0.9999998807907104
-BOOLEAN Wrist connector M2 bolt holes for Stand groups: None
+BOOLEAN Wrist connector M2 bolt holes for Stand groups: Stand, 
 BOOLEAN Wrist connector M2 bolt holes for Stand mesh: BOOLEAN Wrist connector M2 bolt holes for Stand
 BOOLEAN Wrist connector M2 bolt holes for Stand materials: Boolean difference.001, 
 BOOLEAN Wrist connector M2 bolt holes for Stand modifiers: None
+
+Name: New Stand
+New Stand Type: MESH
+New Stand transform: X0.0 Y0.0 Z-8.705073923920281e-06
+New Stand rotation: X0.0 Y-0.0 Z0.0
+New Stand scale: X3.3106915950775146 Y1.3456685543060303 Z3.1222684383392334
+New Stand groups: None
+New Stand mesh: Circle
+New Stand materials: None
+New Stand modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN New Wrist connector
+  #4 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN New Wrist connector M2 bolt holes
+
+Name: New Wrist Connector
+New Wrist Connector Type: MESH
+New Wrist Connector transform: X0.28434276580810547 Y0.46332502365112305 Z-7.423567295074463
+New Wrist Connector rotation: X-4.709762096405029 Y-1.9122337491239705e-08 Z8.855811195473962e-09
+New Wrist Connector scale: X1.0 Y1.0 Z1.0
+New Wrist Connector groups: None
+New Wrist Connector mesh: Cube.009
+New Wrist Connector materials: None
+New Wrist Connector modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN New Wrist connector M2 bolt holes
 
 Name: Stand
 Stand Type: MESH
