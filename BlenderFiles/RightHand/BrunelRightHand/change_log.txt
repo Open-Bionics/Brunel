@@ -321,6 +321,19 @@ BOOLEAN Connectors.001 materials: Boolean difference,
 BOOLEAN Connectors.001 modifiers: 
   #1 Name: Bevel, Type: BEVEL
 
+Name: BOOLEAN DC Cable
+BOOLEAN DC Cable Type: MESH
+BOOLEAN DC Cable transform: X-8.997089385986328 Y-114.26325225830078 Z31.15357208251953
+BOOLEAN DC Cable rotation: X-3.2149364948272705 Y1.2305047512054443 Z-1.6223620176315308
+BOOLEAN DC Cable scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+BOOLEAN DC Cable groups: None
+BOOLEAN DC Cable mesh: BOOLEAN DC Cable
+BOOLEAN DC Cable materials: Boolean difference.001, 
+BOOLEAN DC Cable modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: BOOLEAN DC Jack
 BOOLEAN DC Jack Type: MESH
 BOOLEAN DC Jack transform: X9.0 Y-57.441871643066406 Z13.190025329589844
@@ -394,6 +407,19 @@ BOOLEAN DC Jack for GALA cover mesh: BOOLEAN PCB Chestnut.003
 BOOLEAN DC Jack for GALA cover materials: Boolean difference, 
 BOOLEAN DC Jack for GALA cover modifiers: 
   #1 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN DC Jack for New Stand
+BOOLEAN DC Jack for New Stand Type: MESH
+BOOLEAN DC Jack for New Stand transform: X9.0 Y-57.441871643066406 Z13.190025329589844
+BOOLEAN DC Jack for New Stand rotation: X-1.4901154976598718e-08 Y-1.4901164746561335e-08 Z1.5707961320877075
+BOOLEAN DC Jack for New Stand scale: X0.9999998807907104 Y0.9999998807907104 Z1.0
+BOOLEAN DC Jack for New Stand groups: Actuator Block, Booleans, 
+BOOLEAN DC Jack for New Stand parent: PCB Chestnut FLIPPED
+BOOLEAN DC Jack for New Stand mesh: BOOLEAN PCB Chestnut.004
+BOOLEAN DC Jack for New Stand materials: Boolean difference, 
+BOOLEAN DC Jack for New Stand modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 2, Type: CATMULL_CLARK
 
 Name: BOOLEAN DC Jack for Stand
 BOOLEAN DC Jack for Stand Type: MESH
@@ -715,6 +741,18 @@ BOOLEAN New gala cover for back cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for GALA cover
   #14 Name: Solidify, Type: SOLIDIFY
 
+Name: BOOLEAN New wrist connector
+BOOLEAN New wrist connector Type: MESH
+BOOLEAN New wrist connector transform: X8.986015319824219 Y-113.17459106445312 Z20.293886184692383
+BOOLEAN New wrist connector rotation: X-0.34906575083732605 Y1.4901161193847656e-08 Z1.4901161193847656e-08
+BOOLEAN New wrist connector scale: X1.0 Y1.0 Z1.0
+BOOLEAN New wrist connector groups: None
+BOOLEAN New wrist connector mesh: Cube.010
+BOOLEAN New wrist connector materials: Boolean difference, 
+BOOLEAN New wrist connector modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Solidify, Type: SOLIDIFY
+
 Name: BOOLEAN New Wrist connector M2 bolt holes
 BOOLEAN New Wrist connector M2 bolt holes Type: MESH
 BOOLEAN New Wrist connector M2 bolt holes transform: X9.064352035522461 Y-91.38917541503906 Z10.123432159423828
@@ -724,6 +762,16 @@ BOOLEAN New Wrist connector M2 bolt holes groups: None
 BOOLEAN New Wrist connector M2 bolt holes mesh: BOOLEAN M2 Bolt Hole.000
 BOOLEAN New Wrist connector M2 bolt holes materials: Boolean difference, 
 BOOLEAN New Wrist connector M2 bolt holes modifiers: None
+
+Name: BOOLEAN New Wrist connector M2 bolt holes for stand
+BOOLEAN New Wrist connector M2 bolt holes for stand Type: MESH
+BOOLEAN New Wrist connector M2 bolt holes for stand transform: X9.064352035522461 Y-91.38917541503906 Z10.123432159423828
+BOOLEAN New Wrist connector M2 bolt holes for stand rotation: X5.204799652099609 Y-0.11092732101678848 Z1.316519856452942
+BOOLEAN New Wrist connector M2 bolt holes for stand scale: X1.0 Y1.0 Z1.0
+BOOLEAN New Wrist connector M2 bolt holes for stand groups: None
+BOOLEAN New Wrist connector M2 bolt holes for stand mesh: BOOLEAN M2 Bolt Hole.001
+BOOLEAN New Wrist connector M2 bolt holes for stand materials: Boolean difference, 
+BOOLEAN New Wrist connector M2 bolt holes for stand modifiers: None
 
 Name: BOOLEAN Palm Inner
 BOOLEAN Palm Inner Type: MESH
@@ -1316,16 +1364,6 @@ Bottom cover materials: None
 Bottom cover modifiers: 
   #1 Name: Bevel, Type: BEVEL
 
-Name: Circle
-Circle Type: MESH
-Circle transform: X9.066848754882812 Y-91.61183166503906 Z9.511549949645996
-Circle rotation: X1.2217305898666382 Y-0.0 Z0.0
-Circle scale: X3.3106915950775146 Y1.3456685543060303 Z3.1222684383392334
-Circle groups: None
-Circle mesh: Circle
-Circle materials: None
-Circle modifiers: None
-
 Name: Conical spring
 Conical spring Type: MESH
 Conical spring transform: X-15.163448333740234 Y-46.499046325683594 Z-4.673167705535889
@@ -1762,6 +1800,27 @@ New gala cover modifiers:
   #14 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Flex Bracket
 
+Name: New Stand
+New Stand Type: MESH
+New Stand transform: X9.066848754882812 Y-91.61183166503906 Z9.511549949645996
+New Stand rotation: X1.2217305898666382 Y-0.0 Z0.0
+New Stand scale: X3.3106915950775146 Y1.3456685543060303 Z3.1222684383392334
+New Stand groups: None
+New Stand mesh: Circle
+New Stand materials: None
+New Stand modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN New wrist connector
+  #4 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN New Wrist connector M2 bolt holes for stand
+  #5 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN DC Cable
+  #6 Name: Boolean.003, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN DC Jack for New Stand
+
 Name: New Wrist Connector
 New Wrist Connector Type: MESH
 New Wrist Connector transform: X8.986015319824219 Y-113.17459106445312 Z20.293886184692383
@@ -2071,13 +2130,6 @@ REFERENCE Wrist Plane modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
-
-Name: Stand
-Stand Type: EMPTY
-Stand transform: X9.06684684753418 Y-90.09352111816406 Z13.682547569274902
-Stand rotation: X-1.919862151145935 Y-0.0 Z0.0
-Stand scale: X1.0 Y1.0 Z1.0
-Stand groups: None
 
 Name: Tendon pivot dowel
 Tendon pivot dowel Type: MESH

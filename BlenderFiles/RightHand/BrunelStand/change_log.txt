@@ -86,7 +86,7 @@ New Stand Type: MESH
 New Stand transform: X0.0 Y0.0 Z-8.705073923920281e-06
 New Stand rotation: X0.0 Y-0.0 Z0.0
 New Stand scale: X3.3106915950775146 Y1.3456685543060303 Z3.1222684383392334
-New Stand groups: None
+New Stand groups: Stand, 
 New Stand mesh: Circle
 New Stand materials: None
 New Stand modifiers: 
@@ -116,7 +116,7 @@ Stand Type: MESH
 Stand transform: X0.0 Y0.0 Z0.0
 Stand rotation: X0.0 Y0.0 Z0.0
 Stand scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
-Stand groups: Stand, 
+Stand groups: None
 Stand mesh: Back cover.001
 Stand materials: None
 Stand modifiers: 
