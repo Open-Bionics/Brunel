@@ -1586,8 +1586,8 @@ LABEL Logo modifiers:
 Name: LABEL Logo (flat)
 LABEL Logo (flat) Type: MESH
 LABEL Logo (flat) transform: X9.468347549438477 Y-47.020164489746094 Z27.15020751953125
-LABEL Logo (flat) rotation: X-0.05195975303649902 Y3.1415932178497314 Z2.8459771428401837e-08
-LABEL Logo (flat) scale: X2.09895920753479 Y2.09895920753479 Z2.09895920753479
+LABEL Logo (flat) rotation: X0.0 Y0.0 Z0.0
+LABEL Logo (flat) scale: X1.0 Y1.0 Z1.0
 LABEL Logo (flat) groups: None
 LABEL Logo (flat) mesh: LABEL Logo.001
 LABEL Logo (flat) materials: PLA Black, 
@@ -1598,6 +1598,19 @@ LABEL Logo (flat) modifiers:
         Target: Back cover target, Mode: NEAREST_SURFACEPOINT, Offset: 0.0 mm
         Keep above surface: False
   #3 Name: Solidify, Type: SOLIDIFY
+
+Name: LABEL Logo (flat) print
+LABEL Logo (flat) print Type: MESH
+LABEL Logo (flat) print transform: X9.468347549438477 Y-47.020164489746094 Z27.15020751953125
+LABEL Logo (flat) print rotation: X0.0 Y0.0 Z0.0
+LABEL Logo (flat) print scale: X1.0 Y1.0 Z1.0
+LABEL Logo (flat) print groups: None
+LABEL Logo (flat) print mesh: LABEL Logo.002
+LABEL Logo (flat) print materials: PLA Black, 
+LABEL Logo (flat) print modifiers: 
+  #1 Name: Shrinkwrap, Type: SHRINKWRAP
+        Target: Back cover target, Mode: NEAREST_SURFACEPOINT, Offset: 0.0 mm
+        Keep above surface: False
 
 Name: LABEL Open Bionics
 LABEL Open Bionics Type: MESH
