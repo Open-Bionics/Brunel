@@ -453,13 +453,7 @@ BOOLEAN Flex Bracket scale: X1.0 Y1.0 Z1.0
 BOOLEAN Flex Bracket groups: None
 BOOLEAN Flex Bracket mesh: Cube.006
 BOOLEAN Flex Bracket materials: Boolean difference, 
-BOOLEAN Flex Bracket modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: Y, 
-        Mirror object: PCB Chestnut FLIPPED
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
+BOOLEAN Flex Bracket modifiers: None
 
 Name: BOOLEAN flex bracket for back cover
 BOOLEAN flex bracket for back cover Type: MESH
@@ -1498,17 +1492,11 @@ Flex Bracket groups: None
 Flex Bracket mesh: Cube.003
 Flex Bracket materials: PLA, 
 Flex Bracket modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: Y, 
-        Mirror object: PCB Chestnut FLIPPED
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #2 Name: Boolean, Type: BOOLEAN
+  #1 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN USB.001
-  #3 Name: Boolean.001, Type: BOOLEAN
+  #2 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Headphone jack.001
-  #4 Name: Bevel, Type: BEVEL
+  #3 Name: Bevel, Type: BEVEL
 
 Name: GALA cover
 GALA cover Type: MESH
