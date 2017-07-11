@@ -1149,6 +1149,18 @@ BOOLEAN Thumb ligament cover for MOULD Top materials: Boolean difference,
 BOOLEAN Thumb ligament cover for MOULD Top modifiers: 
   #1 Name: Bevel, Type: BEVEL
 
+Name: BOOLEAN Thumb ligament cover for new mould
+BOOLEAN Thumb ligament cover for new mould Type: MESH
+BOOLEAN Thumb ligament cover for new mould transform: X-15.940424919128418 Y-47.73994827270508 Z-8.82492733001709
+BOOLEAN Thumb ligament cover for new mould rotation: X0.0 Y-0.0 Z-0.17453289031982422
+BOOLEAN Thumb ligament cover for new mould scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb ligament cover for new mould groups: Actuator Block, Thumb, 
+BOOLEAN Thumb ligament cover for new mould parent: Actuator Block
+BOOLEAN Thumb ligament cover for new mould mesh: BOOLEAN Thumb ligament cover for MOULD Top.001
+BOOLEAN Thumb ligament cover for new mould materials: Boolean difference, 
+BOOLEAN Thumb ligament cover for new mould modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+
 Name: BOOLEAN Thumb ligament cover for new palm
 BOOLEAN Thumb ligament cover for new palm Type: MESH
 BOOLEAN Thumb ligament cover for new palm transform: X-15.940424919128418 Y-47.73994827270508 Z-8.82492733001709
@@ -1450,6 +1462,16 @@ CONNECTOR USB micro male.001 rotation: X2.980232949312267e-08 Y-2.98023223876953
 CONNECTOR USB micro male.001 scale: X1.0 Y1.0 Z1.0
 CONNECTOR USB micro male.001 groups: None
 CONNECTOR USB micro male.001 parent: PCB Chestnut FLIPPED
+
+Name: Cube
+Cube Type: MESH
+Cube transform: X15.819153785705566 Y-97.043212890625 Z-11.933175086975098
+Cube rotation: X0.0 Y0.0 Z0.0
+Cube scale: X1.0 Y1.0 Z1.0
+Cube groups: None
+Cube mesh: Cube.011
+Cube materials: Boolean difference, 
+Cube modifiers: None
 
 Name: DC jack cover
 DC jack cover Type: MESH
@@ -1911,6 +1933,22 @@ Palm inner modifiers:
   #21 Name: Boolean.003, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN New Wrist connector M2 bolt holes
 
+Name: Palm inner for new mould
+Palm inner for new mould Type: MESH
+Palm inner for new mould transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+Palm inner for new mould rotation: X0.0 Y-0.0 Z0.0
+Palm inner for new mould scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+Palm inner for new mould groups: Actuator Block, 
+Palm inner for new mould parent: Actuator Block
+Palm inner for new mould mesh: Palm Inner.005
+Palm inner for new mould materials: PLA, 
+Palm inner for new mould modifiers: 
+  #1 Name: Proximal fillet, Type: BEVEL
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: Urethane skin
+
 Name: Palm outer frame
 Palm outer frame Type: MESH
 Palm outer frame transform: X9.0 Y-48.89358901977539 Z-2.9508914947509766
@@ -2216,6 +2254,22 @@ Thumb pivot dowel.002 mesh: Thumb pivot dowel.000
 Thumb pivot dowel.002 materials: Steel, 
 Thumb pivot dowel.002 modifiers: None
 
+Name: Urethane cutout
+Urethane cutout Type: MESH
+Urethane cutout transform: X12.73114013671875 Y-78.99785614013672 Z-15.496833801269531
+Urethane cutout rotation: X0.0 Y0.0 Z0.0
+Urethane cutout scale: X1.0 Y1.0 Z1.0
+Urethane cutout groups: None
+Urethane cutout mesh: Plane.002
+Urethane cutout materials: None
+Urethane cutout modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: Cube
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Thumb swept area
+  #3 Name: Boolean.002, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Thumb ligament cover for new mould
+
 Name: Urethane Pad
 Urethane Pad Type: MESH
 Urethane Pad transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
@@ -2236,6 +2290,42 @@ Urethane Pad modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area
   #5 Name: Boolean.ThumbAccess, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN thumb access
+
+Name: Urethane skin
+Urethane skin Type: MESH
+Urethane skin transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+Urethane skin rotation: X0.0 Y-0.0 Z0.0
+Urethane skin scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+Urethane skin groups: Actuator Block, 
+Urethane skin parent: Actuator Block
+Urethane skin mesh: Palm Inner.004
+Urethane skin materials: PLA, 
+Urethane skin modifiers: 
+  #1 Name: Proximal fillet, Type: BEVEL
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Solidify, Type: SOLIDIFY
+  #4 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Urethane cutout
+
+Name: Urethane skin test
+Urethane skin test Type: MESH
+Urethane skin test transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+Urethane skin test rotation: X0.0 Y-0.0 Z0.0
+Urethane skin test scale: X1.000999927520752 Y1.000999927520752 Z1.0010000467300415
+Urethane skin test groups: Actuator Block, 
+Urethane skin test parent: Actuator Block
+Urethane skin test mesh: Palm Inner.006
+Urethane skin test materials: PLA, 
+Urethane skin test modifiers: 
+  #1 Name: Proximal fillet, Type: BEVEL
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Solidify, Type: SOLIDIFY
+  #4 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Urethane cutout
+  #5 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Palm inner for new mould
 
 Name: Wrist connector
 Wrist connector Type: MESH
