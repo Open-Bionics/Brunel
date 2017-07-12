@@ -2312,10 +2312,10 @@ Name: Urethane skin test
 Urethane skin test Type: MESH
 Urethane skin test transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
 Urethane skin test rotation: X0.0 Y-0.0 Z0.0
-Urethane skin test scale: X1.000999927520752 Y1.000999927520752 Z1.0010000467300415
+Urethane skin test scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Urethane skin test groups: Actuator Block, 
 Urethane skin test parent: Actuator Block
-Urethane skin test mesh: Palm Inner.006
+Urethane skin test mesh: Palm Inner.007
 Urethane skin test materials: PLA, 
 Urethane skin test modifiers: 
   #1 Name: Proximal fillet, Type: BEVEL
