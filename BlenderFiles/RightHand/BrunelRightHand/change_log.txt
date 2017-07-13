@@ -614,6 +614,16 @@ BOOLEAN Ligament Cover M2 bolt hole platforms materials: PLA,
 BOOLEAN Ligament Cover M2 bolt hole platforms modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
 
+Name: BOOLEAN M3 bolt hole
+BOOLEAN M3 bolt hole Type: MESH
+BOOLEAN M3 bolt hole transform: X29.169036865234375 Y-5.612924575805664 Z0.5941377878189087
+BOOLEAN M3 bolt hole rotation: X0.0 Y0.0 Z0.0
+BOOLEAN M3 bolt hole scale: X1.0000001192092896 Y1.0000001192092896 Z1.0000001192092896
+BOOLEAN M3 bolt hole groups: None
+BOOLEAN M3 bolt hole mesh: BOOLEAN M3 bolt hole
+BOOLEAN M3 bolt hole materials: Boolean difference, 
+BOOLEAN M3 bolt hole modifiers: None
+
 Name: BOOLEAN MOULD Locking feature
 BOOLEAN MOULD Locking feature Type: MESH
 BOOLEAN MOULD Locking feature transform: X56.3663330078125 Y-10.683527946472168 Z1.9962692260742188
@@ -1473,6 +1483,16 @@ Cube mesh: Cube.011
 Cube materials: Boolean difference, 
 Cube modifiers: None
 
+Name: Cylinder
+Cylinder Type: MESH
+Cylinder transform: X0.0 Y0.0 Z0.0
+Cylinder rotation: X0.0 Y0.0 Z0.0
+Cylinder scale: X1.0 Y1.0 Z1.0
+Cylinder groups: None
+Cylinder mesh: Cylinder.001
+Cylinder materials: None
+Cylinder modifiers: None
+
 Name: DC jack cover
 DC jack cover Type: MESH
 DC jack cover transform: X29.954208374023438 Y-80.68687438964844 Z21.20294952392578
@@ -1566,6 +1586,16 @@ Hand Ligament parent: Actuator Block
 Hand Ligament mesh: Hand Ligament
 Hand Ligament materials: NF Black, 
 Hand Ligament modifiers: None
+
+Name: Injection channels
+Injection channels Type: MESH
+Injection channels transform: X0.0 Y0.0 Z-24.105955123901367
+Injection channels rotation: X0.0 Y0.0 Z0.0
+Injection channels scale: X1.0 Y1.0 Z1.0
+Injection channels groups: None
+Injection channels mesh: Cube.018
+Injection channels materials: None
+Injection channels modifiers: None
 
 Name: LABEL Brunel logo
 LABEL Brunel logo Type: MESH
@@ -1735,6 +1765,36 @@ MOULD Bottom modifiers:
         Operation: UNION, Object: BOOLEAN Thumb swept area for MOULD Top
   #3 Name: Boolean locking feature, Type: BOOLEAN
         Operation: DIFFERENCE, Object: MOULD Locking feature BOTTOM
+
+Name: Mould housing (bottom)
+Mould housing (bottom) Type: MESH
+Mould housing (bottom) transform: X0.0 Y0.0 Z0.0
+Mould housing (bottom) rotation: X0.0 Y0.0 Z0.0
+Mould housing (bottom) scale: X1.0 Y1.0 Z1.0
+Mould housing (bottom) groups: None
+Mould housing (bottom) mesh: Cube.014
+Mould housing (bottom) materials: None
+Mould housing (bottom) modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Silicone Mould target
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M3 bolt hole
+  #3 Name: Boolean.002, Type: BOOLEAN
+        Operation: UNION, Object: Injection channels
+
+Name: Mould housing (top)
+Mould housing (top) Type: MESH
+Mould housing (top) transform: X0.0 Y0.0 Z0.0
+Mould housing (top) rotation: X0.0 Y0.0 Z0.0
+Mould housing (top) scale: X1.0 Y1.0 Z1.0
+Mould housing (top) groups: None
+Mould housing (top) mesh: Cube.016
+Mould housing (top) materials: None
+Mould housing (top) modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M3 bolt hole
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: UNION, Object: Palm combined for mould 0.98 scale (XY)
 
 Name: MOULD Locking feature
 MOULD Locking feature Type: MESH
@@ -2199,6 +2259,28 @@ REFERENCE Wrist Plane modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
+
+Name: Silicone Mould
+Silicone Mould Type: MESH
+Silicone Mould transform: X0.0 Y0.0 Z0.0
+Silicone Mould rotation: X0.0 Y0.0 Z0.0
+Silicone Mould scale: X1.0 Y1.0 Z1.0
+Silicone Mould groups: None
+Silicone Mould mesh: Cube.012
+Silicone Mould materials: None
+Silicone Mould modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Palm combined for mould 0.98 scale (XY)
+
+Name: Silicone Mould target
+Silicone Mould target Type: MESH
+Silicone Mould target transform: X0.0 Y0.0 Z0.0
+Silicone Mould target rotation: X0.0 Y0.0 Z0.0
+Silicone Mould target scale: X1.0 Y1.0 Z1.0
+Silicone Mould target groups: None
+Silicone Mould target mesh: Cube.015
+Silicone Mould target materials: None
+Silicone Mould target modifiers: None
 
 Name: Tendon pivot dowel
 Tendon pivot dowel Type: MESH
