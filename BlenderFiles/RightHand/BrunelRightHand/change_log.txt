@@ -1857,6 +1857,36 @@ New Wrist Connector modifiers:
   #2 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN New Wrist connector M2 bolt holes
 
+Name: Palm combined for mould
+Palm combined for mould Type: MESH
+Palm combined for mould transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+Palm combined for mould rotation: X0.0 Y-0.0 Z0.0
+Palm combined for mould scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+Palm combined for mould groups: Actuator Block, 
+Palm combined for mould parent: Actuator Block
+Palm combined for mould mesh: Palm Inner.000
+Palm combined for mould materials: Boolean difference, 
+Palm combined for mould modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Urethane cutout for combined
+
+Name: Palm combined for mould 0.98 scale (XY)
+Palm combined for mould 0.98 scale (XY) Type: MESH
+Palm combined for mould 0.98 scale (XY) transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+Palm combined for mould 0.98 scale (XY) rotation: X0.0 Y-0.0 Z0.0
+Palm combined for mould 0.98 scale (XY) scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+Palm combined for mould 0.98 scale (XY) groups: Actuator Block, 
+Palm combined for mould 0.98 scale (XY) parent: Actuator Block
+Palm combined for mould 0.98 scale (XY) mesh: Palm Inner.008
+Palm combined for mould 0.98 scale (XY) materials: Boolean difference, 
+Palm combined for mould 0.98 scale (XY) modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Urethane cutout for combined
+
 Name: Palm Covered
 Palm Covered Type: MESH
 Palm Covered transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
@@ -2269,6 +2299,16 @@ Urethane cutout modifiers:
         Operation: UNION, Object: BOOLEAN Thumb swept area
   #3 Name: Boolean.002, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Thumb ligament cover for new mould
+
+Name: Urethane cutout for combined
+Urethane cutout for combined Type: MESH
+Urethane cutout for combined transform: X12.73114013671875 Y-78.99785614013672 Z-15.496833801269531
+Urethane cutout for combined rotation: X0.0 Y0.0 Z0.0
+Urethane cutout for combined scale: X1.0200999975204468 Y1.0200999975204468 Z1.0200999975204468
+Urethane cutout for combined groups: None
+Urethane cutout for combined mesh: Plane.003
+Urethane cutout for combined materials: None
+Urethane cutout for combined modifiers: None
 
 Name: Urethane Pad
 Urethane Pad Type: MESH
