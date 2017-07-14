@@ -461,21 +461,15 @@ BOOLEAN flex bracket for back cover transform: X-11.954208374023438 Y-98.3869400
 BOOLEAN flex bracket for back cover rotation: X0.0 Y0.0 Z0.0
 BOOLEAN flex bracket for back cover scale: X1.0 Y1.0 Z1.0
 BOOLEAN flex bracket for back cover groups: None
-BOOLEAN flex bracket for back cover mesh: Cube.007
-BOOLEAN flex bracket for back cover materials: Boolean difference, 
+BOOLEAN flex bracket for back cover mesh: Cube.013
+BOOLEAN flex bracket for back cover materials: Boolean difference.002, 
 BOOLEAN flex bracket for back cover modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: Y, 
-        Mirror object: PCB Chestnut FLIPPED
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #2 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN USB.001
-  #3 Name: Boolean.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Headphone jack.001
-  #4 Name: Solidify, Type: SOLIDIFY
-  #5 Name: Bevel, Type: BEVEL
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN USB.002
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Headphone jack.002
+  #3 Name: Solidify, Type: SOLIDIFY
+  #4 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN GALA cover
 BOOLEAN GALA cover Type: MESH
@@ -548,6 +542,18 @@ BOOLEAN Headphone jack.001 parent: PCB Chestnut FLIPPED
 BOOLEAN Headphone jack.001 mesh: BOOLEAN Headphone jack.003
 BOOLEAN Headphone jack.001 materials: Boolean difference, 
 BOOLEAN Headphone jack.001 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN Headphone jack.002
+BOOLEAN Headphone jack.002 Type: MESH
+BOOLEAN Headphone jack.002 transform: X9.0 Y-57.441871643066406 Z13.190025329589844
+BOOLEAN Headphone jack.002 rotation: X-1.4901154976598718e-08 Y-1.4901164746561335e-08 Z1.5707961320877075
+BOOLEAN Headphone jack.002 scale: X0.9999998807907104 Y0.9999998807907104 Z1.0
+BOOLEAN Headphone jack.002 groups: None
+BOOLEAN Headphone jack.002 mesh: BOOLEAN Headphone jack.004
+BOOLEAN Headphone jack.002 materials: Boolean difference.002, 
+BOOLEAN Headphone jack.002 modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
@@ -1357,6 +1363,17 @@ BOOLEAN USB.001 parent: PCB Chestnut FLIPPED
 BOOLEAN USB.001 mesh: BOOLEAN PCB Chestnut for back cover.002
 BOOLEAN USB.001 materials: Boolean difference, 
 BOOLEAN USB.001 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN USB.002
+BOOLEAN USB.002 Type: MESH
+BOOLEAN USB.002 transform: X9.0 Y-57.441871643066406 Z13.190025329589844
+BOOLEAN USB.002 rotation: X-1.4901154976598718e-08 Y-1.4901164746561335e-08 Z1.5707961320877075
+BOOLEAN USB.002 scale: X0.9999998807907104 Y0.9999998807907104 Z1.0
+BOOLEAN USB.002 groups: None
+BOOLEAN USB.002 mesh: BOOLEAN PCB Chestnut for back cover.004
+BOOLEAN USB.002 materials: Boolean difference.002, 
+BOOLEAN USB.002 modifiers: 
   #1 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN Wrist connector M2 bolt holes
