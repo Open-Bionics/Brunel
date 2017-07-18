@@ -1671,7 +1671,7 @@ HANDLE distal fingertip 4 parent: HANDLE distal base 4
 
 Name: HANDLE Distal Joint.001
 HANDLE Distal Joint.001 Type: MESH
-HANDLE Distal Joint.001 transform: X0.0 Y45.0 Z0.0
+HANDLE Distal Joint.001 transform: X0.0 Y44.999996185302734 Z0.0
 HANDLE Distal Joint.001 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.001 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.001 groups: 1st Finger, 
@@ -2460,16 +2460,16 @@ Inner proximal 4 MOULD modifiers:
   #5 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
 
-Name: Inner Proximal Pad.001
-Inner Proximal Pad.001 Type: MESH
-Inner Proximal Pad.001 transform: X0.0 Y0.0 Z0.0
-Inner Proximal Pad.001 rotation: X0.0 Y0.0 Z0.0
-Inner Proximal Pad.001 scale: X1.0 Y1.0 Z1.0
-Inner Proximal Pad.001 groups: 1st Finger, 
-Inner Proximal Pad.001 parent: Proximal Phalanx.001
-Inner Proximal Pad.001 mesh: Inner proximal.005
-Inner Proximal Pad.001 materials: PLA White, 
-Inner Proximal Pad.001 modifiers: 
+Name: Inner Proximal pad.001
+Inner Proximal pad.001 Type: MESH
+Inner Proximal pad.001 transform: X0.0 Y0.0 Z0.0
+Inner Proximal pad.001 rotation: X0.0 Y0.0 Z0.0
+Inner Proximal pad.001 scale: X1.0 Y1.0 Z1.0
+Inner Proximal pad.001 groups: 1st Finger, 
+Inner Proximal pad.001 parent: Proximal Phalanx.001
+Inner Proximal pad.001 mesh: Inner proximal.008
+Inner Proximal pad.001 materials: PLA White, 
+Inner Proximal pad.001 modifiers: 
   #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 1st Finger
@@ -2479,7 +2479,18 @@ Inner Proximal Pad.001 modifiers:
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
   #3 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Inner Proximal.001
+        Operation: DIFFERENCE, Object: Inner Proximal urethane target.001
+
+Name: Inner proximal riser channels.001
+Inner proximal riser channels.001 Type: MESH
+Inner proximal riser channels.001 transform: X-18.858367919921875 Y25.024826049804688 Z-1.4110946655273438
+Inner proximal riser channels.001 rotation: X0.0 Y0.0 Z0.0
+Inner proximal riser channels.001 scale: X1.0 Y1.0 Z1.0
+Inner proximal riser channels.001 groups: None
+Inner proximal riser channels.001 parent: Proximal Phalanx.001
+Inner proximal riser channels.001 mesh: Cylinder.017
+Inner proximal riser channels.001 materials: Boolean difference, 
+Inner proximal riser channels.001 modifiers: None
 
 Name: Inner Proximal TARGET
 Inner Proximal TARGET Type: MESH
@@ -2499,6 +2510,31 @@ Inner Proximal TARGET modifiers:
         Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
+
+Name: Inner Proximal urethane target.001
+Inner Proximal urethane target.001 Type: MESH
+Inner Proximal urethane target.001 transform: X0.0 Y0.0 Z0.0
+Inner Proximal urethane target.001 rotation: X0.0 Y0.0 Z0.0
+Inner Proximal urethane target.001 scale: X1.0 Y1.0 Z1.0
+Inner Proximal urethane target.001 groups: 1st Finger, 
+Inner Proximal urethane target.001 parent: Proximal Phalanx.001
+Inner Proximal urethane target.001 mesh: Inner proximal.009
+Inner Proximal urethane target.001 materials: PLA White, 
+Inner Proximal urethane target.001 modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 4, Type: CATMULL_CLARK
+  #3 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament New
+  #4 Name: Boolean.001, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN UNION proximal M2 Bolt Hole.001
+  #5 Name: Boolean.002, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN UNION Tendon channels proximal.001
 
 Name: Inner proximal.001
 Inner proximal.001 Type: MESH
@@ -2556,6 +2592,8 @@ Inner Proximal.001 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels proximal.001
   #7 Name: Boolean.004, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.001
+  #8 Name: Boolean.005, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Inner proximal riser channels.001
 
 Name: Inner proximal.002
 Inner proximal.002 Type: MESH
