@@ -67,6 +67,18 @@ BOOLEAN Bolt Hole Fingernail mesh: Cylinder.007
 BOOLEAN Bolt Hole Fingernail materials: Boolean difference, 
 BOOLEAN Bolt Hole Fingernail modifiers: None
 
+Name: BOOLEAN Bolt Hole for distal cover
+BOOLEAN Bolt Hole for distal cover Type: MESH
+BOOLEAN Bolt Hole for distal cover transform: X1.672293782234192 Y48.989376068115234 Z3.4969449043273926
+BOOLEAN Bolt Hole for distal cover rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Bolt Hole for distal cover scale: X1.0 Y1.0 Z1.0
+BOOLEAN Bolt Hole for distal cover groups: None
+BOOLEAN Bolt Hole for distal cover parent: New Tendon Attachment
+BOOLEAN Bolt Hole for distal cover mesh: Cylinder.018
+BOOLEAN Bolt Hole for distal cover materials: Boolean difference, 
+BOOLEAN Bolt Hole for distal cover modifiers: 
+  #1 Name: Hook, Type: HOOK
+
 Name: BOOLEAN Cheetah Cover
 BOOLEAN Cheetah Cover Type: MESH
 BOOLEAN Cheetah Cover transform: X0.0 Y0.0 Z0.0
@@ -161,6 +173,49 @@ BOOLEAN Distal cover modifiers:
         Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN Distal cover 2
+BOOLEAN Distal cover 2 Type: MESH
+BOOLEAN Distal cover 2 transform: X5.44999885559082 Y42.29999923706055 Z10.795110702514648
+BOOLEAN Distal cover 2 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Distal cover 2 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Distal cover 2 groups: None
+BOOLEAN Distal cover 2 parent: New Tendon Attachment
+BOOLEAN Distal cover 2 mesh: Cube.007
+BOOLEAN Distal cover 2 materials: Boolean difference, 
+BOOLEAN Distal cover 2 modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN distal phalanx spring channel
+  #3 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Bolt Hole for distal cover
+  #4 Name: Solidify, Type: SOLIDIFY
+  #5 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN distal phalanx spring channel
+BOOLEAN distal phalanx spring channel Type: MESH
+BOOLEAN distal phalanx spring channel transform: X0.0 Y0.0 Z0.0
+BOOLEAN distal phalanx spring channel rotation: X0.0 Y0.0 Z0.0
+BOOLEAN distal phalanx spring channel scale: X1.0 Y1.0 Z1.0
+BOOLEAN distal phalanx spring channel groups: 1st Finger, 
+BOOLEAN distal phalanx spring channel parent: New Tendon Attachment
+BOOLEAN distal phalanx spring channel mesh: BOOLEAN Inner proximal.001
+BOOLEAN distal phalanx spring channel materials: Boolean difference, 
+BOOLEAN distal phalanx spring channel modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 4th Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #3 Name: Solidify, Type: SOLIDIFY
 
 Name: BOOLEAN Elastic Slot
 BOOLEAN Elastic Slot Type: MESH
@@ -371,16 +426,16 @@ BOOLEAN Fingernail Outline mesh: Cylinder.004
 BOOLEAN Fingernail Outline materials: Boolean difference, 
 BOOLEAN Fingernail Outline modifiers: None
 
-Name: BOOLEAN Inner proximal.001
-BOOLEAN Inner proximal.001 Type: MESH
-BOOLEAN Inner proximal.001 transform: X0.0 Y0.0 Z0.0
-BOOLEAN Inner proximal.001 rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Inner proximal.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Inner proximal.001 groups: 1st Finger, 
-BOOLEAN Inner proximal.001 parent: Proximal Phalanx.001
-BOOLEAN Inner proximal.001 mesh: BOOLEAN Inner proximal
-BOOLEAN Inner proximal.001 materials: Boolean difference, 
-BOOLEAN Inner proximal.001 modifiers: 
+Name: BOOLEAN Inner proximal pegs
+BOOLEAN Inner proximal pegs Type: MESH
+BOOLEAN Inner proximal pegs transform: X0.0 Y0.0 Z0.0
+BOOLEAN Inner proximal pegs rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Inner proximal pegs scale: X1.0 Y1.0 Z1.0
+BOOLEAN Inner proximal pegs groups: 1st Finger, 
+BOOLEAN Inner proximal pegs parent: Proximal Phalanx.001
+BOOLEAN Inner proximal pegs mesh: BOOLEAN Inner proximal
+BOOLEAN Inner proximal pegs materials: Boolean difference, 
+BOOLEAN Inner proximal pegs modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
@@ -1368,7 +1423,7 @@ Distal cover scale: X1.0 Y1.0 Z1.0
 Distal cover groups: None
 Distal cover parent: New Tendon Attachment
 Distal cover mesh: Cube.005
-Distal cover materials: None
+Distal cover materials: PLA White, 
 Distal cover modifiers: 
   #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
@@ -1378,6 +1433,10 @@ Distal cover modifiers:
         Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN distal phalanx spring channel
+  #4 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Bolt Hole for distal cover
 
 Name: Distal Phalanx
 Distal Phalanx Type: MESH
@@ -1407,7 +1466,7 @@ Distal Phalanx modifiers:
   #8 Name: BOOLEAN Slot, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Slot
   #9 Name: Boolean Back cover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Distal cover
+        Operation: DIFFERENCE, Object: BOOLEAN Distal cover 2
   #10 Name: BOOLEAN Ligament New, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament New
   #11 Name: BOOLEAN New Tendon Channels, Type: BOOLEAN
@@ -2634,6 +2693,8 @@ Inner Proximal.001 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.001
   #8 Name: Boolean.005, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Inner proximal riser channels.001
+  #9 Name: Boolean.006, Type: BOOLEAN
+        Operation: UNION, Object: Spring pegs
 
 Name: Inner proximal.002
 Inner proximal.002 Type: MESH
@@ -3267,6 +3328,19 @@ Proximal Phalanx.001 rotation: X0.0 Y0.0 Z0.0
 Proximal Phalanx.001 scale: X1.0 Y1.0 Z1.0
 Proximal Phalanx.001 groups: None
 
+Name: Spring pegs
+Spring pegs Type: MESH
+Spring pegs transform: X0.0 Y39.14791488647461 Z5.408233642578125
+Spring pegs rotation: X0.0 Y0.0 Z0.0
+Spring pegs scale: X1.0 Y1.0 Z1.0
+Spring pegs groups: None
+Spring pegs parent: Proximal Phalanx.001
+Spring pegs mesh: Cylinder.016
+Spring pegs materials: None
+Spring pegs modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Top cover proximal.000
+
 Name: Top cover distal.001
 Top cover distal.001 Type: MESH
 Top cover distal.001 transform: X0.0 Y0.0 Z0.0
@@ -3579,7 +3653,9 @@ Top cover proximal.000 modifiers:
   #3 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #4 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Inner proximal.001
+        Operation: DIFFERENCE, Object: BOOLEAN Inner proximal pegs
+  #5 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.001
 
 Name: Top cover proximal.001
 Top cover proximal.001 Type: MESH
@@ -3604,7 +3680,7 @@ Top cover proximal.001 modifiers:
   #5 Name: Boolean.M2, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
   #6 Name: Boolean.ProximalInner, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Inner proximal.001
+        Operation: DIFFERENCE, Object: BOOLEAN Inner proximal pegs
   #7 Name: Boolean.LabelPCBLines, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL PCB lines.001
   #8 Name: Boolean.ID, Type: BOOLEAN
