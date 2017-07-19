@@ -1300,6 +1300,22 @@ Cheetah Cover modifiers:
   #5 Name: Boolean.ID, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Top distal.001
 
+Name: Cylinder
+Cylinder Type: MESH
+Cylinder transform: X20.563121795654297 Y51.17999267578125 Z17.495880126953125
+Cylinder rotation: X0.0 Y0.0 Z0.0
+Cylinder scale: X1.0 Y1.0 Z1.0
+Cylinder groups: None
+Cylinder mesh: Cylinder.023
+Cylinder materials: Boolean difference, 
+Cylinder modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+
 Name: Cylinder.008
 Cylinder.008 Type: MESH
 Cylinder.008 transform: X73.05086517333984 Y0.0 Z0.7500008940696716
@@ -1477,6 +1493,8 @@ Distal Phalanx modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Cheetah Cover
   #14 Name: BOOLEAN Elastic Terminator Distal Phalanx, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Elastic Terminator Distal Phalanx
+  #15 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cylinder
 
 Name: Distal Phalanx op1 Print Test
 Distal Phalanx op1 Print Test Type: MESH
