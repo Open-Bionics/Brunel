@@ -143,6 +143,25 @@ BOOLEAN Distal 4 MOULD rotation: X0.0 Y-0.0 Z-3.9269907474517822
 BOOLEAN Distal 4 MOULD scale: X1.0 Y1.0 Z1.0
 BOOLEAN Distal 4 MOULD groups: None
 
+Name: BOOLEAN Distal cover
+BOOLEAN Distal cover Type: MESH
+BOOLEAN Distal cover transform: X5.44999885559082 Y42.29999923706055 Z10.795110702514648
+BOOLEAN Distal cover rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Distal cover scale: X1.0 Y1.0 Z1.0
+BOOLEAN Distal cover groups: None
+BOOLEAN Distal cover parent: New Tendon Attachment
+BOOLEAN Distal cover mesh: Cube.006
+BOOLEAN Distal cover materials: Boolean difference, 
+BOOLEAN Distal cover modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: BOOLEAN Elastic Slot
 BOOLEAN Elastic Slot Type: MESH
 BOOLEAN Elastic Slot transform: X2.227689743041992 Y57.45037841796875 Z5.3587212562561035
@@ -358,7 +377,7 @@ BOOLEAN Inner proximal.001 transform: X0.0 Y0.0 Z0.0
 BOOLEAN Inner proximal.001 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Inner proximal.001 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Inner proximal.001 groups: 1st Finger, 
-BOOLEAN Inner proximal.001 parent: HANDLE 1st Finger
+BOOLEAN Inner proximal.001 parent: Proximal Phalanx.001
 BOOLEAN Inner proximal.001 mesh: BOOLEAN Inner proximal
 BOOLEAN Inner proximal.001 materials: Boolean difference, 
 BOOLEAN Inner proximal.001 modifiers: 
@@ -1341,9 +1360,28 @@ Cylinder.015 mesh: Cylinder.015
 Cylinder.015 materials: Boolean difference, 
 Cylinder.015 modifiers: None
 
+Name: Distal cover
+Distal cover Type: MESH
+Distal cover transform: X5.44999885559082 Y42.29999923706055 Z10.795110702514648
+Distal cover rotation: X0.0 Y0.0 Z0.0
+Distal cover scale: X1.0 Y1.0 Z1.0
+Distal cover groups: None
+Distal cover parent: New Tendon Attachment
+Distal cover mesh: Cube.005
+Distal cover materials: None
+Distal cover modifiers: 
+  #1 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: Distal Phalanx
 Distal Phalanx Type: MESH
-Distal Phalanx transform: X0.0 Y45.0 Z0.0
+Distal Phalanx transform: X0.0 Y44.999996185302734 Z0.0
 Distal Phalanx rotation: X0.0 Y0.0 Z0.0
 Distal Phalanx scale: X1.0 Y1.0 Z1.0
 Distal Phalanx groups: 1st Finger, 
@@ -1368,15 +1406,17 @@ Distal Phalanx modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Bolt Hole
   #8 Name: BOOLEAN Slot, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Slot
-  #9 Name: BOOLEAN Ligament New, Type: BOOLEAN
+  #9 Name: Boolean Back cover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Distal cover
+  #10 Name: BOOLEAN Ligament New, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament New
-  #10 Name: BOOLEAN New Tendon Channels, Type: BOOLEAN
+  #11 Name: BOOLEAN New Tendon Channels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon Channels
-  #11 Name: BOOLEAN Bolt Hole Back Cover, Type: BOOLEAN
+  #12 Name: BOOLEAN Bolt Hole Back Cover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Bolt Hole Back Cover
-  #12 Name: BOOLEAN Cheetah Cover, Type: BOOLEAN
+  #13 Name: BOOLEAN Cheetah Cover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Cheetah Cover
-  #13 Name: BOOLEAN Elastic Terminator Distal Phalanx, Type: BOOLEAN
+  #14 Name: BOOLEAN Elastic Terminator Distal Phalanx, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Elastic Terminator Distal Phalanx
 
 Name: Distal Phalanx op1 Print Test
@@ -1715,7 +1755,7 @@ HANDLE Distal Joint.004 modifiers: None
 
 Name: HANDLE Fingertip.001
 HANDLE Fingertip.001 Type: MESH
-HANDLE Fingertip.001 transform: X0.0 Y44.0 Z0.0
+HANDLE Fingertip.001 transform: X0.0 Y43.999996185302734 Z0.0
 HANDLE Fingertip.001 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.001 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.001 groups: 1st Finger, 
