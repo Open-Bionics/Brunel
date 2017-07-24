@@ -521,6 +521,28 @@ BOOLEAN Inner proximal.004 modifiers:
         Vertex group mirroring: True
   #3 Name: Solidify, Type: SOLIDIFY
 
+Name: BOOLEAN Ligament
+BOOLEAN Ligament Type: MESH
+BOOLEAN Ligament transform: X0.0 Y0.0 Z0.0
+BOOLEAN Ligament rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Ligament scale: X1.0 Y1.0 Z1.0
+BOOLEAN Ligament groups: 1st Finger, 
+BOOLEAN Ligament parent: HANDLE 1st Finger
+BOOLEAN Ligament mesh: Ligament.006
+BOOLEAN Ligament materials: Boolean difference, 
+BOOLEAN Ligament modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #4 Name: Solidify, Type: SOLIDIFY
+  #5 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: BOOLEAN Ligament New
 BOOLEAN Ligament New Type: MESH
 BOOLEAN Ligament New transform: X0.0 Y0.0 Z-0.009999999776482582
@@ -2420,7 +2442,7 @@ Inner distal.000 modifiers:
   #6 Name: Boolean UNION M2 Bolt Holes, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN UNION M2 Bolt Holes.001
   #7 Name: Boolean.Ligament, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Ligament.001
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament
   #8 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels distal.001
   #9 Name: Boolean.M2BoltHoles, Type: BOOLEAN
@@ -2832,8 +2854,8 @@ Inner Proximal.001 modifiers:
         Vertex group mirroring: True
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
-  #3 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Ligament.001
+  #3 Name: Boolean.ligament, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament
   #4 Name: Boolean.001, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN UNION proximal M2 Bolt Hole.001
   #5 Name: Boolean.002, Type: BOOLEAN
