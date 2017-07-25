@@ -1693,7 +1693,7 @@ Fingernail op2 modifiers:
 
 Name: Hand Ligament
 Hand Ligament Type: MESH
-Hand Ligament transform: X8.999999046325684 Y2.2737367544323206e-13 Z2.797236680984497
+Hand Ligament transform: X8.999999046325684 Y2.2737367544323206e-13 Z0.7481421232223511
 Hand Ligament rotation: X0.0 Y0.0 Z-0.0872664600610733
 Hand Ligament scale: X1.0 Y1.0 Z1.0
 Hand Ligament groups: None

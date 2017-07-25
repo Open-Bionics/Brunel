@@ -69,11 +69,11 @@ Back cover modifiers:
   #13 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
   #14 Name: Boolean.DCJaceCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for Back cover
+        Operation: DIFFERENCE, Object: None
   #15 Name: Boolean.OpenBionics, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN LABEL Open Bionics
   #16 Name: Boolean.BackCoverHightlightTarget, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Back cover highlight target
+        Operation: DIFFERENCE, Object: None
   #17 Name: Boolean.BackCoverM2BoltHolesVeneer, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes veneer
   #18 Name: Boolean.LabelLogo, Type: BOOLEAN
@@ -82,44 +82,6 @@ Back cover modifiers:
         Operation: DIFFERENCE, Object: LABEL Brunel logo
   #20 Name: Boolean.LabelPCBLines, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL PCB lines
-
-Name: Back cover highlight
-Back cover highlight Type: MESH
-Back cover highlight transform: X0.0 Y0.0 Z0.0
-Back cover highlight rotation: X0.0 Y0.0 Z0.0
-Back cover highlight scale: X1.0 Y1.0 Z1.0
-Back cover highlight groups: None
-Back cover highlight mesh: Back cover highlight.001
-Back cover highlight materials: PLA Black, 
-Back cover highlight modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #2 Name: Boolean.BackCoverM2BoltHoleVeneer, Type: BOOLEAN
-        Operation: UNION, Object: BOOLEAN Back cover M2 bolt holes veneer
-  #3 Name: Boolean.LabelOpen Bionics, Type: BOOLEAN
-        Operation: UNION, Object: LABEL Open Bionics
-  #4 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
-  #5 Name: Boolean.Connectors, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Connectors
-  #6 Name: Boolean.Logo, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: LABEL Logo
-  #7 Name: Boolean.DCJackCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for Back cover
-  #8 Name: Boolean.PCBChestnutForBackCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for back cover
-
-Name: Back cover highlight target
-Back cover highlight target Type: MESH
-Back cover highlight target transform: X0.0 Y0.0 Z0.0
-Back cover highlight target rotation: X0.0 Y0.0 Z0.0
-Back cover highlight target scale: X1.0 Y1.0 Z1.0
-Back cover highlight target groups: None
-Back cover highlight target mesh: Back cover highlight.001
-Back cover highlight target materials: PLA Black, 
-Back cover highlight target modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
 
 Name: Back cover target
 Back cover target Type: MESH
@@ -166,7 +128,6 @@ BOOLEAN Back cover M2 bolt holes veneer materials: PLA,
 BOOLEAN Back cover M2 bolt holes veneer modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
   #2 Name: Shrinkwrap, Type: SHRINKWRAP
-        Target: Back cover highlight target, Mode: PROJECT, Offset: -1.0 mm
         Projecting in: Z
         Project in positive direction: False, Negative: True
         Cull Faces: OFF
@@ -196,17 +157,6 @@ BOOLEAN bottom cover mesh: Cube.008
 BOOLEAN bottom cover materials: Boolean difference, 
 BOOLEAN bottom cover modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
-
-Name: BOOLEAN Capacitors for connector cover
-BOOLEAN Capacitors for connector cover Type: MESH
-BOOLEAN Capacitors for connector cover transform: X-19.600000381469727 Y-64.44186401367188 Z14.730025291442871
-BOOLEAN Capacitors for connector cover rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Capacitors for connector cover scale: X1.0 Y1.0 Z1.0
-BOOLEAN Capacitors for connector cover groups: None
-BOOLEAN Capacitors for connector cover parent: PCB Chestnut
-BOOLEAN Capacitors for connector cover mesh: Plane
-BOOLEAN Capacitors for connector cover materials: Boolean difference, 
-BOOLEAN Capacitors for connector cover modifiers: None
 
 Name: BOOLEAN Capacitors for connector cover.001
 BOOLEAN Capacitors for connector cover.001 Type: MESH
@@ -245,19 +195,6 @@ BOOLEAN Conical spring for palm inner modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 2, Type: CATMULL_CLARK
 
-Name: BOOLEAN Connector cover for Back cover
-BOOLEAN Connector cover for Back cover Type: MESH
-BOOLEAN Connector cover for Back cover transform: X-19.096534729003906 Y-71.34187316894531 Z17.730140686035156
-BOOLEAN Connector cover for Back cover rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Connector cover for Back cover scale: X1.0 Y1.0 Z1.0
-BOOLEAN Connector cover for Back cover groups: None
-BOOLEAN Connector cover for Back cover parent: Connector cover
-BOOLEAN Connector cover for Back cover mesh: Connector cover.002
-BOOLEAN Connector cover for Back cover materials: Boolean difference, 
-BOOLEAN Connector cover for Back cover modifiers: 
-  #1 Name: Solidify, Type: SOLIDIFY
-  #2 Name: Solidify.001, Type: SOLIDIFY
-
 Name: BOOLEAN Connector cover for Back cover.001
 BOOLEAN Connector cover for Back cover.001 Type: MESH
 BOOLEAN Connector cover for Back cover.001 transform: X-19.096534729003906 Y-71.34187316894531 Z17.730140686035156
@@ -268,19 +205,6 @@ BOOLEAN Connector cover for Back cover.001 parent: Connector cover.001
 BOOLEAN Connector cover for Back cover.001 mesh: Connector cover.004
 BOOLEAN Connector cover for Back cover.001 materials: Boolean difference, 
 BOOLEAN Connector cover for Back cover.001 modifiers: 
-  #1 Name: Solidify, Type: SOLIDIFY
-  #2 Name: Solidify.001, Type: SOLIDIFY
-
-Name: BOOLEAN Connector cover for GALA cover
-BOOLEAN Connector cover for GALA cover Type: MESH
-BOOLEAN Connector cover for GALA cover transform: X-19.096534729003906 Y-71.34187316894531 Z17.730140686035156
-BOOLEAN Connector cover for GALA cover rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Connector cover for GALA cover scale: X1.0 Y1.0 Z1.0
-BOOLEAN Connector cover for GALA cover groups: None
-BOOLEAN Connector cover for GALA cover parent: Connector cover
-BOOLEAN Connector cover for GALA cover mesh: Connector cover.001
-BOOLEAN Connector cover for GALA cover materials: Boolean difference, 
-BOOLEAN Connector cover for GALA cover modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
   #2 Name: Solidify.001, Type: SOLIDIFY
 
@@ -296,18 +220,6 @@ BOOLEAN Connector cover for GALA cover.001 materials: Boolean difference,
 BOOLEAN Connector cover for GALA cover.001 modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
   #2 Name: Solidify.001, Type: SOLIDIFY
-
-Name: BOOLEAN Connectors
-BOOLEAN Connectors Type: MESH
-BOOLEAN Connectors transform: X9.0 Y-57.441871643066406 Z13.190025329589844
-BOOLEAN Connectors rotation: X-1.4901154976598718e-08 Y-1.4901164746561335e-08 Z1.5707961320877075
-BOOLEAN Connectors scale: X0.9999998807907104 Y0.9999998807907104 Z1.0
-BOOLEAN Connectors groups: Actuator Block, Booleans, 
-BOOLEAN Connectors parent: PCB Chestnut
-BOOLEAN Connectors mesh: BOOLEAN Headphone jack.001
-BOOLEAN Connectors materials: Boolean difference, 
-BOOLEAN Connectors modifiers: 
-  #1 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN Connectors.001
 BOOLEAN Connectors.001 Type: MESH
@@ -334,31 +246,6 @@ BOOLEAN DC Cable modifiers:
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
-Name: BOOLEAN DC Jack
-BOOLEAN DC Jack Type: MESH
-BOOLEAN DC Jack transform: X9.0 Y-57.441871643066406 Z13.190025329589844
-BOOLEAN DC Jack rotation: X-1.4901154976598718e-08 Y-1.4901164746561335e-08 Z1.5707961320877075
-BOOLEAN DC Jack scale: X0.9999998807907104 Y0.9999998807907104 Z1.0
-BOOLEAN DC Jack groups: Actuator Block, Booleans, 
-BOOLEAN DC Jack parent: PCB Chestnut
-BOOLEAN DC Jack mesh: BOOLEAN PCB Chestnut.001
-BOOLEAN DC Jack materials: Boolean difference, 
-BOOLEAN DC Jack modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-
-Name: BOOLEAN DC jack cover for Back cover
-BOOLEAN DC jack cover for Back cover Type: MESH
-BOOLEAN DC jack cover for Back cover transform: X29.954208374023438 Y-80.68687438964844 Z21.20294952392578
-BOOLEAN DC jack cover for Back cover rotation: X1.5707963705062866 Y-0.0 Z0.0
-BOOLEAN DC jack cover for Back cover scale: X1.0 Y1.0 Z1.0
-BOOLEAN DC jack cover for Back cover groups: None
-BOOLEAN DC jack cover for Back cover parent: DC jack cover
-BOOLEAN DC jack cover for Back cover mesh: DC jack cover.002
-BOOLEAN DC jack cover for Back cover materials: Boolean difference, 
-BOOLEAN DC jack cover for Back cover modifiers: 
-  #1 Name: Solidify, Type: SOLIDIFY
-  #2 Name: Bevel, Type: BEVEL
-
 Name: BOOLEAN DC jack cover for Back cover.001
 BOOLEAN DC jack cover for Back cover.001 Type: MESH
 BOOLEAN DC jack cover for Back cover.001 transform: X29.954208374023438 Y-80.68687438964844 Z21.20294952392578
@@ -371,18 +258,6 @@ BOOLEAN DC jack cover for Back cover.001 materials: Boolean difference,
 BOOLEAN DC jack cover for Back cover.001 modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
   #2 Name: Bevel, Type: BEVEL
-
-Name: BOOLEAN DC jack cover for GALA cover
-BOOLEAN DC jack cover for GALA cover Type: MESH
-BOOLEAN DC jack cover for GALA cover transform: X29.954208374023438 Y-80.68687438964844 Z21.20294952392578
-BOOLEAN DC jack cover for GALA cover rotation: X1.5707963705062866 Y-0.0 Z0.0
-BOOLEAN DC jack cover for GALA cover scale: X1.0 Y1.0 Z1.0
-BOOLEAN DC jack cover for GALA cover groups: None
-BOOLEAN DC jack cover for GALA cover parent: DC jack cover
-BOOLEAN DC jack cover for GALA cover mesh: DC jack cover.001
-BOOLEAN DC jack cover for GALA cover materials: Boolean difference, 
-BOOLEAN DC jack cover for GALA cover modifiers: 
-  #1 Name: Solidify, Type: SOLIDIFY
 
 Name: BOOLEAN DC jack cover for GALA cover.001
 BOOLEAN DC jack cover for GALA cover.001 Type: MESH
@@ -481,32 +356,6 @@ BOOLEAN flex bracket for back cover modifiers:
   #3 Name: Solidify, Type: SOLIDIFY
   #4 Name: Bevel, Type: BEVEL
 
-Name: BOOLEAN GALA cover
-BOOLEAN GALA cover Type: MESH
-BOOLEAN GALA cover transform: X9.0 Y-48.89358901977539 Z-2.9508910179138184
-BOOLEAN GALA cover rotation: X0.0 Y0.0 Z0.0
-BOOLEAN GALA cover scale: X1.0 Y1.0 Z1.0
-BOOLEAN GALA cover groups: Actuator Block, Booleans, 
-BOOLEAN GALA cover parent: Actuator Block
-BOOLEAN GALA cover mesh: GALA cover.001
-BOOLEAN GALA cover materials: Boolean difference, 
-BOOLEAN GALA cover modifiers: 
-  #1 Name: Solidify, Type: SOLIDIFY
-  #2 Name: Bevel, Type: BEVEL
-
-Name: BOOLEAN GALA cover cable tidy
-BOOLEAN GALA cover cable tidy Type: MESH
-BOOLEAN GALA cover cable tidy transform: X29.999998092651367 Y-49.94167709350586 Z11.216859817504883
-BOOLEAN GALA cover cable tidy rotation: X0.0 Y-0.0 Z0.0
-BOOLEAN GALA cover cable tidy scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
-BOOLEAN GALA cover cable tidy groups: Actuator Block, Booleans, 
-BOOLEAN GALA cover cable tidy parent: Actuator Block
-BOOLEAN GALA cover cable tidy mesh: BOOLEAN GALA cover cable tidy.001
-BOOLEAN GALA cover cable tidy materials: Boolean difference, 
-BOOLEAN GALA cover cable tidy modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-  #2 Name: Array, Type: ARRAY
-
 Name: BOOLEAN GALA cover M2 Bolt Hole
 BOOLEAN GALA cover M2 Bolt Hole Type: MESH
 BOOLEAN GALA cover M2 Bolt Hole transform: X-7.59996223449707 Y-74.66353607177734 Z-4.473167896270752
@@ -528,19 +377,6 @@ BOOLEAN Hand Ligament parent: Actuator Block
 BOOLEAN Hand Ligament mesh: BOOLEAN Hand Ligament.001
 BOOLEAN Hand Ligament materials: Boolean difference, 
 BOOLEAN Hand Ligament modifiers: None
-
-Name: BOOLEAN Headphone jack
-BOOLEAN Headphone jack Type: MESH
-BOOLEAN Headphone jack transform: X9.0 Y-57.441871643066406 Z13.190025329589844
-BOOLEAN Headphone jack rotation: X-1.4901154976598718e-08 Y-1.4901164746561335e-08 Z1.5707961320877075
-BOOLEAN Headphone jack scale: X0.9999998807907104 Y0.9999998807907104 Z1.0
-BOOLEAN Headphone jack groups: Actuator Block, Booleans, 
-BOOLEAN Headphone jack parent: PCB Chestnut
-BOOLEAN Headphone jack mesh: BOOLEAN Headphone jack
-BOOLEAN Headphone jack materials: Boolean difference, 
-BOOLEAN Headphone jack modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Headphone jack.001
 BOOLEAN Headphone jack.001 Type: MESH
@@ -673,18 +509,6 @@ BOOLEAN MOULD Runners mesh: Runners
 BOOLEAN MOULD Runners materials: Boolean difference, 
 BOOLEAN MOULD Runners modifiers: None
 
-Name: BOOLEAN Neopixel
-BOOLEAN Neopixel Type: MESH
-BOOLEAN Neopixel transform: X9.0 Y-57.44186782836914 Z13.190025329589844
-BOOLEAN Neopixel rotation: X0.0 Y-0.0 Z1.5707961320877075
-BOOLEAN Neopixel scale: X0.9999999403953552 Y0.9999998807907104 Z1.0
-BOOLEAN Neopixel groups: Actuator Block, Booleans, 
-BOOLEAN Neopixel parent: PCB Chestnut
-BOOLEAN Neopixel mesh: BOOLEAN PCB Chestnut component parts.001
-BOOLEAN Neopixel materials: Boolean difference, 
-BOOLEAN Neopixel modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-
 Name: BOOLEAN Neopixel.001
 BOOLEAN Neopixel.001 Type: MESH
 BOOLEAN Neopixel.001 transform: X9.0 Y-57.44186782836914 Z13.190025329589844
@@ -719,9 +543,9 @@ BOOLEAN New gala cover modifiers:
   #6 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel
   #7 Name: Boolean.PCB, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for GALA cover
+        Operation: DIFFERENCE, Object: None
   #8 Name: Boolean.CableTidy, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN GALA cover cable tidy
+        Operation: DIFFERENCE, Object: None
   #9 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
   #10 Name: Boolean.PalmOuterFrameM2BoltHoles, Type: BOOLEAN
@@ -729,9 +553,9 @@ BOOLEAN New gala cover modifiers:
   #11 Name: Boolean.ThumbPivotDowelForGALACover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel for GALA cover
   #12 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Connector cover for GALA cover
+        Operation: DIFFERENCE, Object: None
   #13 Name: Boolean.DCJackCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for GALA cover
+        Operation: DIFFERENCE, Object: None
   #14 Name: Solidify, Type: SOLIDIFY
 
 Name: BOOLEAN New gala cover for back cover
@@ -756,9 +580,9 @@ BOOLEAN New gala cover for back cover modifiers:
   #6 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel
   #7 Name: Boolean.PCB, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for GALA cover
+        Operation: DIFFERENCE, Object: None
   #8 Name: Boolean.CableTidy, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN GALA cover cable tidy
+        Operation: DIFFERENCE, Object: None
   #9 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
   #10 Name: Boolean.PalmOuterFrameM2BoltHoles, Type: BOOLEAN
@@ -766,9 +590,9 @@ BOOLEAN New gala cover for back cover modifiers:
   #11 Name: Boolean.ThumbPivotDowelForGALACover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel for GALA cover
   #12 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Connector cover for GALA cover
+        Operation: DIFFERENCE, Object: None
   #13 Name: Boolean.DCJackCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for GALA cover
+        Operation: DIFFERENCE, Object: None
   #14 Name: Solidify, Type: SOLIDIFY
 
 Name: BOOLEAN New wrist connector
@@ -992,18 +816,6 @@ BOOLEAN PCB Chestnut component parts materials: Boolean difference,
 BOOLEAN PCB Chestnut component parts modifiers: 
   #1 Name: Bevel, Type: BEVEL
 
-Name: BOOLEAN PCB Chestnut for back cover
-BOOLEAN PCB Chestnut for back cover Type: MESH
-BOOLEAN PCB Chestnut for back cover transform: X9.0 Y-57.441871643066406 Z13.190025329589844
-BOOLEAN PCB Chestnut for back cover rotation: X-1.4901154976598718e-08 Y-1.4901164746561335e-08 Z1.5707961320877075
-BOOLEAN PCB Chestnut for back cover scale: X0.9999998807907104 Y0.9999998807907104 Z1.0
-BOOLEAN PCB Chestnut for back cover groups: Actuator Block, Booleans, 
-BOOLEAN PCB Chestnut for back cover parent: PCB Chestnut
-BOOLEAN PCB Chestnut for back cover mesh: BOOLEAN PCB Chestnut for back cover
-BOOLEAN PCB Chestnut for back cover materials: Boolean difference, 
-BOOLEAN PCB Chestnut for back cover modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-
 Name: BOOLEAN PCB Chestnut for back cover.001
 BOOLEAN PCB Chestnut for back cover.001 Type: MESH
 BOOLEAN PCB Chestnut for back cover.001 transform: X9.0 Y-57.441871643066406 Z13.190025329589844
@@ -1016,18 +828,6 @@ BOOLEAN PCB Chestnut for back cover.001 materials: Boolean difference,
 BOOLEAN PCB Chestnut for back cover.001 modifiers: 
   #1 Name: Bevel, Type: BEVEL
 
-Name: BOOLEAN PCB Chestnut for connector cover
-BOOLEAN PCB Chestnut for connector cover Type: MESH
-BOOLEAN PCB Chestnut for connector cover transform: X9.0 Y-57.441871643066406 Z13.190025329589844
-BOOLEAN PCB Chestnut for connector cover rotation: X-1.4901154976598718e-08 Y-1.4901164746561335e-08 Z1.5707961320877075
-BOOLEAN PCB Chestnut for connector cover scale: X0.9999998807907104 Y0.9999998807907104 Z1.0
-BOOLEAN PCB Chestnut for connector cover groups: Actuator Block, Booleans, 
-BOOLEAN PCB Chestnut for connector cover parent: PCB Chestnut
-BOOLEAN PCB Chestnut for connector cover mesh: BOOLEAN PCB Chestnut for GALA cover.001
-BOOLEAN PCB Chestnut for connector cover materials: Boolean difference, 
-BOOLEAN PCB Chestnut for connector cover modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-
 Name: BOOLEAN PCB Chestnut for connector cover.001
 BOOLEAN PCB Chestnut for connector cover.001 Type: MESH
 BOOLEAN PCB Chestnut for connector cover.001 transform: X9.0 Y-57.441871643066406 Z13.190025329589844
@@ -1038,18 +838,6 @@ BOOLEAN PCB Chestnut for connector cover.001 parent: PCB Chestnut FLIPPED
 BOOLEAN PCB Chestnut for connector cover.001 mesh: BOOLEAN PCB Chestnut for GALA cover.002
 BOOLEAN PCB Chestnut for connector cover.001 materials: Boolean difference, 
 BOOLEAN PCB Chestnut for connector cover.001 modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-
-Name: BOOLEAN PCB Chestnut for GALA cover
-BOOLEAN PCB Chestnut for GALA cover Type: MESH
-BOOLEAN PCB Chestnut for GALA cover transform: X9.0 Y-57.441871643066406 Z13.190025329589844
-BOOLEAN PCB Chestnut for GALA cover rotation: X-1.4901154976598718e-08 Y-1.4901164746561335e-08 Z1.5707961320877075
-BOOLEAN PCB Chestnut for GALA cover scale: X0.9999998807907104 Y0.9999998807907104 Z1.0
-BOOLEAN PCB Chestnut for GALA cover groups: Actuator Block, Booleans, 
-BOOLEAN PCB Chestnut for GALA cover parent: PCB Chestnut
-BOOLEAN PCB Chestnut for GALA cover mesh: BOOLEAN PCB Chestnut for GALA cover
-BOOLEAN PCB Chestnut for GALA cover materials: Boolean difference, 
-BOOLEAN PCB Chestnut for GALA cover modifiers: 
   #1 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN PCB Chestnut for GALA cover.001
@@ -1435,18 +1223,6 @@ BOOLEAN urethane channels mesh: Cylinder
 BOOLEAN urethane channels materials: Boolean difference, 
 BOOLEAN urethane channels modifiers: None
 
-Name: BOOLEAN USB
-BOOLEAN USB Type: MESH
-BOOLEAN USB transform: X9.0 Y-57.441871643066406 Z13.190025329589844
-BOOLEAN USB rotation: X-1.4901154976598718e-08 Y-1.4901164746561335e-08 Z1.5707961320877075
-BOOLEAN USB scale: X0.9999998807907104 Y0.9999998807907104 Z1.0
-BOOLEAN USB groups: Actuator Block, Booleans, 
-BOOLEAN USB parent: PCB Chestnut
-BOOLEAN USB mesh: BOOLEAN PCB Chestnut for back cover.001
-BOOLEAN USB materials: Boolean difference, 
-BOOLEAN USB modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-
 Name: BOOLEAN USB.001
 BOOLEAN USB.001 Type: MESH
 BOOLEAN USB.001 transform: X9.0 Y-57.441871643066406 Z13.190025329589844
@@ -1470,16 +1246,6 @@ BOOLEAN USB.002 materials: Boolean difference.002,
 BOOLEAN USB.002 modifiers: 
   #1 Name: Bevel, Type: BEVEL
 
-Name: BOOLEAN Wrist connector M2 bolt holes
-BOOLEAN Wrist connector M2 bolt holes Type: MESH
-BOOLEAN Wrist connector M2 bolt holes transform: X9.064352035522461 Y-91.38917541503906 Z10.123432159423828
-BOOLEAN Wrist connector M2 bolt holes rotation: X5.204799652099609 Y-0.11092732101678848 Z1.316519856452942
-BOOLEAN Wrist connector M2 bolt holes scale: X1.0 Y1.0 Z1.0
-BOOLEAN Wrist connector M2 bolt holes groups: None
-BOOLEAN Wrist connector M2 bolt holes mesh: BOOLEAN M2 Bolt Hole.006
-BOOLEAN Wrist connector M2 bolt holes materials: Boolean difference, 
-BOOLEAN Wrist connector M2 bolt holes modifiers: None
-
 Name: Bottom cover
 Bottom cover Type: MESH
 Bottom cover transform: X21.218528747558594 Y-94.53303527832031 Z1.499997615814209
@@ -1501,27 +1267,6 @@ Conical spring parent: Actuator Block
 Conical spring mesh: Conical spring
 Conical spring materials: Steel, 
 Conical spring modifiers: None
-
-Name: Connector cover
-Connector cover Type: MESH
-Connector cover transform: X-19.096534729003906 Y-71.34187316894531 Z17.730140686035156
-Connector cover rotation: X0.0 Y0.0 Z0.0
-Connector cover scale: X1.0 Y1.0 Z1.0
-Connector cover groups: None
-Connector cover parent: PCB Chestnut
-Connector cover mesh: Connector cover
-Connector cover materials: PLA, 
-Connector cover modifiers: 
-  #1 Name: Boolean.PCBChestnutForConnectorCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for connector cover
-  #2 Name: Boolean.HeadphoneJack, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Headphone jack
-  #3 Name: Boolean.Neopixel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Neopixel
-  #4 Name: Boolean.CapacitorsForConnectorCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Capacitors for connector cover
-  #5 Name: Boolean.PQ12, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
 
 Name: Connector cover.001
 Connector cover.001 Type: MESH
@@ -1552,14 +1297,6 @@ CONNECTOR DC Jack male.001 scale: X1.0 Y1.0 Z1.0
 CONNECTOR DC Jack male.001 groups: None
 CONNECTOR DC Jack male.001 parent: PCB Chestnut FLIPPED
 
-Name: CONNECTOR Headphone jack male 3.5 mm 4 pole
-CONNECTOR Headphone jack male 3.5 mm 4 pole Type: EMPTY
-CONNECTOR Headphone jack male 3.5 mm 4 pole transform: X-19.596534729003906 Y-71.34187316894531 Z17.730140686035156
-CONNECTOR Headphone jack male 3.5 mm 4 pole rotation: X-0.0 Y1.570796251296997 Z0.0
-CONNECTOR Headphone jack male 3.5 mm 4 pole scale: X1.0 Y1.0 Z1.0
-CONNECTOR Headphone jack male 3.5 mm 4 pole groups: None
-CONNECTOR Headphone jack male 3.5 mm 4 pole parent: PCB Chestnut
-
 Name: CONNECTOR Headphone jack male 3.5 mm 4 pole.001
 CONNECTOR Headphone jack male 3.5 mm 4 pole.001 Type: EMPTY
 CONNECTOR Headphone jack male 3.5 mm 4 pole.001 transform: X-19.596534729003906 Y-71.34187316894531 Z17.730140686035156
@@ -1567,14 +1304,6 @@ CONNECTOR Headphone jack male 3.5 mm 4 pole.001 rotation: X-0.0 Y1.5707962512969
 CONNECTOR Headphone jack male 3.5 mm 4 pole.001 scale: X1.0 Y1.0 Z1.0
 CONNECTOR Headphone jack male 3.5 mm 4 pole.001 groups: None
 CONNECTOR Headphone jack male 3.5 mm 4 pole.001 parent: PCB Chestnut FLIPPED
-
-Name: CONNECTOR USB micro male
-CONNECTOR USB micro male Type: EMPTY
-CONNECTOR USB micro male transform: X-21.659345626831055 Y-57.03258514404297 Z15.968995094299316
-CONNECTOR USB micro male rotation: X2.980232949312267e-08 Y-2.9802322387695312e-08 Z-1.570796251296997
-CONNECTOR USB micro male scale: X1.0 Y1.0 Z1.0
-CONNECTOR USB micro male groups: None
-CONNECTOR USB micro male parent: PCB Chestnut
 
 Name: CONNECTOR USB micro male.001
 CONNECTOR USB micro male.001 Type: EMPTY
@@ -1593,26 +1322,6 @@ Cube groups: None
 Cube mesh: Cube.011
 Cube materials: Boolean difference, 
 Cube modifiers: None
-
-Name: DC jack cover
-DC jack cover Type: MESH
-DC jack cover transform: X29.954208374023438 Y-80.68687438964844 Z21.20294952392578
-DC jack cover rotation: X1.5707963705062866 Y-0.0 Z0.0
-DC jack cover scale: X1.0 Y1.0 Z1.0
-DC jack cover groups: None
-DC jack cover parent: PCB Chestnut
-DC jack cover mesh: DC jack cover
-DC jack cover materials: None
-DC jack cover modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-
-Name: CONNECTOR DC Jack male
-CONNECTOR DC Jack male Type: EMPTY
-CONNECTOR DC Jack male transform: X29.95421600341797 Y-80.48687744140625 Z22.002948760986328
-CONNECTOR DC Jack male rotation: X-1.5707964897155762 Y2.235175955433988e-08 Z1.4056895736302977e-07
-CONNECTOR DC Jack male scale: X1.0 Y1.0 Z1.0
-CONNECTOR DC Jack male groups: None
-CONNECTOR DC Jack male parent: PCB Chestnut
 
 Name: DC jack cover.001
 DC jack cover.001 Type: MESH
@@ -1640,42 +1349,6 @@ Flex Bracket modifiers:
   #2 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Headphone jack.001
   #3 Name: Bevel, Type: BEVEL
-
-Name: GALA cover
-GALA cover Type: MESH
-GALA cover transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
-GALA cover rotation: X0.0 Y-0.0 Z0.0
-GALA cover scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
-GALA cover groups: Actuator Block, 
-GALA cover parent: Actuator Block
-GALA cover mesh: GALA cover
-GALA cover materials: PLA, 
-GALA cover modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-  #2 Name: Boolean.BackCoverProximalAttachmentPoint, Type: BOOLEAN
-        Operation: UNION, Object: Back cover proximal attachment point
-  #3 Name: Boolean.ConicalSpring, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Conical spring
-  #4 Name: Boolean.GALACoverM2Bolts, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN GALA cover M2 Bolt Hole
-  #5 Name: Boolean.PQ12s, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
-  #6 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel
-  #7 Name: Boolean.PCB, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for GALA cover
-  #8 Name: Boolean.CableTidy, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN GALA cover cable tidy
-  #9 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
-  #10 Name: Boolean.PalmOuterFrameM2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame M2 bolt hole
-  #11 Name: Boolean.ThumbPivotDowelForGALACover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel for GALA cover
-  #12 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Connector cover for GALA cover
-  #13 Name: Boolean.DCJackCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for GALA cover
 
 Name: Hand Ligament
 Hand Ligament Type: MESH
@@ -1999,19 +1672,13 @@ New gala cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb attahment dowel
   #7 Name: Boolean.PCB, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for GALA cover.001
-  #8 Name: Boolean.CableTidy, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN GALA cover cable tidy
-  #9 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
+  #8 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
-  #10 Name: Boolean.PalmOuterFrameM2BoltHoles, Type: BOOLEAN
+  #9 Name: Boolean.PalmOuterFrameM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame M2 bolt hole
-  #11 Name: Boolean.ThumbPivotDowelForGALACover, Type: BOOLEAN
+  #10 Name: Boolean.ThumbPivotDowelForGALACover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel for GALA cover
-  #12 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Connector cover for GALA cover
-  #13 Name: Boolean.DCJackCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN DC jack cover for GALA cover
-  #14 Name: Boolean.001, Type: BOOLEAN
+  #11 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Flex Bracket
 
 Name: New Stand
@@ -2077,18 +1744,6 @@ Palm combined for mould 0.98 scale (XY) modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #2 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Urethane cutout for combined
-
-Name: Palm Covered
-Palm Covered Type: MESH
-Palm Covered transform: X1.0292627811431885 Y0.520327091217041 Z-0.1404719352722168
-Palm Covered rotation: X-0.0 Y3.141592502593994 Z-0.0
-Palm Covered scale: X1.0 Y1.0 Z1.0
-Palm Covered groups: None
-Palm Covered mesh: Palm Covered
-Palm Covered materials: PLA Black, 
-Palm Covered modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
 
 Name: Palm Covered top pad
 Palm Covered top pad Type: MESH
@@ -2182,25 +1837,6 @@ Palm inner.001 parent: Actuator Block
 Palm inner.001 mesh: Palm Inner.006
 Palm inner.001 materials: PLA, 
 Palm inner.001 modifiers: None
-
-Name: Palm outer frame
-Palm outer frame Type: MESH
-Palm outer frame transform: X9.0 Y-48.89358901977539 Z-2.9508914947509766
-Palm outer frame rotation: X0.0 Y0.0 Z0.0
-Palm outer frame scale: X1.0 Y1.0 Z1.0
-Palm outer frame groups: None
-Palm outer frame mesh: Palm outer frame
-Palm outer frame materials: PLA, 
-Palm outer frame modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 5, Type: CATMULL_CLARK
-  #2 Name: Displace, Type: DISPLACE
-  #3 Name: Boolean.ThumbLigamentCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for outer palm
-  #4 Name: Boolean.ThumbSweptArea, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area
-  #5 Name: Boolean.OuterFrameM2BoltHole, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame M2 bolt hole
 
 Name: Palm outer frame distal hook
 Palm outer frame distal hook Type: MESH
@@ -2299,24 +1935,6 @@ Palm outer frame.001 modifiers:
   #5 Name: Boolean.OuterFrameM2BoltHole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame M2 bolt hole
 
-Name: Palm outer skin
-Palm outer skin Type: MESH
-Palm outer skin transform: X10.321754455566406 Y-16.049638748168945 Z-22.01079750061035
-Palm outer skin rotation: X0.0 Y0.0 Z0.0
-Palm outer skin scale: X1.0 Y1.0 Z1.0
-Palm outer skin groups: None
-Palm outer skin mesh: Palm outer skin.002
-Palm outer skin materials: Urethane, 
-Palm outer skin modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #2 Name: Boolean.PalmOuterFrame, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame
-  #3 Name: Boolean.ThumbSweptArea, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area
-  #4 Name: Boolean.ThumbLigamentCoverForOuterPalm, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for outer palm
-
 Name: Palm outer skin target
 Palm outer skin target Type: MESH
 Palm outer skin target transform: X10.321754455566406 Y-16.049638748168945 Z-22.01079750061035
@@ -2328,26 +1946,6 @@ Palm outer skin target materials: Urethane,
 Palm outer skin target modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-
-Name: Palm Simple
-Palm Simple Type: MESH
-Palm Simple transform: X4.385656833648682 Y-1.4184389114379883 Z-0.36889559030532837
-Palm Simple rotation: X-0.0 Y3.141592502593994 Z-0.0
-Palm Simple scale: X1.010692834854126 Y1.010692834854126 Z1.010692834854126
-Palm Simple groups: None
-Palm Simple mesh: Palm Simple
-Palm Simple materials: PLA Black, NF White, 
-Palm Simple modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-
-Name: PCB Chestnut
-PCB Chestnut Type: EMPTY
-PCB Chestnut transform: X9.0 Y-57.44186782836914 Z13.990025520324707
-PCB Chestnut rotation: X0.0 Y-0.0 Z1.5707964897155762
-PCB Chestnut scale: X1.0 Y1.0 Z1.0
-PCB Chestnut groups: None
-PCB Chestnut parent: Actuator Block
 
 Name: PCB Chestnut FLIPPED
 PCB Chestnut FLIPPED Type: EMPTY
@@ -2633,19 +2231,6 @@ Urethane skin test modifiers:
         Operation: DIFFERENCE, Object: Urethane cutout
   #5 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Palm inner for new mould
-
-Name: Wrist connector
-Wrist connector Type: MESH
-Wrist connector transform: X9.0 Y-90.75166320800781 Z11.433578491210938
-Wrist connector rotation: X-0.3490658104419708 Y-0.0 Z0.0
-Wrist connector scale: X1.0 Y1.0 Z1.0
-Wrist connector groups: None
-Wrist connector mesh: Plane.000
-Wrist connector materials: PLA, 
-Wrist connector modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-  #2 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Wrist connector M2 bolt holes
 
 Name: BOOLEAN M2 Bolt Holes
 BOOLEAN M2 Bolt Holes Type: EMPTY
