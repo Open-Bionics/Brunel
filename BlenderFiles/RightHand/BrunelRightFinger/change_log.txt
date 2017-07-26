@@ -17,6 +17,18 @@ Back Cover modifiers:
   #4 Name: BOOLEAN Elastic Terminator Back Cover, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Elastic Terminator Back Cover
 
+Name: BOOLEAN 1st finger spring channel
+BOOLEAN 1st finger spring channel Type: MESH
+BOOLEAN 1st finger spring channel transform: X4.875888824462891 Y-10.68578815460205 Z10.900125503540039
+BOOLEAN 1st finger spring channel rotation: X0.0 Y-0.0 Z0.0
+BOOLEAN 1st finger spring channel scale: X1.0 Y1.0 Z1.0
+BOOLEAN 1st finger spring channel groups: None
+BOOLEAN 1st finger spring channel mesh: Cube.019
+BOOLEAN 1st finger spring channel materials: Boolean difference.002, 
+BOOLEAN 1st finger spring channel modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: BOOLEAN Bolt Hole
 BOOLEAN Bolt Hole Type: MESH
 BOOLEAN Bolt Hole transform: X0.0 Y84.5644302368164 Z1.9954553842544556
