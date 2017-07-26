@@ -1,7 +1,7 @@
 Name: 1st Finger
 1st Finger Type: EMPTY
 1st Finger transform: X-18.999998092651367 Y-1.4999980926513672 Z0.0
-1st Finger rotation: X4.674400311266425e-10 Y0.0 Z0.08726643770933151
+1st Finger rotation: X0.0 Y0.0 Z0.08726643770933151
 1st Finger scale: X1.0 Y1.0 Z1.0
 1st Finger groups: None
 
@@ -92,6 +92,102 @@ Back cover target groups: None
 Back cover target mesh: Back cover
 Back cover target materials: PLA, 
 Back cover target modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN 1st finger spring bolt hole
+BOOLEAN 1st finger spring bolt hole Type: MESH
+BOOLEAN 1st finger spring bolt hole transform: X-18.027551651000977 Y-12.069774627685547 Z4.449999809265137
+BOOLEAN 1st finger spring bolt hole rotation: X-1.4901162970204496e-08 Y7.105427357601002e-15 Z0.08726643025875092
+BOOLEAN 1st finger spring bolt hole scale: X1.0 Y0.9999998211860657 Z1.0
+BOOLEAN 1st finger spring bolt hole groups: None
+BOOLEAN 1st finger spring bolt hole parent: Finger spring bolt holes
+BOOLEAN 1st finger spring bolt hole mesh: BOOLEAN M2 Bolt Hole.002
+BOOLEAN 1st finger spring bolt hole materials: Boolean difference.003, 
+BOOLEAN 1st finger spring bolt hole modifiers: None
+
+Name: BOOLEAN 1st finger spring channel
+BOOLEAN 1st finger spring channel Type: MESH
+BOOLEAN 1st finger spring channel transform: X-13.17247200012207 Y-10.68578815460205 Z11.000125885009766
+BOOLEAN 1st finger spring channel rotation: X4.674400311266425e-10 Y-0.0 Z0.08726643025875092
+BOOLEAN 1st finger spring channel scale: X1.0 Y1.0 Z1.0
+BOOLEAN 1st finger spring channel groups: None
+BOOLEAN 1st finger spring channel parent: Finger spring channels
+BOOLEAN 1st finger spring channel mesh: Cube.019
+BOOLEAN 1st finger spring channel materials: Boolean difference, 
+BOOLEAN 1st finger spring channel modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN 2nd finger spring bolt hole
+BOOLEAN 2nd finger spring bolt hole Type: MESH
+BOOLEAN 2nd finger spring bolt hole transform: X-0.008531973697245121 Y-10.418394088745117 Z4.449999809265137
+BOOLEAN 2nd finger spring bolt hole rotation: X-1.4901162970204496e-08 Y7.105427357601002e-15 Z0.08726643025875092
+BOOLEAN 2nd finger spring bolt hole scale: X1.0 Y0.9999998211860657 Z1.0
+BOOLEAN 2nd finger spring bolt hole groups: None
+BOOLEAN 2nd finger spring bolt hole parent: Finger spring bolt holes
+BOOLEAN 2nd finger spring bolt hole mesh: BOOLEAN M2 Bolt Hole.003
+BOOLEAN 2nd finger spring bolt hole materials: Boolean difference.003, 
+BOOLEAN 2nd finger spring bolt hole modifiers: None
+
+Name: BOOLEAN 2nd finger spring channel
+BOOLEAN 2nd finger spring channel Type: MESH
+BOOLEAN 2nd finger spring channel transform: X5.124248504638672 Y-9.650558471679688 Z11.000125885009766
+BOOLEAN 2nd finger spring channel rotation: X0.0 Y-0.0 Z0.0
+BOOLEAN 2nd finger spring channel scale: X1.0 Y1.0 Z1.0
+BOOLEAN 2nd finger spring channel groups: None
+BOOLEAN 2nd finger spring channel parent: Finger spring channels
+BOOLEAN 2nd finger spring channel mesh: Cube.020
+BOOLEAN 2nd finger spring channel materials: Boolean difference, 
+BOOLEAN 2nd finger spring channel modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN 3rd finger spring bolt hole
+BOOLEAN 3rd finger spring bolt hole Type: MESH
+BOOLEAN 3rd finger spring bolt hole transform: X18.105955123901367 Y-11.73134994506836 Z4.449999809265137
+BOOLEAN 3rd finger spring bolt hole rotation: X-1.4901162970204496e-08 Y7.105427357601002e-15 Z0.08726643025875092
+BOOLEAN 3rd finger spring bolt hole scale: X1.0 Y0.9999998211860657 Z1.0
+BOOLEAN 3rd finger spring bolt hole groups: None
+BOOLEAN 3rd finger spring bolt hole parent: Finger spring bolt holes
+BOOLEAN 3rd finger spring bolt hole mesh: BOOLEAN M2 Bolt Hole.004
+BOOLEAN 3rd finger spring bolt hole materials: Boolean difference.003, 
+BOOLEAN 3rd finger spring bolt hole modifiers: None
+
+Name: BOOLEAN 3rd finger spring channel
+BOOLEAN 3rd finger spring channel Type: MESH
+BOOLEAN 3rd finger spring channel transform: X23.050413131713867 Y-11.491219520568848 Z11.000125885009766
+BOOLEAN 3rd finger spring channel rotation: X4.674400311266425e-10 Y-0.0 Z-0.08726642280817032
+BOOLEAN 3rd finger spring channel scale: X1.0 Y1.0 Z1.0
+BOOLEAN 3rd finger spring channel groups: None
+BOOLEAN 3rd finger spring channel parent: Finger spring channels
+BOOLEAN 3rd finger spring channel mesh: Cube.021
+BOOLEAN 3rd finger spring channel materials: Boolean difference, 
+BOOLEAN 3rd finger spring channel modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN 4th finger spring bolt hole
+BOOLEAN 4th finger spring bolt hole Type: MESH
+BOOLEAN 4th finger spring bolt hole transform: X36.59015655517578 Y-13.664939880371094 Z4.449999809265137
+BOOLEAN 4th finger spring bolt hole rotation: X-1.4901162970204496e-08 Y7.105427357601002e-15 Z0.08726643025875092
+BOOLEAN 4th finger spring bolt hole scale: X1.0 Y0.9999998211860657 Z1.0
+BOOLEAN 4th finger spring bolt hole groups: None
+BOOLEAN 4th finger spring bolt hole parent: Finger spring bolt holes
+BOOLEAN 4th finger spring bolt hole mesh: BOOLEAN M2 Bolt Hole.005
+BOOLEAN 4th finger spring bolt hole materials: Boolean difference.003, 
+BOOLEAN 4th finger spring bolt hole modifiers: None
+
+Name: BOOLEAN 4th finger spring channel
+BOOLEAN 4th finger spring channel Type: MESH
+BOOLEAN 4th finger spring channel transform: X41.19822311401367 Y-13.781815528869629 Z11.000125885009766
+BOOLEAN 4th finger spring channel rotation: X0.0 Y-0.0 Z-0.17453289031982422
+BOOLEAN 4th finger spring channel scale: X1.0 Y1.0 Z1.0
+BOOLEAN 4th finger spring channel groups: None
+BOOLEAN 4th finger spring channel parent: Finger spring channels
+BOOLEAN 4th finger spring channel mesh: Cube.022
+BOOLEAN 4th finger spring channel materials: Boolean difference, 
+BOOLEAN 4th finger spring channel modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
@@ -329,6 +425,44 @@ BOOLEAN Elastic path groups: None
 BOOLEAN Elastic path mesh: BOOLEAN Elastic path
 BOOLEAN Elastic path materials: Boolean difference.003, 
 BOOLEAN Elastic path modifiers: None
+
+Name: BOOLEAN finger spring bolt holes combined
+BOOLEAN finger spring bolt holes combined Type: MESH
+BOOLEAN finger spring bolt holes combined transform: X2.234074592590332 Y-8.927351951599121 Z3.5991902351379395
+BOOLEAN finger spring bolt holes combined rotation: X0.0 Y0.0 Z0.0
+BOOLEAN finger spring bolt holes combined scale: X1.0 Y1.0 Z1.0
+BOOLEAN finger spring bolt holes combined groups: None
+BOOLEAN finger spring bolt holes combined parent: Finger spring bolt holes
+BOOLEAN finger spring bolt holes combined mesh: Plane
+BOOLEAN finger spring bolt holes combined materials: Boolean difference, 
+BOOLEAN finger spring bolt holes combined modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN 1st finger spring bolt hole
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN 2nd finger spring bolt hole
+  #3 Name: Boolean.002, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN 3rd finger spring bolt hole
+  #4 Name: Boolean.003, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN 4th finger spring bolt hole
+
+Name: BOOLEAN finger spring channels combined
+BOOLEAN finger spring channels combined Type: MESH
+BOOLEAN finger spring channels combined transform: X-17.97488021850586 Y-10.515707015991211 Z9.757254600524902
+BOOLEAN finger spring channels combined rotation: X0.0 Y0.0 Z0.0
+BOOLEAN finger spring channels combined scale: X1.0 Y1.0 Z1.0
+BOOLEAN finger spring channels combined groups: None
+BOOLEAN finger spring channels combined parent: Finger spring channels
+BOOLEAN finger spring channels combined mesh: Cube.023
+BOOLEAN finger spring channels combined materials: Boolean difference, 
+BOOLEAN finger spring channels combined modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN 1st finger spring channel
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN 2nd finger spring channel
+  #3 Name: Boolean.002, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN 3rd finger spring channel
+  #4 Name: Boolean.003, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN 4th finger spring channel
 
 Name: BOOLEAN Flex Bracket
 BOOLEAN Flex Bracket Type: MESH
@@ -915,16 +1049,6 @@ BOOLEAN Proximal elastic terminator.004 mesh: BOOLEAN Proximal elastic terminato
 BOOLEAN Proximal elastic terminator.004 materials: Boolean difference, 
 BOOLEAN Proximal elastic terminator.004 modifiers: None
 
-Name: BOOLEAN Spring bolt holes
-BOOLEAN Spring bolt holes Type: MESH
-BOOLEAN Spring bolt holes transform: X3.7263028621673584 Y-34.81549072265625 Z-4.057490348815918
-BOOLEAN Spring bolt holes rotation: X-1.4901162970204496e-08 Y7.105427357601002e-15 Z0.08726643025875092
-BOOLEAN Spring bolt holes scale: X1.0 Y0.9999998211860657 Z1.0
-BOOLEAN Spring bolt holes groups: None
-BOOLEAN Spring bolt holes mesh: BOOLEAN M2 Bolt Hole.002
-BOOLEAN Spring bolt holes materials: Boolean difference.003, 
-BOOLEAN Spring bolt holes modifiers: None
-
 Name: BOOLEAN Syringe
 BOOLEAN Syringe Type: MESH
 BOOLEAN Syringe transform: X7.616250038146973 Y2.5693748284538742e-06 Z-1.1614023447036743
@@ -1345,6 +1469,20 @@ DC jack cover.001 materials: None
 DC jack cover.001 modifiers: 
   #1 Name: Bevel, Type: BEVEL
 
+Name: Finger spring bolt holes
+Finger spring bolt holes Type: EMPTY
+Finger spring bolt holes transform: X-6.617301940917969 Y-8.285255432128906 Z-12.010713577270508
+Finger spring bolt holes rotation: X0.0 Y0.0 Z0.0
+Finger spring bolt holes scale: X1.0 Y1.0 Z1.0
+Finger spring bolt holes groups: None
+
+Name: Finger spring channels
+Finger spring channels Type: EMPTY
+Finger spring channels transform: X2.234074592590332 Y-8.927351951599121 Z3.5991902351379395
+Finger spring channels rotation: X0.0 Y0.0 Z0.0
+Finger spring channels scale: X1.0 Y1.0 Z1.0
+Finger spring channels groups: None
+
 Name: Flex Bracket
 Flex Bracket Type: MESH
 Flex Bracket transform: X-11.954208374023438 Y-98.3869400024414 Z14.455009460449219
@@ -1486,12 +1624,14 @@ Ligament cover bottom modifiers:
         Operation: UNION, Object: Ligament cover prongs
   #2 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
-  #3 Name: Boolean.ProximalElasticTerminatorCombo, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Proximal elastic terminator combo
+  #3 Name: Boolean.spring bolt holes, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN finger spring bolt holes combined
   #4 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover corners
   #5 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament Cover M2 bolt hole platforms
+  #6 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN finger spring channels combined
 
 Name: Ligament Cover M2 bolt hole platforms
 Ligament Cover M2 bolt hole platforms Type: MESH
@@ -1533,6 +1673,27 @@ Ligament cover prongs modifiers:
         Cull Faces: OFF
         Subsurf level: 0
   #2 Name: Solidify, Type: SOLIDIFY
+
+Name: Ligament cover top plate
+Ligament cover top plate Type: MESH
+Ligament cover top plate transform: X7.5 Y-37.89358901977539 Z-0.12405729293823242
+Ligament cover top plate rotation: X0.0 Y-0.0 Z0.0
+Ligament cover top plate scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+Ligament cover top plate groups: Actuator Block, 
+Ligament cover top plate parent: Actuator Block
+Ligament cover top plate mesh: Ligament cover.001
+Ligament cover top plate materials: PLA, 
+Ligament cover top plate modifiers: 
+  #1 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
+  #2 Name: Boolean.spring bolt holes, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN finger spring bolt holes combined
+  #3 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover corners
+  #4 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament Cover M2 bolt hole platforms
+  #5 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN finger spring channels combined
 
 Name: MOULD Bottom
 MOULD Bottom Type: MESH
