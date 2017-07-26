@@ -57,30 +57,22 @@ Back cover modifiers:
   #7 Name: Boolean.PCBChestnut, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for back cover.001
   #8 Name: Boolean.LigamentCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover
-  #9 Name: Boolean.Connectors, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN ligament cover bottom
+  #9 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN ligament cover top plate
+  #10 Name: Boolean.Connectors, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Connectors.001
-  #10 Name: Boolean.DCJack, Type: BOOLEAN
+  #11 Name: Boolean.DCJack, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN DC Jack.001
-  #11 Name: Boolean.PalmOuterFrameForBackCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame for Back cover
   #12 Name: Boolean.FlexBracket, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN flex bracket for back cover
   #13 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
-  #14 Name: Boolean.DCJaceCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #15 Name: Boolean.OpenBionics, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN LABEL Open Bionics
-  #16 Name: Boolean.BackCoverHightlightTarget, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #17 Name: Boolean.BackCoverM2BoltHolesVeneer, Type: BOOLEAN
+  #14 Name: Boolean.BackCoverM2BoltHolesVeneer, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes veneer
-  #18 Name: Boolean.LabelLogo, Type: BOOLEAN
+  #15 Name: Boolean.LabelLogo, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Logo
-  #19 Name: Boolean.Brunel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: LABEL Brunel logo
-  #20 Name: Boolean.LabelPCBLines, Type: BOOLEAN
+  #16 Name: Boolean.LabelPCBLines, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL PCB lines
 
 Name: Back cover target
@@ -566,6 +558,30 @@ BOOLEAN Ligament cover materials: Boolean difference,
 BOOLEAN Ligament cover modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
 
+Name: BOOLEAN ligament cover bottom
+BOOLEAN ligament cover bottom Type: MESH
+BOOLEAN ligament cover bottom transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+BOOLEAN ligament cover bottom rotation: X0.0 Y-0.0 Z0.0
+BOOLEAN ligament cover bottom scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+BOOLEAN ligament cover bottom groups: Actuator Block, 
+BOOLEAN ligament cover bottom parent: Actuator Block
+BOOLEAN ligament cover bottom mesh: Ligament cover.003
+BOOLEAN ligament cover bottom materials: Boolean difference, 
+BOOLEAN ligament cover bottom modifiers: 
+  #1 Name: Boolean.LigamentCoverProngs, Type: BOOLEAN
+        Operation: UNION, Object: Ligament cover prongs
+  #2 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
+  #3 Name: Boolean.spring bolt holes, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN finger spring bolt holes combined
+  #4 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover corners
+  #5 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament Cover M2 bolt hole platforms
+  #6 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN finger spring channels combined
+  #7 Name: Solidify, Type: SOLIDIFY
+
 Name: BOOLEAN Ligament cover corners
 BOOLEAN Ligament cover corners Type: MESH
 BOOLEAN Ligament cover corners transform: X38.502872467041016 Y-24.044910430908203 Z-2.121824264526367
@@ -599,6 +615,28 @@ BOOLEAN Ligament Cover M2 bolt hole platforms mesh: Cube
 BOOLEAN Ligament Cover M2 bolt hole platforms materials: PLA, 
 BOOLEAN Ligament Cover M2 bolt hole platforms modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
+
+Name: BOOLEAN ligament cover top plate
+BOOLEAN ligament cover top plate Type: MESH
+BOOLEAN ligament cover top plate transform: X7.5 Y-37.89358901977539 Z-0.12405729293823242
+BOOLEAN ligament cover top plate rotation: X0.0 Y-0.0 Z0.0
+BOOLEAN ligament cover top plate scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+BOOLEAN ligament cover top plate groups: Actuator Block, 
+BOOLEAN ligament cover top plate parent: Actuator Block
+BOOLEAN ligament cover top plate mesh: Ligament cover.004
+BOOLEAN ligament cover top plate materials: Boolean difference, 
+BOOLEAN ligament cover top plate modifiers: 
+  #1 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
+  #2 Name: Boolean.spring bolt holes, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN finger spring bolt holes combined
+  #3 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover corners
+  #4 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament Cover M2 bolt hole platforms
+  #5 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN finger spring channels combined
+  #6 Name: Solidify, Type: SOLIDIFY
 
 Name: BOOLEAN M2 Bolt Hole
 BOOLEAN M2 Bolt Hole Type: MESH
