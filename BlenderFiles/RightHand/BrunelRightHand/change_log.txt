@@ -100,7 +100,7 @@ BOOLEAN 1st finger spring bolt hole modifiers: None
 
 Name: BOOLEAN 1st finger spring channel
 BOOLEAN 1st finger spring channel Type: MESH
-BOOLEAN 1st finger spring channel transform: X-13.17247200012207 Y-10.68578815460205 Z11.000125885009766
+BOOLEAN 1st finger spring channel transform: X-13.17247200012207 Y-10.68578815460205 Z10.900125503540039
 BOOLEAN 1st finger spring channel rotation: X4.674400311266425e-10 Y-0.0 Z0.08726643025875092
 BOOLEAN 1st finger spring channel scale: X1.0 Y1.0 Z1.0
 BOOLEAN 1st finger spring channel groups: None
@@ -124,7 +124,7 @@ BOOLEAN 2nd finger spring bolt hole modifiers: None
 
 Name: BOOLEAN 2nd finger spring channel
 BOOLEAN 2nd finger spring channel Type: MESH
-BOOLEAN 2nd finger spring channel transform: X5.124248504638672 Y-9.650558471679688 Z11.000125885009766
+BOOLEAN 2nd finger spring channel transform: X5.124248504638672 Y-9.650558471679688 Z10.900125503540039
 BOOLEAN 2nd finger spring channel rotation: X0.0 Y-0.0 Z0.0
 BOOLEAN 2nd finger spring channel scale: X1.0 Y1.0 Z1.0
 BOOLEAN 2nd finger spring channel groups: None
@@ -148,7 +148,7 @@ BOOLEAN 3rd finger spring bolt hole modifiers: None
 
 Name: BOOLEAN 3rd finger spring channel
 BOOLEAN 3rd finger spring channel Type: MESH
-BOOLEAN 3rd finger spring channel transform: X23.050413131713867 Y-11.491219520568848 Z11.000125885009766
+BOOLEAN 3rd finger spring channel transform: X23.050413131713867 Y-11.491219520568848 Z10.900125503540039
 BOOLEAN 3rd finger spring channel rotation: X4.674400311266425e-10 Y-0.0 Z-0.08726642280817032
 BOOLEAN 3rd finger spring channel scale: X1.0 Y1.0 Z1.0
 BOOLEAN 3rd finger spring channel groups: None
@@ -172,7 +172,7 @@ BOOLEAN 4th finger spring bolt hole modifiers: None
 
 Name: BOOLEAN 4th finger spring channel
 BOOLEAN 4th finger spring channel Type: MESH
-BOOLEAN 4th finger spring channel transform: X41.19822311401367 Y-13.781815528869629 Z11.000125885009766
+BOOLEAN 4th finger spring channel transform: X41.19822311401367 Y-13.781815528869629 Z10.900125503540039
 BOOLEAN 4th finger spring channel rotation: X0.0 Y-0.0 Z-0.17453289031982422
 BOOLEAN 4th finger spring channel scale: X1.0 Y1.0 Z1.0
 BOOLEAN 4th finger spring channel groups: None
