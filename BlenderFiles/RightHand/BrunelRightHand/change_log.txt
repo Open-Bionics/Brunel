@@ -74,6 +74,10 @@ Back cover modifiers:
         Operation: DIFFERENCE, Object: LABEL Logo
   #16 Name: Boolean.LabelPCBLines, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL PCB lines
+  #17 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN finger spring bolt holes combined
+  #18 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN finger spring channels combined
 
 Name: Back cover target
 Back cover target Type: MESH
@@ -118,7 +122,7 @@ BOOLEAN 2nd finger spring bolt hole rotation: X-1.4901162970204496e-08 Y7.105427
 BOOLEAN 2nd finger spring bolt hole scale: X1.0 Y0.9999998211860657 Z1.0
 BOOLEAN 2nd finger spring bolt hole groups: None
 BOOLEAN 2nd finger spring bolt hole parent: Finger spring bolt holes
-BOOLEAN 2nd finger spring bolt hole mesh: BOOLEAN M2 Bolt Hole.003
+BOOLEAN 2nd finger spring bolt hole mesh: BOOLEAN M2 Bolt Hole.002
 BOOLEAN 2nd finger spring bolt hole materials: Boolean difference.003, 
 BOOLEAN 2nd finger spring bolt hole modifiers: None
 
@@ -129,7 +133,7 @@ BOOLEAN 2nd finger spring channel rotation: X0.0 Y-0.0 Z0.0
 BOOLEAN 2nd finger spring channel scale: X1.0 Y1.0 Z1.0
 BOOLEAN 2nd finger spring channel groups: None
 BOOLEAN 2nd finger spring channel parent: Finger spring channels
-BOOLEAN 2nd finger spring channel mesh: Cube.020
+BOOLEAN 2nd finger spring channel mesh: Cube.019
 BOOLEAN 2nd finger spring channel materials: Boolean difference, 
 BOOLEAN 2nd finger spring channel modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
@@ -142,7 +146,7 @@ BOOLEAN 3rd finger spring bolt hole rotation: X-1.4901162970204496e-08 Y7.105427
 BOOLEAN 3rd finger spring bolt hole scale: X1.0 Y0.9999998211860657 Z1.0
 BOOLEAN 3rd finger spring bolt hole groups: None
 BOOLEAN 3rd finger spring bolt hole parent: Finger spring bolt holes
-BOOLEAN 3rd finger spring bolt hole mesh: BOOLEAN M2 Bolt Hole.004
+BOOLEAN 3rd finger spring bolt hole mesh: BOOLEAN M2 Bolt Hole.002
 BOOLEAN 3rd finger spring bolt hole materials: Boolean difference.003, 
 BOOLEAN 3rd finger spring bolt hole modifiers: None
 
@@ -153,7 +157,7 @@ BOOLEAN 3rd finger spring channel rotation: X4.674400311266425e-10 Y-0.0 Z-0.087
 BOOLEAN 3rd finger spring channel scale: X1.0 Y1.0 Z1.0
 BOOLEAN 3rd finger spring channel groups: None
 BOOLEAN 3rd finger spring channel parent: Finger spring channels
-BOOLEAN 3rd finger spring channel mesh: Cube.021
+BOOLEAN 3rd finger spring channel mesh: Cube.019
 BOOLEAN 3rd finger spring channel materials: Boolean difference, 
 BOOLEAN 3rd finger spring channel modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
@@ -166,7 +170,7 @@ BOOLEAN 4th finger spring bolt hole rotation: X-1.4901162970204496e-08 Y7.105427
 BOOLEAN 4th finger spring bolt hole scale: X1.0 Y0.9999998211860657 Z1.0
 BOOLEAN 4th finger spring bolt hole groups: None
 BOOLEAN 4th finger spring bolt hole parent: Finger spring bolt holes
-BOOLEAN 4th finger spring bolt hole mesh: BOOLEAN M2 Bolt Hole.005
+BOOLEAN 4th finger spring bolt hole mesh: BOOLEAN M2 Bolt Hole.002
 BOOLEAN 4th finger spring bolt hole materials: Boolean difference.003, 
 BOOLEAN 4th finger spring bolt hole modifiers: None
 
@@ -177,7 +181,7 @@ BOOLEAN 4th finger spring channel rotation: X0.0 Y-0.0 Z-0.17453289031982422
 BOOLEAN 4th finger spring channel scale: X1.0 Y1.0 Z1.0
 BOOLEAN 4th finger spring channel groups: None
 BOOLEAN 4th finger spring channel parent: Finger spring channels
-BOOLEAN 4th finger spring channel mesh: Cube.022
+BOOLEAN 4th finger spring channel mesh: Cube.019
 BOOLEAN 4th finger spring channel materials: Boolean difference, 
 BOOLEAN 4th finger spring channel modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
