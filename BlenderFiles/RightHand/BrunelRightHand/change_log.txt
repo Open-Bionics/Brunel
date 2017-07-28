@@ -569,22 +569,24 @@ BOOLEAN ligament cover bottom rotation: X0.0 Y-0.0 Z0.0
 BOOLEAN ligament cover bottom scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 BOOLEAN ligament cover bottom groups: Actuator Block, 
 BOOLEAN ligament cover bottom parent: Actuator Block
-BOOLEAN ligament cover bottom mesh: Ligament cover.003
-BOOLEAN ligament cover bottom materials: Boolean difference, 
+BOOLEAN ligament cover bottom mesh: Ligament cover.002
+BOOLEAN ligament cover bottom materials: PLA, 
 BOOLEAN ligament cover bottom modifiers: 
-  #1 Name: Boolean.LigamentCoverProngs, Type: BOOLEAN
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Boolean.LigamentCoverProngs, Type: BOOLEAN
         Operation: UNION, Object: Ligament cover prongs
-  #2 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
+  #3 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
-  #3 Name: Boolean.spring bolt holes, Type: BOOLEAN
+  #4 Name: Boolean.spring bolt holes, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN finger spring bolt holes combined
-  #4 Name: Boolean, Type: BOOLEAN
+  #5 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover corners
-  #5 Name: Boolean.001, Type: BOOLEAN
+  #6 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament Cover M2 bolt hole platforms
-  #6 Name: Boolean.002, Type: BOOLEAN
+  #7 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN finger spring channels combined
-  #7 Name: Solidify, Type: SOLIDIFY
+  #8 Name: Solidify, Type: SOLIDIFY
 
 Name: BOOLEAN Ligament cover corners
 BOOLEAN Ligament cover corners Type: MESH
@@ -1662,17 +1664,19 @@ Ligament cover bottom parent: Actuator Block
 Ligament cover bottom mesh: Ligament cover
 Ligament cover bottom materials: PLA, 
 Ligament cover bottom modifiers: 
-  #1 Name: Boolean.LigamentCoverProngs, Type: BOOLEAN
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Boolean.LigamentCoverProngs, Type: BOOLEAN
         Operation: UNION, Object: Ligament cover prongs
-  #2 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
+  #3 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
-  #3 Name: Boolean.spring bolt holes, Type: BOOLEAN
+  #4 Name: Boolean.spring bolt holes, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN finger spring bolt holes combined
-  #4 Name: Boolean, Type: BOOLEAN
+  #5 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover corners
-  #5 Name: Boolean.001, Type: BOOLEAN
+  #6 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament Cover M2 bolt hole platforms
-  #6 Name: Boolean.002, Type: BOOLEAN
+  #7 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN finger spring channels combined
 
 Name: Ligament Cover M2 bolt hole platforms
