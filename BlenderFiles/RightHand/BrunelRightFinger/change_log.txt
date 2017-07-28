@@ -17,6 +17,18 @@ Back Cover modifiers:
   #4 Name: BOOLEAN Elastic Terminator Back Cover, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Elastic Terminator Back Cover
 
+Name: BOOLEAN 1st finger spring channel
+BOOLEAN 1st finger spring channel Type: MESH
+BOOLEAN 1st finger spring channel transform: X4.875888824462891 Y-10.68578815460205 Z10.900125503540039
+BOOLEAN 1st finger spring channel rotation: X0.0 Y-0.0 Z0.0
+BOOLEAN 1st finger spring channel scale: X1.0 Y1.0 Z1.0
+BOOLEAN 1st finger spring channel groups: None
+BOOLEAN 1st finger spring channel mesh: Cube.019
+BOOLEAN 1st finger spring channel materials: Boolean difference.002, 
+BOOLEAN 1st finger spring channel modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: BOOLEAN Bolt Hole
 BOOLEAN Bolt Hole Type: MESH
 BOOLEAN Bolt Hole transform: X0.0 Y84.5644302368164 Z1.9954553842544556
@@ -456,13 +468,14 @@ BOOLEAN Inner proximal pegs mesh: BOOLEAN Inner proximal
 BOOLEAN Inner proximal pegs materials: Boolean difference, 
 BOOLEAN Inner proximal pegs modifiers: 
   #1 Name: Hook, Type: HOOK
-  #2 Name: Mirror, Type: MIRROR
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 4th Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #3 Name: Solidify, Type: SOLIDIFY
+  #4 Name: Solidify, Type: SOLIDIFY
 
 Name: BOOLEAN Inner proximal.002
 BOOLEAN Inner proximal.002 Type: MESH
@@ -532,15 +545,14 @@ BOOLEAN ligament mesh: Ligament.007
 BOOLEAN ligament materials: Boolean difference, 
 BOOLEAN ligament modifiers: 
   #1 Name: Hook, Type: HOOK
-  #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
+  #2 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 1st Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
-  #4 Name: Solidify, Type: SOLIDIFY
-  #5 Name: Subsurf, Type: SUBSURF
+  #3 Name: Solidify, Type: SOLIDIFY
+  #4 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Ligament New
@@ -570,7 +582,7 @@ BOOLEAN Ligament.002 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Ligament.002 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Ligament.002 groups: 2nd Finger, 
 BOOLEAN Ligament.002 parent: HANDLE 2nd Finger
-BOOLEAN Ligament.002 mesh: BOOLEAN Ligament
+BOOLEAN Ligament.002 mesh: Ligament.007
 BOOLEAN Ligament.002 materials: Boolean difference, 
 BOOLEAN Ligament.002 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -590,7 +602,7 @@ BOOLEAN Ligament.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Ligament.003 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Ligament.003 groups: 3rd Finger, 
 BOOLEAN Ligament.003 parent: HANDLE 3rd Finger
-BOOLEAN Ligament.003 mesh: BOOLEAN Ligament
+BOOLEAN Ligament.003 mesh: Ligament.007
 BOOLEAN Ligament.003 materials: Boolean difference, 
 BOOLEAN Ligament.003 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -611,7 +623,7 @@ BOOLEAN Ligament.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Ligament.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Ligament.004 groups: None
 BOOLEAN Ligament.004 parent: HANDLE 4th Finger
-BOOLEAN Ligament.004 mesh: BOOLEAN Ligament
+BOOLEAN Ligament.004 mesh: Ligament.007
 BOOLEAN Ligament.004 materials: Boolean difference, 
 BOOLEAN Ligament.004 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -2488,7 +2500,7 @@ Inner distal.002 rotation: X0.0 Y0.0 Z0.0
 Inner distal.002 scale: X1.0 Y1.0 Z1.0
 Inner distal.002 groups: 2nd Finger, 
 Inner distal.002 parent: HANDLE 2nd Finger
-Inner distal.002 mesh: Inner distal
+Inner distal.002 mesh: Inner distal.001
 Inner distal.002 materials: PLA White, 
 Inner distal.002 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -2517,7 +2529,7 @@ Inner distal.003 rotation: X0.0 Y0.0 Z0.0
 Inner distal.003 scale: X1.0 Y1.0 Z1.0
 Inner distal.003 groups: 3rd Finger, 
 Inner distal.003 parent: HANDLE 3rd Finger
-Inner distal.003 mesh: Inner distal
+Inner distal.003 mesh: Inner distal.001
 Inner distal.003 materials: PLA White, 
 Inner distal.003 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -2546,7 +2558,7 @@ Inner distal.004 rotation: X0.0 Y0.0 Z0.0
 Inner distal.004 scale: X1.0 Y1.0 Z1.0
 Inner distal.004 groups: 4th Finger, 
 Inner distal.004 parent: HANDLE 4th Finger
-Inner distal.004 mesh: Inner distal
+Inner distal.004 mesh: Inner distal.001
 Inner distal.004 materials: PLA White, 
 Inner distal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -2856,17 +2868,17 @@ Inner Proximal.001 modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #3 Name: Boolean.ligament, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN ligament
-  #4 Name: Boolean.001, Type: BOOLEAN
+  #4 Name: BooleanUnion.M2 bolt hole, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN UNION proximal M2 Bolt Hole.001
-  #5 Name: Boolean.002, Type: BOOLEAN
+  #5 Name: BooleanUnion.Tendon channels, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN UNION Tendon channels proximal.001
-  #6 Name: Boolean.003, Type: BOOLEAN
+  #6 Name: Boolean.Tendon channels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels proximal.001
-  #7 Name: Boolean.004, Type: BOOLEAN
+  #7 Name: Boolean.M2 bolt hole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.001
-  #8 Name: Boolean.006, Type: BOOLEAN
+  #8 Name: Boolean.Spring pegs, Type: BOOLEAN
         Operation: UNION, Object: Spring pegs proximal.001
-  #9 Name: Boolean.005, Type: BOOLEAN
+  #9 Name: Boolean.identifier, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.001
 
 Name: Inner proximal.002
@@ -2876,7 +2888,7 @@ Inner proximal.002 rotation: X0.0 Y0.0 Z0.0
 Inner proximal.002 scale: X1.0 Y1.0 Z1.0
 Inner proximal.002 groups: 2nd Finger, 
 Inner proximal.002 parent: HANDLE 2nd Finger
-Inner proximal.002 mesh: Inner proximal
+Inner proximal.002 mesh: Inner proximal.003
 Inner proximal.002 materials: PLA White, 
 Inner proximal.002 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -2904,7 +2916,7 @@ Inner proximal.003 rotation: X0.0 Y0.0 Z0.0
 Inner proximal.003 scale: X1.0 Y1.0 Z1.0
 Inner proximal.003 groups: 3rd Finger, 
 Inner proximal.003 parent: HANDLE 3rd Finger
-Inner proximal.003 mesh: Inner proximal
+Inner proximal.003 mesh: Inner proximal.003
 Inner proximal.003 materials: PLA White, 
 Inner proximal.003 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -2932,7 +2944,7 @@ Inner proximal.004 rotation: X0.0 Y0.0 Z0.0
 Inner proximal.004 scale: X1.0 Y1.0 Z1.0
 Inner proximal.004 groups: 4th Finger, 
 Inner proximal.004 parent: HANDLE 4th Finger
-Inner proximal.004 mesh: Inner proximal
+Inner proximal.004 mesh: Inner proximal.003
 Inner proximal.004 materials: PLA White, 
 Inner proximal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -3853,18 +3865,17 @@ Top cover proximal.000 parent: Proximal Phalanx.001
 Top cover proximal.000 mesh: Top cover proximal.001
 Top cover proximal.000 materials: PLA White, Lego, 
 Top cover proximal.000 modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-  #2 Name: Mirror, Type: MIRROR
+  #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 1st Finger
         Merge: True, Merge Limit: 0.10000000149011612 mm
         Clipping: True
         Vertex group mirroring: True
-  #3 Name: Subsurf, Type: SUBSURF
+  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #4 Name: Boolean, Type: BOOLEAN
+  #3 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal pegs
-  #5 Name: Boolean.001, Type: BOOLEAN
+  #4 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.001
 
 Name: Top cover proximal.001
@@ -3903,7 +3914,7 @@ Top cover proximal.002 rotation: X0.0 Y0.0 Z0.0
 Top cover proximal.002 scale: X1.0 Y1.0 Z1.0
 Top cover proximal.002 groups: 2nd Finger, 
 Top cover proximal.002 parent: HANDLE 2nd Finger
-Top cover proximal.002 mesh: Top cover proximal
+Top cover proximal.002 mesh: Top cover proximal.001
 Top cover proximal.002 materials: PLA White, Lego, 
 Top cover proximal.002 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -3934,7 +3945,7 @@ Top cover proximal.003 rotation: X0.0 Y0.0 Z0.0
 Top cover proximal.003 scale: X1.0 Y1.0 Z1.0
 Top cover proximal.003 groups: 3rd Finger, 
 Top cover proximal.003 parent: HANDLE 3rd Finger
-Top cover proximal.003 mesh: Top cover proximal
+Top cover proximal.003 mesh: Top cover proximal.001
 Top cover proximal.003 materials: PLA White, Lego, 
 Top cover proximal.003 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -3965,7 +3976,7 @@ Top cover proximal.004 rotation: X0.0 Y0.0 Z0.0
 Top cover proximal.004 scale: X1.0 Y1.0 Z1.0
 Top cover proximal.004 groups: 4th Finger, 
 Top cover proximal.004 parent: HANDLE 4th Finger
-Top cover proximal.004 mesh: Top cover proximal
+Top cover proximal.004 mesh: Top cover proximal.001
 Top cover proximal.004 materials: PLA White, Lego, 
 Top cover proximal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
