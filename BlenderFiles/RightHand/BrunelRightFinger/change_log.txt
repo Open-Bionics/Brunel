@@ -1920,7 +1920,7 @@ HANDLE Distal Joint.004 modifiers: None
 
 Name: HANDLE Fingertip.001
 HANDLE Fingertip.001 Type: MESH
-HANDLE Fingertip.001 transform: X0.0 Y43.999996185302734 Z0.0
+HANDLE Fingertip.001 transform: X0.0 Y44.0 Z0.0
 HANDLE Fingertip.001 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.001 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.001 groups: 1st Finger, 
@@ -3850,17 +3850,18 @@ Top cover proximal.000 parent: Proximal Phalanx.001
 Top cover proximal.000 mesh: Top cover proximal.001
 Top cover proximal.000 materials: PLA White, Lego, 
 Top cover proximal.000 modifiers: 
-  #1 Name: Mirror, Type: MIRROR
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 1st Finger
         Merge: True, Merge Limit: 0.10000000149011612 mm
         Clipping: True
         Vertex group mirroring: True
-  #2 Name: Subsurf, Type: SUBSURF
+  #3 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Boolean, Type: BOOLEAN
+  #4 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal pegs
-  #4 Name: Boolean.001, Type: BOOLEAN
+  #5 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.001
 
 Name: Top cover proximal.001
