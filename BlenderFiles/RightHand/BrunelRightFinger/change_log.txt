@@ -646,7 +646,8 @@ BOOLEAN M2 Bolt Holes.001 groups: None
 BOOLEAN M2 Bolt Holes.001 parent: Distal Phalanx.001
 BOOLEAN M2 Bolt Holes.001 mesh: BOOLEAN M2 Bolt Holes.003
 BOOLEAN M2 Bolt Holes.001 materials: Boolean difference.001, 
-BOOLEAN M2 Bolt Holes.001 modifiers: None
+BOOLEAN M2 Bolt Holes.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
 
 Name: BOOLEAN M2 Bolt Holes.002
 BOOLEAN M2 Bolt Holes.002 Type: MESH
@@ -1295,8 +1296,9 @@ BOOLEAN UNION M2 Bolt Holes.001 parent: Distal Phalanx.001
 BOOLEAN UNION M2 Bolt Holes.001 mesh: BOOLEAN M2 Bolt Holes.003
 BOOLEAN UNION M2 Bolt Holes.001 materials: Boolean difference.001, 
 BOOLEAN UNION M2 Bolt Holes.001 modifiers: 
-  #1 Name: Solidify, Type: SOLIDIFY
-  #2 Name: Boolean, Type: BOOLEAN
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Solidify, Type: SOLIDIFY
+  #3 Name: Boolean, Type: BOOLEAN
         Operation: INTERSECT, Object: Inner distal TARGET.001
 
 Name: BOOLEAN UNION proximal M2 Bolt Hole.001
@@ -1872,19 +1874,9 @@ HANDLE distal fingertip 4 scale: X1.0 Y1.0 Z1.0
 HANDLE distal fingertip 4 groups: None
 HANDLE distal fingertip 4 parent: HANDLE distal base 4
 
-Name: HANDLE Distal Joint.000
-HANDLE Distal Joint.000 Type: MESH
-HANDLE Distal Joint.000 transform: X0.0 Y44.999996185302734 Z0.0
-HANDLE Distal Joint.000 rotation: X0.0 Y0.0 Z0.0
-HANDLE Distal Joint.000 scale: X1.0 Y1.0 Z1.0
-HANDLE Distal Joint.000 groups: None
-HANDLE Distal Joint.000 mesh: HANDLE Distal Joint.001
-HANDLE Distal Joint.000 materials: HANDLE.001, 
-HANDLE Distal Joint.000 modifiers: None
-
 Name: HANDLE Distal Joint.001
 HANDLE Distal Joint.001 Type: MESH
-HANDLE Distal Joint.001 transform: X0.0 Y44.999996185302734 Z0.0
+HANDLE Distal Joint.001 transform: X0.0 Y45.0 Z0.0
 HANDLE Distal Joint.001 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.001 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.001 groups: 1st Finger, 
@@ -1925,17 +1917,6 @@ HANDLE Distal Joint.004 parent: HANDLE 4th Finger
 HANDLE Distal Joint.004 mesh: HANDLE Distal Joint
 HANDLE Distal Joint.004 materials: HANDLE, 
 HANDLE Distal Joint.004 modifiers: None
-
-Name: HANDLE Fingertip.000
-HANDLE Fingertip.000 Type: MESH
-HANDLE Fingertip.000 transform: X0.0 Y44.0 Z0.0
-HANDLE Fingertip.000 rotation: X0.0 Y0.0 Z0.0
-HANDLE Fingertip.000 scale: X1.0 Y1.0 Z1.0
-HANDLE Fingertip.000 groups: None
-HANDLE Fingertip.000 parent: HANDLE Distal Joint.000
-HANDLE Fingertip.000 mesh: HANDLE Fingertip.001
-HANDLE Fingertip.000 materials: HANDLE.001, 
-HANDLE Fingertip.000 modifiers: None
 
 Name: HANDLE Fingertip.001
 HANDLE Fingertip.001 Type: MESH
@@ -2786,13 +2767,14 @@ Inner Proximal TARGET parent: Proximal Phalanx.001
 Inner Proximal TARGET mesh: Inner proximal.004
 Inner Proximal TARGET materials: PLA White, 
 Inner Proximal TARGET modifiers: 
-  #1 Name: Mirror, Type: MIRROR
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 1st Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #2 Name: Subsurf, Type: SUBSURF
+  #3 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner Proximal urethane target.001
@@ -2858,27 +2840,28 @@ Inner Proximal.001 parent: Proximal Phalanx.001
 Inner Proximal.001 mesh: Inner proximal.003
 Inner Proximal.001 materials: PLA White, 
 Inner Proximal.001 modifiers: 
-  #1 Name: Mirror, Type: MIRROR
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 1st Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #2 Name: Subsurf, Type: SUBSURF
+  #3 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Boolean.ligament, Type: BOOLEAN
+  #4 Name: Boolean.ligament, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN ligament
-  #4 Name: BooleanUnion.M2 bolt hole, Type: BOOLEAN
+  #5 Name: BooleanUnion.M2 bolt hole, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN UNION proximal M2 Bolt Hole.001
-  #5 Name: BooleanUnion.Tendon channels, Type: BOOLEAN
+  #6 Name: BooleanUnion.Tendon channels, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN UNION Tendon channels proximal.001
-  #6 Name: Boolean.Tendon channels, Type: BOOLEAN
+  #7 Name: Boolean.Tendon channels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels proximal.001
-  #7 Name: Boolean.M2 bolt hole, Type: BOOLEAN
+  #8 Name: Boolean.M2 bolt hole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.001
-  #8 Name: Boolean.Spring pegs, Type: BOOLEAN
+  #9 Name: Boolean.Spring pegs, Type: BOOLEAN
         Operation: UNION, Object: Spring pegs proximal.001
-  #9 Name: Boolean.identifier, Type: BOOLEAN
+  #10 Name: Boolean.identifier, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.001
 
 Name: Inner proximal.002
@@ -3545,7 +3528,8 @@ Spring pegs distal.001 parent: Distal Phalanx.001
 Spring pegs distal.001 mesh: Cylinder.024
 Spring pegs distal.001 materials: None
 Spring pegs distal.001 modifiers: 
-  #1 Name: Boolean, Type: BOOLEAN
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Top cover distal.001
 
 Name: Spring pegs proximal.001
@@ -3558,7 +3542,8 @@ Spring pegs proximal.001 parent: Proximal Phalanx.001
 Spring pegs proximal.001 mesh: Cylinder.016
 Spring pegs proximal.001 materials: None
 Spring pegs proximal.001 modifiers: 
-  #1 Name: Boolean, Type: BOOLEAN
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Top cover proximal.000
 
 Name: Top cover distal.001
