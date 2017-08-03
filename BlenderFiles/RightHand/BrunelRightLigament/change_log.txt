@@ -179,7 +179,7 @@ Ligament.001 modifiers:
 
 Name: Ligament.002
 Ligament.002 Type: MESH
-Ligament.002 transform: X0.0 Y0.0 Z0.0
+Ligament.002 transform: X0.0 Y-0.5 Z0.0
 Ligament.002 rotation: X0.0 Y0.0 Z0.0
 Ligament.002 scale: X1.0 Y1.0 Z1.0
 Ligament.002 groups: None
