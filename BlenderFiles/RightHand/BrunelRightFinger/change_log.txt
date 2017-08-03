@@ -249,7 +249,7 @@ BOOLEAN Inner proximal pegs.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Inner proximal pegs.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Inner proximal pegs.004 groups: 1st Finger, 
 BOOLEAN Inner proximal pegs.004 parent: Proximal Phalanx.000
-BOOLEAN Inner proximal pegs.004 mesh: BOOLEAN Inner proximal
+BOOLEAN Inner proximal pegs.004 mesh: BOOLEAN Inner proximal.001
 BOOLEAN Inner proximal pegs.004 materials: Boolean difference, 
 BOOLEAN Inner proximal pegs.004 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -261,6 +261,27 @@ BOOLEAN Inner proximal pegs.004 modifiers:
         Clipping: True
         Vertex group mirroring: True
   #4 Name: Solidify, Type: SOLIDIFY
+
+Name: BOOLEAN ligament for proximal target
+BOOLEAN ligament for proximal target Type: MESH
+BOOLEAN ligament for proximal target transform: X0.0 Y0.0 Z0.0
+BOOLEAN ligament for proximal target rotation: X0.0 Y0.0 Z0.0
+BOOLEAN ligament for proximal target scale: X1.0 Y1.0 Z1.0
+BOOLEAN ligament for proximal target groups: 1st Finger, 
+BOOLEAN ligament for proximal target parent: Proximal Phalanx.000
+BOOLEAN ligament for proximal target mesh: Ligament.007
+BOOLEAN ligament for proximal target materials: Boolean difference, 
+BOOLEAN ligament for proximal target modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #3 Name: Solidify, Type: SOLIDIFY
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Ligament.001
 BOOLEAN Ligament.001 Type: MESH
@@ -573,7 +594,7 @@ BOOLEAN proximal M2 Bolt Hole.003 modifiers:
 
 Name: BOOLEAN proximal M2 Bolt Hole.004
 BOOLEAN proximal M2 Bolt Hole.004 Type: MESH
-BOOLEAN proximal M2 Bolt Hole.004 transform: X0.0 Y0.0 Z0.0
+BOOLEAN proximal M2 Bolt Hole.004 transform: X0.0 Y-4.980901718139648 Z0.0
 BOOLEAN proximal M2 Bolt Hole.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN proximal M2 Bolt Hole.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN proximal M2 Bolt Hole.004 groups: 1st Finger, 
@@ -1008,7 +1029,7 @@ BOOLEAN UNION proximal M2 Bolt Hole.003 modifiers:
 
 Name: BOOLEAN UNION proximal M2 Bolt Hole.004
 BOOLEAN UNION proximal M2 Bolt Hole.004 Type: MESH
-BOOLEAN UNION proximal M2 Bolt Hole.004 transform: X0.0 Y0.0 Z0.0
+BOOLEAN UNION proximal M2 Bolt Hole.004 transform: X0.0 Y-4.980901718139648 Z0.0
 BOOLEAN UNION proximal M2 Bolt Hole.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN UNION proximal M2 Bolt Hole.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN UNION proximal M2 Bolt Hole.004 groups: 1st Finger, 
@@ -2598,7 +2619,7 @@ Inner Proximal TARGET.004 rotation: X0.0 Y0.0 Z0.0
 Inner Proximal TARGET.004 scale: X1.0 Y1.0 Z1.0
 Inner Proximal TARGET.004 groups: 1st Finger, 
 Inner Proximal TARGET.004 parent: Proximal Phalanx.000
-Inner Proximal TARGET.004 mesh: Inner proximal.004
+Inner Proximal TARGET.004 mesh: Inner proximal.005
 Inner Proximal TARGET.004 materials: PLA White, 
 Inner Proximal TARGET.004 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -2610,6 +2631,8 @@ Inner Proximal TARGET.004 modifiers:
         Vertex group mirroring: True
   #3 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
+  #4 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN ligament for proximal target
 
 Name: Inner Proximal urethane target.001
 Inner Proximal urethane target.001 Type: MESH
@@ -2820,7 +2843,7 @@ Inner Proximal.004 rotation: X0.0 Y0.0 Z0.0
 Inner Proximal.004 scale: X1.0 Y1.0 Z1.0
 Inner Proximal.004 groups: 1st Finger, 
 Inner Proximal.004 parent: Proximal Phalanx.000
-Inner Proximal.004 mesh: Inner proximal.003
+Inner Proximal.004 mesh: Inner proximal.002
 Inner Proximal.004 materials: PLA White, 
 Inner Proximal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -2966,7 +2989,7 @@ Ligament.004 transform: X0.0 Y0.0 Z0.0
 Ligament.004 rotation: X0.0 Y0.0 Z0.0
 Ligament.004 scale: X1.0 Y1.0 Z1.0
 Ligament.004 groups: 4th Finger, 
-Ligament.004 mesh: Ligament
+Ligament.004 mesh: Ligament.001
 Ligament.004 materials: NF Black, 
 Ligament.004 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -3207,7 +3230,7 @@ Spring pegs proximal.004 rotation: X0.0 Y0.0 Z0.0
 Spring pegs proximal.004 scale: X1.0 Y1.0 Z1.0
 Spring pegs proximal.004 groups: None
 Spring pegs proximal.004 parent: Proximal Phalanx.000
-Spring pegs proximal.004 mesh: Cylinder.016
+Spring pegs proximal.004 mesh: Cylinder.001
 Spring pegs proximal.004 materials: None
 Spring pegs proximal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
