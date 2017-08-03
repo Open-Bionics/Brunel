@@ -283,14 +283,36 @@ BOOLEAN ligament for proximal target modifiers:
   #4 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
+Name: BOOLEAN ligament for target.003
+BOOLEAN ligament for target.003 Type: MESH
+BOOLEAN ligament for target.003 transform: X0.0 Y0.0 Z0.0
+BOOLEAN ligament for target.003 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN ligament for target.003 scale: X1.0 Y1.0 Z1.0
+BOOLEAN ligament for target.003 groups: 1st Finger, 
+BOOLEAN ligament for target.003 parent: Proximal Phalanx.003
+BOOLEAN ligament for target.003 mesh: Ligament
+BOOLEAN ligament for target.003 materials: NF Black, 
+BOOLEAN ligament for target.003 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #3 Name: Displace, Type: DISPLACE
+  #4 Name: Solidify, Type: SOLIDIFY
+  #5 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: BOOLEAN Ligament.001
 BOOLEAN Ligament.001 Type: MESH
 BOOLEAN Ligament.001 transform: X0.0 Y0.0 Z0.0
 BOOLEAN Ligament.001 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Ligament.001 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Ligament.001 groups: 1st Finger, 
-BOOLEAN Ligament.001 mesh: Ligament.007
-BOOLEAN Ligament.001 materials: Boolean difference, 
+BOOLEAN Ligament.001 mesh: Ligament
+BOOLEAN Ligament.001 materials: NF Black, 
 BOOLEAN Ligament.001 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Mirror, Type: MIRROR
@@ -299,8 +321,9 @@ BOOLEAN Ligament.001 modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
-  #3 Name: Solidify, Type: SOLIDIFY
-  #4 Name: Subsurf, Type: SUBSURF
+  #3 Name: Displace, Type: DISPLACE
+  #4 Name: Solidify, Type: SOLIDIFY
+  #5 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Ligament.002
@@ -310,8 +333,8 @@ BOOLEAN Ligament.002 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Ligament.002 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Ligament.002 groups: 1st Finger, 
 BOOLEAN Ligament.002 parent: HANDLE 1st Finger
-BOOLEAN Ligament.002 mesh: Ligament.007
-BOOLEAN Ligament.002 materials: Boolean difference, 
+BOOLEAN Ligament.002 mesh: Ligament
+BOOLEAN Ligament.002 materials: NF Black, 
 BOOLEAN Ligament.002 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Mirror, Type: MIRROR
@@ -320,8 +343,9 @@ BOOLEAN Ligament.002 modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
-  #3 Name: Solidify, Type: SOLIDIFY
-  #4 Name: Subsurf, Type: SUBSURF
+  #3 Name: Displace, Type: DISPLACE
+  #4 Name: Solidify, Type: SOLIDIFY
+  #5 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN ligament.003
@@ -331,8 +355,8 @@ BOOLEAN ligament.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN ligament.003 scale: X1.0 Y1.0 Z1.0
 BOOLEAN ligament.003 groups: 1st Finger, 
 BOOLEAN ligament.003 parent: HANDLE 1st Finger
-BOOLEAN ligament.003 mesh: Ligament.007
-BOOLEAN ligament.003 materials: Boolean difference, 
+BOOLEAN ligament.003 mesh: Ligament
+BOOLEAN ligament.003 materials: NF Black, 
 BOOLEAN ligament.003 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Mirror, Type: MIRROR
@@ -341,8 +365,9 @@ BOOLEAN ligament.003 modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
-  #3 Name: Solidify, Type: SOLIDIFY
-  #4 Name: Subsurf, Type: SUBSURF
+  #3 Name: Displace, Type: DISPLACE
+  #4 Name: Solidify, Type: SOLIDIFY
+  #5 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN ligament.004
@@ -352,7 +377,7 @@ BOOLEAN ligament.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN ligament.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN ligament.004 groups: 1st Finger, 
 BOOLEAN ligament.004 parent: HANDLE 1st Finger
-BOOLEAN ligament.004 mesh: Ligament.007
+BOOLEAN ligament.004 mesh: Ligament.002
 BOOLEAN ligament.004 materials: Boolean difference, 
 BOOLEAN ligament.004 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -404,12 +429,12 @@ BOOLEAN M2 Bolt Holes.003 modifiers:
 
 Name: BOOLEAN M2 Bolt Holes.004
 BOOLEAN M2 Bolt Holes.004 Type: MESH
-BOOLEAN M2 Bolt Holes.004 transform: X0.0 Y0.0 Z0.0
+BOOLEAN M2 Bolt Holes.004 transform: X0.0 Y-2.223247528076172 Z0.0
 BOOLEAN M2 Bolt Holes.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN M2 Bolt Holes.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN M2 Bolt Holes.004 groups: None
 BOOLEAN M2 Bolt Holes.004 parent: Distal Phalanx.004
-BOOLEAN M2 Bolt Holes.004 mesh: BOOLEAN M2 Bolt Holes.003
+BOOLEAN M2 Bolt Holes.004 mesh: BOOLEAN M2 Bolt Holes.000
 BOOLEAN M2 Bolt Holes.004 materials: Boolean difference.001, 
 BOOLEAN M2 Bolt Holes.004 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -974,7 +999,7 @@ BOOLEAN UNION M2 Bolt Holes.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN UNION M2 Bolt Holes.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN UNION M2 Bolt Holes.004 groups: None
 BOOLEAN UNION M2 Bolt Holes.004 parent: Distal Phalanx.004
-BOOLEAN UNION M2 Bolt Holes.004 mesh: BOOLEAN M2 Bolt Holes.003
+BOOLEAN UNION M2 Bolt Holes.004 mesh: BOOLEAN M2 Bolt Holes.000
 BOOLEAN UNION M2 Bolt Holes.004 materials: Boolean difference.001, 
 BOOLEAN UNION M2 Bolt Holes.004 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -1588,7 +1613,7 @@ HANDLE Fingertip.003 modifiers: None
 
 Name: HANDLE Fingertip.004
 HANDLE Fingertip.004 Type: MESH
-HANDLE Fingertip.004 transform: X0.0 Y45.0 Z0.0
+HANDLE Fingertip.004 transform: X0.0 Y37.999996185302734 Z0.0
 HANDLE Fingertip.004 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.004 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.004 groups: 4th Finger, 
@@ -2232,7 +2257,7 @@ Inner distal.004 rotation: X0.0 Y0.0 Z0.0
 Inner distal.004 scale: X1.0 Y1.0 Z1.0
 Inner distal.004 groups: 1st Finger, 
 Inner distal.004 parent: Distal Phalanx.004
-Inner distal.004 mesh: Inner distal.001
+Inner distal.004 mesh: Inner distal.003
 Inner distal.004 materials: PLA White, 
 Inner distal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -2255,9 +2280,7 @@ Inner distal.004 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels distal.004
   #9 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.004
-  #10 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #11 Name: Boolean.001, Type: BOOLEAN
+  #10 Name: Boolean.001, Type: BOOLEAN
         Operation: UNION, Object: Spring pegs distal.004
 
 Name: Inner proximal 1 BLANK
@@ -2611,6 +2634,8 @@ Inner Proximal TARGET.003 modifiers:
         Vertex group mirroring: True
   #3 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
+  #4 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN ligament for target.003
 
 Name: Inner Proximal TARGET.004
 Inner Proximal TARGET.004 Type: MESH
@@ -3337,7 +3362,7 @@ Top cover distal.004 rotation: X0.0 Y0.0 Z0.0
 Top cover distal.004 scale: X1.0 Y1.0 Z1.0
 Top cover distal.004 groups: 1st Finger, 
 Top cover distal.004 parent: Distal Phalanx.004
-Top cover distal.004 mesh: Top cover distal
+Top cover distal.004 mesh: Top cover distal.001
 Top cover distal.004 materials: PLA White, 
 Top cover distal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -3352,13 +3377,7 @@ Top cover distal.004 modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #5 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.004
-  #6 Name: Boolean.ElasticTerminator, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #7 Name: Boolean.LabelPCBLines, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #8 Name: Boolean.ID, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #9 Name: Boolean, Type: BOOLEAN
+  #6 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner distal pegs.004
 
 Name: Top cover proximal.001
