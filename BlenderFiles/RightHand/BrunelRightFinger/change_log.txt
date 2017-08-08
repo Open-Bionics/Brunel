@@ -2176,7 +2176,7 @@ Inner distal.001 modifiers:
   #9 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.001
   #10 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
+        Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.001
   #11 Name: Boolean.001, Type: BOOLEAN
         Operation: UNION, Object: Spring pegs distal.001
 
@@ -2211,7 +2211,7 @@ Inner distal.002 modifiers:
   #9 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.002
   #10 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
+        Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.002
   #11 Name: Boolean.001, Type: BOOLEAN
         Operation: UNION, Object: Spring pegs distal.002
 
@@ -2246,7 +2246,7 @@ Inner distal.003 modifiers:
   #9 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.003
   #10 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
+        Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.003
   #11 Name: Boolean.001, Type: BOOLEAN
         Operation: UNION, Object: Spring pegs distal.003
 
@@ -2282,6 +2282,8 @@ Inner distal.004 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.004
   #10 Name: Boolean.001, Type: BOOLEAN
         Operation: UNION, Object: Spring pegs distal.004
+  #11 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.004
 
 Name: Inner proximal 1 BLANK
 Inner proximal 1 BLANK Type: MESH
@@ -2895,6 +2897,54 @@ Inner Proximal.004 modifiers:
   #10 Name: Boolean.identifier, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.004
 
+Name: LABEL Identifier Inner distal.001
+LABEL Identifier Inner distal.001 Type: MESH
+LABEL Identifier Inner distal.001 transform: X0.0 Y49.636802673339844 Z0.0
+LABEL Identifier Inner distal.001 rotation: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner distal.001 scale: X1.0 Y1.0 Z1.0
+LABEL Identifier Inner distal.001 groups: None
+LABEL Identifier Inner distal.001 parent: Distal Phalanx.001
+LABEL Identifier Inner distal.001 mesh: LABEL Identifier Inner.001
+LABEL Identifier Inner distal.001 materials: Boolean difference, 
+LABEL Identifier Inner distal.001 modifiers: 
+  #1 Name: Array, Type: ARRAY
+
+Name: LABEL Identifier Inner distal.002
+LABEL Identifier Inner distal.002 Type: MESH
+LABEL Identifier Inner distal.002 transform: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner distal.002 rotation: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner distal.002 scale: X1.0 Y1.0 Z1.0
+LABEL Identifier Inner distal.002 groups: None
+LABEL Identifier Inner distal.002 parent: Distal Phalanx.002
+LABEL Identifier Inner distal.002 mesh: LABEL Identifier Inner.002
+LABEL Identifier Inner distal.002 materials: Boolean difference, 
+LABEL Identifier Inner distal.002 modifiers: 
+  #1 Name: Array, Type: ARRAY
+
+Name: LABEL Identifier Inner distal.003
+LABEL Identifier Inner distal.003 Type: MESH
+LABEL Identifier Inner distal.003 transform: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner distal.003 rotation: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner distal.003 scale: X1.0 Y1.0 Z1.0
+LABEL Identifier Inner distal.003 groups: None
+LABEL Identifier Inner distal.003 parent: Distal Phalanx.003
+LABEL Identifier Inner distal.003 mesh: LABEL Identifier Inner.003
+LABEL Identifier Inner distal.003 materials: Boolean difference, 
+LABEL Identifier Inner distal.003 modifiers: 
+  #1 Name: Array, Type: ARRAY
+
+Name: LABEL Identifier Inner distal.004
+LABEL Identifier Inner distal.004 Type: MESH
+LABEL Identifier Inner distal.004 transform: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner distal.004 rotation: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner distal.004 scale: X1.0 Y1.0 Z1.0
+LABEL Identifier Inner distal.004 groups: None
+LABEL Identifier Inner distal.004 parent: Distal Phalanx.004
+LABEL Identifier Inner distal.004 mesh: LABEL Identifier Inner.004
+LABEL Identifier Inner distal.004 materials: Boolean difference, 
+LABEL Identifier Inner distal.004 modifiers: 
+  #1 Name: Array, Type: ARRAY
+
 Name: LABEL Identifier Inner proximal.001
 LABEL Identifier Inner proximal.001 Type: MESH
 LABEL Identifier Inner proximal.001 transform: X0.0 Y0.0 Z0.0
@@ -2907,6 +2957,11 @@ LABEL Identifier Inner proximal.001 materials: Boolean difference,
 LABEL Identifier Inner proximal.001 modifiers: 
   #1 Name: Array, Type: ARRAY
   #2 Name: Hook, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
 
 Name: LABEL Identifier Inner proximal.002
 LABEL Identifier Inner proximal.002 Type: MESH
@@ -2920,6 +2975,11 @@ LABEL Identifier Inner proximal.002 materials: Boolean difference,
 LABEL Identifier Inner proximal.002 modifiers: 
   #1 Name: Array, Type: ARRAY
   #2 Name: Hook, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
 
 Name: LABEL Identifier Inner proximal.003
 LABEL Identifier Inner proximal.003 Type: MESH
@@ -2933,10 +2993,15 @@ LABEL Identifier Inner proximal.003 materials: Boolean difference,
 LABEL Identifier Inner proximal.003 modifiers: 
   #1 Name: Array, Type: ARRAY
   #2 Name: Hook, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
 
 Name: LABEL Identifier Inner proximal.004
 LABEL Identifier Inner proximal.004 Type: MESH
-LABEL Identifier Inner proximal.004 transform: X0.0 Y0.0 Z0.0
+LABEL Identifier Inner proximal.004 transform: X0.44985231757164 Y-0.6697229743003845 Z0.0
 LABEL Identifier Inner proximal.004 rotation: X0.0 Y0.0 Z0.0
 LABEL Identifier Inner proximal.004 scale: X1.0 Y1.0 Z1.0
 LABEL Identifier Inner proximal.004 groups: None
@@ -2945,7 +3010,12 @@ LABEL Identifier Inner proximal.004 mesh: LABEL Identifier Inner
 LABEL Identifier Inner proximal.004 materials: Boolean difference, 
 LABEL Identifier Inner proximal.004 modifiers: 
   #1 Name: Array, Type: ARRAY
-  #2 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 4th Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
 
 Name: Ligament.001
 Ligament.001 Type: MESH
