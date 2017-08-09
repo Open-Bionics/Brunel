@@ -414,10 +414,11 @@ BOOLEAN DC Jack.001 modifiers:
 
 Name: BOOLEAN Elastic path
 BOOLEAN Elastic path Type: MESH
-BOOLEAN Elastic path transform: X7.499992370605469 Y0.7770576477050781 Z3.000001907348633
-BOOLEAN Elastic path rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Elastic path transform: X-6.954001426696777 Y-58.583309173583984 Z-14.202632904052734
+BOOLEAN Elastic path rotation: X0.0 Y-0.0 Z1.3962634801864624
 BOOLEAN Elastic path scale: X1.0 Y1.0 Z1.0
 BOOLEAN Elastic path groups: None
+BOOLEAN Elastic path parent: Thumb
 BOOLEAN Elastic path mesh: BOOLEAN Elastic path
 BOOLEAN Elastic path materials: Boolean difference.003, 
 BOOLEAN Elastic path modifiers: None
@@ -646,10 +647,11 @@ BOOLEAN ligament cover top plate modifiers:
 
 Name: BOOLEAN M2 Bolt Hole
 BOOLEAN M2 Bolt Hole Type: MESH
-BOOLEAN M2 Bolt Hole transform: X1.486130599914759e-06 Y7.776426315307617 Z-4.057490348815918
-BOOLEAN M2 Bolt Hole rotation: X-0.2617993652820587 Y-4.2022293200716376e-08 Z1.1259840171362612e-08
-BOOLEAN M2 Bolt Hole scale: X1.0 Y0.9999998211860657 Z1.0
+BOOLEAN M2 Bolt Hole transform: X-15.149394035339355 Y-64.7539291381836 Z-21.26012420654297
+BOOLEAN M2 Bolt Hole rotation: X-0.2617993950843811 Y-4.336020964501586e-08 Z1.3962634801864624
+BOOLEAN M2 Bolt Hole scale: X1.0 Y0.9999998211860657 Z0.9999999403953552
 BOOLEAN M2 Bolt Hole groups: None
+BOOLEAN M2 Bolt Hole parent: Thumb
 BOOLEAN M2 Bolt Hole mesh: BOOLEAN M2 Bolt Hole
 BOOLEAN M2 Bolt Hole materials: Boolean difference.003, 
 BOOLEAN M2 Bolt Hole modifiers: None
@@ -1225,10 +1227,11 @@ BOOLEAN Thumb ligament cover M2 Bolt Hole modifiers: None
 
 Name: BOOLEAN Thumb ligament cover M2 bolt hole for thumb
 BOOLEAN Thumb ligament cover M2 bolt hole for thumb Type: MESH
-BOOLEAN Thumb ligament cover M2 bolt hole for thumb transform: X-10.5 Y-1.0490620136260986 Z-3.2654056549072266
-BOOLEAN Thumb ligament cover M2 bolt hole for thumb rotation: X4.71238899230957 Y0.0 Z0.0
+BOOLEAN Thumb ligament cover M2 bolt hole for thumb transform: X-8.281291007995605 Y-76.62694549560547 Z-20.468040466308594
+BOOLEAN Thumb ligament cover M2 bolt hole for thumb rotation: X4.71238899230957 Y3.228635847563055e-08 Z1.3962634801864624
 BOOLEAN Thumb ligament cover M2 bolt hole for thumb scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 BOOLEAN Thumb ligament cover M2 bolt hole for thumb groups: None
+BOOLEAN Thumb ligament cover M2 bolt hole for thumb parent: Thumb
 BOOLEAN Thumb ligament cover M2 bolt hole for thumb mesh: BOOLEAN Thumb ligament cover M2 bolt hole for thumb
 BOOLEAN Thumb ligament cover M2 bolt hole for thumb materials: Boolean difference.003, 
 BOOLEAN Thumb ligament cover M2 bolt hole for thumb modifiers: None
@@ -1245,10 +1248,11 @@ BOOLEAN Thumb ligament elastic clamp modifiers: None
 
 Name: BOOLEAN Thumb ligament for thumb
 BOOLEAN Thumb ligament for thumb Type: MESH
-BOOLEAN Thumb ligament for thumb transform: X-7.62939453125e-06 Y-7.152557373046875e-07 Z0.0
-BOOLEAN Thumb ligament for thumb rotation: X3.7112233286507035e-08 Y-3.88492225056325e-08 Z-1.5707961320877075
-BOOLEAN Thumb ligament for thumb scale: X0.9999998807907104 Y0.9999998211860657 Z1.0
+BOOLEAN Thumb ligament for thumb transform: X-7.491109848022461 Y-66.10430145263672 Z-17.202634811401367
+BOOLEAN Thumb ligament for thumb rotation: X3.7112229733793356e-08 Y-3.88492225056325e-08 Z-0.17453277111053467
+BOOLEAN Thumb ligament for thumb scale: X0.9999999403953552 Y0.9999998807907104 Z1.0
 BOOLEAN Thumb ligament for thumb groups: None
+BOOLEAN Thumb ligament for thumb parent: Thumb
 BOOLEAN Thumb ligament for thumb mesh: BOOLEAN Thumb ligament for thumb
 BOOLEAN Thumb ligament for thumb materials: Boolean difference.003, 
 BOOLEAN Thumb ligament for thumb modifiers: None
@@ -1359,10 +1363,11 @@ BOOLEAN Thumb tendon channel modifiers: None
 
 Name: BOOLEAN Thumb tendon channel for thumb
 BOOLEAN Thumb tendon channel for thumb Type: MESH
-BOOLEAN Thumb tendon channel for thumb transform: X-7.152557373046875e-06 Y-4.76837158203125e-07 Z2.000000476837158
-BOOLEAN Thumb tendon channel for thumb rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Thumb tendon channel for thumb transform: X-7.491110324859619 Y-66.10430145263672 Z-15.202634811401367
+BOOLEAN Thumb tendon channel for thumb rotation: X0.0 Y-0.0 Z1.3962634801864624
 BOOLEAN Thumb tendon channel for thumb scale: X1.0 Y0.9999999403953552 Z0.9999998807907104
 BOOLEAN Thumb tendon channel for thumb groups: None
+BOOLEAN Thumb tendon channel for thumb parent: Thumb
 BOOLEAN Thumb tendon channel for thumb mesh: BOOLEAN Thumb tendon channel for thumb.001
 BOOLEAN Thumb tendon channel for thumb materials: Boolean difference.003, 
 BOOLEAN Thumb tendon channel for thumb modifiers: 
@@ -1371,20 +1376,22 @@ BOOLEAN Thumb tendon channel for thumb modifiers:
 
 Name: BOOLEAN Thumb tendon termination M2 bolt hole
 BOOLEAN Thumb tendon termination M2 bolt hole Type: MESH
-BOOLEAN Thumb tendon termination M2 bolt hole transform: X4.173704147338867 Y40.29088592529297 Z-6.821101692366938e-07
-BOOLEAN Thumb tendon termination M2 bolt hole rotation: X-0.4363322854042053 Y-1.570796251296997 Z0.0
-BOOLEAN Thumb tendon termination M2 bolt hole scale: X1.0 Y0.9999994039535522 Z0.9999999403953552
+BOOLEAN Thumb tendon termination M2 bolt hole transform: X-46.44512939453125 Y-54.99755859375 Z-17.202634811401367
+BOOLEAN Thumb tendon termination M2 bolt hole rotation: X0.9599311947822571 Y-1.5707961320877075 Z0.0
+BOOLEAN Thumb tendon termination M2 bolt hole scale: X1.0 Y0.9999995231628418 Z1.0
 BOOLEAN Thumb tendon termination M2 bolt hole groups: None
+BOOLEAN Thumb tendon termination M2 bolt hole parent: Thumb
 BOOLEAN Thumb tendon termination M2 bolt hole mesh: BOOLEAN Thumb tendon termination M2 bolt hole
 BOOLEAN Thumb tendon termination M2 bolt hole materials: Boolean difference.003, 
 BOOLEAN Thumb tendon termination M2 bolt hole modifiers: None
 
 Name: BOOLEAN Thumb top cover
 BOOLEAN Thumb top cover Type: MESH
-BOOLEAN Thumb top cover transform: X-4.980005264282227 Y44.55933380126953 Z-2.0527298261185933e-07
-BOOLEAN Thumb top cover rotation: X-2.0071287155151367 Y-1.570796251296997 Z0.0
-BOOLEAN Thumb top cover scale: X1.0 Y1.0 Z0.9999997615814209
+BOOLEAN Thumb top cover transform: X-52.23825454711914 Y-63.270992279052734 Z-17.202634811401367
+BOOLEAN Thumb top cover rotation: X-0.6108654141426086 Y-1.570796251296997 Z0.0
+BOOLEAN Thumb top cover scale: X1.0 Y1.0 Z0.9999998211860657
 BOOLEAN Thumb top cover groups: None
+BOOLEAN Thumb top cover parent: Thumb
 BOOLEAN Thumb top cover mesh: Thumb top cover
 BOOLEAN Thumb top cover materials: PLA White, 
 BOOLEAN Thumb top cover modifiers: 
@@ -2275,8 +2282,8 @@ Tendon pivot dowel modifiers: None
 
 Name: Thumb
 Thumb Type: MESH
-Thumb transform: X-7.62939453125e-06 Y-7.152557373046875e-07 Z0.0
-Thumb rotation: X0.0 Y0.0 Z0.0
+Thumb transform: X-7.4911088943481445 Y-66.10430145263672 Z-14.232924461364746
+Thumb rotation: X0.0 Y0.0 Z1.3962633609771729
 Thumb scale: X0.9999999403953552 Y0.9999998211860657 Z0.9999999403953552
 Thumb groups: None
 Thumb mesh: Thumb
