@@ -624,7 +624,7 @@ BOOLEAN proximal M2 Bolt Hole.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN proximal M2 Bolt Hole.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN proximal M2 Bolt Hole.004 groups: 1st Finger, 
 BOOLEAN proximal M2 Bolt Hole.004 parent: Proximal Phalanx.000
-BOOLEAN proximal M2 Bolt Hole.004 mesh: BOOLEAN M2 Bolt Holes.001
+BOOLEAN proximal M2 Bolt Hole.004 mesh: BOOLEAN M2 Bolt Holes.004
 BOOLEAN proximal M2 Bolt Hole.004 materials: Boolean difference, 
 BOOLEAN proximal M2 Bolt Hole.004 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -1377,6 +1377,18 @@ Distal Phalanx.004 transform: X0.0 Y0.0 Z0.0
 Distal Phalanx.004 rotation: X0.0 Y0.0 Z0.0
 Distal Phalanx.004 scale: X1.0 Y1.0 Z1.0
 Distal Phalanx.004 groups: None
+
+Name: Hand Ligament
+Hand Ligament Type: MESH
+Hand Ligament transform: X8.999999046325684 Y2.2737367544323206e-13 Z0.7500009536743164
+Hand Ligament rotation: X0.0 Y0.0 Z-0.0872664600610733
+Hand Ligament scale: X1.0 Y1.0 Z1.0
+Hand Ligament groups: None
+Hand Ligament mesh: Hand Ligament
+Hand Ligament materials: NF Black.001, NF Black.002, NF Black.003, 
+Hand Ligament modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: HANDLE 1st Finger
 HANDLE 1st Finger Type: EMPTY
@@ -3036,6 +3048,8 @@ Ligament.001 modifiers:
         Vertex group mirroring: True
   #4 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+  #5 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: Hand Ligament
 
 Name: Ligament.002
 Ligament.002 Type: MESH
