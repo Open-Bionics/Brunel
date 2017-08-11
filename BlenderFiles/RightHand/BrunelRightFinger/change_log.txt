@@ -377,8 +377,8 @@ BOOLEAN ligament.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN ligament.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN ligament.004 groups: 1st Finger, 
 BOOLEAN ligament.004 parent: HANDLE 1st Finger
-BOOLEAN ligament.004 mesh: Ligament.002
-BOOLEAN ligament.004 materials: Boolean difference, 
+BOOLEAN ligament.004 mesh: Ligament.001
+BOOLEAN ligament.004 materials: NF Black, 
 BOOLEAN ligament.004 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Mirror, Type: MIRROR
@@ -390,6 +390,7 @@ BOOLEAN ligament.004 modifiers:
   #3 Name: Solidify, Type: SOLIDIFY
   #4 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+  #5 Name: Displace, Type: DISPLACE
 
 Name: BOOLEAN M2 Bolt Holes.001
 BOOLEAN M2 Bolt Holes.001 Type: MESH
@@ -3103,14 +3104,13 @@ Ligament.004 materials: NF Black,
 Ligament.004 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
-  #3 Name: Hook.002, Type: HOOK
-  #4 Name: Mirror, Type: MIRROR
+  #3 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 4th Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
-  #5 Name: Subsurf, Type: SUBSURF
+  #4 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: MOULD Bottom
