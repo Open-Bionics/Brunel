@@ -355,7 +355,7 @@ BOOLEAN ligament.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN ligament.003 scale: X1.0 Y1.0 Z1.0
 BOOLEAN ligament.003 groups: 1st Finger, 
 BOOLEAN ligament.003 parent: HANDLE 1st Finger
-BOOLEAN ligament.003 mesh: Ligament
+BOOLEAN ligament.003 mesh: Ligament.003
 BOOLEAN ligament.003 materials: NF Black, 
 BOOLEAN ligament.003 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -613,7 +613,7 @@ BOOLEAN proximal M2 Bolt Hole.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN proximal M2 Bolt Hole.003 scale: X1.0 Y1.0 Z1.0
 BOOLEAN proximal M2 Bolt Hole.003 groups: 1st Finger, 
 BOOLEAN proximal M2 Bolt Hole.003 parent: Proximal Phalanx.003
-BOOLEAN proximal M2 Bolt Hole.003 mesh: BOOLEAN M2 Bolt Holes.001
+BOOLEAN proximal M2 Bolt Hole.003 mesh: BOOLEAN M2 Bolt Holes.002
 BOOLEAN proximal M2 Bolt Hole.003 materials: Boolean difference, 
 BOOLEAN proximal M2 Bolt Hole.003 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -780,16 +780,10 @@ BOOLEAN Tendon channels proximal.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels proximal.003 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Tendon channels proximal.003 groups: 1st Finger, 
 BOOLEAN Tendon channels proximal.003 parent: Proximal Phalanx.003
-BOOLEAN Tendon channels proximal.003 mesh: BOOLEAN Tendon channels proximal
+BOOLEAN Tendon channels proximal.003 mesh: BOOLEAN Tendon channels proximal.003
 BOOLEAN Tendon channels proximal.003 materials: Boolean difference, 
 BOOLEAN Tendon channels proximal.003 modifiers: 
   #1 Name: Hook, Type: HOOK
-  #2 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Mirror object: HANDLE 1st Finger
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
 
 Name: BOOLEAN Tendon channels proximal.004
 BOOLEAN Tendon channels proximal.004 Type: MESH
@@ -798,16 +792,10 @@ BOOLEAN Tendon channels proximal.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels proximal.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Tendon channels proximal.004 groups: 1st Finger, 
 BOOLEAN Tendon channels proximal.004 parent: Proximal Phalanx.000
-BOOLEAN Tendon channels proximal.004 mesh: BOOLEAN Tendon channels proximal
+BOOLEAN Tendon channels proximal.004 mesh: BOOLEAN Tendon channels proximal.004
 BOOLEAN Tendon channels proximal.004 materials: Boolean difference, 
 BOOLEAN Tendon channels proximal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
-  #2 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Mirror object: HANDLE 1st Finger
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
 
 Name: BOOLEAN top riser channels
 BOOLEAN top riser channels Type: EMPTY
@@ -1060,7 +1048,7 @@ BOOLEAN UNION proximal M2 Bolt Hole.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN UNION proximal M2 Bolt Hole.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN UNION proximal M2 Bolt Hole.004 groups: 1st Finger, 
 BOOLEAN UNION proximal M2 Bolt Hole.004 parent: Proximal Phalanx.000
-BOOLEAN UNION proximal M2 Bolt Hole.004 mesh: BOOLEAN M2 Bolt Holes.002
+BOOLEAN UNION proximal M2 Bolt Hole.004 mesh: BOOLEAN M2 Bolt Holes.004
 BOOLEAN UNION proximal M2 Bolt Hole.004 materials: Boolean difference, 
 BOOLEAN UNION proximal M2 Bolt Hole.004 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -1201,18 +1189,12 @@ BOOLEAN UNION Tendon channels proximal.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN UNION Tendon channels proximal.003 scale: X1.0 Y1.0 Z1.0
 BOOLEAN UNION Tendon channels proximal.003 groups: 1st Finger, 
 BOOLEAN UNION Tendon channels proximal.003 parent: Proximal Phalanx.003
-BOOLEAN UNION Tendon channels proximal.003 mesh: BOOLEAN Tendon channels proximal
+BOOLEAN UNION Tendon channels proximal.003 mesh: BOOLEAN Tendon channels proximal.003
 BOOLEAN UNION Tendon channels proximal.003 materials: Boolean difference, 
 BOOLEAN UNION Tendon channels proximal.003 modifiers: 
   #1 Name: Hook, Type: HOOK
-  #2 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Mirror object: HANDLE 1st Finger
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #3 Name: Solidify, Type: SOLIDIFY
-  #4 Name: Boolean, Type: BOOLEAN
+  #2 Name: Solidify, Type: SOLIDIFY
+  #3 Name: Boolean, Type: BOOLEAN
         Operation: INTERSECT, Object: Inner Proximal TARGET.003
 
 Name: BOOLEAN UNION Tendon channels proximal.004
@@ -1222,18 +1204,12 @@ BOOLEAN UNION Tendon channels proximal.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN UNION Tendon channels proximal.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN UNION Tendon channels proximal.004 groups: 1st Finger, 
 BOOLEAN UNION Tendon channels proximal.004 parent: Proximal Phalanx.000
-BOOLEAN UNION Tendon channels proximal.004 mesh: BOOLEAN Tendon channels proximal
+BOOLEAN UNION Tendon channels proximal.004 mesh: BOOLEAN Tendon channels proximal.004
 BOOLEAN UNION Tendon channels proximal.004 materials: Boolean difference, 
 BOOLEAN UNION Tendon channels proximal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
-  #2 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Mirror object: HANDLE 1st Finger
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #3 Name: Solidify, Type: SOLIDIFY
-  #4 Name: Boolean, Type: BOOLEAN
+  #2 Name: Solidify, Type: SOLIDIFY
+  #3 Name: Boolean, Type: BOOLEAN
         Operation: INTERSECT, Object: Inner Proximal TARGET.004
 
 Name: Cylinder.008
@@ -3078,7 +3054,7 @@ Ligament.003 transform: X0.0 Y0.0 Z0.0
 Ligament.003 rotation: X0.0 Y0.0 Z0.0
 Ligament.003 scale: X1.0 Y1.0 Z1.0
 Ligament.003 groups: 3rd Finger, 
-Ligament.003 mesh: Ligament
+Ligament.003 mesh: Ligament.003
 Ligament.003 materials: NF Black, 
 Ligament.003 modifiers: 
   #1 Name: Hook, Type: HOOK
