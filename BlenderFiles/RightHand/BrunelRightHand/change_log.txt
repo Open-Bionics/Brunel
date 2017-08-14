@@ -2330,6 +2330,8 @@ Thumb modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 bolt hole for thumb
   #9 Name: Boolean.ElasticPath, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Elastic path
+  #10 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN thumb spring termination
 
 Name: Thumb ligament cover
 Thumb ligament cover Type: MESH
@@ -2370,7 +2372,7 @@ Thumb ligament cover clip modifiers:
 
 Name: Thumb ligament cover for thumb
 Thumb ligament cover for thumb Type: MESH
-Thumb ligament cover for thumb transform: X-7.5 Y-66.0 Z-17.238170623779297
+Thumb ligament cover for thumb transform: X-7.5 Y-65.99999237060547 Z-17.238170623779297
 Thumb ligament cover for thumb rotation: X3.7112233286507035e-08 Y-3.88492225056325e-08 Z-0.1745329201221466
 Thumb ligament cover for thumb scale: X0.9999998807907104 Y0.9999998211860657 Z1.0
 Thumb ligament cover for thumb groups: None
