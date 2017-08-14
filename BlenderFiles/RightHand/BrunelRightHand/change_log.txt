@@ -1319,6 +1319,28 @@ BOOLEAN Thumb pivot dowel.002 mesh: BOOLEAN Thumb pivot dowel.002
 BOOLEAN Thumb pivot dowel.002 materials: Boolean difference, 
 BOOLEAN Thumb pivot dowel.002 modifiers: None
 
+Name: BOOLEAN thumb spring termination
+BOOLEAN thumb spring termination Type: MESH
+BOOLEAN thumb spring termination transform: X-20.50119400024414 Y-67.19280242919922 Z-21.018537521362305
+BOOLEAN thumb spring termination rotation: X-1.4901162970204496e-08 Y7.105427357601002e-15 Z0.08726643025875092
+BOOLEAN thumb spring termination scale: X1.0 Y0.9999998211860657 Z1.0
+BOOLEAN thumb spring termination groups: None
+BOOLEAN thumb spring termination parent: Thumb
+BOOLEAN thumb spring termination mesh: BOOLEAN M2 Bolt Hole.003
+BOOLEAN thumb spring termination materials: Boolean difference.005, 
+BOOLEAN thumb spring termination modifiers: None
+
+Name: BOOLEAN thumb spring termination.001
+BOOLEAN thumb spring termination.001 Type: MESH
+BOOLEAN thumb spring termination.001 transform: X3.4133942127227783 Y-71.40948486328125 Z-21.018535614013672
+BOOLEAN thumb spring termination.001 rotation: X-1.4901162970204496e-08 Y7.105427357601002e-15 Z0.08726643025875092
+BOOLEAN thumb spring termination.001 scale: X1.0 Y0.9999998211860657 Z1.0
+BOOLEAN thumb spring termination.001 groups: None
+BOOLEAN thumb spring termination.001 parent: Thumb
+BOOLEAN thumb spring termination.001 mesh: BOOLEAN M2 Bolt Hole.004
+BOOLEAN thumb spring termination.001 materials: Boolean difference.005, 
+BOOLEAN thumb spring termination.001 modifiers: None
+
 Name: BOOLEAN Thumb swept area
 BOOLEAN Thumb swept area Type: MESH
 BOOLEAN Thumb swept area transform: X-6.506304740905762 Y-66.27792358398438 Z-15.024927139282227
@@ -2034,6 +2056,8 @@ Palm inner modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN New Wrist connector M2 bolt holes
   #22 Name: Boolean.004, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN urethane channels
+  #23 Name: Boolean.005, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Thumb spring channel
 
 Name: Palm inner for new mould
 Palm inner for new mould Type: MESH
@@ -2282,7 +2306,7 @@ Tendon pivot dowel modifiers: None
 
 Name: Thumb
 Thumb Type: MESH
-Thumb transform: X-7.4911088943481445 Y-66.10430145263672 Z-14.232924461364746
+Thumb transform: X-7.4911088943481445 Y-66.10429382324219 Z-14.232924461364746
 Thumb rotation: X0.0 Y0.0 Z1.3962633609771729
 Thumb scale: X0.9999999403953552 Y0.9999998211860657 Z0.9999999403953552
 Thumb groups: None
@@ -2326,6 +2350,10 @@ Thumb ligament cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon channel
   #5 Name: Boolean.ElasticClamp, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament elastic clamp
+  #6 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN thumb spring termination.001
+  #7 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Thumb spring channel
 
 Name: Thumb ligament cover clip
 Thumb ligament cover clip Type: MESH
@@ -2339,6 +2367,23 @@ Thumb ligament cover clip materials: PLA,
 Thumb ligament cover clip modifiers: 
   #1 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament elastic clamp
+
+Name: Thumb ligament cover for thumb
+Thumb ligament cover for thumb Type: MESH
+Thumb ligament cover for thumb transform: X-7.5 Y-66.0 Z-17.238170623779297
+Thumb ligament cover for thumb rotation: X3.7112233286507035e-08 Y-3.88492225056325e-08 Z-0.1745329201221466
+Thumb ligament cover for thumb scale: X0.9999998807907104 Y0.9999998211860657 Z1.0
+Thumb ligament cover for thumb groups: None
+Thumb ligament cover for thumb parent: Thumb
+Thumb ligament cover for thumb mesh: BOOLEAN Thumb ligament for thumb.003
+Thumb ligament cover for thumb materials: PLA White.001, 
+Thumb ligament cover for thumb modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN thumb spring termination
+  #3 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Thumb spring channel
 
 Name: Thumb pivot dowel.000
 Thumb pivot dowel.000 Type: MESH
@@ -2372,6 +2417,17 @@ Thumb pivot dowel.002 parent: Actuator Block
 Thumb pivot dowel.002 mesh: Thumb pivot dowel.000
 Thumb pivot dowel.002 materials: Steel, 
 Thumb pivot dowel.002 modifiers: None
+
+Name: Thumb spring channel
+Thumb spring channel Type: MESH
+Thumb spring channel transform: X-10.88334846496582 Y-68.78870391845703 Z-14.199999809265137
+Thumb spring channel rotation: X1.5707966089248657 Y1.3962633609771729 Z1.3962637186050415
+Thumb spring channel scale: X1.0 Y1.0 Z1.0
+Thumb spring channel groups: None
+Thumb spring channel parent: Thumb
+Thumb spring channel mesh: Cylinder.004
+Thumb spring channel materials: Boolean difference, 
+Thumb spring channel modifiers: None
 
 Name: Urethane cutout
 Urethane cutout Type: MESH
