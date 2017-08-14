@@ -708,16 +708,10 @@ BOOLEAN Tendon channels distal.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels distal.003 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Tendon channels distal.003 groups: 1st Finger, 
 BOOLEAN Tendon channels distal.003 parent: Distal Phalanx.003
-BOOLEAN Tendon channels distal.003 mesh: BOOLEAN Tendon channels distal
+BOOLEAN Tendon channels distal.003 mesh: BOOLEAN Tendon channels distal.003
 BOOLEAN Tendon channels distal.003 materials: Boolean difference, 
 BOOLEAN Tendon channels distal.003 modifiers: 
   #1 Name: Hook, Type: HOOK
-  #2 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Mirror object: HANDLE 1st Finger
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
 
 Name: BOOLEAN Tendon channels distal.004
 BOOLEAN Tendon channels distal.004 Type: MESH
@@ -726,16 +720,10 @@ BOOLEAN Tendon channels distal.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels distal.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Tendon channels distal.004 groups: 1st Finger, 
 BOOLEAN Tendon channels distal.004 parent: Distal Phalanx.004
-BOOLEAN Tendon channels distal.004 mesh: BOOLEAN Tendon channels distal
+BOOLEAN Tendon channels distal.004 mesh: BOOLEAN Tendon channels distal.004
 BOOLEAN Tendon channels distal.004 materials: Boolean difference, 
 BOOLEAN Tendon channels distal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
-  #2 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Mirror object: HANDLE 1st Finger
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
 
 Name: BOOLEAN Tendon channels proximal.001
 BOOLEAN Tendon channels proximal.001 Type: MESH
@@ -1105,18 +1093,12 @@ BOOLEAN UNION Tendon channels distal.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN UNION Tendon channels distal.003 scale: X1.0 Y1.0 Z1.0
 BOOLEAN UNION Tendon channels distal.003 groups: 1st Finger, 
 BOOLEAN UNION Tendon channels distal.003 parent: Distal Phalanx.003
-BOOLEAN UNION Tendon channels distal.003 mesh: BOOLEAN Tendon channels distal
+BOOLEAN UNION Tendon channels distal.003 mesh: BOOLEAN Tendon channels distal.003
 BOOLEAN UNION Tendon channels distal.003 materials: Boolean difference, 
 BOOLEAN UNION Tendon channels distal.003 modifiers: 
   #1 Name: Hook, Type: HOOK
-  #2 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Mirror object: HANDLE 1st Finger
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #3 Name: Solidify, Type: SOLIDIFY
-  #4 Name: Boolean, Type: BOOLEAN
+  #2 Name: Solidify, Type: SOLIDIFY
+  #3 Name: Boolean, Type: BOOLEAN
         Operation: INTERSECT, Object: Inner distal TARGET.003
 
 Name: BOOLEAN UNION Tendon channels distal.004
@@ -1126,18 +1108,12 @@ BOOLEAN UNION Tendon channels distal.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN UNION Tendon channels distal.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN UNION Tendon channels distal.004 groups: 1st Finger, 
 BOOLEAN UNION Tendon channels distal.004 parent: Distal Phalanx.004
-BOOLEAN UNION Tendon channels distal.004 mesh: BOOLEAN Tendon channels distal
+BOOLEAN UNION Tendon channels distal.004 mesh: BOOLEAN Tendon channels distal.004
 BOOLEAN UNION Tendon channels distal.004 materials: Boolean difference, 
 BOOLEAN UNION Tendon channels distal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
-  #2 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Mirror object: HANDLE 1st Finger
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #3 Name: Solidify, Type: SOLIDIFY
-  #4 Name: Boolean, Type: BOOLEAN
+  #2 Name: Solidify, Type: SOLIDIFY
+  #3 Name: Boolean, Type: BOOLEAN
         Operation: INTERSECT, Object: Inner distal TARGET.004
 
 Name: BOOLEAN UNION Tendon channels proximal.001
@@ -3068,6 +3044,8 @@ Ligament.003 modifiers:
         Vertex group mirroring: True
   #5 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+  #6 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: Hand Ligament
 
 Name: Ligament.004
 Ligament.004 Type: MESH
