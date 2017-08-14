@@ -93,7 +93,7 @@ Back cover target modifiers:
 
 Name: BOOLEAN 1st finger spring bolt hole
 BOOLEAN 1st finger spring bolt hole Type: MESH
-BOOLEAN 1st finger spring bolt hole transform: X-17.97697639465332 Y-12.065349578857422 Z4.449999809265137
+BOOLEAN 1st finger spring bolt hole transform: X-18.23844337463379 Y-8.076765060424805 Z4.449999809265137
 BOOLEAN 1st finger spring bolt hole rotation: X-1.4901162970204496e-08 Y7.105427357601002e-15 Z0.08726643025875092
 BOOLEAN 1st finger spring bolt hole scale: X1.0 Y0.9999998211860657 Z1.0
 BOOLEAN 1st finger spring bolt hole groups: None
@@ -117,7 +117,7 @@ BOOLEAN 1st finger spring channel modifiers:
 
 Name: BOOLEAN 2nd finger spring bolt hole
 BOOLEAN 2nd finger spring bolt hole Type: MESH
-BOOLEAN 2nd finger spring bolt hole transform: X0.31689974665641785 Y-10.418394088745117 Z4.449999809265137
+BOOLEAN 2nd finger spring bolt hole transform: X0.31689947843551636 Y-6.418394088745117 Z4.449999809265137
 BOOLEAN 2nd finger spring bolt hole rotation: X-1.4901162970204496e-08 Y7.105427357601002e-15 Z0.08726643025875092
 BOOLEAN 2nd finger spring bolt hole scale: X1.0 Y0.9999998211860657 Z1.0
 BOOLEAN 2nd finger spring bolt hole groups: None
@@ -141,7 +141,7 @@ BOOLEAN 2nd finger spring channel modifiers:
 
 Name: BOOLEAN 3rd finger spring bolt hole
 BOOLEAN 3rd finger spring bolt hole Type: MESH
-BOOLEAN 3rd finger spring bolt hole transform: X18.185407638549805 Y-11.738301277160645 Z4.449999809265137
+BOOLEAN 3rd finger spring bolt hole transform: X18.185407638549805 Y-8.738301277160645 Z4.449999809265137
 BOOLEAN 3rd finger spring bolt hole rotation: X-1.4901162970204496e-08 Y7.105427357601002e-15 Z0.08726643025875092
 BOOLEAN 3rd finger spring bolt hole scale: X1.0 Y0.9999998211860657 Z1.0
 BOOLEAN 3rd finger spring bolt hole groups: None
