@@ -1332,7 +1332,7 @@ BOOLEAN thumb spring termination modifiers: None
 
 Name: BOOLEAN thumb spring termination.001
 BOOLEAN thumb spring termination.001 Type: MESH
-BOOLEAN thumb spring termination.001 transform: X2.019230604171753 Y-71.16365814208984 Z-9.095071792602539
+BOOLEAN thumb spring termination.001 transform: X5.002194404602051 Y-68.64335632324219 Z-9.095071792602539
 BOOLEAN thumb spring termination.001 rotation: X7.11357817095859e-09 Y3.1415932178497314 Z0.08726759999990463
 BOOLEAN thumb spring termination.001 scale: X0.9999998211860657 Y0.9999998211860657 Z1.0
 BOOLEAN thumb spring termination.001 groups: None
@@ -2332,8 +2332,6 @@ Thumb modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 bolt hole for thumb
   #9 Name: Boolean.ElasticPath, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Elastic path
-  #10 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN thumb spring termination
 
 Name: Thumb ligament cover
 Thumb ligament cover Type: MESH
@@ -2386,9 +2384,7 @@ Thumb ligament cover for thumb materials: PLA White.001,
 Thumb ligament cover for thumb modifiers: 
   #1 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole
-  #2 Name: Boolean.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN thumb spring termination
-  #3 Name: Boolean.002, Type: BOOLEAN
+  #2 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Thumb spring channel
 
 Name: Thumb pivot dowel.000
@@ -2426,14 +2422,16 @@ Thumb pivot dowel.002 modifiers: None
 
 Name: Thumb spring channel
 Thumb spring channel Type: MESH
-Thumb spring channel transform: X-10.88334846496582 Y-68.78870391845703 Z-13.853955268859863
+Thumb spring channel transform: X-7.900384426116943 Y-66.26840209960938 Z-13.853955268859863
 Thumb spring channel rotation: X1.5707968473434448 Y1.3962630033493042 Z1.396263599395752
 Thumb spring channel scale: X0.9999999403953552 Y0.9999998807907104 Z1.0000001192092896
 Thumb spring channel groups: None
 Thumb spring channel parent: Thumb
 Thumb spring channel mesh: Cylinder.004
 Thumb spring channel materials: Boolean difference, 
-Thumb spring channel modifiers: None
+Thumb spring channel modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 1, Type: CATMULL_CLARK
 
 Name: Urethane cutout
 Urethane cutout Type: MESH
