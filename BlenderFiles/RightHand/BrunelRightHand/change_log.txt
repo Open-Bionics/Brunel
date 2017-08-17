@@ -647,7 +647,7 @@ BOOLEAN ligament cover top plate modifiers:
 
 Name: BOOLEAN M2 Bolt Hole
 BOOLEAN M2 Bolt Hole Type: MESH
-BOOLEAN M2 Bolt Hole transform: X-15.149393081665039 Y-64.75391387939453 Z-20.94437026977539
+BOOLEAN M2 Bolt Hole transform: X-15.80920696258545 Y-64.63756561279297 Z-18.44392204284668
 BOOLEAN M2 Bolt Hole rotation: X-0.2617994248867035 Y-5.769300592817217e-09 Z1.3962632417678833
 BOOLEAN M2 Bolt Hole scale: X1.0 Y0.9999998211860657 Z0.9999998807907104
 BOOLEAN M2 Bolt Hole groups: None
@@ -2060,6 +2060,8 @@ Palm inner modifiers:
         Operation: DIFFERENCE, Object: Thumb spring channel
   #24 Name: Boolean.006, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN thumb spring termination.001
+  #25 Name: Boolean.007, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole
 
 Name: Palm inner for new mould
 Palm inner for new mould Type: MESH
