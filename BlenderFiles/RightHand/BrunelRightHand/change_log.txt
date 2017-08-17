@@ -2433,7 +2433,7 @@ Thumb spring channel mesh: Cylinder.004
 Thumb spring channel materials: Boolean difference, 
 Thumb spring channel modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
-        Levels: 1, Type: CATMULL_CLARK
+        Levels: 2, Type: CATMULL_CLARK
 
 Name: Urethane cutout
 Urethane cutout Type: MESH
