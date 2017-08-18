@@ -229,7 +229,7 @@ BOOLEAN Inner proximal pegs.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Inner proximal pegs.003 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Inner proximal pegs.003 groups: 1st Finger, 
 BOOLEAN Inner proximal pegs.003 parent: Proximal Phalanx.003
-BOOLEAN Inner proximal pegs.003 mesh: BOOLEAN Inner proximal
+BOOLEAN Inner proximal pegs.003 mesh: BOOLEAN Inner proximal.003
 BOOLEAN Inner proximal pegs.003 materials: Boolean difference, 
 BOOLEAN Inner proximal pegs.003 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -991,7 +991,7 @@ BOOLEAN UNION proximal M2 Bolt Hole.001 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN UNION proximal M2 Bolt Hole.001 scale: X1.0 Y1.0 Z1.0
 BOOLEAN UNION proximal M2 Bolt Hole.001 groups: 1st Finger, 
 BOOLEAN UNION proximal M2 Bolt Hole.001 parent: Proximal Phalanx.001
-BOOLEAN UNION proximal M2 Bolt Hole.001 mesh: BOOLEAN M2 Bolt Holes.002
+BOOLEAN UNION proximal M2 Bolt Hole.001 mesh: BOOLEAN M2 Bolt Holes.001
 BOOLEAN UNION proximal M2 Bolt Hole.001 materials: Boolean difference, 
 BOOLEAN UNION proximal M2 Bolt Hole.001 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -1006,7 +1006,7 @@ BOOLEAN UNION proximal M2 Bolt Hole.002 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN UNION proximal M2 Bolt Hole.002 scale: X1.0 Y1.0 Z1.0
 BOOLEAN UNION proximal M2 Bolt Hole.002 groups: 1st Finger, 
 BOOLEAN UNION proximal M2 Bolt Hole.002 parent: Proximal Phalanx.002
-BOOLEAN UNION proximal M2 Bolt Hole.002 mesh: BOOLEAN M2 Bolt Holes.002
+BOOLEAN UNION proximal M2 Bolt Hole.002 mesh: BOOLEAN M2 Bolt Holes.001
 BOOLEAN UNION proximal M2 Bolt Hole.002 materials: Boolean difference, 
 BOOLEAN UNION proximal M2 Bolt Hole.002 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -2144,6 +2144,8 @@ Inner distal.001 modifiers:
         Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.001
   #11 Name: Boolean.001, Type: BOOLEAN
         Operation: UNION, Object: Spring pegs distal.001
+  #12 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL identifier distal flat.001
 
 Name: Inner distal.002
 Inner distal.002 Type: MESH
@@ -2179,6 +2181,8 @@ Inner distal.002 modifiers:
         Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.002
   #11 Name: Boolean.001, Type: BOOLEAN
         Operation: UNION, Object: Spring pegs distal.002
+  #12 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL identifier distal flat.002
 
 Name: Inner distal.003
 Inner distal.003 Type: MESH
@@ -2214,6 +2218,8 @@ Inner distal.003 modifiers:
         Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.003
   #11 Name: Boolean.001, Type: BOOLEAN
         Operation: UNION, Object: Spring pegs distal.003
+  #12 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL identifier distal flat.003
 
 Name: Inner distal.004
 Inner distal.004 Type: MESH
@@ -2249,6 +2255,8 @@ Inner distal.004 modifiers:
         Operation: UNION, Object: Spring pegs distal.004
   #11 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.004
+  #12 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL identifier distal flat.004
 
 Name: Inner proximal 1 BLANK
 Inner proximal 1 BLANK Type: MESH
@@ -2862,6 +2870,82 @@ Inner Proximal.004 modifiers:
   #10 Name: Boolean.identifier, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.004
 
+Name: LABEL identifier distal flat.001
+LABEL identifier distal flat.001 Type: MESH
+LABEL identifier distal flat.001 transform: X5.889425754547119 Y63.89198684692383 Z0.9442558288574219
+LABEL identifier distal flat.001 rotation: X0.0 Y0.0 Z0.0
+LABEL identifier distal flat.001 scale: X1.0 Y1.0 Z1.0
+LABEL identifier distal flat.001 groups: None
+LABEL identifier distal flat.001 parent: Distal Phalanx.001
+LABEL identifier distal flat.001 mesh: Cube.003
+LABEL identifier distal flat.001 materials: Boolean difference, 
+LABEL identifier distal flat.001 modifiers: 
+  #1 Name: Array, Type: ARRAY
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #3 Name: Hook, Type: HOOK
+
+Name: LABEL identifier distal flat.002
+LABEL identifier distal flat.002 Type: MESH
+LABEL identifier distal flat.002 transform: X5.889425754547119 Y63.89198684692383 Z0.9442558288574219
+LABEL identifier distal flat.002 rotation: X0.0 Y0.0 Z0.0
+LABEL identifier distal flat.002 scale: X1.0 Y1.0 Z1.0
+LABEL identifier distal flat.002 groups: None
+LABEL identifier distal flat.002 parent: Distal Phalanx.002
+LABEL identifier distal flat.002 mesh: Cube.003
+LABEL identifier distal flat.002 materials: Boolean difference, 
+LABEL identifier distal flat.002 modifiers: 
+  #1 Name: Array, Type: ARRAY
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #3 Name: Hook, Type: HOOK
+
+Name: LABEL identifier distal flat.003
+LABEL identifier distal flat.003 Type: MESH
+LABEL identifier distal flat.003 transform: X5.889425754547119 Y63.89198684692383 Z0.9442558288574219
+LABEL identifier distal flat.003 rotation: X0.0 Y0.0 Z0.0
+LABEL identifier distal flat.003 scale: X1.0 Y1.0 Z1.0
+LABEL identifier distal flat.003 groups: None
+LABEL identifier distal flat.003 parent: Distal Phalanx.003
+LABEL identifier distal flat.003 mesh: Cube.003
+LABEL identifier distal flat.003 materials: Boolean difference, 
+LABEL identifier distal flat.003 modifiers: 
+  #1 Name: Array, Type: ARRAY
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #3 Name: Hook, Type: HOOK
+
+Name: LABEL identifier distal flat.004
+LABEL identifier distal flat.004 Type: MESH
+LABEL identifier distal flat.004 transform: X5.889425754547119 Y63.89198684692383 Z0.9442558288574219
+LABEL identifier distal flat.004 rotation: X0.0 Y0.0 Z0.0
+LABEL identifier distal flat.004 scale: X1.0 Y1.0 Z1.0
+LABEL identifier distal flat.004 groups: None
+LABEL identifier distal flat.004 parent: Distal Phalanx.004
+LABEL identifier distal flat.004 mesh: Cube.003
+LABEL identifier distal flat.004 materials: Boolean difference, 
+LABEL identifier distal flat.004 modifiers: 
+  #1 Name: Array, Type: ARRAY
+  #2 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: False
+        Vertex group mirroring: True
+  #3 Name: Hook, Type: HOOK
+
 Name: LABEL Identifier Inner distal.001
 LABEL Identifier Inner distal.001 Type: MESH
 LABEL Identifier Inner distal.001 transform: X0.0 Y49.636802673339844 Z0.0
@@ -3322,13 +3406,9 @@ Top cover distal.001 modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #5 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.001
-  #6 Name: Boolean.ElasticTerminator, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #7 Name: Boolean.LabelPCBLines, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #8 Name: Boolean.ID, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #9 Name: Boolean, Type: BOOLEAN
+  #6 Name: Boolean.ID, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL identifier distal flat.001
+  #7 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner distal pegs.001
 
 Name: Top cover distal.002
@@ -3353,13 +3433,9 @@ Top cover distal.002 modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #5 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.002
-  #6 Name: Boolean.ElasticTerminator, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #7 Name: Boolean.LabelPCBLines, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #8 Name: Boolean.ID, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #9 Name: Boolean, Type: BOOLEAN
+  #6 Name: Boolean.ID, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL identifier distal flat.002
+  #7 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner distal pegs.002
 
 Name: Top cover distal.003
@@ -3384,13 +3460,9 @@ Top cover distal.003 modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #5 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.003
-  #6 Name: Boolean.ElasticTerminator, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #7 Name: Boolean.LabelPCBLines, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #8 Name: Boolean.ID, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #9 Name: Boolean, Type: BOOLEAN
+  #6 Name: Boolean.ID, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL identifier distal flat.003
+  #7 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner distal pegs.003
 
 Name: Top cover distal.004
@@ -3417,6 +3489,8 @@ Top cover distal.004 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.004
   #6 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner distal pegs.004
+  #7 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL identifier distal flat.004
 
 Name: Top cover proximal.001
 Top cover proximal.001 Type: MESH
@@ -3441,6 +3515,8 @@ Top cover proximal.001 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal pegs.001
   #5 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.001
+  #6 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.001
 
 Name: Top cover proximal.002
 Top cover proximal.002 Type: MESH
@@ -3465,6 +3541,8 @@ Top cover proximal.002 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal pegs.002
   #5 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.002
+  #6 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.002
 
 Name: Top cover proximal.003
 Top cover proximal.003 Type: MESH
@@ -3489,6 +3567,8 @@ Top cover proximal.003 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal pegs.003
   #5 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.003
+  #6 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.003
 
 Name: Top cover proximal.004
 Top cover proximal.004 Type: MESH
@@ -3513,4 +3593,6 @@ Top cover proximal.004 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal pegs.004
   #5 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.004
+  #6 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.004
 
