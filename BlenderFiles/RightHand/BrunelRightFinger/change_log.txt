@@ -2595,7 +2595,9 @@ ID.015 modifiers:
         Operation: UNION, Object: ID.009
   #8 Name: Boolean.005, Type: BOOLEAN
         Operation: UNION, Object: ID.008
-
+  #9 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.50, Offset: 0.00 
+        Even thickness: False, High Quality Normals: False
 Name: Inner Distal 1 BLANK
 Inner Distal 1 BLANK Type: MESH
 Inner Distal 1 BLANK transform: X0.0 Y0.0 Z0.0
