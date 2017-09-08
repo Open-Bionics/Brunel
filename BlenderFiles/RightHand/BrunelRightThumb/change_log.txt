@@ -1,12 +1,12 @@
-Name: BOOLEAN Elastic path
-BOOLEAN Elastic path Type: MESH
-BOOLEAN Elastic path transform: X7.499992370605469 Y0.7770576477050781 Z3.000001907348633
-BOOLEAN Elastic path rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Elastic path scale: X1.0 Y1.0 Z1.0
-BOOLEAN Elastic path groups: None
-BOOLEAN Elastic path mesh: BOOLEAN Elastic path
-BOOLEAN Elastic path materials: Boolean difference, 
-BOOLEAN Elastic path modifiers: None
+Name: BOOLEAN Ligament extra thumb cut
+BOOLEAN Ligament extra thumb cut Type: MESH
+BOOLEAN Ligament extra thumb cut transform: X7.94984245300293 Y-10.803619384765625 Z8.560826301574707
+BOOLEAN Ligament extra thumb cut rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Ligament extra thumb cut scale: X1.0 Y1.0 Z1.0
+BOOLEAN Ligament extra thumb cut groups: None
+BOOLEAN Ligament extra thumb cut mesh: Cube
+BOOLEAN Ligament extra thumb cut materials: Boolean difference, 
+BOOLEAN Ligament extra thumb cut modifiers: None
 
 Name: BOOLEAN M2 Bolt Hole
 BOOLEAN M2 Bolt Hole Type: MESH
@@ -58,6 +58,16 @@ BOOLEAN MOULD Riser mesh: BOOLEAN MOULD Runner
 BOOLEAN MOULD Riser materials: Boolean difference, 
 BOOLEAN MOULD Riser modifiers: None
 
+Name: BOOLEAN Spring cut out
+BOOLEAN Spring cut out Type: MESH
+BOOLEAN Spring cut out transform: X0.0 Y0.14514487981796265 Z0.721466600894928
+BOOLEAN Spring cut out rotation: X1.4835299253463745 Y-0.0 Z0.0
+BOOLEAN Spring cut out scale: X1.0 Y1.0 Z1.0
+BOOLEAN Spring cut out groups: None
+BOOLEAN Spring cut out mesh: Cylinder.004
+BOOLEAN Spring cut out materials: Boolean difference, 
+BOOLEAN Spring cut out modifiers: None
+
 Name: BOOLEAN Syringe
 BOOLEAN Syringe Type: MESH
 BOOLEAN Syringe transform: X21.010498046875 Y27.835588455200195 Z-6.247751298360527e-05
@@ -80,7 +90,8 @@ BOOLEAN Thumb modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #2 Name: Solidify, Type: SOLIDIFY
-
+        Thickness: 0.10, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True
 Name: BOOLEAN Thumb ligament cover M2 bolt hole for thumb
 BOOLEAN Thumb ligament cover M2 bolt hole for thumb Type: MESH
 BOOLEAN Thumb ligament cover M2 bolt hole for thumb transform: X-10.5 Y-1.0490620136260986 Z-3.2654056549072266
@@ -133,7 +144,44 @@ BOOLEAN Thumb top cover mesh: Thumb top cover
 BOOLEAN Thumb top cover materials: PLA White, 
 BOOLEAN Thumb top cover modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
-  #2 Name: Bevel, Type: BEVEL
+        Thickness: 0.20, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #2 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN Thumb.001
+BOOLEAN Thumb.001 Type: MESH
+BOOLEAN Thumb.001 transform: X-7.62939453125e-06 Y-7.152557373046875e-07 Z0.0
+BOOLEAN Thumb.001 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Thumb.001 scale: X0.9999999403953552 Y0.9999998807907104 Z0.9999998807907104
+BOOLEAN Thumb.001 groups: Thumb, 
+BOOLEAN Thumb.001 mesh: Thumb.002
+BOOLEAN Thumb.001 materials: Boolean difference, 
+BOOLEAN Thumb.001 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Cube
+Cube Type: MESH
+Cube transform: X0.0 Y26.24489402770996 Z0.0
+Cube rotation: X0.0 Y0.0 Z0.0
+Cube scale: X1.0 Y1.0 Z1.0
+Cube groups: None
+Cube mesh: Cube.003
+Cube materials: Ninjalfex, 
+Cube modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Thumb target
+
+Name: Cube.001
+Cube.001 Type: MESH
+Cube.001 transform: X0.0 Y26.24489402770996 Z30.0
+Cube.001 rotation: X0.0 Y0.0 Z0.0
+Cube.001 scale: X1.0 Y1.0 Z1.0
+Cube.001 groups: None
+Cube.001 mesh: Cube.004
+Cube.001 materials: Ninjalfex, 
+Cube.001 modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Thumb target
 
 Name: MOULD BOOLEAN blank
 MOULD BOOLEAN blank Type: MESH
@@ -157,7 +205,8 @@ MOULD BOOLEAN bottom mesh: MOULD bottom.001
 MOULD BOOLEAN bottom materials: Boolean difference, 
 MOULD BOOLEAN bottom modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
-
+        Thickness: 0.10, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True
 Name: MOULD BOOLEAN cavity
 MOULD BOOLEAN cavity Type: MESH
 MOULD BOOLEAN cavity transform: X28.90887451171875 Y48.9874267578125 Z0.5725380182266235
@@ -168,7 +217,8 @@ MOULD BOOLEAN cavity mesh: MOULD bottom.003
 MOULD BOOLEAN cavity materials: Urethane, 
 MOULD BOOLEAN cavity modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
-
+        Thickness: 0.01, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True
 Name: MOULD BOOLEAN seal bottom
 MOULD BOOLEAN seal bottom Type: MESH
 MOULD BOOLEAN seal bottom transform: X7.554476261138916 Y34.64931869506836 Z15.889122009277344
@@ -181,7 +231,8 @@ MOULD BOOLEAN seal bottom modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
   #2 Name: Solidify, Type: SOLIDIFY
-
+        Thickness: 0.20, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True
 Name: MOULD BOOLEAN seal top
 MOULD BOOLEAN seal top Type: MESH
 MOULD BOOLEAN seal top transform: X7.554476261138916 Y34.64931869506836 Z15.889122009277344
@@ -274,8 +325,8 @@ Thumb modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon termination M2 bolt hole
   #8 Name: Boolean.ThumbLigamentCoverM2BoltHole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 bolt hole for thumb
-  #9 Name: Boolean.ElasticPath, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Elastic path
+  #9 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament extra thumb cut
 
 Name: Thumb ligament 
 Thumb ligament  Type: MESH
@@ -317,6 +368,10 @@ Thumb ligament cover for thumb materials: PLA White,
 Thumb ligament cover for thumb modifiers: 
   #1 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: INTERSECT, Object: BOOLEAN Thumb.001
+  #3 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Spring cut out
 
 Name: Thumb target
 Thumb target Type: MESH
@@ -324,8 +379,8 @@ Thumb target transform: X-7.62939453125e-06 Y-7.152557373046875e-07 Z0.0
 Thumb target rotation: X0.0 Y0.0 Z0.0
 Thumb target scale: X0.9999999403953552 Y0.9999998807907104 Z0.9999998807907104
 Thumb target groups: Thumb, 
-Thumb target mesh: Thumb
-Thumb target materials: PLA White, 
+Thumb target mesh: Thumb.004
+Thumb target materials: PLA White, Urethane, 
 Thumb target modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
@@ -354,6 +409,20 @@ Thumb urethane pad groups: Thumb,
 Thumb urethane pad mesh: Thumb urethane pad
 Thumb urethane pad materials: Urethane, 
 Thumb urethane pad modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Thumb
+
+Name: Thumb urethane pad.001
+Thumb urethane pad.001 Type: MESH
+Thumb urethane pad.001 transform: X0.0 Y0.0 Z2.0
+Thumb urethane pad.001 rotation: X1.5707963705062866 Y1.570796251296997 Z0.0
+Thumb urethane pad.001 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+Thumb urethane pad.001 groups: Thumb, 
+Thumb urethane pad.001 mesh: Thumb urethane pad
+Thumb urethane pad.001 materials: Urethane, 
+Thumb urethane pad.001 modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
