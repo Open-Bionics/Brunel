@@ -78,6 +78,14 @@ Back cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN finger spring bolt holes combined
   #18 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN finger spring channels combined
+  #19 Name: Boolean.003, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Logo Position
+  #20 Name: Boolean.BOOLEAN Logo Plinth, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Logo Plinth
+  #21 Name: Boolean.LABEL Logo (flat), Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Logo (flat)
+  #22 Name: Boolean.BOOLEAN Logo Lip Back Cover , Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Logo Lip Back Cover 
 
 Name: Back cover target
 Back cover target Type: MESH
@@ -705,6 +713,39 @@ BOOLEAN ligament cover top plate modifiers:
   #6 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.30, Offset: 1.00 
         Even thickness: True, High Quality Normals: True
+Name: BOOLEAN Logo Lip Back Cover 
+BOOLEAN Logo Lip Back Cover  Type: MESH
+BOOLEAN Logo Lip Back Cover  transform: X9.41335678100586 Y-52.2314338684082 Z11.550772666931152
+BOOLEAN Logo Lip Back Cover  rotation: X0.019268112257122993 Y0.07365269213914871 Z1.7737659215927124
+BOOLEAN Logo Lip Back Cover  scale: X2.3499996662139893 Y2.3499999046325684 Z0.9999672770500183
+BOOLEAN Logo Lip Back Cover  groups: None
+BOOLEAN Logo Lip Back Cover  mesh: Cylinder.007
+BOOLEAN Logo Lip Back Cover  materials: Boolean difference, 
+BOOLEAN Logo Lip Back Cover  modifiers: None
+
+Name: BOOLEAN Logo Plinth
+BOOLEAN Logo Plinth Type: MESH
+BOOLEAN Logo Plinth transform: X9.46703052520752 Y-51.22262191772461 Z24.795446395874023
+BOOLEAN Logo Plinth rotation: X3.0754830837249756 Y-0.079339399933815 Z-0.8748761415481567
+BOOLEAN Logo Plinth scale: X2.250000238418579 Y2.250000238418579 Z2.500000238418579
+BOOLEAN Logo Plinth groups: None
+BOOLEAN Logo Plinth mesh: Cylinder.005
+BOOLEAN Logo Plinth materials: Boolean difference, 
+BOOLEAN Logo Plinth modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN Logo Position
+BOOLEAN Logo Position Type: MESH
+BOOLEAN Logo Position transform: X9.468347549438477 Y-47.020164489746094 Z27.650554656982422
+BOOLEAN Logo Position rotation: X3.0754830837249756 Y-0.079339399933815 Z-0.8748761415481567
+BOOLEAN Logo Position scale: X2.250000238418579 Y2.250000238418579 Z2.500000238418579
+BOOLEAN Logo Position groups: None
+BOOLEAN Logo Position mesh: Cylinder.003
+BOOLEAN Logo Position materials: Boolean difference, 
+BOOLEAN Logo Position modifiers: None
+
 Name: BOOLEAN M2 Bolt Hole
 BOOLEAN M2 Bolt Hole Type: MESH
 BOOLEAN M2 Bolt Hole transform: X-15.80920696258545 Y-64.63756561279297 Z-18.44392204284668
@@ -1540,6 +1581,17 @@ Bottom cover materials: None
 Bottom cover modifiers: 
   #1 Name: Bevel, Type: BEVEL
 
+Name: CHEETAH Logo 
+CHEETAH Logo  Type: MESH
+CHEETAH Logo  transform: X9.46703052520752 Y-51.22262191772461 Z24.795446395874023
+CHEETAH Logo  rotation: X3.0754830837249756 Y-0.079339399933815 Z-0.8748761415481567
+CHEETAH Logo  scale: X2.250000238418579 Y2.250000238418579 Z2.500000238418579
+CHEETAH Logo  groups: None
+CHEETAH Logo  mesh: Cylinder.008
+CHEETAH Logo  materials: PLA Black, 
+CHEETAH Logo  modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
 Name: Conical spring
 Conical spring Type: MESH
 Conical spring transform: X-15.163448333740234 Y-46.499046325683594 Z-4.673167705535889
@@ -1697,9 +1749,9 @@ LABEL Logo modifiers:
         Even thickness: False, High Quality Normals: False
 Name: LABEL Logo (flat)
 LABEL Logo (flat) Type: MESH
-LABEL Logo (flat) transform: X9.468347549438477 Y-47.020164489746094 Z27.15020751953125
-LABEL Logo (flat) rotation: X0.0 Y0.0 Z0.0
-LABEL Logo (flat) scale: X1.0 Y1.0 Z1.0
+LABEL Logo (flat) transform: X9.825359344482422 Y-50.35852813720703 Z24.072912216186523
+LABEL Logo (flat) rotation: X-0.06715075671672821 Y0.006188730709254742 Z0.004771096166223288
+LABEL Logo (flat) scale: X0.9390469789505005 Y0.9394081234931946 Z0.9996581673622131
 LABEL Logo (flat) groups: None
 LABEL Logo (flat) mesh: LABEL Logo.001
 LABEL Logo (flat) materials: PLA Black, 
@@ -1710,7 +1762,7 @@ LABEL Logo (flat) modifiers:
         Target: Back cover target, Mode: NEAREST_SURFACEPOINT, Offset: 0.0 mm
         Keep above surface: False
   #3 Name: Solidify, Type: SOLIDIFY
-        Thickness: 1.00, Offset: 0.50 
+        Thickness: 10.00, Offset: 0.50 
         Even thickness: False, High Quality Normals: False
 Name: LABEL Logo (flat) print
 LABEL Logo (flat) print Type: MESH
