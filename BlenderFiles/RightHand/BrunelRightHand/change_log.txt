@@ -1581,16 +1581,19 @@ Bottom cover materials: None
 Bottom cover modifiers: 
   #1 Name: Bevel, Type: BEVEL
 
-Name: CHEETAH Logo 
-CHEETAH Logo  Type: MESH
-CHEETAH Logo  transform: X9.46703052520752 Y-51.22262191772461 Z24.795446395874023
-CHEETAH Logo  rotation: X3.0754830837249756 Y-0.079339399933815 Z-0.8748761415481567
-CHEETAH Logo  scale: X2.250000238418579 Y2.250000238418579 Z2.500000238418579
-CHEETAH Logo  groups: None
-CHEETAH Logo  mesh: Cylinder.008
-CHEETAH Logo  materials: PLA Black, 
-CHEETAH Logo  modifiers: 
-  #1 Name: Bevel, Type: BEVEL
+Name: CHEETAH Logo.001
+CHEETAH Logo.001 Type: MESH
+CHEETAH Logo.001 transform: X9.430821418762207 Y-51.903255462646484 Z18.583053588867188
+CHEETAH Logo.001 rotation: X0.019268112257122993 Y0.07365269213914871 Z1.7737659215927124
+CHEETAH Logo.001 scale: X2.1000001430511475 Y2.1000001430511475 Z1.0000406503677368
+CHEETAH Logo.001 groups: None
+CHEETAH Logo.001 mesh: Cylinder.009
+CHEETAH Logo.001 materials: PLA Black, 
+CHEETAH Logo.001 modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Back cover
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: UNION, Object: CHEETAH Logo
 
 Name: Conical spring
 Conical spring Type: MESH
@@ -1657,6 +1660,16 @@ Cube groups: None
 Cube mesh: Cube.011
 Cube materials: Boolean difference, 
 Cube modifiers: None
+
+Name: CHEETAH Logo
+CHEETAH Logo Type: MESH
+CHEETAH Logo transform: X9.430821418762207 Y-51.903255462646484 Z18.583053588867188
+CHEETAH Logo rotation: X0.019268112257122993 Y0.07365269213914871 Z1.7737659215927124
+CHEETAH Logo scale: X2.3500001430511475 Y2.3500001430511475 Z0.15000002086162567
+CHEETAH Logo groups: None
+CHEETAH Logo mesh: Cylinder.010
+CHEETAH Logo materials: None
+CHEETAH Logo modifiers: None
 
 Name: DC jack cover.001
 DC jack cover.001 Type: MESH
