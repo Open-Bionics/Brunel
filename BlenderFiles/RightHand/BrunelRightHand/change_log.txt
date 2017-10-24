@@ -116,7 +116,7 @@ BOOLEAN 1st finger spring channel modifiers:
 
 Name: BOOLEAN 1st Spring Channel 
 BOOLEAN 1st Spring Channel  Type: MESH
-BOOLEAN 1st Spring Channel  transform: X-17.81826400756836 Y-13.410231590270996 Z4.765590190887451
+BOOLEAN 1st Spring Channel  transform: X-17.81826400756836 Y-13.410231590270996 Z5.0
 BOOLEAN 1st Spring Channel  rotation: X0.0 Y0.0 Z0.0872664600610733
 BOOLEAN 1st Spring Channel  scale: X0.17500001192092896 Y1.0000001192092896 Z0.17500001192092896
 BOOLEAN 1st Spring Channel  groups: None
@@ -147,7 +147,7 @@ BOOLEAN 2nd finger spring bolt hole modifiers: None
 
 Name: BOOLEAN 2nd Spring Channel
 BOOLEAN 2nd Spring Channel Type: MESH
-BOOLEAN 2nd Spring Channel transform: X0.24788305163383484 Y-11.895540237426758 Z4.765590190887451
+BOOLEAN 2nd Spring Channel transform: X0.24788305163383484 Y-11.895540237426758 Z5.0
 BOOLEAN 2nd Spring Channel rotation: X0.0 Y0.0 Z0.0
 BOOLEAN 2nd Spring Channel scale: X0.17500001192092896 Y1.0000001192092896 Z0.17500001192092896
 BOOLEAN 2nd Spring Channel groups: None
@@ -184,7 +184,7 @@ BOOLEAN 3rd finger spring channel modifiers:
 
 Name: BOOLEAN 3rd Spring Channel 
 BOOLEAN 3rd Spring Channel  Type: MESH
-BOOLEAN 3rd Spring Channel  transform: X17.758554458618164 Y-13.218425750732422 Z4.765590190887451
+BOOLEAN 3rd Spring Channel  transform: X17.758554458618164 Y-13.218425750732422 Z5.0
 BOOLEAN 3rd Spring Channel  rotation: X0.0 Y0.0 Z-0.0872664600610733
 BOOLEAN 3rd Spring Channel  scale: X0.17500001192092896 Y1.0000001192092896 Z0.17500001192092896
 BOOLEAN 3rd Spring Channel  groups: None
@@ -221,7 +221,7 @@ BOOLEAN 4th finger spring channel modifiers:
 
 Name: BOOLEAN 4th Spring Channel 
 BOOLEAN 4th Spring Channel  Type: MESH
-BOOLEAN 4th Spring Channel  transform: X36.043983459472656 Y-15.111459732055664 Z4.765590190887451
+BOOLEAN 4th Spring Channel  transform: X36.043983459472656 Y-15.111459732055664 Z5.0
 BOOLEAN 4th Spring Channel  rotation: X0.0 Y0.0 Z-0.1745329201221466
 BOOLEAN 4th Spring Channel  scale: X0.17500001192092896 Y1.0000001192092896 Z0.17500001192092896
 BOOLEAN 4th Spring Channel  groups: None
@@ -627,7 +627,7 @@ BOOLEAN ligament cover bottom rotation: X0.0 Y-0.0 Z0.0
 BOOLEAN ligament cover bottom scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 BOOLEAN ligament cover bottom groups: Actuator Block, 
 BOOLEAN ligament cover bottom parent: Actuator Block
-BOOLEAN ligament cover bottom mesh: Ligament cover.002
+BOOLEAN ligament cover bottom mesh: Ligament cover.005
 BOOLEAN ligament cover bottom materials: PLA, 
 BOOLEAN ligament cover bottom modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
@@ -2361,6 +2361,19 @@ Funnel mesh: Cylinder.002
 Funnel materials: Boolean difference, 
 Funnel modifiers: None
 
+Name: SHRINKWRAP Back Cover
+SHRINKWRAP Back Cover Type: MESH
+SHRINKWRAP Back Cover transform: X0.4062614440917969 Y0.6757804155349731 Z2.275557518005371
+SHRINKWRAP Back Cover rotation: X1.3962634801864624 Y-0.0 Z0.0
+SHRINKWRAP Back Cover scale: X1.0 Y1.0 Z1.0
+SHRINKWRAP Back Cover groups: None
+SHRINKWRAP Back Cover mesh: Plane.004
+SHRINKWRAP Back Cover materials: Boolean difference, 
+SHRINKWRAP Back Cover modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Solidify, Type: SOLIDIFY
+        Thickness: 2.00, Offset: -1.00 
+        Even thickness: False, High Quality Normals: False
 Name: Silicone Mould
 Silicone Mould Type: MESH
 Silicone Mould transform: X0.0 Y0.0 Z0.0
