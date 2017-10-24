@@ -93,7 +93,7 @@ Back cover target modifiers:
 
 Name: BOOLEAN 1st finger spring bolt hole
 BOOLEAN 1st finger spring bolt hole Type: MESH
-BOOLEAN 1st finger spring bolt hole transform: X-18.23844337463379 Y-8.076765060424805 Z4.449999809265137
+BOOLEAN 1st finger spring bolt hole transform: X-18.23844337463379 Y-8.076765060424805 Z3.4499998092651367
 BOOLEAN 1st finger spring bolt hole rotation: X-1.4901162970204496e-08 Y7.105427357601002e-15 Z0.08726643025875092
 BOOLEAN 1st finger spring bolt hole scale: X1.0 Y0.9999998211860657 Z1.0
 BOOLEAN 1st finger spring bolt hole groups: None
@@ -116,7 +116,7 @@ BOOLEAN 1st finger spring channel modifiers:
 
 Name: BOOLEAN 1st Spring Channel 
 BOOLEAN 1st Spring Channel  Type: MESH
-BOOLEAN 1st Spring Channel  transform: X-17.759889602661133 Y-13.40512466430664 Z4.765590190887451
+BOOLEAN 1st Spring Channel  transform: X-17.81826400756836 Y-13.410231590270996 Z4.765590190887451
 BOOLEAN 1st Spring Channel  rotation: X0.0 Y0.0 Z0.0872664600610733
 BOOLEAN 1st Spring Channel  scale: X0.17500001192092896 Y1.0000001192092896 Z0.17500001192092896
 BOOLEAN 1st Spring Channel  groups: None
@@ -127,16 +127,16 @@ BOOLEAN 1st Spring Channel  modifiers:
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Boolean, Type: BOOLEAN
+  #3 Name: BooleanBOOLEAN 2nd Spring Channel, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN 2nd Spring Channel
-  #4 Name: Boolean.001, Type: BOOLEAN
+  #4 Name: Boolean.BOOLEAN 3rd Spring Channel , Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN 3rd Spring Channel 
-  #5 Name: Boolean.002, Type: BOOLEAN
+  #5 Name: Boolean.BOOLEAN 4th Spring Channel , Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN 4th Spring Channel 
 
 Name: BOOLEAN 2nd finger spring bolt hole
 BOOLEAN 2nd finger spring bolt hole Type: MESH
-BOOLEAN 2nd finger spring bolt hole transform: X0.31689947843551636 Y-6.418394088745117 Z4.449999809265137
+BOOLEAN 2nd finger spring bolt hole transform: X0.31689947843551636 Y-6.418394088745117 Z3.4499998092651367
 BOOLEAN 2nd finger spring bolt hole rotation: X-1.4901162970204496e-08 Y7.105427357601002e-15 Z0.08726643025875092
 BOOLEAN 2nd finger spring bolt hole scale: X1.0 Y0.9999998211860657 Z1.0
 BOOLEAN 2nd finger spring bolt hole groups: None
@@ -147,7 +147,7 @@ BOOLEAN 2nd finger spring bolt hole modifiers: None
 
 Name: BOOLEAN 2nd Spring Channel
 BOOLEAN 2nd Spring Channel Type: MESH
-BOOLEAN 2nd Spring Channel transform: X0.31728029251098633 Y-11.895540237426758 Z4.765590190887451
+BOOLEAN 2nd Spring Channel transform: X0.24788305163383484 Y-11.895540237426758 Z4.765590190887451
 BOOLEAN 2nd Spring Channel rotation: X0.0 Y0.0 Z0.0
 BOOLEAN 2nd Spring Channel scale: X0.17500001192092896 Y1.0000001192092896 Z0.17500001192092896
 BOOLEAN 2nd Spring Channel groups: None
@@ -161,7 +161,7 @@ BOOLEAN 2nd Spring Channel modifiers:
 
 Name: BOOLEAN 3rd finger spring bolt hole
 BOOLEAN 3rd finger spring bolt hole Type: MESH
-BOOLEAN 3rd finger spring bolt hole transform: X18.185407638549805 Y-8.738301277160645 Z4.449999809265137
+BOOLEAN 3rd finger spring bolt hole transform: X18.185407638549805 Y-8.738301277160645 Z3.4499998092651367
 BOOLEAN 3rd finger spring bolt hole rotation: X-1.4901162970204496e-08 Y7.105427357601002e-15 Z0.08726643025875092
 BOOLEAN 3rd finger spring bolt hole scale: X1.0 Y0.9999998211860657 Z1.0
 BOOLEAN 3rd finger spring bolt hole groups: None
@@ -184,7 +184,7 @@ BOOLEAN 3rd finger spring channel modifiers:
 
 Name: BOOLEAN 3rd Spring Channel 
 BOOLEAN 3rd Spring Channel  Type: MESH
-BOOLEAN 3rd Spring Channel  transform: X18.07157325744629 Y-13.245811462402344 Z4.765590190887451
+BOOLEAN 3rd Spring Channel  transform: X17.758554458618164 Y-13.218425750732422 Z4.765590190887451
 BOOLEAN 3rd Spring Channel  rotation: X0.0 Y0.0 Z-0.0872664600610733
 BOOLEAN 3rd Spring Channel  scale: X0.17500001192092896 Y1.0000001192092896 Z0.17500001192092896
 BOOLEAN 3rd Spring Channel  groups: None
@@ -198,7 +198,7 @@ BOOLEAN 3rd Spring Channel  modifiers:
 
 Name: BOOLEAN 4th finger spring bolt hole
 BOOLEAN 4th finger spring bolt hole Type: MESH
-BOOLEAN 4th finger spring bolt hole transform: X36.33353805541992 Y-13.619691848754883 Z4.449999809265137
+BOOLEAN 4th finger spring bolt hole transform: X36.33353805541992 Y-13.619691848754883 Z3.4499998092651367
 BOOLEAN 4th finger spring bolt hole rotation: X-1.4901162970204496e-08 Y7.105427357601002e-15 Z0.08726643025875092
 BOOLEAN 4th finger spring bolt hole scale: X1.0 Y0.9999998211860657 Z1.0
 BOOLEAN 4th finger spring bolt hole groups: None
@@ -221,7 +221,7 @@ BOOLEAN 4th finger spring channel modifiers:
 
 Name: BOOLEAN 4th Spring Channel 
 BOOLEAN 4th Spring Channel  Type: MESH
-BOOLEAN 4th Spring Channel  transform: X36.0697021484375 Y-15.115994453430176 Z4.765590190887451
+BOOLEAN 4th Spring Channel  transform: X36.043983459472656 Y-15.111459732055664 Z4.765590190887451
 BOOLEAN 4th Spring Channel  rotation: X0.0 Y0.0 Z-0.1745329201221466
 BOOLEAN 4th Spring Channel  scale: X0.17500001192092896 Y1.0000001192092896 Z0.17500001192092896
 BOOLEAN 4th Spring Channel  groups: None
