@@ -2631,6 +2631,16 @@ Cube.034 mesh: Cube.025
 Cube.034 materials: Boolean difference, 
 Cube.034 modifiers: None
 
+Name: Cylinder
+Cylinder Type: MESH
+Cylinder transform: X0.20616674423217773 Y-5.542596817016602 Z2.2583723068237305
+Cylinder rotation: X0.0 Y0.0 Z0.0
+Cylinder scale: X0.0010000000474974513 Y0.0010000000474974513 Z0.005000000353902578
+Cylinder groups: None
+Cylinder mesh: Cylinder.014
+Cylinder materials: None
+Cylinder modifiers: None
+
 Name: Cylinder.000
 Cylinder.000 Type: MESH
 Cylinder.000 transform: X0.08532881736755371 Y45.71010208129883 Z2.303455114364624
@@ -6251,8 +6261,8 @@ Spring pegs proximal.001 modifiers:
 
 Name: Spring pegs proximal.002
 Spring pegs proximal.002 Type: MESH
-Spring pegs proximal.002 transform: X0.0 Y39.14791488647461 Z5.408233642578125
-Spring pegs proximal.002 rotation: X0.0 Y0.0 Z0.0
+Spring pegs proximal.002 transform: X0.0 Y39.119537353515625 Z5.908543109893799
+Spring pegs proximal.002 rotation: X0.01745329238474369 Y-0.0 Z0.0
 Spring pegs proximal.002 scale: X1.0 Y1.0 Z1.0
 Spring pegs proximal.002 groups: None
 Spring pegs proximal.002 parent: Proximal Phalanx.002
