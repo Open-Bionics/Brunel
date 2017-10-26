@@ -684,6 +684,19 @@ BOOLEAN inner proximal.004 modifiers:
   #10 Name: Boolean.identifier, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.001
 
+Name: BOOLEAN Ligament Cover Spring Channel 
+BOOLEAN Ligament Cover Spring Channel  Type: MESH
+BOOLEAN Ligament Cover Spring Channel  transform: X0.0 Y6.760528564453125 Z4.779244899749756
+BOOLEAN Ligament Cover Spring Channel  rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Ligament Cover Spring Channel  scale: X1.0 Y1.0 Z1.0
+BOOLEAN Ligament Cover Spring Channel  groups: None
+BOOLEAN Ligament Cover Spring Channel  mesh: Cube.026
+BOOLEAN Ligament Cover Spring Channel  materials: Boolean difference, 
+BOOLEAN Ligament Cover Spring Channel  modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 1, Type: CATMULL_CLARK
+  #2 Name: Bevel, Type: BEVEL
+
 Name: BOOLEAN ligament for proximal target
 BOOLEAN ligament for proximal target Type: MESH
 BOOLEAN ligament for proximal target transform: X0.0 Y0.0 Z0.0
