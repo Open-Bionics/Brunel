@@ -690,6 +690,60 @@ BOOLEAN Ligament Cover M2 bolt hole platforms modifiers:
   #1 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.20, Offset: 1.00 
         Even thickness: True, High Quality Normals: False
+Name: BOOLEAN Ligament Cover Spring Channel .000
+BOOLEAN Ligament Cover Spring Channel .000 Type: MESH
+BOOLEAN Ligament Cover Spring Channel .000 transform: X0.24788665771484375 Y-11.895540237426758 Z6.058470249176025
+BOOLEAN Ligament Cover Spring Channel .000 rotation: X0.0 Y0.0 Z0.0872664600610733
+BOOLEAN Ligament Cover Spring Channel .000 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Ligament Cover Spring Channel .000 groups: None
+BOOLEAN Ligament Cover Spring Channel .000 mesh: Cube.026
+BOOLEAN Ligament Cover Spring Channel .000 materials: Boolean difference.006, 
+BOOLEAN Ligament Cover Spring Channel .000 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN Ligament Cover Spring Channel .001
+BOOLEAN Ligament Cover Spring Channel .001 Type: MESH
+BOOLEAN Ligament Cover Spring Channel .001 transform: X-17.774682998657227 Y-13.908329010009766 Z6.058468818664551
+BOOLEAN Ligament Cover Spring Channel .001 rotation: X0.0 Y0.0 Z0.0872664600610733
+BOOLEAN Ligament Cover Spring Channel .001 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Ligament Cover Spring Channel .001 groups: None
+BOOLEAN Ligament Cover Spring Channel .001 mesh: Cube.026
+BOOLEAN Ligament Cover Spring Channel .001 materials: Boolean difference.006, 
+BOOLEAN Ligament Cover Spring Channel .001 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Ligament Cover Spring Channel .000
+  #3 Name: Boolean.001, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Ligament Cover Spring Channel .002
+  #4 Name: Boolean.002, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Ligament Cover Spring Channel .003
+
+Name: BOOLEAN Ligament Cover Spring Channel .002
+BOOLEAN Ligament Cover Spring Channel .002 Type: MESH
+BOOLEAN Ligament Cover Spring Channel .002 transform: X17.758556365966797 Y-13.218425750732422 Z6.058468818664551
+BOOLEAN Ligament Cover Spring Channel .002 rotation: X0.0 Y0.0 Z-0.0872664600610733
+BOOLEAN Ligament Cover Spring Channel .002 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Ligament Cover Spring Channel .002 groups: None
+BOOLEAN Ligament Cover Spring Channel .002 mesh: Cube.026
+BOOLEAN Ligament Cover Spring Channel .002 materials: Boolean difference.006, 
+BOOLEAN Ligament Cover Spring Channel .002 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN Ligament Cover Spring Channel .003
+BOOLEAN Ligament Cover Spring Channel .003 Type: MESH
+BOOLEAN Ligament Cover Spring Channel .003 transform: X36.043983459472656 Y-15.11146068572998 Z6.058468818664551
+BOOLEAN Ligament Cover Spring Channel .003 rotation: X0.0 Y0.0 Z-0.1745329201221466
+BOOLEAN Ligament Cover Spring Channel .003 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Ligament Cover Spring Channel .003 groups: None
+BOOLEAN Ligament Cover Spring Channel .003 mesh: Cube.026
+BOOLEAN Ligament Cover Spring Channel .003 materials: Boolean difference.006, 
+BOOLEAN Ligament Cover Spring Channel .003 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: BOOLEAN ligament cover top plate
 BOOLEAN ligament cover top plate Type: MESH
 BOOLEAN ligament cover top plate transform: X7.5 Y-37.89358901977539 Z-0.12405729293823242
@@ -1671,6 +1725,19 @@ CHEETAH Logo mesh: Cylinder.010
 CHEETAH Logo materials: None
 CHEETAH Logo modifiers: None
 
+Name: Cube.001
+Cube.001 Type: MESH
+Cube.001 transform: X0.22219443321228027 Y-5.45097541809082 Z6.013882637023926
+Cube.001 rotation: X0.0 Y0.0 Z0.0
+Cube.001 scale: X1.0 Y1.0 Z1.0
+Cube.001 groups: None
+Cube.001 mesh: Cube.021
+Cube.001 materials: None
+Cube.001 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: DC jack cover.001
 DC jack cover.001 Type: MESH
 DC jack cover.001 transform: X29.954208374023438 Y-80.68687438964844 Z21.20294952392578
@@ -1853,7 +1920,7 @@ Ligament cover bottom modifiers:
   #7 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN finger spring channels combined
   #8 Name: Boolean.003, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN 1st Spring Channel 
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament Cover Spring Channel .001
 
 Name: Ligament Cover M2 bolt hole platforms
 Ligament Cover M2 bolt hole platforms Type: MESH
