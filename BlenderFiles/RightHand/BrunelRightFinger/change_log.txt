@@ -686,8 +686,8 @@ BOOLEAN inner proximal.004 modifiers:
 
 Name: BOOLEAN Ligament Cover Spring Channel 
 BOOLEAN Ligament Cover Spring Channel  Type: MESH
-BOOLEAN Ligament Cover Spring Channel  transform: X0.0 Y6.760528564453125 Z4.779244899749756
-BOOLEAN Ligament Cover Spring Channel  rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Ligament Cover Spring Channel  transform: X0.006782366894185543 Y-5.827848434448242 Z4.779244899749756
+BOOLEAN Ligament Cover Spring Channel  rotation: X0.0 Y-0.0 Z3.1415929794311523
 BOOLEAN Ligament Cover Spring Channel  scale: X1.0 Y1.0 Z1.0
 BOOLEAN Ligament Cover Spring Channel  groups: None
 BOOLEAN Ligament Cover Spring Channel  mesh: Cube.026
@@ -1565,7 +1565,7 @@ BOOLEAN Thumb tendon termination M2 bolt hole scale: X1.0 Y0.9999994039535522 Z0
 BOOLEAN Thumb tendon termination M2 bolt hole groups: None
 BOOLEAN Thumb tendon termination M2 bolt hole parent: Thumb
 BOOLEAN Thumb tendon termination M2 bolt hole mesh: BOOLEAN Thumb tendon termination M2 bolt hole
-BOOLEAN Thumb tendon termination M2 bolt hole materials: Boolean difference, 
+BOOLEAN Thumb tendon termination M2 bolt hole materials: None
 BOOLEAN Thumb tendon termination M2 bolt hole modifiers: None
 
 Name: BOOLEAN Thumb top cover
@@ -1576,7 +1576,7 @@ BOOLEAN Thumb top cover scale: X1.0 Y1.0 Z0.9999997615814209
 BOOLEAN Thumb top cover groups: None
 BOOLEAN Thumb top cover parent: Thumb
 BOOLEAN Thumb top cover mesh: Thumb top cover
-BOOLEAN Thumb top cover materials: PLA White, 
+BOOLEAN Thumb top cover materials: None
 BOOLEAN Thumb top cover modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.20, Offset: 1.00 
@@ -6353,7 +6353,7 @@ Thumb target scale: X0.9999999403953552 Y0.9999998807907104 Z0.9999998807907104
 Thumb target groups: None
 Thumb target parent: Thumb
 Thumb target mesh: Thumb.004
-Thumb target materials: PLA White, Urethane, 
+Thumb target materials: None
 Thumb target modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
