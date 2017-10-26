@@ -5043,23 +5043,24 @@ Inner Proximal.002 modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #3 Name: Subsurf, Type: SUBSURF
+  #3 Name: Bevel, Type: BEVEL
+  #4 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #4 Name: BooleanUnion.M2 bolt hole, Type: BOOLEAN
+  #5 Name: BooleanUnion.M2 bolt hole, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN UNION proximal M2 Bolt Hole.002
-  #5 Name: BooleanUnion.Tendon channels, Type: BOOLEAN
+  #6 Name: BooleanUnion.Tendon channels, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN UNION Tendon channels proximal.002
-  #6 Name: Boolean.ligament, Type: BOOLEAN
+  #7 Name: Boolean.ligament, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament.002
-  #7 Name: Boolean.Tendon channels, Type: BOOLEAN
+  #8 Name: Boolean.Tendon channels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels proximal.002
-  #8 Name: Boolean.M2 bolt hole, Type: BOOLEAN
+  #9 Name: Boolean.M2 bolt hole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.002
-  #9 Name: Boolean.Spring pegs, Type: BOOLEAN
+  #10 Name: Boolean.Spring pegs, Type: BOOLEAN
         Operation: UNION, Object: Spring pegs proximal.002
-  #10 Name: Boolean.identifier, Type: BOOLEAN
+  #11 Name: Boolean.identifier, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.002
-  #11 Name: Boolean, Type: BOOLEAN
+  #12 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Riser Chanel.008
 
 Name: Inner Proximal.003
