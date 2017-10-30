@@ -103,9 +103,31 @@ BOOLEAN Thumb Cover  materials: Boolean difference,
 BOOLEAN Thumb Cover  modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #2 Name: Solidify, Type: SOLIDIFY
+
+Name: BOOLEAN Thumb Cover 0.2mm Clearance
+BOOLEAN Thumb Cover 0.2mm Clearance Type: MESH
+BOOLEAN Thumb Cover 0.2mm Clearance transform: X7.593430042266846 Y48.668296813964844 Z0.0
+BOOLEAN Thumb Cover 0.2mm Clearance rotation: X1.5707963705062866 Y-0.0 Z0.7853981852531433
+BOOLEAN Thumb Cover 0.2mm Clearance scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb Cover 0.2mm Clearance groups: None
+BOOLEAN Thumb Cover 0.2mm Clearance mesh: Plane
+BOOLEAN Thumb Cover 0.2mm Clearance materials: Boolean difference, 
+BOOLEAN Thumb Cover 0.2mm Clearance modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.20, Offset: 1.00 
-        Even thickness: False, High Quality Normals: False
+        Even thickness: False, High Quality Normals: True  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN Thumb Cover M2 Bolt Hole 
+BOOLEAN Thumb Cover M2 Bolt Hole  Type: MESH
+BOOLEAN Thumb Cover M2 Bolt Hole  transform: X8.548238754272461 Y44.41690444946289 Z0.11019226163625717
+BOOLEAN Thumb Cover M2 Bolt Hole  rotation: X1.6165367364883423 Y0.9121025800704956 Z-2.1824474334716797
+BOOLEAN Thumb Cover M2 Bolt Hole  scale: X1.0 Y0.9999994039535522 Z0.9999999403953552
+BOOLEAN Thumb Cover M2 Bolt Hole  groups: Thumb, 
+BOOLEAN Thumb Cover M2 Bolt Hole  mesh: BOOLEAN Thumb tendon termination M2 bolt hole.001
+BOOLEAN Thumb Cover M2 Bolt Hole  materials: Boolean difference, 
+BOOLEAN Thumb Cover M2 Bolt Hole  modifiers: None
+
 Name: BOOLEAN Thumb ligament cover M2 bolt hole for thumb
 BOOLEAN Thumb ligament cover M2 bolt hole for thumb Type: MESH
 BOOLEAN Thumb ligament cover M2 bolt hole for thumb transform: X-10.5 Y-1.0490620136260986 Z-3.2654056549072266
@@ -140,8 +162,8 @@ BOOLEAN Thumb tendon channel for thumb modifiers:
 
 Name: BOOLEAN Thumb tendon termination M2 bolt hole
 BOOLEAN Thumb tendon termination M2 bolt hole Type: MESH
-BOOLEAN Thumb tendon termination M2 bolt hole transform: X5.08001184463501 Y39.86826705932617 Z-7.505345251956896e-07
-BOOLEAN Thumb tendon termination M2 bolt hole rotation: X-0.4363322854042053 Y-1.570796251296997 Z0.0
+BOOLEAN Thumb tendon termination M2 bolt hole transform: X5.080009937286377 Y39.86826705932617 Z-7.505345251956896e-07
+BOOLEAN Thumb tendon termination M2 bolt hole rotation: X1.6165367364883423 Y0.9121025800704956 Z-2.1824474334716797
 BOOLEAN Thumb tendon termination M2 bolt hole scale: X1.0 Y0.9999994039535522 Z0.9999999403953552
 BOOLEAN Thumb tendon termination M2 bolt hole groups: Thumb, 
 BOOLEAN Thumb tendon termination M2 bolt hole mesh: BOOLEAN Thumb tendon termination M2 bolt hole
@@ -359,10 +381,12 @@ Thumb modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon termination M2 bolt hole
   #8 Name: Boolean.ThumbLigamentCoverM2BoltHole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 bolt hole for thumb
-  #9 Name: Boolean, Type: BOOLEAN
+  #9 Name: Boolean.BOOLEAN Thumb Cover M2 Bolt Hole , Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb Cover M2 Bolt Hole 
+  #10 Name: Boolean.BOOLEAN Ligament extra thumb cut, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament extra thumb cut
-  #10 Name: Boolean.BOOLEAN Thumb Cover , Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb Cover 
+  #11 Name: Boolean.BOOLEAN Thumb Cover , Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb Cover 0.2mm Clearance
 
 Name: Thumb Cover
 Thumb Cover Type: MESH
@@ -388,9 +412,11 @@ Thumb Cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon termination M2 bolt hole
   #8 Name: Boolean.ThumbLigamentCoverM2BoltHole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 bolt hole for thumb
-  #9 Name: Boolean, Type: BOOLEAN
+  #9 Name: Boolean.BOOLEAN Thumb Cover M2 Bolt Hole , Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb Cover M2 Bolt Hole 
+  #10 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament extra thumb cut
-  #10 Name: Boolean.001, Type: BOOLEAN
+  #11 Name: Boolean.001, Type: BOOLEAN
         Operation: INTERSECT, Object: BOOLEAN Thumb Cover 
 
 Name: Thumb ligament 
