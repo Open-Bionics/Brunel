@@ -1,3 +1,13 @@
+Name: BOOLEAN Cover Internal M2 Clearance 
+BOOLEAN Cover Internal M2 Clearance  Type: MESH
+BOOLEAN Cover Internal M2 Clearance  transform: X0.2906527519226074 Y41.22807312011719 Z1.3429985046386719
+BOOLEAN Cover Internal M2 Clearance  rotation: X3.851036310195923 Y-1.6007909774780273 Z-1.3615447282791138
+BOOLEAN Cover Internal M2 Clearance  scale: X1.0 Y1.0 Z1.0
+BOOLEAN Cover Internal M2 Clearance  groups: None
+BOOLEAN Cover Internal M2 Clearance  mesh: Cube.007
+BOOLEAN Cover Internal M2 Clearance  materials: Boolean difference, 
+BOOLEAN Cover Internal M2 Clearance  modifiers: None
+
 Name: BOOLEAN Ligament extra thumb cut
 BOOLEAN Ligament extra thumb cut Type: MESH
 BOOLEAN Ligament extra thumb cut transform: X7.94984245300293 Y-10.803619384765625 Z8.560826301574707
@@ -57,6 +67,16 @@ BOOLEAN MOULD Riser groups: None
 BOOLEAN MOULD Riser mesh: BOOLEAN MOULD Runner
 BOOLEAN MOULD Riser materials: Boolean difference, 
 BOOLEAN MOULD Riser modifiers: None
+
+Name: BOOLEAN Riser Channels
+BOOLEAN Riser Channels Type: MESH
+BOOLEAN Riser Channels transform: X5.2893829345703125 Y33.76700210571289 Z5.214756011962891
+BOOLEAN Riser Channels rotation: X-1.5703626871109009 Y-0.935325026512146 Z0.9028912782669067
+BOOLEAN Riser Channels scale: X0.1250000149011612 Y0.1250000149011612 Z1.0
+BOOLEAN Riser Channels groups: None
+BOOLEAN Riser Channels mesh: Cylinder.006
+BOOLEAN Riser Channels materials: Boolean difference, 
+BOOLEAN Riser Channels modifiers: None
 
 Name: BOOLEAN Spring cut out
 BOOLEAN Spring cut out Type: MESH
@@ -120,7 +140,7 @@ BOOLEAN Thumb Cover 0.2mm Clearance modifiers:
 
 Name: BOOLEAN Thumb Cover M2 Bolt Hole 
 BOOLEAN Thumb Cover M2 Bolt Hole  Type: MESH
-BOOLEAN Thumb Cover M2 Bolt Hole  transform: X8.548238754272461 Y44.41690444946289 Z0.11019226163625717
+BOOLEAN Thumb Cover M2 Bolt Hole  transform: X9.749602317810059 Y45.99051284790039 Z0.09532958269119263
 BOOLEAN Thumb Cover M2 Bolt Hole  rotation: X1.6165367364883423 Y0.9121025800704956 Z-2.1824474334716797
 BOOLEAN Thumb Cover M2 Bolt Hole  scale: X1.0 Y0.9999994039535522 Z0.9999999403953552
 BOOLEAN Thumb Cover M2 Bolt Hole  groups: Thumb, 
@@ -387,6 +407,8 @@ Thumb modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Ligament extra thumb cut
   #11 Name: Boolean.BOOLEAN Thumb Cover , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb Cover 0.2mm Clearance
+  #12 Name: Boolean.BOOLEAN Riser Channels, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Riser Channels
 
 Name: Thumb Cover
 Thumb Cover Type: MESH
@@ -414,10 +436,12 @@ Thumb Cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 bolt hole for thumb
   #9 Name: Boolean.BOOLEAN Thumb Cover M2 Bolt Hole , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb Cover M2 Bolt Hole 
-  #10 Name: Boolean, Type: BOOLEAN
+  #10 Name: Boolean.BOOLEAN Ligament extra thumb cut, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament extra thumb cut
-  #11 Name: Boolean.001, Type: BOOLEAN
+  #11 Name: Boolean.BOOLEAN Thumb Cover , Type: BOOLEAN
         Operation: INTERSECT, Object: BOOLEAN Thumb Cover 
+  #12 Name: Boolean.BOOLEAN Cover Internal M2 Clearance , Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Cover Internal M2 Clearance 
 
 Name: Thumb ligament 
 Thumb ligament  Type: MESH
