@@ -5232,7 +5232,7 @@ M2 Bolt.005 modifiers: None
 
 Name: M2 Bolt.006
 M2 Bolt.006 Type: MESH
-M2 Bolt.006 transform: X-35.738075256347656 Y35.738059997558594 Z2.6750917434692383
+M2 Bolt.006 transform: X-33.421714782714844 Y33.460304260253906 Z1.893141269683838
 M2 Bolt.006 rotation: X0.0 Y-0.0 Z5.4977874755859375
 M2 Bolt.006 scale: X1.0 Y1.0 Z1.0
 M2 Bolt.006 groups: None
@@ -5282,7 +5282,7 @@ M2 Bolt.010 modifiers: None
 
 Name: M2 Bolt.011
 M2 Bolt.011 Type: MESH
-M2 Bolt.011 transform: X-40.93727111816406 Y40.937255859375 Z2.6750917434692383
+M2 Bolt.011 transform: X-38.698123931884766 Y38.65950012207031 Z1.9303770065307617
 M2 Bolt.011 rotation: X0.0 Y-0.0 Z5.4977874755859375
 M2 Bolt.011 scale: X1.0 Y1.0 Z1.0
 M2 Bolt.011 groups: None
@@ -5412,43 +5412,43 @@ MOULD Mounting plate.001 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN M3 bolt hole.008
   #3 Name: X-SEC, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cross section.001
-  #4 Name: Boolean, Type: BOOLEAN
+  #4 Name: Prox 4 (1), Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cylinder.004
-  #5 Name: Boolean.001, Type: BOOLEAN
+  #5 Name: Prox 1, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cylinder.000
-  #6 Name: Boolean.002, Type: BOOLEAN
+  #6 Name: Prox 2, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cylinder.003
-  #7 Name: Boolean.003, Type: BOOLEAN
+  #7 Name: Prox 3, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cylinder.006
-  #8 Name: Boolean.006, Type: BOOLEAN
+  #8 Name: Dist 3 (1), Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cube.023
-  #9 Name: Boolean.009, Type: BOOLEAN
+  #9 Name: Prox 4 (2), Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cylinder.007
   #10 Name: Boolean.011, Type: BOOLEAN
         Operation: UNION, Object: Distal Step.004
   #11 Name: M2 Bolt, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: M2 Bolt.001
+        Operation: UNION, Object: M2 Bolt.001
   #12 Name: Boolean.012, Type: BOOLEAN
         Operation: DIFFERENCE, Object: ID.016
-  #13 Name: Finger Top cut out, Type: BOOLEAN
+  #13 Name: Finger top cut dist 4, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Finger cut out.003
   #14 Name: xsec, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cross section 4.001
-  #15 Name: Boolean.013, Type: BOOLEAN
+  #15 Name: Finger top cut dist 1, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Finger cut out.004
-  #16 Name: Boolean.014, Type: BOOLEAN
+  #16 Name: Finger top cut dist 3, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Finger cut out.005
-  #17 Name: Boolean.015, Type: BOOLEAN
+  #17 Name: Finger top cut dist 2, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Finger cut out.006
-  #18 Name: Boolean.016, Type: BOOLEAN
+  #18 Name: Prox 3 (2), Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cylinder.008
-  #19 Name: Boolean.017, Type: BOOLEAN
+  #19 Name: Dista 4, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cylinder.009
-  #20 Name: Boolean.018, Type: BOOLEAN
+  #20 Name: Prox 1 (2), Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cylinder.010
-  #21 Name: Boolean.019, Type: BOOLEAN
+  #21 Name: Prox 2 (2), Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cylinder.011
-  #22 Name: Boolean.004, Type: BOOLEAN
+  #22 Name: Extension, Type: BOOLEAN
         Operation: UNION, Object: Extension
 
 Name: MOULD Plunger
