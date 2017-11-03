@@ -1376,6 +1376,44 @@ BOOLEAN Thumb Cutout Urethane modifiers:
   #8 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cube.002
 
+Name: BOOLEAN Thumb Ligament Cover
+BOOLEAN Thumb Ligament Cover Type: MESH
+BOOLEAN Thumb Ligament Cover transform: X-6.998704433441162 Y-66.19110870361328 Z-17.999996185302734
+BOOLEAN Thumb Ligament Cover rotation: X3.1374785900115967 Y-0.015707964077591896 Z1.3962633609771729
+BOOLEAN Thumb Ligament Cover scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb Ligament Cover groups: None
+BOOLEAN Thumb Ligament Cover mesh: Cube.025
+BOOLEAN Thumb Ligament Cover materials: None
+BOOLEAN Thumb Ligament Cover modifiers: 
+  #1 Name: Displace, Type: DISPLACE
+  #2 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN Thumb ligament cover clip
+BOOLEAN Thumb ligament cover clip Type: MESH
+BOOLEAN Thumb ligament cover clip transform: X-6.09822940826416 Y-57.35948181152344 Z-12.033199310302734
+BOOLEAN Thumb ligament cover clip rotation: X0.0 Y-0.0 Z-0.17453289031982422
+BOOLEAN Thumb ligament cover clip scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb ligament cover clip groups: Actuator Block, Thumb, 
+BOOLEAN Thumb ligament cover clip parent: Actuator Block
+BOOLEAN Thumb ligament cover clip mesh: Thumb Ligament Cover.001
+BOOLEAN Thumb ligament cover clip materials: Boolean difference, 
+BOOLEAN Thumb ligament cover clip modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean.ThumbLigamentCoverM2BoltHole, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 Bolt Hole
+  #3 Name: Boolean.ThumbTendonChannel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon channel
+  #4 Name: Boolean.ThumbPivotDowel002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel.002
+  #5 Name: Boolean.ElasticClamp, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament elastic clamp
+  #6 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN thumb spring termination.001
+  #7 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Thumb spring channel
+  #8 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cube.002
+
 Name: BOOLEAN Thumb ligament cover for inner palm
 BOOLEAN Thumb ligament cover for inner palm Type: MESH
 BOOLEAN Thumb ligament cover for inner palm transform: X-15.940424919128418 Y-47.73994827270508 Z-11.991230010986328
@@ -1932,7 +1970,7 @@ Empty.003 groups: None
 Name: Empty.004
 Empty.004 Type: EMPTY
 Empty.004 transform: X-6.998706340789795 Y-66.19111633300781 Z-18.0
-Empty.004 rotation: X2.7939677238464355e-09 Y-2.9802322387695312e-08 Z-0.17453289031982422
+Empty.004 rotation: X2.7939677238464355e-09 Y0.0 Z-0.17453289031982422
 Empty.004 scale: X1.0 Y1.0 Z1.0
 Empty.004 groups: None
 
@@ -2941,6 +2979,19 @@ Spring pegs proximal.002 modifiers:
   #2 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Top cover proximal.002
 
+Name: TARGET Urethane Pad COPY.001
+TARGET Urethane Pad COPY.001 Type: MESH
+TARGET Urethane Pad COPY.001 transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+TARGET Urethane Pad COPY.001 rotation: X0.0 Y-0.0 Z0.0
+TARGET Urethane Pad COPY.001 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+TARGET Urethane Pad COPY.001 groups: Actuator Block, 
+TARGET Urethane Pad COPY.001 parent: Actuator Block
+TARGET Urethane Pad COPY.001 mesh: Palm Inner.013
+TARGET Urethane Pad COPY.001 materials: Urethane, 
+TARGET Urethane Pad COPY.001 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: Tendon pivot dowel
 Tendon pivot dowel Type: MESH
 Tendon pivot dowel transform: X-10.42773723602295 Y-15.0 Z-6.5532379150390625
@@ -3002,6 +3053,45 @@ Thumb ligament cover mesh: Thumb Ligament Cover
 Thumb ligament cover materials: PLA, 
 Thumb ligament cover modifiers: None
 
+Name: Thumb Ligament Cover 
+Thumb Ligament Cover  Type: MESH
+Thumb Ligament Cover  transform: X-6.998704433441162 Y-66.19110870361328 Z-17.999996185302734
+Thumb Ligament Cover  rotation: X3.137685775756836 Y-0.015713384374976158 Z1.3962633609771729
+Thumb Ligament Cover  scale: X1.0 Y1.0 Z1.0
+Thumb Ligament Cover  groups: None
+Thumb Ligament Cover  mesh: Cube.026
+Thumb Ligament Cover  materials: None
+Thumb Ligament Cover  modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: INTERSECT, Object: TARGET Urethane Pad COPY.001
+  #3 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 Bolt Hole
+  #4 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon channel
+  #5 Name: Boolean.003, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel.002
+  #6 Name: Boolean.004, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament elastic clamp
+  #7 Name: Boolean.005, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN thumb spring termination.001
+  #8 Name: Boolean.006, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Thumb spring channel
+  #9 Name: Boolean.007, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover clip
+
+Name: Thumb Ligament Cover .001
+Thumb Ligament Cover .001 Type: MESH
+Thumb Ligament Cover .001 transform: X-6.998704433441162 Y-66.19110870361328 Z-17.999996185302734
+Thumb Ligament Cover .001 rotation: X3.1374785900115967 Y-0.015707964077591896 Z1.3962633609771729
+Thumb Ligament Cover .001 scale: X1.0 Y1.0 Z1.0
+Thumb Ligament Cover .001 groups: None
+Thumb Ligament Cover .001 mesh: Cube.026
+Thumb Ligament Cover .001 materials: None
+Thumb Ligament Cover .001 modifiers: 
+  #1 Name: Displace, Type: DISPLACE
+  #2 Name: Bevel, Type: BEVEL
+
 Name: Thumb ligament cover clip
 Thumb ligament cover clip Type: MESH
 Thumb ligament cover clip transform: X-13.561469078063965 Y-46.63640594482422 Z-12.030467987060547
@@ -3016,32 +3106,6 @@ Thumb ligament cover clip modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament elastic clamp
   #2 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Thumb spring channel
-
-Name: Thumb ligament cover COPY
-Thumb ligament cover COPY Type: MESH
-Thumb ligament cover COPY transform: X-6.09822940826416 Y-57.35948181152344 Z-12.033199310302734
-Thumb ligament cover COPY rotation: X0.0 Y-0.0 Z-0.17453289031982422
-Thumb ligament cover COPY scale: X1.0 Y1.0 Z1.0
-Thumb ligament cover COPY groups: Actuator Block, Thumb, 
-Thumb ligament cover COPY parent: Actuator Block
-Thumb ligament cover COPY mesh: Thumb Ligament Cover.001
-Thumb ligament cover COPY materials: PLA, 
-Thumb ligament cover COPY modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-  #2 Name: Boolean.ThumbLigamentCoverM2BoltHole, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 Bolt Hole
-  #3 Name: Boolean.ThumbTendonChannel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon channel
-  #4 Name: Boolean.ThumbPivotDowel002, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel.002
-  #5 Name: Boolean.ElasticClamp, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament elastic clamp
-  #6 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN thumb spring termination.001
-  #7 Name: Boolean.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Thumb spring channel
-  #8 Name: Boolean.002, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Cube.002
 
 Name: Thumb ligament cover for thumb
 Thumb ligament cover for thumb Type: MESH
@@ -3192,12 +3256,12 @@ Urethane Pad COPY modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Palm Inner simplified
   #3 Name: Boolean.ThumbLigamentCoverforNewPalm, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for new palm
-  #4 Name: Boolean.ThumbSweptArea, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area
-  #5 Name: Boolean.ThumbAccess, Type: BOOLEAN
+  #4 Name: Boolean.ThumbAccess, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN thumb access
-  #6 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb Cutout Urethane
+  #5 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
+  #6 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb Ligament Cover
 
 Name: Urethane skin
 Urethane skin Type: MESH
