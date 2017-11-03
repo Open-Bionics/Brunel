@@ -2503,7 +2503,7 @@ Cylinder modifiers: None
 
 Name: Cylinder.000
 Cylinder.000 Type: MESH
-Cylinder.000 transform: X0.08532881736755371 Y45.71010208129883 Z2.303455114364624
+Cylinder.000 transform: X0.08532881736755371 Y64.38485717773438 Z2.303455114364624
 Cylinder.000 rotation: X0.0 Y0.0 Z0.0
 Cylinder.000 scale: X1.0 Y1.0 Z1.0
 Cylinder.000 groups: None
@@ -2535,7 +2535,7 @@ Cylinder.002 modifiers: None
 
 Name: Cylinder.003
 Cylinder.003 Type: MESH
-Cylinder.003 transform: X45.71010208129883 Y-0.08533096313476562 Z2.303454875946045
+Cylinder.003 transform: X64.05125427246094 Y-0.08533176779747009 Z2.303454875946045
 Cylinder.003 rotation: X0.0 Y-0.0 Z-1.5707963705062866
 Cylinder.003 scale: X1.0 Y1.0 Z1.0
 Cylinder.003 groups: None
@@ -2566,7 +2566,7 @@ Cylinder.005 modifiers: None
 
 Name: Cylinder.006
 Cylinder.006 Type: MESH
-Cylinder.006 transform: X-0.08533477783203125 Y-45.71010208129883 Z2.303454637527466
+Cylinder.006 transform: X-0.08533580601215363 Y-52.51140594482422 Z2.303454637527466
 Cylinder.006 rotation: X0.0 Y0.0 Z3.141592502593994
 Cylinder.006 scale: X1.0 Y1.0 Z1.0
 Cylinder.006 groups: None
@@ -2583,6 +2583,46 @@ Cylinder.007 groups: None
 Cylinder.007 mesh: Cylinder.011
 Cylinder.007 materials: Boolean difference.002, 
 Cylinder.007 modifiers: None
+
+Name: Cylinder.008
+Cylinder.008 Type: MESH
+Cylinder.008 transform: X-0.08533787727355957 Y-66.22928619384766 Z2.303454637527466
+Cylinder.008 rotation: X0.0 Y0.0 Z3.141592502593994
+Cylinder.008 scale: X1.0 Y1.0 Z1.0
+Cylinder.008 groups: None
+Cylinder.008 mesh: Cylinder.003
+Cylinder.008 materials: Boolean difference.002, 
+Cylinder.008 modifiers: None
+
+Name: Cylinder.009
+Cylinder.009 Type: MESH
+Cylinder.009 transform: X-33.323341369628906 Y-33.279476165771484 Z2.303454637527466
+Cylinder.009 rotation: X0.0 Y0.0 Z3.141592502593994
+Cylinder.009 scale: X1.0 Y1.0 Z1.0
+Cylinder.009 groups: None
+Cylinder.009 mesh: Cylinder.008
+Cylinder.009 materials: Boolean difference.002, 
+Cylinder.009 modifiers: None
+
+Name: Cylinder.010
+Cylinder.010 Type: MESH
+Cylinder.010 transform: X0.08532881736755371 Y43.63512420654297 Z2.303455114364624
+Cylinder.010 rotation: X0.0 Y0.0 Z0.0
+Cylinder.010 scale: X1.0 Y1.0 Z1.0
+Cylinder.010 groups: None
+Cylinder.010 mesh: Cylinder.013
+Cylinder.010 materials: Boolean difference.002, 
+Cylinder.010 modifiers: None
+
+Name: Cylinder.011
+Cylinder.011 Type: MESH
+Cylinder.011 transform: X43.49364471435547 Y-0.08533086627721786 Z2.303454875946045
+Cylinder.011 rotation: X0.0 Y-0.0 Z-1.5707963705062866
+Cylinder.011 scale: X1.0 Y1.0 Z1.0
+Cylinder.011 groups: None
+Cylinder.011 mesh: Cylinder.015
+Cylinder.011 materials: Boolean difference.002, 
+Cylinder.011 modifiers: None
 
 Name: Distal Phalanx.001
 Distal Phalanx.001 Type: EMPTY
@@ -2751,8 +2791,8 @@ Finger cut out.002 modifiers: None
 
 Name: Finger cut out.003
 Finger cut out.003 Type: MESH
-Finger cut out.003 transform: X-61.767669677734375 Y-61.767704010009766 Z0.0
-Finger cut out.003 rotation: X0.0 Y-0.0 Z2.356194496154785
+Finger cut out.003 transform: X-75.55585479736328 Y-75.40115356445312 Z0.0
+Finger cut out.003 rotation: X0.0 Y-0.0 Z7.062939643859863
 Finger cut out.003 scale: X4.0 Y1.0 Z1.0
 Finger cut out.003 groups: None
 Finger cut out.003 mesh: BOOLEAN finger cut out - mount.003
@@ -2761,13 +2801,33 @@ Finger cut out.003 modifiers: None
 
 Name: Finger cut out.004
 Finger cut out.004 Type: MESH
-Finger cut out.004 transform: X-107.89437103271484 Y107.89448547363281 Z0.0
-Finger cut out.004 rotation: X0.0 Y-0.0 Z3.9269909858703613
+Finger cut out.004 transform: X-118.67999267578125 Y22.681222915649414 Z0.0
+Finger cut out.004 rotation: X0.0 Y0.0 Z5.4977874755859375
 Finger cut out.004 scale: X4.0 Y1.0 Z1.0
 Finger cut out.004 groups: None
 Finger cut out.004 mesh: BOOLEAN finger cut out - mount.004
 Finger cut out.004 materials: Boolean difference.002, 
 Finger cut out.004 modifiers: None
+
+Name: Finger cut out.005
+Finger cut out.005 Type: MESH
+Finger cut out.005 transform: X73.12654876708984 Y-75.33440399169922 Z0.0
+Finger cut out.005 rotation: X0.0 Y-0.0 Z8.619812965393066
+Finger cut out.005 scale: X4.0 Y1.0 Z1.0
+Finger cut out.005 groups: None
+Finger cut out.005 mesh: BOOLEAN finger cut out - mount.005
+Finger cut out.005 materials: Boolean difference.002, 
+Finger cut out.005 modifiers: None
+
+Name: Finger cut out.006
+Finger cut out.006 Type: MESH
+Finger cut out.006 transform: X23.790742874145508 Y119.7895278930664 Z0.0
+Finger cut out.006 rotation: X0.0 Y-0.0 Z3.9269912242889404
+Finger cut out.006 scale: X4.0 Y1.0 Z1.0
+Finger cut out.006 groups: None
+Finger cut out.006 mesh: BOOLEAN finger cut out - mount.006
+Finger cut out.006 materials: Boolean difference.002, 
+Finger cut out.006 modifiers: None
 
 Name: Finger Dummy Models
 Finger Dummy Models Type: EMPTY
@@ -3770,7 +3830,7 @@ Inner distal 4 MOULD modifiers:
 Name: Inner distal Dummy.002
 Inner distal Dummy.002 Type: MESH
 Inner distal Dummy.002 transform: X-1.2604448795318604 Y-3.4492452144622803 Z0.0
-Inner distal Dummy.002 rotation: X0.0 Y-0.0 Z-0.7573325037956238
+Inner distal Dummy.002 rotation: X0.0 Y0.0 Z-0.7573325037956238
 Inner distal Dummy.002 scale: X1.0 Y1.0 Z1.0
 Inner distal Dummy.002 groups: None
 Inner distal Dummy.002 parent: Finger Dummy Models
@@ -3781,7 +3841,7 @@ Inner distal Dummy.002 modifiers: None
 Name: Inner distal Dummy.003
 Inner distal Dummy.003 Type: MESH
 Inner distal Dummy.003 transform: X2.2965126037597656 Y-2.321491241455078 Z0.0
-Inner distal Dummy.003 rotation: X0.0 Y-0.0 Z3.921581983566284
+Inner distal Dummy.003 rotation: X0.0 Y0.0 Z3.9215822219848633
 Inner distal Dummy.003 scale: X1.0 Y1.0 Z1.0
 Inner distal Dummy.003 groups: None
 Inner distal Dummy.003 parent: Finger Dummy Models
@@ -3792,8 +3852,8 @@ Inner distal Dummy.003 modifiers: None
 Name: Inner distal Dummy.004
 Inner distal Dummy.004 Type: MESH
 Inner distal Dummy.004 transform: X-6.334475517272949 Y-6.334475517272949 Z0.0
-Inner distal Dummy.004 rotation: X0.0 Y-0.0 Z2.356194496154785
-Inner distal Dummy.004 scale: X1.0 Y1.0 Z1.0
+Inner distal Dummy.004 rotation: X0.0 Y-0.0 Z2.3561947345733643
+Inner distal Dummy.004 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Inner distal Dummy.004 groups: None
 Inner distal Dummy.004 parent: Finger Dummy Models
 Inner distal Dummy.004 mesh: Inner distal.010
@@ -3903,8 +3963,8 @@ Inner distal TARGET.004 modifiers:
 Name: Inner distal Dummy.001
 Inner distal Dummy.001 Type: MESH
 Inner distal Dummy.001 transform: X2.283397912979126 Y-2.2834055423736572 Z0.0
-Inner distal Dummy.001 rotation: X0.0 Y0.0 Z0.7853981852531433
-Inner distal Dummy.001 scale: X1.0 Y1.0 Z1.0
+Inner distal Dummy.001 rotation: X0.0 Y-0.0 Z0.7853981852531433
+Inner distal Dummy.001 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Inner distal Dummy.001 groups: None
 Inner distal Dummy.001 parent: Finger Dummy Models
 Inner distal Dummy.001 mesh: Inner distal.007
@@ -4251,7 +4311,7 @@ Inner Proximal Dummy.001 modifiers: None
 Name: Inner Proximal Dummy.002
 Inner Proximal Dummy.002 Type: MESH
 Inner Proximal Dummy.002 transform: X-2.7897300720214844 Y-0.00695439288392663 Z0.0
-Inner Proximal Dummy.002 rotation: X0.0 Y-0.0 Z4.71238899230957
+Inner Proximal Dummy.002 rotation: X0.0 Y0.0 Z4.71238899230957
 Inner Proximal Dummy.002 scale: X1.0 Y1.0 Z1.0
 Inner Proximal Dummy.002 groups: None
 Inner Proximal Dummy.002 parent: Finger Dummy Models
@@ -4262,7 +4322,7 @@ Inner Proximal Dummy.002 modifiers: None
 Name: Inner Proximal Dummy.003
 Inner Proximal Dummy.003 Type: MESH
 Inner Proximal Dummy.003 transform: X3.822455710178474e-06 Y-6.723796844482422 Z0.0
-Inner Proximal Dummy.003 rotation: X0.0 Y0.0 Z3.1415927410125732
+Inner Proximal Dummy.003 rotation: X0.0 Y-0.0 Z3.1415929794311523
 Inner Proximal Dummy.003 scale: X1.0 Y1.0 Z1.0
 Inner Proximal Dummy.003 groups: None
 Inner Proximal Dummy.003 parent: Finger Dummy Models
@@ -5140,7 +5200,7 @@ M2 Bolt.002 modifiers: None
 
 Name: M2 Bolt.003
 M2 Bolt.003 Type: MESH
-M2 Bolt.003 transform: X-8.388438800466247e-06 Y52.86211013793945 Z2.6750917434692383
+M2 Bolt.003 transform: X-8.388438800466247e-06 Y50.31519317626953 Z1.9159120321273804
 M2 Bolt.003 rotation: X0.0 Y-0.0 Z4.71238899230957
 M2 Bolt.003 scale: X1.0 Y1.0 Z1.0
 M2 Bolt.003 groups: None
@@ -5190,7 +5250,7 @@ M2 Bolt.007 modifiers: None
 
 Name: M2 Bolt.008
 M2 Bolt.008 Type: MESH
-M2 Bolt.008 transform: X-34.23210906982422 Y-34.23210525512695 Z2.6750919818878174
+M2 Bolt.008 transform: X-45.29863739013672 Y-45.29863357543945 Z2.6750919818878174
 M2 Bolt.008 rotation: X0.0 Y-0.0 Z0.7853981852531433
 M2 Bolt.008 scale: X1.0 Y1.0 Z1.0
 M2 Bolt.008 groups: None
@@ -5248,8 +5308,8 @@ M2 Bolts groups: None
 Name: MOULD Bottom
 MOULD Bottom Type: MESH
 MOULD Bottom transform: X0.0 Y0.0 Z0.0
-MOULD Bottom rotation: X0.0 Y0.0 Z3.9269907474517822
-MOULD Bottom scale: X1.2000000476837158 Y1.2000000476837158 Z1.0
+MOULD Bottom rotation: X0.0 Y0.0 Z0.0
+MOULD Bottom scale: X1.0 Y1.0 Z1.0
 MOULD Bottom groups: None
 MOULD Bottom mesh: Circle
 MOULD Bottom materials: NF Black, 
@@ -5277,7 +5337,7 @@ Name: MOULD Bottom tray
 MOULD Bottom tray Type: MESH
 MOULD Bottom tray transform: X0.0 Y0.0 Z-11.944576263427734
 MOULD Bottom tray rotation: X0.0 Y0.0 Z0.0
-MOULD Bottom tray scale: X1.2000000476837158 Y1.2000000476837158 Z1.0
+MOULD Bottom tray scale: X1.0 Y1.0 Z1.0
 MOULD Bottom tray groups: None
 MOULD Bottom tray mesh: Circle.004
 MOULD Bottom tray materials: None
@@ -5358,36 +5418,42 @@ MOULD Mounting plate.001 modifiers:
         Operation: DIFFERENCE, Object: Cylinder.003
   #7 Name: Boolean.003, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cylinder.006
-  #8 Name: Boolean.004, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #9 Name: Boolean.005, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #10 Name: Boolean.006, Type: BOOLEAN
+  #8 Name: Boolean.006, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cube.023
-  #11 Name: Boolean.007, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #12 Name: Boolean.008, Type: BOOLEAN
+  #9 Name: Boolean.008, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cube.025
-  #13 Name: Boolean.009, Type: BOOLEAN
+  #10 Name: Boolean.009, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cylinder.007
-  #14 Name: Boolean.011, Type: BOOLEAN
+  #11 Name: Boolean.011, Type: BOOLEAN
         Operation: UNION, Object: Distal Step.004
-  #15 Name: Boolean.010, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: M2 Bolt.001
-  #16 Name: Boolean.012, Type: BOOLEAN
+  #12 Name: M2 Bolt, Type: BOOLEAN
+        Operation: UNION, Object: M2 Bolt.001
+  #13 Name: Boolean.012, Type: BOOLEAN
         Operation: DIFFERENCE, Object: ID.016
-  #17 Name: Finger Top cut out, Type: BOOLEAN
+  #14 Name: Finger Top cut out, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Finger cut out.003
-  #18 Name: xsec, Type: BOOLEAN
+  #15 Name: xsec, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cross section 4.001
-  #19 Name: Boolean.013, Type: BOOLEAN
+  #16 Name: Boolean.013, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Finger cut out.004
+  #17 Name: Boolean.014, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Finger cut out.005
+  #18 Name: Boolean.015, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Finger cut out.006
+  #19 Name: Boolean.016, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cylinder.008
+  #20 Name: Boolean.017, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cylinder.009
+  #21 Name: Boolean.018, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cylinder.010
+  #22 Name: Boolean.019, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cylinder.011
 
 Name: MOULD Plunger
 MOULD Plunger Type: MESH
 MOULD Plunger transform: X0.0 Y0.0 Z49.98728942871094
 MOULD Plunger rotation: X0.0 Y0.0 Z0.0
-MOULD Plunger scale: X1.0153703689575195 Y1.015370488166809 Z1.0
+MOULD Plunger scale: X1.0 Y1.0 Z1.0
 MOULD Plunger groups: None
 MOULD Plunger mesh: BOOLEAN Mould v2 hopper.001
 MOULD Plunger materials: None
