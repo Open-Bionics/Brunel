@@ -2380,18 +2380,6 @@ Cube.023 modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
-Name: Cube.025
-Cube.025 Type: MESH
-Cube.025 transform: X-27.641206741333008 Y-27.641193389892578 Z3.4751620292663574
-Cube.025 rotation: X0.0 Y0.0 Z2.356194257736206
-Cube.025 scale: X1.0 Y1.0 Z1.0
-Cube.025 groups: None
-Cube.025 mesh: Cube.022
-Cube.025 materials: Boolean difference.002, 
-Cube.025 modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-
 Name: Cube.026
 Cube.026 Type: MESH
 Cube.026 transform: X3.814697265625e-06 Y3.814697265625e-06 Z9.5367431640625e-07
@@ -2545,7 +2533,7 @@ Cylinder.003 modifiers: None
 
 Name: Cylinder.004
 Cylinder.004 Type: MESH
-Cylinder.004 transform: X-43.7536735534668 Y0.009592242538928986 Z3.6140098571777344
+Cylinder.004 transform: X-68.9371337890625 Y0.009592242538928986 Z3.6140098571777344
 Cylinder.004 rotation: X0.0 Y-0.0 Z1.5707963705062866
 Cylinder.004 scale: X0.6433810591697693 Y0.6433810591697693 Z0.6433810591697693
 Cylinder.004 groups: None
@@ -2576,7 +2564,7 @@ Cylinder.006 modifiers: None
 
 Name: Cylinder.007
 Cylinder.007 Type: MESH
-Cylinder.007 transform: X-51.94216537475586 Y0.009591877460479736 Z3.6140098571777344
+Cylinder.007 transform: X-77.29240417480469 Y0.009590769186615944 Z3.6140098571777344
 Cylinder.007 rotation: X0.0 Y-0.0 Z1.5707963705062866
 Cylinder.007 scale: X0.6433810591697693 Y0.6433810591697693 Z0.6433810591697693
 Cylinder.007 groups: None
@@ -2755,6 +2743,20 @@ Distal Step.007 groups: None
 Distal Step.007 mesh: Cube.023
 Distal Step.007 materials: None
 Distal Step.007 modifiers: None
+
+Name: Extension
+Extension Type: MESH
+Extension transform: X-68.29261016845703 Y0.0 Z3.855163335800171
+Extension rotation: X0.0 Y0.0 Z0.0
+Extension scale: X0.012533742934465408 Y0.008945913054049015 Z0.001335000153630972
+Extension groups: None
+Extension mesh: Cube.011
+Extension materials: None
+Extension modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cylinder.004
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cylinder.007
 
 Name: Finger cut out.000
 Finger cut out.000 Type: MESH
@@ -5162,7 +5164,7 @@ M2 Bolt.001 transform: X-47.86381530761719 Y0.0 Z2.6750919818878174
 M2 Bolt.001 rotation: X0.0 Y0.0 Z0.0
 M2 Bolt.001 scale: X1.0 Y1.0 Z1.0
 M2 Bolt.001 groups: None
-M2 Bolt.001 mesh: Cylinder.012
+M2 Bolt.001 mesh: Cylinder.032
 M2 Bolt.001 materials: Boolean difference.002, 
 M2 Bolt.001 modifiers: 
   #1 Name: Boolean.001, Type: BOOLEAN
@@ -5190,11 +5192,11 @@ M2 Bolt.001 modifiers:
 
 Name: M2 Bolt.002
 M2 Bolt.002 Type: MESH
-M2 Bolt.002 transform: X3.814697265625e-06 Y-52.317501068115234 Z2.6750917434692383
+M2 Bolt.002 transform: X3.814697265625e-06 Y-59.04420852661133 Z1.8185465335845947
 M2 Bolt.002 rotation: X0.0 Y-0.0 Z1.5707963705062866
 M2 Bolt.002 scale: X1.0 Y1.0 Z1.0
 M2 Bolt.002 groups: None
-M2 Bolt.002 mesh: Cylinder.012
+M2 Bolt.002 mesh: Cylinder.018
 M2 Bolt.002 materials: Boolean difference.002, 
 M2 Bolt.002 modifiers: None
 
@@ -5210,21 +5212,21 @@ M2 Bolt.003 modifiers: None
 
 Name: M2 Bolt.004
 M2 Bolt.004 Type: MESH
-M2 Bolt.004 transform: X52.83064270019531 Y4.184387762506958e-06 Z2.6750919818878174
+M2 Bolt.004 transform: X50.01474380493164 Y4.184387762506958e-06 Z1.872291088104248
 M2 Bolt.004 rotation: X0.0 Y-0.0 Z3.1415929794311523
 M2 Bolt.004 scale: X1.0 Y1.0 Z1.0
 M2 Bolt.004 groups: None
-M2 Bolt.004 mesh: Cylinder.012
+M2 Bolt.004 mesh: Cylinder.022
 M2 Bolt.004 materials: Boolean difference.002, 
 M2 Bolt.004 modifiers: None
 
 Name: M2 Bolt.005
 M2 Bolt.005 Type: MESH
-M2 Bolt.005 transform: X36.388710021972656 Y36.38871765136719 Z2.6750919818878174
+M2 Bolt.005 transform: X34.14685821533203 Y34.002323150634766 Z-0.8358316421508789
 M2 Bolt.005 rotation: X0.0 Y0.0 Z3.9269912242889404
 M2 Bolt.005 scale: X1.0 Y1.0 Z1.0
 M2 Bolt.005 groups: None
-M2 Bolt.005 mesh: Cylinder.012
+M2 Bolt.005 mesh: Cylinder.023
 M2 Bolt.005 materials: Boolean difference.002, 
 M2 Bolt.005 modifiers: None
 
@@ -5234,47 +5236,47 @@ M2 Bolt.006 transform: X-35.738075256347656 Y35.738059997558594 Z2.6750917434692
 M2 Bolt.006 rotation: X0.0 Y-0.0 Z5.4977874755859375
 M2 Bolt.006 scale: X1.0 Y1.0 Z1.0
 M2 Bolt.006 groups: None
-M2 Bolt.006 mesh: Cylinder.012
+M2 Bolt.006 mesh: Cylinder.025
 M2 Bolt.006 materials: Boolean difference.002, 
 M2 Bolt.006 modifiers: None
 
 Name: M2 Bolt.007
 M2 Bolt.007 Type: MESH
-M2 Bolt.007 transform: X36.38894271850586 Y-36.38893508911133 Z2.6750917434692383
+M2 Bolt.007 transform: X38.55087661743164 Y-38.936927795410156 Z1.8439908027648926
 M2 Bolt.007 rotation: X0.0 Y-0.0 Z2.356194496154785
 M2 Bolt.007 scale: X1.0 Y1.0 Z1.0
 M2 Bolt.007 groups: None
-M2 Bolt.007 mesh: Cylinder.012
+M2 Bolt.007 mesh: Cylinder.026
 M2 Bolt.007 materials: Boolean difference.002, 
 M2 Bolt.007 modifiers: None
 
 Name: M2 Bolt.008
 M2 Bolt.008 Type: MESH
-M2 Bolt.008 transform: X-45.29863739013672 Y-45.29863357543945 Z2.6750919818878174
+M2 Bolt.008 transform: X-45.29863739013672 Y-45.29863357543945 Z1.8708008527755737
 M2 Bolt.008 rotation: X0.0 Y-0.0 Z0.7853981852531433
 M2 Bolt.008 scale: X1.0 Y1.0 Z1.0
 M2 Bolt.008 groups: None
-M2 Bolt.008 mesh: Cylinder.012
+M2 Bolt.008 mesh: Cylinder.027
 M2 Bolt.008 materials: Boolean difference.002, 
 M2 Bolt.008 modifiers: None
 
 Name: M2 Bolt.009
 M2 Bolt.009 Type: MESH
-M2 Bolt.009 transform: X-38.952049255371094 Y-38.95204544067383 Z2.6750919818878174
+M2 Bolt.009 transform: X-40.53489303588867 Y-40.5734977722168 Z1.8386292457580566
 M2 Bolt.009 rotation: X0.0 Y-0.0 Z0.7853981852531433
 M2 Bolt.009 scale: X1.0 Y1.0 Z1.0
 M2 Bolt.009 groups: None
-M2 Bolt.009 mesh: Cylinder.012
+M2 Bolt.009 mesh: Cylinder.028
 M2 Bolt.009 materials: Boolean difference.002, 
 M2 Bolt.009 modifiers: None
 
 Name: M2 Bolt.010
 M2 Bolt.010 Type: MESH
-M2 Bolt.010 transform: X41.633323669433594 Y-41.6333122253418 Z2.6750917434692383
+M2 Bolt.010 transform: X43.679439544677734 Y-44.219913482666016 Z1.8439908027648926
 M2 Bolt.010 rotation: X0.0 Y-0.0 Z2.356194496154785
 M2 Bolt.010 scale: X1.0 Y1.0 Z1.0
 M2 Bolt.010 groups: None
-M2 Bolt.010 mesh: Cylinder.012
+M2 Bolt.010 mesh: Cylinder.029
 M2 Bolt.010 materials: Boolean difference.002, 
 M2 Bolt.010 modifiers: None
 
@@ -5284,17 +5286,17 @@ M2 Bolt.011 transform: X-40.93727111816406 Y40.937255859375 Z2.6750917434692383
 M2 Bolt.011 rotation: X0.0 Y-0.0 Z5.4977874755859375
 M2 Bolt.011 scale: X1.0 Y1.0 Z1.0
 M2 Bolt.011 groups: None
-M2 Bolt.011 mesh: Cylinder.012
+M2 Bolt.011 mesh: Cylinder.030
 M2 Bolt.011 materials: Boolean difference.002, 
 M2 Bolt.011 modifiers: None
 
 Name: M2 Bolt.012
 M2 Bolt.012 Type: MESH
-M2 Bolt.012 transform: X41.61695098876953 Y41.61695861816406 Z2.6750919818878174
+M2 Bolt.012 transform: X39.26571273803711 Y39.34868240356445 Z-0.46691274642944336
 M2 Bolt.012 rotation: X0.0 Y0.0 Z3.9269912242889404
 M2 Bolt.012 scale: X1.0 Y1.0 Z1.0
 M2 Bolt.012 groups: None
-M2 Bolt.012 mesh: Cylinder.012
+M2 Bolt.012 mesh: Cylinder.031
 M2 Bolt.012 materials: Boolean difference.002, 
 M2 Bolt.012 modifiers: None
 
@@ -5420,34 +5422,34 @@ MOULD Mounting plate.001 modifiers:
         Operation: DIFFERENCE, Object: Cylinder.006
   #8 Name: Boolean.006, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cube.023
-  #9 Name: Boolean.008, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Cube.025
-  #10 Name: Boolean.009, Type: BOOLEAN
+  #9 Name: Boolean.009, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cylinder.007
-  #11 Name: Boolean.011, Type: BOOLEAN
+  #10 Name: Boolean.011, Type: BOOLEAN
         Operation: UNION, Object: Distal Step.004
-  #12 Name: M2 Bolt, Type: BOOLEAN
-        Operation: UNION, Object: M2 Bolt.001
-  #13 Name: Boolean.012, Type: BOOLEAN
+  #11 Name: M2 Bolt, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: M2 Bolt.001
+  #12 Name: Boolean.012, Type: BOOLEAN
         Operation: DIFFERENCE, Object: ID.016
-  #14 Name: Finger Top cut out, Type: BOOLEAN
+  #13 Name: Finger Top cut out, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Finger cut out.003
-  #15 Name: xsec, Type: BOOLEAN
+  #14 Name: xsec, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cross section 4.001
-  #16 Name: Boolean.013, Type: BOOLEAN
+  #15 Name: Boolean.013, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Finger cut out.004
-  #17 Name: Boolean.014, Type: BOOLEAN
+  #16 Name: Boolean.014, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Finger cut out.005
-  #18 Name: Boolean.015, Type: BOOLEAN
+  #17 Name: Boolean.015, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Finger cut out.006
-  #19 Name: Boolean.016, Type: BOOLEAN
+  #18 Name: Boolean.016, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cylinder.008
-  #20 Name: Boolean.017, Type: BOOLEAN
+  #19 Name: Boolean.017, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cylinder.009
-  #21 Name: Boolean.018, Type: BOOLEAN
+  #20 Name: Boolean.018, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cylinder.010
-  #22 Name: Boolean.019, Type: BOOLEAN
+  #21 Name: Boolean.019, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cylinder.011
+  #22 Name: Boolean.004, Type: BOOLEAN
+        Operation: UNION, Object: Extension
 
 Name: MOULD Plunger
 MOULD Plunger Type: MESH
