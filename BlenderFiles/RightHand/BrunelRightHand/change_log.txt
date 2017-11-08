@@ -1,30 +1,44 @@
-Name: 1st Finger
-1st Finger Type: EMPTY
-1st Finger transform: X-18.999998092651367 Y-1.4999980926513672 Z0.0
-1st Finger rotation: X0.0 Y0.0 Z0.08726643770933151
-1st Finger scale: X1.0 Y1.0 Z1.0
-1st Finger groups: None
+Name: 1st Finger.001
+1st Finger.001 Type: EMPTY
+1st Finger.001 transform: X-18.999998092651367 Y-1.4999980926513672 Z0.0
+1st Finger.001 rotation: X0.0 Y0.0 Z0.08726643770933151
+1st Finger.001 scale: X1.0 Y1.0 Z1.0
+1st Finger.001 groups: None
 
-Name: 2nd Finger
-2nd Finger Type: EMPTY
-2nd Finger transform: X0.0 Y0.0 Z0.0
-2nd Finger rotation: X0.0 Y0.0 Z0.0
-2nd Finger scale: X1.0 Y1.0 Z1.0
-2nd Finger groups: None
+Name: 2nd Finger.001
+2nd Finger.001 Type: EMPTY
+2nd Finger.001 transform: X0.0 Y0.0 Z0.0
+2nd Finger.001 rotation: X0.0 Y0.0 Z0.0
+2nd Finger.001 scale: X1.0 Y1.0 Z1.0
+2nd Finger.001 groups: None
 
 Name: 3rd Finger
 3rd Finger Type: EMPTY
-3rd Finger transform: X19.0 Y-1.5 Z0.0
-3rd Finger rotation: X4.674400311266425e-10 Y0.0 Z-0.08726643770933151
+3rd Finger transform: X18.86046600341797 Y-2.4461469650268555 Z-0.3281930088996887
+3rd Finger rotation: X0.0 Y0.0 Z-0.0872664600610733
 3rd Finger scale: X1.0 Y1.0 Z1.0
 3rd Finger groups: None
 
+Name: 3rd Finger.001
+3rd Finger.001 Type: EMPTY
+3rd Finger.001 transform: X19.0 Y-1.5 Z0.0
+3rd Finger.001 rotation: X4.674400311266425e-10 Y0.0 Z-0.08726643770933151
+3rd Finger.001 scale: X1.0 Y1.0 Z1.0
+3rd Finger.001 groups: None
+
 Name: 4th Finger
 4th Finger Type: EMPTY
-4th Finger transform: X37.999996185302734 Y-3.4000000953674316 Z0.0
-4th Finger rotation: X0.0 Y0.0 Z-0.1745329052209854
+4th Finger transform: X37.597599029541016 Y-4.9031219482421875 Z-0.3281930088996887
+4th Finger rotation: X0.0 Y0.0 Z-0.1745329201221466
 4th Finger scale: X1.0 Y1.0 Z1.0
 4th Finger groups: None
+
+Name: 4th Finger.001
+4th Finger.001 Type: EMPTY
+4th Finger.001 transform: X37.999996185302734 Y-3.4000000953674316 Z0.0
+4th Finger.001 rotation: X0.0 Y0.0 Z-0.1745329052209854
+4th Finger.001 scale: X1.0 Y1.0 Z1.0
+4th Finger.001 groups: None
 
 Name: Actuator Block
 Actuator Block Type: EMPTY
@@ -523,6 +537,59 @@ BOOLEAN finger spring channels combined modifiers:
   #4 Name: Boolean.003, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN 4th finger spring channel
 
+Name: BOOLEAN Finger Wave Profile
+BOOLEAN Finger Wave Profile Type: MESH
+BOOLEAN Finger Wave Profile transform: X-0.0025835915002971888 Y-1.7177529335021973 Z-0.32819318771362305
+BOOLEAN Finger Wave Profile rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Finger Wave Profile scale: X1.0 Y1.0 Z1.0
+BOOLEAN Finger Wave Profile groups: None
+BOOLEAN Finger Wave Profile mesh: Cube.036
+BOOLEAN Finger Wave Profile materials: None
+BOOLEAN Finger Wave Profile modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Hook.002, Type: HOOK
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN Finger Wave Profile APPLIED
+BOOLEAN Finger Wave Profile APPLIED Type: MESH
+BOOLEAN Finger Wave Profile APPLIED transform: X-0.0025835915002971888 Y-1.7177529335021973 Z-0.32819318771362305
+BOOLEAN Finger Wave Profile APPLIED rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Finger Wave Profile APPLIED scale: X1.0 Y1.0 Z1.0
+BOOLEAN Finger Wave Profile APPLIED groups: None
+BOOLEAN Finger Wave Profile APPLIED mesh: Cube.032
+BOOLEAN Finger Wave Profile APPLIED materials: None
+BOOLEAN Finger Wave Profile APPLIED modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Hook.002, Type: HOOK
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #5 Name: Boolean.TARGET Outer Surface, Type: BOOLEAN
+        Operation: INTERSECT, Object: TARGET Outer Surface (Solidify)
+
+Name: BOOLEAN Finger Wave Profile.001
+BOOLEAN Finger Wave Profile.001 Type: MESH
+BOOLEAN Finger Wave Profile.001 transform: X-0.0025835915002971888 Y-1.7177529335021973 Z-0.32819318771362305
+BOOLEAN Finger Wave Profile.001 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Finger Wave Profile.001 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Finger Wave Profile.001 groups: None
+BOOLEAN Finger Wave Profile.001 mesh: Cube.036
+BOOLEAN Finger Wave Profile.001 materials: None
+BOOLEAN Finger Wave Profile.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Hook.002, Type: HOOK
+  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #5 Name: Boolean.TARGET Outer Surface, Type: BOOLEAN
+        Operation: INTERSECT, Object: TARGET Outer Surface (Solidify)
+  #6 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.10, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #7 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cube.006
+
 Name: BOOLEAN Flex Bracket
 BOOLEAN Flex Bracket Type: MESH
 BOOLEAN Flex Bracket transform: X-11.954208374023438 Y-98.3869400024414 Z14.455009460449219
@@ -596,6 +663,68 @@ BOOLEAN Headphone jack.002 materials: Boolean difference.002,
 BOOLEAN Headphone jack.002 modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN Inner Palm (Flat plane cut)
+BOOLEAN Inner Palm (Flat plane cut) Type: MESH
+BOOLEAN Inner Palm (Flat plane cut) transform: X9.283166885375977 Y-50.67338562011719 Z4.499999523162842
+BOOLEAN Inner Palm (Flat plane cut) rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Inner Palm (Flat plane cut) scale: X5.626203536987305 Y5.626203536987305 Z5.626203536987305
+BOOLEAN Inner Palm (Flat plane cut) groups: None
+BOOLEAN Inner Palm (Flat plane cut) mesh: Plane.006
+BOOLEAN Inner Palm (Flat plane cut) materials: Boolean difference, 
+BOOLEAN Inner Palm (Flat plane cut) modifiers: None
+
+Name: BOOLEAN Inner palm and Urethane Profile
+BOOLEAN Inner palm and Urethane Profile Type: MESH
+BOOLEAN Inner palm and Urethane Profile transform: X9.053571701049805 Y-50.71782302856445 Z1.4369440078735352
+BOOLEAN Inner palm and Urethane Profile rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Inner palm and Urethane Profile scale: X1.0 Y1.0 Z1.0
+BOOLEAN Inner palm and Urethane Profile groups: None
+BOOLEAN Inner palm and Urethane Profile mesh: Cube.031
+BOOLEAN Inner palm and Urethane Profile materials: Boolean difference, 
+BOOLEAN Inner palm and Urethane Profile modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN Inner Palm Ledge
+BOOLEAN Inner Palm Ledge Type: MESH
+BOOLEAN Inner Palm Ledge transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+BOOLEAN Inner Palm Ledge rotation: X0.0 Y-0.0 Z0.0
+BOOLEAN Inner Palm Ledge scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+BOOLEAN Inner Palm Ledge groups: Actuator Block, 
+BOOLEAN Inner Palm Ledge parent: Actuator Block
+BOOLEAN Inner Palm Ledge mesh: Palm Inner.013
+BOOLEAN Inner Palm Ledge materials: PLA White, 
+BOOLEAN Inner Palm Ledge modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 1.50, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb Ligament Cover
+  #4 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Urethane wrist termination point
+  #5 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Inner Palm Terimination point
+
+Name: BOOLEAN Inner Palm Terimination point
+BOOLEAN Inner Palm Terimination point Type: MESH
+BOOLEAN Inner Palm Terimination point transform: X9.053571701049805 Y-50.71782302856445 Z1.5592281818389893
+BOOLEAN Inner Palm Terimination point rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Inner Palm Terimination point scale: X1.0 Y1.0 Z1.0
+BOOLEAN Inner Palm Terimination point groups: None
+BOOLEAN Inner Palm Terimination point mesh: Cube.027
+BOOLEAN Inner Palm Terimination point materials: Boolean difference, 
+BOOLEAN Inner Palm Terimination point modifiers: None
+
+Name: BOOLEAN Inner Palm Union (Flat plane cut)
+BOOLEAN Inner Palm Union (Flat plane cut) Type: MESH
+BOOLEAN Inner Palm Union (Flat plane cut) transform: X9.283166885375977 Y-50.67338562011719 Z4.152851581573486
+BOOLEAN Inner Palm Union (Flat plane cut) rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Inner Palm Union (Flat plane cut) scale: X5.626203536987305 Y5.626203536987305 Z5.626203536987305
+BOOLEAN Inner Palm Union (Flat plane cut) groups: None
+BOOLEAN Inner Palm Union (Flat plane cut) mesh: Plane.007
+BOOLEAN Inner Palm Union (Flat plane cut) materials: Boolean difference, 
+BOOLEAN Inner Palm Union (Flat plane cut) modifiers: None
 
 Name: BOOLEAN LABEL Open Bionics
 BOOLEAN LABEL Open Bionics Type: MESH
@@ -1116,6 +1245,19 @@ BOOLEAN Palm outer skin for MOULD materials: Urethane,
 BOOLEAN Palm outer skin for MOULD modifiers: 
   #1 Name: Displace, Type: DISPLACE
   #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN Palm urethane finger contact face
+BOOLEAN Palm urethane finger contact face Type: MESH
+BOOLEAN Palm urethane finger contact face transform: X9.0 Y-48.89358901977539 Z-5.216308116912842
+BOOLEAN Palm urethane finger contact face rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Palm urethane finger contact face scale: X4.250000476837158 Y4.499998569488525 Z1.0
+BOOLEAN Palm urethane finger contact face groups: None
+BOOLEAN Palm urethane finger contact face parent: Actuator Block
+BOOLEAN Palm urethane finger contact face mesh: Cube.030
+BOOLEAN Palm urethane finger contact face materials: Boolean difference, 
+BOOLEAN Palm urethane finger contact face modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN PCB Chestnut component parts
@@ -1748,6 +1890,18 @@ BOOLEAN urethane channels mesh: Cylinder
 BOOLEAN urethane channels materials: Boolean difference, 
 BOOLEAN urethane channels modifiers: None
 
+Name: BOOLEAN Urethane wrist termination point
+BOOLEAN Urethane wrist termination point Type: MESH
+BOOLEAN Urethane wrist termination point transform: X40.93267059326172 Y-92.71407318115234 Z-3.9111487865448
+BOOLEAN Urethane wrist termination point rotation: X1.0471975803375244 Y-0.0 Z0.0
+BOOLEAN Urethane wrist termination point scale: X1.0 Y1.0 Z1.0
+BOOLEAN Urethane wrist termination point groups: None
+BOOLEAN Urethane wrist termination point mesh: Plane.005
+BOOLEAN Urethane wrist termination point materials: Boolean difference, 
+BOOLEAN Urethane wrist termination point modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
+
 Name: BOOLEAN USB.001
 BOOLEAN USB.001 Type: MESH
 BOOLEAN USB.001 transform: X9.0 Y-57.441871643066406 Z13.190025329589844
@@ -1862,16 +2016,6 @@ CONNECTOR USB micro male.001 scale: X1.0 Y1.0 Z1.0
 CONNECTOR USB micro male.001 groups: None
 CONNECTOR USB micro male.001 parent: PCB Chestnut FLIPPED
 
-Name: Cube
-Cube Type: MESH
-Cube transform: X15.819153785705566 Y-97.043212890625 Z-11.933175086975098
-Cube rotation: X0.0 Y0.0 Z0.0
-Cube scale: X1.0 Y1.0 Z1.0
-Cube groups: None
-Cube mesh: Cube.011
-Cube materials: Boolean difference, 
-Cube modifiers: None
-
 Name: CHEETAH Logo
 CHEETAH Logo Type: MESH
 CHEETAH Logo transform: X9.430821418762207 Y-51.903255462646484 Z18.583053588867188
@@ -1917,6 +2061,16 @@ Cube.003 modifiers:
   #1 Name: Boolean, Type: BOOLEAN
         Operation: INTERSECT, Object: BOOLEAN Thumb Cutout Urethane
 
+Name: Cube.004
+Cube.004 Type: MESH
+Cube.004 transform: X15.819153785705566 Y-97.043212890625 Z-11.933175086975098
+Cube.004 rotation: X0.0 Y0.0 Z0.0
+Cube.004 scale: X1.0 Y1.0 Z1.0
+Cube.004 groups: None
+Cube.004 mesh: Cube.011
+Cube.004 materials: Boolean difference, 
+Cube.004 modifiers: None
+
 Name: Cube.005
 Cube.005 Type: MESH
 Cube.005 transform: X9.0 Y-47.84654235839844 Z-10.21630859375
@@ -1929,17 +2083,20 @@ Cube.005 modifiers: None
 
 Name: Cube.006
 Cube.006 Type: MESH
-Cube.006 transform: X9.0 Y-48.89358901977539 Z-5.216308116912842
-Cube.006 rotation: X0.0 Y0.0 Z0.0
+Cube.006 transform: X9.283166885375977 Y-52.2841682434082 Z4.57234001159668
+Cube.006 rotation: X0.08629591017961502 Y-0.0 Z0.0
 Cube.006 scale: X4.250000476837158 Y4.499998569488525 Z1.0
 Cube.006 groups: None
-Cube.006 mesh: Cube.029
-Cube.006 materials: None
+Cube.006 parent: Actuator Block
+Cube.006 mesh: Cube.034
+Cube.006 materials: Boolean difference, 
 Cube.006 modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #2 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Cube.005
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Finger Wave Profile APPLIED
+  #3 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Inner Palm Terimination point
 
 Name: Cylinder
 Cylinder Type: MESH
@@ -1963,33 +2120,19 @@ DC jack cover.001 materials: None
 DC jack cover.001 modifiers: 
   #1 Name: Bevel, Type: BEVEL
 
-Name: Empty
-Empty Type: EMPTY
-Empty transform: X37.597599029541016 Y-4.9031219482421875 Z-0.3281930088996887
-Empty rotation: X0.0 Y0.0 Z-0.1745329201221466
-Empty scale: X1.0 Y1.0 Z1.0
-Empty groups: None
+Name: 2nd Finger
+2nd Finger Type: EMPTY
+2nd Finger transform: X-0.002583591267466545 Y-1.7177529335021973 Z-0.3281930088996887
+2nd Finger rotation: X0.0 Y0.0 Z0.0
+2nd Finger scale: X1.0 Y1.0 Z1.0
+2nd Finger groups: None
 
-Name: Empty.001
-Empty.001 Type: EMPTY
-Empty.001 transform: X18.86046600341797 Y-2.4461469650268555 Z-0.3281930088996887
-Empty.001 rotation: X0.0 Y0.0 Z-0.0872664600610733
-Empty.001 scale: X1.0 Y1.0 Z1.0
-Empty.001 groups: None
-
-Name: Empty.002
-Empty.002 Type: EMPTY
-Empty.002 transform: X-0.002583591267466545 Y-1.7177529335021973 Z-0.3281930088996887
-Empty.002 rotation: X0.0 Y0.0 Z0.0
-Empty.002 scale: X1.0 Y1.0 Z1.0
-Empty.002 groups: None
-
-Name: Empty.003
-Empty.003 Type: EMPTY
-Empty.003 transform: X-18.848724365234375 Y-2.554105281829834 Z-0.3281930088996887
-Empty.003 rotation: X0.0 Y0.0 Z0.0872664600610733
-Empty.003 scale: X1.0 Y1.0 Z1.0
-Empty.003 groups: None
+Name: 1st Finger
+1st Finger Type: EMPTY
+1st Finger transform: X-18.848724365234375 Y-2.554105281829834 Z-0.3281930088996887
+1st Finger rotation: X0.0 Y0.0 Z0.0872664600610733
+1st Finger scale: X1.0 Y1.0 Z1.0
+1st Finger groups: None
 
 Name: Empty.004
 Empty.004 Type: EMPTY
@@ -2155,6 +2298,61 @@ Injection channels groups: None
 Injection channels mesh: Cube.018
 Injection channels materials: None
 Injection channels modifiers: None
+
+Name: Cube
+Cube Type: MESH
+Cube transform: X9.283166885375977 Y-50.67338562011719 Z4.499998569488525
+Cube rotation: X0.0 Y0.0 Z0.0
+Cube scale: X4.250000476837158 Y4.499998569488525 Z1.0
+Cube groups: None
+Cube parent: Actuator Block
+Cube mesh: Cube.029
+Cube materials: None
+Cube modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cube.005
+
+Name: Inner Palm (Profile)
+Inner Palm (Profile) Type: MESH
+Inner Palm (Profile) transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+Inner Palm (Profile) rotation: X0.0 Y-0.0 Z0.0
+Inner Palm (Profile) scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+Inner Palm (Profile) groups: Actuator Block, 
+Inner Palm (Profile) parent: Actuator Block
+Inner Palm (Profile) mesh: Palm Inner.013
+Inner Palm (Profile) materials: PLA White, 
+Inner Palm (Profile) modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Inner Palm Lip
+Inner Palm Lip Type: MESH
+Inner Palm Lip transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+Inner Palm Lip rotation: X0.0 Y-0.0 Z0.0
+Inner Palm Lip scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+Inner Palm Lip groups: Actuator Block, 
+Inner Palm Lip parent: Actuator Block
+Inner Palm Lip mesh: Palm Inner.013
+Inner Palm Lip materials: PLA White, 
+Inner Palm Lip modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 3.10, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean.BOOLEAN Thumb Ligament Cover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb Ligament Cover
+  #4 Name: Boolean.BOOLEAN Inner Palm Urethane ledge, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Inner palm and Urethane Profile
+  #5 Name: Boolean.BOOLEAN Inner Palm Ledge, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Inner Palm Ledge
+  #6 Name: Boolean.BOOLEAN Finger Wave Profile.001, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Finger Wave Profile.001
+  #7 Name: Boolean.Inner Palm (Profile), Type: BOOLEAN
+        Operation: UNION, Object: Inner Palm (Profile)
+  #8 Name: Boolean.BOOLEAN Inner Palm (Flat plane cut), Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Inner Palm (Flat plane cut)
 
 Name: LABEL Brunel logo
 LABEL Brunel logo Type: MESH
@@ -2900,18 +3098,6 @@ PCB Chestnut FLIPPED scale: X1.0 Y1.0 Z1.0
 PCB Chestnut FLIPPED groups: None
 PCB Chestnut FLIPPED parent: Actuator Block
 
-Name: Plane
-Plane Type: MESH
-Plane transform: X40.93267059326172 Y-92.71407318115234 Z-3.9111487865448
-Plane rotation: X1.0471975803375244 Y-0.0 Z0.0
-Plane scale: X1.0 Y1.0 Z1.0
-Plane groups: None
-Plane mesh: Plane.005
-Plane materials: Boolean difference, 
-Plane modifiers: 
-  #1 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-
 Name: PQ12 Caps
 PQ12 Caps Type: MESH
 PQ12 Caps transform: X-13.649959564208984 Y-80.01123046875 Z-3.00000262260437
@@ -3075,6 +3261,36 @@ Spring pegs proximal.002 modifiers:
   #2 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Top cover proximal.002
 
+Name: TARGET Outer Surface
+TARGET Outer Surface Type: MESH
+TARGET Outer Surface transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+TARGET Outer Surface rotation: X0.0 Y-0.0 Z0.0
+TARGET Outer Surface scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+TARGET Outer Surface groups: Actuator Block, 
+TARGET Outer Surface parent: Actuator Block
+TARGET Outer Surface mesh: Palm Inner.013
+TARGET Outer Surface materials: PLA White, 
+TARGET Outer Surface modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 3.00, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: TARGET Outer Surface (Solidify)
+TARGET Outer Surface (Solidify) Type: MESH
+TARGET Outer Surface (Solidify) transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+TARGET Outer Surface (Solidify) rotation: X0.0 Y-0.0 Z0.0
+TARGET Outer Surface (Solidify) scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+TARGET Outer Surface (Solidify) groups: Actuator Block, 
+TARGET Outer Surface (Solidify) parent: Actuator Block
+TARGET Outer Surface (Solidify) mesh: Palm Inner.013
+TARGET Outer Surface (Solidify) materials: PLA White, 
+TARGET Outer Surface (Solidify) modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 3.11, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: TARGET Urethane Pad COPY.001
 TARGET Urethane Pad COPY.001 Type: MESH
 TARGET Urethane Pad COPY.001 transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
@@ -3083,9 +3299,11 @@ TARGET Urethane Pad COPY.001 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 TARGET Urethane Pad COPY.001 groups: Actuator Block, 
 TARGET Urethane Pad COPY.001 parent: Actuator Block
 TARGET Urethane Pad COPY.001 mesh: Palm Inner.013
-TARGET Urethane Pad COPY.001 materials: Urethane, 
+TARGET Urethane Pad COPY.001 materials: PLA White, 
 TARGET Urethane Pad COPY.001 modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 3.00, Offset: 1.00 
+        Even thickness: False, High Quality Normals: False  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Tendon pivot dowel
@@ -3159,21 +3377,21 @@ Thumb Ligament Cover  mesh: Cube.026
 Thumb Ligament Cover  materials: None
 Thumb Ligament Cover  modifiers: 
   #1 Name: Bevel, Type: BEVEL
-  #2 Name: Boolean, Type: BOOLEAN
+  #2 Name: TARGET Urethane Pad COPY.001, Type: BOOLEAN
         Operation: INTERSECT, Object: TARGET Urethane Pad COPY.001
-  #3 Name: Boolean.001, Type: BOOLEAN
+  #3 Name: Boolean.BOOLEAN Thumb ligament cover M2 Bolt Hole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 Bolt Hole
-  #4 Name: Boolean.002, Type: BOOLEAN
+  #4 Name: Boolean.BOOLEAN Thumb tendon channel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon channel
-  #5 Name: Boolean.003, Type: BOOLEAN
+  #5 Name: Boolean.BOOLEAN Thumb pivot dowel.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel.002
-  #6 Name: Boolean.004, Type: BOOLEAN
+  #6 Name: Boolean.BOOLEAN Thumb ligament elastic clamp, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament elastic clamp
-  #7 Name: Boolean.005, Type: BOOLEAN
+  #7 Name: Boolean.BOOLEAN thumb spring termination.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN thumb spring termination.001
-  #8 Name: Boolean.006, Type: BOOLEAN
+  #8 Name: Boolean.Thumb spring channel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Thumb spring channel
-  #9 Name: Boolean.007, Type: BOOLEAN
+  #9 Name: Boolean.BOOLEAN Thumb ligament cover clip, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover clip
 
 Name: Thumb Ligament Cover .001
@@ -3299,7 +3517,7 @@ Urethane cutout mesh: Plane.002
 Urethane cutout materials: None
 Urethane cutout modifiers: 
   #1 Name: Boolean, Type: BOOLEAN
-        Operation: UNION, Object: Cube
+        Operation: UNION, Object: Cube.004
   #2 Name: Boolean.001, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Thumb swept area
   #3 Name: Boolean.002, Type: BOOLEAN
@@ -3315,27 +3533,6 @@ Urethane cutout for combined mesh: Plane.003
 Urethane cutout for combined materials: None
 Urethane cutout for combined modifiers: None
 
-Name: Urethane Pad
-Urethane Pad Type: MESH
-Urethane Pad transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
-Urethane Pad rotation: X0.0 Y-0.0 Z0.0
-Urethane Pad scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
-Urethane Pad groups: Actuator Block, 
-Urethane Pad parent: Actuator Block
-Urethane Pad mesh: Palm Inner.003
-Urethane Pad materials: Urethane, 
-Urethane Pad modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #2 Name: Boolean.PalmInner, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Palm Inner simplified
-  #3 Name: Boolean.ThumbLigamentCoverforNewPalm, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for new palm
-  #4 Name: Boolean.ThumbSweptArea, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb swept area
-  #5 Name: Boolean.ThumbAccess, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN thumb access
-
 Name: Urethane Pad and inner palm (one mesh)
 Urethane Pad and inner palm (one mesh) Type: MESH
 Urethane Pad and inner palm (one mesh) transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
@@ -3344,60 +3541,22 @@ Urethane Pad and inner palm (one mesh) scale: X0.9999999403953552 Y0.99999994039
 Urethane Pad and inner palm (one mesh) groups: Actuator Block, 
 Urethane Pad and inner palm (one mesh) parent: Actuator Block
 Urethane Pad and inner palm (one mesh) mesh: Palm Inner.013
-Urethane Pad and inner palm (one mesh) materials: Urethane, 
+Urethane Pad and inner palm (one mesh) materials: PLA White, 
 Urethane Pad and inner palm (one mesh) modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 3.00, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #2 Name: Boolean.PalmInner, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Palm Inner simplified
-  #3 Name: Boolean.ThumbLigamentCoverforNewPalm, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for new palm
-  #4 Name: Boolean.ThumbAccess, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN thumb access
-  #5 Name: Boolean.001, Type: BOOLEAN
+  #3 Name: Boolean.BOOLEAN Thumb Ligament Cover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb Ligament Cover
-  #6 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Plane
-
-Name: Urethane Pad COPY (Inner Palm)
-Urethane Pad COPY (Inner Palm) Type: MESH
-Urethane Pad COPY (Inner Palm) transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
-Urethane Pad COPY (Inner Palm) rotation: X0.0 Y-0.0 Z0.0
-Urethane Pad COPY (Inner Palm) scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
-Urethane Pad COPY (Inner Palm) groups: Actuator Block, 
-Urethane Pad COPY (Inner Palm) parent: Actuator Block
-Urethane Pad COPY (Inner Palm) mesh: Palm Inner.015
-Urethane Pad COPY (Inner Palm) materials: Urethane, 
-Urethane Pad COPY (Inner Palm) modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #2 Name: Boolean.PalmInner, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Palm Inner simplified
-  #3 Name: Boolean.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb Ligament Cover
-
-Name: Urethane Pad COPY.001
-Urethane Pad COPY.001 Type: MESH
-Urethane Pad COPY.001 transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
-Urethane Pad COPY.001 rotation: X0.0 Y-0.0 Z0.0
-Urethane Pad COPY.001 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
-Urethane Pad COPY.001 groups: Actuator Block, 
-Urethane Pad COPY.001 parent: Actuator Block
-Urethane Pad COPY.001 mesh: Palm Inner.017
-Urethane Pad COPY.001 materials: Urethane, 
-Urethane Pad COPY.001 modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #2 Name: Boolean.PalmInner, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Palm Inner simplified
-  #3 Name: Boolean.ThumbLigamentCoverforNewPalm, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for new palm
-  #4 Name: Boolean.ThumbAccess, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN thumb access
-  #5 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #6 Name: Boolean.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb Ligament Cover
+  #4 Name: Boolean.BOOLEAN Inner Palm Terimination point, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Inner Palm Terimination point
+  #5 Name: Boolean.BOOLEAN Finger Wave Profile, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Finger Wave Profile
+  #6 Name: Boolean.BOOLEAN Inner Palm (Flat plane cut), Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Inner Palm (Flat plane cut)
+  #7 Name: Boolean.Inner Palm Lip, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Inner Palm Lip
 
 Name: Urethane Pad COPY.002
 Urethane Pad COPY.002 Type: MESH
@@ -3420,7 +3579,7 @@ Urethane Pad COPY.002 modifiers:
   #5 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb Ligament Cover
   #6 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Plane
+        Operation: DIFFERENCE, Object: BOOLEAN Urethane wrist termination point
 
 Name: Urethane skin
 Urethane skin Type: MESH
