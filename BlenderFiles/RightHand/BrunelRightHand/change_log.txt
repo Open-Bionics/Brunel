@@ -113,6 +113,60 @@ Back cover target modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
+Name: Back cover.001
+Back cover.001 Type: MESH
+Back cover.001 transform: X0.0 Y0.0 Z0.0
+Back cover.001 rotation: X0.0 Y0.0 Z0.0
+Back cover.001 scale: X1.0 Y1.0 Z1.0
+Back cover.001 groups: None
+Back cover.001 mesh: Back cover.001
+Back cover.001 materials: PLA, 
+Back cover.001 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Boolean.WristConnector, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN New Wrist connector M2 bolt holes
+  #3 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
+  #4 Name: Boolean.PQ12s, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
+  #5 Name: Boolean.GALACover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN New gala cover for back cover
+  #6 Name: Boolean.BackCoverProximalAttachmentPoint, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Back cover proximal attachment point
+  #7 Name: Boolean.PCBChestnut, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for back cover.001
+  #8 Name: Boolean.LigamentCover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN ligament cover bottom
+  #9 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN ligament cover top plate
+  #10 Name: Boolean.Connectors, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Connectors.001
+  #11 Name: Boolean.DCJack, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN DC Jack.001
+  #12 Name: Boolean.FlexBracket, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN flex bracket for back cover
+  #13 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
+  #14 Name: Boolean.BackCoverM2BoltHolesVeneer, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes veneer
+  #15 Name: Boolean.LabelLogo, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Logo
+  #16 Name: Boolean.LabelPCBLines, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL PCB lines
+  #17 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN finger spring bolt holes combined
+  #18 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN finger spring channels combined
+  #19 Name: Boolean.003, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Logo Position
+  #20 Name: Boolean.BOOLEAN Logo Plinth, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Logo Plinth
+  #21 Name: Boolean.LABEL Logo (flat), Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Logo (flat)
+  #22 Name: Boolean.BOOLEAN Logo Lip Back Cover , Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Logo Lip Back Cover 
+
 Name: BOOLEAN 1st finger spring bolt hole
 BOOLEAN 1st finger spring bolt hole Type: MESH
 BOOLEAN 1st finger spring bolt hole transform: X-18.23844337463379 Y-8.076765060424805 Z4.449999809265137
@@ -1064,6 +1118,16 @@ BOOLEAN New Wrist connector M2 bolt holes for stand mesh: BOOLEAN M2 Bolt Hole.0
 BOOLEAN New Wrist connector M2 bolt holes for stand materials: Boolean difference, 
 BOOLEAN New Wrist connector M2 bolt holes for stand modifiers: None
 
+Name: BOOLEAN Palm and Back Cover Divide
+BOOLEAN Palm and Back Cover Divide Type: MESH
+BOOLEAN Palm and Back Cover Divide transform: X9.062158584594727 Y-49.39783477783203 Z2.191312074661255
+BOOLEAN Palm and Back Cover Divide rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Palm and Back Cover Divide scale: X5.159316062927246 Y5.159316062927246 Z5.159316062927246
+BOOLEAN Palm and Back Cover Divide groups: None
+BOOLEAN Palm and Back Cover Divide mesh: Plane.008
+BOOLEAN Palm and Back Cover Divide materials: Boolean difference, 
+BOOLEAN Palm and Back Cover Divide modifiers: None
+
 Name: BOOLEAN Palm Inner
 BOOLEAN Palm Inner Type: MESH
 BOOLEAN Palm Inner transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
@@ -1125,6 +1189,25 @@ BOOLEAN Palm Inner for MOULD modifiers:
   #2 Name: Proximal fillet, Type: BEVEL
   #3 Name: Boolean, Type: BOOLEAN
         Operation: INTERSECT, Object: BOOLEAN Palm outer skin for MOULD
+
+Name: BOOLEAN Palm Inner Profile (ONE MESH)
+BOOLEAN Palm Inner Profile (ONE MESH) Type: MESH
+BOOLEAN Palm Inner Profile (ONE MESH) transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+BOOLEAN Palm Inner Profile (ONE MESH) rotation: X0.0 Y-0.0 Z0.0
+BOOLEAN Palm Inner Profile (ONE MESH) scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+BOOLEAN Palm Inner Profile (ONE MESH) groups: Actuator Block, 
+BOOLEAN Palm Inner Profile (ONE MESH) parent: Actuator Block
+BOOLEAN Palm Inner Profile (ONE MESH) mesh: Palm Inner.003
+BOOLEAN Palm Inner Profile (ONE MESH) materials: PLA White, 
+BOOLEAN Palm Inner Profile (ONE MESH) modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 1.50, Offset: 1.00 
+        Even thickness: False, High Quality Normals: False  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean.BOOLEAN Palm and Back Cover Divide, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm and Back Cover Divide
+  #4 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Plane
 
 Name: BOOLEAN Palm Inner simplified
 BOOLEAN Palm Inner simplified Type: MESH
@@ -2143,7 +2226,7 @@ Empty.004 groups: None
 
 Name: FINGER 1
 FINGER 1 Type: MESH
-FINGER 1 transform: X-18.935880661010742 Y-1.5579105615615845 Z-0.3281930088996887
+FINGER 1 transform: X-18.838457107543945 Y-2.671475887298584 Z-0.32819294929504395
 FINGER 1 rotation: X-1.5707963705062866 Y-0.0 Z0.0872664526104927
 FINGER 1 scale: X1.0 Y1.0 Z1.0
 FINGER 1 groups: 1st Finger, 
@@ -2156,7 +2239,7 @@ FINGER 1 modifiers:
 
 Name: FINGER 2
 FINGER 2 Type: MESH
-FINGER 2 transform: X-0.002583591267466545 Y-0.7177529335021973 Z-0.3281930088996887
+FINGER 2 transform: X-0.002583591267466545 Y-1.8355720043182373 Z-0.32819294929504395
 FINGER 2 rotation: X-1.5707963705062866 Y-0.0 Z0.0
 FINGER 2 scale: X1.0 Y1.0 Z1.0
 FINGER 2 groups: 1st Finger, 
@@ -2169,7 +2252,7 @@ FINGER 2 modifiers:
 
 Name: FINGER 3
 FINGER 3 Type: MESH
-FINGER 3 transform: X18.947622299194336 Y-1.449952244758606 Z-0.3281930088996887
+FINGER 3 transform: X18.85019874572754 Y-2.5635175704956055 Z-0.32819294929504395
 FINGER 3 rotation: X-1.5707963705062866 Y-0.0 Z-0.0872664526104927
 FINGER 3 scale: X1.0 Y1.0 Z1.0
 FINGER 3 groups: 1st Finger, 
@@ -2182,7 +2265,7 @@ FINGER 3 modifiers:
 
 Name: FINGER 4
 FINGER 4 Type: MESH
-FINGER 4 transform: X37.77124786376953 Y-3.918314218521118 Z-0.3281930088996887
+FINGER 4 transform: X37.57714080810547 Y-5.019151210784912 Z-0.32819294929504395
 FINGER 4 rotation: X-1.5707963705062866 Y-1.4901157641133977e-08 Z-0.1745329201221466
 FINGER 4 scale: X1.0 Y1.0 Z1.0
 FINGER 4 groups: 1st Finger, 
@@ -2731,6 +2814,23 @@ New Wrist Connector modifiers:
   #2 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN New Wrist connector M2 bolt holes
 
+Name: Palm (ONE MESH)
+Palm (ONE MESH) Type: MESH
+Palm (ONE MESH) transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+Palm (ONE MESH) rotation: X0.0 Y-0.0 Z0.0
+Palm (ONE MESH) scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+Palm (ONE MESH) groups: Actuator Block, 
+Palm (ONE MESH) parent: Actuator Block
+Palm (ONE MESH) mesh: Palm Inner.003
+Palm (ONE MESH) materials: PLA White, 
+Palm (ONE MESH) modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 3.00, Offset: 1.00 
+        Even thickness: False, High Quality Normals: False  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean.BOOLEAN Palm and Back Cover Divide, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm and Back Cover Divide
+
 Name: Palm combined for mould
 Palm combined for mould Type: MESH
 Palm combined for mould transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
@@ -2832,6 +2932,27 @@ Palm inner modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN thumb spring termination.001
   #25 Name: Boolean.007, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole
+
+Name: Palm Inner (ONE MESH)
+Palm Inner (ONE MESH) Type: MESH
+Palm Inner (ONE MESH) transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+Palm Inner (ONE MESH) rotation: X0.0 Y-0.0 Z0.0
+Palm Inner (ONE MESH) scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+Palm Inner (ONE MESH) groups: Actuator Block, 
+Palm Inner (ONE MESH) parent: Actuator Block
+Palm Inner (ONE MESH) mesh: Palm Inner.003
+Palm Inner (ONE MESH) materials: PLA White, 
+Palm Inner (ONE MESH) modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 3.00, Offset: 1.00 
+        Even thickness: False, High Quality Normals: False  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean.BOOLEAN Palm and Back Cover Divide, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm and Back Cover Divide
+  #4 Name: Boolean.BOOLEAN Inner palm and Urethane Profile, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Inner palm and Urethane Profile
+  #5 Name: Boolean.BOOLEAN Palm Inner Profile (ONE MESH), Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm Inner Profile (ONE MESH)
 
 Name: Palm inner CLEAN UP.000
 Palm inner CLEAN UP.000 Type: MESH
@@ -2969,6 +3090,25 @@ Palm inner for new mould modifiers:
   #3 Name: Boolean, Type: BOOLEAN
         Operation: UNION, Object: Urethane skin
 
+Name: Palm Inner Profile (ONE MESH)
+Palm Inner Profile (ONE MESH) Type: MESH
+Palm Inner Profile (ONE MESH) transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+Palm Inner Profile (ONE MESH) rotation: X0.0 Y-0.0 Z0.0
+Palm Inner Profile (ONE MESH) scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+Palm Inner Profile (ONE MESH) groups: Actuator Block, 
+Palm Inner Profile (ONE MESH) parent: Actuator Block
+Palm Inner Profile (ONE MESH) mesh: Palm Inner.003
+Palm Inner Profile (ONE MESH) materials: PLA White, 
+Palm Inner Profile (ONE MESH) modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.00, Offset: 1.00 
+        Even thickness: False, High Quality Normals: False  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean.BOOLEAN Palm and Back Cover Divide, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm and Back Cover Divide
+  #4 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Plane
+
 Name: Palm inner.001
 Palm inner.001 Type: MESH
 Palm inner.001 transform: X7.1342034339904785 Y-37.89358901977539 Z-24.388282775878906
@@ -3097,6 +3237,16 @@ PCB Chestnut FLIPPED rotation: X3.1415929794311523 Y1.424297928675957e-14 Z1.570
 PCB Chestnut FLIPPED scale: X1.0 Y1.0 Z1.0
 PCB Chestnut FLIPPED groups: None
 PCB Chestnut FLIPPED parent: Actuator Block
+
+Name: Plane
+Plane Type: MESH
+Plane transform: X9.062156677246094 Y-49.39783477783203 Z1.1913120746612549
+Plane rotation: X0.0 Y0.0 Z0.0
+Plane scale: X5.542574882507324 Y5.542574882507324 Z5.542574882507324
+Plane groups: None
+Plane mesh: Plane.009
+Plane materials: Boolean difference, 
+Plane modifiers: None
 
 Name: PQ12 Caps
 PQ12 Caps Type: MESH
