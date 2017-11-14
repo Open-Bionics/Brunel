@@ -539,6 +539,16 @@ BOOLEAN DC Jack.001 materials: Boolean difference,
 BOOLEAN DC Jack.001 modifiers: 
   #1 Name: Bevel, Type: BEVEL
 
+Name: BOOLEAN Dowel Thumb Ligament Cover
+BOOLEAN Dowel Thumb Ligament Cover Type: MESH
+BOOLEAN Dowel Thumb Ligament Cover transform: X4.554749965667725 Y-79.61302947998047 Z-15.421695709228516
+BOOLEAN Dowel Thumb Ligament Cover rotation: X1.5707963705062866 Y-0.0 Z-0.1655530482530594
+BOOLEAN Dowel Thumb Ligament Cover scale: X0.16249996423721313 Y0.16250000894069672 Z0.5000000596046448
+BOOLEAN Dowel Thumb Ligament Cover groups: None
+BOOLEAN Dowel Thumb Ligament Cover mesh: Cylinder.008
+BOOLEAN Dowel Thumb Ligament Cover materials: Boolean difference, 
+BOOLEAN Dowel Thumb Ligament Cover modifiers: None
+
 Name: BOOLEAN Elastic path
 BOOLEAN Elastic path Type: MESH
 BOOLEAN Elastic path transform: X-6.954000949859619 Y-58.58330535888672 Z-13.886879920959473
@@ -669,7 +679,7 @@ BOOLEAN flex bracket for back cover modifiers:
 
 Name: BOOLEAN GALA cover M2 Bolt Hole
 BOOLEAN GALA cover M2 Bolt Hole Type: MESH
-BOOLEAN GALA cover M2 Bolt Hole transform: X-7.59996223449707 Y-74.66353607177734 Z-4.473167896270752
+BOOLEAN GALA cover M2 Bolt Hole transform: X39.09638214111328 Y-74.66353607177734 Z-4.473167896270752
 BOOLEAN GALA cover M2 Bolt Hole rotation: X0.0 Y-0.0 Z0.0
 BOOLEAN GALA cover M2 Bolt Hole scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 BOOLEAN GALA cover M2 Bolt Hole groups: Actuator Block, Booleans, 
@@ -1058,6 +1068,28 @@ BOOLEAN New Gala Cover modifiers:
   #3 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb Dowel 
 
+Name: BOOLEAN New Gala Cover attachment point
+BOOLEAN New Gala Cover attachment point Type: MESH
+BOOLEAN New Gala Cover attachment point transform: X33.943756103515625 Y-91.60875701904297 Z-3.996170997619629
+BOOLEAN New Gala Cover attachment point rotation: X0.0 Y-0.0 Z12.566370964050293
+BOOLEAN New Gala Cover attachment point scale: X0.30000004172325134 Y0.30000004172325134 Z1.0
+BOOLEAN New Gala Cover attachment point groups: None
+BOOLEAN New Gala Cover attachment point mesh: Cylinder.011
+BOOLEAN New Gala Cover attachment point materials: Material, 
+BOOLEAN New Gala Cover attachment point modifiers: None
+
+Name: BOOLEAN New Gala Cover attachment point 0.2mm clearance 
+BOOLEAN New Gala Cover attachment point 0.2mm clearance  Type: MESH
+BOOLEAN New Gala Cover attachment point 0.2mm clearance  transform: X40.918094635009766 Y-66.86409759521484 Z-5.211343765258789
+BOOLEAN New Gala Cover attachment point 0.2mm clearance  rotation: X0.0 Y-0.0 Z7.853982448577881
+BOOLEAN New Gala Cover attachment point 0.2mm clearance  scale: X0.30000004172325134 Y0.30000004172325134 Z1.0
+BOOLEAN New Gala Cover attachment point 0.2mm clearance  groups: None
+BOOLEAN New Gala Cover attachment point 0.2mm clearance  mesh: Cylinder.011
+BOOLEAN New Gala Cover attachment point 0.2mm clearance  materials: Material, 
+BOOLEAN New Gala Cover attachment point 0.2mm clearance  modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.20, Offset: 1.00 
+        Even thickness: False, High Quality Normals: False
 Name: BOOLEAN New gala cover for back cover
 BOOLEAN New gala cover for back cover Type: MESH
 BOOLEAN New gala cover for back cover transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
@@ -1096,6 +1128,16 @@ BOOLEAN New gala cover for back cover modifiers:
   #14 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.50, Offset: 1.00 
         Even thickness: True, High Quality Normals: True
+Name: BOOLEAN New Gala Cover M2 attachment point
+BOOLEAN New Gala Cover M2 attachment point Type: MESH
+BOOLEAN New Gala Cover M2 attachment point transform: X33.94978713989258 Y-91.65444946289062 Z2.7667245864868164
+BOOLEAN New Gala Cover M2 attachment point rotation: X0.0 Y0.0 Z0.0
+BOOLEAN New Gala Cover M2 attachment point scale: X1.0 Y1.0 Z1.0
+BOOLEAN New Gala Cover M2 attachment point groups: None
+BOOLEAN New Gala Cover M2 attachment point mesh: Cylinder.012
+BOOLEAN New Gala Cover M2 attachment point materials: Boolean difference, 
+BOOLEAN New Gala Cover M2 attachment point modifiers: None
+
 Name: BOOLEAN New wrist connector
 BOOLEAN New wrist connector Type: MESH
 BOOLEAN New wrist connector transform: X8.986015319824219 Y-113.17459106445312 Z20.293886184692383
@@ -1876,7 +1918,7 @@ BOOLEAN Thumb pivot dowel.001 modifiers: None
 
 Name: BOOLEAN Thumb pivot dowel.002
 BOOLEAN Thumb pivot dowel.002 Type: MESH
-BOOLEAN Thumb pivot dowel.002 transform: X1.4811415672302246 Y-67.97900390625 Z-17.09486198425293
+BOOLEAN Thumb pivot dowel.002 transform: X3.054750919342041 Y-68.61302947998047 Z-17.09486198425293
 BOOLEAN Thumb pivot dowel.002 rotation: X0.0 Y-0.0 Z-0.17453287541866302
 BOOLEAN Thumb pivot dowel.002 scale: X1.0 Y0.9999999403953552 Z0.9999999403953552
 BOOLEAN Thumb pivot dowel.002 groups: Actuator Block, Booleans, Thumb, 
@@ -2036,8 +2078,8 @@ BOOLEAN UNION Tendon channels proximal.002 modifiers:
 
 Name: BOOLEAN Urethane blocker channel wrist
 BOOLEAN Urethane blocker channel wrist Type: MESH
-BOOLEAN Urethane blocker channel wrist transform: X9.0 Y-92.5212631225586 Z-3.40303635597229
-BOOLEAN Urethane blocker channel wrist rotation: X1.3962634801864624 Y-0.0 Z0.0
+BOOLEAN Urethane blocker channel wrist transform: X9.0 Y-89.0218734741211 Z-4.24652624130249
+BOOLEAN Urethane blocker channel wrist rotation: X1.334268569946289 Y-0.0 Z0.0
 BOOLEAN Urethane blocker channel wrist scale: X1.0 Y1.0 Z1.0
 BOOLEAN Urethane blocker channel wrist groups: None
 BOOLEAN Urethane blocker channel wrist mesh: Plane.016
@@ -2903,26 +2945,28 @@ New Gala Cover modifiers:
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Boolean.BOOLEAN Conical spring, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Conical spring
-  #3 Name: Boolean.BOOLEAN GALA cover M2 Bolt Hole, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN GALA cover M2 Bolt Hole
-  #4 Name: Boolean.BOOLEAN PQ12 exteneed 0.3 mm tolerance, Type: BOOLEAN
+  #3 Name: Boolean.BOOLEAN PQ12 exteneed 0.3 mm tolerance, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
-  #5 Name: Boolean.BOOLEAN Thumb Dowel , Type: BOOLEAN
+  #4 Name: Boolean.BOOLEAN Thumb Dowel , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb Dowel 
-  #6 Name: Boolean.BOOLEAN Thumb attahment dowel, Type: BOOLEAN
+  #5 Name: Boolean.BOOLEAN Thumb attahment dowel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb attachment dowel
-  #7 Name: Boolean.BOOLEAN PCB Chestnut for GALA cover.001, Type: BOOLEAN
+  #6 Name: Boolean.BOOLEAN PCB Chestnut for GALA cover.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for GALA cover.001
-  #8 Name: Boolean.BOOLEAN Back cover M2 bolt holes, Type: BOOLEAN
+  #7 Name: Boolean.BOOLEAN Back cover M2 bolt holes, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
-  #9 Name: Boolean.BOOLEAN Thumb pivot dowel for GALA cover, Type: BOOLEAN
+  #8 Name: Boolean.BOOLEAN Thumb pivot dowel for GALA cover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel for GALA cover
-  #10 Name: Boolean.Back cover proximal attachment point, Type: BOOLEAN
+  #9 Name: Boolean.Back cover proximal attachment point, Type: BOOLEAN
         Operation: UNION, Object: Back cover proximal attachment point
-  #11 Name: Boolean.BOOLEAN Back cover M2 bolt holes.001, Type: BOOLEAN
+  #10 Name: Boolean.BOOLEAN Back cover M2 bolt holes.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
-  #12 Name: Boolean, Type: BOOLEAN
+  #11 Name: Boolean.BOOLEAN Thumb Dowel .001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb Dowel 
+  #12 Name: Boolean.BOOLEAN New Gala Cover attachment point, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN New Gala Cover attachment point
+  #13 Name: Boolean.BOOLEAN New Gala Cover M2 attachment point, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN New Gala Cover M2 attachment point
 
 Name: New Stand
 New Stand Type: MESH
@@ -3059,7 +3103,7 @@ Palm inner modifiers:
   #9 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon Channels
   #10 Name: Boolean.GALACoverM2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN GALA cover M2 Bolt Hole
+        Operation: DIFFERENCE, Object: None
   #11 Name: Boolean.HandLigament, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Hand Ligament
   #12 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
@@ -3172,8 +3216,14 @@ Palm Inner body modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Tendon Channels
   #20 Name: Boolean.BOOLEAN Hand Ligament, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Hand Ligament
-  #21 Name: Boolean.BOOLEAN Thumb Ligament Cover, Type: BOOLEAN
+  #21 Name: Boolean.BOOLEAN Ligament cover M2 bolt hole, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
+  #22 Name: Boolean.BOOLEAN Thumb Ligament Cover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb Ligament Cover 
+  #23 Name: Boolean.BOOLEAN Dowel Thumb Ligament Cover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Dowel Thumb Ligament Cover
+  #24 Name: Boolean.BOOLEAN New Gala Cover M2 attachment point, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN New Gala Cover M2 attachment point
 
 Name: Palm inner CLEAN UP.000
 Palm inner CLEAN UP.000 Type: MESH
@@ -3203,7 +3253,7 @@ Palm inner CLEAN UP.000 modifiers:
   #9 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon Channels
   #10 Name: Boolean.GALACoverM2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN GALA cover M2 Bolt Hole
+        Operation: DIFFERENCE, Object: None
   #11 Name: Boolean.HandLigament, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Hand Ligament
   #12 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
@@ -3263,7 +3313,7 @@ Palm inner CLEAN UP.001 modifiers:
   #9 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon Channels
   #10 Name: Boolean.GALACoverM2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN GALA cover M2 Bolt Hole
+        Operation: DIFFERENCE, Object: None
   #11 Name: Boolean.HandLigament, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Hand Ligament
   #12 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
@@ -3760,17 +3810,6 @@ TARGET Urethane Pad COPY.001 modifiers:
         Even thickness: False, High Quality Normals: False  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
-Name: Tendon pivot dowel
-Tendon pivot dowel Type: MESH
-Tendon pivot dowel transform: X-10.42773723602295 Y-15.0 Z-6.5532379150390625
-Tendon pivot dowel rotation: X-0.0 Y3.141592502593994 Z-0.0
-Tendon pivot dowel scale: X1.0 Y1.0 Z1.0
-Tendon pivot dowel groups: None
-Tendon pivot dowel parent: Actuator Block
-Tendon pivot dowel mesh: Dowel M3 10mm .001
-Tendon pivot dowel materials: Steel, 
-Tendon pivot dowel modifiers: None
-
 Name: Thumb
 Thumb Type: MESH
 Thumb transform: X-11.529359817504883 Y-75.29497528076172 Z-15.0
@@ -3837,8 +3876,8 @@ Thumb Ligament Cover  modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 Bolt Hole
   #4 Name: Boolean.BOOLEAN Thumb tendon channel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon channel
-  #5 Name: Boolean.BOOLEAN Thumb pivot dowel.002, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel.002
+  #5 Name: Boolean.BOOLEAN Dowel Thumb Ligament Cover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Dowel Thumb Ligament Cover
   #6 Name: Boolean.BOOLEAN Thumb ligament elastic clamp, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament elastic clamp
   #7 Name: Boolean.BOOLEAN thumb spring termination.001, Type: BOOLEAN
@@ -3914,7 +3953,7 @@ Thumb pivot dowel.001 modifiers: None
 
 Name: Thumb pivot dowel.002
 Thumb pivot dowel.002 Type: MESH
-Thumb pivot dowel.002 transform: X6.49200439453125 Y-68.35484313964844 Z-15.405913352966309
+Thumb pivot dowel.002 transform: X3.009279727935791 Y-68.91067504882812 Z-16.862667083740234
 Thumb pivot dowel.002 rotation: X0.0 Y-0.0 Z-0.17453287541866302
 Thumb pivot dowel.002 scale: X1.0 Y0.9999999403953552 Z0.9999999403953552
 Thumb pivot dowel.002 groups: Actuator Block, Thumb, 
