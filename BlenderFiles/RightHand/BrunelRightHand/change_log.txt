@@ -75,7 +75,7 @@ Back cover modifiers:
   #9 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN ligament cover top plate
   #10 Name: Boolean.Connectors, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Connectors.001
+        Operation: DIFFERENCE, Object: None
   #11 Name: Boolean.DCJack, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN DC Jack.001
   #12 Name: Boolean.FlexBracket, Type: BOOLEAN
@@ -154,10 +154,14 @@ Back Cover Profile modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Logo Plinth.002
   #10 Name: Boolean.BOOLEAN Logo Plinth.001, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Logo Plinth.001
-  #11 Name: Boolean.BOOLEAN OB Logo Cut Through, Type: BOOLEAN
+  #11 Name: Boolean.OB Logo, Type: BOOLEAN
         Operation: DIFFERENCE, Object: OB Logo
-  #12 Name: Boolean, Type: BOOLEAN
+  #12 Name: Boolean.BOOLEAN New Gala Cover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN New Gala Cover
+  #13 Name: Boolean.BOOLEAN Headphone / Micro USB, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Headphone / Micro USB
+  #14 Name: Boolean.BOOLEAN Power Cable , Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Power Cable 
 
 Name: Back cover proximal attachment point
 Back cover proximal attachment point Type: MESH
@@ -209,7 +213,7 @@ Back cover.001 modifiers:
   #9 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN ligament cover top plate
   #10 Name: Boolean.Connectors, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Connectors.001
+        Operation: DIFFERENCE, Object: None
   #11 Name: Boolean.DCJack, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN DC Jack.001
   #12 Name: Boolean.FlexBracket, Type: BOOLEAN
@@ -495,16 +499,16 @@ BOOLEAN Connector cover for GALA cover.001 modifiers:
         Even thickness: True, High Quality Normals: True  #2 Name: Solidify.001, Type: SOLIDIFY
         Thickness: 0.50, Offset: 1.00 
         Even thickness: True, High Quality Normals: True
-Name: BOOLEAN Connectors.001
-BOOLEAN Connectors.001 Type: MESH
-BOOLEAN Connectors.001 transform: X9.0 Y-57.441871643066406 Z13.190025329589844
-BOOLEAN Connectors.001 rotation: X-1.4901154976598718e-08 Y-1.4901164746561335e-08 Z1.5707961320877075
-BOOLEAN Connectors.001 scale: X0.9999998807907104 Y0.9999998807907104 Z1.0
-BOOLEAN Connectors.001 groups: Actuator Block, Booleans, 
-BOOLEAN Connectors.001 parent: PCB Chestnut FLIPPED
-BOOLEAN Connectors.001 mesh: BOOLEAN Headphone jack.002
-BOOLEAN Connectors.001 materials: Boolean difference, 
-BOOLEAN Connectors.001 modifiers: 
+Name: BOOLEAN Connectors.000
+BOOLEAN Connectors.000 Type: MESH
+BOOLEAN Connectors.000 transform: X9.0 Y-57.441871643066406 Z13.190025329589844
+BOOLEAN Connectors.000 rotation: X-1.4901154976598718e-08 Y-1.4901164746561335e-08 Z1.5707961320877075
+BOOLEAN Connectors.000 scale: X0.9999998807907104 Y0.9999998807907104 Z1.0
+BOOLEAN Connectors.000 groups: Actuator Block, Booleans, 
+BOOLEAN Connectors.000 parent: PCB Chestnut FLIPPED
+BOOLEAN Connectors.000 mesh: BOOLEAN Headphone jack.000
+BOOLEAN Connectors.000 materials: Boolean difference, 
+BOOLEAN Connectors.000 modifiers: 
   #1 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN DC Cable
@@ -646,19 +650,14 @@ BOOLEAN Finger Ligament .001 modifiers:
 
 Name: BOOLEAN Finger Ligament Clamp
 BOOLEAN Finger Ligament Clamp Type: MESH
-BOOLEAN Finger Ligament Clamp transform: X-0.002583591267466545 Y-1.7177529335021973 Z-0.3281930088996887
+BOOLEAN Finger Ligament Clamp transform: X-0.002583591267466545 Y-1.7177529335021973 Z-0.9145668148994446
 BOOLEAN Finger Ligament Clamp rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Finger Ligament Clamp scale: X1.0 Y1.0 Z1.0
 BOOLEAN Finger Ligament Clamp groups: None
 BOOLEAN Finger Ligament Clamp mesh: Plane.020
 BOOLEAN Finger Ligament Clamp materials: Boolean difference, 
-BOOLEAN Finger Ligament Clamp modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Hook.001, Type: HOOK
-  #3 Name: Hook.002, Type: HOOK
-  #4 Name: Solidify, Type: SOLIDIFY
-        Thickness: 0.10, Offset: 0.50 
-        Even thickness: False, High Quality Normals: False
+BOOLEAN Finger Ligament Clamp modifiers: None
+
 Name: BOOLEAN Finger Ligament Cover.001
 BOOLEAN Finger Ligament Cover.001 Type: MESH
 BOOLEAN Finger Ligament Cover.001 transform: X9.44205093383789 Y-9.50092887878418 Z0.48412203788757324
@@ -833,6 +832,19 @@ BOOLEAN Hand Ligament mesh: BOOLEAN Hand Ligament.001
 BOOLEAN Hand Ligament materials: Boolean difference, 
 BOOLEAN Hand Ligament modifiers: None
 
+Name: BOOLEAN Headphone / Micro USB
+BOOLEAN Headphone / Micro USB Type: MESH
+BOOLEAN Headphone / Micro USB transform: X43.401695251464844 Y-71.7712631225586 Z12.84092903137207
+BOOLEAN Headphone / Micro USB rotation: X-0.0 Y1.570796251296997 Z0.0
+BOOLEAN Headphone / Micro USB scale: X0.6500000357627869 Y0.6500000357627869 Z0.5
+BOOLEAN Headphone / Micro USB groups: None
+BOOLEAN Headphone / Micro USB mesh: Cylinder.021
+BOOLEAN Headphone / Micro USB materials: Boolean difference, 
+BOOLEAN Headphone / Micro USB modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 1, Type: CATMULL_CLARK
+
 Name: BOOLEAN Headphone jack.001
 BOOLEAN Headphone jack.001 Type: MESH
 BOOLEAN Headphone jack.001 transform: X9.0 Y-57.441871643066406 Z13.190025329589844
@@ -991,7 +1003,7 @@ BOOLEAN Ligament cover corners modifiers: None
 
 Name: BOOLEAN Ligament cover M2 bolt hole
 BOOLEAN Ligament cover M2 bolt hole Type: MESH
-BOOLEAN Ligament cover M2 bolt hole transform: X7.25 Y-15.0 Z0.20000000298023224
+BOOLEAN Ligament cover M2 bolt hole transform: X7.75 Y-14.5 Z0.20000000298023224
 BOOLEAN Ligament cover M2 bolt hole rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Ligament cover M2 bolt hole scale: X1.0 Y1.0 Z1.0
 BOOLEAN Ligament cover M2 bolt hole groups: Actuator Block, Booleans, 
@@ -1662,6 +1674,16 @@ BOOLEAN PCB Chestnut for GALA cover.001 modifiers:
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Boolean, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN DC Jack for GALA cover
+
+Name: BOOLEAN Power Cable 
+BOOLEAN Power Cable  Type: MESH
+BOOLEAN Power Cable  transform: X-11.954198837280273 Y-97.41788482666016 Z9.304692268371582
+BOOLEAN Power Cable  rotation: X1.5707963705062866 Y-0.0 Z0.0
+BOOLEAN Power Cable  scale: X0.4750000536441803 Y0.4750000536441803 Z0.4750000536441803
+BOOLEAN Power Cable  groups: None
+BOOLEAN Power Cable  mesh: Cylinder.023
+BOOLEAN Power Cable  materials: Boolean difference, 
+BOOLEAN Power Cable  modifiers: None
 
 Name: BOOLEAN PQ12 exteneed 0.3 mm tolerance
 BOOLEAN PQ12 exteneed 0.3 mm tolerance Type: MESH
@@ -2685,7 +2707,7 @@ Finger Ligament Cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Proximal Spring Channel.001
   #6 Name: Boolean.BOOLEAN finger spring bolt holes combined, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN finger spring bolt holes combined
-  #7 Name: Boolean, Type: BOOLEAN
+  #7 Name: Boolean.BOOLEAN Finger Ligament Clamp, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Finger Ligament Clamp
   #8 Name: Boolean.BOOLEAN Flat Faces Finger Ligament Cover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Flat Faces Finger Ligament Cover
@@ -3897,6 +3919,16 @@ Plane.001 mesh: Plane.013
 Plane.001 materials: None
 Plane.001 modifiers: None
 
+Name: Plane.002
+Plane.002 Type: MESH
+Plane.002 transform: X13.816490173339844 Y-10.814189910888672 Z1.7516345977783203
+Plane.002 rotation: X0.0 Y0.0 Z0.0
+Plane.002 scale: X1.0 Y1.0 Z1.0
+Plane.002 groups: None
+Plane.002 mesh: Plane.021
+Plane.002 materials: None
+Plane.002 modifiers: None
+
 Name: PQ12 Caps
 PQ12 Caps Type: MESH
 PQ12 Caps transform: X-13.649959564208984 Y-80.01123046875 Z-3.00000262260437
@@ -4194,7 +4226,7 @@ Thumb Ligament Cover  rotation: X3.137685775756836 Y-0.015713384374976158 Z1.396
 Thumb Ligament Cover  scale: X1.0 Y1.0 Z1.0
 Thumb Ligament Cover  groups: None
 Thumb Ligament Cover  mesh: Cube.026
-Thumb Ligament Cover  materials: None
+Thumb Ligament Cover  materials: PLA White, 
 Thumb Ligament Cover  modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: TARGET Urethane Pad COPY.001, Type: BOOLEAN
@@ -4221,7 +4253,7 @@ Thumb Ligament Cover .001 rotation: X3.1374785900115967 Y-0.015707964077591896 Z
 Thumb Ligament Cover .001 scale: X1.0 Y1.0 Z1.0
 Thumb Ligament Cover .001 groups: None
 Thumb Ligament Cover .001 mesh: Cube.026
-Thumb Ligament Cover .001 materials: None
+Thumb Ligament Cover .001 materials: PLA White, 
 Thumb Ligament Cover .001 modifiers: 
   #1 Name: Displace, Type: DISPLACE
   #2 Name: Bevel, Type: BEVEL
