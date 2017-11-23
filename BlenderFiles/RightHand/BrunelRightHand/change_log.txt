@@ -875,15 +875,30 @@ BOOLEAN flex bracket for back cover modifiers:
         Thickness: 0.50, Offset: 1.00 
         Even thickness: True, High Quality Normals: True  #4 Name: Bevel, Type: BEVEL
 
-Name: BOOLEAN GALA Cover Edge Chamfer
-BOOLEAN GALA Cover Edge Chamfer Type: MESH
-BOOLEAN GALA Cover Edge Chamfer transform: X45.09511184692383 Y-72.52989959716797 Z22.053142547607422
-BOOLEAN GALA Cover Edge Chamfer rotation: X-0.0 Y-2.5307273864746094 Z-0.0
-BOOLEAN GALA Cover Edge Chamfer scale: X1.0 Y1.0 Z1.0
-BOOLEAN GALA Cover Edge Chamfer groups: None
-BOOLEAN GALA Cover Edge Chamfer mesh: Cube.041
-BOOLEAN GALA Cover Edge Chamfer materials: Boolean difference, 
-BOOLEAN GALA Cover Edge Chamfer modifiers: None
+Name: BOOLEAN Fold Point PCB GALA Cover Tidy
+BOOLEAN Fold Point PCB GALA Cover Tidy Type: MESH
+BOOLEAN Fold Point PCB GALA Cover Tidy transform: X16.222902297973633 Y-82.4947509765625 Z17.72760772705078
+BOOLEAN Fold Point PCB GALA Cover Tidy rotation: X-0.0 Y1.570796251296997 Z0.0
+BOOLEAN Fold Point PCB GALA Cover Tidy scale: X0.08316349983215332 Y0.08316349983215332 Z4.158174991607666
+BOOLEAN Fold Point PCB GALA Cover Tidy groups: None
+BOOLEAN Fold Point PCB GALA Cover Tidy mesh: Cylinder.029
+BOOLEAN Fold Point PCB GALA Cover Tidy materials: Boolean difference, 
+BOOLEAN Fold Point PCB GALA Cover Tidy modifiers: None
+
+Name: BOOLEAN Gala Cheetah Tidy
+BOOLEAN Gala Cheetah Tidy Type: MESH
+BOOLEAN Gala Cheetah Tidy transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+BOOLEAN Gala Cheetah Tidy rotation: X0.0 Y-0.0 Z0.0
+BOOLEAN Gala Cheetah Tidy scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+BOOLEAN Gala Cheetah Tidy groups: Actuator Block, 
+BOOLEAN Gala Cheetah Tidy parent: Actuator Block
+BOOLEAN Gala Cheetah Tidy mesh: Hand/Palm.002
+BOOLEAN Gala Cheetah Tidy materials: PLA, 
+BOOLEAN Gala Cheetah Tidy modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 3.20, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN GALA cover M2 Bolt Hole
 BOOLEAN GALA cover M2 Bolt Hole Type: MESH
@@ -909,8 +924,8 @@ BOOLEAN Hand Ligament modifiers: None
 
 Name: BOOLEAN Headphone / Micro USB
 BOOLEAN Headphone / Micro USB Type: MESH
-BOOLEAN Headphone / Micro USB transform: X43.401695251464844 Y-71.7712631225586 Z12.84092903137207
-BOOLEAN Headphone / Micro USB rotation: X-0.0 Y1.570796251296997 Z0.0
+BOOLEAN Headphone / Micro USB transform: X43.07521438598633 Y-71.2712631225586 Z13.241729736328125
+BOOLEAN Headphone / Micro USB rotation: X0.0 Y1.5707963705062866 Z0.0
 BOOLEAN Headphone / Micro USB scale: X0.6500000357627869 Y0.6500000357627869 Z0.5
 BOOLEAN Headphone / Micro USB groups: None
 BOOLEAN Headphone / Micro USB mesh: Cylinder.021
@@ -919,6 +934,54 @@ BOOLEAN Headphone / Micro USB modifiers:
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 1, Type: CATMULL_CLARK
+
+Name: BOOLEAN Headphone / Micro USB.001
+BOOLEAN Headphone / Micro USB.001 Type: MESH
+BOOLEAN Headphone / Micro USB.001 transform: X41.32590103149414 Y-71.7712631225586 Z12.84092903137207
+BOOLEAN Headphone / Micro USB.001 rotation: X-0.0 Y1.570796251296997 Z0.0
+BOOLEAN Headphone / Micro USB.001 scale: X0.6500000357627869 Y0.6500000357627869 Z0.5
+BOOLEAN Headphone / Micro USB.001 groups: None
+BOOLEAN Headphone / Micro USB.001 mesh: Cylinder.025
+BOOLEAN Headphone / Micro USB.001 materials: Boolean difference, 
+BOOLEAN Headphone / Micro USB.001 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 1, Type: CATMULL_CLARK
+  #3 Name: Solidify, Type: SOLIDIFY
+        Thickness: 2.00, Offset: -1.00 
+        Even thickness: False, High Quality Normals: False  #4 Name: Boolean, Type: BOOLEAN
+        Operation: INTERSECT, Object: BOOLEAN Gala Cheetah Tidy
+
+Name: BOOLEAN Headphone / Micro USB.002
+BOOLEAN Headphone / Micro USB.002 Type: MESH
+BOOLEAN Headphone / Micro USB.002 transform: X41.40483093261719 Y-71.2712631225586 Z13.241729736328125
+BOOLEAN Headphone / Micro USB.002 rotation: X0.0 Y1.5707963705062866 Z0.0
+BOOLEAN Headphone / Micro USB.002 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Headphone / Micro USB.002 groups: None
+BOOLEAN Headphone / Micro USB.002 mesh: Cylinder.027
+BOOLEAN Headphone / Micro USB.002 materials: NF Black, 
+BOOLEAN Headphone / Micro USB.002 modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 2.00, Offset: -1.00 
+        Even thickness: False, High Quality Normals: False  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 1, Type: CATMULL_CLARK
+  #3 Name: Bevel, Type: BEVEL
+  #4 Name: Boolean.BOOLEAN Gala Cheetah Tidy, Type: BOOLEAN
+        Operation: INTERSECT, Object: BOOLEAN Gala Cheetah Tidy
+  #5 Name: Boolean.BOOLEAN Headphone Jack, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Headphone Jack
+  #6 Name: Boolean.BOOLEAN Micro USB, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Micro USB
+
+Name: BOOLEAN Headphone Jack
+BOOLEAN Headphone Jack Type: MESH
+BOOLEAN Headphone Jack transform: X42.252445220947266 Y-71.34187316894531 Z12.777480125427246
+BOOLEAN Headphone Jack rotation: X-0.0 Y1.570796251296997 Z0.0
+BOOLEAN Headphone Jack scale: X1.0 Y1.0 Z1.0
+BOOLEAN Headphone Jack groups: None
+BOOLEAN Headphone Jack mesh: Cylinder.022
+BOOLEAN Headphone Jack materials: Boolean difference, 
+BOOLEAN Headphone Jack modifiers: None
 
 Name: BOOLEAN Headphone jack.001
 BOOLEAN Headphone jack.001 Type: MESH
@@ -1223,6 +1286,17 @@ BOOLEAN M3 bolt hole mesh: BOOLEAN M3 bolt hole
 BOOLEAN M3 bolt hole materials: Boolean difference, 
 BOOLEAN M3 bolt hole modifiers: None
 
+Name: BOOLEAN Micro USB
+BOOLEAN Micro USB Type: MESH
+BOOLEAN Micro USB transform: X41.26584243774414 Y-57.0728759765625 Z14.627598762512207
+BOOLEAN Micro USB rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Micro USB scale: X1.0 Y1.0 Z1.0
+BOOLEAN Micro USB groups: None
+BOOLEAN Micro USB mesh: Cube.046
+BOOLEAN Micro USB materials: Boolean difference, 
+BOOLEAN Micro USB modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
 Name: BOOLEAN MOULD Locking feature
 BOOLEAN MOULD Locking feature Type: MESH
 BOOLEAN MOULD Locking feature transform: X56.3663330078125 Y-10.683527946472168 Z1.9962692260742188
@@ -1272,9 +1346,11 @@ BOOLEAN New Gala Cover modifiers:
         Operation: UNION, Object: BOOLEAN New Gala Cover attachment point
   #2 Name: Boolean.BOOLEAN GALA Cover Edge Chamfer, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN GALA Cover Edge Chamfer
-  #3 Name: Solidify, Type: SOLIDIFY
+  #3 Name: Boolean.BOOLEAN PCB Chestnut for GALA cover.000, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for GALA cover.000
+  #4 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.30, Offset: 1.00 
-        Even thickness: False, High Quality Normals: False  #4 Name: Bevel, Type: BEVEL
+        Even thickness: False, High Quality Normals: False  #5 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN New Gala Cover attachment point
 BOOLEAN New Gala Cover attachment point Type: MESH
@@ -1381,9 +1457,9 @@ Name: BOOLEAN Palm and Back Cover Divide
 BOOLEAN Palm and Back Cover Divide Type: MESH
 BOOLEAN Palm and Back Cover Divide transform: X9.062158584594727 Y-49.39783477783203 Z2.191312074661255
 BOOLEAN Palm and Back Cover Divide rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Palm and Back Cover Divide scale: X5.159316062927246 Y5.159316062927246 Z5.159316062927246
+BOOLEAN Palm and Back Cover Divide scale: X1.0 Y1.0 Z1.0
 BOOLEAN Palm and Back Cover Divide groups: None
-BOOLEAN Palm and Back Cover Divide mesh: Plane.008
+BOOLEAN Palm and Back Cover Divide mesh: Palm and Back Cover Divide.001
 BOOLEAN Palm and Back Cover Divide materials: Boolean difference, 
 BOOLEAN Palm and Back Cover Divide modifiers: 
   #1 Name: Bevel, Type: BEVEL
@@ -1392,9 +1468,9 @@ Name: BOOLEAN Palm and Back Cover Divide Clearance
 BOOLEAN Palm and Back Cover Divide Clearance Type: MESH
 BOOLEAN Palm and Back Cover Divide Clearance transform: X9.062158584594727 Y-49.39783477783203 Z2.191312074661255
 BOOLEAN Palm and Back Cover Divide Clearance rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Palm and Back Cover Divide Clearance scale: X5.159316062927246 Y5.159316062927246 Z5.159316062927246
+BOOLEAN Palm and Back Cover Divide Clearance scale: X1.0 Y1.0 Z1.0
 BOOLEAN Palm and Back Cover Divide Clearance groups: None
-BOOLEAN Palm and Back Cover Divide Clearance mesh: Plane.008
+BOOLEAN Palm and Back Cover Divide Clearance mesh: Palm and Back Cover Divide.001
 BOOLEAN Palm and Back Cover Divide Clearance materials: Boolean difference, 
 BOOLEAN Palm and Back Cover Divide Clearance modifiers: 
   #1 Name: Bevel, Type: BEVEL
@@ -1643,6 +1719,17 @@ BOOLEAN Palm urethane finger contact face modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
+Name: BOOLEAN PCB Bracket Tidy 
+BOOLEAN PCB Bracket Tidy  Type: MESH
+BOOLEAN PCB Bracket Tidy  transform: X9.000408172607422 Y-84.20672607421875 Z7.082623481750488
+BOOLEAN PCB Bracket Tidy  rotation: X0.0 Y0.0 Z0.0
+BOOLEAN PCB Bracket Tidy  scale: X1.0 Y1.0 Z1.0
+BOOLEAN PCB Bracket Tidy  groups: None
+BOOLEAN PCB Bracket Tidy  mesh: Cube.048
+BOOLEAN PCB Bracket Tidy  materials: Boolean difference, 
+BOOLEAN PCB Bracket Tidy  modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
 Name: BOOLEAN PCB Chestnut component parts
 BOOLEAN PCB Chestnut component parts Type: MESH
 BOOLEAN PCB Chestnut component parts transform: X9.0 Y-57.44186782836914 Z13.190025329589844
@@ -1678,6 +1765,19 @@ BOOLEAN PCB Chestnut for connector cover.001 materials: Boolean difference,
 BOOLEAN PCB Chestnut for connector cover.001 modifiers: 
   #1 Name: Bevel, Type: BEVEL
 
+Name: BOOLEAN PCB Chestnut for GALA cover.000
+BOOLEAN PCB Chestnut for GALA cover.000 Type: MESH
+BOOLEAN PCB Chestnut for GALA cover.000 transform: X9.0 Y-57.441871643066406 Z13.190025329589844
+BOOLEAN PCB Chestnut for GALA cover.000 rotation: X-1.4901154976598718e-08 Y-1.4901164746561335e-08 Z1.5707961320877075
+BOOLEAN PCB Chestnut for GALA cover.000 scale: X0.9999998807907104 Y0.9999998807907104 Z1.0
+BOOLEAN PCB Chestnut for GALA cover.000 groups: Actuator Block, Booleans, 
+BOOLEAN PCB Chestnut for GALA cover.000 parent: PCB Chestnut FLIPPED
+BOOLEAN PCB Chestnut for GALA cover.000 mesh: BOOLEAN PCB Chestnut for GALA cover.001
+BOOLEAN PCB Chestnut for GALA cover.000 materials: Boolean difference, 
+BOOLEAN PCB Chestnut for GALA cover.000 modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN DC Jack for GALA cover
+
 Name: BOOLEAN PCB Chestnut for GALA cover.001
 BOOLEAN PCB Chestnut for GALA cover.001 Type: MESH
 BOOLEAN PCB Chestnut for GALA cover.001 transform: X9.0 Y-57.441871643066406 Z13.190025329589844
@@ -1692,6 +1792,31 @@ BOOLEAN PCB Chestnut for GALA cover.001 modifiers:
   #2 Name: Boolean, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN DC Jack for GALA cover
 
+Name: BOOLEAN PCB Gala Cover Tidy
+BOOLEAN PCB Gala Cover Tidy Type: MESH
+BOOLEAN PCB Gala Cover Tidy transform: X7.822902679443359 Y-72.6873779296875 Z17.72760772705078
+BOOLEAN PCB Gala Cover Tidy rotation: X0.0 Y0.0 Z0.0
+BOOLEAN PCB Gala Cover Tidy scale: X1.0 Y1.0 Z1.0
+BOOLEAN PCB Gala Cover Tidy groups: None
+BOOLEAN PCB Gala Cover Tidy mesh: Plane.022
+BOOLEAN PCB Gala Cover Tidy materials: PLA, 
+BOOLEAN PCB Gala Cover Tidy modifiers: 
+  #1 Name: Displace, Type: DISPLACE
+  #2 Name: Boolean.BOOLEAN PCB Bracket Tidy , Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PCB Bracket Tidy 
+
+Name: BOOLEAN PCB Tidy Securing Points
+BOOLEAN PCB Tidy Securing Points Type: MESH
+BOOLEAN PCB Tidy Securing Points transform: X31.499990463256836 Y-64.29179382324219 Z17.72760009765625
+BOOLEAN PCB Tidy Securing Points rotation: X2.6179940700531006 Y-0.0 Z0.0
+BOOLEAN PCB Tidy Securing Points scale: X0.2500000298023224 Y0.2500000298023224 Z0.2500000298023224
+BOOLEAN PCB Tidy Securing Points groups: None
+BOOLEAN PCB Tidy Securing Points mesh: Cylinder.028
+BOOLEAN PCB Tidy Securing Points materials: PLA, 
+BOOLEAN PCB Tidy Securing Points modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 1.50, Offset: 1.00 
+        Even thickness: False, High Quality Normals: False
 Name: BOOLEAN Power Cable 
 BOOLEAN Power Cable  Type: MESH
 BOOLEAN Power Cable  transform: X-11.954198837280273 Y-95.41788482666016 Z9.304692268371582
@@ -2626,6 +2751,37 @@ Cube.007 modifiers:
         Thickness: 3.00, Offset: 1.00 
         Even thickness: True, High Quality Normals: True  #2 Name: Bevel, Type: BEVEL
 
+Name: BOOLEAN GALA Cover Edge Chamfer
+BOOLEAN GALA Cover Edge Chamfer Type: MESH
+BOOLEAN GALA Cover Edge Chamfer transform: X-21.738479614257812 Y-74.01437377929688 Z19.032398223876953
+BOOLEAN GALA Cover Edge Chamfer rotation: X0.0 Y-0.7853981852531433 Z0.0
+BOOLEAN GALA Cover Edge Chamfer scale: X1.0 Y1.0 Z1.0
+BOOLEAN GALA Cover Edge Chamfer groups: None
+BOOLEAN GALA Cover Edge Chamfer mesh: Cube.037
+BOOLEAN GALA Cover Edge Chamfer materials: None
+BOOLEAN GALA Cover Edge Chamfer modifiers: None
+
+Name: Cube.008
+Cube.008 Type: MESH
+Cube.008 transform: X-13.499998092651367 Y-68.04581451416016 Z20.58498764038086
+Cube.008 rotation: X0.0 Y0.0 Z0.0
+Cube.008 scale: X1.0 Y1.0 Z1.0
+Cube.008 groups: None
+Cube.008 mesh: Cube.050
+Cube.008 materials: None
+Cube.008 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Cube.009
+Cube.009 Type: MESH
+Cube.009 transform: X1.5346689224243164 Y-83.67881774902344 Z19.726238250732422
+Cube.009 rotation: X0.0 Y0.0 Z0.0
+Cube.009 scale: X0.5000000596046448 Y0.10000000894069672 Z0.5000000596046448
+Cube.009 groups: None
+Cube.009 mesh: Cube.049
+Cube.009 materials: Boolean difference, 
+Cube.009 modifiers: None
+
 Name: Cylinder
 Cylinder Type: MESH
 Cylinder transform: X34.94959259033203 Y-3.0883822441101074 Z5.252593040466309
@@ -2645,6 +2801,18 @@ Cylinder.001 groups: None
 Cylinder.001 mesh: Cylinder.020
 Cylinder.001 materials: None
 Cylinder.001 modifiers: None
+
+Name: Cylinder.002
+Cylinder.002 Type: MESH
+Cylinder.002 transform: X31.499990463256836 Y-64.29179382324219 Z17.72760009765625
+Cylinder.002 rotation: X2.6179940700531006 Y-0.0 Z0.0
+Cylinder.002 scale: X0.2500000298023224 Y0.2500000298023224 Z0.2500000298023224
+Cylinder.002 groups: None
+Cylinder.002 mesh: Cylinder.028
+Cylinder.002 materials: PLA, 
+Cylinder.002 modifiers: 
+  #1 Name: Boolean.BOOLEAN PCB Chestnut for GALA cover.000, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for GALA cover.000
 
 Name: DC jack cover.001
 DC jack cover.001 Type: MESH
@@ -2783,6 +2951,17 @@ Flex Bracket modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Headphone jack.001
   #3 Name: Bevel, Type: BEVEL
 
+Name: Flex Bracket.001
+Flex Bracket.001 Type: MESH
+Flex Bracket.001 transform: X-11.954208374023438 Y-98.3869400024414 Z14.455009460449219
+Flex Bracket.001 rotation: X0.0 Y0.0 Z0.0
+Flex Bracket.001 scale: X1.0 Y1.0 Z1.0
+Flex Bracket.001 groups: None
+Flex Bracket.001 mesh: Cube.047
+Flex Bracket.001 materials: PLA, 
+Flex Bracket.001 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
 Name: Gala Cover Clip
 Gala Cover Clip Type: MESH
 Gala Cover Clip transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
@@ -2796,6 +2975,36 @@ Gala Cover Clip modifiers:
   #1 Name: Proximal fillet, Type: BEVEL
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+
+Name: Gala Cover Tidy
+Gala Cover Tidy Type: MESH
+Gala Cover Tidy transform: X7.822902679443359 Y-72.6873779296875 Z17.72760772705078
+Gala Cover Tidy rotation: X0.0 Y0.0 Z0.0
+Gala Cover Tidy scale: X1.0 Y1.0 Z1.0
+Gala Cover Tidy groups: None
+Gala Cover Tidy mesh: Plane.022
+Gala Cover Tidy materials: PLA, 
+Gala Cover Tidy modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: Cube.008
+  #2 Name: Boolean.BOOLEAN PCB Bracket Tidy , Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PCB Bracket Tidy 
+
+Name: Gala Cover Tidy.001
+Gala Cover Tidy.001 Type: MESH
+Gala Cover Tidy.001 transform: X7.822902679443359 Y-72.6873779296875 Z17.72760772705078
+Gala Cover Tidy.001 rotation: X0.0 Y0.0 Z0.0
+Gala Cover Tidy.001 scale: X1.0 Y1.0 Z1.0
+Gala Cover Tidy.001 groups: None
+Gala Cover Tidy.001 mesh: Plane.023
+Gala Cover Tidy.001 materials: PLA, 
+Gala Cover Tidy.001 modifiers: 
+  #1 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Fold Point PCB GALA Cover Tidy
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: Cylinder.002
+  #3 Name: Boolean.BOOLEAN PCB Bracket Tidy , Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PCB Bracket Tidy 
 
 Name: Hand Ligament
 Hand Ligament Type: MESH
@@ -3277,7 +3486,7 @@ New Gala Cover modifiers:
   #4 Name: Boolean.BOOLEAN Thumb attahment dowel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb attachment dowel
   #5 Name: Boolean.BOOLEAN PCB Chestnut for GALA cover.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for GALA cover.001
+        Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for GALA cover.000
   #6 Name: Boolean.BOOLEAN Thumb pivot dowel for GALA cover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel for GALA cover
   #7 Name: Boolean.Back cover proximal attachment point, Type: BOOLEAN
@@ -3294,6 +3503,10 @@ New Gala Cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Screwdriver Leaver Point
   #13 Name: Boolean.BOOLEAN GALA Cover Edge Chamfer, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN GALA Cover Edge Chamfer
+  #14 Name: Boolean.BOOLEAN PCB Gala Cover Tidy, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PCB Gala Cover Tidy
+  #15 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Headphone / Micro USB
 
 Name: New Stand
 New Stand Type: MESH
