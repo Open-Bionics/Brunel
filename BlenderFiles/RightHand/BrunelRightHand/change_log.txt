@@ -128,7 +128,7 @@ Back Cover (Integrated Wrist) transform: X9.0 Y-48.89358139038086 Z-2.9508910179
 Back Cover (Integrated Wrist) rotation: X0.0 Y0.0 Z0.0
 Back Cover (Integrated Wrist) scale: X1.0 Y1.0 Z1.0
 Back Cover (Integrated Wrist) groups: None
-Back Cover (Integrated Wrist) mesh: Hand/Palm.001
+Back Cover (Integrated Wrist) mesh: Hand/Palm.003
 Back Cover (Integrated Wrist) materials: PLA, 
 Back Cover (Integrated Wrist) modifiers: 
   #1 Name: Boolean.BOOLEAN Wrist Flat Back Cover, Type: BOOLEAN
@@ -151,9 +151,9 @@ Back Cover (Integrated Wrist) modifiers:
   #10 Name: Boolean.BOOLEAN Flat Faces Finger Ligament Cover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Flat Faces Finger Ligament Cover
   #11 Name: Boolean.BOOLEAN Logo Plinth.002, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Logo Plinth.002
+        Operation: DIFFERENCE, Object: None
   #12 Name: Boolean.BOOLEAN Logo Plinth.001, Type: BOOLEAN
-        Operation: UNION, Object: BOOLEAN Logo Plinth.001
+        Operation: UNION, Object: None
   #13 Name: Boolean.OB Logo, Type: BOOLEAN
         Operation: DIFFERENCE, Object: OB Logo
   #14 Name: Boolean.BOOLEAN New Gala Cover, Type: BOOLEAN
@@ -712,7 +712,7 @@ BOOLEAN Finger Ligament .001 modifiers:
 
 Name: BOOLEAN Finger Ligament Clamp
 BOOLEAN Finger Ligament Clamp Type: MESH
-BOOLEAN Finger Ligament Clamp transform: X-0.002583591267466545 Y-1.7177529335021973 Z-0.9145668148994446
+BOOLEAN Finger Ligament Clamp transform: X-0.002583591267466545 Y-1.7177529335021973 Z-0.4145668148994446
 BOOLEAN Finger Ligament Clamp rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Finger Ligament Clamp scale: X1.0 Y1.0 Z1.0
 BOOLEAN Finger Ligament Clamp groups: None
@@ -722,7 +722,7 @@ BOOLEAN Finger Ligament Clamp modifiers: None
 
 Name: BOOLEAN Finger Ligament Cover.001
 BOOLEAN Finger Ligament Cover.001 Type: MESH
-BOOLEAN Finger Ligament Cover.001 transform: X9.44205093383789 Y-9.50092887878418 Z0.48412203788757324
+BOOLEAN Finger Ligament Cover.001 transform: X9.44205093383789 Y-9.50092887878418 Z0.9841220378875732
 BOOLEAN Finger Ligament Cover.001 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Finger Ligament Cover.001 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Finger Ligament Cover.001 groups: None
@@ -889,7 +889,7 @@ BOOLEAN Gala Cheetah Tidy rotation: X0.0 Y-0.0 Z0.0
 BOOLEAN Gala Cheetah Tidy scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 BOOLEAN Gala Cheetah Tidy groups: Actuator Block, 
 BOOLEAN Gala Cheetah Tidy parent: Actuator Block
-BOOLEAN Gala Cheetah Tidy mesh: Hand/Palm.001
+BOOLEAN Gala Cheetah Tidy mesh: Hand/Palm.003
 BOOLEAN Gala Cheetah Tidy materials: PLA, 
 BOOLEAN Gala Cheetah Tidy modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
@@ -1016,7 +1016,7 @@ BOOLEAN Inner Palm (Flat plane cut) modifiers: None
 
 Name: BOOLEAN Inner palm and Urethane Profile
 BOOLEAN Inner palm and Urethane Profile Type: MESH
-BOOLEAN Inner palm and Urethane Profile transform: X9.053571701049805 Y-50.71782302856445 Z1.4369440078735352
+BOOLEAN Inner palm and Urethane Profile transform: X9.053571701049805 Y-50.71782302856445 Z0.9369440078735352
 BOOLEAN Inner palm and Urethane Profile rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Inner palm and Urethane Profile scale: X1.0 Y1.0 Z1.0
 BOOLEAN Inner palm and Urethane Profile groups: None
@@ -1230,8 +1230,8 @@ BOOLEAN Logo Plinth modifiers:
 
 Name: BOOLEAN Logo Plinth.001
 BOOLEAN Logo Plinth.001 Type: MESH
-BOOLEAN Logo Plinth.001 transform: X9.095829010009766 Y-59.139488220214844 Z25.34930419921875
-BOOLEAN Logo Plinth.001 rotation: X3.1071460247039795 Y-0.05016093701124191 Z-0.8730132579803467
+BOOLEAN Logo Plinth.001 transform: X9.1525239944458 Y-55.01521301269531 Z27.151369094848633
+BOOLEAN Logo Plinth.001 rotation: X3.0899462699890137 Y-0.06992535293102264 Z-0.8720270395278931
 BOOLEAN Logo Plinth.001 scale: X2.250000238418579 Y2.250000238418579 Z2.500000238418579
 BOOLEAN Logo Plinth.001 groups: None
 BOOLEAN Logo Plinth.001 mesh: Cylinder.018
@@ -1556,7 +1556,7 @@ BOOLEAN Palm Inner Profile (ONE MESH) rotation: X0.0 Y-0.0 Z0.0
 BOOLEAN Palm Inner Profile (ONE MESH) scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 BOOLEAN Palm Inner Profile (ONE MESH) groups: Actuator Block, 
 BOOLEAN Palm Inner Profile (ONE MESH) parent: Actuator Block
-BOOLEAN Palm Inner Profile (ONE MESH) mesh: Hand/Palm.001
+BOOLEAN Palm Inner Profile (ONE MESH) mesh: Hand/Palm.003
 BOOLEAN Palm Inner Profile (ONE MESH) materials: PLA, 
 BOOLEAN Palm Inner Profile (ONE MESH) modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
@@ -2780,8 +2780,8 @@ Cylinder modifiers: None
 
 Name: Cylinder.001
 Cylinder.001 Type: MESH
-Cylinder.001 transform: X10.612058639526367 Y-59.231937408447266 Z25.172327041625977
-Cylinder.001 rotation: X0.048266083002090454 Y0.00047103234101086855 Z-3.1319849491119385
+Cylinder.001 transform: X8.289841651916504 Y-55.08462905883789 Z26.744384765625
+Cylinder.001 rotation: X-0.08576654642820358 Y-0.0017548120813444257 Z-0.016976529732346535
 Cylinder.001 scale: X1.0 Y1.0 Z1.0
 Cylinder.001 groups: None
 Cylinder.001 mesh: Cylinder.020
@@ -2799,6 +2799,16 @@ Cylinder.002 materials: PLA,
 Cylinder.002 modifiers: 
   #1 Name: Boolean.BOOLEAN PCB Chestnut for GALA cover.000, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for GALA cover.000
+
+Name: Cylinder.003
+Cylinder.003 Type: MESH
+Cylinder.003 transform: X9.140975952148438 Y-54.54066848754883 Z35.905242919921875
+Cylinder.003 rotation: X-0.07441642880439758 Y-0.0017548121977597475 Z-0.016976531594991684
+Cylinder.003 scale: X1.0 Y1.0 Z1.0
+Cylinder.003 groups: None
+Cylinder.003 mesh: Cylinder.026
+Cylinder.003 materials: None
+Cylinder.003 modifiers: None
 
 Name: DC jack cover.001
 DC jack cover.001 Type: MESH
@@ -2886,7 +2896,7 @@ FINGER 4 modifiers:
 
 Name: Finger Ligament Cover
 Finger Ligament Cover Type: MESH
-Finger Ligament Cover transform: X9.44205093383789 Y-9.50092887878418 Z0.48412203788757324
+Finger Ligament Cover transform: X9.44205093383789 Y-9.50092887878418 Z0.9841220378875732
 Finger Ligament Cover rotation: X0.0 Y0.0 Z0.0
 Finger Ligament Cover scale: X1.0 Y1.0 Z1.0
 Finger Ligament Cover groups: None
@@ -2896,15 +2906,13 @@ Finger Ligament Cover modifiers:
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Boolean.BOOLEAN Ligament cover M2 bolt hole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
-  #3 Name: Boolean.BOOLEAN Proximal Spring Channel.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Proximal Spring Channel.001
-  #4 Name: Boolean.BOOLEAN finger spring bolt holes combined, Type: BOOLEAN
+  #3 Name: Boolean.BOOLEAN finger spring bolt holes combined, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN finger spring bolt holes combined
-  #5 Name: Boolean.BOOLEAN Finger Ligament Clamp, Type: BOOLEAN
+  #4 Name: Boolean.BOOLEAN Finger Ligament Clamp, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Finger Ligament Clamp
-  #6 Name: Boolean.BOOLEAN Flat Faces Finger Ligament Cover, Type: BOOLEAN
+  #5 Name: Boolean.BOOLEAN Flat Faces Finger Ligament Cover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Flat Faces Finger Ligament Cover
-  #7 Name: Boolean.BOOLEAN Proximal Spring Channel.002, Type: BOOLEAN
+  #6 Name: Boolean.BOOLEAN Proximal Spring Channel.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Proximal Spring Channel.001
 
 Name: Finger spring bolt holes
@@ -3490,7 +3498,7 @@ New Gala Cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN GALA Cover Edge Chamfer
   #14 Name: Boolean.BOOLEAN PCB Gala Cover Tidy, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PCB Gala Cover Tidy
-  #15 Name: Boolean, Type: BOOLEAN
+  #15 Name: Boolean.BOOLEAN Headphone / Micro USB, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Headphone / Micro USB
 
 Name: New Stand
@@ -3529,8 +3537,8 @@ New Wrist Connector modifiers:
 
 Name: OB Logo
 OB Logo Type: MESH
-OB Logo transform: X10.61262035369873 Y-59.260948181152344 Z24.704578399658203
-OB Logo rotation: X-0.04823649302124977 Y-0.0017548124305903912 Z-6.300161838531494
+OB Logo transform: X9.819339752197266 Y-55.24462890625 Z25.502775192260742
+OB Logo rotation: X-0.08576655387878418 Y-0.0017548120813444257 Z-6.300161838531494
 OB Logo scale: X1.0 Y1.0 Z1.0
 OB Logo groups: None
 OB Logo mesh: OB Logo.001
@@ -3689,7 +3697,7 @@ Palm Inner (ONE MESH) rotation: X0.0 Y-0.0 Z0.0
 Palm Inner (ONE MESH) scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Palm Inner (ONE MESH) groups: Actuator Block, 
 Palm Inner (ONE MESH) parent: Actuator Block
-Palm Inner (ONE MESH) mesh: Hand/Palm.001
+Palm Inner (ONE MESH) mesh: Hand/Palm.003
 Palm Inner (ONE MESH) materials: PLA, 
 Palm Inner (ONE MESH) modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
@@ -3919,7 +3927,7 @@ Palm inner for new mould modifiers:
 
 Name: Palm Inner phlange
 Palm Inner phlange Type: MESH
-Palm Inner phlange transform: X7.5 Y-37.89358901977539 Z-3.6240572929382324
+Palm Inner phlange transform: X7.5 Y-37.89358901977539 Z-4.124057292938232
 Palm Inner phlange rotation: X0.0 Y-0.0 Z0.0
 Palm Inner phlange scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Palm Inner phlange groups: Actuator Block, 
@@ -3935,7 +3943,7 @@ Palm Inner Profile (ONE MESH) rotation: X0.0 Y-0.0 Z0.0
 Palm Inner Profile (ONE MESH) scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Palm Inner Profile (ONE MESH) groups: Actuator Block, 
 Palm Inner Profile (ONE MESH) parent: Actuator Block
-Palm Inner Profile (ONE MESH) mesh: Hand/Palm.001
+Palm Inner Profile (ONE MESH) mesh: Hand/Palm.003
 Palm Inner Profile (ONE MESH) materials: PLA, 
 Palm Inner Profile (ONE MESH) modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
@@ -3952,7 +3960,7 @@ Palm Inner shell rotation: X0.0 Y-0.0 Z0.0
 Palm Inner shell scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Palm Inner shell groups: Actuator Block, 
 Palm Inner shell parent: Actuator Block
-Palm Inner shell mesh: Hand/Palm.001
+Palm Inner shell mesh: Hand/Palm.003
 Palm Inner shell materials: PLA, 
 Palm Inner shell modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
@@ -4109,7 +4117,7 @@ Palm Urethane (ONE MESH) rotation: X0.0 Y-0.0 Z0.0
 Palm Urethane (ONE MESH) scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Palm Urethane (ONE MESH) groups: Actuator Block, 
 Palm Urethane (ONE MESH) parent: Actuator Block
-Palm Urethane (ONE MESH) mesh: Hand/Palm.001
+Palm Urethane (ONE MESH) mesh: Hand/Palm.003
 Palm Urethane (ONE MESH) materials: PLA, 
 Palm Urethane (ONE MESH) modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
@@ -4336,7 +4344,7 @@ TARGET Outer Surface rotation: X0.0 Y-0.0 Z0.0
 TARGET Outer Surface scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 TARGET Outer Surface groups: Actuator Block, 
 TARGET Outer Surface parent: Actuator Block
-TARGET Outer Surface mesh: Hand/Palm.001
+TARGET Outer Surface mesh: Hand/Palm.003
 TARGET Outer Surface materials: PLA, 
 TARGET Outer Surface modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
@@ -4379,7 +4387,7 @@ TARGET Outer Surface Midlevel rotation: X0.0 Y-0.0 Z0.0
 TARGET Outer Surface Midlevel scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 TARGET Outer Surface Midlevel groups: Actuator Block, 
 TARGET Outer Surface Midlevel parent: Actuator Block
-TARGET Outer Surface Midlevel mesh: Hand/Palm.001
+TARGET Outer Surface Midlevel mesh: Hand/Palm.003
 TARGET Outer Surface Midlevel materials: PLA, 
 TARGET Outer Surface Midlevel modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
