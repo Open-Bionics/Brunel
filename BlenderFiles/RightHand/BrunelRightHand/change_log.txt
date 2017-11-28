@@ -374,6 +374,16 @@ BOOLEAN 2nd Spring Channel modifiers:
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
+Name: BOOLEAN 3mm Inserts Palm Mould
+BOOLEAN 3mm Inserts Palm Mould Type: MESH
+BOOLEAN 3mm Inserts Palm Mould transform: X-40.0000114440918 Y-3.9797019958496094 Z-2.297677993774414
+BOOLEAN 3mm Inserts Palm Mould rotation: X0.0 Y0.0 Z0.0
+BOOLEAN 3mm Inserts Palm Mould scale: X1.0 Y1.0 Z1.0
+BOOLEAN 3mm Inserts Palm Mould groups: None
+BOOLEAN 3mm Inserts Palm Mould mesh: Cylinder.034
+BOOLEAN 3mm Inserts Palm Mould materials: Boolean difference, 
+BOOLEAN 3mm Inserts Palm Mould modifiers: None
+
 Name: BOOLEAN 3rd finger spring bolt hole
 BOOLEAN 3rd finger spring bolt hole Type: MESH
 BOOLEAN 3rd finger spring bolt hole transform: X18.185407638549805 Y-8.738301277160645 Z4.449999809265137
@@ -1377,7 +1387,7 @@ BOOLEAN New gala cover for back cover modifiers:
   #5 Name: Boolean.PQ12s, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
   #6 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb attachment dowel
+        Operation: DIFFERENCE, Object: None
   #7 Name: Boolean.PCB, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
   #8 Name: Boolean.CableTidy, Type: BOOLEAN
@@ -1492,9 +1502,9 @@ BOOLEAN Palm Inner modifiers:
   #5 Name: Boolean.ConicalSpring, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Conical spring for palm inner
   #6 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb attachment dowel
+        Operation: DIFFERENCE, Object: None
   #7 Name: Boolean.ThumbPivotDowel000, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel top
+        Operation: DIFFERENCE, Object: None
   #8 Name: Boolean.ThumbPivotDowel001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel.001
   #9 Name: Boolean.TendonChannels, Type: BOOLEAN
@@ -1587,9 +1597,9 @@ BOOLEAN Palm Inner simplified modifiers:
   #3 Name: Boolean.ConicalSpring, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Conical spring for palm inner
   #4 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb attachment dowel
+        Operation: DIFFERENCE, Object: None
   #5 Name: Boolean.ThumbPivotDowel000, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel top
+        Operation: DIFFERENCE, Object: None
   #6 Name: Boolean.ThumbPivotDowel001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel.001
   #7 Name: Boolean.TendonChannels, Type: BOOLEAN
@@ -1624,6 +1634,40 @@ BOOLEAN Palm Inner Urethane Profile  groups: None
 BOOLEAN Palm Inner Urethane Profile  mesh: Cube.033
 BOOLEAN Palm Inner Urethane Profile  materials: Boolean difference, 
 BOOLEAN Palm Inner Urethane Profile  modifiers: None
+
+Name: BOOLEAN Palm Mould Plunger
+BOOLEAN Palm Mould Plunger Type: MESH
+BOOLEAN Palm Mould Plunger transform: X9.0 Y-117.09788513183594 Z-2.9508910179138184
+BOOLEAN Palm Mould Plunger rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Palm Mould Plunger scale: X1.0 Y1.0 Z1.0
+BOOLEAN Palm Mould Plunger groups: None
+BOOLEAN Palm Mould Plunger mesh: Cube.041
+BOOLEAN Palm Mould Plunger materials: None
+BOOLEAN Palm Mould Plunger modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Bevel.001, Type: BEVEL
+
+Name: BOOLEAN Palm Mould Securing Dowels.001
+BOOLEAN Palm Mould Securing Dowels.001 Type: MESH
+BOOLEAN Palm Mould Securing Dowels.001 transform: X50.499996185302734 Y-95.47972106933594 Z-10.643102645874023
+BOOLEAN Palm Mould Securing Dowels.001 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Palm Mould Securing Dowels.001 scale: X0.49500003457069397 Y0.49500003457069397 Z2.000000238418579
+BOOLEAN Palm Mould Securing Dowels.001 groups: None
+BOOLEAN Palm Mould Securing Dowels.001 mesh: Cylinder.033
+BOOLEAN Palm Mould Securing Dowels.001 materials: Boolean difference, 
+BOOLEAN Palm Mould Securing Dowels.001 modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.10, Offset: 1.00 
+        Even thickness: False, High Quality Normals: False
+Name: BOOLEAN Palm Mould Urethane Channel
+BOOLEAN Palm Mould Urethane Channel Type: MESH
+BOOLEAN Palm Mould Urethane Channel transform: X15.409661293029785 Y-65.02278137207031 Z-27.91219711303711
+BOOLEAN Palm Mould Urethane Channel rotation: X1.5707963705062866 Y-0.0 Z0.0
+BOOLEAN Palm Mould Urethane Channel scale: X0.1250000149011612 Y0.1250000149011612 Z1.0
+BOOLEAN Palm Mould Urethane Channel groups: None
+BOOLEAN Palm Mould Urethane Channel mesh: Cylinder.030
+BOOLEAN Palm Mould Urethane Channel materials: Boolean difference, 
+BOOLEAN Palm Mould Urethane Channel modifiers: None
 
 Name: BOOLEAN Palm outer frame
 BOOLEAN Palm outer frame Type: MESH
@@ -1700,6 +1744,16 @@ BOOLEAN Palm outer skin for MOULD modifiers:
   #1 Name: Displace, Type: DISPLACE
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN Palm Riser Channels
+BOOLEAN Palm Riser Channels Type: MESH
+BOOLEAN Palm Riser Channels transform: X42.00063705444336 Y-87.86579895019531 Z-4.7600274085998535
+BOOLEAN Palm Riser Channels rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Palm Riser Channels scale: X0.10000000894069672 Y0.10000000894069672 Z1.0
+BOOLEAN Palm Riser Channels groups: None
+BOOLEAN Palm Riser Channels mesh: Cylinder.035
+BOOLEAN Palm Riser Channels materials: Boolean difference, 
+BOOLEAN Palm Riser Channels modifiers: None
 
 Name: BOOLEAN Palm urethane finger contact face
 BOOLEAN Palm urethane finger contact face Type: MESH
@@ -2007,7 +2061,7 @@ BOOLEAN Thumb attachment dowel rotation: X-0.0 Y1.570796251296997 Z0.0
 BOOLEAN Thumb attachment dowel scale: X1.0 Y0.9999999403953552 Z0.9999999403953552
 BOOLEAN Thumb attachment dowel groups: Actuator Block, Booleans, Thumb, 
 BOOLEAN Thumb attachment dowel parent: Actuator Block
-BOOLEAN Thumb attachment dowel mesh: BOOLEAN Thumb attahment dowel
+BOOLEAN Thumb attachment dowel mesh: BOOLEAN Thumb attahment dowel.001
 BOOLEAN Thumb attachment dowel materials: Boolean difference, 
 BOOLEAN Thumb attachment dowel modifiers: None
 
@@ -2245,9 +2299,9 @@ BOOLEAN Thumb pivot combined mesh: Cube.002
 BOOLEAN Thumb pivot combined materials: Boolean difference, 
 BOOLEAN Thumb pivot combined modifiers: 
   #1 Name: Boolean, Type: BOOLEAN
-        Operation: UNION, Object: BOOLEAN Thumb attachment dowel
+        Operation: UNION, Object: None
   #2 Name: Boolean.001, Type: BOOLEAN
-        Operation: UNION, Object: BOOLEAN Thumb pivot dowel top
+        Operation: UNION, Object: None
   #3 Name: Boolean.002, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Thumb pivot dowel.001
   #4 Name: Boolean.003, Type: BOOLEAN
@@ -2274,16 +2328,16 @@ BOOLEAN Thumb Pivot dowel Lower mesh: Cylinder.024
 BOOLEAN Thumb Pivot dowel Lower materials: Boolean difference, 
 BOOLEAN Thumb Pivot dowel Lower modifiers: None
 
-Name: BOOLEAN Thumb pivot dowel top
-BOOLEAN Thumb pivot dowel top Type: MESH
-BOOLEAN Thumb pivot dowel top transform: X15.050033569335938 Y-73.01124572753906 Z-4.673169136047363
-BOOLEAN Thumb pivot dowel top rotation: X-1.5707961320877075 Y2.356194496154785 Z-1.570796251296997
-BOOLEAN Thumb pivot dowel top scale: X0.9999998807907104 Y0.9999998807907104 Z0.9999999403953552
-BOOLEAN Thumb pivot dowel top groups: Actuator Block, Booleans, Thumb, 
-BOOLEAN Thumb pivot dowel top parent: Actuator Block
-BOOLEAN Thumb pivot dowel top mesh: BOOLEAN Thumb pivot dowel
-BOOLEAN Thumb pivot dowel top materials: Boolean difference, 
-BOOLEAN Thumb pivot dowel top modifiers: None
+Name: BOOLEAN Thumb pivot dowel top.001
+BOOLEAN Thumb pivot dowel top.001 Type: MESH
+BOOLEAN Thumb pivot dowel top.001 transform: X15.050033569335938 Y-74.02127838134766 Z-4.673169136047363
+BOOLEAN Thumb pivot dowel top.001 rotation: X-1.5707961320877075 Y2.356194496154785 Z-1.570796251296997
+BOOLEAN Thumb pivot dowel top.001 scale: X0.9999998807907104 Y0.9999998807907104 Z0.9999999403953552
+BOOLEAN Thumb pivot dowel top.001 groups: Actuator Block, Booleans, Thumb, 
+BOOLEAN Thumb pivot dowel top.001 parent: Actuator Block
+BOOLEAN Thumb pivot dowel top.001 mesh: BOOLEAN Thumb pivot dowel.001
+BOOLEAN Thumb pivot dowel top.001 materials: Boolean difference, 
+BOOLEAN Thumb pivot dowel top.001 modifiers: None
 
 Name: BOOLEAN Thumb pivot dowel.001
 BOOLEAN Thumb pivot dowel.001 Type: MESH
@@ -3450,7 +3504,7 @@ New gala cover modifiers:
   #5 Name: Boolean.PQ12s, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
   #6 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb attachment dowel
+        Operation: DIFFERENCE, Object: None
   #7 Name: Boolean.PCB, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
   #8 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
@@ -3477,7 +3531,7 @@ New Gala Cover modifiers:
   #3 Name: Boolean.BOOLEAN PQ12 exteneed 0.3 mm tolerance, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
   #4 Name: Boolean.BOOLEAN Thumb attahment dowel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb attachment dowel
+        Operation: DIFFERENCE, Object: None
   #5 Name: Boolean.BOOLEAN PCB Chestnut for GALA cover.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for GALA cover.000
   #6 Name: Boolean.BOOLEAN Thumb pivot dowel for GALA cover, Type: BOOLEAN
@@ -3650,9 +3704,9 @@ Palm inner modifiers:
   #5 Name: Boolean.ConicalSpring, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Conical spring for palm inner
   #6 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb attachment dowel
+        Operation: DIFFERENCE, Object: None
   #7 Name: Boolean.ThumbPivotDowel000, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel top
+        Operation: DIFFERENCE, Object: None
   #8 Name: Boolean.ThumbPivotDowel001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
   #9 Name: Boolean.TendonChannels, Type: BOOLEAN
@@ -3759,7 +3813,77 @@ Palm Inner body modifiers:
   #14 Name: Boolean.BOOLEAN Thumb attachment dowel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb attachment dowel
   #15 Name: Boolean.BOOLEAN Thumb pivot dowel top, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel top
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel top.001
+  #16 Name: Boolean.BOOLEAN Thumb Pivot dowel Lower, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb Pivot dowel Lower
+  #17 Name: Boolean.BOOLEAN Thumb tendon channel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon channel
+  #18 Name: Boolean.BOOLEAN Conical spring for palm inner, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Conical spring for palm inner
+  #19 Name: Boolean.BOOLEAN Tendon Channels, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Tendon Channels
+  #20 Name: Boolean.BOOLEAN Thumb Ligament Cover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb Ligament Cover 
+  #21 Name: Boolean.BOOLEAN Ligament cover M2 bolt hole, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
+  #22 Name: Boolean.BOOLEAN Dowel Thumb Ligament Cover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Dowel Thumb Ligament Cover
+  #23 Name: Boolean.BOOLEAN Finger Ligament , Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Finger Ligament 
+  #24 Name: Boolean.BOOLEAN New Gala Cover M2 attachment point, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN New Gala Cover M2 attachment point
+  #25 Name: Boolean.BOOLEAN Back cover M2 bolt holes, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
+  #26 Name: Boolean.BOOLEAN Thumb ligament cover M2 Bolt Hole, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 Bolt Hole
+  #27 Name: Boolean.Thumb spring channel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Thumb spring channel
+  #28 Name: Boolean.BOOLEAN thumb spring termination.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN thumb spring termination.001
+  #29 Name: Boolean.BOOLEAN Palm Riser Channels, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm Riser Channels
+  #30 Name: Boolean.BOOLEAN Screwdriver Leaver Point, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
+
+Name: Palm Inner body.001
+Palm Inner body.001 Type: MESH
+Palm Inner body.001 transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+Palm Inner body.001 rotation: X0.0 Y-0.0 Z0.0
+Palm Inner body.001 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+Palm Inner body.001 groups: Actuator Block, 
+Palm Inner body.001 parent: Actuator Block
+Palm Inner body.001 mesh: Palm Inner.021
+Palm Inner body.001 materials: PLA White, 
+Palm Inner body.001 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Boolean.BOOLEAN Finger Wave Profile.001, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Finger Wave Profile.001
+  #3 Name: Boolean.BOOLEAN Finger Wave Profile.002, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Finger Wave Profile.002
+  #4 Name: Boolean.Palm Inner phlange, Type: BOOLEAN
+        Operation: UNION, Object: Palm Inner phlange
+  #5 Name: Boolean.Palm Inner shell, Type: BOOLEAN
+        Operation: UNION, Object: Palm Inner shell
+  #6 Name: Boolean.BOOLEAN Urethane blocker channel wrist, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Urethane blocker channel wrist
+  #7 Name: Boolean.TARGET Outer Surface, Type: BOOLEAN
+        Operation: INTERSECT, Object: TARGET Outer Surface
+  #8 Name: Boolean.BOOLEAN Wrist Flat, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Wrist Flat
+  #9 Name: Boolean.BOOLEAN PQ12 exteneed 0.3 mm tolerance, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
+  #10 Name: Boolean.BOOLEAN New Gala Cover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN New Gala Cover
+  #11 Name: Boolean.BOOLEAN Palm and Back Cover Divide, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm and Back Cover Divide Clearance
+  #12 Name: Triangulate, Type: TRIANGULATE
+  #13 Name: Boolean.BOOLEAN Thumb Dowel , Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Thumb Dowel
+  #14 Name: Boolean.BOOLEAN Thumb attachment dowel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
+  #15 Name: Boolean.BOOLEAN Thumb pivot dowel top, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
   #16 Name: Boolean.BOOLEAN Thumb Pivot dowel Lower, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb Pivot dowel Lower
   #17 Name: Boolean.BOOLEAN Thumb tendon channel, Type: BOOLEAN
@@ -3809,9 +3933,9 @@ Palm inner CLEAN UP.000 modifiers:
   #5 Name: Boolean.ConicalSpring, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Conical spring for palm inner
   #6 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb attachment dowel
+        Operation: DIFFERENCE, Object: None
   #7 Name: Boolean.ThumbPivotDowel000, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel top
+        Operation: DIFFERENCE, Object: None
   #8 Name: Boolean.ThumbPivotDowel001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
   #9 Name: Boolean.TendonChannels, Type: BOOLEAN
@@ -3869,9 +3993,9 @@ Palm inner CLEAN UP.001 modifiers:
   #5 Name: Boolean.ConicalSpring, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Conical spring for palm inner
   #6 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb attachment dowel
+        Operation: DIFFERENCE, Object: None
   #7 Name: Boolean.ThumbPivotDowel000, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel top
+        Operation: DIFFERENCE, Object: None
   #8 Name: Boolean.ThumbPivotDowel001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
   #9 Name: Boolean.TendonChannels, Type: BOOLEAN
@@ -3999,6 +4123,65 @@ Palm inner.001 parent: Actuator Block
 Palm inner.001 mesh: Palm Inner.006
 Palm inner.001 materials: PLA, 
 Palm inner.001 modifiers: None
+
+Name: Palm Mould
+Palm Mould Type: MESH
+Palm Mould transform: X9.0 Y-48.89358901977539 Z-2.9508910179138184
+Palm Mould rotation: X0.0 Y0.0 Z0.0
+Palm Mould scale: X1.0 Y1.0 Z1.0
+Palm Mould groups: None
+Palm Mould mesh: Cube.040
+Palm Mould materials: None
+Palm Mould modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean.TARGET Outer Surface, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: TARGET Outer Surface
+  #3 Name: Boolean.BOOLEAN Thumb Ligament Cover , Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Thumb Ligament Cover 
+  #4 Name: Boolean.BOOLEAN Palm Mould Urethane Channel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm Mould Urethane Channel
+  #5 Name: Boolean.Palm Mould Plunger, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm Mould Plunger
+  #6 Name: Boolean.BOOLEAN Palm Mould Securing Dowels.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm Mould Securing Dowels.001
+
+Name: Palm Mould Lid
+Palm Mould Lid Type: MESH
+Palm Mould Lid transform: X9.000001907348633 Y-49.4797248840332 Z1.6913127899169922
+Palm Mould Lid rotation: X0.0 Y0.0 Z0.0
+Palm Mould Lid scale: X1.0 Y1.0 Z1.0
+Palm Mould Lid groups: None
+Palm Mould Lid mesh: Plane.008
+Palm Mould Lid materials: PLA, 
+Palm Mould Lid modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean.BOOLEAN Palm Riser Channels, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm Riser Channels
+
+Name: Palm Mould Plunger.001
+Palm Mould Plunger.001 Type: MESH
+Palm Mould Plunger.001 transform: X9.0 Y-117.09788513183594 Z-2.9508910179138184
+Palm Mould Plunger.001 rotation: X0.0 Y0.0 Z0.0
+Palm Mould Plunger.001 scale: X1.0 Y1.0 Z1.0
+Palm Mould Plunger.001 groups: None
+Palm Mould Plunger.001 mesh: Cube.041
+Palm Mould Plunger.001 materials: None
+Palm Mould Plunger.001 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Bevel.001, Type: BEVEL
+  #3 Name: Displace, Type: DISPLACE
+
+Name: Palm Mould Securing Dowels
+Palm Mould Securing Dowels Type: MESH
+Palm Mould Securing Dowels transform: X50.499996185302734 Y-95.47972106933594 Z-10.643102645874023
+Palm Mould Securing Dowels rotation: X0.0 Y0.0 Z0.0
+Palm Mould Securing Dowels scale: X0.49500003457069397 Y0.49500003457069397 Z2.000000238418579
+Palm Mould Securing Dowels groups: None
+Palm Mould Securing Dowels mesh: Cylinder.033
+Palm Mould Securing Dowels materials: Boolean difference, 
+Palm Mould Securing Dowels modifiers: 
+  #1 Name: Boolean.BOOLEAN 3mm Inserts Palm Mould, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN 3mm Inserts Palm Mould
 
 Name: Palm outer frame distal hook
 Palm outer frame distal hook Type: MESH
@@ -4391,7 +4574,7 @@ TARGET Outer Surface Midlevel mesh: Hand/Palm.003
 TARGET Outer Surface Midlevel materials: PLA, 
 TARGET Outer Surface Midlevel modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
-        Thickness: 2.00, Offset: 1.00 
+        Thickness: 1.80, Offset: 1.00 
         Even thickness: True, High Quality Normals: True  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
@@ -4502,6 +4685,19 @@ Thumb Ligament Cover .001 materials: PLA White,
 Thumb Ligament Cover .001 modifiers: 
   #1 Name: Displace, Type: DISPLACE
   #2 Name: Bevel, Type: BEVEL
+
+Name: Thumb Ligament Cover .002
+Thumb Ligament Cover .002 Type: MESH
+Thumb Ligament Cover .002 transform: X-6.998704433441162 Y-66.19110870361328 Z-17.999996185302734
+Thumb Ligament Cover .002 rotation: X3.137685775756836 Y-0.015713384374976158 Z1.3962633609771729
+Thumb Ligament Cover .002 scale: X1.0 Y1.0 Z1.0
+Thumb Ligament Cover .002 groups: None
+Thumb Ligament Cover .002 mesh: Cube.026
+Thumb Ligament Cover .002 materials: PLA White, 
+Thumb Ligament Cover .002 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: TARGET Urethane Pad COPY.001, Type: BOOLEAN
+        Operation: INTERSECT, Object: TARGET Urethane Pad COPY.001
 
 Name: Thumb ligament cover clip
 Thumb ligament cover clip Type: MESH
