@@ -166,7 +166,6 @@ BOOLEAN Inner distal pegs.001 modifiers:
   #1 Name: Hook, Type: HOOK
   #2 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
-        Mirror object: HANDLE 4th Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
@@ -186,7 +185,6 @@ BOOLEAN Inner distal pegs.002 modifiers:
   #1 Name: Hook, Type: HOOK
   #2 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
-        Mirror object: HANDLE 4th Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
@@ -206,7 +204,6 @@ BOOLEAN Inner distal pegs.003 modifiers:
   #1 Name: Hook, Type: HOOK
   #2 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
-        Mirror object: HANDLE 4th Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
@@ -226,7 +223,6 @@ BOOLEAN Inner distal pegs.004 modifiers:
   #1 Name: Hook, Type: HOOK
   #2 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
-        Mirror object: HANDLE 4th Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
@@ -395,7 +391,6 @@ BOOLEAN Inner proximal pegs.0001 modifiers:
   #2 Name: Hook.001, Type: HOOK
   #3 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
-        Mirror object: HANDLE 4th Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
@@ -436,7 +431,6 @@ BOOLEAN Inner proximal pegs.0003 modifiers:
   #2 Name: Hook.001, Type: HOOK
   #3 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
-        Mirror object: HANDLE 4th Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
@@ -457,7 +451,6 @@ BOOLEAN Inner proximal pegs.0004 modifiers:
   #2 Name: Hook.001, Type: HOOK
   #3 Name: Mirror, Type: MIRROR
         Reflecting in local: Y, 
-        Mirror object: HANDLE 4th Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
@@ -478,7 +471,6 @@ BOOLEAN Inner proximal pegs.001 modifiers:
   #2 Name: Hook.001, Type: HOOK
   #3 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
-        Mirror object: HANDLE 4th Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
@@ -499,7 +491,6 @@ BOOLEAN Inner proximal pegs.002 modifiers:
   #2 Name: Hook.001, Type: HOOK
   #3 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
-        Mirror object: HANDLE 4th Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
@@ -520,7 +511,6 @@ BOOLEAN Inner proximal pegs.003 modifiers:
   #2 Name: Hook.001, Type: HOOK
   #3 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
-        Mirror object: HANDLE 4th Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
@@ -541,7 +531,6 @@ BOOLEAN Inner proximal pegs.004 modifiers:
   #2 Name: Hook.001, Type: HOOK
   #3 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
-        Mirror object: HANDLE 4th Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
@@ -2970,21 +2959,6 @@ HANDLE 3rd Finger rotation: X0.0 Y0.0 Z0.0
 HANDLE 3rd Finger scale: X1.0 Y1.0 Z1.0
 HANDLE 3rd Finger groups: 3rd Finger, 
 
-Name: HANDLE 4th Finger
-HANDLE 4th Finger Type: EMPTY
-HANDLE 4th Finger transform: X0.0 Y0.0 Z0.0
-HANDLE 4th Finger rotation: X0.0 Y0.0 Z0.0
-HANDLE 4th Finger scale: X1.0 Y1.0 Z1.0
-HANDLE 4th Finger groups: 4th Finger, 
-
-Name: HANDLE Distal
-HANDLE Distal Type: EMPTY
-HANDLE Distal transform: X0.0 Y38.0 Z0.0
-HANDLE Distal rotation: X0.0 Y0.0 Z0.0
-HANDLE Distal scale: X1.0 Y1.0 Z1.0
-HANDLE Distal groups: None
-HANDLE Distal parent: HANDLE Proximal 
-
 Name: HANDLE distal base 1
 HANDLE distal base 1 Type: EMPTY
 HANDLE distal base 1 transform: X0.0 Y30.0 Z0.0
@@ -3163,7 +3137,7 @@ HANDLE distal fingertip 4 parent: HANDLE distal base 4
 
 Name: HANDLE Distal Joint.001
 HANDLE Distal Joint.001 Type: MESH
-HANDLE Distal Joint.001 transform: X0.0 Y44.999996185302734 Z0.0
+HANDLE Distal Joint.001 transform: X0.0 Y45.0 Z0.0
 HANDLE Distal Joint.001 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.001 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.001 groups: 1st Finger, 
@@ -3174,7 +3148,7 @@ HANDLE Distal Joint.001 modifiers: None
 
 Name: HANDLE Distal Joint.002
 HANDLE Distal Joint.002 Type: MESH
-HANDLE Distal Joint.002 transform: X0.0 Y44.999996185302734 Z0.0
+HANDLE Distal Joint.002 transform: X0.0 Y40.0 Z0.0
 HANDLE Distal Joint.002 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.002 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.002 groups: 2nd Finger, 
@@ -3196,11 +3170,10 @@ HANDLE Distal Joint.003 modifiers: None
 
 Name: HANDLE Distal Joint.004
 HANDLE Distal Joint.004 Type: MESH
-HANDLE Distal Joint.004 transform: X0.0 Y30.0 Z0.0
+HANDLE Distal Joint.004 transform: X0.0 Y40.0 Z0.0
 HANDLE Distal Joint.004 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.004 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.004 groups: 4th Finger, 
-HANDLE Distal Joint.004 parent: HANDLE 4th Finger
 HANDLE Distal Joint.004 mesh: HANDLE Distal Joint
 HANDLE Distal Joint.004 materials: HANDLE, 
 HANDLE Distal Joint.004 modifiers: None
@@ -3218,7 +3191,7 @@ HANDLE Fingertip.001 modifiers: None
 
 Name: HANDLE Fingertip.002
 HANDLE Fingertip.002 Type: MESH
-HANDLE Fingertip.002 transform: X0.0 Y45.0 Z0.0
+HANDLE Fingertip.002 transform: X0.0 Y40.0 Z0.0
 HANDLE Fingertip.002 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.002 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.002 groups: 2nd Finger, 
@@ -3240,7 +3213,7 @@ HANDLE Fingertip.003 modifiers: None
 
 Name: HANDLE Fingertip.004
 HANDLE Fingertip.004 Type: MESH
-HANDLE Fingertip.004 transform: X0.0 Y38.0 Z0.0
+HANDLE Fingertip.004 transform: X0.0 Y40.0 Z0.0
 HANDLE Fingertip.004 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.004 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.004 groups: 4th Finger, 
@@ -3248,13 +3221,6 @@ HANDLE Fingertip.004 parent: HANDLE Distal Joint.004
 HANDLE Fingertip.004 mesh: HANDLE Fingertip
 HANDLE Fingertip.004 materials: HANDLE, 
 HANDLE Fingertip.004 modifiers: None
-
-Name: HANDLE Proximal 
-HANDLE Proximal  Type: EMPTY
-HANDLE Proximal  transform: X0.0 Y30.0 Z0.0
-HANDLE Proximal  rotation: X0.0 Y0.0 Z0.0
-HANDLE Proximal  scale: X1.0 Y1.0 Z1.0
-HANDLE Proximal  groups: None
 
 Name: HANDLE proximal 1 base
 HANDLE proximal 1 base Type: EMPTY
@@ -3448,14 +3414,6 @@ HANDLE proximal 4 distal joint scale: X1.0 Y1.0 Z1.0
 HANDLE proximal 4 distal joint groups: None
 HANDLE proximal 4 distal joint parent: HANDLE proximal 4 base
 
-Name: HANDLE Proximal Joint 
-HANDLE Proximal Joint  Type: EMPTY
-HANDLE Proximal Joint  transform: X0.0 Y30.0 Z0.0
-HANDLE Proximal Joint  rotation: X0.0 Y0.0 Z0.0
-HANDLE Proximal Joint  scale: X1.0 Y1.0 Z1.0
-HANDLE Proximal Joint  groups: None
-HANDLE Proximal Joint  parent: HANDLE 4th Finger
-
 Name: HANDLE Thickness.003
 HANDLE Thickness.003 Type: MESH
 HANDLE Thickness.003 transform: X0.0 Y0.0 Z0.6000000238418579
@@ -3466,16 +3424,6 @@ HANDLE Thickness.003 parent: HANDLE 3rd Finger
 HANDLE Thickness.003 mesh: Plane
 HANDLE Thickness.003 materials: None
 HANDLE Thickness.003 modifiers: None
-
-Name: HANDLE Thickness.004
-HANDLE Thickness.004 Type: MESH
-HANDLE Thickness.004 transform: X0.0 Y0.0 Z0.6000000238418579
-HANDLE Thickness.004 rotation: X0.0 Y0.0 Z0.0
-HANDLE Thickness.004 scale: X1.0 Y1.0 Z1.0
-HANDLE Thickness.004 groups: None
-HANDLE Thickness.004 mesh: Plane.001
-HANDLE Thickness.004 materials: None
-HANDLE Thickness.004 modifiers: None
 
 Name: ID.000
 ID.000 Type: MESH
@@ -4189,12 +4137,12 @@ Inner distal Dummy.001 modifiers: None
 
 Name: Inner distal.001
 Inner distal.001 Type: MESH
-Inner distal.001 transform: X1.412505030632019 Y72.2771987915039 Z-25.63402557373047
+Inner distal.001 transform: X0.0 Y0.0 Z0.0
 Inner distal.001 rotation: X0.0 Y0.0 Z0.0
 Inner distal.001 scale: X1.0 Y1.0 Z1.0
 Inner distal.001 groups: 1st Finger, 
 Inner distal.001 parent: Distal Phalanx.001
-Inner distal.001 mesh: Inner distal.001
+Inner distal.001 mesh: Inner distal.003
 Inner distal.001 materials: PLA White, 
 Inner distal.001 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -4232,12 +4180,12 @@ Inner distal.001 modifiers:
 
 Name: Inner distal.002
 Inner distal.002 Type: MESH
-Inner distal.002 transform: X-3.1996674876487116e-16 Y0.2506090998649597 Z-1.4410022497177124
+Inner distal.002 transform: X-3.1996674876487116e-16 Y0.0 Z0.0
 Inner distal.002 rotation: X0.0 Y0.0 Z0.0
 Inner distal.002 scale: X1.0 Y1.0 Z1.0
 Inner distal.002 groups: 1st Finger, 
 Inner distal.002 parent: Distal Phalanx.002
-Inner distal.002 mesh: Inner distal.001
+Inner distal.002 mesh: Inner distal.003
 Inner distal.002 materials: PLA White, 
 Inner distal.002 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -4278,7 +4226,7 @@ Inner distal.003 rotation: X0.0 Y0.0 Z0.0
 Inner distal.003 scale: X1.0 Y1.0 Z1.0
 Inner distal.003 groups: 1st Finger, 
 Inner distal.003 parent: Distal Phalanx.003
-Inner distal.003 mesh: Inner distal.001
+Inner distal.003 mesh: Inner distal.003
 Inner distal.003 materials: PLA White, 
 Inner distal.003 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -4319,7 +4267,7 @@ Inner distal.004  rotation: X0.0 Y0.0 Z0.0
 Inner distal.004  scale: X1.0 Y1.0 Z1.0
 Inner distal.004  groups: 1st Finger, 
 Inner distal.004  parent: Distal Phalanx.004
-Inner distal.004  mesh: Inner distal.001
+Inner distal.004  mesh: Inner distal.003
 Inner distal.004  materials: PLA White, 
 Inner distal.004  modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -4985,42 +4933,6 @@ Inner Proximal urethane target.004 modifiers:
   #5 Name: Boolean.002, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN UNION Tendon channels proximal.004
 
-Name: Inner Proximal.000
-Inner Proximal.000 Type: MESH
-Inner Proximal.000 transform: X0.0 Y0.0 Z0.0
-Inner Proximal.000 rotation: X0.0 Y0.0 Z0.0
-Inner Proximal.000 scale: X1.0 Y1.0 Z1.0
-Inner Proximal.000 groups: 1st Finger, 
-Inner Proximal.000 parent: Proximal Phalanx.004
-Inner Proximal.000 mesh: Inner proximal.003
-Inner Proximal.000 materials: PLA White, 
-Inner Proximal.000 modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Mirror object: HANDLE Proximal 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: True
-        Vertex group mirroring: True
-  #3 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #4 Name: BooleanUnion.M2 bolt hole, Type: BOOLEAN
-        Operation: UNION, Object: BOOLEAN UNION proximal M2 Bolt Hole.004
-  #5 Name: BooleanUnion.Tendon channels, Type: BOOLEAN
-        Operation: UNION, Object: BOOLEAN UNION Tendon channels proximal.004
-  #6 Name: Boolean.ligament, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN ligament.004
-  #7 Name: Boolean.Tendon channels, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Tendon channels proximal.004
-  #8 Name: Boolean.M2 bolt hole, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.004
-  #9 Name: Boolean.Spring pegs, Type: BOOLEAN
-        Operation: UNION, Object: Spring pegs proximal.004
-  #10 Name: Boolean.identifier, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.004
-  #11 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Riser Chanel.021
-
 Name: Inner Proximal.001
 Inner Proximal.001 Type: MESH
 Inner Proximal.001 transform: X0.0 Y0.0 Z0.0
@@ -5028,7 +4940,7 @@ Inner Proximal.001 rotation: X0.0 Y0.0 Z0.0
 Inner Proximal.001 scale: X1.0 Y1.0 Z1.0
 Inner Proximal.001 groups: 1st Finger, 
 Inner Proximal.001 parent: Proximal Phalanx.001
-Inner Proximal.001 mesh: Inner proximal.003
+Inner Proximal.001 mesh: Inner proximal.014
 Inner Proximal.001 materials: PLA White, 
 Inner Proximal.001 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -5066,7 +4978,7 @@ Inner Proximal.002 rotation: X0.0 Y0.0 Z0.0
 Inner Proximal.002 scale: X1.0 Y1.0 Z1.0
 Inner Proximal.002 groups: 1st Finger, 
 Inner Proximal.002 parent: Proximal Phalanx.002
-Inner Proximal.002 mesh: Inner proximal.003
+Inner Proximal.002 mesh: Inner proximal.014
 Inner Proximal.002 materials: PLA White, 
 Inner Proximal.002 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -5103,7 +5015,7 @@ Inner Proximal.003 rotation: X0.0 Y0.0 Z0.0
 Inner Proximal.003 scale: X1.0 Y1.0 Z1.0
 Inner Proximal.003 groups: 1st Finger, 
 Inner Proximal.003 parent: Proximal Phalanx.003
-Inner Proximal.003 mesh: Inner proximal.003
+Inner Proximal.003 mesh: Inner proximal.014
 Inner Proximal.003 materials: PLA White, 
 Inner Proximal.003 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -5139,32 +5051,32 @@ Inner Proximal.004 rotation: X0.0 Y0.0 Z0.0
 Inner Proximal.004 scale: X1.0 Y1.0 Z1.0
 Inner Proximal.004 groups: 1st Finger, 
 Inner Proximal.004 parent: Proximal Phalanx.004
-Inner Proximal.004 mesh: Inner proximal.016
+Inner Proximal.004 mesh: Inner proximal.014
 Inner Proximal.004 materials: PLA White, 
 Inner Proximal.004 modifiers: 
-  #1 Name: Mirror, Type: MIRROR
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
-        Mirror object: HANDLE 1st Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #2 Name: Subsurf, Type: SUBSURF
+  #3 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #3 Name: BooleanUnion.M2 bolt hole, Type: BOOLEAN
+  #4 Name: BooleanUnion.M2 bolt hole, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN UNION proximal M2 Bolt Hole.004
-  #4 Name: BooleanUnion.Tendon channels, Type: BOOLEAN
+  #5 Name: BooleanUnion.Tendon channels, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN UNION Tendon channels proximal.004
-  #5 Name: Boolean.ligament, Type: BOOLEAN
+  #6 Name: Boolean.ligament, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN ligament.004
-  #6 Name: Boolean.Tendon channels, Type: BOOLEAN
+  #7 Name: Boolean.Tendon channels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels proximal.004
-  #7 Name: Boolean.M2 bolt hole, Type: BOOLEAN
+  #8 Name: Boolean.M2 bolt hole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.004
-  #8 Name: Boolean.Spring pegs, Type: BOOLEAN
+  #9 Name: Boolean.Spring pegs, Type: BOOLEAN
         Operation: UNION, Object: Spring pegs proximal.004
-  #9 Name: Boolean.identifier, Type: BOOLEAN
+  #10 Name: Boolean.identifier, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.004
-  #10 Name: Boolean, Type: BOOLEAN
+  #11 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Riser Chanel.021
 
 Name: LABEL identifier distal flat.001
@@ -5357,7 +5269,6 @@ LABEL Identifier Inner proximal.004 modifiers:
   #1 Name: Array, Type: ARRAY
   #2 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
-        Mirror object: HANDLE 4th Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
@@ -5435,7 +5346,6 @@ Ligament.004 modifiers:
   #2 Name: Hook.001, Type: HOOK
   #3 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
-        Mirror object: HANDLE 4th Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
