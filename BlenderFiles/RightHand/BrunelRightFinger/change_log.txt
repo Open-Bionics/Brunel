@@ -258,7 +258,7 @@ BOOLEAN inner distal.001 modifiers:
   #8 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels distal.001
   #9 Name: Boolean.M2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.001
+        Operation: DIFFERENCE, Object: None
   #10 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.001
   #11 Name: Boolean.001, Type: BOOLEAN
@@ -295,7 +295,7 @@ BOOLEAN inner distal.002 modifiers:
   #8 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels distal.001
   #9 Name: Boolean.M2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.001
+        Operation: DIFFERENCE, Object: None
   #10 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.001
   #11 Name: Boolean.001, Type: BOOLEAN
@@ -332,7 +332,7 @@ BOOLEAN inner distal.003 modifiers:
   #8 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels distal.001
   #9 Name: Boolean.M2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.001
+        Operation: DIFFERENCE, Object: None
   #10 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.001
   #11 Name: Boolean.001, Type: BOOLEAN
@@ -853,16 +853,16 @@ BOOLEAN ligament.004 modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #5 Name: Displace, Type: DISPLACE
 
-Name: BOOLEAN M2 Bolt Holes.001
-BOOLEAN M2 Bolt Holes.001 Type: MESH
-BOOLEAN M2 Bolt Holes.001 transform: X0.0 Y0.0 Z0.0
-BOOLEAN M2 Bolt Holes.001 rotation: X0.0 Y0.0 Z0.0
-BOOLEAN M2 Bolt Holes.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN M2 Bolt Holes.001 groups: None
-BOOLEAN M2 Bolt Holes.001 parent: Distal Phalanx.001
-BOOLEAN M2 Bolt Holes.001 mesh: BOOLEAN M2 Bolt Holes.003
-BOOLEAN M2 Bolt Holes.001 materials: Boolean difference.001, 
-BOOLEAN M2 Bolt Holes.001 modifiers: 
+Name: BOOLEAN M2 Bolt Holes.000
+BOOLEAN M2 Bolt Holes.000 Type: MESH
+BOOLEAN M2 Bolt Holes.000 transform: X0.0 Y0.0 Z0.0
+BOOLEAN M2 Bolt Holes.000 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN M2 Bolt Holes.000 scale: X1.0 Y1.0 Z1.0
+BOOLEAN M2 Bolt Holes.000 groups: None
+BOOLEAN M2 Bolt Holes.000 parent: Distal Phalanx.002
+BOOLEAN M2 Bolt Holes.000 mesh: BOOLEAN M2 Bolt Holes.003
+BOOLEAN M2 Bolt Holes.000 materials: Boolean difference.001, 
+BOOLEAN M2 Bolt Holes.000 modifiers: 
   #1 Name: Hook, Type: HOOK
 
 Name: BOOLEAN M2 Bolt Holes.002
@@ -2102,6 +2102,36 @@ Boolean Wedge Cut Outs.001 modifiers:
   #9 Name: Boolean.008, Type: BOOLEAN
         Operation: UNION, Object: Cube.034
 
+Name: BRUNEL HANDBack Cover  Integrated Wrist 
+BRUNEL HANDBack Cover  Integrated Wrist  Type: MESH
+BRUNEL HANDBack Cover  Integrated Wrist  transform: X23.890623092651367 Y-50.145389556884766 Z-2.0734963417053223
+BRUNEL HANDBack Cover  Integrated Wrist  rotation: X0.0 Y-0.0 Z-0.0872664526104927
+BRUNEL HANDBack Cover  Integrated Wrist  scale: X1.0 Y1.0 Z1.0
+BRUNEL HANDBack Cover  Integrated Wrist  groups: None
+BRUNEL HANDBack Cover  Integrated Wrist  mesh: BRUNEL HANDBack Cover  Integrated Wrist 
+BRUNEL HANDBack Cover  Integrated Wrist  materials: None
+BRUNEL HANDBack Cover  Integrated Wrist  modifiers: None
+
+Name: BRUNEL HANDFinger Ligament Cover
+BRUNEL HANDFinger Ligament Cover Type: MESH
+BRUNEL HANDFinger Ligament Cover transform: X27.833383560180664 Y-10.916707038879395 Z1.7847709655761719
+BRUNEL HANDFinger Ligament Cover rotation: X0.0 Y-0.0 Z-0.0872664526104927
+BRUNEL HANDFinger Ligament Cover scale: X1.0 Y1.0 Z1.0
+BRUNEL HANDFinger Ligament Cover groups: None
+BRUNEL HANDFinger Ligament Cover mesh: BRUNEL HANDFinger Ligament Cover
+BRUNEL HANDFinger Ligament Cover materials: None
+BRUNEL HANDFinger Ligament Cover modifiers: None
+
+Name: BRUNEL HANDPalm Inner body
+BRUNEL HANDPalm Inner body Type: MESH
+BRUNEL HANDPalm Inner body transform: X23.890623092651367 Y-50.145389556884766 Z-2.0734963417053223
+BRUNEL HANDPalm Inner body rotation: X0.0 Y-0.0 Z-0.0872664526104927
+BRUNEL HANDPalm Inner body scale: X1.0 Y1.0 Z1.0
+BRUNEL HANDPalm Inner body groups: None
+BRUNEL HANDPalm Inner body mesh: BRUNEL HANDPalm Inner body
+BRUNEL HANDPalm Inner body materials: None
+BRUNEL HANDPalm Inner body modifiers: None
+
 Name: Brunel LigamentBack cover
 Brunel LigamentBack cover Type: MESH
 Brunel LigamentBack cover transform: X-0.09889888763427734 Y0.42674827575683594 Z-0.9882736206054688
@@ -3148,7 +3178,7 @@ HANDLE Distal Joint.001 modifiers: None
 
 Name: HANDLE Distal Joint.002
 HANDLE Distal Joint.002 Type: MESH
-HANDLE Distal Joint.002 transform: X0.0 Y40.0 Z0.0
+HANDLE Distal Joint.002 transform: X0.0 Y45.0 Z0.0
 HANDLE Distal Joint.002 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.002 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.002 groups: 2nd Finger, 
@@ -3170,7 +3200,7 @@ HANDLE Distal Joint.003 modifiers: None
 
 Name: HANDLE Distal Joint.004
 HANDLE Distal Joint.004 Type: MESH
-HANDLE Distal Joint.004 transform: X0.0 Y40.0 Z0.0
+HANDLE Distal Joint.004 transform: X0.0 Y30.0 Z0.0
 HANDLE Distal Joint.004 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.004 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.004 groups: 4th Finger, 
@@ -3191,7 +3221,7 @@ HANDLE Fingertip.001 modifiers: None
 
 Name: HANDLE Fingertip.002
 HANDLE Fingertip.002 Type: MESH
-HANDLE Fingertip.002 transform: X0.0 Y40.0 Z0.0
+HANDLE Fingertip.002 transform: X0.0 Y45.0 Z0.0
 HANDLE Fingertip.002 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.002 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.002 groups: 2nd Finger, 
@@ -4166,7 +4196,7 @@ Inner distal.001 modifiers:
   #9 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels distal.001
   #10 Name: Boolean.M2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.001
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.002
   #11 Name: top riser, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.001
   #12 Name: Boolean.001, Type: BOOLEAN
@@ -5799,6 +5829,46 @@ MOULD Top modifiers:
   #6 Name: Boolean risers, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN riser combo
 
+Name: OB1 4mL Finger 6e84774 Phalanx Distal 001
+OB1 4mL Finger 6e84774 Phalanx Distal 001 Type: MESH
+OB1 4mL Finger 6e84774 Phalanx Distal 001 transform: X0.0 Y0.8479228019714355 Z0.0
+OB1 4mL Finger 6e84774 Phalanx Distal 001 rotation: X0.0 Y0.0 Z0.0
+OB1 4mL Finger 6e84774 Phalanx Distal 001 scale: X1.0 Y1.0 Z1.0
+OB1 4mL Finger 6e84774 Phalanx Distal 001 groups: None
+OB1 4mL Finger 6e84774 Phalanx Distal 001 mesh: OB1 4mL Finger 6e84774 Phalanx Distal 001
+OB1 4mL Finger 6e84774 Phalanx Distal 001 materials: None
+OB1 4mL Finger 6e84774 Phalanx Distal 001 modifiers: None
+
+Name: OB1 4mL Finger 6e84774 Phalanx Proximal 001
+OB1 4mL Finger 6e84774 Phalanx Proximal 001 Type: MESH
+OB1 4mL Finger 6e84774 Phalanx Proximal 001 transform: X0.0 Y0.8479228019714355 Z0.0
+OB1 4mL Finger 6e84774 Phalanx Proximal 001 rotation: X0.0 Y0.0 Z0.0
+OB1 4mL Finger 6e84774 Phalanx Proximal 001 scale: X1.0 Y1.0 Z1.0
+OB1 4mL Finger 6e84774 Phalanx Proximal 001 groups: None
+OB1 4mL Finger 6e84774 Phalanx Proximal 001 mesh: OB1 4mL Finger 6e84774 Phalanx Proximal 001
+OB1 4mL Finger 6e84774 Phalanx Proximal 001 materials: None
+OB1 4mL Finger 6e84774 Phalanx Proximal 001 modifiers: None
+
+Name: OB1 4mL Finger 6e84774 Top cover Distal 001
+OB1 4mL Finger 6e84774 Top cover Distal 001 Type: MESH
+OB1 4mL Finger 6e84774 Top cover Distal 001 transform: X0.0 Y0.8479228019714355 Z0.0
+OB1 4mL Finger 6e84774 Top cover Distal 001 rotation: X0.0 Y0.0 Z0.0
+OB1 4mL Finger 6e84774 Top cover Distal 001 scale: X1.0 Y1.0 Z1.0
+OB1 4mL Finger 6e84774 Top cover Distal 001 groups: None
+OB1 4mL Finger 6e84774 Top cover Distal 001 mesh: OB1 4mL Finger 6e84774 Top cover Distal 001
+OB1 4mL Finger 6e84774 Top cover Distal 001 materials: None
+OB1 4mL Finger 6e84774 Top cover Distal 001 modifiers: None
+
+Name: OB1 4mL Finger 6e84774 Top cover Proximal 001
+OB1 4mL Finger 6e84774 Top cover Proximal 001 Type: MESH
+OB1 4mL Finger 6e84774 Top cover Proximal 001 transform: X0.0 Y0.8479228019714355 Z0.0
+OB1 4mL Finger 6e84774 Top cover Proximal 001 rotation: X0.0 Y0.0 Z0.0
+OB1 4mL Finger 6e84774 Top cover Proximal 001 scale: X1.0 Y1.0 Z1.0
+OB1 4mL Finger 6e84774 Top cover Proximal 001 groups: None
+OB1 4mL Finger 6e84774 Top cover Proximal 001 mesh: OB1 4mL Finger 6e84774 Top cover Proximal 001
+OB1 4mL Finger 6e84774 Top cover Proximal 001 materials: None
+OB1 4mL Finger 6e84774 Top cover Proximal 001 modifiers: None
+
 Name: Proximal Phalanx.001
 Proximal Phalanx.001 Type: EMPTY
 Proximal Phalanx.001 transform: X0.0 Y0.0 Z0.0
@@ -6298,7 +6368,7 @@ Thumb target modifiers:
 
 Name: Top cover distal.001
 Top cover distal.001 Type: MESH
-Top cover distal.001 transform: X0.0 Y13.137228965759277 Z0.0
+Top cover distal.001 transform: X0.0 Y0.0 Z0.0
 Top cover distal.001 rotation: X0.0 Y0.0 Z0.0
 Top cover distal.001 scale: X1.0 Y1.0 Z1.0
 Top cover distal.001 groups: 1st Finger, 
@@ -6317,7 +6387,7 @@ Top cover distal.001 modifiers:
   #4 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #5 Name: Boolean.M2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.001
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.000
   #6 Name: Boolean.ID, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.001
   #7 Name: Boolean, Type: BOOLEAN
@@ -6384,7 +6454,7 @@ Top cover distal.004 rotation: X0.0 Y0.0 Z0.0
 Top cover distal.004 scale: X1.0 Y1.0 Z1.0
 Top cover distal.004 groups: 1st Finger, 
 Top cover distal.004 parent: Distal Phalanx.004
-Top cover distal.004 mesh: Top cover distal.001
+Top cover distal.004 mesh: Top cover distal
 Top cover distal.004 materials: PLA White, 
 Top cover distal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
