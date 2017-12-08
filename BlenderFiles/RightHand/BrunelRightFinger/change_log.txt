@@ -97,6 +97,62 @@ BOOLEAN Distal 4 MOULD.001 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Distal 4 MOULD.001 groups: None
 BOOLEAN Distal 4 MOULD.001 parent: MOULD 2 Fingers
 
+Name: BOOLEAN Distal Joint Spring Profile
+BOOLEAN Distal Joint Spring Profile Type: MESH
+BOOLEAN Distal Joint Spring Profile transform: X0.0 Y39.999996185302734 Z4.7530622482299805
+BOOLEAN Distal Joint Spring Profile rotation: X1.5707963705062866 Y-0.0 Z0.0
+BOOLEAN Distal Joint Spring Profile scale: X0.0015000001294538379 Y0.0015000001294538379 Z0.005000000353902578
+BOOLEAN Distal Joint Spring Profile groups: None
+BOOLEAN Distal Joint Spring Profile mesh: Cube.027
+BOOLEAN Distal Joint Spring Profile materials: Boolean difference, 
+BOOLEAN Distal Joint Spring Profile modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN Distal Joint Spring Profile.003
+BOOLEAN Distal Joint Spring Profile.003 Type: MESH
+BOOLEAN Distal Joint Spring Profile.003 transform: X0.0 Y39.999996185302734 Z4.7530622482299805
+BOOLEAN Distal Joint Spring Profile.003 rotation: X1.5707963705062866 Y-0.0 Z0.0
+BOOLEAN Distal Joint Spring Profile.003 scale: X0.0015000001294538379 Y0.0015000001294538379 Z0.005000000353902578
+BOOLEAN Distal Joint Spring Profile.003 groups: None
+BOOLEAN Distal Joint Spring Profile.003 mesh: Cube.027
+BOOLEAN Distal Joint Spring Profile.003 materials: Boolean difference, 
+BOOLEAN Distal Joint Spring Profile.003 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN Distal Joint Spring Profile.004
+BOOLEAN Distal Joint Spring Profile.004 Type: MESH
+BOOLEAN Distal Joint Spring Profile.004 transform: X0.0 Y39.999996185302734 Z4.7530622482299805
+BOOLEAN Distal Joint Spring Profile.004 rotation: X1.5707963705062866 Y-0.0 Z0.0
+BOOLEAN Distal Joint Spring Profile.004 scale: X0.0015000001294538379 Y0.0015000001294538379 Z0.005000000353902578
+BOOLEAN Distal Joint Spring Profile.004 groups: None
+BOOLEAN Distal Joint Spring Profile.004 mesh: Cube.027
+BOOLEAN Distal Joint Spring Profile.004 materials: Boolean difference, 
+BOOLEAN Distal Joint Spring Profile.004 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN Distial Joint Spring Profile.001
+BOOLEAN Distial Joint Spring Profile.001 Type: MESH
+BOOLEAN Distial Joint Spring Profile.001 transform: X0.0 Y39.999996185302734 Z4.7530622482299805
+BOOLEAN Distial Joint Spring Profile.001 rotation: X1.5707963705062866 Y-0.0 Z0.0
+BOOLEAN Distial Joint Spring Profile.001 scale: X0.0015000001294538379 Y0.0015000001294538379 Z0.005000000353902578
+BOOLEAN Distial Joint Spring Profile.001 groups: None
+BOOLEAN Distial Joint Spring Profile.001 mesh: Cube.027
+BOOLEAN Distial Joint Spring Profile.001 materials: Boolean difference, 
+BOOLEAN Distial Joint Spring Profile.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Bevel, Type: BEVEL
+
 Name: BOOLEAN finger sections combined (Bottom)
 BOOLEAN finger sections combined (Bottom) Type: MESH
 BOOLEAN finger sections combined (Bottom) transform: X0.0 Y0.0 Z0.0
@@ -262,7 +318,7 @@ BOOLEAN inner distal.001 modifiers:
   #10 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.001
   #11 Name: Boolean.001, Type: BOOLEAN
-        Operation: UNION, Object: Spring pegs distal.001
+        Operation: UNION, Object: None
   #12 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.001
 
@@ -299,7 +355,7 @@ BOOLEAN inner distal.002 modifiers:
   #10 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.001
   #11 Name: Boolean.001, Type: BOOLEAN
-        Operation: UNION, Object: Spring pegs distal.001
+        Operation: UNION, Object: None
   #12 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.001
 
@@ -336,7 +392,7 @@ BOOLEAN inner distal.003 modifiers:
   #10 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.001
   #11 Name: Boolean.001, Type: BOOLEAN
-        Operation: UNION, Object: Spring pegs distal.001
+        Operation: UNION, Object: None
   #12 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.001
 
@@ -371,7 +427,7 @@ BOOLEAN inner distal.004 modifiers:
   #9 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.004
   #10 Name: Boolean.001, Type: BOOLEAN
-        Operation: UNION, Object: Spring pegs distal.004
+        Operation: UNION, Object: None
   #11 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
   #12 Name: Boolean.002, Type: BOOLEAN
@@ -567,7 +623,7 @@ BOOLEAN inner proximal.001 modifiers:
   #8 Name: Boolean.M2 bolt hole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.001
   #9 Name: Boolean.Spring pegs, Type: BOOLEAN
-        Operation: UNION, Object: Spring pegs proximal.001
+        Operation: UNION, Object: None
   #10 Name: Boolean.identifier, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.001
 
@@ -601,7 +657,7 @@ BOOLEAN inner proximal.002 modifiers:
   #8 Name: Boolean.M2 bolt hole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.001
   #9 Name: Boolean.Spring pegs, Type: BOOLEAN
-        Operation: UNION, Object: Spring pegs proximal.001
+        Operation: UNION, Object: None
   #10 Name: Boolean.identifier, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.001
 
@@ -635,7 +691,7 @@ BOOLEAN inner proximal.003 modifiers:
   #8 Name: Boolean.M2 bolt hole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.001
   #9 Name: Boolean.Spring pegs, Type: BOOLEAN
-        Operation: UNION, Object: Spring pegs proximal.001
+        Operation: UNION, Object: None
   #10 Name: Boolean.identifier, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.001
 
@@ -669,7 +725,7 @@ BOOLEAN inner proximal.004 modifiers:
   #8 Name: Boolean.M2 bolt hole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.001
   #9 Name: Boolean.Spring pegs, Type: BOOLEAN
-        Operation: UNION, Object: Spring pegs proximal.001
+        Operation: UNION, Object: None
   #10 Name: Boolean.identifier, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.001
 
@@ -827,11 +883,11 @@ BOOLEAN ligament.004 modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
-  #3 Name: Solidify, Type: SOLIDIFY
+  #3 Name: Displace, Type: DISPLACE
+  #4 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.20, Offset: 1.00 
-        Even thickness: True, High Quality Normals: True  #4 Name: Subsurf, Type: SUBSURF
+        Even thickness: True, High Quality Normals: True  #5 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #5 Name: Displace, Type: DISPLACE
 
 Name: BOOLEAN M2 Bolt Holes.000
 BOOLEAN M2 Bolt Holes.000 Type: MESH
@@ -843,6 +899,18 @@ BOOLEAN M2 Bolt Holes.000 parent: Distal Phalanx.002
 BOOLEAN M2 Bolt Holes.000 mesh: BOOLEAN M2 Bolt Holes.003
 BOOLEAN M2 Bolt Holes.000 materials: Boolean difference.001, 
 BOOLEAN M2 Bolt Holes.000 modifiers: 
+  #1 Name: Hook, Type: HOOK
+
+Name: BOOLEAN M2 Bolt Holes.001
+BOOLEAN M2 Bolt Holes.001 Type: MESH
+BOOLEAN M2 Bolt Holes.001 transform: X0.0 Y0.0 Z0.0
+BOOLEAN M2 Bolt Holes.001 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN M2 Bolt Holes.001 scale: X1.0 Y1.0 Z1.0
+BOOLEAN M2 Bolt Holes.001 groups: None
+BOOLEAN M2 Bolt Holes.001 parent: Distal Phalanx.001
+BOOLEAN M2 Bolt Holes.001 mesh: BOOLEAN M2 Bolt Holes.003
+BOOLEAN M2 Bolt Holes.001 materials: Boolean difference.001, 
+BOOLEAN M2 Bolt Holes.001 modifiers: 
   #1 Name: Hook, Type: HOOK
 
 Name: BOOLEAN M2 Bolt Holes.002
@@ -1267,6 +1335,62 @@ BOOLEAN Proximal 4 MOULD.001 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Proximal 4 MOULD.001 groups: None
 BOOLEAN Proximal 4 MOULD.001 parent: MOULD 2 Fingers
 
+Name: BOOLEAN Proximal Joint Spring Profile.001
+BOOLEAN Proximal Joint Spring Profile.001 Type: MESH
+BOOLEAN Proximal Joint Spring Profile.001 transform: X0.0 Y2.684131622314453 Z4.7530622482299805
+BOOLEAN Proximal Joint Spring Profile.001 rotation: X1.5707963705062866 Y-0.0 Z0.0
+BOOLEAN Proximal Joint Spring Profile.001 scale: X0.0015000001294538379 Y0.0015000001294538379 Z0.005000000353902578
+BOOLEAN Proximal Joint Spring Profile.001 groups: None
+BOOLEAN Proximal Joint Spring Profile.001 mesh: Cube.028
+BOOLEAN Proximal Joint Spring Profile.001 materials: Boolean difference, 
+BOOLEAN Proximal Joint Spring Profile.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN Proximal Joint Spring Profile.002
+BOOLEAN Proximal Joint Spring Profile.002 Type: MESH
+BOOLEAN Proximal Joint Spring Profile.002 transform: X0.0 Y2.684131622314453 Z4.7530622482299805
+BOOLEAN Proximal Joint Spring Profile.002 rotation: X1.5707963705062866 Y-0.0 Z0.0
+BOOLEAN Proximal Joint Spring Profile.002 scale: X0.0015000001294538379 Y0.0015000001294538379 Z0.005000000353902578
+BOOLEAN Proximal Joint Spring Profile.002 groups: None
+BOOLEAN Proximal Joint Spring Profile.002 mesh: Cube.028
+BOOLEAN Proximal Joint Spring Profile.002 materials: Boolean difference, 
+BOOLEAN Proximal Joint Spring Profile.002 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN Proximal Joint Spring Profile.003
+BOOLEAN Proximal Joint Spring Profile.003 Type: MESH
+BOOLEAN Proximal Joint Spring Profile.003 transform: X0.0 Y2.684131622314453 Z4.7530622482299805
+BOOLEAN Proximal Joint Spring Profile.003 rotation: X1.5707963705062866 Y-0.0 Z0.0
+BOOLEAN Proximal Joint Spring Profile.003 scale: X0.0015000001294538379 Y0.0015000001294538379 Z0.005000000353902578
+BOOLEAN Proximal Joint Spring Profile.003 groups: None
+BOOLEAN Proximal Joint Spring Profile.003 mesh: Cube.028
+BOOLEAN Proximal Joint Spring Profile.003 materials: Boolean difference, 
+BOOLEAN Proximal Joint Spring Profile.003 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN Proximal Joint Spring Profile.004
+BOOLEAN Proximal Joint Spring Profile.004 Type: MESH
+BOOLEAN Proximal Joint Spring Profile.004 transform: X0.0 Y2.684131622314453 Z4.7530622482299805
+BOOLEAN Proximal Joint Spring Profile.004 rotation: X1.5707963705062866 Y-0.0 Z0.0
+BOOLEAN Proximal Joint Spring Profile.004 scale: X0.0015000001294538379 Y0.0015000001294538379 Z0.005000000353902578
+BOOLEAN Proximal Joint Spring Profile.004 groups: None
+BOOLEAN Proximal Joint Spring Profile.004 mesh: Cube.028
+BOOLEAN Proximal Joint Spring Profile.004 materials: Boolean difference, 
+BOOLEAN Proximal Joint Spring Profile.004 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Bevel, Type: BEVEL
+
 Name: BOOLEAN proximal M2 Bolt Hole.001
 BOOLEAN proximal M2 Bolt Hole.001 Type: MESH
 BOOLEAN proximal M2 Bolt Hole.001 transform: X0.0 Y0.0 Z0.0
@@ -1405,6 +1529,104 @@ BOOLEAN riser combo modifiers:
         Operation: UNION, Object: BOOLEAN top riser proximal 4.1
   #12 Name: Boolean.011, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN top riser proximal 4.2
+
+Name: BOOLEAN Spring Dowel Pins.000
+BOOLEAN Spring Dowel Pins.000 Type: MESH
+BOOLEAN Spring Dowel Pins.000 transform: X0.0 Y47.999996185302734 Z1.3000000715255737
+BOOLEAN Spring Dowel Pins.000 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Spring Dowel Pins.000 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Spring Dowel Pins.000 groups: None
+BOOLEAN Spring Dowel Pins.000 parent: Distal Phalanx.002
+BOOLEAN Spring Dowel Pins.000 mesh: Cylinder.018
+BOOLEAN Spring Dowel Pins.000 materials: Boolean difference, 
+BOOLEAN Spring Dowel Pins.000 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Top cover distal.002
+
+Name: BOOLEAN Spring Dowel Pins.001
+BOOLEAN Spring Dowel Pins.001 Type: MESH
+BOOLEAN Spring Dowel Pins.001 transform: X0.0 Y31.999996185302734 Z1.3000000715255737
+BOOLEAN Spring Dowel Pins.001 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Spring Dowel Pins.001 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Spring Dowel Pins.001 groups: None
+BOOLEAN Spring Dowel Pins.001 parent: Proximal Phalanx.002
+BOOLEAN Spring Dowel Pins.001 mesh: Cylinder.022
+BOOLEAN Spring Dowel Pins.001 materials: Boolean difference, 
+BOOLEAN Spring Dowel Pins.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Top cover proximal.001
+
+Name: BOOLEAN Spring Dowel Pins.003
+BOOLEAN Spring Dowel Pins.003 Type: MESH
+BOOLEAN Spring Dowel Pins.003 transform: X0.0 Y47.999996185302734 Z1.3000000715255737
+BOOLEAN Spring Dowel Pins.003 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Spring Dowel Pins.003 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Spring Dowel Pins.003 groups: None
+BOOLEAN Spring Dowel Pins.003 parent: Distal Phalanx.002
+BOOLEAN Spring Dowel Pins.003 mesh: Cylinder.018
+BOOLEAN Spring Dowel Pins.003 materials: Boolean difference, 
+BOOLEAN Spring Dowel Pins.003 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Top cover distal.002
+
+Name: BOOLEAN Spring Dowel Pins.004
+BOOLEAN Spring Dowel Pins.004 Type: MESH
+BOOLEAN Spring Dowel Pins.004 transform: X0.0 Y31.999996185302734 Z1.3000000715255737
+BOOLEAN Spring Dowel Pins.004 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Spring Dowel Pins.004 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Spring Dowel Pins.004 groups: None
+BOOLEAN Spring Dowel Pins.004 parent: Proximal Phalanx.002
+BOOLEAN Spring Dowel Pins.004 mesh: Cylinder.022
+BOOLEAN Spring Dowel Pins.004 materials: Boolean difference, 
+BOOLEAN Spring Dowel Pins.004 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Top cover proximal.001
+
+Name: BOOLEAN Spring Dowel Pins.005
+BOOLEAN Spring Dowel Pins.005 Type: MESH
+BOOLEAN Spring Dowel Pins.005 transform: X0.0 Y47.999996185302734 Z1.3000000715255737
+BOOLEAN Spring Dowel Pins.005 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Spring Dowel Pins.005 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Spring Dowel Pins.005 groups: None
+BOOLEAN Spring Dowel Pins.005 parent: Distal Phalanx.002
+BOOLEAN Spring Dowel Pins.005 mesh: Cylinder.018
+BOOLEAN Spring Dowel Pins.005 materials: Boolean difference, 
+BOOLEAN Spring Dowel Pins.005 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Top cover distal.002
+
+Name: BOOLEAN Spring Dowel Pins.006
+BOOLEAN Spring Dowel Pins.006 Type: MESH
+BOOLEAN Spring Dowel Pins.006 transform: X0.0 Y47.999996185302734 Z1.3000000715255737
+BOOLEAN Spring Dowel Pins.006 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Spring Dowel Pins.006 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Spring Dowel Pins.006 groups: None
+BOOLEAN Spring Dowel Pins.006 parent: Distal Phalanx.002
+BOOLEAN Spring Dowel Pins.006 mesh: Cylinder.018
+BOOLEAN Spring Dowel Pins.006 materials: Boolean difference, 
+BOOLEAN Spring Dowel Pins.006 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Top cover distal.002
+
+Name: BOOLEAN Spring Dowel Pins.007
+BOOLEAN Spring Dowel Pins.007 Type: MESH
+BOOLEAN Spring Dowel Pins.007 transform: X0.0 Y31.999996185302734 Z1.3000000715255737
+BOOLEAN Spring Dowel Pins.007 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Spring Dowel Pins.007 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Spring Dowel Pins.007 groups: None
+BOOLEAN Spring Dowel Pins.007 parent: Proximal Phalanx.002
+BOOLEAN Spring Dowel Pins.007 mesh: Cylinder.022
+BOOLEAN Spring Dowel Pins.007 materials: Boolean difference, 
+BOOLEAN Spring Dowel Pins.007 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Top cover proximal.001
 
 Name: BOOLEAN Tendon channels distal.001
 BOOLEAN Tendon channels distal.001 Type: MESH
@@ -2663,6 +2885,16 @@ Cube.034 mesh: Cube.025
 Cube.034 materials: Boolean difference, 
 Cube.034 modifiers: None
 
+Name: Cube.035
+Cube.035 Type: MESH
+Cube.035 transform: X0.0 Y0.0 Z0.0
+Cube.035 rotation: X0.0 Y0.0 Z0.0
+Cube.035 scale: X1.0 Y1.0 Z1.0
+Cube.035 groups: None
+Cube.035 mesh: Cube.029
+Cube.035 materials: None
+Cube.035 modifiers: None
+
 Name: Cylinder
 Cylinder Type: MESH
 Cylinder transform: X0.20616674423217773 Y-5.542596817016602 Z2.2583723068237305
@@ -3147,7 +3379,7 @@ HANDLE distal fingertip 4 parent: HANDLE distal base 4
 
 Name: HANDLE Distal Joint.001
 HANDLE Distal Joint.001 Type: MESH
-HANDLE Distal Joint.001 transform: X0.0 Y40.0 Z0.0
+HANDLE Distal Joint.001 transform: X0.0 Y45.0 Z0.0
 HANDLE Distal Joint.001 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.001 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.001 groups: 1st Finger, 
@@ -3158,7 +3390,7 @@ HANDLE Distal Joint.001 modifiers: None
 
 Name: HANDLE Distal Joint.002
 HANDLE Distal Joint.002 Type: MESH
-HANDLE Distal Joint.002 transform: X0.0 Y40.0 Z0.0
+HANDLE Distal Joint.002 transform: X0.0 Y44.999996185302734 Z0.0
 HANDLE Distal Joint.002 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.002 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.002 groups: 2nd Finger, 
@@ -3169,7 +3401,7 @@ HANDLE Distal Joint.002 modifiers: None
 
 Name: HANDLE Distal Joint.003
 HANDLE Distal Joint.003 Type: MESH
-HANDLE Distal Joint.003 transform: X0.0 Y40.0 Z0.0
+HANDLE Distal Joint.003 transform: X0.0 Y38.0 Z0.0
 HANDLE Distal Joint.003 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.003 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.003 groups: 3rd Finger, 
@@ -3180,7 +3412,7 @@ HANDLE Distal Joint.003 modifiers: None
 
 Name: HANDLE Distal Joint.004
 HANDLE Distal Joint.004 Type: MESH
-HANDLE Distal Joint.004 transform: X0.0 Y40.0 Z0.0
+HANDLE Distal Joint.004 transform: X0.0 Y30.0 Z0.0
 HANDLE Distal Joint.004 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.004 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.004 groups: 4th Finger, 
@@ -3190,7 +3422,7 @@ HANDLE Distal Joint.004 modifiers: None
 
 Name: HANDLE Fingertip.001
 HANDLE Fingertip.001 Type: MESH
-HANDLE Fingertip.001 transform: X0.0 Y40.0 Z0.0
+HANDLE Fingertip.001 transform: X0.0 Y44.0 Z0.0
 HANDLE Fingertip.001 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.001 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.001 groups: 1st Finger, 
@@ -3201,7 +3433,7 @@ HANDLE Fingertip.001 modifiers: None
 
 Name: HANDLE Fingertip.002
 HANDLE Fingertip.002 Type: MESH
-HANDLE Fingertip.002 transform: X0.0 Y40.0 Z0.0
+HANDLE Fingertip.002 transform: X0.0 Y44.999996185302734 Z0.0
 HANDLE Fingertip.002 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.002 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.002 groups: 2nd Finger, 
@@ -3212,7 +3444,7 @@ HANDLE Fingertip.002 modifiers: None
 
 Name: HANDLE Fingertip.003
 HANDLE Fingertip.003 Type: MESH
-HANDLE Fingertip.003 transform: X0.0 Y40.0 Z0.0
+HANDLE Fingertip.003 transform: X0.0 Y42.0 Z0.0
 HANDLE Fingertip.003 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.003 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.003 groups: 3rd Finger, 
@@ -3223,7 +3455,7 @@ HANDLE Fingertip.003 modifiers: None
 
 Name: HANDLE Fingertip.004
 HANDLE Fingertip.004 Type: MESH
-HANDLE Fingertip.004 transform: X0.0 Y40.0 Z0.0
+HANDLE Fingertip.004 transform: X0.0 Y38.0 Z0.0
 HANDLE Fingertip.004 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.004 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.004 groups: 4th Finger, 
@@ -4176,17 +4408,18 @@ Inner distal.001 modifiers:
   #9 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels distal.001
   #10 Name: Boolean.M2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.002
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.001
   #11 Name: top riser, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.001
-  #12 Name: Boolean.Spring pegs distal.001, Type: BOOLEAN
-        Operation: UNION, Object: Spring pegs distal.001
+  #12 Name: Boolean.BOOLEAN Spring Dowel Pins.003, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Spring Dowel Pins.003
   #13 Name: Boolean.LABEL identifier distal flat.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.001
-  #14 Name: xsec, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: xsec1
-  #15 Name: Boolean.003, Type: BOOLEAN
+  #14 Name: Boolean.Riser Chanel.000, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Riser Chanel.000
+  #15 Name: Boolean.BOOLEAN Distial Joint Spring Profile.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Distial Joint Spring Profile.001
+  #16 Name: Triangulate, Type: TRIANGULATE
 
 Name: Inner distal.002
 Inner distal.002 Type: MESH
@@ -4222,12 +4455,15 @@ Inner distal.002 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.002
   #11 Name: Boolean.LABEL Identifier Inner distal.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.002
-  #12 Name: Boolean.Spring pegs distal.002, Type: BOOLEAN
-        Operation: UNION, Object: Spring pegs distal.002
+  #12 Name: Boolean.BOOLEAN Spring Dowel Pins.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Spring Dowel Pins.000
   #13 Name: Boolean.LABEL identifier distal flat.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.002
   #14 Name: Boolean.Riser Chanel.006, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Riser Chanel.006
+  #15 Name: Boolean.BOOLEAN Distal Joint Spring Profile, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Distal Joint Spring Profile
+  #16 Name: Triangulate, Type: TRIANGULATE
 
 Name: Inner distal.003
 Inner distal.003 Type: MESH
@@ -4263,12 +4499,14 @@ Inner distal.003 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.003
   #11 Name: Boolean.LABEL Identifier Inner distal.003, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.003
-  #12 Name: Boolean.Spring pegs distal.003, Type: BOOLEAN
-        Operation: UNION, Object: Spring pegs distal.003
-  #13 Name: Boolean.002, Type: BOOLEAN
+  #12 Name: Boolean.BOOLEAN Spring Dowel Pins.005, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Spring Dowel Pins.005
+  #13 Name: Boolean.LABEL identifier distal flat.003, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.003
-  #14 Name: Boolean.004, Type: BOOLEAN
+  #14 Name: Boolean.Riser Chanel.013, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Riser Chanel.013
+  #15 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Distal Joint Spring Profile.003
 
 Name: Inner distal.004 
 Inner distal.004  Type: MESH
@@ -4281,34 +4519,37 @@ Inner distal.004  mesh: Inner distal.003
 Inner distal.004  materials: PLA White, 
 Inner distal.004  modifiers: 
   #1 Name: Hook, Type: HOOK
-  #2 Name: Mirror, Type: MIRROR
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 1st Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #3 Name: Subsurf, Type: SUBSURF
+  #4 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #4 Name: Boolean UNION tendon channels, Type: BOOLEAN
+  #5 Name: Boolean UNION tendon channels, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN UNION Tendon channels distal.004
-  #5 Name: Boolean UNION M2 Bolt Holes, Type: BOOLEAN
+  #6 Name: Boolean UNION M2 Bolt Holes, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN UNION M2 Bolt Holes.004
-  #6 Name: Boolean.BOOLEAN UNION Ligament filler.004, Type: BOOLEAN
+  #7 Name: Boolean.BOOLEAN UNION Ligament filler.004, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN UNION Ligament filler.004
-  #7 Name: Boolean.Ligament, Type: BOOLEAN
+  #8 Name: Boolean.Ligament, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN ligament.004
-  #8 Name: Boolean.TendonChannels, Type: BOOLEAN
+  #9 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels distal.004
-  #9 Name: Boolean.M2BoltHoles, Type: BOOLEAN
+  #10 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.004
-  #10 Name: Boolean.001, Type: BOOLEAN
-        Operation: UNION, Object: Spring pegs distal.004
-  #11 Name: Boolean, Type: BOOLEAN
+  #11 Name: Boolean.BOOLEAN Spring Dowel Pins.006, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Spring Dowel Pins.006
+  #12 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.004
-  #12 Name: Boolean.002, Type: BOOLEAN
+  #13 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.004
-  #13 Name: Boolean.004, Type: BOOLEAN
+  #14 Name: Boolean.004, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Riser Chanel.023
+  #15 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Distal Joint Spring Profile.004
 
 Name: Inner proximal 1 BLANK
 Inner proximal 1 BLANK Type: MESH
@@ -4963,8 +5204,8 @@ Inner Proximal.001 modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #4 Name: BooleanUnion.M2 bolt hole, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN UNION proximal M2 Bolt Hole.001
-  #5 Name: Boolean.Spring pegs, Type: BOOLEAN
-        Operation: UNION, Object: Spring pegs proximal.001
+  #5 Name: Boolean.BOOLEAN Spring Dowel Pins.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Spring Dowel Pins.001
   #6 Name: BooleanUnion.Tendon channels, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN UNION Tendon channels proximal.001
   #7 Name: Boolean.ligament, Type: BOOLEAN
@@ -4975,10 +5216,13 @@ Inner Proximal.001 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.001
   #10 Name: Boolean.identifier, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.001
-  #11 Name: Boolean.001, Type: BOOLEAN
+  #11 Name: Boolean.Riser Chanel.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Riser Chanel.002
-  #12 Name: xsec, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: xsec1
+  #12 Name: Boolean.BOOLEAN Distial Joint Spring Profile.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Distial Joint Spring Profile.001
+  #13 Name: Boolean.BOOLEAN Proximal Joint Spring Profile.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Proximal Joint Spring Profile.001
+  #14 Name: Triangulate, Type: TRIANGULATE
 
 Name: Inner Proximal.002
 Inner Proximal.002 Type: MESH
@@ -5010,13 +5254,17 @@ Inner Proximal.002 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.002
   #9 Name: Boolean.ligament, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament.002
-  #10 Name: Boolean.Spring pegs, Type: BOOLEAN
-        Operation: UNION, Object: Spring pegs proximal.002
-  #11 Name: Boolean.identifier, Type: BOOLEAN
+  #10 Name: Boolean.BOOLEAN Spring Dowel Pins.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Spring Dowel Pins.002
+  #11 Name: Boolean.LABEL Identifier Inner proximal.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.002
-  #12 Name: Boolean, Type: BOOLEAN
+  #12 Name: Boolean.Riser Chanel.008, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Riser Chanel.008
-  #13 Name: Triangulate, Type: TRIANGULATE
+  #13 Name: Boolean.BOOLEAN Distal Joint Spring Profile, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Distal Joint Spring Profile
+  #14 Name: Boolean.BOOLEAN Proximal Joint Spring Profile, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Proximal Joint Spring Profile.002
+  #15 Name: Triangulate, Type: TRIANGULATE
 
 Name: Inner Proximal.003
 Inner Proximal.003 Type: MESH
@@ -5047,13 +5295,17 @@ Inner Proximal.003 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels proximal.003
   #8 Name: Boolean.M2 bolt hole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.003
-  #9 Name: Boolean.Spring pegs, Type: BOOLEAN
-        Operation: UNION, Object: Spring pegs proximal.003
+  #9 Name: Boolean.BOOLEAN Spring Dowel Pins.004, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Spring Dowel Pins.004
   #10 Name: Boolean.identifier, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.003
   #11 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Riser Chanel.017
-  #12 Name: Triangulate, Type: TRIANGULATE
+  #12 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Distal Joint Spring Profile.003
+  #13 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Proximal Joint Spring Profile.003
+  #14 Name: Triangulate, Type: TRIANGULATE
 
 Name: Inner Proximal.004
 Inner Proximal.004 Type: MESH
@@ -5083,13 +5335,19 @@ Inner Proximal.004 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels proximal.004
   #8 Name: Boolean.M2 bolt hole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.004
-  #9 Name: Boolean.Spring pegs, Type: BOOLEAN
-        Operation: UNION, Object: Spring pegs proximal.004
-  #10 Name: Boolean.identifier, Type: BOOLEAN
+  #9 Name: Boolean.BOOLEAN Spring Dowel Pins.007, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Spring Dowel Pins.007
+  #10 Name: Boolean.LABEL Identifier Inner proximal.004, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.004
-  #11 Name: Boolean, Type: BOOLEAN
+  #11 Name: Boolean.Riser Chanel.021, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Riser Chanel.021
-  #12 Name: Triangulate, Type: TRIANGULATE
+  #12 Name: Boolean.BOOLEAN Distal Joint Spring Profile.004, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Distal Joint Spring Profile.004
+  #13 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Proximal Joint Spring Profile.004
+  #14 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cube.035
+  #15 Name: Triangulate, Type: TRIANGULATE
 
 Name: LABEL identifier distal flat.001
 LABEL identifier distal flat.001 Type: MESH
@@ -5374,13 +5632,12 @@ Ligament.004 mesh: Ligament
 Ligament.004 materials: NF Black, NF Black.001, NF Black.002, NF Black.003, 
 Ligament.004 modifiers: 
   #1 Name: Hook, Type: HOOK
-  #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
+  #2 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
+  #3 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: M2 Bolt.000
@@ -6238,76 +6495,6 @@ Runner Guide mesh: Circle.006
 Runner Guide materials: None
 Runner Guide modifiers: None
 
-Name: Spring pegs distal.001
-Spring pegs distal.001 Type: MESH
-Spring pegs distal.001 transform: X0.0 Y39.14791488647461 Z5.408233642578125
-Spring pegs distal.001 rotation: X0.0 Y0.0 Z0.0
-Spring pegs distal.001 scale: X1.0 Y1.0 Z1.0
-Spring pegs distal.001 groups: None
-Spring pegs distal.001 parent: Distal Phalanx.001
-Spring pegs distal.001 mesh: Cylinder.024
-Spring pegs distal.001 materials: None
-Spring pegs distal.001 modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Top cover distal.001
-
-Name: Spring pegs distal.002
-Spring pegs distal.002 Type: MESH
-Spring pegs distal.002 transform: X0.0 Y39.14791488647461 Z5.408233642578125
-Spring pegs distal.002 rotation: X0.0 Y0.0 Z0.0
-Spring pegs distal.002 scale: X1.0 Y1.0 Z1.0
-Spring pegs distal.002 groups: None
-Spring pegs distal.002 parent: Distal Phalanx.002
-Spring pegs distal.002 mesh: Cylinder.024
-Spring pegs distal.002 materials: None
-Spring pegs distal.002 modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Top cover distal.002
-
-Name: Spring pegs distal.003
-Spring pegs distal.003 Type: MESH
-Spring pegs distal.003 transform: X0.0 Y39.14791488647461 Z5.408233642578125
-Spring pegs distal.003 rotation: X0.0 Y0.0 Z0.0
-Spring pegs distal.003 scale: X1.0 Y1.0 Z1.0
-Spring pegs distal.003 groups: None
-Spring pegs distal.003 parent: Distal Phalanx.003
-Spring pegs distal.003 mesh: Cylinder.024
-Spring pegs distal.003 materials: None
-Spring pegs distal.003 modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Top cover distal.003
-
-Name: Spring pegs distal.004
-Spring pegs distal.004 Type: MESH
-Spring pegs distal.004 transform: X0.0 Y39.14791488647461 Z5.408233642578125
-Spring pegs distal.004 rotation: X0.0 Y0.0 Z0.0
-Spring pegs distal.004 scale: X1.0 Y1.0 Z1.0
-Spring pegs distal.004 groups: None
-Spring pegs distal.004 parent: Distal Phalanx.004
-Spring pegs distal.004 mesh: Cylinder.024
-Spring pegs distal.004 materials: None
-Spring pegs distal.004 modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Top cover distal.004
-
-Name: Spring pegs proximal.001
-Spring pegs proximal.001 Type: MESH
-Spring pegs proximal.001 transform: X0.0 Y34.869380950927734 Z5.408233642578125
-Spring pegs proximal.001 rotation: X0.0 Y0.0 Z0.0
-Spring pegs proximal.001 scale: X1.0 Y1.0 Z1.0
-Spring pegs proximal.001 groups: None
-Spring pegs proximal.001 parent: Proximal Phalanx.001
-Spring pegs proximal.001 mesh: Cylinder.016
-Spring pegs proximal.001 materials: None
-Spring pegs proximal.001 modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Top cover proximal.001
-
 Name: HANDLE distal fingertip 1.004
 HANDLE distal fingertip 1.004 Type: EMPTY
 HANDLE distal fingertip 1.004 transform: X0.0 Y38.0 Z0.0
@@ -6324,44 +6511,16 @@ HANDLE distal fingertip 1.001 scale: X1.0 Y1.0 Z1.0
 HANDLE distal fingertip 1.001 groups: None
 HANDLE distal fingertip 1.001 parent: HANDLE distal base 1.001
 
-Name: Spring pegs proximal.002
-Spring pegs proximal.002 Type: MESH
-Spring pegs proximal.002 transform: X0.0 Y34.869380950927734 Z5.408233642578125
-Spring pegs proximal.002 rotation: X0.0 Y0.0 Z0.0
-Spring pegs proximal.002 scale: X1.0 Y1.0 Z1.0
-Spring pegs proximal.002 groups: None
-Spring pegs proximal.002 parent: Proximal Phalanx.002
-Spring pegs proximal.002 mesh: Cylinder.016
-Spring pegs proximal.002 materials: None
-Spring pegs proximal.002 modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Top cover proximal.001
-
-Name: Spring pegs proximal.003
-Spring pegs proximal.003 Type: MESH
-Spring pegs proximal.003 transform: X0.0 Y34.869380950927734 Z5.408233642578125
-Spring pegs proximal.003 rotation: X0.0 Y0.0 Z0.0
-Spring pegs proximal.003 scale: X1.0 Y1.0 Z1.0
-Spring pegs proximal.003 groups: None
-Spring pegs proximal.003 parent: Proximal Phalanx.002
-Spring pegs proximal.003 mesh: Cylinder.016
-Spring pegs proximal.003 materials: None
-Spring pegs proximal.003 modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Top cover proximal.001
-
-Name: Spring pegs proximal.004
-Spring pegs proximal.004 Type: MESH
-Spring pegs proximal.004 transform: X0.0 Y34.869380950927734 Z5.408233642578125
-Spring pegs proximal.004 rotation: X0.0 Y0.0 Z0.0
-Spring pegs proximal.004 scale: X1.0 Y1.0 Z1.0
-Spring pegs proximal.004 groups: None
-Spring pegs proximal.004 parent: Proximal Phalanx.004
-Spring pegs proximal.004 mesh: Cylinder.016
-Spring pegs proximal.004 materials: None
-Spring pegs proximal.004 modifiers: 
+Name: BOOLEAN Spring Dowel Pins.002
+BOOLEAN Spring Dowel Pins.002 Type: MESH
+BOOLEAN Spring Dowel Pins.002 transform: X0.0 Y31.999996185302734 Z1.3000000715255737
+BOOLEAN Spring Dowel Pins.002 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Spring Dowel Pins.002 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Spring Dowel Pins.002 groups: None
+BOOLEAN Spring Dowel Pins.002 parent: Proximal Phalanx.002
+BOOLEAN Spring Dowel Pins.002 mesh: Cylinder.022
+BOOLEAN Spring Dowel Pins.002 materials: Boolean difference, 
+BOOLEAN Spring Dowel Pins.002 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Top cover proximal.001
@@ -6582,8 +6741,8 @@ Top cover proximal.003 modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #4 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal pegs.003
-  #5 Name: Boolean.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
+  #5 Name: Boolean.BOOLEAN proximal M2 Bolt Hole.003, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.003
   #6 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.003
 
@@ -6608,8 +6767,8 @@ Top cover proximal.004 modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #4 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal pegs.004
-  #5 Name: Boolean.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
+  #5 Name: Boolean.BOOLEAN proximal M2 Bolt Hole.004, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.004
   #6 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.004
 
