@@ -214,7 +214,7 @@ BOOLEAN Inner distal pegs.001 Type: MESH
 BOOLEAN Inner distal pegs.001 transform: X0.0 Y0.0 Z0.0
 BOOLEAN Inner distal pegs.001 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Inner distal pegs.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Inner distal pegs.001 groups: 1st Finger, 
+BOOLEAN Inner distal pegs.001 groups: None
 BOOLEAN Inner distal pegs.001 parent: Distal Phalanx.001
 BOOLEAN Inner distal pegs.001 mesh: BOOLEAN Inner proximal.002
 BOOLEAN Inner distal pegs.001 materials: Boolean difference, 
@@ -233,7 +233,7 @@ BOOLEAN Inner distal pegs.002 Type: MESH
 BOOLEAN Inner distal pegs.002 transform: X0.0 Y-4.9684295654296875 Z0.0
 BOOLEAN Inner distal pegs.002 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Inner distal pegs.002 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Inner distal pegs.002 groups: 1st Finger, 
+BOOLEAN Inner distal pegs.002 groups: None
 BOOLEAN Inner distal pegs.002 parent: Distal Phalanx.002
 BOOLEAN Inner distal pegs.002 mesh: BOOLEAN Inner proximal.002
 BOOLEAN Inner distal pegs.002 materials: Boolean difference, 
@@ -252,7 +252,7 @@ BOOLEAN Inner distal pegs.003 Type: MESH
 BOOLEAN Inner distal pegs.003 transform: X0.0 Y0.0 Z0.0
 BOOLEAN Inner distal pegs.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Inner distal pegs.003 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Inner distal pegs.003 groups: 1st Finger, 
+BOOLEAN Inner distal pegs.003 groups: None
 BOOLEAN Inner distal pegs.003 parent: Distal Phalanx.003
 BOOLEAN Inner distal pegs.003 mesh: BOOLEAN Inner proximal.002
 BOOLEAN Inner distal pegs.003 materials: Boolean difference, 
@@ -271,7 +271,7 @@ BOOLEAN Inner distal pegs.004 Type: MESH
 BOOLEAN Inner distal pegs.004 transform: X0.0 Y0.0 Z0.0
 BOOLEAN Inner distal pegs.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Inner distal pegs.004 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Inner distal pegs.004 groups: 1st Finger, 
+BOOLEAN Inner distal pegs.004 groups: None
 BOOLEAN Inner distal pegs.004 parent: Distal Phalanx.004
 BOOLEAN Inner distal pegs.004 mesh: BOOLEAN Inner proximal.002
 BOOLEAN Inner distal pegs.004 materials: Boolean difference, 
@@ -290,7 +290,7 @@ BOOLEAN inner distal.001 Type: MESH
 BOOLEAN inner distal.001 transform: X0.0 Y0.0 Z0.0
 BOOLEAN inner distal.001 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN inner distal.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN inner distal.001 groups: 1st Finger, 
+BOOLEAN inner distal.001 groups: None
 BOOLEAN inner distal.001 parent: Distal Phalanx.001
 BOOLEAN inner distal.001 mesh: Inner distal.004
 BOOLEAN inner distal.001 materials: PLA White, 
@@ -327,7 +327,7 @@ BOOLEAN inner distal.002 Type: MESH
 BOOLEAN inner distal.002 transform: X0.0 Y0.0 Z0.0
 BOOLEAN inner distal.002 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN inner distal.002 scale: X1.0 Y1.0 Z1.0
-BOOLEAN inner distal.002 groups: 1st Finger, 
+BOOLEAN inner distal.002 groups: None
 BOOLEAN inner distal.002 parent: Distal Phalanx.002
 BOOLEAN inner distal.002 mesh: Inner distal.004
 BOOLEAN inner distal.002 materials: PLA White, 
@@ -364,7 +364,7 @@ BOOLEAN inner distal.003 Type: MESH
 BOOLEAN inner distal.003 transform: X0.0 Y0.0 Z0.0
 BOOLEAN inner distal.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN inner distal.003 scale: X1.0 Y1.0 Z1.0
-BOOLEAN inner distal.003 groups: 1st Finger, 
+BOOLEAN inner distal.003 groups: None
 BOOLEAN inner distal.003 parent: Distal Phalanx.002
 BOOLEAN inner distal.003 mesh: Inner distal.004
 BOOLEAN inner distal.003 materials: PLA White, 
@@ -401,7 +401,7 @@ BOOLEAN inner distal.004 Type: MESH
 BOOLEAN inner distal.004 transform: X0.0 Y0.0 Z0.0
 BOOLEAN inner distal.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN inner distal.004 scale: X1.0 Y1.0 Z1.0
-BOOLEAN inner distal.004 groups: 1st Finger, 
+BOOLEAN inner distal.004 groups: None
 BOOLEAN inner distal.004 parent: Distal Phalanx.004
 BOOLEAN inner distal.004 mesh: Inner distal.006
 BOOLEAN inner distal.004 materials: PLA White, 
@@ -518,7 +518,7 @@ BOOLEAN Inner proximal pegs.001 Type: MESH
 BOOLEAN Inner proximal pegs.001 transform: X0.0 Y0.0 Z0.0
 BOOLEAN Inner proximal pegs.001 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Inner proximal pegs.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Inner proximal pegs.001 groups: 1st Finger, 
+BOOLEAN Inner proximal pegs.001 groups: None
 BOOLEAN Inner proximal pegs.001 parent: Proximal Phalanx.001
 BOOLEAN Inner proximal pegs.001 mesh: BOOLEAN Inner proximal
 BOOLEAN Inner proximal pegs.001 materials: Boolean difference, 
@@ -538,7 +538,7 @@ BOOLEAN Inner proximal pegs.002 Type: MESH
 BOOLEAN Inner proximal pegs.002 transform: X0.0 Y0.0 Z0.0
 BOOLEAN Inner proximal pegs.002 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Inner proximal pegs.002 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Inner proximal pegs.002 groups: 1st Finger, 
+BOOLEAN Inner proximal pegs.002 groups: None
 BOOLEAN Inner proximal pegs.002 parent: Proximal Phalanx.002
 BOOLEAN Inner proximal pegs.002 mesh: BOOLEAN Inner proximal
 BOOLEAN Inner proximal pegs.002 materials: Boolean difference, 
@@ -558,7 +558,7 @@ BOOLEAN Inner proximal pegs.003 Type: MESH
 BOOLEAN Inner proximal pegs.003 transform: X0.0 Y0.0 Z0.0
 BOOLEAN Inner proximal pegs.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Inner proximal pegs.003 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Inner proximal pegs.003 groups: 1st Finger, 
+BOOLEAN Inner proximal pegs.003 groups: None
 BOOLEAN Inner proximal pegs.003 parent: Proximal Phalanx.003
 BOOLEAN Inner proximal pegs.003 mesh: BOOLEAN Inner proximal
 BOOLEAN Inner proximal pegs.003 materials: Boolean difference, 
@@ -578,7 +578,7 @@ BOOLEAN Inner proximal pegs.004 Type: MESH
 BOOLEAN Inner proximal pegs.004 transform: X0.0 Y0.0 Z0.0
 BOOLEAN Inner proximal pegs.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Inner proximal pegs.004 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Inner proximal pegs.004 groups: 1st Finger, 
+BOOLEAN Inner proximal pegs.004 groups: None
 BOOLEAN Inner proximal pegs.004 parent: Proximal Phalanx.004
 BOOLEAN Inner proximal pegs.004 mesh: BOOLEAN Inner proximal
 BOOLEAN Inner proximal pegs.004 materials: Boolean difference, 
@@ -598,7 +598,7 @@ BOOLEAN inner proximal.001 Type: MESH
 BOOLEAN inner proximal.001 transform: X0.0 Y0.0 Z0.0
 BOOLEAN inner proximal.001 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN inner proximal.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN inner proximal.001 groups: 1st Finger, 
+BOOLEAN inner proximal.001 groups: None
 BOOLEAN inner proximal.001 parent: Proximal Phalanx.001
 BOOLEAN inner proximal.001 mesh: Inner proximal.006
 BOOLEAN inner proximal.001 materials: PLA White, 
@@ -632,7 +632,7 @@ BOOLEAN inner proximal.002 Type: MESH
 BOOLEAN inner proximal.002 transform: X0.0 Y0.0 Z0.0
 BOOLEAN inner proximal.002 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN inner proximal.002 scale: X1.0 Y1.0 Z1.0
-BOOLEAN inner proximal.002 groups: 1st Finger, 
+BOOLEAN inner proximal.002 groups: None
 BOOLEAN inner proximal.002 parent: Proximal Phalanx.002
 BOOLEAN inner proximal.002 mesh: Inner proximal.006
 BOOLEAN inner proximal.002 materials: PLA White, 
@@ -666,7 +666,7 @@ BOOLEAN inner proximal.003 Type: MESH
 BOOLEAN inner proximal.003 transform: X0.0 Y0.0 Z0.0
 BOOLEAN inner proximal.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN inner proximal.003 scale: X1.0 Y1.0 Z1.0
-BOOLEAN inner proximal.003 groups: 1st Finger, 
+BOOLEAN inner proximal.003 groups: None
 BOOLEAN inner proximal.003 parent: Proximal Phalanx.003
 BOOLEAN inner proximal.003 mesh: Inner proximal.007
 BOOLEAN inner proximal.003 materials: PLA White, 
@@ -700,7 +700,7 @@ BOOLEAN inner proximal.004 Type: MESH
 BOOLEAN inner proximal.004 transform: X0.0 Y0.0 Z0.0
 BOOLEAN inner proximal.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN inner proximal.004 scale: X1.0 Y1.0 Z1.0
-BOOLEAN inner proximal.004 groups: 1st Finger, 
+BOOLEAN inner proximal.004 groups: None
 BOOLEAN inner proximal.004 parent: Proximal Phalanx.004
 BOOLEAN inner proximal.004 mesh: Inner proximal.010
 BOOLEAN inner proximal.004 materials: PLA White, 
@@ -747,7 +747,7 @@ BOOLEAN ligament for proximal target Type: MESH
 BOOLEAN ligament for proximal target transform: X0.0 Y0.0 Z0.0
 BOOLEAN ligament for proximal target rotation: X0.0 Y0.0 Z0.0
 BOOLEAN ligament for proximal target scale: X1.0 Y1.0 Z1.0
-BOOLEAN ligament for proximal target groups: 1st Finger, 
+BOOLEAN ligament for proximal target groups: None
 BOOLEAN ligament for proximal target parent: Proximal Phalanx.004
 BOOLEAN ligament for proximal target mesh: Ligament.007
 BOOLEAN ligament for proximal target materials: Boolean difference, 
@@ -769,7 +769,7 @@ BOOLEAN ligament for target.003 Type: MESH
 BOOLEAN ligament for target.003 transform: X0.0 Y0.0 Z0.0
 BOOLEAN ligament for target.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN ligament for target.003 scale: X1.0 Y1.0 Z1.0
-BOOLEAN ligament for target.003 groups: 1st Finger, 
+BOOLEAN ligament for target.003 groups: None
 BOOLEAN ligament for target.003 parent: Proximal Phalanx.003
 BOOLEAN ligament for target.003 mesh: Ligament
 BOOLEAN ligament for target.003 materials: NF Black, NF Black.001, NF Black.002, NF Black.003, 
@@ -792,7 +792,7 @@ BOOLEAN ligament.000 Type: MESH
 BOOLEAN ligament.000 transform: X0.0 Y0.0 Z0.0
 BOOLEAN ligament.000 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN ligament.000 scale: X1.0 Y1.0 Z1.0
-BOOLEAN ligament.000 groups: 1st Finger, 
+BOOLEAN ligament.000 groups: None
 BOOLEAN ligament.000 parent: HANDLE 1st Finger
 BOOLEAN ligament.000 mesh: Ligament.004
 BOOLEAN ligament.000 materials: Boolean difference, NF Black.001, NF Black.002, NF Black.003, NF Black, 
@@ -815,7 +815,7 @@ BOOLEAN ligament.001 Type: MESH
 BOOLEAN ligament.001 transform: X0.0 Y0.0 Z0.0
 BOOLEAN ligament.001 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN ligament.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN ligament.001 groups: 1st Finger, 
+BOOLEAN ligament.001 groups: None
 BOOLEAN ligament.001 parent: HANDLE 1st Finger
 BOOLEAN ligament.001 mesh: Ligament.008
 BOOLEAN ligament.001 materials: Boolean difference, NF Black.001, NF Black.002, NF Black.003, NF Black, 
@@ -826,7 +826,7 @@ BOOLEAN Ligament.001 Type: MESH
 BOOLEAN Ligament.001 transform: X0.0 Y0.0 Z0.0
 BOOLEAN Ligament.001 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Ligament.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Ligament.001 groups: 1st Finger, 
+BOOLEAN Ligament.001 groups: None
 BOOLEAN Ligament.001 mesh: Ligament
 BOOLEAN Ligament.001 materials: NF Black, NF Black.001, NF Black.002, NF Black.003, 
 BOOLEAN Ligament.001 modifiers: 
@@ -848,7 +848,7 @@ BOOLEAN ligament.003 Type: MESH
 BOOLEAN ligament.003 transform: X0.0 Y0.0 Z0.0
 BOOLEAN ligament.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN ligament.003 scale: X1.0 Y1.0 Z1.0
-BOOLEAN ligament.003 groups: 1st Finger, 
+BOOLEAN ligament.003 groups: None
 BOOLEAN ligament.003 parent: HANDLE 1st Finger
 BOOLEAN ligament.003 mesh: Ligament
 BOOLEAN ligament.003 materials: NF Black, NF Black.001, NF Black.002, NF Black.003, 
@@ -871,7 +871,7 @@ BOOLEAN ligament.004 Type: MESH
 BOOLEAN ligament.004 transform: X0.0 Y0.0 Z0.0
 BOOLEAN ligament.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN ligament.004 scale: X1.0 Y1.0 Z1.0
-BOOLEAN ligament.004 groups: 1st Finger, 
+BOOLEAN ligament.004 groups: None
 BOOLEAN ligament.004 parent: HANDLE 1st Finger
 BOOLEAN ligament.004 mesh: Ligament
 BOOLEAN ligament.004 materials: NF Black, NF Black.001, NF Black.002, NF Black.003, 
@@ -1396,7 +1396,7 @@ BOOLEAN proximal M2 Bolt Hole.001 Type: MESH
 BOOLEAN proximal M2 Bolt Hole.001 transform: X0.0 Y0.0 Z0.0
 BOOLEAN proximal M2 Bolt Hole.001 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN proximal M2 Bolt Hole.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN proximal M2 Bolt Hole.001 groups: 1st Finger, 
+BOOLEAN proximal M2 Bolt Hole.001 groups: None
 BOOLEAN proximal M2 Bolt Hole.001 parent: Proximal Phalanx.001
 BOOLEAN proximal M2 Bolt Hole.001 mesh: BOOLEAN M2 Bolt Holes.001
 BOOLEAN proximal M2 Bolt Hole.001 materials: Boolean difference, 
@@ -1408,7 +1408,7 @@ BOOLEAN proximal M2 Bolt Hole.002 Type: MESH
 BOOLEAN proximal M2 Bolt Hole.002 transform: X0.0 Y0.0 Z0.0
 BOOLEAN proximal M2 Bolt Hole.002 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN proximal M2 Bolt Hole.002 scale: X1.0 Y1.0 Z1.0
-BOOLEAN proximal M2 Bolt Hole.002 groups: 1st Finger, 
+BOOLEAN proximal M2 Bolt Hole.002 groups: None
 BOOLEAN proximal M2 Bolt Hole.002 parent: Proximal Phalanx.002
 BOOLEAN proximal M2 Bolt Hole.002 mesh: BOOLEAN M2 Bolt Holes.001
 BOOLEAN proximal M2 Bolt Hole.002 materials: Boolean difference, 
@@ -1420,7 +1420,7 @@ BOOLEAN proximal M2 Bolt Hole.003 Type: MESH
 BOOLEAN proximal M2 Bolt Hole.003 transform: X0.0 Y0.0 Z0.0
 BOOLEAN proximal M2 Bolt Hole.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN proximal M2 Bolt Hole.003 scale: X1.0 Y1.0 Z1.0
-BOOLEAN proximal M2 Bolt Hole.003 groups: 1st Finger, 
+BOOLEAN proximal M2 Bolt Hole.003 groups: None
 BOOLEAN proximal M2 Bolt Hole.003 parent: Proximal Phalanx.002
 BOOLEAN proximal M2 Bolt Hole.003 mesh: BOOLEAN M2 Bolt Holes.001
 BOOLEAN proximal M2 Bolt Hole.003 materials: Boolean difference, 
@@ -1432,7 +1432,7 @@ BOOLEAN proximal M2 Bolt Hole.004 Type: MESH
 BOOLEAN proximal M2 Bolt Hole.004 transform: X0.0 Y0.0 Z0.0
 BOOLEAN proximal M2 Bolt Hole.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN proximal M2 Bolt Hole.004 scale: X1.0 Y1.0 Z1.0
-BOOLEAN proximal M2 Bolt Hole.004 groups: 1st Finger, 
+BOOLEAN proximal M2 Bolt Hole.004 groups: None
 BOOLEAN proximal M2 Bolt Hole.004 parent: Proximal Phalanx.002
 BOOLEAN proximal M2 Bolt Hole.004 mesh: BOOLEAN M2 Bolt Holes.001
 BOOLEAN proximal M2 Bolt Hole.004 materials: Boolean difference, 
@@ -1633,7 +1633,7 @@ BOOLEAN Tendon channels distal.001 Type: MESH
 BOOLEAN Tendon channels distal.001 transform: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels distal.001 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels distal.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Tendon channels distal.001 groups: 1st Finger, 
+BOOLEAN Tendon channels distal.001 groups: None
 BOOLEAN Tendon channels distal.001 parent: Distal Phalanx.001
 BOOLEAN Tendon channels distal.001 mesh: BOOLEAN Tendon channels distal
 BOOLEAN Tendon channels distal.001 materials: Boolean difference, 
@@ -1651,7 +1651,7 @@ BOOLEAN Tendon channels distal.002 Type: MESH
 BOOLEAN Tendon channels distal.002 transform: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels distal.002 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels distal.002 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Tendon channels distal.002 groups: 1st Finger, 
+BOOLEAN Tendon channels distal.002 groups: None
 BOOLEAN Tendon channels distal.002 parent: Distal Phalanx.002
 BOOLEAN Tendon channels distal.002 mesh: BOOLEAN Tendon channels distal
 BOOLEAN Tendon channels distal.002 materials: Boolean difference, 
@@ -1669,7 +1669,7 @@ BOOLEAN Tendon channels distal.003 Type: MESH
 BOOLEAN Tendon channels distal.003 transform: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels distal.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels distal.003 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Tendon channels distal.003 groups: 1st Finger, 
+BOOLEAN Tendon channels distal.003 groups: None
 BOOLEAN Tendon channels distal.003 parent: Distal Phalanx.003
 BOOLEAN Tendon channels distal.003 mesh: BOOLEAN Tendon channels distal.003
 BOOLEAN Tendon channels distal.003 materials: Boolean difference, 
@@ -1681,7 +1681,7 @@ BOOLEAN Tendon channels distal.004 Type: MESH
 BOOLEAN Tendon channels distal.004 transform: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels distal.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels distal.004 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Tendon channels distal.004 groups: 1st Finger, 
+BOOLEAN Tendon channels distal.004 groups: None
 BOOLEAN Tendon channels distal.004 parent: Distal Phalanx.004
 BOOLEAN Tendon channels distal.004 mesh: BOOLEAN Tendon channels distal.004
 BOOLEAN Tendon channels distal.004 materials: Boolean difference, 
@@ -1693,7 +1693,7 @@ BOOLEAN Tendon channels proximal.001 Type: MESH
 BOOLEAN Tendon channels proximal.001 transform: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels proximal.001 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels proximal.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Tendon channels proximal.001 groups: 1st Finger, 
+BOOLEAN Tendon channels proximal.001 groups: None
 BOOLEAN Tendon channels proximal.001 parent: Proximal Phalanx.001
 BOOLEAN Tendon channels proximal.001 mesh: BOOLEAN Tendon channels proximal
 BOOLEAN Tendon channels proximal.001 materials: Boolean difference, 
@@ -1711,7 +1711,7 @@ BOOLEAN Tendon channels proximal.002 Type: MESH
 BOOLEAN Tendon channels proximal.002 transform: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels proximal.002 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels proximal.002 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Tendon channels proximal.002 groups: 1st Finger, 
+BOOLEAN Tendon channels proximal.002 groups: None
 BOOLEAN Tendon channels proximal.002 parent: Proximal Phalanx.002
 BOOLEAN Tendon channels proximal.002 mesh: BOOLEAN Tendon channels proximal
 BOOLEAN Tendon channels proximal.002 materials: Boolean difference, 
@@ -1729,7 +1729,7 @@ BOOLEAN Tendon channels proximal.003 Type: MESH
 BOOLEAN Tendon channels proximal.003 transform: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels proximal.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels proximal.003 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Tendon channels proximal.003 groups: 1st Finger, 
+BOOLEAN Tendon channels proximal.003 groups: None
 BOOLEAN Tendon channels proximal.003 parent: Proximal Phalanx.003
 BOOLEAN Tendon channels proximal.003 mesh: BOOLEAN Tendon channels proximal.003
 BOOLEAN Tendon channels proximal.003 materials: Boolean difference, 
@@ -1741,7 +1741,7 @@ BOOLEAN Tendon channels proximal.004 Type: MESH
 BOOLEAN Tendon channels proximal.004 transform: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels proximal.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels proximal.004 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Tendon channels proximal.004 groups: 1st Finger, 
+BOOLEAN Tendon channels proximal.004 groups: None
 BOOLEAN Tendon channels proximal.004 parent: Proximal Phalanx.004
 BOOLEAN Tendon channels proximal.004 mesh: BOOLEAN Tendon channels proximal.004
 BOOLEAN Tendon channels proximal.004 materials: Boolean difference, 
@@ -2026,7 +2026,7 @@ BOOLEAN UNION proximal M2 Bolt Hole.001 Type: MESH
 BOOLEAN UNION proximal M2 Bolt Hole.001 transform: X0.0 Y0.0 Z0.0
 BOOLEAN UNION proximal M2 Bolt Hole.001 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN UNION proximal M2 Bolt Hole.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN UNION proximal M2 Bolt Hole.001 groups: 1st Finger, 
+BOOLEAN UNION proximal M2 Bolt Hole.001 groups: None
 BOOLEAN UNION proximal M2 Bolt Hole.001 parent: Proximal Phalanx.001
 BOOLEAN UNION proximal M2 Bolt Hole.001 mesh: BOOLEAN M2 Bolt Holes.001
 BOOLEAN UNION proximal M2 Bolt Hole.001 materials: Boolean difference, 
@@ -2042,7 +2042,7 @@ BOOLEAN UNION proximal M2 Bolt Hole.002 Type: MESH
 BOOLEAN UNION proximal M2 Bolt Hole.002 transform: X0.0 Y0.0 Z0.0
 BOOLEAN UNION proximal M2 Bolt Hole.002 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN UNION proximal M2 Bolt Hole.002 scale: X1.0 Y1.0 Z1.0
-BOOLEAN UNION proximal M2 Bolt Hole.002 groups: 1st Finger, 
+BOOLEAN UNION proximal M2 Bolt Hole.002 groups: None
 BOOLEAN UNION proximal M2 Bolt Hole.002 parent: Proximal Phalanx.002
 BOOLEAN UNION proximal M2 Bolt Hole.002 mesh: BOOLEAN M2 Bolt Holes.001
 BOOLEAN UNION proximal M2 Bolt Hole.002 materials: Boolean difference, 
@@ -2058,7 +2058,7 @@ BOOLEAN UNION proximal M2 Bolt Hole.003 Type: MESH
 BOOLEAN UNION proximal M2 Bolt Hole.003 transform: X0.0 Y0.0 Z0.0
 BOOLEAN UNION proximal M2 Bolt Hole.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN UNION proximal M2 Bolt Hole.003 scale: X1.0 Y1.0 Z1.0
-BOOLEAN UNION proximal M2 Bolt Hole.003 groups: 1st Finger, 
+BOOLEAN UNION proximal M2 Bolt Hole.003 groups: None
 BOOLEAN UNION proximal M2 Bolt Hole.003 parent: Proximal Phalanx.002
 BOOLEAN UNION proximal M2 Bolt Hole.003 mesh: BOOLEAN M2 Bolt Holes.001
 BOOLEAN UNION proximal M2 Bolt Hole.003 materials: Boolean difference, 
@@ -2074,7 +2074,7 @@ BOOLEAN UNION proximal M2 Bolt Hole.004 Type: MESH
 BOOLEAN UNION proximal M2 Bolt Hole.004 transform: X0.0 Y0.0 Z0.0
 BOOLEAN UNION proximal M2 Bolt Hole.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN UNION proximal M2 Bolt Hole.004 scale: X1.0 Y1.0 Z1.0
-BOOLEAN UNION proximal M2 Bolt Hole.004 groups: 1st Finger, 
+BOOLEAN UNION proximal M2 Bolt Hole.004 groups: None
 BOOLEAN UNION proximal M2 Bolt Hole.004 parent: Proximal Phalanx.002
 BOOLEAN UNION proximal M2 Bolt Hole.004 mesh: BOOLEAN M2 Bolt Holes.001
 BOOLEAN UNION proximal M2 Bolt Hole.004 materials: Boolean difference, 
@@ -2090,7 +2090,7 @@ BOOLEAN UNION Tendon channels distal.001 Type: MESH
 BOOLEAN UNION Tendon channels distal.001 transform: X40.708351135253906 Y27.044395446777344 Z11.576489448547363
 BOOLEAN UNION Tendon channels distal.001 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN UNION Tendon channels distal.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN UNION Tendon channels distal.001 groups: 1st Finger, 
+BOOLEAN UNION Tendon channels distal.001 groups: None
 BOOLEAN UNION Tendon channels distal.001 parent: Distal Phalanx.001
 BOOLEAN UNION Tendon channels distal.001 mesh: BOOLEAN Tendon channels distal
 BOOLEAN UNION Tendon channels distal.001 materials: Boolean difference, 
@@ -2112,7 +2112,7 @@ BOOLEAN UNION Tendon channels distal.002 Type: MESH
 BOOLEAN UNION Tendon channels distal.002 transform: X0.0 Y0.0 Z0.0
 BOOLEAN UNION Tendon channels distal.002 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN UNION Tendon channels distal.002 scale: X1.0 Y1.0 Z1.0
-BOOLEAN UNION Tendon channels distal.002 groups: 1st Finger, 
+BOOLEAN UNION Tendon channels distal.002 groups: None
 BOOLEAN UNION Tendon channels distal.002 parent: Distal Phalanx.002
 BOOLEAN UNION Tendon channels distal.002 mesh: BOOLEAN Tendon channels distal
 BOOLEAN UNION Tendon channels distal.002 materials: Boolean difference, 
@@ -2134,7 +2134,7 @@ BOOLEAN UNION Tendon channels distal.003 Type: MESH
 BOOLEAN UNION Tendon channels distal.003 transform: X0.0 Y0.0 Z0.0
 BOOLEAN UNION Tendon channels distal.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN UNION Tendon channels distal.003 scale: X1.0 Y1.0 Z1.0
-BOOLEAN UNION Tendon channels distal.003 groups: 1st Finger, 
+BOOLEAN UNION Tendon channels distal.003 groups: None
 BOOLEAN UNION Tendon channels distal.003 parent: Distal Phalanx.003
 BOOLEAN UNION Tendon channels distal.003 mesh: BOOLEAN Tendon channels distal.003
 BOOLEAN UNION Tendon channels distal.003 materials: Boolean difference, 
@@ -2150,7 +2150,7 @@ BOOLEAN UNION Tendon channels distal.004 Type: MESH
 BOOLEAN UNION Tendon channels distal.004 transform: X0.0 Y0.0 Z0.0
 BOOLEAN UNION Tendon channels distal.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN UNION Tendon channels distal.004 scale: X1.0 Y1.0 Z1.0
-BOOLEAN UNION Tendon channels distal.004 groups: 1st Finger, 
+BOOLEAN UNION Tendon channels distal.004 groups: None
 BOOLEAN UNION Tendon channels distal.004 parent: Distal Phalanx.004
 BOOLEAN UNION Tendon channels distal.004 mesh: BOOLEAN Tendon channels distal.004
 BOOLEAN UNION Tendon channels distal.004 materials: Boolean difference, 
@@ -2166,7 +2166,7 @@ BOOLEAN UNION Tendon channels proximal.001 Type: MESH
 BOOLEAN UNION Tendon channels proximal.001 transform: X0.0 Y0.0 Z0.0
 BOOLEAN UNION Tendon channels proximal.001 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN UNION Tendon channels proximal.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN UNION Tendon channels proximal.001 groups: 1st Finger, 
+BOOLEAN UNION Tendon channels proximal.001 groups: None
 BOOLEAN UNION Tendon channels proximal.001 parent: Proximal Phalanx.001
 BOOLEAN UNION Tendon channels proximal.001 mesh: BOOLEAN Tendon channels proximal
 BOOLEAN UNION Tendon channels proximal.001 materials: Boolean difference, 
@@ -2188,7 +2188,7 @@ BOOLEAN UNION Tendon channels proximal.002 Type: MESH
 BOOLEAN UNION Tendon channels proximal.002 transform: X0.0 Y0.0 Z0.0
 BOOLEAN UNION Tendon channels proximal.002 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN UNION Tendon channels proximal.002 scale: X1.0 Y1.0 Z1.0
-BOOLEAN UNION Tendon channels proximal.002 groups: 1st Finger, 
+BOOLEAN UNION Tendon channels proximal.002 groups: None
 BOOLEAN UNION Tendon channels proximal.002 parent: Proximal Phalanx.002
 BOOLEAN UNION Tendon channels proximal.002 mesh: BOOLEAN Tendon channels proximal
 BOOLEAN UNION Tendon channels proximal.002 materials: Boolean difference, 
@@ -2210,7 +2210,7 @@ BOOLEAN UNION Tendon channels proximal.003 Type: MESH
 BOOLEAN UNION Tendon channels proximal.003 transform: X0.0 Y0.0 Z0.0
 BOOLEAN UNION Tendon channels proximal.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN UNION Tendon channels proximal.003 scale: X1.0 Y1.0 Z1.0
-BOOLEAN UNION Tendon channels proximal.003 groups: 1st Finger, 
+BOOLEAN UNION Tendon channels proximal.003 groups: None
 BOOLEAN UNION Tendon channels proximal.003 parent: Proximal Phalanx.003
 BOOLEAN UNION Tendon channels proximal.003 mesh: BOOLEAN Tendon channels proximal.003
 BOOLEAN UNION Tendon channels proximal.003 materials: Boolean difference, 
@@ -2226,7 +2226,7 @@ BOOLEAN UNION Tendon channels proximal.004 Type: MESH
 BOOLEAN UNION Tendon channels proximal.004 transform: X0.0 Y0.0 Z0.0
 BOOLEAN UNION Tendon channels proximal.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN UNION Tendon channels proximal.004 scale: X1.0 Y1.0 Z1.0
-BOOLEAN UNION Tendon channels proximal.004 groups: 1st Finger, 
+BOOLEAN UNION Tendon channels proximal.004 groups: None
 BOOLEAN UNION Tendon channels proximal.004 parent: Proximal Phalanx.004
 BOOLEAN UNION Tendon channels proximal.004 mesh: BOOLEAN Tendon channels proximal.004
 BOOLEAN UNION Tendon channels proximal.004 materials: Boolean difference, 
@@ -2303,86 +2303,6 @@ Boolean Wedge Cut Outs.001 modifiers:
         Operation: UNION, Object: Cube.033
   #9 Name: Boolean.008, Type: BOOLEAN
         Operation: UNION, Object: Cube.034
-
-Name: BRUNEL HANDBack Cover  Integrated Wrist 
-BRUNEL HANDBack Cover  Integrated Wrist  Type: MESH
-BRUNEL HANDBack Cover  Integrated Wrist  transform: X23.890623092651367 Y-50.145389556884766 Z-2.0734963417053223
-BRUNEL HANDBack Cover  Integrated Wrist  rotation: X0.0 Y-0.0 Z-0.0872664526104927
-BRUNEL HANDBack Cover  Integrated Wrist  scale: X1.0 Y1.0 Z1.0
-BRUNEL HANDBack Cover  Integrated Wrist  groups: None
-BRUNEL HANDBack Cover  Integrated Wrist  mesh: BRUNEL HANDBack Cover  Integrated Wrist 
-BRUNEL HANDBack Cover  Integrated Wrist  materials: None
-BRUNEL HANDBack Cover  Integrated Wrist  modifiers: None
-
-Name: BRUNEL HANDFinger Ligament Cover
-BRUNEL HANDFinger Ligament Cover Type: MESH
-BRUNEL HANDFinger Ligament Cover transform: X27.833383560180664 Y-10.916707038879395 Z1.7847709655761719
-BRUNEL HANDFinger Ligament Cover rotation: X0.0 Y-0.0 Z-0.0872664526104927
-BRUNEL HANDFinger Ligament Cover scale: X1.0 Y1.0 Z1.0
-BRUNEL HANDFinger Ligament Cover groups: None
-BRUNEL HANDFinger Ligament Cover mesh: BRUNEL HANDFinger Ligament Cover
-BRUNEL HANDFinger Ligament Cover materials: None
-BRUNEL HANDFinger Ligament Cover modifiers: None
-
-Name: BRUNEL HANDPalm Inner body
-BRUNEL HANDPalm Inner body Type: MESH
-BRUNEL HANDPalm Inner body transform: X23.890623092651367 Y-50.145389556884766 Z-2.0734963417053223
-BRUNEL HANDPalm Inner body rotation: X0.0 Y-0.0 Z-0.0872664526104927
-BRUNEL HANDPalm Inner body scale: X1.0 Y1.0 Z1.0
-BRUNEL HANDPalm Inner body groups: None
-BRUNEL HANDPalm Inner body mesh: BRUNEL HANDPalm Inner body
-BRUNEL HANDPalm Inner body materials: None
-BRUNEL HANDPalm Inner body modifiers: None
-
-Name: Brunel LigamentBack cover
-Brunel LigamentBack cover Type: MESH
-Brunel LigamentBack cover transform: X-0.09889888763427734 Y0.42674827575683594 Z-0.9882736206054688
-Brunel LigamentBack cover rotation: X0.0 Y0.0 Z0.0
-Brunel LigamentBack cover scale: X1.0 Y1.0 Z1.0
-Brunel LigamentBack cover groups: None
-Brunel LigamentBack cover mesh: Brunel LigamentBack cover
-Brunel LigamentBack cover materials: None
-Brunel LigamentBack cover modifiers: None
-
-Name: Brunel LigamentLigament cover bottom
-Brunel LigamentLigament cover bottom Type: MESH
-Brunel LigamentLigament cover bottom transform: X8.889141082763672 Y-48.01791000366211 Z-3.406993865966797
-Brunel LigamentLigament cover bottom rotation: X0.0 Y0.0 Z0.0
-Brunel LigamentLigament cover bottom scale: X1.0 Y1.0 Z1.0
-Brunel LigamentLigament cover bottom groups: None
-Brunel LigamentLigament cover bottom mesh: Brunel LigamentLigament cover bottom
-Brunel LigamentLigament cover bottom materials: None
-Brunel LigamentLigament cover bottom modifiers: None
-
-Name: Brunel LigamentPalm inner
-Brunel LigamentPalm inner Type: MESH
-Brunel LigamentPalm inner transform: X8.835189819335938 Y-48.19868087768555 Z-3.406993865966797
-Brunel LigamentPalm inner rotation: X0.0 Y-0.0 Z0.0
-Brunel LigamentPalm inner scale: X1.0 Y1.0 Z1.0
-Brunel LigamentPalm inner groups: None
-Brunel LigamentPalm inner mesh: Brunel LigamentPalm inner
-Brunel LigamentPalm inner materials: None
-Brunel LigamentPalm inner modifiers: None
-
-Name: BrunelBack of handBack Cover  Integrated Wrist 
-BrunelBack of handBack Cover  Integrated Wrist  Type: MESH
-BrunelBack of handBack Cover  Integrated Wrist  transform: X0.0 Y0.0 Z0.0
-BrunelBack of handBack Cover  Integrated Wrist  rotation: X0.0 Y0.0 Z0.0
-BrunelBack of handBack Cover  Integrated Wrist  scale: X1.0 Y1.0 Z1.0
-BrunelBack of handBack Cover  Integrated Wrist  groups: None
-BrunelBack of handBack Cover  Integrated Wrist  mesh: BrunelBack of handBack Cover  Integrated Wrist .001
-BrunelBack of handBack Cover  Integrated Wrist  materials: None
-BrunelBack of handBack Cover  Integrated Wrist  modifiers: None
-
-Name: BrunelBack of handFinger Ligament Cover
-BrunelBack of handFinger Ligament Cover Type: MESH
-BrunelBack of handFinger Ligament Cover transform: X0.0 Y0.0 Z0.0
-BrunelBack of handFinger Ligament Cover rotation: X0.0 Y0.0 Z0.0
-BrunelBack of handFinger Ligament Cover scale: X1.0 Y1.0 Z1.0
-BrunelBack of handFinger Ligament Cover groups: None
-BrunelBack of handFinger Ligament Cover mesh: BrunelBack of handFinger Ligament Cover
-BrunelBack of handFinger Ligament Cover materials: None
-BrunelBack of handFinger Ligament Cover modifiers: None
 
 Name: Circle
 Circle Type: MESH
@@ -2890,7 +2810,7 @@ Cube.035 Type: MESH
 Cube.035 transform: X0.0 Y0.0 Z0.0
 Cube.035 rotation: X0.0 Y0.0 Z0.0
 Cube.035 scale: X1.0 Y1.0 Z1.0
-Cube.035 groups: None
+Cube.035 groups: 4th Finger, 
 Cube.035 mesh: Cube.029
 Cube.035 materials: None
 Cube.035 modifiers: None
@@ -3185,21 +3105,21 @@ HANDLE 1st Finger Type: EMPTY
 HANDLE 1st Finger transform: X0.0 Y0.0 Z0.0
 HANDLE 1st Finger rotation: X0.0 Y0.0 Z0.0
 HANDLE 1st Finger scale: X1.0 Y1.0 Z1.0
-HANDLE 1st Finger groups: 1st Finger, 
+HANDLE 1st Finger groups: None
 
 Name: HANDLE 2nd Finger
 HANDLE 2nd Finger Type: EMPTY
 HANDLE 2nd Finger transform: X0.0 Y0.0 Z0.0
 HANDLE 2nd Finger rotation: X0.0 Y0.0 Z0.0
 HANDLE 2nd Finger scale: X1.0 Y1.0 Z1.0
-HANDLE 2nd Finger groups: 2nd Finger, 
+HANDLE 2nd Finger groups: None
 
 Name: HANDLE 3rd Finger
 HANDLE 3rd Finger Type: EMPTY
 HANDLE 3rd Finger transform: X0.0 Y0.0 Z0.0
 HANDLE 3rd Finger rotation: X0.0 Y0.0 Z0.0
 HANDLE 3rd Finger scale: X1.0 Y1.0 Z1.0
-HANDLE 3rd Finger groups: 3rd Finger, 
+HANDLE 3rd Finger groups: None
 
 Name: HANDLE 4th Finger
 HANDLE 4th Finger Type: EMPTY
@@ -3389,7 +3309,7 @@ HANDLE Distal Joint.001 Type: MESH
 HANDLE Distal Joint.001 transform: X0.0 Y45.0 Z0.0
 HANDLE Distal Joint.001 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.001 scale: X1.0 Y1.0 Z1.0
-HANDLE Distal Joint.001 groups: 1st Finger, 
+HANDLE Distal Joint.001 groups: None
 HANDLE Distal Joint.001 parent: HANDLE 1st Finger
 HANDLE Distal Joint.001 mesh: HANDLE Distal Joint
 HANDLE Distal Joint.001 materials: HANDLE, 
@@ -3400,7 +3320,7 @@ HANDLE Distal Joint.002 Type: MESH
 HANDLE Distal Joint.002 transform: X0.0 Y44.999996185302734 Z0.0
 HANDLE Distal Joint.002 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.002 scale: X1.0 Y1.0 Z1.0
-HANDLE Distal Joint.002 groups: 2nd Finger, 
+HANDLE Distal Joint.002 groups: None
 HANDLE Distal Joint.002 parent: HANDLE 2nd Finger
 HANDLE Distal Joint.002 mesh: HANDLE Distal Joint
 HANDLE Distal Joint.002 materials: HANDLE, 
@@ -3411,7 +3331,7 @@ HANDLE Distal Joint.003 Type: MESH
 HANDLE Distal Joint.003 transform: X0.0 Y38.0 Z0.0
 HANDLE Distal Joint.003 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.003 scale: X1.0 Y1.0 Z1.0
-HANDLE Distal Joint.003 groups: 3rd Finger, 
+HANDLE Distal Joint.003 groups: None
 HANDLE Distal Joint.003 parent: HANDLE 3rd Finger
 HANDLE Distal Joint.003 mesh: HANDLE Distal Joint
 HANDLE Distal Joint.003 materials: HANDLE, 
@@ -3422,7 +3342,7 @@ HANDLE Distal Joint.004 Type: MESH
 HANDLE Distal Joint.004 transform: X0.0 Y30.0 Z0.0
 HANDLE Distal Joint.004 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.004 scale: X1.0 Y1.0 Z1.0
-HANDLE Distal Joint.004 groups: 4th Finger, 
+HANDLE Distal Joint.004 groups: None
 HANDLE Distal Joint.004 mesh: HANDLE Distal Joint
 HANDLE Distal Joint.004 materials: HANDLE, 
 HANDLE Distal Joint.004 modifiers: None
@@ -3432,7 +3352,7 @@ HANDLE Fingertip.001 Type: MESH
 HANDLE Fingertip.001 transform: X0.0 Y44.0 Z0.0
 HANDLE Fingertip.001 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.001 scale: X1.0 Y1.0 Z1.0
-HANDLE Fingertip.001 groups: 1st Finger, 
+HANDLE Fingertip.001 groups: None
 HANDLE Fingertip.001 parent: HANDLE Distal Joint.001
 HANDLE Fingertip.001 mesh: HANDLE Fingertip
 HANDLE Fingertip.001 materials: HANDLE, 
@@ -3443,7 +3363,7 @@ HANDLE Fingertip.002 Type: MESH
 HANDLE Fingertip.002 transform: X0.0 Y44.999996185302734 Z0.0
 HANDLE Fingertip.002 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.002 scale: X1.0 Y1.0 Z1.0
-HANDLE Fingertip.002 groups: 2nd Finger, 
+HANDLE Fingertip.002 groups: None
 HANDLE Fingertip.002 parent: HANDLE Distal Joint.002
 HANDLE Fingertip.002 mesh: HANDLE Fingertip
 HANDLE Fingertip.002 materials: HANDLE, 
@@ -3454,7 +3374,7 @@ HANDLE Fingertip.003 Type: MESH
 HANDLE Fingertip.003 transform: X0.0 Y42.0 Z0.0
 HANDLE Fingertip.003 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.003 scale: X1.0 Y1.0 Z1.0
-HANDLE Fingertip.003 groups: 3rd Finger, 
+HANDLE Fingertip.003 groups: None
 HANDLE Fingertip.003 parent: HANDLE Distal Joint.003
 HANDLE Fingertip.003 mesh: HANDLE Fingertip
 HANDLE Fingertip.003 materials: HANDLE, 
@@ -3465,7 +3385,7 @@ HANDLE Fingertip.004 Type: MESH
 HANDLE Fingertip.004 transform: X0.0 Y38.0 Z0.0
 HANDLE Fingertip.004 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.004 scale: X1.0 Y1.0 Z1.0
-HANDLE Fingertip.004 groups: 4th Finger, 
+HANDLE Fingertip.004 groups: None
 HANDLE Fingertip.004 parent: HANDLE Distal Joint.004
 HANDLE Fingertip.004 mesh: HANDLE Fingertip
 HANDLE Fingertip.004 materials: HANDLE, 
@@ -4278,7 +4198,7 @@ Inner distal TARGET.001 Type: MESH
 Inner distal TARGET.001 transform: X0.0 Y0.0 Z0.0
 Inner distal TARGET.001 rotation: X0.0 Y0.0 Z0.0
 Inner distal TARGET.001 scale: X1.0 Y1.0 Z1.0
-Inner distal TARGET.001 groups: 1st Finger, 
+Inner distal TARGET.001 groups: None
 Inner distal TARGET.001 parent: Distal Phalanx.001
 Inner distal TARGET.001 mesh: Inner distal.002
 Inner distal TARGET.001 materials: PLA White, 
@@ -4303,7 +4223,7 @@ Inner distal TARGET.002 Type: MESH
 Inner distal TARGET.002 transform: X0.0 Y0.0 Z0.0
 Inner distal TARGET.002 rotation: X0.0 Y0.0 Z0.0
 Inner distal TARGET.002 scale: X1.0 Y1.0 Z1.0
-Inner distal TARGET.002 groups: 1st Finger, 
+Inner distal TARGET.002 groups: None
 Inner distal TARGET.002 parent: Distal Phalanx.002
 Inner distal TARGET.002 mesh: Inner distal.002
 Inner distal TARGET.002 materials: PLA White, 
@@ -4328,7 +4248,7 @@ Inner distal TARGET.003 Type: MESH
 Inner distal TARGET.003 transform: X0.0 Y0.0 Z0.0
 Inner distal TARGET.003 rotation: X0.0 Y0.0 Z0.0
 Inner distal TARGET.003 scale: X1.0 Y1.0 Z1.0
-Inner distal TARGET.003 groups: 1st Finger, 
+Inner distal TARGET.003 groups: None
 Inner distal TARGET.003 parent: Distal Phalanx.003
 Inner distal TARGET.003 mesh: Inner distal.002
 Inner distal TARGET.003 materials: PLA White, 
@@ -4353,7 +4273,7 @@ Inner distal TARGET.004 Type: MESH
 Inner distal TARGET.004 transform: X0.0 Y0.0 Z0.0
 Inner distal TARGET.004 rotation: X0.0 Y0.0 Z0.0
 Inner distal TARGET.004 scale: X1.0 Y1.0 Z1.0
-Inner distal TARGET.004 groups: 1st Finger, 
+Inner distal TARGET.004 groups: None
 Inner distal TARGET.004 parent: Distal Phalanx.004
 Inner distal TARGET.004 mesh: Inner distal.002
 Inner distal TARGET.004 materials: PLA White, 
@@ -4433,7 +4353,7 @@ Inner distal.002 Type: MESH
 Inner distal.002 transform: X-3.1996674876487116e-16 Y0.0 Z0.0
 Inner distal.002 rotation: X0.0 Y0.0 Z0.0
 Inner distal.002 scale: X1.0 Y1.0 Z1.0
-Inner distal.002 groups: 1st Finger, 
+Inner distal.002 groups: 2nd Finger, 
 Inner distal.002 parent: Distal Phalanx.002
 Inner distal.002 mesh: Inner distal.003
 Inner distal.002 materials: PLA White, 
@@ -4477,7 +4397,7 @@ Inner distal.003 Type: MESH
 Inner distal.003 transform: X0.0 Y0.0 Z0.0
 Inner distal.003 rotation: X0.0 Y0.0 Z0.0
 Inner distal.003 scale: X1.0 Y1.0 Z1.0
-Inner distal.003 groups: 1st Finger, 
+Inner distal.003 groups: 3rd Finger, 
 Inner distal.003 parent: Distal Phalanx.003
 Inner distal.003 mesh: Inner distal.003
 Inner distal.003 materials: PLA White, 
@@ -4520,7 +4440,7 @@ Inner distal.004  Type: MESH
 Inner distal.004  transform: X0.0 Y0.0 Z0.0
 Inner distal.004  rotation: X0.0 Y0.0 Z0.0
 Inner distal.004  scale: X1.0 Y1.0 Z1.0
-Inner distal.004  groups: 1st Finger, 
+Inner distal.004  groups: 4th Finger, 
 Inner distal.004  parent: Distal Phalanx.004
 Inner distal.004  mesh: Inner distal.003
 Inner distal.004  materials: PLA White, 
@@ -4847,7 +4767,7 @@ Inner Proximal ORIGINAL.004 Type: MESH
 Inner Proximal ORIGINAL.004 transform: X0.0 Y0.0 Z0.0
 Inner Proximal ORIGINAL.004 rotation: X0.0 Y0.0 Z0.0
 Inner Proximal ORIGINAL.004 scale: X1.0 Y1.0 Z1.0
-Inner Proximal ORIGINAL.004 groups: 1st Finger, 
+Inner Proximal ORIGINAL.004 groups: None
 Inner Proximal ORIGINAL.004 parent: Proximal Phalanx.004
 Inner Proximal ORIGINAL.004 mesh: Inner proximal.002
 Inner Proximal ORIGINAL.004 materials: PLA White, 
@@ -4883,7 +4803,7 @@ Inner Proximal pad.001 Type: MESH
 Inner Proximal pad.001 transform: X0.0 Y0.0 Z0.0
 Inner Proximal pad.001 rotation: X0.0 Y0.0 Z0.0
 Inner Proximal pad.001 scale: X1.0 Y1.0 Z1.0
-Inner Proximal pad.001 groups: 1st Finger, 
+Inner Proximal pad.001 groups: None
 Inner Proximal pad.001 parent: Proximal Phalanx.001
 Inner Proximal pad.001 mesh: Inner proximal.008
 Inner Proximal pad.001 materials: PLA White, 
@@ -4904,7 +4824,7 @@ Inner Proximal pad.002 Type: MESH
 Inner Proximal pad.002 transform: X0.0 Y0.0 Z0.0
 Inner Proximal pad.002 rotation: X0.0 Y0.0 Z0.0
 Inner Proximal pad.002 scale: X1.0 Y1.0 Z1.0
-Inner Proximal pad.002 groups: 1st Finger, 
+Inner Proximal pad.002 groups: None
 Inner Proximal pad.002 parent: Proximal Phalanx.002
 Inner Proximal pad.002 mesh: Inner proximal.008
 Inner Proximal pad.002 materials: PLA White, 
@@ -4925,7 +4845,7 @@ Inner Proximal pad.003 Type: MESH
 Inner Proximal pad.003 transform: X0.0 Y0.0 Z0.0
 Inner Proximal pad.003 rotation: X0.0 Y0.0 Z0.0
 Inner Proximal pad.003 scale: X1.0 Y1.0 Z1.0
-Inner Proximal pad.003 groups: 1st Finger, 
+Inner Proximal pad.003 groups: None
 Inner Proximal pad.003 parent: Proximal Phalanx.003
 Inner Proximal pad.003 mesh: Inner proximal.008
 Inner Proximal pad.003 materials: PLA White, 
@@ -4946,7 +4866,7 @@ Inner Proximal pad.004 Type: MESH
 Inner Proximal pad.004 transform: X0.0 Y0.0 Z0.0
 Inner Proximal pad.004 rotation: X0.0 Y0.0 Z0.0
 Inner Proximal pad.004 scale: X1.0 Y1.0 Z1.0
-Inner Proximal pad.004 groups: 1st Finger, 
+Inner Proximal pad.004 groups: None
 Inner Proximal pad.004 parent: Proximal Phalanx.004
 Inner Proximal pad.004 mesh: Inner proximal.008
 Inner Proximal pad.004 materials: PLA White, 
@@ -5011,7 +4931,7 @@ Inner Proximal TARGET.001 Type: MESH
 Inner Proximal TARGET.001 transform: X0.0 Y0.0 Z0.0
 Inner Proximal TARGET.001 rotation: X0.0 Y0.0 Z0.0
 Inner Proximal TARGET.001 scale: X1.0 Y1.0 Z1.0
-Inner Proximal TARGET.001 groups: 1st Finger, 
+Inner Proximal TARGET.001 groups: None
 Inner Proximal TARGET.001 parent: Proximal Phalanx.001
 Inner Proximal TARGET.001 mesh: Inner proximal.004
 Inner Proximal TARGET.001 materials: PLA White, 
@@ -5031,7 +4951,7 @@ Inner Proximal TARGET.002 Type: MESH
 Inner Proximal TARGET.002 transform: X0.0 Y0.0 Z0.0
 Inner Proximal TARGET.002 rotation: X0.0 Y0.0 Z0.0
 Inner Proximal TARGET.002 scale: X1.0 Y1.0 Z1.0
-Inner Proximal TARGET.002 groups: 1st Finger, 
+Inner Proximal TARGET.002 groups: None
 Inner Proximal TARGET.002 parent: Proximal Phalanx.002
 Inner Proximal TARGET.002 mesh: Inner proximal.004
 Inner Proximal TARGET.002 materials: PLA White, 
@@ -5051,7 +4971,7 @@ Inner Proximal TARGET.003 Type: MESH
 Inner Proximal TARGET.003 transform: X0.0 Y0.0 Z0.0
 Inner Proximal TARGET.003 rotation: X0.0 Y0.0 Z0.0
 Inner Proximal TARGET.003 scale: X1.0 Y1.0 Z1.0
-Inner Proximal TARGET.003 groups: 1st Finger, 
+Inner Proximal TARGET.003 groups: None
 Inner Proximal TARGET.003 parent: Proximal Phalanx.003
 Inner Proximal TARGET.003 mesh: Inner proximal.004
 Inner Proximal TARGET.003 materials: PLA White, 
@@ -5073,7 +4993,7 @@ Inner Proximal TARGET.004 Type: MESH
 Inner Proximal TARGET.004 transform: X0.0 Y0.0 Z0.0
 Inner Proximal TARGET.004 rotation: X0.0 Y0.0 Z0.0
 Inner Proximal TARGET.004 scale: X1.0 Y1.0 Z1.0
-Inner Proximal TARGET.004 groups: 1st Finger, 
+Inner Proximal TARGET.004 groups: None
 Inner Proximal TARGET.004 parent: Proximal Phalanx.004
 Inner Proximal TARGET.004 mesh: Inner proximal.005
 Inner Proximal TARGET.004 materials: PLA White, 
@@ -5095,7 +5015,7 @@ Inner Proximal urethane target.001 Type: MESH
 Inner Proximal urethane target.001 transform: X0.0 Y0.0 Z0.0
 Inner Proximal urethane target.001 rotation: X0.0 Y0.0 Z0.0
 Inner Proximal urethane target.001 scale: X1.0 Y1.0 Z1.0
-Inner Proximal urethane target.001 groups: 1st Finger, 
+Inner Proximal urethane target.001 groups: None
 Inner Proximal urethane target.001 parent: Proximal Phalanx.001
 Inner Proximal urethane target.001 mesh: Inner proximal.009
 Inner Proximal urethane target.001 materials: PLA White, 
@@ -5120,7 +5040,7 @@ Inner Proximal urethane target.002 Type: MESH
 Inner Proximal urethane target.002 transform: X0.0 Y0.0 Z0.0
 Inner Proximal urethane target.002 rotation: X0.0 Y0.0 Z0.0
 Inner Proximal urethane target.002 scale: X1.0 Y1.0 Z1.0
-Inner Proximal urethane target.002 groups: 1st Finger, 
+Inner Proximal urethane target.002 groups: 2nd Finger, 
 Inner Proximal urethane target.002 parent: Proximal Phalanx.002
 Inner Proximal urethane target.002 mesh: Inner proximal.009
 Inner Proximal urethane target.002 materials: PLA White, 
@@ -5145,7 +5065,7 @@ Inner Proximal urethane target.003 Type: MESH
 Inner Proximal urethane target.003 transform: X0.0 Y0.0 Z0.0
 Inner Proximal urethane target.003 rotation: X0.0 Y0.0 Z0.0
 Inner Proximal urethane target.003 scale: X1.0 Y1.0 Z1.0
-Inner Proximal urethane target.003 groups: 1st Finger, 
+Inner Proximal urethane target.003 groups: None
 Inner Proximal urethane target.003 parent: Proximal Phalanx.003
 Inner Proximal urethane target.003 mesh: Inner proximal.009
 Inner Proximal urethane target.003 materials: PLA White, 
@@ -5170,7 +5090,7 @@ Inner Proximal urethane target.004 Type: MESH
 Inner Proximal urethane target.004 transform: X0.0 Y0.0 Z0.0
 Inner Proximal urethane target.004 rotation: X0.0 Y0.0 Z0.0
 Inner Proximal urethane target.004 scale: X1.0 Y1.0 Z1.0
-Inner Proximal urethane target.004 groups: 1st Finger, 
+Inner Proximal urethane target.004 groups: None
 Inner Proximal urethane target.004 parent: Proximal Phalanx.004
 Inner Proximal urethane target.004 mesh: Inner proximal.009
 Inner Proximal urethane target.004 materials: PLA White, 
@@ -5236,7 +5156,7 @@ Inner Proximal.002 Type: MESH
 Inner Proximal.002 transform: X0.0 Y0.0 Z0.0
 Inner Proximal.002 rotation: X0.0 Y0.0 Z0.0
 Inner Proximal.002 scale: X1.0 Y1.0 Z1.0
-Inner Proximal.002 groups: 1st Finger, 
+Inner Proximal.002 groups: 2nd Finger, 
 Inner Proximal.002 parent: Proximal Phalanx.002
 Inner Proximal.002 mesh: Inner proximal.014
 Inner Proximal.002 materials: PLA White, 
@@ -5278,7 +5198,7 @@ Inner Proximal.003 Type: MESH
 Inner Proximal.003 transform: X0.0 Y0.0 Z0.0
 Inner Proximal.003 rotation: X0.0 Y0.0 Z0.0
 Inner Proximal.003 scale: X1.0 Y1.0 Z1.0
-Inner Proximal.003 groups: 1st Finger, 
+Inner Proximal.003 groups: 3rd Finger, 
 Inner Proximal.003 parent: Proximal Phalanx.003
 Inner Proximal.003 mesh: Inner proximal.014
 Inner Proximal.003 materials: PLA White, 
@@ -5319,7 +5239,7 @@ Inner Proximal.004 Type: MESH
 Inner Proximal.004 transform: X0.0 Y0.0 Z0.0
 Inner Proximal.004 rotation: X0.0 Y0.0 Z0.0
 Inner Proximal.004 scale: X1.0 Y1.0 Z1.0
-Inner Proximal.004 groups: 1st Finger, 
+Inner Proximal.004 groups: 4th Finger, 
 Inner Proximal.004 parent: Proximal Phalanx.004
 Inner Proximal.004 mesh: Inner proximal.014
 Inner Proximal.004 materials: PLA White, 
@@ -5593,7 +5513,7 @@ BOOLEAN Ligament.002 Type: MESH
 BOOLEAN Ligament.002 transform: X0.0 Y0.0 Z0.0
 BOOLEAN Ligament.002 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Ligament.002 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Ligament.002 groups: 2nd Finger, 
+BOOLEAN Ligament.002 groups: None
 BOOLEAN Ligament.002 mesh: Ligament
 BOOLEAN Ligament.002 materials: NF Black, NF Black.001, NF Black.002, NF Black.003, 
 BOOLEAN Ligament.002 modifiers: 
@@ -5615,7 +5535,7 @@ Ligament.003 Type: MESH
 Ligament.003 transform: X0.0 Y0.0 Z0.0
 Ligament.003 rotation: X0.0 Y0.0 Z0.0
 Ligament.003 scale: X1.0 Y1.0 Z1.0
-Ligament.003 groups: 2nd Finger, 
+Ligament.003 groups: 3rd Finger, 
 Ligament.003 mesh: Ligament
 Ligament.003 materials: NF Black, NF Black.001, NF Black.002, NF Black.003, 
 Ligament.003 modifiers: 
@@ -6599,7 +6519,7 @@ Top cover distal.002 Type: MESH
 Top cover distal.002 transform: X0.0 Y0.0 Z0.0
 Top cover distal.002 rotation: X0.0 Y0.0 Z0.0
 Top cover distal.002 scale: X1.0 Y1.0 Z1.0
-Top cover distal.002 groups: 1st Finger, 
+Top cover distal.002 groups: 2nd Finger, 
 Top cover distal.002 parent: Distal Phalanx.002
 Top cover distal.002 mesh: Top cover distal
 Top cover distal.002 materials: PLA White, 
@@ -6626,7 +6546,7 @@ Top cover distal.003 Type: MESH
 Top cover distal.003 transform: X0.0 Y0.0 Z0.0
 Top cover distal.003 rotation: X0.0 Y0.0 Z0.0
 Top cover distal.003 scale: X1.0 Y1.0 Z1.0
-Top cover distal.003 groups: 1st Finger, 
+Top cover distal.003 groups: 3rd Finger, 
 Top cover distal.003 parent: Distal Phalanx.003
 Top cover distal.003 mesh: Top cover distal
 Top cover distal.003 materials: PLA White, 
@@ -6653,7 +6573,7 @@ Top cover distal.004 Type: MESH
 Top cover distal.004 transform: X0.0 Y0.0 Z0.0
 Top cover distal.004 rotation: X0.0 Y0.0 Z0.0
 Top cover distal.004 scale: X1.0 Y1.0 Z1.0
-Top cover distal.004 groups: 1st Finger, 
+Top cover distal.004 groups: 4th Finger, 
 Top cover distal.004 parent: Distal Phalanx.004
 Top cover distal.004 mesh: Top cover distal
 Top cover distal.004 materials: PLA White, 
@@ -6706,7 +6626,7 @@ Top cover proximal.002 Type: MESH
 Top cover proximal.002 transform: X0.0 Y0.0 Z0.0
 Top cover proximal.002 rotation: X0.0 Y0.0 Z0.0
 Top cover proximal.002 scale: X1.0 Y1.0 Z1.0
-Top cover proximal.002 groups: 1st Finger, 
+Top cover proximal.002 groups: 2nd Finger, 
 Top cover proximal.002 parent: Proximal Phalanx.002
 Top cover proximal.002 mesh: Top cover proximal.001
 Top cover proximal.002 materials: PLA White, Lego, 
@@ -6732,7 +6652,7 @@ Top cover proximal.003 Type: MESH
 Top cover proximal.003 transform: X0.0 Y0.0 Z0.0
 Top cover proximal.003 rotation: X0.0 Y0.0 Z0.0
 Top cover proximal.003 scale: X1.0 Y1.0 Z1.0
-Top cover proximal.003 groups: 1st Finger, 
+Top cover proximal.003 groups: 3rd Finger, 
 Top cover proximal.003 parent: Proximal Phalanx.003
 Top cover proximal.003 mesh: Top cover proximal.001
 Top cover proximal.003 materials: PLA White, Lego, 
@@ -6758,7 +6678,7 @@ Top cover proximal.004 Type: MESH
 Top cover proximal.004 transform: X0.0 Y0.0 Z0.0
 Top cover proximal.004 rotation: X0.0 Y0.0 Z0.0
 Top cover proximal.004 scale: X1.0 Y1.0 Z1.0
-Top cover proximal.004 groups: 1st Finger, 
+Top cover proximal.004 groups: 4th Finger, 
 Top cover proximal.004 parent: Proximal Phalanx.004
 Top cover proximal.004 mesh: Top cover proximal.001
 Top cover proximal.004 materials: PLA White, Lego, 
@@ -6784,7 +6704,7 @@ xsec1 Type: MESH
 xsec1 transform: X7.64322566986084 Y66.78303527832031 Z-1.4835624694824219
 xsec1 rotation: X0.0 Y0.0 Z0.0
 xsec1 scale: X1.2329349517822266 Y5.751913070678711 Z2.511488437652588
-xsec1 groups: None
+xsec1 groups: 1st Finger, 
 xsec1 mesh: Cube.007
 xsec1 materials: Boolean difference, 
 xsec1 modifiers: None
