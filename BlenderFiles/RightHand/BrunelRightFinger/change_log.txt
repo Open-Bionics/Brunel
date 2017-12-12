@@ -560,7 +560,7 @@ BOOLEAN Inner proximal pegs.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Inner proximal pegs.003 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Inner proximal pegs.003 groups: 1st Finger, 
 BOOLEAN Inner proximal pegs.003 parent: Proximal Phalanx.003
-BOOLEAN Inner proximal pegs.003 mesh: BOOLEAN Inner proximal.003
+BOOLEAN Inner proximal pegs.003 mesh: BOOLEAN Inner proximal
 BOOLEAN Inner proximal pegs.003 materials: Boolean difference, 
 BOOLEAN Inner proximal pegs.003 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -580,7 +580,7 @@ BOOLEAN Inner proximal pegs.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Inner proximal pegs.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Inner proximal pegs.004 groups: 1st Finger, 
 BOOLEAN Inner proximal pegs.004 parent: Proximal Phalanx.004
-BOOLEAN Inner proximal pegs.004 mesh: BOOLEAN Inner proximal.001
+BOOLEAN Inner proximal pegs.004 mesh: BOOLEAN Inner proximal
 BOOLEAN Inner proximal pegs.004 materials: Boolean difference, 
 BOOLEAN Inner proximal pegs.004 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -3200,6 +3200,13 @@ HANDLE 3rd Finger transform: X0.0 Y0.0 Z0.0
 HANDLE 3rd Finger rotation: X0.0 Y0.0 Z0.0
 HANDLE 3rd Finger scale: X1.0 Y1.0 Z1.0
 HANDLE 3rd Finger groups: 3rd Finger, 
+
+Name: HANDLE 4th Finger
+HANDLE 4th Finger Type: EMPTY
+HANDLE 4th Finger transform: X0.0 Y0.0 Z0.0
+HANDLE 4th Finger rotation: X0.0 Y0.0 Z0.0
+HANDLE 4th Finger scale: X1.0 Y1.0 Z1.0
+HANDLE 4th Finger groups: None
 
 Name: HANDLE distal base 1
 HANDLE distal base 1 Type: EMPTY
