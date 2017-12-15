@@ -831,16 +831,17 @@ BOOLEAN Ligament.001 mesh: Ligament
 BOOLEAN Ligament.001 materials: NF Black, NF Black.001, NF Black.002, NF Black.003, 
 BOOLEAN Ligament.001 modifiers: 
   #1 Name: Hook, Type: HOOK
-  #2 Name: Mirror, Type: MIRROR
+  #2 Name: Displace.001, Type: DISPLACE
+  #3 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 1st Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
-  #3 Name: Displace, Type: DISPLACE
-  #4 Name: Solidify, Type: SOLIDIFY
+  #4 Name: Displace, Type: DISPLACE
+  #5 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.20, Offset: 1.00 
-        Even thickness: False, High Quality Normals: True  #5 Name: Subsurf, Type: SUBSURF
+        Even thickness: False, High Quality Normals: True  #6 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN ligament.003
@@ -854,16 +855,17 @@ BOOLEAN ligament.003 mesh: Ligament
 BOOLEAN ligament.003 materials: NF Black, NF Black.001, NF Black.002, NF Black.003, 
 BOOLEAN ligament.003 modifiers: 
   #1 Name: Hook, Type: HOOK
-  #2 Name: Mirror, Type: MIRROR
+  #2 Name: Displace.001, Type: DISPLACE
+  #3 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 1st Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
-  #3 Name: Displace, Type: DISPLACE
-  #4 Name: Solidify, Type: SOLIDIFY
+  #4 Name: Displace, Type: DISPLACE
+  #5 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.20, Offset: 1.00 
-        Even thickness: False, High Quality Normals: True  #5 Name: Subsurf, Type: SUBSURF
+        Even thickness: False, High Quality Normals: True  #6 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN ligament.004
@@ -877,16 +879,17 @@ BOOLEAN ligament.004 mesh: Ligament
 BOOLEAN ligament.004 materials: NF Black, NF Black.001, NF Black.002, NF Black.003, 
 BOOLEAN ligament.004 modifiers: 
   #1 Name: Hook, Type: HOOK
-  #2 Name: Mirror, Type: MIRROR
+  #2 Name: Displace.001, Type: DISPLACE
+  #3 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 1st Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
-  #3 Name: Displace, Type: DISPLACE
-  #4 Name: Solidify, Type: SOLIDIFY
+  #4 Name: Displace, Type: DISPLACE
+  #5 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.20, Offset: 1.00 
-        Even thickness: True, High Quality Normals: True  #5 Name: Subsurf, Type: SUBSURF
+        Even thickness: True, High Quality Normals: True  #6 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN M2 Bolt Holes.000
@@ -5518,16 +5521,17 @@ BOOLEAN Ligament.002 mesh: Ligament
 BOOLEAN Ligament.002 materials: NF Black, NF Black.001, NF Black.002, NF Black.003, 
 BOOLEAN Ligament.002 modifiers: 
   #1 Name: Hook.001, Type: HOOK
-  #2 Name: Mirror, Type: MIRROR
+  #2 Name: Displace.001, Type: DISPLACE
+  #3 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 2nd Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
-  #3 Name: Displace, Type: DISPLACE
-  #4 Name: Solidify, Type: SOLIDIFY
+  #4 Name: Displace, Type: DISPLACE
+  #5 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.20, Offset: 1.00 
-        Even thickness: False, High Quality Normals: True  #5 Name: Subsurf, Type: SUBSURF
+        Even thickness: False, High Quality Normals: True  #6 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Ligament.003
@@ -6499,19 +6503,20 @@ Top cover distal.001 materials: PLA White,
 Top cover distal.001 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
+  #3 Name: Bevel, Type: BEVEL
+  #4 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 1st Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
+  #5 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #5 Name: Boolean.M2BoltHoles, Type: BOOLEAN
+  #6 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.000
-  #6 Name: Boolean.ID, Type: BOOLEAN
+  #7 Name: Boolean.ID, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.001
-  #7 Name: Boolean, Type: BOOLEAN
+  #8 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner distal pegs.001
 
 Name: Top cover distal.002
@@ -6532,13 +6537,14 @@ Top cover distal.002 modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
+  #4 Name: Bevel, Type: BEVEL
+  #5 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #5 Name: Boolean.M2BoltHoles, Type: BOOLEAN
+  #6 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.002
-  #6 Name: Boolean.LABEL identifier distal flat.002, Type: BOOLEAN
+  #7 Name: Boolean.LABEL identifier distal flat.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.002
-  #7 Name: Boolean.BOOLEAN Inner distal pegs.002, Type: BOOLEAN
+  #8 Name: Boolean.BOOLEAN Inner distal pegs.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner distal pegs.002
 
 Name: Top cover distal.003
@@ -6559,13 +6565,14 @@ Top cover distal.003 modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
+  #4 Name: Bevel, Type: BEVEL
+  #5 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #5 Name: Boolean.M2BoltHoles, Type: BOOLEAN
+  #6 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.003
-  #6 Name: Boolean.ID, Type: BOOLEAN
+  #7 Name: Boolean.ID, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.003
-  #7 Name: Boolean, Type: BOOLEAN
+  #8 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner distal pegs.003
 
 Name: Top cover distal.004
@@ -6586,13 +6593,14 @@ Top cover distal.004 modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
+  #4 Name: Bevel, Type: BEVEL
+  #5 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #5 Name: Boolean.M2BoltHoles, Type: BOOLEAN
+  #6 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.004
-  #6 Name: Boolean, Type: BOOLEAN
+  #7 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner distal pegs.004
-  #7 Name: Boolean.001, Type: BOOLEAN
+  #8 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.004
 
 Name: Top cover proximal.001
@@ -6612,13 +6620,14 @@ Top cover proximal.001 modifiers:
         Merge: True, Merge Limit: 0.10000000149011612 mm
         Clipping: True
         Vertex group mirroring: True
-  #3 Name: Subsurf, Type: SUBSURF
+  #3 Name: Bevel, Type: BEVEL
+  #4 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #4 Name: Boolean, Type: BOOLEAN
+  #5 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal pegs.001
-  #5 Name: Boolean.001, Type: BOOLEAN
+  #6 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.001
-  #6 Name: Boolean.002, Type: BOOLEAN
+  #7 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.001
 
 Name: Top cover proximal.002
@@ -6638,13 +6647,14 @@ Top cover proximal.002 modifiers:
         Merge: True, Merge Limit: 0.10000000149011612 mm
         Clipping: True
         Vertex group mirroring: True
-  #3 Name: Subsurf, Type: SUBSURF
+  #3 Name: Bevel, Type: BEVEL
+  #4 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #4 Name: Boolean.BOOLEAN Inner proximal pegs.002, Type: BOOLEAN
+  #5 Name: Boolean.BOOLEAN Inner proximal pegs.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal pegs.002
-  #5 Name: Boolean.BOOLEAN proximal M2 Bolt Hole.002, Type: BOOLEAN
+  #6 Name: Boolean.BOOLEAN proximal M2 Bolt Hole.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.002
-  #6 Name: Boolean.LABEL Identifier Inner proximal.002, Type: BOOLEAN
+  #7 Name: Boolean.LABEL Identifier Inner proximal.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.002
 
 Name: Top cover proximal.003
@@ -6664,13 +6674,14 @@ Top cover proximal.003 modifiers:
         Merge: True, Merge Limit: 0.10000000149011612 mm
         Clipping: True
         Vertex group mirroring: True
-  #3 Name: Subsurf, Type: SUBSURF
+  #3 Name: Bevel, Type: BEVEL
+  #4 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #4 Name: Boolean, Type: BOOLEAN
+  #5 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal pegs.003
-  #5 Name: Boolean.BOOLEAN proximal M2 Bolt Hole.003, Type: BOOLEAN
+  #6 Name: Boolean.BOOLEAN proximal M2 Bolt Hole.003, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.003
-  #6 Name: Boolean.002, Type: BOOLEAN
+  #7 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.003
 
 Name: Top cover proximal.004
@@ -6690,13 +6701,14 @@ Top cover proximal.004 modifiers:
         Merge: True, Merge Limit: 0.10000000149011612 mm
         Clipping: True
         Vertex group mirroring: True
-  #3 Name: Subsurf, Type: SUBSURF
+  #3 Name: Bevel, Type: BEVEL
+  #4 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #4 Name: Boolean, Type: BOOLEAN
+  #5 Name: Boolean.BOOLEAN Inner proximal pegs.004, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal pegs.004
-  #5 Name: Boolean.BOOLEAN proximal M2 Bolt Hole.004, Type: BOOLEAN
+  #6 Name: Boolean.BOOLEAN proximal M2 Bolt Hole.004, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.004
-  #6 Name: Boolean.002, Type: BOOLEAN
+  #7 Name: Boolean.LABEL Identifier Inner proximal.004, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.004
 
 Name: xsec1
