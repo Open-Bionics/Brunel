@@ -564,13 +564,14 @@ BOOLEAN Inner proximal pegs.003 mesh: BOOLEAN Inner proximal
 BOOLEAN Inner proximal pegs.003 materials: Boolean difference, 
 BOOLEAN Inner proximal pegs.003 modifiers: 
   #1 Name: Hook, Type: HOOK
-  #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
+  #2 Name: Bevel, Type: BEVEL
+  #3 Name: Hook.001, Type: HOOK
+  #4 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #4 Name: Solidify, Type: SOLIDIFY
+  #5 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.20, Offset: 1.00 
         Even thickness: True, High Quality Normals: True
 Name: BOOLEAN Inner proximal pegs.004
@@ -2817,6 +2818,36 @@ Cube.035 groups: 4th Finger,
 Cube.035 mesh: Cube.029
 Cube.035 materials: None
 Cube.035 modifiers: None
+
+Name: Cube.036
+Cube.036 Type: MESH
+Cube.036 transform: X0.0 Y-9.013093948364258 Z0.0
+Cube.036 rotation: X0.0 Y0.0 Z0.0
+Cube.036 scale: X1.0 Y1.0 Z1.0
+Cube.036 groups: None
+Cube.036 mesh: Cube.030
+Cube.036 materials: None
+Cube.036 modifiers: None
+
+Name: Cube.037
+Cube.037 Type: MESH
+Cube.037 transform: X0.0 Y0.0 Z0.0
+Cube.037 rotation: X0.0 Y0.0 Z0.0
+Cube.037 scale: X1.0 Y1.0 Z1.0
+Cube.037 groups: None
+Cube.037 mesh: Cube.031
+Cube.037 materials: None
+Cube.037 modifiers: None
+
+Name: Cube.038
+Cube.038 Type: MESH
+Cube.038 transform: X0.0 Y0.0 Z0.0
+Cube.038 rotation: X0.0 Y0.0 Z0.0
+Cube.038 scale: X1.0 Y1.0 Z1.0
+Cube.038 groups: None
+Cube.038 mesh: Cube.032
+Cube.038 materials: None
+Cube.038 modifiers: None
 
 Name: Cylinder
 Cylinder Type: MESH
@@ -5273,7 +5304,7 @@ Inner Proximal.004 modifiers:
         Operation: DIFFERENCE, Object: Riser Chanel.021
   #12 Name: Boolean.BOOLEAN Distal Joint Spring Profile.004, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Distal Joint Spring Profile.004
-  #13 Name: Boolean.001, Type: BOOLEAN
+  #13 Name: Boolean.BOOLEAN Proximal Joint Spring Profile.004, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Proximal Joint Spring Profile.004
   #14 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cube.035
@@ -6623,11 +6654,11 @@ Top cover proximal.001 modifiers:
   #3 Name: Bevel, Type: BEVEL
   #4 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #5 Name: Boolean, Type: BOOLEAN
+  #5 Name: Boolean.BOOLEAN Inner proximal pegs.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal pegs.001
-  #6 Name: Boolean.001, Type: BOOLEAN
+  #6 Name: Boolean.BOOLEAN proximal M2 Bolt Hole.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.001
-  #7 Name: Boolean.002, Type: BOOLEAN
+  #7 Name: Boolean.LABEL Identifier Inner proximal.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.001
 
 Name: Top cover proximal.002
@@ -6656,6 +6687,9 @@ Top cover proximal.002 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.002
   #7 Name: Boolean.LABEL Identifier Inner proximal.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.002
+  #8 Name: Triangulate, Type: TRIANGULATE
+  #9 Name: Boolean: Cross Section , Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cube.037
 
 Name: Top cover proximal.003
 Top cover proximal.003 Type: MESH
@@ -6677,12 +6711,14 @@ Top cover proximal.003 modifiers:
   #3 Name: Bevel, Type: BEVEL
   #4 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #5 Name: Boolean, Type: BOOLEAN
+  #5 Name: Boolean.BOOLEAN Inner proximal pegs.003, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal pegs.003
   #6 Name: Boolean.BOOLEAN proximal M2 Bolt Hole.003, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.003
-  #7 Name: Boolean.002, Type: BOOLEAN
+  #7 Name: Boolean.LABEL Identifier Inner proximal.003, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.003
+  #8 Name: Boolean: Cross Section, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cube.036
 
 Name: Top cover proximal.004
 Top cover proximal.004 Type: MESH
@@ -6710,6 +6746,8 @@ Top cover proximal.004 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.004
   #7 Name: Boolean.LABEL Identifier Inner proximal.004, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.004
+  #8 Name: Boolean: Cross Section , Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cube.038
 
 Name: xsec1
 xsec1 Type: MESH
