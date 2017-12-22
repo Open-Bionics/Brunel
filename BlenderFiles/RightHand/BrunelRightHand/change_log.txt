@@ -130,6 +130,49 @@ Back Cover (Integrated Wrist) modifiers:
   #17 Name: Boolean.BOOLEAN finger spring bolt holes combined, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN finger spring bolt holes combined
 
+Name: Back Cover (Integrated Wrist).001
+Back Cover (Integrated Wrist).001 Type: MESH
+Back Cover (Integrated Wrist).001 transform: X9.0 Y-48.89358139038086 Z-2.9508910179138184
+Back Cover (Integrated Wrist).001 rotation: X0.0 Y0.0 Z0.0
+Back Cover (Integrated Wrist).001 scale: X1.0 Y1.0 Z1.0
+Back Cover (Integrated Wrist).001 groups: None
+Back Cover (Integrated Wrist).001 mesh: Hand/Palm.000
+Back Cover (Integrated Wrist).001 materials: PLA, 
+Back Cover (Integrated Wrist).001 modifiers: 
+  #1 Name: Boolean.BOOLEAN Wrist Flat Back Cover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Wrist Flat Back Cover
+  #2 Name: Solidify, Type: SOLIDIFY
+        Thickness: 1.00, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #3 Name: Solidify.001, Type: SOLIDIFY
+        Thickness: 2.00, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #5 Name: Boolean.BOOLEAN Finger Ligament Cover.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Finger Ligament Cover.001
+  #6 Name: Boolean.BOOLEAN Fixing points back cover.001, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Fixing points back cover.001
+  #7 Name: Boolean.BOOLEAN Palm and Back Cover Divide, Type: BOOLEAN
+        Operation: INTERSECT, Object: BOOLEAN Palm and Back Cover Divide
+  #8 Name: Boolean.BOOLEAN Back cover M2 bolt holes, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
+  #9 Name: Triangulate, Type: TRIANGULATE
+  #10 Name: Boolean.BOOLEAN Flat Faces Finger Ligament Cover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Flat Faces Finger Ligament Cover
+  #11 Name: Boolean.BOOLEAN Logo Plinth.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
+  #12 Name: Boolean.BOOLEAN Logo Plinth.001, Type: BOOLEAN
+        Operation: UNION, Object: None
+  #13 Name: Boolean.OB Logo, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: OB Logo
+  #14 Name: Boolean.BOOLEAN New Gala Cover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN New Gala Cover
+  #15 Name: Boolean.BOOLEAN Headphone / Micro USB, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Headphone / Micro USB
+  #16 Name: Boolean.BOOLEAN Power Cable , Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Power Cable 
+  #17 Name: Boolean.BOOLEAN finger spring bolt holes combined, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN finger spring bolt holes combined
+
 Name: Back Cover (ONE MESH).001
 Back Cover (ONE MESH).001 Type: MESH
 Back Cover (ONE MESH).001 transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
