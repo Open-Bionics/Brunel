@@ -59,7 +59,7 @@ Back cover modifiers:
   #8 Name: Boolean.LigamentCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN ligament cover bottom
   #9 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN ligament cover top plate
+        Operation: DIFFERENCE, Object: None
   #10 Name: Boolean.Connectors, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
   #11 Name: Boolean.DCJack, Type: BOOLEAN
@@ -87,15 +87,60 @@ Back cover modifiers:
   #22 Name: Boolean.BOOLEAN Logo Lip Back Cover , Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
 
-Name: Back Cover (Integrated Wrist)
-Back Cover (Integrated Wrist) Type: MESH
-Back Cover (Integrated Wrist) transform: X9.0 Y-48.89358139038086 Z-2.9508910179138184
-Back Cover (Integrated Wrist) rotation: X0.0 Y0.0 Z0.0
-Back Cover (Integrated Wrist) scale: X1.0 Y1.0 Z1.0
-Back Cover (Integrated Wrist) groups: None
-Back Cover (Integrated Wrist) mesh: Hand/Palm.003
-Back Cover (Integrated Wrist) materials: PLA, 
-Back Cover (Integrated Wrist) modifiers: 
+Name: Back Cover (Integrated Wrist) Flat
+Back Cover (Integrated Wrist) Flat Type: MESH
+Back Cover (Integrated Wrist) Flat transform: X9.0 Y-48.89358139038086 Z-2.9508910179138184
+Back Cover (Integrated Wrist) Flat rotation: X0.0 Y0.0 Z0.0
+Back Cover (Integrated Wrist) Flat scale: X1.0 Y1.0 Z1.0
+Back Cover (Integrated Wrist) Flat groups: None
+Back Cover (Integrated Wrist) Flat mesh: Hand/Palm.002
+Back Cover (Integrated Wrist) Flat materials: PLA, 
+Back Cover (Integrated Wrist) Flat modifiers: 
+  #1 Name: Boolean.BOOLEAN Wrist Flat Back Cover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Wrist Flat Back Cover
+  #2 Name: Solidify, Type: SOLIDIFY
+        Thickness: 1.00, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #3 Name: Solidify.001, Type: SOLIDIFY
+        Thickness: 2.00, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #5 Name: Boolean.BOOLEAN Finger Ligament Cover.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Finger Ligament Cover.001
+  #6 Name: Boolean.BOOLEAN Fixing points back cover.001, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Fixing points back cover.001
+  #7 Name: Boolean.BOOLEAN Palm and Back Cover Divide, Type: BOOLEAN
+        Operation: INTERSECT, Object: BOOLEAN Palm and Back Cover Divide
+  #8 Name: Boolean.BOOLEAN Back cover M2 bolt holes, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
+  #9 Name: Triangulate, Type: TRIANGULATE
+  #10 Name: Boolean.BOOLEAN Flat Faces Finger Ligament Cover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Flat Faces Finger Ligament Cover
+  #11 Name: Boolean.BOOLEAN Logo Plinth.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
+  #12 Name: Boolean.BOOLEAN Logo Plinth.001, Type: BOOLEAN
+        Operation: UNION, Object: None
+  #13 Name: Boolean.OB Logo, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: OB Logo
+  #14 Name: Boolean.BOOLEAN New Gala Cover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN New Gala Cover
+  #15 Name: Boolean.BOOLEAN Headphone / Micro USB, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Headphone / Micro USB
+  #16 Name: Boolean.BOOLEAN Power Cable , Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Power Cable 
+  #17 Name: Boolean.BOOLEAN finger spring bolt holes combined, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN finger spring bolt holes combined
+  #18 Name: Boolean, Type: BOOLEAN
+        Operation: INTERSECT, Object: Plane.003
+
+Name: Back Cover (Integrated Wrist) Wavey
+Back Cover (Integrated Wrist) Wavey Type: MESH
+Back Cover (Integrated Wrist) Wavey transform: X9.0 Y-48.89358139038086 Z-2.9508910179138184
+Back Cover (Integrated Wrist) Wavey rotation: X0.0 Y0.0 Z0.0
+Back Cover (Integrated Wrist) Wavey scale: X1.0 Y1.0 Z1.0
+Back Cover (Integrated Wrist) Wavey groups: None
+Back Cover (Integrated Wrist) Wavey mesh: Hand/Palm.000
+Back Cover (Integrated Wrist) Wavey materials: PLA, 
+Back Cover (Integrated Wrist) Wavey modifiers: 
   #1 Name: Boolean.BOOLEAN Wrist Flat Back Cover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Wrist Flat Back Cover
   #2 Name: Solidify, Type: SOLIDIFY
@@ -130,15 +175,15 @@ Back Cover (Integrated Wrist) modifiers:
   #17 Name: Boolean.BOOLEAN finger spring bolt holes combined, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN finger spring bolt holes combined
 
-Name: Back Cover (Integrated Wrist).001
-Back Cover (Integrated Wrist).001 Type: MESH
-Back Cover (Integrated Wrist).001 transform: X9.0 Y-48.89358139038086 Z-2.9508910179138184
-Back Cover (Integrated Wrist).001 rotation: X0.0 Y0.0 Z0.0
-Back Cover (Integrated Wrist).001 scale: X1.0 Y1.0 Z1.0
-Back Cover (Integrated Wrist).001 groups: None
-Back Cover (Integrated Wrist).001 mesh: Hand/Palm.000
-Back Cover (Integrated Wrist).001 materials: PLA, 
-Back Cover (Integrated Wrist).001 modifiers: 
+Name: Back Cover (Integrated Wrist) Wavey.001
+Back Cover (Integrated Wrist) Wavey.001 Type: MESH
+Back Cover (Integrated Wrist) Wavey.001 transform: X9.0 Y-48.89358139038086 Z-2.9508910179138184
+Back Cover (Integrated Wrist) Wavey.001 rotation: X0.0 Y0.0 Z0.0
+Back Cover (Integrated Wrist) Wavey.001 scale: X1.0 Y1.0 Z1.0
+Back Cover (Integrated Wrist) Wavey.001 groups: None
+Back Cover (Integrated Wrist) Wavey.001 mesh: Hand/Palm.001
+Back Cover (Integrated Wrist) Wavey.001 materials: PLA, 
+Back Cover (Integrated Wrist) Wavey.001 modifiers: 
   #1 Name: Boolean.BOOLEAN Wrist Flat Back Cover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Wrist Flat Back Cover
   #2 Name: Solidify, Type: SOLIDIFY
@@ -286,7 +331,7 @@ Back cover.001 modifiers:
   #8 Name: Boolean.LigamentCover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN ligament cover bottom
   #9 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN ligament cover top plate
+        Operation: DIFFERENCE, Object: None
   #10 Name: Boolean.Connectors, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
   #11 Name: Boolean.DCJack, Type: BOOLEAN
@@ -324,18 +369,6 @@ BOOLEAN 1st finger spring bolt hole parent: Finger spring bolt holes
 BOOLEAN 1st finger spring bolt hole mesh: BOOLEAN M2 Bolt Hole.002
 BOOLEAN 1st finger spring bolt hole materials: Boolean difference.003, 
 BOOLEAN 1st finger spring bolt hole modifiers: None
-
-Name: BOOLEAN 1st finger spring channel
-BOOLEAN 1st finger spring channel Type: MESH
-BOOLEAN 1st finger spring channel transform: X-13.17247200012207 Y-10.68578815460205 Z10.900125503540039
-BOOLEAN 1st finger spring channel rotation: X4.674400311266425e-10 Y-0.0 Z0.08726643025875092
-BOOLEAN 1st finger spring channel scale: X1.0 Y1.0 Z1.0
-BOOLEAN 1st finger spring channel groups: None
-BOOLEAN 1st finger spring channel mesh: Cube.019
-BOOLEAN 1st finger spring channel materials: Boolean difference, 
-BOOLEAN 1st finger spring channel modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN 1st Spring Channel 
 BOOLEAN 1st Spring Channel  Type: MESH
@@ -403,18 +436,6 @@ BOOLEAN 3rd finger spring bolt hole mesh: BOOLEAN M2 Bolt Hole.002
 BOOLEAN 3rd finger spring bolt hole materials: Boolean difference.003, 
 BOOLEAN 3rd finger spring bolt hole modifiers: None
 
-Name: BOOLEAN 3rd finger spring channel
-BOOLEAN 3rd finger spring channel Type: MESH
-BOOLEAN 3rd finger spring channel transform: X23.050413131713867 Y-11.491219520568848 Z10.900125503540039
-BOOLEAN 3rd finger spring channel rotation: X4.674400311266425e-10 Y-0.0 Z-0.08726642280817032
-BOOLEAN 3rd finger spring channel scale: X1.0 Y1.0 Z1.0
-BOOLEAN 3rd finger spring channel groups: None
-BOOLEAN 3rd finger spring channel mesh: Cube.019
-BOOLEAN 3rd finger spring channel materials: Boolean difference, 
-BOOLEAN 3rd finger spring channel modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-
 Name: BOOLEAN 3rd Spring Channel 
 BOOLEAN 3rd Spring Channel  Type: MESH
 BOOLEAN 3rd Spring Channel  transform: X17.758554458618164 Y-13.218425750732422 Z5.0
@@ -439,18 +460,6 @@ BOOLEAN 4th finger spring bolt hole parent: Finger spring bolt holes
 BOOLEAN 4th finger spring bolt hole mesh: BOOLEAN M2 Bolt Hole.002
 BOOLEAN 4th finger spring bolt hole materials: Boolean difference.003, 
 BOOLEAN 4th finger spring bolt hole modifiers: None
-
-Name: BOOLEAN 4th finger spring channel
-BOOLEAN 4th finger spring channel Type: MESH
-BOOLEAN 4th finger spring channel transform: X41.130855560302734 Y-14.163871765136719 Z10.900125503540039
-BOOLEAN 4th finger spring channel rotation: X0.0 Y-0.0 Z-0.17453289031982422
-BOOLEAN 4th finger spring channel scale: X1.0 Y1.0 Z1.0
-BOOLEAN 4th finger spring channel groups: None
-BOOLEAN 4th finger spring channel mesh: Cube.019
-BOOLEAN 4th finger spring channel materials: Boolean difference, 
-BOOLEAN 4th finger spring channel modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN 4th Spring Channel 
 BOOLEAN 4th Spring Channel  Type: MESH
@@ -741,6 +750,19 @@ BOOLEAN Finger Ligament .002 modifiers:
   #2 Name: Hook.001, Type: HOOK
   #3 Name: Hook.002, Type: HOOK
 
+Name: BOOLEAN Finger Ligament .003
+BOOLEAN Finger Ligament .003 Type: MESH
+BOOLEAN Finger Ligament .003 transform: X-0.002583591267466545 Y-1.7177529335021973 Z-0.3281930088996887
+BOOLEAN Finger Ligament .003 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Finger Ligament .003 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Finger Ligament .003 groups: None
+BOOLEAN Finger Ligament .003 mesh: Plane.025
+BOOLEAN Finger Ligament .003 materials: Boolean difference, 
+BOOLEAN Finger Ligament .003 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Hook.002, Type: HOOK
+
 Name: BOOLEAN Finger Ligament Clamp
 BOOLEAN Finger Ligament Clamp Type: MESH
 BOOLEAN Finger Ligament Clamp transform: X-0.002583591267466545 Y-1.7177529335021973 Z-0.4145668148994446
@@ -751,6 +773,21 @@ BOOLEAN Finger Ligament Clamp mesh: Plane.020
 BOOLEAN Finger Ligament Clamp materials: Boolean difference, 
 BOOLEAN Finger Ligament Clamp modifiers: None
 
+Name: BOOLEAN Finger Ligament CLAMP
+BOOLEAN Finger Ligament CLAMP Type: MESH
+BOOLEAN Finger Ligament CLAMP transform: X-0.002583591267466545 Y-1.7177529335021973 Z-0.3281930088996887
+BOOLEAN Finger Ligament CLAMP rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Finger Ligament CLAMP scale: X1.0 Y1.0 Z1.0
+BOOLEAN Finger Ligament CLAMP groups: None
+BOOLEAN Finger Ligament CLAMP mesh: Plane.024
+BOOLEAN Finger Ligament CLAMP materials: Boolean difference, 
+BOOLEAN Finger Ligament CLAMP modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Hook.002, Type: HOOK
+  #4 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.70, Offset: -1.00 
+        Even thickness: False, High Quality Normals: False
 Name: BOOLEAN Finger Ligament Cover.001
 BOOLEAN Finger Ligament Cover.001 Type: MESH
 BOOLEAN Finger Ligament Cover.001 transform: X9.44205093383789 Y-9.50092887878418 Z0.9841220378875732
@@ -793,13 +830,13 @@ BOOLEAN finger spring channels combined mesh: Cube.023
 BOOLEAN finger spring channels combined materials: Boolean difference, 
 BOOLEAN finger spring channels combined modifiers: 
   #1 Name: Boolean, Type: BOOLEAN
-        Operation: UNION, Object: BOOLEAN 1st finger spring channel
+        Operation: UNION, Object: None
   #2 Name: Boolean.001, Type: BOOLEAN
         Operation: UNION, Object: None
   #3 Name: Boolean.002, Type: BOOLEAN
-        Operation: UNION, Object: BOOLEAN 3rd finger spring channel
+        Operation: UNION, Object: None
   #4 Name: Boolean.003, Type: BOOLEAN
-        Operation: UNION, Object: BOOLEAN 4th finger spring channel
+        Operation: UNION, Object: None
 
 Name: BOOLEAN Finger Wave Profile
 BOOLEAN Finger Wave Profile Type: MESH
@@ -818,7 +855,7 @@ BOOLEAN Finger Wave Profile modifiers:
 
 Name: BOOLEAN Finger Wave Profile.001
 BOOLEAN Finger Wave Profile.001 Type: MESH
-BOOLEAN Finger Wave Profile.001 transform: X-0.0025835915002971888 Y-1.7177529335021973 Z-0.32819318771362305
+BOOLEAN Finger Wave Profile.001 transform: X0.0 Y0.0 Z0.0
 BOOLEAN Finger Wave Profile.001 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Finger Wave Profile.001 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Finger Wave Profile.001 groups: None
@@ -837,7 +874,7 @@ BOOLEAN Finger Wave Profile.001 modifiers:
 
 Name: BOOLEAN Finger Wave Profile.002
 BOOLEAN Finger Wave Profile.002 Type: MESH
-BOOLEAN Finger Wave Profile.002 transform: X-0.0025835915002971888 Y-1.7177529335021973 Z-0.32819318771362305
+BOOLEAN Finger Wave Profile.002 transform: X0.0 Y0.0 Z0.0
 BOOLEAN Finger Wave Profile.002 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Finger Wave Profile.002 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Finger Wave Profile.002 groups: None
@@ -858,7 +895,7 @@ Name: BOOLEAN Fixing points back cover.001
 BOOLEAN Fixing points back cover.001 Type: MESH
 BOOLEAN Fixing points back cover.001 transform: X44.574703216552734 Y-21.999696731567383 Z7.396658897399902
 BOOLEAN Fixing points back cover.001 rotation: X0.0 Y-0.0 Z3.1415929794311523
-BOOLEAN Fixing points back cover.001 scale: X0.5000000596046448 Y0.5000000596046448 Z0.5000000596046448
+BOOLEAN Fixing points back cover.001 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Fixing points back cover.001 groups: None
 BOOLEAN Fixing points back cover.001 mesh: Cylinder.017
 BOOLEAN Fixing points back cover.001 materials: None
@@ -920,7 +957,7 @@ BOOLEAN Gala Cheetah Tidy rotation: X0.0 Y-0.0 Z0.0
 BOOLEAN Gala Cheetah Tidy scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 BOOLEAN Gala Cheetah Tidy groups: Actuator Block, 
 BOOLEAN Gala Cheetah Tidy parent: Actuator Block
-BOOLEAN Gala Cheetah Tidy mesh: Hand/Palm.003
+BOOLEAN Gala Cheetah Tidy mesh: Hand/Palm.002
 BOOLEAN Gala Cheetah Tidy materials: PLA, 
 BOOLEAN Gala Cheetah Tidy modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
@@ -1190,29 +1227,34 @@ BOOLEAN Ligament Cover M2 bolt hole platforms modifiers:
   #1 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.20, Offset: 1.00 
         Even thickness: True, High Quality Normals: False
-Name: BOOLEAN ligament cover top plate
-BOOLEAN ligament cover top plate Type: MESH
-BOOLEAN ligament cover top plate transform: X7.5 Y-37.89358901977539 Z-0.12405729293823242
-BOOLEAN ligament cover top plate rotation: X0.0 Y-0.0 Z0.0
-BOOLEAN ligament cover top plate scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
-BOOLEAN ligament cover top plate groups: Actuator Block, 
-BOOLEAN ligament cover top plate parent: Actuator Block
-BOOLEAN ligament cover top plate mesh: Ligament cover.004
-BOOLEAN ligament cover top plate materials: Boolean difference, 
-BOOLEAN ligament cover top plate modifiers: 
-  #1 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
-  #2 Name: Boolean.spring bolt holes, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN finger spring bolt holes combined
-  #3 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover corners
-  #4 Name: Boolean.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Ligament Cover M2 bolt hole platforms
-  #5 Name: Boolean.002, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN finger spring channels combined
-  #6 Name: Solidify, Type: SOLIDIFY
-        Thickness: 0.30, Offset: 1.00 
-        Even thickness: True, High Quality Normals: True
+Name: BOOLEAN Ligament Prongs Raised
+BOOLEAN Ligament Prongs Raised Type: MESH
+BOOLEAN Ligament Prongs Raised transform: X0.0 Y0.0 Z0.0
+BOOLEAN Ligament Prongs Raised rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Ligament Prongs Raised scale: X1.0 Y1.0 Z1.0
+BOOLEAN Ligament Prongs Raised groups: None
+BOOLEAN Ligament Prongs Raised mesh: Cube.028
+BOOLEAN Ligament Prongs Raised materials: None
+BOOLEAN Ligament Prongs Raised modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Hook.002, Type: HOOK
+
+Name: BOOLEAN Ligament Prongs Recessed
+BOOLEAN Ligament Prongs Recessed Type: MESH
+BOOLEAN Ligament Prongs Recessed transform: X0.0 Y0.0 Z0.0
+BOOLEAN Ligament Prongs Recessed rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Ligament Prongs Recessed scale: X1.0 Y1.0 Z1.0
+BOOLEAN Ligament Prongs Recessed groups: None
+BOOLEAN Ligament Prongs Recessed mesh: Cube.029
+BOOLEAN Ligament Prongs Recessed materials: Boolean difference, 
+BOOLEAN Ligament Prongs Recessed modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Hook.002, Type: HOOK
+  #4 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.70, Offset: 1.00 
+        Even thickness: False, High Quality Normals: False
 Name: BOOLEAN Ligament.002
 BOOLEAN Ligament.002 Type: MESH
 BOOLEAN Ligament.002 transform: X0.0 Y0.0 Z0.0
@@ -1587,7 +1629,7 @@ BOOLEAN Palm Inner Profile (ONE MESH) rotation: X0.0 Y-0.0 Z0.0
 BOOLEAN Palm Inner Profile (ONE MESH) scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 BOOLEAN Palm Inner Profile (ONE MESH) groups: Actuator Block, 
 BOOLEAN Palm Inner Profile (ONE MESH) parent: Actuator Block
-BOOLEAN Palm Inner Profile (ONE MESH) mesh: Hand/Palm.003
+BOOLEAN Palm Inner Profile (ONE MESH) mesh: Hand/Palm.002
 BOOLEAN Palm Inner Profile (ONE MESH) materials: PLA, 
 BOOLEAN Palm Inner Profile (ONE MESH) modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
@@ -1775,19 +1817,6 @@ BOOLEAN Palm Riser Channels groups: None
 BOOLEAN Palm Riser Channels mesh: Cylinder.035
 BOOLEAN Palm Riser Channels materials: Boolean difference, 
 BOOLEAN Palm Riser Channels modifiers: None
-
-Name: BOOLEAN Palm urethane finger contact face
-BOOLEAN Palm urethane finger contact face Type: MESH
-BOOLEAN Palm urethane finger contact face transform: X9.0 Y-48.89358901977539 Z-5.216308116912842
-BOOLEAN Palm urethane finger contact face rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Palm urethane finger contact face scale: X4.250000476837158 Y4.499998569488525 Z1.0
-BOOLEAN Palm urethane finger contact face groups: None
-BOOLEAN Palm urethane finger contact face parent: Actuator Block
-BOOLEAN Palm urethane finger contact face mesh: Cube.030
-BOOLEAN Palm urethane finger contact face materials: Boolean difference, 
-BOOLEAN Palm urethane finger contact face modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN PCB Bracket Tidy 
 BOOLEAN PCB Bracket Tidy  Type: MESH
@@ -2727,6 +2756,16 @@ CHEETAH Logo mesh: Cylinder.010
 CHEETAH Logo materials: None
 CHEETAH Logo modifiers: None
 
+Name: Cube
+Cube Type: MESH
+Cube transform: X31.499998092651367 Y-24.761474609375 Z15.357599258422852
+Cube rotation: X0.0 Y0.0 Z0.0
+Cube scale: X0.3500000238418579 Y0.5000000596046448 Z0.5000000596046448
+Cube groups: None
+Cube mesh: Cube.019
+Cube materials: None
+Cube modifiers: None
+
 Name: Cube.001
 Cube.001 Type: MESH
 Cube.001 transform: X0.22219443321228027 Y-5.45097541809082 Z6.013882637023926
@@ -2771,16 +2810,6 @@ Cube.004 groups: None
 Cube.004 mesh: Cube.011
 Cube.004 materials: Boolean difference, 
 Cube.004 modifiers: None
-
-Name: Cube.005
-Cube.005 Type: MESH
-Cube.005 transform: X9.0 Y-47.84654235839844 Z-10.21630859375
-Cube.005 rotation: X0.0 Y0.0 Z0.0
-Cube.005 scale: X4.250000476837158 Y4.250000476837158 Z1.0
-Cube.005 groups: None
-Cube.005 mesh: Cube.028
-Cube.005 materials: Boolean difference, 
-Cube.005 modifiers: None
 
 Name: Cube.006
 Cube.006 Type: MESH
@@ -3115,8 +3144,8 @@ HANDLE Distal Joint.002 modifiers: None
 
 Name: HOOK 1st Finger
 HOOK 1st Finger Type: EMPTY
-HOOK 1st Finger transform: X-19.00124740600586 Y-0.8107645511627197 Z0.0
-HOOK 1st Finger rotation: X0.0 Y-0.0 Z0.0872664526104927
+HOOK 1st Finger transform: X-19.0 Y-0.8107600212097168 Z0.0
+HOOK 1st Finger rotation: X0.0 Y-0.0 Z0.0872664600610733
 HOOK 1st Finger scale: X1.0 Y1.0 Z1.0
 HOOK 1st Finger groups: None
 
@@ -3129,15 +3158,15 @@ HOOK 2nd Finger groups: None
 
 Name: HOOK 3rd Finger
 HOOK 3rd Finger Type: EMPTY
-HOOK 3rd Finger transform: X18.999916076660156 Y-0.8505207300186157 Z0.0
-HOOK 3rd Finger rotation: X0.0 Y-0.0 Z-0.0872664526104927
+HOOK 3rd Finger transform: X18.999998092651367 Y-0.8505200147628784 Z0.0
+HOOK 3rd Finger rotation: X0.0 Y-0.0 Z-0.0872664600610733
 HOOK 3rd Finger scale: X1.0 Y1.0 Z1.0
 HOOK 3rd Finger groups: None
 
 Name: HOOK 4th Finger
 HOOK 4th Finger Type: EMPTY
-HOOK 4th Finger transform: X37.87543487548828 Y-3.3274292945861816 Z0.0
-HOOK 4th Finger rotation: X0.0 Y-0.0 Z-0.1745329350233078
+HOOK 4th Finger transform: X37.874996185302734 Y-3.327399969100952 Z0.0
+HOOK 4th Finger rotation: X0.0 Y-0.0 Z-0.1745329201221466
 HOOK 4th Finger scale: X1.0 Y1.0 Z1.0
 HOOK 4th Finger groups: None
 
@@ -3150,21 +3179,6 @@ Injection channels groups: None
 Injection channels mesh: Cube.018
 Injection channels materials: None
 Injection channels modifiers: None
-
-Name: Cube
-Cube Type: MESH
-Cube transform: X9.283166885375977 Y-50.67338562011719 Z4.499998569488525
-Cube rotation: X0.0 Y0.0 Z0.0
-Cube scale: X4.250000476837158 Y4.499998569488525 Z1.0
-Cube groups: None
-Cube parent: Actuator Block
-Cube mesh: Cube.029
-Cube materials: None
-Cube modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #2 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Cube.005
 
 Name: Inner Palm (Profile)
 Inner Palm (Profile) Type: MESH
@@ -3301,6 +3315,39 @@ LABEL PCB lines modifiers:
   #3 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.50, Offset: 0.00 
         Even thickness: False, High Quality Normals: False
+Name: Ligament Cover 
+Ligament Cover  Type: MESH
+Ligament Cover  transform: X9.0 Y-48.89358139038086 Z-2.9508910179138184
+Ligament Cover  rotation: X0.0 Y0.0 Z0.0
+Ligament Cover  scale: X1.0 Y1.0 Z1.0
+Ligament Cover  groups: None
+Ligament Cover  mesh: Hand/Palm.002
+Ligament Cover  materials: PLA, 
+Ligament Cover  modifiers: 
+  #1 Name: Boolean.BOOLEAN Wrist Flat Back Cover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Wrist Flat Back Cover
+  #2 Name: Solidify, Type: SOLIDIFY
+        Thickness: 1.00, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #3 Name: Solidify.001, Type: SOLIDIFY
+        Thickness: 2.00, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #4 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #5 Name: Displace, Type: DISPLACE
+  #6 Name: Boolean.Plane.003, Type: BOOLEAN
+        Operation: INTERSECT, Object: Plane.003
+  #7 Name: Boolean.Plane.006, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Plane.006
+  #8 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Plane.004
+  #9 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament Prongs Recessed
+  #10 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Proximal Spring Channel.001
+  #11 Name: Boolean.BOOLEAN finger spring bolt holes combined, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN finger spring bolt holes combined
+  #12 Name: Boolean.003, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
+
 Name: Ligament cover bottom
 Ligament cover bottom Type: MESH
 Ligament cover bottom transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
@@ -3372,27 +3419,6 @@ Ligament cover prongs modifiers:
   #2 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.10, Offset: 1.00 
         Even thickness: True, High Quality Normals: True
-Name: Ligament cover top plate
-Ligament cover top plate Type: MESH
-Ligament cover top plate transform: X7.5 Y-37.89358901977539 Z-0.12405729293823242
-Ligament cover top plate rotation: X0.0 Y-0.0 Z0.0
-Ligament cover top plate scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
-Ligament cover top plate groups: Actuator Block, 
-Ligament cover top plate parent: Actuator Block
-Ligament cover top plate mesh: Ligament cover.001
-Ligament cover top plate materials: PLA, 
-Ligament cover top plate modifiers: 
-  #1 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
-  #2 Name: Boolean.spring bolt holes, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN finger spring bolt holes combined
-  #3 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover corners
-  #4 Name: Boolean.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Ligament Cover M2 bolt hole platforms
-  #5 Name: Boolean.002, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN finger spring channels combined
-
 Name: MOULD Bottom
 MOULD Bottom Type: MESH
 MOULD Bottom transform: X9.0 Y-48.89358901977539 Z-18.838592529296875
@@ -3786,7 +3812,7 @@ Palm Inner (ONE MESH) rotation: X0.0 Y-0.0 Z0.0
 Palm Inner (ONE MESH) scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Palm Inner (ONE MESH) groups: Actuator Block, 
 Palm Inner (ONE MESH) parent: Actuator Block
-Palm Inner (ONE MESH) mesh: Hand/Palm.003
+Palm Inner (ONE MESH) mesh: Hand/Palm.002
 Palm Inner (ONE MESH) materials: PLA, 
 Palm Inner (ONE MESH) modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
@@ -3834,51 +3860,53 @@ Palm Inner body modifiers:
         Operation: UNION, Object: BOOLEAN Urethane blocker channel wrist
   #7 Name: Boolean.TARGET Outer Surface, Type: BOOLEAN
         Operation: INTERSECT, Object: TARGET Outer Surface
-  #8 Name: Boolean.BOOLEAN Wrist Flat, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Wrist Flat
-  #9 Name: Boolean.BOOLEAN PQ12 exteneed 0.3 mm tolerance, Type: BOOLEAN
+  #8 Name: Boolean.BOOLEAN PQ12 exteneed 0.3 mm tolerance, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
-  #10 Name: Boolean.BOOLEAN New Gala Cover, Type: BOOLEAN
+  #9 Name: Boolean.BOOLEAN New Gala Cover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN New Gala Cover
-  #11 Name: Boolean.BOOLEAN Palm and Back Cover Divide, Type: BOOLEAN
+  #10 Name: Boolean.BOOLEAN Palm and Back Cover Divide, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm and Back Cover Divide Clearance
-  #12 Name: Triangulate, Type: TRIANGULATE
-  #13 Name: Boolean.BOOLEAN Thumb Dowel , Type: BOOLEAN
+  #11 Name: Triangulate, Type: TRIANGULATE
+  #12 Name: Boolean.BOOLEAN Thumb Dowel , Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Thumb Dowel
-  #14 Name: Boolean.BOOLEAN Thumb attachment dowel, Type: BOOLEAN
+  #13 Name: Boolean.BOOLEAN Thumb attachment dowel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb attachment dowel
-  #15 Name: Boolean.BOOLEAN Thumb pivot dowel top, Type: BOOLEAN
+  #14 Name: Boolean.BOOLEAN Thumb pivot dowel top, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel top.001
-  #16 Name: Boolean.BOOLEAN Thumb Pivot dowel Lower, Type: BOOLEAN
+  #15 Name: Boolean.BOOLEAN Thumb Pivot dowel Lower, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb Pivot dowel Lower
-  #17 Name: Boolean.BOOLEAN Thumb tendon channel, Type: BOOLEAN
+  #16 Name: Boolean.BOOLEAN Thumb tendon channel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon channel
-  #18 Name: Boolean.BOOLEAN Conical spring for palm inner, Type: BOOLEAN
+  #17 Name: Boolean.BOOLEAN Conical spring for palm inner, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Conical spring for palm inner
-  #19 Name: Boolean.BOOLEAN Tendon Channels, Type: BOOLEAN
+  #18 Name: Boolean.BOOLEAN Tendon Channels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon Channels
-  #20 Name: Boolean.BOOLEAN Thumb Ligament Cover, Type: BOOLEAN
+  #19 Name: Boolean.BOOLEAN Thumb Ligament Cover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb Ligament Cover 
-  #21 Name: Boolean.BOOLEAN Ligament cover M2 bolt hole, Type: BOOLEAN
+  #20 Name: Boolean.BOOLEAN Ligament cover M2 bolt hole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
-  #22 Name: Boolean.BOOLEAN Dowel Thumb Ligament Cover, Type: BOOLEAN
+  #21 Name: Boolean.BOOLEAN Dowel Thumb Ligament Cover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Dowel Thumb Ligament Cover
-  #23 Name: Boolean.BOOLEAN Finger Ligament , Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Finger Ligament .002
-  #24 Name: Boolean.BOOLEAN New Gala Cover M2 attachment point, Type: BOOLEAN
+  #22 Name: Boolean.BOOLEAN Finger Ligament , Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Finger Ligament .003
+  #23 Name: Boolean.BOOLEAN New Gala Cover M2 attachment point, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN New Gala Cover M2 attachment point
-  #25 Name: Boolean.BOOLEAN Back cover M2 bolt holes, Type: BOOLEAN
+  #24 Name: Boolean.BOOLEAN Back cover M2 bolt holes, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
-  #26 Name: Boolean.BOOLEAN Thumb ligament cover M2 Bolt Hole, Type: BOOLEAN
+  #25 Name: Boolean.BOOLEAN Thumb ligament cover M2 Bolt Hole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 Bolt Hole
-  #27 Name: Boolean.Thumb spring channel, Type: BOOLEAN
+  #26 Name: Boolean.Thumb spring channel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Thumb spring channel
-  #28 Name: Boolean.BOOLEAN thumb spring termination.001, Type: BOOLEAN
+  #27 Name: Boolean.BOOLEAN thumb spring termination.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN thumb spring termination.001
-  #29 Name: Boolean.BOOLEAN Palm Riser Channels, Type: BOOLEAN
+  #28 Name: Boolean.BOOLEAN Palm Riser Channels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm Riser Channels
-  #30 Name: Boolean.BOOLEAN Screwdriver Leaver Point, Type: BOOLEAN
+  #29 Name: Boolean.BOOLEAN Screwdriver Leaver Point, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
+  #30 Name: Boolean, Type: BOOLEAN
+        Operation: INTERSECT, Object: Plane.003
+  #31 Name: Boolean.001, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Ligament Prongs Raised
 
 Name: Palm Inner body.001
 Palm Inner body.001 Type: MESH
@@ -3948,126 +3976,6 @@ Palm Inner body.001 modifiers:
   #29 Name: Boolean.BOOLEAN Screwdriver Leaver Point, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Screwdriver Leaver Point
 
-Name: Palm inner CLEAN UP.000
-Palm inner CLEAN UP.000 Type: MESH
-Palm inner CLEAN UP.000 transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
-Palm inner CLEAN UP.000 rotation: X0.0 Y-0.0 Z0.0
-Palm inner CLEAN UP.000 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
-Palm inner CLEAN UP.000 groups: Actuator Block, 
-Palm inner CLEAN UP.000 parent: Actuator Block
-Palm inner CLEAN UP.000 mesh: Palm Inner.016
-Palm inner CLEAN UP.000 materials: PLA, 
-Palm inner CLEAN UP.000 modifiers: 
-  #1 Name: Proximal fillet, Type: BEVEL
-  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Boolean.LigamentCoverPlatform, Type: BOOLEAN
-        Operation: UNION, Object: Ligament Cover M2 bolt hole platforms
-  #4 Name: Boolean.PQ12, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
-  #5 Name: Boolean.ConicalSpring, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Conical spring for palm inner
-  #6 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #7 Name: Boolean.ThumbPivotDowel000, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #8 Name: Boolean.ThumbPivotDowel001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #9 Name: Boolean.TendonChannels, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Tendon Channels
-  #10 Name: Boolean.GALACoverM2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #11 Name: Boolean.HandLigament, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #12 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
-  #13 Name: Boolean.ThumbLigmaentCoverM2BoltHole, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 Bolt Hole
-  #14 Name: Boolean.ThumbLigmaentCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for inner palm
-  #15 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
-  #16 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame distal hook
-  #17 Name: Boolean.NewGALACover , Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #18 Name: Boolean.ThumbTendonChannel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #19 Name: Boolean.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot combined
-  #20 Name: Boolean.002, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN bottom cover
-  #21 Name: Boolean.003, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN New Wrist connector M2 bolt holes
-  #22 Name: Boolean.004, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN urethane channels
-  #23 Name: Boolean.005, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Thumb spring channel
-  #24 Name: Boolean.006, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN thumb spring termination.001
-  #25 Name: Boolean.007, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole
-
-Name: Palm inner CLEAN UP.001
-Palm inner CLEAN UP.001 Type: MESH
-Palm inner CLEAN UP.001 transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
-Palm inner CLEAN UP.001 rotation: X0.0 Y-0.0 Z0.0
-Palm inner CLEAN UP.001 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
-Palm inner CLEAN UP.001 groups: Actuator Block, 
-Palm inner CLEAN UP.001 parent: Actuator Block
-Palm inner CLEAN UP.001 mesh: Palm Inner.014
-Palm inner CLEAN UP.001 materials: PLA, 
-Palm inner CLEAN UP.001 modifiers: 
-  #1 Name: Proximal fillet, Type: BEVEL
-  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Boolean.LigamentCoverPlatform, Type: BOOLEAN
-        Operation: UNION, Object: Ligament Cover M2 bolt hole platforms
-  #4 Name: Boolean.PQ12, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
-  #5 Name: Boolean.ConicalSpring, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Conical spring for palm inner
-  #6 Name: Boolean.ThumbAttachmentDowel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #7 Name: Boolean.ThumbPivotDowel000, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #8 Name: Boolean.ThumbPivotDowel001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #9 Name: Boolean.TendonChannels, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Tendon Channels
-  #10 Name: Boolean.GALACoverM2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #11 Name: Boolean.HandLigament, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #12 Name: Boolean.LigamentCoverM2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
-  #13 Name: Boolean.ThumbLigmaentCoverM2BoltHole, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 Bolt Hole
-  #14 Name: Boolean.ThumbLigmaentCover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover for inner palm
-  #15 Name: Boolean.BackCoverM2BoltHoles, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
-  #16 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Palm outer frame distal hook
-  #17 Name: Boolean.NewGALACover , Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #18 Name: Boolean.ThumbTendonChannel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #19 Name: Boolean.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot combined
-  #20 Name: Boolean.002, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN bottom cover
-  #21 Name: Boolean.003, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN New Wrist connector M2 bolt holes
-  #22 Name: Boolean.004, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN urethane channels
-  #23 Name: Boolean.005, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Thumb spring channel
-  #24 Name: Boolean.006, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN thumb spring termination.001
-  #25 Name: Boolean.007, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole
-
 Name: Palm inner for new mould
 Palm inner for new mould Type: MESH
 Palm inner for new mould transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
@@ -4102,7 +4010,7 @@ Palm Inner Profile (ONE MESH) rotation: X0.0 Y-0.0 Z0.0
 Palm Inner Profile (ONE MESH) scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Palm Inner Profile (ONE MESH) groups: Actuator Block, 
 Palm Inner Profile (ONE MESH) parent: Actuator Block
-Palm Inner Profile (ONE MESH) mesh: Hand/Palm.003
+Palm Inner Profile (ONE MESH) mesh: Hand/Palm.002
 Palm Inner Profile (ONE MESH) materials: PLA, 
 Palm Inner Profile (ONE MESH) modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
@@ -4119,7 +4027,7 @@ Palm Inner shell rotation: X0.0 Y-0.0 Z0.0
 Palm Inner shell scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Palm Inner shell groups: Actuator Block, 
 Palm Inner shell parent: Actuator Block
-Palm Inner shell mesh: Hand/Palm.003
+Palm Inner shell mesh: Hand/Palm.002
 Palm Inner shell materials: PLA, 
 Palm Inner shell modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
@@ -4335,7 +4243,7 @@ Palm Urethane (ONE MESH) rotation: X0.0 Y-0.0 Z0.0
 Palm Urethane (ONE MESH) scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Palm Urethane (ONE MESH) groups: Actuator Block, 
 Palm Urethane (ONE MESH) parent: Actuator Block
-Palm Urethane (ONE MESH) mesh: Hand/Palm.003
+Palm Urethane (ONE MESH) mesh: Hand/Palm.002
 Palm Urethane (ONE MESH) materials: PLA, 
 Palm Urethane (ONE MESH) modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
@@ -4391,6 +4299,52 @@ Plane.002 groups: None
 Plane.002 mesh: Plane.021
 Plane.002 materials: None
 Plane.002 modifiers: None
+
+Name: Plane.003
+Plane.003 Type: MESH
+Plane.003 transform: X0.0 Y0.0 Z0.0
+Plane.003 rotation: X1.3962634801864624 Y-0.0 Z0.0
+Plane.003 scale: X1.0 Y1.0 Z1.0
+Plane.003 groups: None
+Plane.003 mesh: Plane.019
+Plane.003 materials: Boolean difference, 
+Plane.003 modifiers: None
+
+Name: Plane.004
+Plane.004 Type: MESH
+Plane.004 transform: X9.243757247924805 Y-20.71477699279785 Z5.1999969482421875
+Plane.004 rotation: X1.5707963705062866 Y-0.0 Z0.0
+Plane.004 scale: X1.0 Y1.0 Z1.0
+Plane.004 groups: None
+Plane.004 mesh: Plane.027
+Plane.004 materials: Boolean difference, 
+Plane.004 modifiers: None
+
+Name: Plane.005
+Plane.005 Type: MESH
+Plane.005 transform: X5.74993896484375 Y-0.4695010185241699 Z-0.24999958276748657
+Plane.005 rotation: X0.0 Y0.0 Z0.0
+Plane.005 scale: X1.0 Y1.0 Z1.0
+Plane.005 groups: None
+Plane.005 mesh: Plane.026
+Plane.005 materials: None
+Plane.005 modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: INTERSECT, Object: Plane.003
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: INTERSECT, Object: TARGET Outer Surface -3
+  #3 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament Prongs Recessed
+
+Name: Plane.006
+Plane.006 Type: MESH
+Plane.006 transform: X37.875396728515625 Y-3.327430009841919 Z0.6121622920036316
+Plane.006 rotation: X0.0 Y0.0 Z0.0
+Plane.006 scale: X1.0 Y1.0 Z1.0
+Plane.006 groups: None
+Plane.006 mesh: Plane.029
+Plane.006 materials: None
+Plane.006 modifiers: None
 
 Name: PQ12 Caps
 PQ12 Caps Type: MESH
@@ -4562,7 +4516,7 @@ TARGET Outer Surface rotation: X0.0 Y-0.0 Z0.0
 TARGET Outer Surface scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 TARGET Outer Surface groups: Actuator Block, 
 TARGET Outer Surface parent: Actuator Block
-TARGET Outer Surface mesh: Hand/Palm.003
+TARGET Outer Surface mesh: Hand/Palm.002
 TARGET Outer Surface materials: PLA, 
 TARGET Outer Surface modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
@@ -4592,8 +4546,8 @@ TARGET Outer Surface -3 rotation: X0.0 Y-0.0 Z0.0
 TARGET Outer Surface -3 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 TARGET Outer Surface -3 groups: Actuator Block, 
 TARGET Outer Surface -3 parent: Actuator Block
-TARGET Outer Surface -3 mesh: Palm Inner.017
-TARGET Outer Surface -3 materials: PLA White, 
+TARGET Outer Surface -3 mesh: Hand/Palm.002
+TARGET Outer Surface -3 materials: PLA, 
 TARGET Outer Surface -3 modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
@@ -4605,11 +4559,26 @@ TARGET Outer Surface Midlevel rotation: X0.0 Y-0.0 Z0.0
 TARGET Outer Surface Midlevel scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 TARGET Outer Surface Midlevel groups: Actuator Block, 
 TARGET Outer Surface Midlevel parent: Actuator Block
-TARGET Outer Surface Midlevel mesh: Hand/Palm.003
+TARGET Outer Surface Midlevel mesh: Hand/Palm.002
 TARGET Outer Surface Midlevel materials: PLA, 
 TARGET Outer Surface Midlevel modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
         Thickness: 1.80, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: TARGET Outer Surface.001
+TARGET Outer Surface.001 Type: MESH
+TARGET Outer Surface.001 transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+TARGET Outer Surface.001 rotation: X0.0 Y-0.0 Z0.0
+TARGET Outer Surface.001 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+TARGET Outer Surface.001 groups: Actuator Block, 
+TARGET Outer Surface.001 parent: Actuator Block
+TARGET Outer Surface.001 mesh: Hand/Palm.002
+TARGET Outer Surface.001 materials: PLA, 
+TARGET Outer Surface.001 modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.80, Offset: 1.00 
         Even thickness: True, High Quality Normals: True  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
