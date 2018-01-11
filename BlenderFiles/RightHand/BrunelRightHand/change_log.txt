@@ -763,6 +763,19 @@ BOOLEAN Finger Ligament .003 modifiers:
   #2 Name: Hook.001, Type: HOOK
   #3 Name: Hook.002, Type: HOOK
 
+Name: BOOLEAN Finger Ligament .004
+BOOLEAN Finger Ligament .004 Type: MESH
+BOOLEAN Finger Ligament .004 transform: X-0.002583591267466545 Y-1.7177529335021973 Z-0.3281930088996887
+BOOLEAN Finger Ligament .004 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Finger Ligament .004 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Finger Ligament .004 groups: None
+BOOLEAN Finger Ligament .004 mesh: Plane.030
+BOOLEAN Finger Ligament .004 materials: Boolean difference, 
+BOOLEAN Finger Ligament .004 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Hook.002, Type: HOOK
+
 Name: BOOLEAN Finger Ligament Clamp
 BOOLEAN Finger Ligament Clamp Type: MESH
 BOOLEAN Finger Ligament Clamp transform: X-0.002583591267466545 Y-1.7177529335021973 Z-0.4145668148994446
@@ -3324,28 +3337,26 @@ Ligament Cover  groups: None
 Ligament Cover  mesh: Hand/Palm.002
 Ligament Cover  materials: PLA, 
 Ligament Cover  modifiers: 
-  #1 Name: Boolean.BOOLEAN Wrist Flat Back Cover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Wrist Flat Back Cover
-  #2 Name: Solidify, Type: SOLIDIFY
+  #1 Name: Solidify, Type: SOLIDIFY
         Thickness: 1.00, Offset: 1.00 
-        Even thickness: True, High Quality Normals: True  #3 Name: Solidify.001, Type: SOLIDIFY
-        Thickness: 2.00, Offset: 1.00 
-        Even thickness: True, High Quality Normals: True  #4 Name: Subsurf, Type: SUBSURF
+        Even thickness: True, High Quality Normals: True  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #5 Name: Displace, Type: DISPLACE
+  #3 Name: Displace, Type: DISPLACE
+  #4 Name: Boolean.Plane.BOOLEAN Palm and Back Cover Divide, Type: BOOLEAN
+        Operation: INTERSECT, Object: BOOLEAN Palm and Back Cover Divide
+  #5 Name: Boolean.BOOLEAN Finger Ligament .004, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Finger Ligament .004
   #6 Name: Boolean.Plane.003, Type: BOOLEAN
         Operation: INTERSECT, Object: Plane.003
-  #7 Name: Boolean.Plane.006, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Plane.006
-  #8 Name: Boolean, Type: BOOLEAN
+  #7 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Plane.004
-  #9 Name: Boolean.001, Type: BOOLEAN
+  #8 Name: Boolean.BOOLEAN Ligament Prongs Recessed, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament Prongs Recessed
-  #10 Name: Boolean.002, Type: BOOLEAN
+  #9 Name: Boolean.BOOLEAN Proximal Spring Channel.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Proximal Spring Channel.001
-  #11 Name: Boolean.BOOLEAN finger spring bolt holes combined, Type: BOOLEAN
+  #10 Name: Boolean.BOOLEAN finger spring bolt holes combined, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN finger spring bolt holes combined
-  #12 Name: Boolean.003, Type: BOOLEAN
+  #11 Name: Boolean.BOOLEAN Ligament cover M2 bolt hole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
 
 Name: Ligament cover bottom
