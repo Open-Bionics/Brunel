@@ -94,7 +94,7 @@ BOOLEAN Thumb Cover  transform: X7.5934343338012695 Y48.668251037597656 Z0.0
 BOOLEAN Thumb Cover  rotation: X1.5707963705062866 Y-0.0 Z0.7853981852531433
 BOOLEAN Thumb Cover  scale: X1.0 Y1.0 Z1.0
 BOOLEAN Thumb Cover  groups: None
-BOOLEAN Thumb Cover  mesh: Plane
+BOOLEAN Thumb Cover  mesh: Plane.001
 BOOLEAN Thumb Cover  materials: Boolean difference, 
 BOOLEAN Thumb Cover  modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
@@ -106,7 +106,7 @@ BOOLEAN Thumb Cover 0.2mm Clearance transform: X7.593430042266846 Y48.6682968139
 BOOLEAN Thumb Cover 0.2mm Clearance rotation: X1.5707963705062866 Y-0.0 Z0.7853981852531433
 BOOLEAN Thumb Cover 0.2mm Clearance scale: X1.0 Y1.0 Z1.0
 BOOLEAN Thumb Cover 0.2mm Clearance groups: None
-BOOLEAN Thumb Cover 0.2mm Clearance mesh: Plane
+BOOLEAN Thumb Cover 0.2mm Clearance mesh: Plane.001
 BOOLEAN Thumb Cover 0.2mm Clearance materials: Boolean difference, 
 BOOLEAN Thumb Cover 0.2mm Clearance modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
@@ -165,6 +165,16 @@ BOOLEAN Thumb tendon termination M2 bolt hole groups: Thumb,
 BOOLEAN Thumb tendon termination M2 bolt hole mesh: BOOLEAN Thumb tendon termination M2 bolt hole
 BOOLEAN Thumb tendon termination M2 bolt hole materials: Boolean difference, 
 BOOLEAN Thumb tendon termination M2 bolt hole modifiers: None
+
+Name: BrunelRightFingerInner distal 002
+BrunelRightFingerInner distal 002 Type: MESH
+BrunelRightFingerInner distal 002 transform: X-18.1370792388916 Y-4.990570545196533 Z1.2967286109924316
+BrunelRightFingerInner distal 002 rotation: X1.863128318291274e-07 Y4.6679277420043945 Z-0.5689685940742493
+BrunelRightFingerInner distal 002 scale: X1.0 Y1.0 Z1.0
+BrunelRightFingerInner distal 002 groups: None
+BrunelRightFingerInner distal 002 mesh: BrunelRightFingerInner distal 002
+BrunelRightFingerInner distal 002 materials: None
+BrunelRightFingerInner distal 002 modifiers: None
 
 Name: Cube
 Cube Type: MESH
@@ -355,7 +365,7 @@ MOULD BOOLEAN Thumb Clamp transform: X-7.62939453125e-06 Y-7.152557373046875e-07
 MOULD BOOLEAN Thumb Clamp rotation: X0.0 Y0.0 Z0.0
 MOULD BOOLEAN Thumb Clamp scale: X0.9999999403953552 Y0.9999998211860657 Z0.9999999403953552
 MOULD BOOLEAN Thumb Clamp groups: Thumb, 
-MOULD BOOLEAN Thumb Clamp mesh: Thumb
+MOULD BOOLEAN Thumb Clamp mesh: Thumb.001
 MOULD BOOLEAN Thumb Clamp materials: PLA White, 
 MOULD BOOLEAN Thumb Clamp modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
@@ -527,7 +537,7 @@ Thumb transform: X-7.62939453125e-06 Y-7.152557373046875e-07 Z0.0
 Thumb rotation: X0.0 Y0.0 Z0.0
 Thumb scale: X0.9999999403953552 Y0.9999998211860657 Z0.9999999403953552
 Thumb groups: Thumb, 
-Thumb mesh: Thumb
+Thumb mesh: Thumb.001
 Thumb materials: PLA White, 
 Thumb modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
@@ -558,7 +568,7 @@ Thumb Cover transform: X-7.62939453125e-06 Y-7.152557373046875e-07 Z0.0
 Thumb Cover rotation: X0.0 Y0.0 Z0.0
 Thumb Cover scale: X0.9999999403953552 Y0.9999998211860657 Z0.9999999403953552
 Thumb Cover groups: Thumb, 
-Thumb Cover mesh: Thumb
+Thumb Cover mesh: Thumb.001
 Thumb Cover materials: PLA White, 
 Thumb Cover modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
