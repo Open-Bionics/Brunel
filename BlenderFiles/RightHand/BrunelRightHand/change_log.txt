@@ -2214,19 +2214,13 @@ BOOLEAN Thumb ligament cover clip mesh: Thumb Ligament Cover.001
 BOOLEAN Thumb ligament cover clip materials: Boolean difference, 
 BOOLEAN Thumb ligament cover clip modifiers: 
   #1 Name: Bevel, Type: BEVEL
-  #2 Name: Boolean.ThumbLigamentCoverM2BoltHole, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 Bolt Hole
-  #3 Name: Boolean.ThumbTendonChannel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon channel
-  #4 Name: Boolean.ThumbPivotDowel002, Type: BOOLEAN
+  #2 Name: Boolean.ThumbPivotDowel002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel.002
-  #5 Name: Boolean.ElasticClamp, Type: BOOLEAN
+  #3 Name: Boolean.ElasticClamp, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament elastic clamp
-  #6 Name: Boolean, Type: BOOLEAN
+  #4 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN thumb spring termination.001
-  #7 Name: Boolean.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Thumb spring channel
-  #8 Name: Boolean.002, Type: BOOLEAN
+  #5 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cube.002
 
 Name: BOOLEAN Thumb ligament cover for inner palm
