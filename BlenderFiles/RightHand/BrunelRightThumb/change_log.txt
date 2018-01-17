@@ -70,8 +70,8 @@ BOOLEAN Riser Channels modifiers: None
 
 Name: BOOLEAN Spring cut out
 BOOLEAN Spring cut out Type: MESH
-BOOLEAN Spring cut out transform: X0.0 Y0.14514487981796265 Z0.721466600894928
-BOOLEAN Spring cut out rotation: X1.4835299253463745 Y-0.0 Z0.0
+BOOLEAN Spring cut out transform: X0.0 Y0.2491956353187561 Z3.7614972591400146
+BOOLEAN Spring cut out rotation: X1.5716608762741089 Y-0.0 Z0.0
 BOOLEAN Spring cut out scale: X1.0 Y1.0 Z1.0
 BOOLEAN Spring cut out groups: None
 BOOLEAN Spring cut out mesh: Cylinder.004
@@ -143,6 +143,17 @@ BOOLEAN Thumb ligament for thumb groups: Thumb,
 BOOLEAN Thumb ligament for thumb mesh: BOOLEAN Thumb ligament for thumb
 BOOLEAN Thumb ligament for thumb materials: Boolean difference, 
 BOOLEAN Thumb ligament for thumb modifiers: None
+
+Name: BOOLEAN Thumb ligament for thumb.001
+BOOLEAN Thumb ligament for thumb.001 Type: MESH
+BOOLEAN Thumb ligament for thumb.001 transform: X-7.62939453125e-06 Y-7.152557373046875e-07 Z0.0
+BOOLEAN Thumb ligament for thumb.001 rotation: X3.7112233286507035e-08 Y-3.88492225056325e-08 Z-1.5707961320877075
+BOOLEAN Thumb ligament for thumb.001 scale: X0.9999998807907104 Y0.9999998211860657 Z1.0
+BOOLEAN Thumb ligament for thumb.001 groups: Thumb, 
+BOOLEAN Thumb ligament for thumb.001 mesh: BOOLEAN Thumb ligament for thumb.001
+BOOLEAN Thumb ligament for thumb.001 materials: Boolean difference, 
+BOOLEAN Thumb ligament for thumb.001 modifiers: 
+  #1 Name: Displace, Type: DISPLACE
 
 Name: BOOLEAN Thumb tendon channel for thumb
 BOOLEAN Thumb tendon channel for thumb Type: MESH
@@ -531,6 +542,19 @@ Riser channels mesh: Cylinder.002
 Riser channels materials: Boolean difference, 
 Riser channels modifiers: None
 
+Name: TARGET Thumb
+TARGET Thumb Type: MESH
+TARGET Thumb transform: X-7.62939453125e-06 Y-7.152557373046875e-07 Z0.0
+TARGET Thumb rotation: X0.0 Y0.0 Z0.0
+TARGET Thumb scale: X0.9999999403953552 Y0.9999998211860657 Z0.9999999403953552
+TARGET Thumb groups: Thumb, 
+TARGET Thumb mesh: Thumb.002
+TARGET Thumb materials: PLA White, 
+TARGET Thumb modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Displace, Type: DISPLACE
+
 Name: Thumb
 Thumb Type: MESH
 Thumb transform: X-7.62939453125e-06 Y-7.152557373046875e-07 Z0.0
@@ -544,7 +568,7 @@ Thumb modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #2 Name: Displace, Type: DISPLACE
   #3 Name: Boolean.ThumbLigamentForThumb, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament for thumb
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament for thumb.001
   #4 Name: Boolean,M2BoltHole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole
   #5 Name: Boolean.ThumbTendonChannelForThumb, Type: BOOLEAN
@@ -602,7 +626,7 @@ Thumb ligament  groups: Thumb,
 Thumb ligament  mesh: Thumb Ligament 
 Thumb ligament  materials: Ninjalfex, 
 Thumb ligament  modifiers: 
-  #1 Name: Boolean, Type: BOOLEAN
+  #1 Name: Boolean.BOOLEAN M2 Bolt Hole.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole.001
 
 Name: Thumb ligament bent
@@ -634,7 +658,7 @@ Thumb ligament cover for thumb modifiers:
   #1 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole
   #2 Name: Boolean.001, Type: BOOLEAN
-        Operation: INTERSECT, Object: None
+        Operation: INTERSECT, Object: TARGET Thumb
   #3 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Spring cut out
 
@@ -649,21 +673,6 @@ Thumb target materials: PLA White, Urethane,
 Thumb target modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-
-Name: Thumb top cover
-Thumb top cover Type: MESH
-Thumb top cover transform: X-4.980005264282227 Y44.55933380126953 Z-2.0527298261185933e-07
-Thumb top cover rotation: X-2.0071287155151367 Y-1.570796251296997 Z0.0
-Thumb top cover scale: X1.000000238418579 Y1.0000001192092896 Z0.9999995231628418
-Thumb top cover groups: Thumb, 
-Thumb top cover mesh: Thumb top cover
-Thumb top cover materials: PLA White, 
-Thumb top cover modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-  #2 Name: Boolean.ThumbTarget, Type: BOOLEAN
-        Operation: INTERSECT, Object: Thumb target
-  #3 Name: Boolean.ThumbTendonTerminationM2BoltHole, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon termination M2 bolt hole
 
 Name: Thumb urethane pad
 Thumb urethane pad Type: MESH
@@ -690,4 +699,35 @@ Thumb urethane pad.001 materials: Urethane,
 Thumb urethane pad.001 modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+
+Name: Thumb/Urethane Pad ?(ONE PART)
+Thumb/Urethane Pad ?(ONE PART) Type: MESH
+Thumb/Urethane Pad ?(ONE PART) transform: X-7.62939453125e-06 Y-7.152557373046875e-07 Z0.0
+Thumb/Urethane Pad ?(ONE PART) rotation: X0.0 Y0.0 Z0.0
+Thumb/Urethane Pad ?(ONE PART) scale: X0.9999999403953552 Y0.9999998211860657 Z0.9999999403953552
+Thumb/Urethane Pad ?(ONE PART) groups: Thumb, 
+Thumb/Urethane Pad ?(ONE PART) mesh: Thumb.007
+Thumb/Urethane Pad ?(ONE PART) materials: PLA White, Urethane, 
+Thumb/Urethane Pad ?(ONE PART) modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Displace, Type: DISPLACE
+  #3 Name: Boolean.ThumbLigamentForThumb, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament for thumb.001
+  #4 Name: Boolean,M2BoltHole, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole
+  #5 Name: Boolean.ThumbTendonChannelForThumb, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon channel for thumb
+  #6 Name: Boolean.ThumbTendonTerminationM2BoltHole, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon termination M2 bolt hole
+  #7 Name: Boolean.ThumbLigamentCoverM2BoltHole, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 bolt hole for thumb
+  #8 Name: Boolean.BOOLEAN Thumb Cover M2 Bolt Hole , Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb Cover M2 Bolt Hole 
+  #9 Name: Boolean.BOOLEAN Ligament extra thumb cut, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament extra thumb cut
+  #10 Name: Boolean.BOOLEAN Thumb Cover , Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb Cover 0.2mm Clearance
+  #11 Name: Boolean.BOOLEAN Riser Channels, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Riser Channels
 
