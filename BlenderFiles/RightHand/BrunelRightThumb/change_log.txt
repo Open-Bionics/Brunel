@@ -662,6 +662,16 @@ Thumb ligament cover for thumb modifiers:
   #3 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Spring cut out
 
+Name: Thumb Ligament CoverThumb Ligament Cover 
+Thumb Ligament CoverThumb Ligament Cover  Type: MESH
+Thumb Ligament CoverThumb Ligament Cover  transform: X0.0 Y-1.4515715837478638 Z0.5884749293327332
+Thumb Ligament CoverThumb Ligament Cover  rotation: X3.1415929794311523 Y-0.0 Z0.0
+Thumb Ligament CoverThumb Ligament Cover  scale: X1.0 Y1.0 Z1.0
+Thumb Ligament CoverThumb Ligament Cover  groups: None
+Thumb Ligament CoverThumb Ligament Cover  mesh: Thumb Ligament CoverThumb Ligament Cover .001
+Thumb Ligament CoverThumb Ligament Cover  materials: None
+Thumb Ligament CoverThumb Ligament Cover  modifiers: None
+
 Name: Thumb target
 Thumb target Type: MESH
 Thumb target transform: X-7.62939453125e-06 Y-7.152557373046875e-07 Z0.0
