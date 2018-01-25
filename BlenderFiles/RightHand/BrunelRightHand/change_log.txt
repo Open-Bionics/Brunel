@@ -58,15 +58,13 @@ Back Cover (Integrated Wrist) Flat modifiers:
   #6 Name: Boolean.BOOLEAN Back cover M2 bolt holes, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
   #7 Name: Triangulate, Type: TRIANGULATE
-  #8 Name: Boolean.BOOLEAN Flat Faces Finger Ligament Cover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Flat Faces Finger Ligament Cover
-  #9 Name: Boolean.OB Logo, Type: BOOLEAN
+  #8 Name: Boolean.OB Logo, Type: BOOLEAN
         Operation: DIFFERENCE, Object: OB Logo
-  #10 Name: Boolean.BOOLEAN Headphone / Micro USB, Type: BOOLEAN
+  #9 Name: Boolean.BOOLEAN Headphone / Micro USB, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Headphone / Micro USB
-  #11 Name: Boolean.BOOLEAN Power Cable , Type: BOOLEAN
+  #10 Name: Boolean.BOOLEAN Power Cable , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Power Cable 
-  #12 Name: Boolean.BOOLEAN Flat Faces (Ligament Cover), Type: BOOLEAN
+  #11 Name: Boolean.BOOLEAN Flat Faces (Ligament Cover), Type: BOOLEAN
         Operation: INTERSECT, Object: BOOLEAN Flat Faces (Ligament Cover)
 
 Name: Back Cover (Integrated Wrist) Wavey
@@ -96,7 +94,7 @@ Back Cover (Integrated Wrist) Wavey modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
   #9 Name: Triangulate, Type: TRIANGULATE
   #10 Name: Boolean.BOOLEAN Flat Faces Finger Ligament Cover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Flat Faces Finger Ligament Cover
+        Operation: DIFFERENCE, Object: None
   #11 Name: Boolean.BOOLEAN Logo Plinth.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
   #12 Name: Boolean.BOOLEAN Logo Plinth.001, Type: BOOLEAN
@@ -383,16 +381,6 @@ BOOLEAN Flat Faces (Ligament Cover) mesh: BOOLEAN Flat Faces (Ligament Cover)
 BOOLEAN Flat Faces (Ligament Cover) materials: Boolean difference, 
 BOOLEAN Flat Faces (Ligament Cover) modifiers: None
 
-Name: BOOLEAN Flat Faces Finger Ligament Cover
-BOOLEAN Flat Faces Finger Ligament Cover Type: MESH
-BOOLEAN Flat Faces Finger Ligament Cover transform: X37.65105438232422 Y-4.129736423492432 Z-0.7474980354309082
-BOOLEAN Flat Faces Finger Ligament Cover rotation: X1.3962633609771729 Y-0.015135015361011028 Z-0.1738821119070053
-BOOLEAN Flat Faces Finger Ligament Cover scale: X1.0 Y1.0 Z1.0
-BOOLEAN Flat Faces Finger Ligament Cover groups: None
-BOOLEAN Flat Faces Finger Ligament Cover mesh: Flat Faces Finger Ligament Cover
-BOOLEAN Flat Faces Finger Ligament Cover materials: Boolean difference, 
-BOOLEAN Flat Faces Finger Ligament Cover modifiers: None
-
 Name: BOOLEAN Flat Faces Finger Ligament Cover (Displace)
 BOOLEAN Flat Faces Finger Ligament Cover (Displace) Type: MESH
 BOOLEAN Flat Faces Finger Ligament Cover (Displace) transform: X37.65105438232422 Y-4.129736423492432 Z-0.7474980354309082
@@ -426,8 +414,8 @@ BOOLEAN Fold Point PCB GALA Cover Tidy modifiers: None
 
 Name: BOOLEAN Gala Cheetah Tidy
 BOOLEAN Gala Cheetah Tidy Type: MESH
-BOOLEAN Gala Cheetah Tidy transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
-BOOLEAN Gala Cheetah Tidy rotation: X0.0 Y-0.0 Z0.0
+BOOLEAN Gala Cheetah Tidy transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+BOOLEAN Gala Cheetah Tidy rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 BOOLEAN Gala Cheetah Tidy scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 BOOLEAN Gala Cheetah Tidy groups: Actuator Block, 
 BOOLEAN Gala Cheetah Tidy mesh: Hand/Palm Outer Surface
@@ -479,8 +467,8 @@ BOOLEAN Gala Cover M2 attachment point modifiers: None
 
 Name: BOOLEAN Hand Ligament
 BOOLEAN Hand Ligament Type: MESH
-BOOLEAN Hand Ligament transform: X0.0 Y0.0 Z0.0
-BOOLEAN Hand Ligament rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Hand Ligament transform: X1.5 Y-11.000003814697266 Z1.673166275024414
+BOOLEAN Hand Ligament rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 BOOLEAN Hand Ligament scale: X1.0 Y1.0 Z1.0
 BOOLEAN Hand Ligament groups: Actuator Block, Booleans, 
 BOOLEAN Hand Ligament mesh: BOOLEAN Hand Ligament.001
@@ -545,8 +533,8 @@ BOOLEAN Inner palm and Urethane Profile modifiers:
 
 Name: BOOLEAN Inner Palm Ledge
 BOOLEAN Inner Palm Ledge Type: MESH
-BOOLEAN Inner Palm Ledge transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
-BOOLEAN Inner Palm Ledge rotation: X0.0 Y-0.0 Z0.0
+BOOLEAN Inner Palm Ledge transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+BOOLEAN Inner Palm Ledge rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 BOOLEAN Inner Palm Ledge scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 BOOLEAN Inner Palm Ledge groups: Actuator Block, 
 BOOLEAN Inner Palm Ledge mesh: Inner Palm
@@ -602,8 +590,8 @@ BOOLEAN LABEL Open Bionics modifiers:
         Even thickness: True, High Quality Normals: True
 Name: BOOLEAN Ligament cover M2 bolt hole
 BOOLEAN Ligament cover M2 bolt hole Type: MESH
-BOOLEAN Ligament cover M2 bolt hole transform: X7.75 Y-14.5 Z0.20000000298023224
-BOOLEAN Ligament cover M2 bolt hole rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Ligament cover M2 bolt hole transform: X9.25 Y-25.500003814697266 Z1.8731662034988403
+BOOLEAN Ligament cover M2 bolt hole rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 BOOLEAN Ligament cover M2 bolt hole scale: X1.0 Y1.0 Z1.0
 BOOLEAN Ligament cover M2 bolt hole groups: Actuator Block, Booleans, 
 BOOLEAN Ligament cover M2 bolt hole mesh: BOOLEAN Ligament cover M2 bolt hole
@@ -817,8 +805,8 @@ BOOLEAN Palm and Back Cover Divide Clearance modifiers:
         Even thickness: True, High Quality Normals: True
 Name: BOOLEAN Palm Inner Profile (ONE MESH)
 BOOLEAN Palm Inner Profile (ONE MESH) Type: MESH
-BOOLEAN Palm Inner Profile (ONE MESH) transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
-BOOLEAN Palm Inner Profile (ONE MESH) rotation: X0.0 Y-0.0 Z0.0
+BOOLEAN Palm Inner Profile (ONE MESH) transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+BOOLEAN Palm Inner Profile (ONE MESH) rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 BOOLEAN Palm Inner Profile (ONE MESH) scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 BOOLEAN Palm Inner Profile (ONE MESH) groups: Actuator Block, 
 BOOLEAN Palm Inner Profile (ONE MESH) mesh: Hand/Palm Outer Surface
@@ -1074,7 +1062,7 @@ BOOLEAN Screwdriver Leaver Point modifiers: None
 
 Name: BOOLEAN Tendon Channels
 BOOLEAN Tendon Channels Type: MESH
-BOOLEAN Tendon Channels transform: X-22.301233291625977 Y-22.498855590820312 Z-10.314008712768555
+BOOLEAN Tendon Channels transform: X-20.801233291625977 Y-33.49885940551758 Z-8.64084243774414
 BOOLEAN Tendon Channels rotation: X1.5707964897155762 Y-0.0 Z0.0
 BOOLEAN Tendon Channels scale: X0.9999999403953552 Y1.0 Z0.9999999403953552
 BOOLEAN Tendon Channels groups: Actuator Block, Booleans, 
@@ -1086,8 +1074,8 @@ BOOLEAN Tendon Channels modifiers:
 
 Name: BOOLEAN Thumb attachment dowel
 BOOLEAN Thumb attachment dowel Type: MESH
-BOOLEAN Thumb attachment dowel transform: X15.050033569335938 Y-69.01124572753906 Z-4.673169136047363
-BOOLEAN Thumb attachment dowel rotation: X-0.0 Y1.570796251296997 Z0.0
+BOOLEAN Thumb attachment dowel transform: X16.550033569335938 Y-80.01124572753906 Z-3.0000033378601074
+BOOLEAN Thumb attachment dowel rotation: X3.725290742551124e-09 Y1.570796251296997 Z0.0
 BOOLEAN Thumb attachment dowel scale: X1.0 Y0.9999999403953552 Z0.9999999403953552
 BOOLEAN Thumb attachment dowel groups: Actuator Block, Booleans, Thumb, 
 BOOLEAN Thumb attachment dowel mesh: BOOLEAN Thumb attachment dowel
@@ -1096,8 +1084,8 @@ BOOLEAN Thumb attachment dowel modifiers: None
 
 Name: BOOLEAN Thumb Dowel
 BOOLEAN Thumb Dowel Type: MESH
-BOOLEAN Thumb Dowel transform: X7.199999809265137 Y-37.89358901977539 Z-4.624057292938232
-BOOLEAN Thumb Dowel rotation: X0.0 Y-0.0 Z0.0
+BOOLEAN Thumb Dowel transform: X8.699999809265137 Y-48.893592834472656 Z-2.9508914947509766
+BOOLEAN Thumb Dowel rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 BOOLEAN Thumb Dowel scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 BOOLEAN Thumb Dowel groups: Actuator Block, 
 BOOLEAN Thumb Dowel mesh: BOOLEAN Thumb Dowel
@@ -1107,8 +1095,8 @@ BOOLEAN Thumb Dowel modifiers:
 
 Name: BOOLEAN Thumb Dowel Clearance
 BOOLEAN Thumb Dowel Clearance Type: MESH
-BOOLEAN Thumb Dowel Clearance transform: X7.199999809265137 Y-37.89358901977539 Z-4.624057292938232
-BOOLEAN Thumb Dowel Clearance rotation: X0.0 Y-0.0 Z0.0
+BOOLEAN Thumb Dowel Clearance transform: X8.699999809265137 Y-48.893592834472656 Z-2.9508914947509766
+BOOLEAN Thumb Dowel Clearance rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 BOOLEAN Thumb Dowel Clearance scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 BOOLEAN Thumb Dowel Clearance groups: Actuator Block, 
 BOOLEAN Thumb Dowel Clearance mesh: BOOLEAN Thumb Dowel
@@ -1143,9 +1131,9 @@ BOOLEAN Thumb Ligament Cover  modifiers:
 
 Name: BOOLEAN Thumb ligament cover clip
 BOOLEAN Thumb ligament cover clip Type: MESH
-BOOLEAN Thumb ligament cover clip transform: X-6.09822940826416 Y-57.35948181152344 Z-12.033199310302734
-BOOLEAN Thumb ligament cover clip rotation: X0.0 Y-0.0 Z-0.17453289031982422
-BOOLEAN Thumb ligament cover clip scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb ligament cover clip transform: X-4.59822940826416 Y-68.35948181152344 Z-10.36003303527832
+BOOLEAN Thumb ligament cover clip rotation: X3.6120995083877006e-09 Y9.678590151551703e-10 Z-0.1745329201221466
+BOOLEAN Thumb ligament cover clip scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 BOOLEAN Thumb ligament cover clip groups: Actuator Block, Thumb, 
 BOOLEAN Thumb ligament cover clip mesh: BOOLEAN Thumb ligament cover clip
 BOOLEAN Thumb ligament cover clip materials: Boolean difference, 
@@ -1162,8 +1150,8 @@ BOOLEAN Thumb ligament cover clip modifiers:
 
 Name: BOOLEAN Thumb ligament cover M2 Bolt Hole
 BOOLEAN Thumb ligament cover M2 Bolt Hole Type: MESH
-BOOLEAN Thumb ligament cover M2 Bolt Hole transform: X9.789102554321289 Y-67.755126953125 Z-14.493148803710938
-BOOLEAN Thumb ligament cover M2 Bolt Hole rotation: X3.141592502593994 Y4.3971656538133175e-08 Z-7.285712513294129e-07
+BOOLEAN Thumb ligament cover M2 Bolt Hole transform: X11.289102554321289 Y-78.755126953125 Z-12.81998348236084
+BOOLEAN Thumb ligament cover M2 Bolt Hole rotation: X3.141592502593994 Y4.397166364356053e-08 Z-7.285712513294129e-07
 BOOLEAN Thumb ligament cover M2 Bolt Hole scale: X1.0 Y1.0 Z1.0
 BOOLEAN Thumb ligament cover M2 Bolt Hole groups: Actuator Block, Booleans, Thumb, 
 BOOLEAN Thumb ligament cover M2 Bolt Hole mesh: BOOLEAN Thumb ligament cover M2 Bolt Hole
@@ -1211,7 +1199,7 @@ BOOLEAN Thumb Pivot dowel Lower modifiers: None
 
 Name: BOOLEAN Thumb pivot dowel top
 BOOLEAN Thumb pivot dowel top Type: MESH
-BOOLEAN Thumb pivot dowel top transform: X15.050033569335938 Y-74.02127838134766 Z-4.673169136047363
+BOOLEAN Thumb pivot dowel top transform: X16.550033569335938 Y-85.02128601074219 Z-3.0000033378601074
 BOOLEAN Thumb pivot dowel top rotation: X-1.5707961320877075 Y2.356194496154785 Z-1.570796251296997
 BOOLEAN Thumb pivot dowel top scale: X0.9999998807907104 Y0.9999998807907104 Z0.9999999403953552
 BOOLEAN Thumb pivot dowel top groups: Actuator Block, Booleans, Thumb, 
@@ -1252,8 +1240,8 @@ BOOLEAN Thumb swept area for MOULD Top modifiers: None
 
 Name: BOOLEAN Thumb tendon channel
 BOOLEAN Thumb tendon channel Type: MESH
-BOOLEAN Thumb tendon channel transform: X15.050033569335938 Y-73.01124572753906 Z-4.673169136047363
-BOOLEAN Thumb tendon channel rotation: X0.0 Y-0.0 Z0.0
+BOOLEAN Thumb tendon channel transform: X16.550033569335938 Y-84.01124572753906 Z-3.0000033378601074
+BOOLEAN Thumb tendon channel rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 BOOLEAN Thumb tendon channel scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 BOOLEAN Thumb tendon channel groups: Actuator Block, Booleans, Thumb, 
 BOOLEAN Thumb tendon channel mesh: BOOLEAN Thumb tendon channel
@@ -1442,8 +1430,8 @@ CHEETAH Logo.001 modifiers:
 
 Name: Conical spring
 Conical spring Type: MESH
-Conical spring transform: X-15.163448333740234 Y-46.499046325683594 Z-4.673167705535889
-Conical spring rotation: X0.0 Y-0.0 Z0.0
+Conical spring transform: X-13.663448333740234 Y-57.49905014038086 Z-3.000001907348633
+Conical spring rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 Conical spring scale: X0.0009999868925660849 Y0.0009999870089814067 Z0.000999986776150763
 Conical spring groups: Actuator Block, Thumb, 
 Conical spring mesh: Conical spring
@@ -1739,8 +1727,8 @@ HOOK 4th Finger groups: None
 
 Name: Inner Palm (Profile)
 Inner Palm (Profile) Type: MESH
-Inner Palm (Profile) transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
-Inner Palm (Profile) rotation: X0.0 Y-0.0 Z0.0
+Inner Palm (Profile) transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+Inner Palm (Profile) rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 Inner Palm (Profile) scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Inner Palm (Profile) groups: Actuator Block, 
 Inner Palm (Profile) mesh: Inner Palm
@@ -1751,8 +1739,8 @@ Inner Palm (Profile) modifiers:
 
 Name: Inner Palm Lip
 Inner Palm Lip Type: MESH
-Inner Palm Lip transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
-Inner Palm Lip rotation: X0.0 Y-0.0 Z0.0
+Inner Palm Lip transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+Inner Palm Lip rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 Inner Palm Lip scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Inner Palm Lip groups: Actuator Block, 
 Inner Palm Lip mesh: Inner Palm
@@ -1869,6 +1857,36 @@ Ligament Cover  modifiers:
   #10 Name: Boolean.BOOLEAN Ligament cover M2 bolt hole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
 
+Name: MARKER
+MARKER Type: MESH
+MARKER transform: X7.5 Y-37.89358901977539 Z-4.624060153961182
+MARKER rotation: X0.0 Y-0.0 Z0.0
+MARKER scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+MARKER groups: Actuator Block, 
+MARKER mesh: Hand/Palm Outer Surface.001
+MARKER materials: PLA, 
+MARKER modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 3.10, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean.BOOLEAN Inner palm and Urethane Profile, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Inner palm and Urethane Profile
+  #4 Name: Boolean.BOOLEAN Finger Wave Profile.001, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Finger Wave Profile Inner
+  #5 Name: Boolean.BOOLEAN Palm and Back Cover Divide, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm and Back Cover Divide
+  #6 Name: Boolean.BOOLEAN Palm Inner Profile (ONE MESH), Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm Inner Profile (ONE MESH)
+  #7 Name: Boolean.Palm Inner Profile (ONE MESH), Type: BOOLEAN
+        Operation: UNION, Object: Palm Inner Profile (ONE MESH)
+  #8 Name: Boolean.BOOLEAN PQ12 exteneed 0.3 mm tolerance, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
+  #9 Name: Boolean.BOOLEAN Conical spring for palm inner, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Conical spring for palm inner
+  #10 Name: Boolean.BOOLEAN Wrist Flat, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Wrist Flat
+
 Name: New Stand
 New Stand Type: MESH
 New Stand transform: X9.066848754882812 Y-91.61183166503906 Z9.511549949645996
@@ -1915,8 +1933,8 @@ OB Logo modifiers: None
 
 Name: Palm Inner
 Palm Inner Type: MESH
-Palm Inner transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
-Palm Inner rotation: X0.0 Y-0.0 Z0.0
+Palm Inner transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+Palm Inner rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 Palm Inner scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Palm Inner groups: Actuator Block, 
 Palm Inner mesh: Hand/Palm Outer Surface
@@ -1945,7 +1963,7 @@ Palm Inner modifiers:
 
 Name: Palm Inner (ONE MESH)
 Palm Inner (ONE MESH) Type: MESH
-Palm Inner (ONE MESH) transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+Palm Inner (ONE MESH) transform: X9.0 Y-48.89359664916992 Z-2.950890064239502
 Palm Inner (ONE MESH) rotation: X0.0 Y-0.0 Z0.0
 Palm Inner (ONE MESH) scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Palm Inner (ONE MESH) groups: Actuator Block, 
@@ -1975,8 +1993,8 @@ Palm Inner (ONE MESH) modifiers:
 
 Name: Palm Inner body
 Palm Inner body Type: MESH
-Palm Inner body transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
-Palm Inner body rotation: X0.0 Y-0.0 Z0.0
+Palm Inner body transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+Palm Inner body rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 Palm Inner body scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Palm Inner body groups: Actuator Block, 
 Palm Inner body mesh: Hand/Palm Outer Surface
@@ -2046,8 +2064,8 @@ Palm Inner body modifiers:
 
 Name: Palm Inner phlange
 Palm Inner phlange Type: MESH
-Palm Inner phlange transform: X7.5 Y-37.89358901977539 Z-4.124057292938232
-Palm Inner phlange rotation: X0.0 Y-0.0 Z0.0
+Palm Inner phlange transform: X9.0 Y-48.893592834472656 Z-2.4508914947509766
+Palm Inner phlange rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 Palm Inner phlange scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Palm Inner phlange groups: Actuator Block, 
 Palm Inner phlange mesh: Palm urethane channel base
@@ -2067,13 +2085,11 @@ Palm Inner Profile (ONE MESH) modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #2 Name: Boolean.BOOLEAN Palm and Back Cover Divide, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm and Back Cover Divide
-  #3 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
 
 Name: Palm Inner shell
 Palm Inner shell Type: MESH
-Palm Inner shell transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
-Palm Inner shell rotation: X0.0 Y-0.0 Z0.0
+Palm Inner shell transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+Palm Inner shell rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 Palm Inner shell scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Palm Inner shell groups: Actuator Block, 
 Palm Inner shell mesh: Hand/Palm Outer Surface
@@ -2151,8 +2167,8 @@ Palm Mould Securing Dowels modifiers:
 
 Name: Palm Urethane 
 Palm Urethane  Type: MESH
-Palm Urethane  transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
-Palm Urethane  rotation: X0.0 Y-0.0 Z0.0
+Palm Urethane  transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+Palm Urethane  rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 Palm Urethane  scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Palm Urethane  groups: Actuator Block, 
 Palm Urethane  mesh: Hand/Palm Outer Surface
@@ -2194,8 +2210,8 @@ Plane.001 modifiers: None
 
 Name: PQ12 Caps
 PQ12 Caps Type: MESH
-PQ12 Caps transform: X-13.649959564208984 Y-80.01123046875 Z-3.00000262260437
-PQ12 Caps rotation: X0.0 Y0.0 Z0.0
+PQ12 Caps transform: X-12.149959564208984 Y-91.01123046875 Z-1.3268370628356934
+PQ12 Caps rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 PQ12 Caps scale: X1.0 Y1.0 Z1.0
 PQ12 Caps groups: None
 PQ12 Caps mesh: PQ12 Caps
@@ -2204,8 +2220,8 @@ PQ12 Caps modifiers: None
 
 Name: PQ12 extended
 PQ12 extended Type: MESH
-PQ12 extended transform: X7.499999523162842 Y-31.44186782836914 Z0.7168599963188171
-PQ12 extended rotation: X0.0 Y-0.0 Z3.141592502593994
+PQ12 extended transform: X9.0 Y-42.441871643066406 Z2.390026092529297
+PQ12 extended rotation: X-3.725290298461914e-09 Y-8.437548238693078e-16 Z3.141592502593994
 PQ12 extended scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 PQ12 extended groups: Actuator Block, 
 PQ12 extended mesh: PQ12 extended
@@ -2273,8 +2289,8 @@ Spring pegs proximal.002 modifiers:
 
 Name: TARGET Outer Surface
 TARGET Outer Surface Type: MESH
-TARGET Outer Surface transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
-TARGET Outer Surface rotation: X0.0 Y-0.0 Z0.0
+TARGET Outer Surface transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+TARGET Outer Surface rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 TARGET Outer Surface scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 TARGET Outer Surface groups: Actuator Block, 
 TARGET Outer Surface mesh: Hand/Palm Outer Surface
@@ -2287,8 +2303,8 @@ TARGET Outer Surface modifiers:
 
 Name: TARGET Outer Surface (Solidify)
 TARGET Outer Surface (Solidify) Type: MESH
-TARGET Outer Surface (Solidify) transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
-TARGET Outer Surface (Solidify) rotation: X0.0 Y-0.0 Z0.0
+TARGET Outer Surface (Solidify) transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+TARGET Outer Surface (Solidify) rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 TARGET Outer Surface (Solidify) scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 TARGET Outer Surface (Solidify) groups: Actuator Block, 
 TARGET Outer Surface (Solidify) mesh: Inner Palm
@@ -2301,8 +2317,8 @@ TARGET Outer Surface (Solidify) modifiers:
 
 Name: TARGET Outer Surface -3
 TARGET Outer Surface -3 Type: MESH
-TARGET Outer Surface -3 transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
-TARGET Outer Surface -3 rotation: X0.0 Y-0.0 Z0.0
+TARGET Outer Surface -3 transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+TARGET Outer Surface -3 rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 TARGET Outer Surface -3 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 TARGET Outer Surface -3 groups: Actuator Block, 
 TARGET Outer Surface -3 mesh: Hand/Palm Outer Surface
@@ -2313,8 +2329,8 @@ TARGET Outer Surface -3 modifiers:
 
 Name: TARGET Outer Surface Midlevel
 TARGET Outer Surface Midlevel Type: MESH
-TARGET Outer Surface Midlevel transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
-TARGET Outer Surface Midlevel rotation: X0.0 Y-0.0 Z0.0
+TARGET Outer Surface Midlevel transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+TARGET Outer Surface Midlevel rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 TARGET Outer Surface Midlevel scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 TARGET Outer Surface Midlevel groups: Actuator Block, 
 TARGET Outer Surface Midlevel mesh: Hand/Palm Outer Surface
@@ -2327,8 +2343,8 @@ TARGET Outer Surface Midlevel modifiers:
 
 Name: TARGET Outer Surface.001
 TARGET Outer Surface.001 Type: MESH
-TARGET Outer Surface.001 transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
-TARGET Outer Surface.001 rotation: X0.0 Y-0.0 Z0.0
+TARGET Outer Surface.001 transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+TARGET Outer Surface.001 rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 TARGET Outer Surface.001 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 TARGET Outer Surface.001 groups: Actuator Block, 
 TARGET Outer Surface.001 mesh: Hand/Palm Outer Surface
@@ -2341,8 +2357,8 @@ TARGET Outer Surface.001 modifiers:
 
 Name: TARGET Urethane Pad COPY.001
 TARGET Urethane Pad COPY.001 Type: MESH
-TARGET Urethane Pad COPY.001 transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
-TARGET Urethane Pad COPY.001 rotation: X0.0 Y-0.0 Z0.0
+TARGET Urethane Pad COPY.001 transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+TARGET Urethane Pad COPY.001 rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 TARGET Urethane Pad COPY.001 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 TARGET Urethane Pad COPY.001 groups: Actuator Block, 
 TARGET Urethane Pad COPY.001 mesh: Inner Palm
@@ -2467,8 +2483,8 @@ Thumb ligament cover for thumb modifiers:
 
 Name: Thumb pivot dowel.000
 Thumb pivot dowel.000 Type: MESH
-Thumb pivot dowel.000 transform: X14.156594276428223 Y-80.26822662353516 Z-4.673170566558838
-Thumb pivot dowel.000 rotation: X-0.0 Y1.570796251296997 Z0.0
+Thumb pivot dowel.000 transform: X15.656594276428223 Y-91.26823425292969 Z-3.000004768371582
+Thumb pivot dowel.000 rotation: X3.725290742551124e-09 Y1.570796251296997 Z0.0
 Thumb pivot dowel.000 scale: X1.0 Y1.0 Z1.0
 Thumb pivot dowel.000 groups: None
 Thumb pivot dowel.000 mesh: Dowel M3 10mm 
@@ -2477,9 +2493,9 @@ Thumb pivot dowel.000 modifiers: None
 
 Name: Thumb pivot dowel.001
 Thumb pivot dowel.001 Type: MESH
-Thumb pivot dowel.001 transform: X13.550033569335938 Y-73.01124572753906 Z-9.673168182373047
+Thumb pivot dowel.001 transform: X15.050033569335938 Y-84.01124572753906 Z-8.00000286102295
 Thumb pivot dowel.001 rotation: X-1.3962633609771729 Y1.570796251296997 Z0.0
-Thumb pivot dowel.001 scale: X1.0 Y0.9999999403953552 Z0.9999999403953552
+Thumb pivot dowel.001 scale: X1.0 Y0.9999998807907104 Z0.9999998807907104
 Thumb pivot dowel.001 groups: Actuator Block, Thumb, 
 Thumb pivot dowel.001 mesh: Thumb pivot dowel.001
 Thumb pivot dowel.001 materials: Steel, 
@@ -2487,8 +2503,8 @@ Thumb pivot dowel.001 modifiers: None
 
 Name: Thumb pivot dowel.002
 Thumb pivot dowel.002 Type: MESH
-Thumb pivot dowel.002 transform: X3.009279727935791 Y-68.91067504882812 Z-16.862667083740234
-Thumb pivot dowel.002 rotation: X0.0 Y-0.0 Z-0.17453287541866302
+Thumb pivot dowel.002 transform: X4.509279727935791 Y-79.91067504882812 Z-15.18950080871582
+Thumb pivot dowel.002 rotation: X3.6120997304323055e-09 Y9.678589041328678e-10 Z-0.17453287541866302
 Thumb pivot dowel.002 scale: X1.0 Y0.9999999403953552 Z0.9999999403953552
 Thumb pivot dowel.002 groups: Actuator Block, Thumb, 
 Thumb pivot dowel.002 mesh: Thumb pivot dowel.000
@@ -2522,8 +2538,8 @@ Thumb spring channel modifiers:
 
 Name: Urethane Pad and inner palm (one mesh)
 Urethane Pad and inner palm (one mesh) Type: MESH
-Urethane Pad and inner palm (one mesh) transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
-Urethane Pad and inner palm (one mesh) rotation: X0.0 Y-0.0 Z0.0
+Urethane Pad and inner palm (one mesh) transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+Urethane Pad and inner palm (one mesh) rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 Urethane Pad and inner palm (one mesh) scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Urethane Pad and inner palm (one mesh) groups: Actuator Block, 
 Urethane Pad and inner palm (one mesh) mesh: Inner Palm
