@@ -51,7 +51,7 @@ Back Cover (Integrated Wrist) Flat modifiers:
         Thickness: 2.00, Offset: 1.00 
         Even thickness: True, High Quality Normals: True  #3 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #4 Name: Boolean.BOOLEAN Fixing points back cover.001, Type: BOOLEAN
+  #4 Name: Boolean.BOOLEAN Fixing points back cover, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Fixing points back cover
   #5 Name: Boolean.BOOLEAN Palm and Back Cover Divide, Type: BOOLEAN
         Operation: INTERSECT, Object: BOOLEAN Palm and Back Cover Divide
@@ -62,15 +62,11 @@ Back Cover (Integrated Wrist) Flat modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Flat Faces Finger Ligament Cover
   #9 Name: Boolean.OB Logo, Type: BOOLEAN
         Operation: DIFFERENCE, Object: OB Logo
-  #10 Name: Boolean.BOOLEAN New Gala Cover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Gala Cover
-  #11 Name: Boolean.BOOLEAN Headphone / Micro USB, Type: BOOLEAN
+  #10 Name: Boolean.BOOLEAN Headphone / Micro USB, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Headphone / Micro USB
-  #12 Name: Boolean.BOOLEAN Power Cable , Type: BOOLEAN
+  #11 Name: Boolean.BOOLEAN Power Cable , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Power Cable 
-  #13 Name: Boolean.BOOLEAN finger spring bolt holes combined, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN finger spring bolt holes combined
-  #14 Name: Boolean, Type: BOOLEAN
+  #12 Name: Boolean.BOOLEAN Flat Faces (Ligament Cover), Type: BOOLEAN
         Operation: INTERSECT, Object: BOOLEAN Flat Faces (Ligament Cover)
 
 Name: Back Cover (Integrated Wrist) Wavey
@@ -1007,16 +1003,24 @@ BOOLEAN proximal M2 Bolt Hole materials: Boolean difference.007,
 BOOLEAN proximal M2 Bolt Hole modifiers: 
   #1 Name: Hook, Type: HOOK
 
-Name: BOOLEAN Proximal Spring Channel
-BOOLEAN Proximal Spring Channel Type: MESH
-BOOLEAN Proximal Spring Channel transform: X0.31689929962158203 Y-10.434542655944824 Z5.5
-BOOLEAN Proximal Spring Channel rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Proximal Spring Channel scale: X1.0 Y1.0 Z1.0
-BOOLEAN Proximal Spring Channel groups: None
-BOOLEAN Proximal Spring Channel mesh: Spring Channel Proximal
-BOOLEAN Proximal Spring Channel materials: Boolean difference, 
-BOOLEAN Proximal Spring Channel modifiers: 
-  #1 Name: Bevel, Type: BEVEL
+Name: BOOLEAN Proximal Spring Channel Combo
+BOOLEAN Proximal Spring Channel Combo Type: MESH
+BOOLEAN Proximal Spring Channel Combo transform: X0.31689929962158203 Y-10.434542655944824 Z5.5
+BOOLEAN Proximal Spring Channel Combo rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Proximal Spring Channel Combo scale: X1.0 Y1.0 Z1.0
+BOOLEAN Proximal Spring Channel Combo groups: None
+BOOLEAN Proximal Spring Channel Combo mesh: Empty
+BOOLEAN Proximal Spring Channel Combo materials: None
+BOOLEAN Proximal Spring Channel Combo modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Proximal Spring Channel.001
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Proximal Spring Channel.002
+  #3 Name: Boolean.003, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Proximal Spring Channel.003
+  #4 Name: Boolean.002, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Proximal Spring Channel.004
+  #5 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN Proximal Spring Channel.001
 BOOLEAN Proximal Spring Channel.001 Type: MESH
@@ -1026,36 +1030,37 @@ BOOLEAN Proximal Spring Channel.001 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Proximal Spring Channel.001 groups: None
 BOOLEAN Proximal Spring Channel.001 mesh: Spring Channel Proximal
 BOOLEAN Proximal Spring Channel.001 materials: Boolean difference, 
-BOOLEAN Proximal Spring Channel.001 modifiers: 
-  #1 Name: Bevel.001, Type: BEVEL
-  #2 Name: Boolean, Type: BOOLEAN
-        Operation: UNION, Object: BOOLEAN Proximal Spring Channel
-  #3 Name: Boolean.001, Type: BOOLEAN
-        Operation: UNION, Object: BOOLEAN Proximal Spring Channel.002
-  #4 Name: Boolean.002, Type: BOOLEAN
-        Operation: UNION, Object: BOOLEAN Proximal Spring Channel.003
+BOOLEAN Proximal Spring Channel.001 modifiers: None
 
 Name: BOOLEAN Proximal Spring Channel.002
 BOOLEAN Proximal Spring Channel.002 Type: MESH
-BOOLEAN Proximal Spring Channel.002 transform: X17.97585105895996 Y-11.133517265319824 Z5.5
-BOOLEAN Proximal Spring Channel.002 rotation: X0.0 Y0.0 Z-0.0872664600610733
+BOOLEAN Proximal Spring Channel.002 transform: X0.31689929962158203 Y-10.434542655944824 Z5.5
+BOOLEAN Proximal Spring Channel.002 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Proximal Spring Channel.002 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Proximal Spring Channel.002 groups: None
 BOOLEAN Proximal Spring Channel.002 mesh: Spring Channel Proximal
 BOOLEAN Proximal Spring Channel.002 materials: Boolean difference, 
-BOOLEAN Proximal Spring Channel.002 modifiers: 
-  #1 Name: Bevel, Type: BEVEL
+BOOLEAN Proximal Spring Channel.002 modifiers: None
 
 Name: BOOLEAN Proximal Spring Channel.003
 BOOLEAN Proximal Spring Channel.003 Type: MESH
-BOOLEAN Proximal Spring Channel.003 transform: X36.33353805541992 Y-13.619690895080566 Z5.5
-BOOLEAN Proximal Spring Channel.003 rotation: X0.0 Y0.0 Z-0.1745329201221466
+BOOLEAN Proximal Spring Channel.003 transform: X17.97585105895996 Y-11.133517265319824 Z5.5
+BOOLEAN Proximal Spring Channel.003 rotation: X0.0 Y0.0 Z-0.0872664600610733
 BOOLEAN Proximal Spring Channel.003 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Proximal Spring Channel.003 groups: None
 BOOLEAN Proximal Spring Channel.003 mesh: Spring Channel Proximal
 BOOLEAN Proximal Spring Channel.003 materials: Boolean difference, 
-BOOLEAN Proximal Spring Channel.003 modifiers: 
-  #1 Name: Bevel, Type: BEVEL
+BOOLEAN Proximal Spring Channel.003 modifiers: None
+
+Name: BOOLEAN Proximal Spring Channel.004
+BOOLEAN Proximal Spring Channel.004 Type: MESH
+BOOLEAN Proximal Spring Channel.004 transform: X36.33353805541992 Y-13.619690895080566 Z5.5
+BOOLEAN Proximal Spring Channel.004 rotation: X0.0 Y0.0 Z-0.1745329201221466
+BOOLEAN Proximal Spring Channel.004 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Proximal Spring Channel.004 groups: None
+BOOLEAN Proximal Spring Channel.004 mesh: Spring Channel Proximal
+BOOLEAN Proximal Spring Channel.004 materials: Boolean difference, 
+BOOLEAN Proximal Spring Channel.004 modifiers: None
 
 Name: BOOLEAN Screwdriver Leaver Point
 BOOLEAN Screwdriver Leaver Point Type: MESH
@@ -1844,25 +1849,24 @@ Ligament Cover  mesh: Hand/Palm Outer Surface
 Ligament Cover  materials: PLA, 
 Ligament Cover  modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
-        Thickness: 1.00, Offset: 1.00 
+        Thickness: 0.80, Offset: 1.00 
         Even thickness: True, High Quality Normals: True  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Displace, Type: DISPLACE
-  #4 Name: Boolean.Plane.BOOLEAN Palm and Back Cover Divide, Type: BOOLEAN
+  #3 Name: Boolean.Plane.BOOLEAN Palm and Back Cover Divide, Type: BOOLEAN
         Operation: INTERSECT, Object: BOOLEAN Palm and Back Cover Divide
-  #5 Name: Boolean.BOOLEAN Finger Ligament .004, Type: BOOLEAN
+  #4 Name: Boolean.BOOLEAN Finger Ligament .004, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Finger Ligament .004
-  #6 Name: Boolean.BOOLEAN Flat Faces (Ligament Cover), Type: BOOLEAN
+  #5 Name: Boolean.BOOLEAN Flat Faces (Ligament Cover), Type: BOOLEAN
         Operation: INTERSECT, Object: BOOLEAN Flat Faces (Ligament Cover)
-  #7 Name: Boolean.BOOLEAN Ligament cover termination point, Type: BOOLEAN
+  #6 Name: Boolean.BOOLEAN Ligament cover termination point, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover termination point
-  #8 Name: Boolean.BOOLEAN Ligament Prongs Recessed, Type: BOOLEAN
+  #7 Name: Boolean.BOOLEAN Ligament Prongs Recessed, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament Prongs Recessed
-  #9 Name: Boolean.BOOLEAN Proximal Spring Channel.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Proximal Spring Channel.001
-  #10 Name: Boolean.BOOLEAN finger spring bolt holes combined, Type: BOOLEAN
+  #8 Name: Boolean.BOOLEAN Proximal Spring Channel Combo, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Proximal Spring Channel Combo
+  #9 Name: Boolean.BOOLEAN finger spring bolt holes combined, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN finger spring bolt holes combined
-  #11 Name: Boolean.BOOLEAN Ligament cover M2 bolt hole, Type: BOOLEAN
+  #10 Name: Boolean.BOOLEAN Ligament cover M2 bolt hole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
 
 Name: New Stand
@@ -1907,9 +1911,7 @@ OB Logo scale: X1.0 Y1.0 Z1.0
 OB Logo groups: None
 OB Logo mesh: OB Logo
 OB Logo materials: Boolean difference, 
-OB Logo modifiers: 
-  #1 Name: Boolean, Type: BOOLEAN
-        Operation: UNION, Object: None
+OB Logo modifiers: None
 
 Name: Palm Inner
 Palm Inner Type: MESH
