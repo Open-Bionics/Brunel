@@ -337,7 +337,7 @@ BOOLEAN Finger Wave Profile Inner modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #5 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.10, Offset: 1.00 
-        Even thickness: True, High Quality Normals: True  #6 Name: Boolean, Type: BOOLEAN
+        Even thickness: True, High Quality Normals: True  #6 Name: Boolean.TARGET Outer Surface Midlevel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: TARGET Outer Surface Midlevel
 
 Name: BOOLEAN Finger Wave Profile Outer
@@ -2002,9 +2002,9 @@ Palm Inner body materials: PLA,
 Palm Inner body modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #2 Name: Boolean.BOOLEAN Finger Wave Profile.001, Type: BOOLEAN
+  #2 Name: Boolean.BOOLEAN Finger Wave Profile Inner, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Finger Wave Profile Inner
-  #3 Name: Boolean.BOOLEAN Finger Wave Profile.002, Type: BOOLEAN
+  #3 Name: Boolean.BOOLEAN Finger Wave Profile Outer, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Finger Wave Profile Outer
   #4 Name: Boolean.Palm Inner phlange, Type: BOOLEAN
         Operation: UNION, Object: Palm Inner phlange
@@ -2012,14 +2012,14 @@ Palm Inner body modifiers:
         Operation: UNION, Object: Palm Inner shell
   #6 Name: Boolean.BOOLEAN Urethane blocker channel wrist, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Urethane blocker channel wrist
-  #7 Name: Boolean.TARGET Outer Surface, Type: BOOLEAN
-        Operation: INTERSECT, Object: TARGET Outer Surface
-  #8 Name: Boolean.BOOLEAN PQ12 exteneed 0.3 mm tolerance, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
-  #9 Name: Boolean.BOOLEAN New Gala Cover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Gala Cover
-  #10 Name: Boolean.BOOLEAN Palm and Back Cover Divide, Type: BOOLEAN
+  #7 Name: Boolean.BOOLEAN Palm and Back Cover Divide, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm and Back Cover Divide Clearance
+  #8 Name: Boolean.TARGET Outer Surface, Type: BOOLEAN
+        Operation: INTERSECT, Object: TARGET Outer Surface
+  #9 Name: Boolean.BOOLEAN PQ12 exteneed 0.3 mm tolerance, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
+  #10 Name: Boolean.BOOLEAN New Gala Cover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Gala Cover
   #11 Name: Triangulate, Type: TRIANGULATE
   #12 Name: Boolean.BOOLEAN Thumb Dowel , Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Thumb Dowel
@@ -2074,7 +2074,7 @@ Palm Inner phlange modifiers: None
 
 Name: Palm Inner Profile (ONE MESH)
 Palm Inner Profile (ONE MESH) Type: MESH
-Palm Inner Profile (ONE MESH) transform: X7.5 Y-37.89358901977539 Z-4.624057292938232
+Palm Inner Profile (ONE MESH) transform: X9.0 Y-48.89359664916992 Z-2.950890064239502
 Palm Inner Profile (ONE MESH) rotation: X0.0 Y-0.0 Z0.0
 Palm Inner Profile (ONE MESH) scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Palm Inner Profile (ONE MESH) groups: Actuator Block, 
