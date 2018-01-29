@@ -206,19 +206,6 @@ BOOLEAN Capacitors for connector cover mesh: BOOLEAN Capacitors for connector co
 BOOLEAN Capacitors for connector cover materials: Boolean difference, 
 BOOLEAN Capacitors for connector cover modifiers: None
 
-Name: BOOLEAN Conical spring
-BOOLEAN Conical spring Type: MESH
-BOOLEAN Conical spring transform: X-13.663448333740234 Y-57.498046875 Z-3.0000014305114746
-BOOLEAN Conical spring rotation: X0.0 Y-0.0 Z0.0
-BOOLEAN Conical spring scale: X0.9999998807907104 Y0.9999999403953552 Z0.9999999403953552
-BOOLEAN Conical spring groups: Actuator Block, Booleans, 
-BOOLEAN Conical spring parent: Conical spring
-BOOLEAN Conical spring mesh: BOOLEAN Conical spring
-BOOLEAN Conical spring materials: Boolean difference, 
-BOOLEAN Conical spring modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 2, Type: CATMULL_CLARK
-
 Name: BOOLEAN Conical spring for palm inner
 BOOLEAN Conical spring for palm inner Type: MESH
 BOOLEAN Conical spring for palm inner transform: X-13.663448333740234 Y-57.498046875 Z-3.0000014305114746
@@ -546,9 +533,9 @@ BOOLEAN Inner Palm Ledge modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #3 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb Ligament Cover
-  #4 Name: Boolean, Type: BOOLEAN
+  #4 Name: Boolean.BOOLEAN Urethane wrist termination point, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Urethane wrist termination point
-  #5 Name: Boolean.002, Type: BOOLEAN
+  #5 Name: Boolean.BOOLEAN Inner Palm Terimination point, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner Palm Terimination point
 
 Name: BOOLEAN Inner Palm Terimination point
@@ -1594,7 +1581,7 @@ Gala Cover materials: Boolean difference,
 Gala Cover modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Boolean.BOOLEAN Conical spring, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Conical spring
+        Operation: DIFFERENCE, Object: None
   #3 Name: Boolean.BOOLEAN PQ12 exteneed 0.3 mm tolerance, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
   #4 Name: Boolean.BOOLEAN Thumb attahment dowel, Type: BOOLEAN
@@ -1725,18 +1712,6 @@ HOOK 4th Finger rotation: X0.0 Y-0.0 Z-0.1745329201221466
 HOOK 4th Finger scale: X1.0 Y1.0 Z1.0
 HOOK 4th Finger groups: None
 
-Name: Inner Palm (Profile)
-Inner Palm (Profile) Type: MESH
-Inner Palm (Profile) transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
-Inner Palm (Profile) rotation: X3.725290298461914e-09 Y-0.0 Z0.0
-Inner Palm (Profile) scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
-Inner Palm (Profile) groups: Actuator Block, 
-Inner Palm (Profile) mesh: Inner Palm
-Inner Palm (Profile) materials: PLA White, 
-Inner Palm (Profile) modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-
 Name: Inner Palm Lip
 Inner Palm Lip Type: MESH
 Inner Palm Lip transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
@@ -1759,7 +1734,7 @@ Inner Palm Lip modifiers:
   #6 Name: Boolean.BOOLEAN Finger Wave Profile.001, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Finger Wave Profile Inner
   #7 Name: Boolean.Inner Palm (Profile), Type: BOOLEAN
-        Operation: UNION, Object: Inner Palm (Profile)
+        Operation: UNION, Object: None
   #8 Name: Boolean.BOOLEAN Inner Palm (Flat plane cut), Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner Palm (Flat plane cut)
 
@@ -2355,15 +2330,15 @@ TARGET Outer Surface.001 modifiers:
         Even thickness: True, High Quality Normals: True  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
-Name: TARGET Urethane Pad COPY.001
-TARGET Urethane Pad COPY.001 Type: MESH
-TARGET Urethane Pad COPY.001 transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
-TARGET Urethane Pad COPY.001 rotation: X3.725290298461914e-09 Y-0.0 Z0.0
-TARGET Urethane Pad COPY.001 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
-TARGET Urethane Pad COPY.001 groups: Actuator Block, 
-TARGET Urethane Pad COPY.001 mesh: Inner Palm
-TARGET Urethane Pad COPY.001 materials: PLA White, 
-TARGET Urethane Pad COPY.001 modifiers: 
+Name: TARGET Urethane Pad 
+TARGET Urethane Pad  Type: MESH
+TARGET Urethane Pad  transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+TARGET Urethane Pad  rotation: X3.725290298461914e-09 Y-0.0 Z0.0
+TARGET Urethane Pad  scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+TARGET Urethane Pad  groups: Actuator Block, 
+TARGET Urethane Pad  mesh: Inner Palm
+TARGET Urethane Pad  materials: PLA White, 
+TARGET Urethane Pad  modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
         Thickness: 3.00, Offset: 1.00 
         Even thickness: False, High Quality Normals: False  #2 Name: Subsurf, Type: SUBSURF
@@ -2411,7 +2386,7 @@ Thumb Ligament Cover  materials: PLA White,
 Thumb Ligament Cover  modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: TARGET Urethane Pad COPY.001, Type: BOOLEAN
-        Operation: INTERSECT, Object: TARGET Urethane Pad COPY.001
+        Operation: INTERSECT, Object: TARGET Urethane Pad 
   #3 Name: Boolean.BOOLEAN Thumb ligament cover M2 Bolt Hole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 Bolt Hole
   #4 Name: Boolean.BOOLEAN Thumb tendon channel, Type: BOOLEAN
@@ -2450,7 +2425,7 @@ Thumb Ligament Cover .002 materials: PLA White,
 Thumb Ligament Cover .002 modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: TARGET Urethane Pad COPY.001, Type: BOOLEAN
-        Operation: INTERSECT, Object: TARGET Urethane Pad COPY.001
+        Operation: INTERSECT, Object: TARGET Urethane Pad 
 
 Name: Thumb ligament cover clip
 Thumb ligament cover clip Type: MESH
