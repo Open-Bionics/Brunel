@@ -317,15 +317,13 @@ BOOLEAN Finger Wave Profile Inner groups: None
 BOOLEAN Finger Wave Profile Inner mesh: BOOLEAN Finger Wave Profile
 BOOLEAN Finger Wave Profile Inner materials: None
 BOOLEAN Finger Wave Profile Inner modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Hook.001, Type: HOOK
-  #3 Name: Hook.002, Type: HOOK
-  #4 Name: Subsurf, Type: SUBSURF
+  #1 Name: Displace, Type: DISPLACE
+  #2 Name: Displace.001, Type: DISPLACE
+  #3 Name: Hook, Type: HOOK
+  #4 Name: Hook.001, Type: HOOK
+  #5 Name: Hook.002, Type: HOOK
+  #6 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #5 Name: Solidify, Type: SOLIDIFY
-        Thickness: 0.10, Offset: 1.00 
-        Even thickness: True, High Quality Normals: True  #6 Name: Boolean.TARGET Outer Surface Midlevel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: TARGET Outer Surface Midlevel
 
 Name: BOOLEAN Finger Wave Profile Outer
 BOOLEAN Finger Wave Profile Outer Type: MESH
@@ -336,16 +334,15 @@ BOOLEAN Finger Wave Profile Outer groups: None
 BOOLEAN Finger Wave Profile Outer mesh: BOOLEAN Finger Wave Profile
 BOOLEAN Finger Wave Profile Outer materials: None
 BOOLEAN Finger Wave Profile Outer modifiers: 
-  #1 Name: Displace, Type: DISPLACE
-  #2 Name: Hook, Type: HOOK
-  #3 Name: Hook.001, Type: HOOK
-  #4 Name: Hook.002, Type: HOOK
-  #5 Name: Hook.003, Type: HOOK
-  #6 Name: Subsurf, Type: SUBSURF
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Hook.002, Type: HOOK
+  #4 Name: Hook.003, Type: HOOK
+  #5 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #7 Name: Solidify, Type: SOLIDIFY
-        Thickness: 0.10, Offset: 1.00 
-        Even thickness: True, High Quality Normals: True
+  #6 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: TARGET Outer Surface -3
+
 Name: BOOLEAN Fixing points back cover
 BOOLEAN Fixing points back cover Type: MESH
 BOOLEAN Fixing points back cover transform: X44.574703216552734 Y-21.999696731567383 Z7.396658897399902
@@ -1977,10 +1974,10 @@ Palm Inner body materials: PLA,
 Palm Inner body modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #2 Name: Boolean.BOOLEAN Finger Wave Profile Inner, Type: BOOLEAN
-        Operation: UNION, Object: BOOLEAN Finger Wave Profile Inner
-  #3 Name: Boolean.BOOLEAN Finger Wave Profile Outer, Type: BOOLEAN
+  #2 Name: Boolean.BOOLEAN Finger Wave Profile Outer, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Finger Wave Profile Outer
+  #3 Name: Boolean.BOOLEAN Finger Wave Profile Inner, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Finger Wave Profile Inner
   #4 Name: Boolean.Palm Inner phlange, Type: BOOLEAN
         Operation: UNION, Object: Palm Inner phlange
   #5 Name: Boolean.Palm Inner shell, Type: BOOLEAN
@@ -1993,7 +1990,7 @@ Palm Inner body modifiers:
         Operation: INTERSECT, Object: TARGET Outer Surface
   #9 Name: Boolean.BOOLEAN PQ12 exteneed 0.3 mm tolerance, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
-  #10 Name: Boolean.BOOLEAN New Gala Cover, Type: BOOLEAN
+  #10 Name: Boolean.BOOLEAN Gala Cover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Gala Cover
   #11 Name: Triangulate, Type: TRIANGULATE
   #12 Name: Boolean.BOOLEAN Thumb Dowel , Type: BOOLEAN
@@ -2078,7 +2075,7 @@ Palm Inner shell modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #4 Name: Boolean.BOOLEAN Inner palm and Urethane Profile, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner palm and Urethane Profile
-  #5 Name: Boolean, Type: BOOLEAN
+  #5 Name: BOOLEAN Flat Faces Finger Ligament Cover (Displace), Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Flat Faces Finger Ligament Cover (Displace)
 
 Name: Palm Mould
