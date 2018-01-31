@@ -308,6 +308,20 @@ BOOLEAN finger spring bolt holes combined modifiers:
   #4 Name: Boolean.003, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN 4th finger spring bolt hole
 
+Name: BOOLEAN Finger Wave Profile (Urethane Channel)
+BOOLEAN Finger Wave Profile (Urethane Channel) Type: MESH
+BOOLEAN Finger Wave Profile (Urethane Channel) transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+BOOLEAN Finger Wave Profile (Urethane Channel) rotation: X3.725290298461914e-09 Y-0.0 Z0.0
+BOOLEAN Finger Wave Profile (Urethane Channel) scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+BOOLEAN Finger Wave Profile (Urethane Channel) groups: Actuator Block, 
+BOOLEAN Finger Wave Profile (Urethane Channel) mesh: Hand/Palm Outer Surface
+BOOLEAN Finger Wave Profile (Urethane Channel) materials: PLA, 
+BOOLEAN Finger Wave Profile (Urethane Channel) modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.80, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: BOOLEAN Finger Wave Profile Inner
 BOOLEAN Finger Wave Profile Inner Type: MESH
 BOOLEAN Finger Wave Profile Inner transform: X0.0 Y0.0 Z0.0
@@ -340,8 +354,8 @@ BOOLEAN Finger Wave Profile Outer modifiers:
   #4 Name: Hook.003, Type: HOOK
   #5 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #6 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: TARGET Outer Surface -3
+  #6 Name: Boolean.BOOLEAN Finger Wave Profile (Urethane Channel), Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Finger Wave Profile (Urethane Channel)
 
 Name: BOOLEAN Fixing points back cover
 BOOLEAN Fixing points back cover Type: MESH
@@ -1134,7 +1148,7 @@ BOOLEAN Thumb ligament cover clip modifiers:
 
 Name: BOOLEAN Thumb ligament cover M2 Bolt Hole
 BOOLEAN Thumb ligament cover M2 Bolt Hole Type: MESH
-BOOLEAN Thumb ligament cover M2 Bolt Hole transform: X11.289102554321289 Y-78.755126953125 Z-12.81998348236084
+BOOLEAN Thumb ligament cover M2 Bolt Hole transform: X9.78909969329834 Y-67.75509643554688 Z-14.493168830871582
 BOOLEAN Thumb ligament cover M2 Bolt Hole rotation: X3.141592502593994 Y4.397166364356053e-08 Z-7.285712513294129e-07
 BOOLEAN Thumb ligament cover M2 Bolt Hole scale: X1.0 Y1.0 Z1.0
 BOOLEAN Thumb ligament cover M2 Bolt Hole groups: Actuator Block, Booleans, Thumb, 
@@ -1204,7 +1218,7 @@ BOOLEAN Thumb spring termination modifiers: None
 
 Name: BOOLEAN Thumb spring termination.001
 BOOLEAN Thumb spring termination.001 Type: MESH
-BOOLEAN Thumb spring termination.001 transform: X5.002194404602051 Y-68.35335540771484 Z-9.295071601867676
+BOOLEAN Thumb spring termination.001 transform: X5.002194404602051 Y-68.35335540771484 Z-9.595071792602539
 BOOLEAN Thumb spring termination.001 rotation: X7.11357817095859e-09 Y3.1415932178497314 Z0.08726759999990463
 BOOLEAN Thumb spring termination.001 scale: X0.9999998211860657 Y0.9999998211860657 Z1.0
 BOOLEAN Thumb spring termination.001 groups: None
@@ -2310,20 +2324,6 @@ TARGET Outer Surface Midlevel materials: PLA,
 TARGET Outer Surface Midlevel modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
         Thickness: 1.80, Offset: 1.00 
-        Even thickness: True, High Quality Normals: True  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-
-Name: TARGET Outer Surface.001
-TARGET Outer Surface.001 Type: MESH
-TARGET Outer Surface.001 transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
-TARGET Outer Surface.001 rotation: X3.725290298461914e-09 Y-0.0 Z0.0
-TARGET Outer Surface.001 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
-TARGET Outer Surface.001 groups: Actuator Block, 
-TARGET Outer Surface.001 mesh: Hand/Palm Outer Surface
-TARGET Outer Surface.001 materials: PLA, 
-TARGET Outer Surface.001 modifiers: 
-  #1 Name: Solidify, Type: SOLIDIFY
-        Thickness: 0.80, Offset: 1.00 
         Even thickness: True, High Quality Normals: True  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
