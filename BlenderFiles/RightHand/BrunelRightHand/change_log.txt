@@ -219,6 +219,19 @@ BOOLEAN Conical spring for palm inner modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 2, Type: CATMULL_CLARK
 
+Name: BOOLEAN Conical spring GALA Cover
+BOOLEAN Conical spring GALA Cover Type: MESH
+BOOLEAN Conical spring GALA Cover transform: X-13.663448333740234 Y-57.498046875 Z-8.230681419372559
+BOOLEAN Conical spring GALA Cover rotation: X0.0 Y-0.0 Z0.0
+BOOLEAN Conical spring GALA Cover scale: X0.9999998807907104 Y0.9999999403953552 Z0.9999999403953552
+BOOLEAN Conical spring GALA Cover groups: Actuator Block, Booleans, 
+BOOLEAN Conical spring GALA Cover parent: Conical spring
+BOOLEAN Conical spring GALA Cover mesh: BOOLEAN Conical spring for palm inner.001
+BOOLEAN Conical spring GALA Cover materials: Boolean difference, 
+BOOLEAN Conical spring GALA Cover modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 2, Type: CATMULL_CLARK
+
 Name: BOOLEAN DC Jack for GALA cover
 BOOLEAN DC Jack for GALA cover Type: MESH
 BOOLEAN DC Jack for GALA cover transform: X9.0 Y-57.44187545776367 Z17.317607879638672
@@ -463,6 +476,16 @@ BOOLEAN Gala Cover M2 attachment point mesh: BOOLEAN Gala Cover M2 attachment po
 BOOLEAN Gala Cover M2 attachment point materials: Boolean difference, 
 BOOLEAN Gala Cover M2 attachment point modifiers: None
 
+Name: BOOLEAN Gala Cover M2 attachment point.001
+BOOLEAN Gala Cover M2 attachment point.001 Type: MESH
+BOOLEAN Gala Cover M2 attachment point.001 transform: X37.62656021118164 Y-86.90995025634766 Z-1.3294382095336914
+BOOLEAN Gala Cover M2 attachment point.001 rotation: X0.0 Y-0.0 Z-0.18781039118766785
+BOOLEAN Gala Cover M2 attachment point.001 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Gala Cover M2 attachment point.001 groups: None
+BOOLEAN Gala Cover M2 attachment point.001 mesh: BOOLEAN Gala Cover M2 attachment point.001
+BOOLEAN Gala Cover M2 attachment point.001 materials: Boolean difference, 
+BOOLEAN Gala Cover M2 attachment point.001 modifiers: None
+
 Name: BOOLEAN Hand Ligament
 BOOLEAN Hand Ligament Type: MESH
 BOOLEAN Hand Ligament transform: X1.5 Y-11.000003814697266 Z1.673166275024414
@@ -588,7 +611,7 @@ BOOLEAN LABEL Open Bionics modifiers:
         Even thickness: True, High Quality Normals: True
 Name: BOOLEAN Ligament cover M2 bolt hole
 BOOLEAN Ligament cover M2 bolt hole Type: MESH
-BOOLEAN Ligament cover M2 bolt hole transform: X9.25 Y-25.500003814697266 Z1.8731662034988403
+BOOLEAN Ligament cover M2 bolt hole transform: X9.25 Y-14.500003814697266 Z1.8731662034988403
 BOOLEAN Ligament cover M2 bolt hole rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 BOOLEAN Ligament cover M2 bolt hole scale: X1.0 Y1.0 Z1.0
 BOOLEAN Ligament cover M2 bolt hole groups: Actuator Block, Booleans, 
@@ -733,6 +756,16 @@ BOOLEAN New Gala Cover attachment point groups: None
 BOOLEAN New Gala Cover attachment point mesh: BOOLEAN New Gala Cover attachment point
 BOOLEAN New Gala Cover attachment point materials: Material, 
 BOOLEAN New Gala Cover attachment point modifiers: None
+
+Name: BOOLEAN New Gala Cover attachment point.001
+BOOLEAN New Gala Cover attachment point.001 Type: MESH
+BOOLEAN New Gala Cover attachment point.001 transform: X37.62656021118164 Y-86.90995025634766 Z-8.564687728881836
+BOOLEAN New Gala Cover attachment point.001 rotation: X0.0 Y-0.0 Z13.163959503173828
+BOOLEAN New Gala Cover attachment point.001 scale: X0.30000004172325134 Y0.30000004172325134 Z1.0
+BOOLEAN New Gala Cover attachment point.001 groups: None
+BOOLEAN New Gala Cover attachment point.001 mesh: BOOLEAN New Gala Cover attachment point.001
+BOOLEAN New Gala Cover attachment point.001 materials: Material, 
+BOOLEAN New Gala Cover attachment point.001 modifiers: None
 
 Name: BOOLEAN New wrist connector
 BOOLEAN New wrist connector Type: MESH
@@ -967,6 +1000,39 @@ BOOLEAN Power Cable  mesh: BOOLEAN Power Cable
 BOOLEAN Power Cable  materials: Boolean difference, 
 BOOLEAN Power Cable  modifiers: None
 
+Name: BOOLEAN PQ12 Dowel Hole
+BOOLEAN PQ12 Dowel Hole Type: MESH
+BOOLEAN PQ12 Dowel Hole transform: X-13.649959564208984 Y-80.01123046875 Z-3.0000030994415283
+BOOLEAN PQ12 Dowel Hole rotation: X-0.0 Y1.570796251296997 Z0.0
+BOOLEAN PQ12 Dowel Hole scale: X0.1600000113248825 Y0.1600000113248825 Z1.0
+BOOLEAN PQ12 Dowel Hole groups: None
+BOOLEAN PQ12 Dowel Hole mesh: Cylinder.001
+BOOLEAN PQ12 Dowel Hole materials: Boolean difference, 
+BOOLEAN PQ12 Dowel Hole modifiers: None
+
+Name: BOOLEAN PQ12 End Cap
+BOOLEAN PQ12 End Cap Type: MESH
+BOOLEAN PQ12 End Cap transform: X-13.649959564208984 Y-80.52388000488281 Z-1.1333041191101074
+BOOLEAN PQ12 End Cap rotation: X0.0 Y0.0 Z0.0
+BOOLEAN PQ12 End Cap scale: X0.5000000596046448 Y0.4500000476837158 Z0.2500000298023224
+BOOLEAN PQ12 End Cap groups: None
+BOOLEAN PQ12 End Cap mesh: Cylinder.002
+BOOLEAN PQ12 End Cap materials: Boolean difference, 
+BOOLEAN PQ12 End Cap modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN PQ12 End Cap Slot
+BOOLEAN PQ12 End Cap Slot Type: MESH
+BOOLEAN PQ12 End Cap Slot transform: X-13.649959564208984 Y-83.41206359863281 Z-3.787525177001953
+BOOLEAN PQ12 End Cap Slot rotation: X-0.0 Y1.570796251296997 Z0.0
+BOOLEAN PQ12 End Cap Slot scale: X0.06000000983476639 Y0.06000000983476639 Z1.0
+BOOLEAN PQ12 End Cap Slot groups: None
+BOOLEAN PQ12 End Cap Slot mesh: Cylinder
+BOOLEAN PQ12 End Cap Slot materials: Boolean difference, 
+BOOLEAN PQ12 End Cap Slot modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
 Name: BOOLEAN PQ12 exteneed 0.3 mm tolerance
 BOOLEAN PQ12 exteneed 0.3 mm tolerance Type: MESH
 BOOLEAN PQ12 exteneed 0.3 mm tolerance transform: X27.16705894470215 Y-59.46961975097656 Z1.4607595205307007
@@ -977,6 +1043,16 @@ BOOLEAN PQ12 exteneed 0.3 mm tolerance parent: PQ12 extended
 BOOLEAN PQ12 exteneed 0.3 mm tolerance mesh: BOOLEAN PQ12 exteneed 0.3 mm tolerance
 BOOLEAN PQ12 exteneed 0.3 mm tolerance materials: Boolean difference, 
 BOOLEAN PQ12 exteneed 0.3 mm tolerance modifiers: None
+
+Name: BOOLEAN PQ12 Motor
+BOOLEAN PQ12 Motor Type: MESH
+BOOLEAN PQ12 Motor transform: X-13.649959564208984 Y-80.01123046875 Z-3.0000030994415283
+BOOLEAN PQ12 Motor rotation: X3.725290298461914e-09 Y-0.0 Z0.0
+BOOLEAN PQ12 Motor scale: X1.0 Y1.0 Z1.0
+BOOLEAN PQ12 Motor groups: None
+BOOLEAN PQ12 Motor mesh: PQ12 Caps.001
+BOOLEAN PQ12 Motor materials: Boolean difference, 
+BOOLEAN PQ12 Motor modifiers: None
 
 Name: BOOLEAN proximal M2 Bolt Hole
 BOOLEAN proximal M2 Bolt Hole Type: MESH
@@ -1129,7 +1205,7 @@ BOOLEAN Thumb Ligament Cover  modifiers:
 
 Name: BOOLEAN Thumb ligament cover clip
 BOOLEAN Thumb ligament cover clip Type: MESH
-BOOLEAN Thumb ligament cover clip transform: X-4.59822940826416 Y-68.35948181152344 Z-10.36003303527832
+BOOLEAN Thumb ligament cover clip transform: X3.585198402404785 Y-78.88968658447266 Z-11.990355491638184
 BOOLEAN Thumb ligament cover clip rotation: X3.6120995083877006e-09 Y9.678590151551703e-10 Z-0.1745329201221466
 BOOLEAN Thumb ligament cover clip scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 BOOLEAN Thumb ligament cover clip groups: Actuator Block, Thumb, 
@@ -1456,6 +1532,17 @@ Connector cover.001 modifiers:
   #5 Name: Boolean.PQ12, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
 
+Name: Cube
+Cube Type: MESH
+Cube transform: X33.94978713989258 Y-90.09722900390625 Z6.356072425842285
+Cube rotation: X0.0 Y0.0 Z0.0
+Cube scale: X0.2500000298023224 Y0.4500000476837158 Z1.0
+Cube groups: None
+Cube mesh: Cube
+Cube materials: None
+Cube modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
 Name: Cube.002
 Cube.002 Type: MESH
 Cube.002 transform: X13.351585388183594 Y-69.75856018066406 Z-17.1380558013916
@@ -1592,7 +1679,7 @@ Gala Cover materials: Boolean difference,
 Gala Cover modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Boolean.BOOLEAN Conical spring, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
+        Operation: DIFFERENCE, Object: BOOLEAN Conical spring GALA Cover
   #3 Name: Boolean.BOOLEAN PQ12 exteneed 0.3 mm tolerance, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
   #4 Name: Boolean.BOOLEAN Thumb attahment dowel, Type: BOOLEAN
@@ -2006,47 +2093,47 @@ Palm Inner body modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
   #10 Name: Boolean.BOOLEAN Gala Cover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Gala Cover
-  #11 Name: Triangulate, Type: TRIANGULATE
-  #12 Name: Boolean.BOOLEAN Thumb Dowel , Type: BOOLEAN
+  #11 Name: Boolean.BOOLEAN Thumb Dowel , Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Thumb Dowel
-  #13 Name: Boolean.BOOLEAN Thumb attachment dowel, Type: BOOLEAN
+  #12 Name: Boolean.BOOLEAN Thumb attachment dowel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb attachment dowel
-  #14 Name: Boolean.BOOLEAN Thumb pivot dowel top, Type: BOOLEAN
+  #13 Name: Boolean.BOOLEAN Thumb pivot dowel top, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel top
-  #15 Name: Boolean.BOOLEAN Thumb Pivot dowel Lower, Type: BOOLEAN
+  #14 Name: Boolean.BOOLEAN Thumb Pivot dowel Lower, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb Pivot dowel Lower
-  #16 Name: Boolean.BOOLEAN Thumb tendon channel, Type: BOOLEAN
+  #15 Name: Boolean.BOOLEAN Thumb tendon channel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon channel
-  #17 Name: Boolean.BOOLEAN Conical spring for palm inner, Type: BOOLEAN
+  #16 Name: Boolean.BOOLEAN Conical spring for palm inner, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Conical spring for palm inner
-  #18 Name: Boolean.BOOLEAN Tendon Channels, Type: BOOLEAN
+  #17 Name: Boolean.BOOLEAN Tendon Channels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon Channels
-  #19 Name: Boolean.BOOLEAN Thumb Ligament Cover, Type: BOOLEAN
+  #18 Name: Boolean.BOOLEAN Thumb Ligament Cover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb Ligament Cover 
-  #20 Name: Boolean.BOOLEAN Ligament cover M2 bolt hole, Type: BOOLEAN
+  #19 Name: Boolean.BOOLEAN Ligament cover M2 bolt hole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
-  #21 Name: Boolean.BOOLEAN Dowel Thumb Ligament Cover, Type: BOOLEAN
+  #20 Name: Boolean.BOOLEAN Dowel Thumb Ligament Cover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Dowel Thumb Ligament Cover
-  #22 Name: Boolean.BOOLEAN Finger Ligament , Type: BOOLEAN
+  #21 Name: Boolean.BOOLEAN Finger Ligament , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Finger Ligament
-  #23 Name: Boolean.BOOLEAN New Gala Cover M2 attachment point, Type: BOOLEAN
+  #22 Name: Boolean.BOOLEAN New Gala Cover M2 attachment point, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Gala Cover M2 attachment point
-  #24 Name: Boolean.BOOLEAN Back cover M2 bolt holes, Type: BOOLEAN
+  #23 Name: Boolean.BOOLEAN Back cover M2 bolt holes, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
-  #25 Name: Boolean.BOOLEAN Thumb ligament cover M2 Bolt Hole, Type: BOOLEAN
+  #24 Name: Boolean.BOOLEAN Thumb ligament cover M2 Bolt Hole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 Bolt Hole
-  #26 Name: Boolean.Thumb spring channel, Type: BOOLEAN
+  #25 Name: Boolean.Thumb spring channel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Thumb spring channel
-  #27 Name: Boolean.BOOLEAN thumb spring termination.001, Type: BOOLEAN
+  #26 Name: Boolean.BOOLEAN thumb spring termination.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb spring termination.001
-  #28 Name: Boolean.BOOLEAN Palm Riser Channels, Type: BOOLEAN
+  #27 Name: Boolean.BOOLEAN Palm Riser Channels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm Riser Channels
-  #29 Name: Boolean.BOOLEAN Screwdriver Leaver Point, Type: BOOLEAN
+  #28 Name: Boolean.BOOLEAN Screwdriver Leaver Point, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
-  #30 Name: Boolean.BOOLEAN Flat Faces (Ligament Cover), Type: BOOLEAN
+  #29 Name: Boolean.BOOLEAN Flat Faces (Ligament Cover), Type: BOOLEAN
         Operation: INTERSECT, Object: BOOLEAN Flat Faces (Ligament Cover)
-  #31 Name: Boolean.BOOLEAN Ligament Prongs Raised, Type: BOOLEAN
+  #30 Name: Boolean.BOOLEAN Ligament Prongs Raised, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Ligament Prongs Raised
+  #31 Name: Triangulate, Type: TRIANGULATE
 
 Name: Palm Inner phlange
 Palm Inner phlange Type: MESH
@@ -2184,6 +2271,16 @@ PCB Chestnut FLIPPED rotation: X3.1415932178497314 Y3.4835568267889763e-14 Z1.57
 PCB Chestnut FLIPPED scale: X1.0 Y1.0 Z1.0
 PCB Chestnut FLIPPED groups: None
 
+Name: Plane
+Plane Type: MESH
+Plane transform: X8.992074012756348 Y-73.18128967285156 Z-11.414033889770508
+Plane rotation: X0.0 Y0.0 Z0.0
+Plane scale: X1.0 Y1.0 Z1.0
+Plane groups: None
+Plane mesh: Plane
+Plane materials: Boolean difference, 
+Plane modifiers: None
+
 Name: Plane.001
 Plane.001 Type: MESH
 Plane.001 transform: X-0.002583591267466545 Y-1.0264699459075928 Z-0.3281930088996887
@@ -2196,13 +2293,30 @@ Plane.001 modifiers: None
 
 Name: PQ12 Caps
 PQ12 Caps Type: MESH
-PQ12 Caps transform: X-12.149959564208984 Y-91.01123046875 Z-1.3268370628356934
+PQ12 Caps transform: X-13.649959564208984 Y-80.01123046875 Z-3.0000030994415283
 PQ12 Caps rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 PQ12 Caps scale: X1.0 Y1.0 Z1.0
 PQ12 Caps groups: None
 PQ12 Caps mesh: PQ12 Caps
 PQ12 Caps materials: None
 PQ12 Caps modifiers: None
+
+Name: PQ12 End Cap
+PQ12 End Cap Type: MESH
+PQ12 End Cap transform: X-13.649959564208984 Y-80.01123046875 Z-3.0000030994415283
+PQ12 End Cap rotation: X0.0 Y0.0 Z0.0
+PQ12 End Cap scale: X1.0 Y1.0 Z1.0
+PQ12 End Cap groups: None
+PQ12 End Cap mesh: Cube.001
+PQ12 End Cap materials: None
+PQ12 End Cap modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: BOOLEAN PQ12 Dowel Hole, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PQ12 Dowel Hole
+  #3 Name: Boolean.BOOLEAN PQ12 Motor, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PQ12 Motor
+  #4 Name: Boolean.BOOLEAN PQ12 End Cap, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PQ12 End Cap
 
 Name: PQ12 extended
 PQ12 extended Type: MESH
@@ -2426,7 +2540,7 @@ Thumb Ligament Cover .002 modifiers:
 
 Name: Thumb ligament cover clip
 Thumb ligament cover clip Type: MESH
-Thumb ligament cover clip transform: X-13.561469078063965 Y-46.63640594482422 Z-12.030467987060547
+Thumb ligament cover clip transform: X-13.561469078063965 Y-67.4251480102539 Z-25.76943588256836
 Thumb ligament cover clip rotation: X0.0 Y-0.0 Z-0.17453289031982422
 Thumb ligament cover clip scale: X1.0 Y1.0 Z1.0
 Thumb ligament cover clip groups: Actuator Block, Thumb, 
@@ -2497,7 +2611,7 @@ Thumb Rotation Ref modifiers:
 
 Name: Thumb spring channel
 Thumb spring channel Type: MESH
-Thumb spring channel transform: X-7.900384426116943 Y-66.26840209960938 Z-13.853955268859863
+Thumb spring channel transform: X-8.260625839233398 Y-66.13247680664062 Z-13.725287437438965
 Thumb spring channel rotation: X1.5707968473434448 Y1.3962630033493042 Z1.396263599395752
 Thumb spring channel scale: X0.9999999403953552 Y0.9999998807907104 Z1.0000001192092896
 Thumb spring channel groups: None
@@ -2514,11 +2628,11 @@ Urethane Pad and inner palm (one mesh) transform: X9.0 Y-48.893592834472656 Z-2.
 Urethane Pad and inner palm (one mesh) rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 Urethane Pad and inner palm (one mesh) scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Urethane Pad and inner palm (one mesh) groups: Actuator Block, 
-Urethane Pad and inner palm (one mesh) mesh: Inner Palm
-Urethane Pad and inner palm (one mesh) materials: PLA White, 
+Urethane Pad and inner palm (one mesh) mesh: Hand/Palm Outer Surface
+Urethane Pad and inner palm (one mesh) materials: PLA, 
 Urethane Pad and inner palm (one mesh) modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
-        Thickness: 3.00, Offset: 1.00 
+        Thickness: 2.90, Offset: 1.00 
         Even thickness: True, High Quality Normals: True  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #3 Name: Boolean.BOOLEAN Thumb Ligament Cover, Type: BOOLEAN
