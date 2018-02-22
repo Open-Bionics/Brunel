@@ -2308,6 +2308,16 @@ Boolean Wedge Cut Outs.001 modifiers:
   #9 Name: Boolean.008, Type: BOOLEAN
         Operation: UNION, Object: Cube.034
 
+Name: BrunelRightHandLigament Cover 
+BrunelRightHandLigament Cover  Type: MESH
+BrunelRightHandLigament Cover  transform: X23.721206665039062 Y-50.3308219909668 Z-3.6104588508605957
+BrunelRightHandLigament Cover  rotation: X0.0 Y-0.0 Z-0.0872664526104927
+BrunelRightHandLigament Cover  scale: X1.0 Y1.0 Z1.0
+BrunelRightHandLigament Cover  groups: None
+BrunelRightHandLigament Cover  mesh: BrunelRightHandLigament Cover 
+BrunelRightHandLigament Cover  materials: None
+BrunelRightHandLigament Cover  modifiers: None
+
 Name: Circle
 Circle Type: MESH
 Circle transform: X32.17509460449219 Y80.0816650390625 Z13.95019817352295
@@ -2942,6 +2952,16 @@ Cylinder.007 mesh: Cylinder.011
 Cylinder.007 materials: Boolean difference.002, 
 Cylinder.007 modifiers: None
 
+Name: Cylinder.008
+Cylinder.008 Type: MESH
+Cylinder.008 transform: X0.1437540054321289 Y-7.295358657836914 Z4.498664379119873
+Cylinder.008 rotation: X0.0 Y0.0 Z0.0
+Cylinder.008 scale: X1.0 Y1.0 Z1.0
+Cylinder.008 groups: None
+Cylinder.008 mesh: Cylinder.001
+Cylinder.008 materials: Boolean difference, 
+Cylinder.008 modifiers: None
+
 Name: Distal Phalanx.001
 Distal Phalanx.001 Type: EMPTY
 Distal Phalanx.001 transform: X0.0 Y0.0 Z0.0
@@ -3073,6 +3093,28 @@ Distal Step.007 groups: None
 Distal Step.007 mesh: Cube.023
 Distal Step.007 materials: None
 Distal Step.007 modifiers: None
+
+Name: Extensor spring pin Distal.001
+Extensor spring pin Distal.001 Type: MESH
+Extensor spring pin Distal.001 transform: X0.0 Y32.047645568847656 Z3.027381658554077
+Extensor spring pin Distal.001 rotation: X0.0 Y0.0 Z0.0
+Extensor spring pin Distal.001 scale: X1.0 Y1.0 Z1.0
+Extensor spring pin Distal.001 groups: None
+Extensor spring pin Distal.001 mesh: BOOLEAN Spring pin.002
+Extensor spring pin Distal.001 materials: Boolean difference, 
+Extensor spring pin Distal.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
+
+Name: Extensor spring pin Proximal Distal.001
+Extensor spring pin Proximal Distal.001 Type: MESH
+Extensor spring pin Proximal Distal.001 transform: X0.0 Y11.999996185302734 Z3.3024001121520996
+Extensor spring pin Proximal Distal.001 rotation: X0.0 Y0.0 Z0.0
+Extensor spring pin Proximal Distal.001 scale: X1.0 Y1.0 Z1.0
+Extensor spring pin Proximal Distal.001 groups: None
+Extensor spring pin Proximal Distal.001 mesh: BOOLEAN Spring pin.001
+Extensor spring pin Proximal Distal.001 materials: Boolean difference, 
+Extensor spring pin Proximal Distal.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
 
 Name: Finger cut out.000
 Finger cut out.000 Type: MESH
@@ -3337,6 +3379,16 @@ HANDLE distal fingertip 4 rotation: X0.0 Y0.0 Z0.0
 HANDLE distal fingertip 4 scale: X1.0 Y1.0 Z1.0
 HANDLE distal fingertip 4 groups: None
 HANDLE distal fingertip 4 parent: HANDLE distal base 4
+
+Name: HANDLE Distal Joint.000
+HANDLE Distal Joint.000 Type: MESH
+HANDLE Distal Joint.000 transform: X0.0 Y39.999996185302734 Z0.0
+HANDLE Distal Joint.000 rotation: X0.0 Y0.0 Z0.0
+HANDLE Distal Joint.000 scale: X1.0 Y1.0 Z1.0
+HANDLE Distal Joint.000 groups: None
+HANDLE Distal Joint.000 mesh: HANDLE Distal Joint.001
+HANDLE Distal Joint.000 materials: HANDLE.001, 
+HANDLE Distal Joint.000 modifiers: None
 
 Name: HANDLE Distal Joint.001
 HANDLE Distal Joint.001 Type: MESH
@@ -4373,7 +4425,7 @@ Inner distal.001 modifiers:
   #11 Name: top riser, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.001
   #12 Name: Boolean.BOOLEAN Spring Dowel Pins.003, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Spring Dowel Pins.003
+        Operation: DIFFERENCE, Object: Extensor spring pin Distal.001
   #13 Name: Boolean.LABEL identifier distal flat.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.001
   #14 Name: Boolean.Riser Chanel.000, Type: BOOLEAN
@@ -5165,8 +5217,8 @@ Inner Proximal.001 modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #4 Name: BooleanUnion.M2 bolt hole, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN UNION proximal M2 Bolt Hole.001
-  #5 Name: Boolean.BOOLEAN Spring Dowel Pins.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Spring Dowel Pins.001
+  #5 Name: Boolean.Extensor spring pin Proximal Distal.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Extensor spring pin Proximal Distal.001
   #6 Name: BooleanUnion.Tendon channels, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN UNION Tendon channels proximal.001
   #7 Name: Boolean.ligament, Type: BOOLEAN
@@ -6748,6 +6800,16 @@ Top cover proximal.004 modifiers:
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.004
   #8 Name: Boolean: Cross Section , Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cube.038
+
+Name: Vert
+Vert Type: MESH
+Vert transform: X0.0 Y13.049995422363281 Z3.3024001121520996
+Vert rotation: X0.0 Y-0.0 Z0.0
+Vert scale: X1.0 Y1.0 Z1.0
+Vert groups: None
+Vert mesh: Vert
+Vert materials: None
+Vert modifiers: None
 
 Name: xsec1
 xsec1 Type: MESH
