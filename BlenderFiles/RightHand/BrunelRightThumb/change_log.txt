@@ -532,6 +532,36 @@ MOULD top modifiers:
   #4 Name: Boolean.003, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Riser channels
 
+Name: OB1 4mL Thumb 0acbd3d Thumb phalanx Distal
+OB1 4mL Thumb 0acbd3d Thumb phalanx Distal Type: MESH
+OB1 4mL Thumb 0acbd3d Thumb phalanx Distal transform: X11.416796684265137 Y41.082096099853516 Z0.7855939865112305
+OB1 4mL Thumb 0acbd3d Thumb phalanx Distal rotation: X-0.006057920400053263 Y0.056397780776023865 Z-0.0007746713818050921
+OB1 4mL Thumb 0acbd3d Thumb phalanx Distal scale: X1.0 Y1.0 Z1.0
+OB1 4mL Thumb 0acbd3d Thumb phalanx Distal groups: None
+OB1 4mL Thumb 0acbd3d Thumb phalanx Distal mesh: OB1 4mL Thumb 0acbd3d Thumb phalanx Distal
+OB1 4mL Thumb 0acbd3d Thumb phalanx Distal materials: None
+OB1 4mL Thumb 0acbd3d Thumb phalanx Distal modifiers: None
+
+Name: OB1 4mL Thumb 9d5dc57Thumb distal joint cover Distal
+OB1 4mL Thumb 9d5dc57Thumb distal joint cover Distal Type: MESH
+OB1 4mL Thumb 9d5dc57Thumb distal joint cover Distal transform: X11.66411304473877 Y40.685699462890625 Z0.8716295957565308
+OB1 4mL Thumb 9d5dc57Thumb distal joint cover Distal rotation: X-0.006057920400053263 Y0.056397780776023865 Z-0.0007746713818050921
+OB1 4mL Thumb 9d5dc57Thumb distal joint cover Distal scale: X1.0 Y1.0 Z1.0
+OB1 4mL Thumb 9d5dc57Thumb distal joint cover Distal groups: None
+OB1 4mL Thumb 9d5dc57Thumb distal joint cover Distal mesh: OB1 4mL Thumb 9d5dc57Thumb distal joint cover Distal
+OB1 4mL Thumb 9d5dc57Thumb distal joint cover Distal materials: None
+OB1 4mL Thumb 9d5dc57Thumb distal joint cover Distal modifiers: None
+
+Name: OB1 4mL ThumbThumb urethane pad
+OB1 4mL ThumbThumb urethane pad Type: MESH
+OB1 4mL ThumbThumb urethane pad transform: X0.0 Y0.0 Z0.0
+OB1 4mL ThumbThumb urethane pad rotation: X0.0 Y0.0 Z0.0
+OB1 4mL ThumbThumb urethane pad scale: X1.0 Y1.0 Z1.0
+OB1 4mL ThumbThumb urethane pad groups: None
+OB1 4mL ThumbThumb urethane pad mesh: OB1 4mL ThumbThumb urethane pad
+OB1 4mL ThumbThumb urethane pad materials: None
+OB1 4mL ThumbThumb urethane pad modifiers: None
+
 Name: Riser channels
 Riser channels Type: MESH
 Riser channels transform: X10.582950592041016 Y40.646541595458984 Z-7.9659576416015625
