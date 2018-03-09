@@ -626,6 +626,18 @@ BOOLEAN LABEL Open Bionics modifiers:
   #2 Name: Solidify, Type: SOLIDIFY
         Thickness: 1.50, Offset: 0.50 
         Even thickness: True, High Quality Normals: True
+Name: BOOLEAN Ligament anchor prongs
+BOOLEAN Ligament anchor prongs Type: MESH
+BOOLEAN Ligament anchor prongs transform: X-5.38040018081665 Y-59.86396408081055 Z-13.789163589477539
+BOOLEAN Ligament anchor prongs rotation: X0.0 Y0.0 Z-0.1780235767364502
+BOOLEAN Ligament anchor prongs scale: X1.0000005960464478 Y1.0 Z1.0
+BOOLEAN Ligament anchor prongs groups: None
+BOOLEAN Ligament anchor prongs mesh: Plane.006
+BOOLEAN Ligament anchor prongs materials: None
+BOOLEAN Ligament anchor prongs modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 1.00, Offset: 1.00 
+        Even thickness: False, High Quality Normals: False
 Name: BOOLEAN Ligament cover M2 bolt hole
 BOOLEAN Ligament cover M2 bolt hole Type: MESH
 BOOLEAN Ligament cover M2 bolt hole transform: X9.25 Y-14.500003814697266 Z1.8731662034988403
@@ -1222,7 +1234,7 @@ BOOLEAN Thumb Ligament Cover  modifiers:
 
 Name: BOOLEAN Thumb ligament cover clip
 BOOLEAN Thumb ligament cover clip Type: MESH
-BOOLEAN Thumb ligament cover clip transform: X3.585198402404785 Y-78.88968658447266 Z-11.990355491638184
+BOOLEAN Thumb ligament cover clip transform: X0.9801771640777588 Y-78.43441009521484 Z-13.024401664733887
 BOOLEAN Thumb ligament cover clip rotation: X3.6120995083877006e-09 Y9.678590151551703e-10 Z-0.1745329201221466
 BOOLEAN Thumb ligament cover clip scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 BOOLEAN Thumb ligament cover clip groups: Actuator Block, Thumb, 
@@ -1235,7 +1247,7 @@ BOOLEAN Thumb ligament cover clip modifiers:
   #3 Name: Boolean.ElasticClamp, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
   #4 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb spring termination.001
+        Operation: DIFFERENCE, Object: None
   #5 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cube.002
 
@@ -1309,15 +1321,15 @@ BOOLEAN Thumb spring termination mesh: BOOLEAN Thumb spring termination
 BOOLEAN Thumb spring termination materials: Boolean difference.005, 
 BOOLEAN Thumb spring termination modifiers: None
 
-Name: BOOLEAN Thumb spring termination.001
-BOOLEAN Thumb spring termination.001 Type: MESH
-BOOLEAN Thumb spring termination.001 transform: X5.002194404602051 Y-68.35335540771484 Z-10.658208847045898
-BOOLEAN Thumb spring termination.001 rotation: X7.11357817095859e-09 Y3.1415932178497314 Z0.08726759999990463
-BOOLEAN Thumb spring termination.001 scale: X0.9999998211860657 Y0.9999998211860657 Z1.0
-BOOLEAN Thumb spring termination.001 groups: None
-BOOLEAN Thumb spring termination.001 mesh: BOOLEAN Thumb spring termination.001
-BOOLEAN Thumb spring termination.001 materials: Boolean difference.005, 
-BOOLEAN Thumb spring termination.001 modifiers: None
+Name: BOOLEAN thumb spring termination.001
+BOOLEAN thumb spring termination.001 Type: MESH
+BOOLEAN thumb spring termination.001 transform: X3.2281227111816406 Y-67.97628021240234 Z-16.11899185180664
+BOOLEAN thumb spring termination.001 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN thumb spring termination.001 scale: X0.10500000417232513 Y0.10500000417232513 Z0.2500000298023224
+BOOLEAN thumb spring termination.001 groups: None
+BOOLEAN thumb spring termination.001 mesh: Cylinder.003
+BOOLEAN thumb spring termination.001 materials: Boolean difference, 
+BOOLEAN thumb spring termination.001 modifiers: None
 
 Name: BOOLEAN Thumb swept area for MOULD Top
 BOOLEAN Thumb swept area for MOULD Top Type: MESH
@@ -1362,6 +1374,16 @@ BOOLEAN Thumb tendon termination M2 bolt hole parent: Thumb
 BOOLEAN Thumb tendon termination M2 bolt hole mesh: BOOLEAN Thumb tendon termination M2 bolt hole
 BOOLEAN Thumb tendon termination M2 bolt hole materials: Boolean difference.003, 
 BOOLEAN Thumb tendon termination M2 bolt hole modifiers: None
+
+Name: BOOLEAN UNION Ligament anchor prongs
+BOOLEAN UNION Ligament anchor prongs Type: MESH
+BOOLEAN UNION Ligament anchor prongs transform: X-5.38040018081665 Y-59.86396408081055 Z-13.789163589477539
+BOOLEAN UNION Ligament anchor prongs rotation: X0.0 Y0.0 Z-0.1780235767364502
+BOOLEAN UNION Ligament anchor prongs scale: X1.0000005960464478 Y1.0 Z1.0
+BOOLEAN UNION Ligament anchor prongs groups: None
+BOOLEAN UNION Ligament anchor prongs mesh: Plane.004
+BOOLEAN UNION Ligament anchor prongs materials: None
+BOOLEAN UNION Ligament anchor prongs modifiers: None
 
 Name: BOOLEAN UNION proximal M2 Bolt Hole
 BOOLEAN UNION proximal M2 Bolt Hole Type: MESH
@@ -1504,6 +1526,66 @@ BOOLEAN Wrist M2 connection points  groups: None
 BOOLEAN Wrist M2 connection points  mesh: BOOLEAN M2 Bolt Hole.003
 BOOLEAN Wrist M2 connection points  materials: Boolean difference, 
 BOOLEAN Wrist M2 connection points  modifiers: None
+
+Name: BrunelThumbPlane
+BrunelThumbPlane Type: MESH
+BrunelThumbPlane transform: X-7.311799049377441 Y-59.52640914916992 Z-15.861495018005371
+BrunelThumbPlane rotation: X-0.0034443449694663286 Y-0.002908353926613927 Z-1.7484889030456543
+BrunelThumbPlane scale: X1.0 Y1.0 Z1.0
+BrunelThumbPlane groups: None
+BrunelThumbPlane mesh: BrunelThumbPlane
+BrunelThumbPlane materials: None
+BrunelThumbPlane modifiers: None
+
+Name: BrunelThumbThumb
+BrunelThumbThumb Type: MESH
+BrunelThumbThumb transform: X-10.38058090209961 Y-65.57479858398438 Z-16.441970825195312
+BrunelThumbThumb rotation: X0.0 Y-0.0 Z1.3926265239715576
+BrunelThumbThumb scale: X1.0 Y1.0 Z1.0
+BrunelThumbThumb groups: None
+BrunelThumbThumb mesh: BrunelThumbThumb
+BrunelThumbThumb materials: None
+BrunelThumbThumb modifiers: None
+
+Name: BrunelThumbThumb Cover
+BrunelThumbThumb Cover Type: MESH
+BrunelThumbThumb Cover transform: X-10.38058090209961 Y-65.57479858398438 Z-16.441970825195312
+BrunelThumbThumb Cover rotation: X0.0 Y-0.0 Z1.3926265239715576
+BrunelThumbThumb Cover scale: X1.0 Y1.0 Z1.0
+BrunelThumbThumb Cover groups: None
+BrunelThumbThumb Cover mesh: BrunelThumbThumb Cover
+BrunelThumbThumb Cover materials: None
+BrunelThumbThumb Cover modifiers: None
+
+Name: BrunelThumbThumb ligament 
+BrunelThumbThumb ligament  Type: MESH
+BrunelThumbThumb ligament  transform: X-10.281167984008789 Y-65.57601165771484 Z-16.442218780517578
+BrunelThumbThumb ligament  rotation: X0.0 Y-0.0 Z-0.178169846534729
+BrunelThumbThumb ligament  scale: X1.0 Y1.0 Z1.0
+BrunelThumbThumb ligament  groups: None
+BrunelThumbThumb ligament  mesh: BrunelThumbThumb ligament 
+BrunelThumbThumb ligament  materials: None
+BrunelThumbThumb ligament  modifiers: None
+
+Name: BrunelThumbThumb Ligament Clamp
+BrunelThumbThumb Ligament Clamp Type: MESH
+BrunelThumbThumb Ligament Clamp transform: X-17.328420639038086 Y-64.32364654541016 Z-14.922986030578613
+BrunelThumbThumb Ligament Clamp rotation: X0.0 Y-0.0 Z1.5031614303588867
+BrunelThumbThumb Ligament Clamp scale: X1.0 Y1.0 Z1.0
+BrunelThumbThumb Ligament Clamp groups: None
+BrunelThumbThumb Ligament Clamp mesh: BrunelThumbThumb Ligament Clamp
+BrunelThumbThumb Ligament Clamp materials: None
+BrunelThumbThumb Ligament Clamp modifiers: None
+
+Name: BrunelThumbThumb urethane pad
+BrunelThumbThumb urethane pad Type: MESH
+BrunelThumbThumb urethane pad transform: X-9.674467086791992 Y-64.98066711425781 Z-14.572134971618652
+BrunelThumbThumb urethane pad rotation: X0.16559156775474548 Y1.570796251296997 Z0.0
+BrunelThumbThumb urethane pad scale: X1.0 Y1.0 Z1.0
+BrunelThumbThumb urethane pad groups: None
+BrunelThumbThumb urethane pad mesh: BrunelThumbThumb urethane pad
+BrunelThumbThumb urethane pad materials: None
+BrunelThumbThumb urethane pad modifiers: None
 
 Name: CHEETAH Logo
 CHEETAH Logo Type: MESH
@@ -2161,7 +2243,7 @@ Palm Inner body modifiers:
   #26 Name: Boolean.Thumb spring channel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Thumb spring channel
   #27 Name: Boolean.BOOLEAN thumb spring termination.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb spring termination.001
+        Operation: DIFFERENCE, Object: None
   #28 Name: Boolean.BOOLEAN Palm Riser Channels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm Riser Channels
   #29 Name: Boolean.BOOLEAN Flat Faces (Ligament Cover), Type: BOOLEAN
@@ -2170,6 +2252,8 @@ Palm Inner body modifiers:
         Operation: UNION, Object: BOOLEAN Ligament Prongs Raised
   #31 Name: Boolean.BOOLEAN Wrist M2 connection points , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Wrist M2 connection points 
+  #32 Name: Boolean.BOOLEAN Ligament anchor prongs, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Ligament anchor prongs
 
 Name: Palm Inner phlange
 Palm Inner phlange Type: MESH
@@ -2577,11 +2661,13 @@ Thumb Ligament Cover  modifiers:
   #6 Name: Boolean.BOOLEAN Thumb ligament elastic clamp, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
   #7 Name: Boolean.BOOLEAN thumb spring termination.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb spring termination.001
+        Operation: DIFFERENCE, Object: BOOLEAN thumb spring termination.001
   #8 Name: Boolean.Thumb spring channel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Thumb spring channel
   #9 Name: Boolean.BOOLEAN Thumb ligament cover clip, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover clip
+  #10 Name: Boolean.BOOLEAN Ligament anchor prongs, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN UNION Ligament anchor prongs
 
 Name: Thumb Ligament Cover .001
 Thumb Ligament Cover .001 Type: MESH
@@ -2610,7 +2696,7 @@ Thumb Ligament Cover .002 modifiers:
 
 Name: Thumb ligament cover clip
 Thumb ligament cover clip Type: MESH
-Thumb ligament cover clip transform: X-13.561469078063965 Y-67.4251480102539 Z-25.76943588256836
+Thumb ligament cover clip transform: X-13.561469078063965 Y-67.4251480102539 Z-15.07447624206543
 Thumb ligament cover clip rotation: X0.0 Y-0.0 Z-0.17453289031982422
 Thumb ligament cover clip scale: X1.0 Y1.0 Z1.0
 Thumb ligament cover clip groups: Actuator Block, Thumb, 
