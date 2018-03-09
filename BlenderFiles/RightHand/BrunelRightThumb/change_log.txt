@@ -1,3 +1,25 @@
+Name: BOOLEAN 1.4mm spring termonation plinth 
+BOOLEAN 1.4mm spring termonation plinth  Type: MESH
+BOOLEAN 1.4mm spring termonation plinth  transform: X-1.0081299543380737 Y5.882246494293213 Z3.7783737182617188
+BOOLEAN 1.4mm spring termonation plinth  rotation: X0.0 Y0.0 Z0.0
+BOOLEAN 1.4mm spring termonation plinth  scale: X0.17500001192092896 Y0.17500001192092896 Z0.5
+BOOLEAN 1.4mm spring termonation plinth  groups: None
+BOOLEAN 1.4mm spring termonation plinth  mesh: Cylinder.011
+BOOLEAN 1.4mm spring termonation plinth  materials: None
+BOOLEAN 1.4mm spring termonation plinth  modifiers: None
+
+Name: BOOLEAN 1.4mm spring termonation plinth +1mm tolerance
+BOOLEAN 1.4mm spring termonation plinth +1mm tolerance Type: MESH
+BOOLEAN 1.4mm spring termonation plinth +1mm tolerance transform: X-1.0081299543380737 Y5.882246494293213 Z3.7783737182617188
+BOOLEAN 1.4mm spring termonation plinth +1mm tolerance rotation: X0.0 Y0.0 Z0.0
+BOOLEAN 1.4mm spring termonation plinth +1mm tolerance scale: X0.17500001192092896 Y0.17500001192092896 Z0.5
+BOOLEAN 1.4mm spring termonation plinth +1mm tolerance groups: None
+BOOLEAN 1.4mm spring termonation plinth +1mm tolerance mesh: Cylinder.011
+BOOLEAN 1.4mm spring termonation plinth +1mm tolerance materials: None
+BOOLEAN 1.4mm spring termonation plinth +1mm tolerance modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 1.00, Offset: 1.00 
+        Even thickness: False, High Quality Normals: False
 Name: BOOLEAN Cover Internal M2 Clearance 
 BOOLEAN Cover Internal M2 Clearance  Type: MESH
 BOOLEAN Cover Internal M2 Clearance  transform: X0.2906527519226074 Y41.22807312011719 Z1.3429985046386719
@@ -21,7 +43,7 @@ BOOLEAN Ligament extra thumb cut modifiers: None
 Name: BOOLEAN M2 Bolt Hole
 BOOLEAN M2 Bolt Hole Type: MESH
 BOOLEAN M2 Bolt Hole transform: X1.486130599914759e-06 Y7.776426315307617 Z-4.057490348815918
-BOOLEAN M2 Bolt Hole rotation: X-0.2617993652820587 Y-4.2022293200716376e-08 Z1.1259840171362612e-08
+BOOLEAN M2 Bolt Hole rotation: X0.0 Y-4.2022293200716376e-08 Z1.1259840171362612e-08
 BOOLEAN M2 Bolt Hole scale: X1.0 Y0.9999998211860657 Z1.0
 BOOLEAN M2 Bolt Hole groups: Thumb, 
 BOOLEAN M2 Bolt Hole mesh: BOOLEAN M2 Bolt Hole
@@ -37,6 +59,16 @@ BOOLEAN M2 Bolt Hole.001 groups: Thumb,
 BOOLEAN M2 Bolt Hole.001 mesh: BOOLEAN M2 Bolt Hole.001
 BOOLEAN M2 Bolt Hole.001 materials: Boolean difference, 
 BOOLEAN M2 Bolt Hole.001 modifiers: None
+
+Name: BOOLEAN M2 Bolt Hole.002
+BOOLEAN M2 Bolt Hole.002 Type: MESH
+BOOLEAN M2 Bolt Hole.002 transform: X13.98777961730957 Y4.790270805358887 Z-2.599039316177368
+BOOLEAN M2 Bolt Hole.002 rotation: X0.0 Y-4.2022293200716376e-08 Z1.1259840171362612e-08
+BOOLEAN M2 Bolt Hole.002 scale: X1.0 Y0.9999998211860657 Z1.0
+BOOLEAN M2 Bolt Hole.002 groups: Thumb, 
+BOOLEAN M2 Bolt Hole.002 mesh: BOOLEAN M2 Bolt Hole.002
+BOOLEAN M2 Bolt Hole.002 materials: Boolean difference, 
+BOOLEAN M2 Bolt Hole.002 modifiers: None
 
 Name: BOOLEAN M3 bolt hole
 BOOLEAN M3 bolt hole Type: MESH
@@ -68,6 +100,17 @@ BOOLEAN Riser Channels mesh: Cylinder.006
 BOOLEAN Riser Channels materials: Boolean difference, 
 BOOLEAN Riser Channels modifiers: None
 
+Name: BOOLEAN Spring Channel
+BOOLEAN Spring Channel Type: MESH
+BOOLEAN Spring Channel transform: X-1.019544005393982 Y-2.926724433898926 Z4.323268890380859
+BOOLEAN Spring Channel rotation: X1.5707963705062866 Y-0.0 Z0.0
+BOOLEAN Spring Channel scale: X0.15000002086162567 Y0.15000002086162567 Z1.0
+BOOLEAN Spring Channel groups: None
+BOOLEAN Spring Channel mesh: Cylinder.008
+BOOLEAN Spring Channel materials: Boolean difference, 
+BOOLEAN Spring Channel modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
 Name: BOOLEAN Spring cut out
 BOOLEAN Spring cut out Type: MESH
 BOOLEAN Spring cut out transform: X0.0 Y0.2491956353187561 Z3.7614972591400146
@@ -77,6 +120,16 @@ BOOLEAN Spring cut out groups: None
 BOOLEAN Spring cut out mesh: Cylinder.004
 BOOLEAN Spring cut out materials: Boolean difference, 
 BOOLEAN Spring cut out modifiers: None
+
+Name: BOOLEAN Spring termination point
+BOOLEAN Spring termination point Type: MESH
+BOOLEAN Spring termination point transform: X-1.0081286430358887 Y5.882246494293213 Z0.1271810531616211
+BOOLEAN Spring termination point rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Spring termination point scale: X1.0 Y1.0 Z1.0
+BOOLEAN Spring termination point groups: None
+BOOLEAN Spring termination point mesh: Cylinder.003
+BOOLEAN Spring termination point materials: Boolean difference, 
+BOOLEAN Spring termination point modifiers: None
 
 Name: BOOLEAN Syringe
 BOOLEAN Syringe Type: MESH
@@ -168,6 +221,30 @@ BOOLEAN Thumb ligament for thumb.001 materials: Boolean difference,
 BOOLEAN Thumb ligament for thumb.001 modifiers: 
   #1 Name: Displace, Type: DISPLACE
 
+Name: BOOLEAN Thumb Ligament Plane
+BOOLEAN Thumb Ligament Plane Type: MESH
+BOOLEAN Thumb Ligament Plane transform: X6.740169525146484 Y0.705286979675293 Z3.9950666427612305
+BOOLEAN Thumb Ligament Plane rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Thumb Ligament Plane scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb Ligament Plane groups: None
+BOOLEAN Thumb Ligament Plane mesh: Plane.004
+BOOLEAN Thumb Ligament Plane materials: None
+BOOLEAN Thumb Ligament Plane modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.50, Offset: 1.00 
+        Even thickness: False, High Quality Normals: False
+Name: BOOLEAN Thumb Ligament Plane.001
+BOOLEAN Thumb Ligament Plane.001 Type: MESH
+BOOLEAN Thumb Ligament Plane.001 transform: X6.740169525146484 Y0.8891887664794922 Z3.1529130935668945
+BOOLEAN Thumb Ligament Plane.001 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Thumb Ligament Plane.001 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb Ligament Plane.001 groups: None
+BOOLEAN Thumb Ligament Plane.001 mesh: Plane.006
+BOOLEAN Thumb Ligament Plane.001 materials: Boolean difference, 
+BOOLEAN Thumb Ligament Plane.001 modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 1.00, Offset: 1.00 
+        Even thickness: False, High Quality Normals: False
 Name: BOOLEAN Thumb tendon channel for thumb
 BOOLEAN Thumb tendon channel for thumb Type: MESH
 BOOLEAN Thumb tendon channel for thumb transform: X-7.152557373046875e-06 Y-4.76837158203125e-07 Z2.000000476837158
@@ -585,18 +662,6 @@ Plane mesh: Plane.003
 Plane materials: Boolean difference, 
 Plane modifiers: None
 
-Name: Plane.001
-Plane.001 Type: MESH
-Plane.001 transform: X6.740169525146484 Y0.705286979675293 Z3.9950666427612305
-Plane.001 rotation: X0.0 Y0.0 Z0.0
-Plane.001 scale: X1.0 Y1.0 Z1.0
-Plane.001 groups: None
-Plane.001 mesh: Plane.004
-Plane.001 materials: None
-Plane.001 modifiers: 
-  #1 Name: Solidify, Type: SOLIDIFY
-        Thickness: 0.50, Offset: 1.00 
-        Even thickness: False, High Quality Normals: False
 Name: Riser channels
 Riser channels Type: MESH
 Riser channels transform: X10.582950592041016 Y40.646541595458984 Z-7.9659576416015625
@@ -648,10 +713,16 @@ Thumb modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb Cover 0.2mm Clearance
   #10 Name: Boolean.BOOLEAN Riser Channels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Riser Channels
-  #11 Name: Boolean.BOOLEAN Thumb Ligament Clamo , Type: BOOLEAN
+  #11 Name: Boolean.BOOLEAN Thumb Ligament Clamp, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb Ligament Clamp
   #12 Name: Boolean.ThumbLigamentForThumb.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Plane
+  #13 Name: Boolean.BOOLEAN 1.4mm spring termonation plinth , Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN 1.4mm spring termonation plinth 
+  #14 Name: Boolean.BOOLEAN Spring termination point, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Spring termination point
+  #15 Name: Boolean.BOOLEAN M2 Bolt Hole.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole.002
 
 Name: Thumb Cover
 Thumb Cover Type: MESH
@@ -694,7 +765,13 @@ Thumb ligament  mesh: Thumb Ligament
 Thumb ligament  materials: Ninjalfex, 
 Thumb ligament  modifiers: 
   #1 Name: Boolean.BOOLEAN M2 Bolt Hole.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole.001
+        Operation: DIFFERENCE, Object: BOOLEAN Spring termination point
+  #2 Name: Boolean.BOOLEAN Thumb Ligament Plane.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb Ligament Plane.001
+  #3 Name: Boolean.BOOLEAN 1.4mm spring termonation plinth +1mm tolerance, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN 1.4mm spring termonation plinth +1mm tolerance
+  #4 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole.002
 
 Name: Thumb ligament bent
 Thumb ligament bent Type: MESH
@@ -720,13 +797,21 @@ Thumb Ligament Clamp rotation: X0.0 Y-0.0 Z0.10866160690784454
 Thumb Ligament Clamp scale: X1.0 Y1.0 Z1.0
 Thumb Ligament Clamp groups: None
 Thumb Ligament Clamp mesh: Plane.002
-Thumb Ligament Clamp materials: Urethane, 
+Thumb Ligament Clamp materials: PLA White, 
 Thumb Ligament Clamp modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Boolean.TARGET Thumb, Type: BOOLEAN
         Operation: INTERSECT, Object: TARGET Thumb
-  #3 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Plane.001
+  #3 Name: Boolean.BOOLEAN Thumb Ligament Plane, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb Ligament Plane
+  #4 Name: Boolean.BOOLEAN Spring Channel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Spring Channel
+  #5 Name: Boolean.BOOLEAN M2 Bolt Hole.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole.002
+  #6 Name: Boolean.BOOLEAN Spring termination point, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Spring termination point
+  #7 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN 1.4mm spring termonation plinth 
 
 Name: Thumb ligament cover for thumb
 Thumb ligament cover for thumb Type: MESH
