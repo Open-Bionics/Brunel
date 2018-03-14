@@ -18,7 +18,7 @@ BOOLEAN 1.4mm spring termonation plinth +1mm tolerance mesh: Cylinder.011
 BOOLEAN 1.4mm spring termonation plinth +1mm tolerance materials: None
 BOOLEAN 1.4mm spring termonation plinth +1mm tolerance modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
-        Thickness: 1.50, Offset: 1.00 
+        Thickness: 2.00, Offset: 1.00 
         Even thickness: False, High Quality Normals: False
 Name: BOOLEAN Cover Internal M2 Clearance 
 BOOLEAN Cover Internal M2 Clearance  Type: MESH
