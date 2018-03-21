@@ -103,7 +103,7 @@ BOOLEAN M3 bolt hole.001 modifiers: None
 
 Name: BOOLEAN Riser Channels
 BOOLEAN Riser Channels Type: MESH
-BOOLEAN Riser Channels transform: X5.2893829345703125 Y36.781471252441406 Z5.214756011962891
+BOOLEAN Riser Channels transform: X12.104170799255371 Y40.15576934814453 Z5.214756011962891
 BOOLEAN Riser Channels rotation: X-1.5703626871109009 Y-0.935325026512146 Z0.9028912782669067
 BOOLEAN Riser Channels scale: X0.1250000149011612 Y0.1250000149011612 Z1.0
 BOOLEAN Riser Channels groups: None
@@ -143,8 +143,8 @@ BOOLEAN Syringe modifiers: None
 
 Name: BOOLEAN Thumb Cover 
 BOOLEAN Thumb Cover  Type: MESH
-BOOLEAN Thumb Cover  transform: X7.5934343338012695 Y48.668251037597656 Z0.0
-BOOLEAN Thumb Cover  rotation: X1.5707963705062866 Y-0.0 Z0.7853981852531433
+BOOLEAN Thumb Cover  transform: X11.158498764038086 Y53.10859680175781 Z0.0
+BOOLEAN Thumb Cover  rotation: X1.5707963705062866 Y-0.0 Z0.5859454274177551
 BOOLEAN Thumb Cover  scale: X1.0 Y1.0 Z1.0
 BOOLEAN Thumb Cover  groups: None
 BOOLEAN Thumb Cover  mesh: Plane.001
@@ -155,8 +155,8 @@ BOOLEAN Thumb Cover  modifiers:
 
 Name: BOOLEAN Thumb Cover 0.2mm Clearance
 BOOLEAN Thumb Cover 0.2mm Clearance Type: MESH
-BOOLEAN Thumb Cover 0.2mm Clearance transform: X7.593430042266846 Y48.668296813964844 Z0.0
-BOOLEAN Thumb Cover 0.2mm Clearance rotation: X1.5707963705062866 Y-0.0 Z0.7853981852531433
+BOOLEAN Thumb Cover 0.2mm Clearance transform: X11.15850830078125 Y53.10857391357422 Z0.0
+BOOLEAN Thumb Cover 0.2mm Clearance rotation: X1.5707963705062866 Y-0.0 Z0.5859462022781372
 BOOLEAN Thumb Cover 0.2mm Clearance scale: X1.0 Y1.0 Z1.0
 BOOLEAN Thumb Cover 0.2mm Clearance groups: None
 BOOLEAN Thumb Cover 0.2mm Clearance mesh: Plane.001
@@ -169,8 +169,8 @@ BOOLEAN Thumb Cover 0.2mm Clearance modifiers:
 
 Name: BOOLEAN Thumb Cover M2 Bolt Hole 
 BOOLEAN Thumb Cover M2 Bolt Hole  Type: MESH
-BOOLEAN Thumb Cover M2 Bolt Hole  transform: X9.749602317810059 Y45.99051284790039 Z0.09532958269119263
-BOOLEAN Thumb Cover M2 Bolt Hole  rotation: X1.6165367364883423 Y0.9121025800704956 Z-2.1824474334716797
+BOOLEAN Thumb Cover M2 Bolt Hole  transform: X13.388940811157227 Y48.45599365234375 Z0.23580120503902435
+BOOLEAN Thumb Cover M2 Bolt Hole  rotation: X1.6165367364883423 Y0.9121025800704956 Z-2.4222095012664795
 BOOLEAN Thumb Cover M2 Bolt Hole  scale: X1.0 Y0.9999994039535522 Z0.9999999403953552
 BOOLEAN Thumb Cover M2 Bolt Hole  groups: Thumb, 
 BOOLEAN Thumb Cover M2 Bolt Hole  mesh: BOOLEAN Thumb tendon termination M2 bolt hole.001
@@ -259,8 +259,8 @@ BOOLEAN Thumb tendon channel for thumb modifiers:
 
 Name: BOOLEAN Thumb tendon termination M2 bolt hole
 BOOLEAN Thumb tendon termination M2 bolt hole Type: MESH
-BOOLEAN Thumb tendon termination M2 bolt hole transform: X8.176019668579102 Y43.18788528442383 Z-7.505345251956896e-07
-BOOLEAN Thumb tendon termination M2 bolt hole rotation: X1.6165367364883423 Y0.9121025800704956 Z-2.1824474334716797
+BOOLEAN Thumb tendon termination M2 bolt hole transform: X11.194828033447266 Y46.107215881347656 Z0.14047092199325562
+BOOLEAN Thumb tendon termination M2 bolt hole rotation: X1.6165367364883423 Y0.9121025800704956 Z-2.4222095012664795
 BOOLEAN Thumb tendon termination M2 bolt hole scale: X1.0 Y0.9999994039535522 Z0.9999999403953552
 BOOLEAN Thumb tendon termination M2 bolt hole groups: Thumb, 
 BOOLEAN Thumb tendon termination M2 bolt hole mesh: BOOLEAN Thumb tendon termination M2 bolt hole
@@ -712,7 +712,7 @@ TARGET Thumb transform: X-7.62939453125e-06 Y-7.152557373046875e-07 Z0.0
 TARGET Thumb rotation: X0.0 Y0.0 Z0.0
 TARGET Thumb scale: X0.9999999403953552 Y0.9999998211860657 Z0.9999999403953552
 TARGET Thumb groups: Thumb, 
-TARGET Thumb mesh: Thumb.000
+TARGET Thumb mesh: Thumb.002
 TARGET Thumb materials: PLA White, 
 TARGET Thumb modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
@@ -725,7 +725,7 @@ Thumb transform: X-7.62939453125e-06 Y-7.152557373046875e-07 Z0.0
 Thumb rotation: X0.0 Y0.0 Z0.0
 Thumb scale: X0.9999999403953552 Y0.9999998211860657 Z0.9999999403953552
 Thumb groups: Thumb, 
-Thumb mesh: Thumb.000
+Thumb mesh: Thumb.002
 Thumb materials: PLA White, 
 Thumb modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
@@ -766,7 +766,7 @@ Thumb Cover transform: X-7.62939453125e-06 Y-7.152557373046875e-07 Z0.0
 Thumb Cover rotation: X0.0 Y0.0 Z0.0
 Thumb Cover scale: X0.9999999403953552 Y0.9999998211860657 Z0.9999999403953552
 Thumb Cover groups: Thumb, 
-Thumb Cover mesh: Thumb.000
+Thumb Cover mesh: Thumb.002
 Thumb Cover materials: PLA White, 
 Thumb Cover modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
@@ -911,8 +911,8 @@ Thumb urethane pad modifiers:
 
 Name: Thumb urethane pad.001
 Thumb urethane pad.001 Type: MESH
-Thumb urethane pad.001 transform: X0.0 Y0.0 Z2.0
-Thumb urethane pad.001 rotation: X1.5707963705062866 Y1.570796251296997 Z0.0
+Thumb urethane pad.001 transform: X-13.36343002319336 Y5.578205108642578 Z2.0
+Thumb urethane pad.001 rotation: X1.831072449684143 Y1.570796251296997 Z0.0
 Thumb urethane pad.001 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Thumb urethane pad.001 groups: Thumb, 
 Thumb urethane pad.001 mesh: Thumb urethane pad
