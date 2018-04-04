@@ -225,9 +225,8 @@ BOOLEAN Inner distal pegs.001 modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #3 Name: Solidify, Type: SOLIDIFY
-        Thickness: 0.20, Offset: 1.00 
-        Even thickness: True, High Quality Normals: True
+  #3 Name: Bevel, Type: BEVEL
+
 Name: BOOLEAN Inner distal pegs.002
 BOOLEAN Inner distal pegs.002 Type: MESH
 BOOLEAN Inner distal pegs.002 transform: X0.0 Y-4.9684295654296875 Z0.0
@@ -244,9 +243,8 @@ BOOLEAN Inner distal pegs.002 modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #3 Name: Solidify, Type: SOLIDIFY
-        Thickness: 0.20, Offset: 1.00 
-        Even thickness: True, High Quality Normals: True
+  #3 Name: Bevel, Type: BEVEL
+
 Name: BOOLEAN Inner distal pegs.003
 BOOLEAN Inner distal pegs.003 Type: MESH
 BOOLEAN Inner distal pegs.003 transform: X0.0 Y0.0 Z0.0
@@ -258,14 +256,13 @@ BOOLEAN Inner distal pegs.003 mesh: BOOLEAN Inner proximal.002
 BOOLEAN Inner distal pegs.003 materials: Boolean difference, 
 BOOLEAN Inner distal pegs.003 modifiers: 
   #1 Name: Hook, Type: HOOK
-  #2 Name: Mirror, Type: MIRROR
+  #2 Name: Bevel, Type: BEVEL
+  #3 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #3 Name: Solidify, Type: SOLIDIFY
-        Thickness: 0.20, Offset: 1.00 
-        Even thickness: True, High Quality Normals: True
+
 Name: BOOLEAN Inner distal pegs.004
 BOOLEAN Inner distal pegs.004 Type: MESH
 BOOLEAN Inner distal pegs.004 transform: X0.0 Y0.0 Z0.0
@@ -277,14 +274,13 @@ BOOLEAN Inner distal pegs.004 mesh: BOOLEAN Inner proximal.002
 BOOLEAN Inner distal pegs.004 materials: Boolean difference, 
 BOOLEAN Inner distal pegs.004 modifiers: 
   #1 Name: Hook, Type: HOOK
-  #2 Name: Mirror, Type: MIRROR
+  #2 Name: Bevel, Type: BEVEL
+  #3 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #3 Name: Solidify, Type: SOLIDIFY
-        Thickness: 0.20, Offset: 1.00 
-        Even thickness: True, High Quality Normals: True
+
 Name: BOOLEAN inner distal.001
 BOOLEAN inner distal.001 Type: MESH
 BOOLEAN inner distal.001 transform: X0.0 Y0.0 Z0.0
@@ -530,9 +526,8 @@ BOOLEAN Inner proximal pegs.001 modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #4 Name: Solidify, Type: SOLIDIFY
-        Thickness: 0.20, Offset: 1.00 
-        Even thickness: True, High Quality Normals: True
+  #4 Name: Bevel, Type: BEVEL
+
 Name: BOOLEAN Inner proximal pegs.002
 BOOLEAN Inner proximal pegs.002 Type: MESH
 BOOLEAN Inner proximal pegs.002 transform: X0.0 Y0.0 Z0.0
@@ -552,7 +547,8 @@ BOOLEAN Inner proximal pegs.002 modifiers:
         Vertex group mirroring: True
   #4 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.20, Offset: 1.00 
-        Even thickness: True, High Quality Normals: True
+        Even thickness: True, High Quality Normals: True  #5 Name: Bevel, Type: BEVEL
+
 Name: BOOLEAN Inner proximal pegs.003
 BOOLEAN Inner proximal pegs.003 Type: MESH
 BOOLEAN Inner proximal pegs.003 transform: X0.0 Y0.0 Z0.0
@@ -811,17 +807,6 @@ BOOLEAN ligament.000 modifiers:
         Even thickness: False, High Quality Normals: True  #5 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
-Name: BOOLEAN ligament.001
-BOOLEAN ligament.001 Type: MESH
-BOOLEAN ligament.001 transform: X0.0 Y0.0 Z0.0
-BOOLEAN ligament.001 rotation: X0.0 Y0.0 Z0.0
-BOOLEAN ligament.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN ligament.001 groups: None
-BOOLEAN ligament.001 parent: HANDLE 1st Finger
-BOOLEAN ligament.001 mesh: Ligament.008
-BOOLEAN ligament.001 materials: Boolean difference, NF Black.001, NF Black.002, NF Black.003, NF Black, 
-BOOLEAN ligament.001 modifiers: None
-
 Name: BOOLEAN Ligament.001
 BOOLEAN Ligament.001 Type: MESH
 BOOLEAN Ligament.001 transform: X0.0 Y0.0 Z0.0
@@ -948,7 +933,7 @@ BOOLEAN M2 Bolt Holes.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN M2 Bolt Holes.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN M2 Bolt Holes.004 groups: None
 BOOLEAN M2 Bolt Holes.004 parent: Distal Phalanx.004
-BOOLEAN M2 Bolt Holes.004 mesh: BOOLEAN M2 Bolt Holes.000
+BOOLEAN M2 Bolt Holes.004 mesh: BOOLEAN M2 Bolt Holes.003
 BOOLEAN M2 Bolt Holes.004 materials: Boolean difference.001, 
 BOOLEAN M2 Bolt Holes.004 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -1467,38 +1452,6 @@ BOOLEAN Riser Chanels.003 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Riser Chanels.003 groups: None
 BOOLEAN Riser Chanels.003 parent: Proximal Phalanx.002
 
-Name: BOOLEAN Riser Chanels.004
-BOOLEAN Riser Chanels.004 Type: EMPTY
-BOOLEAN Riser Chanels.004 transform: X0.0 Y0.0 Z0.0
-BOOLEAN Riser Chanels.004 rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Riser Chanels.004 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Riser Chanels.004 groups: None
-BOOLEAN Riser Chanels.004 parent: Distal Phalanx.003
-
-Name: BOOLEAN Riser Chanels.005
-BOOLEAN Riser Chanels.005 Type: EMPTY
-BOOLEAN Riser Chanels.005 transform: X0.0 Y0.0 Z0.0
-BOOLEAN Riser Chanels.005 rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Riser Chanels.005 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Riser Chanels.005 groups: None
-BOOLEAN Riser Chanels.005 parent: Proximal Phalanx.003
-
-Name: BOOLEAN Riser Chanels.006
-BOOLEAN Riser Chanels.006 Type: EMPTY
-BOOLEAN Riser Chanels.006 transform: X0.0 Y0.0 Z0.0
-BOOLEAN Riser Chanels.006 rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Riser Chanels.006 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Riser Chanels.006 groups: None
-BOOLEAN Riser Chanels.006 parent: Proximal Phalanx.004
-
-Name: BOOLEAN Riser Chanels.007
-BOOLEAN Riser Chanels.007 Type: EMPTY
-BOOLEAN Riser Chanels.007 transform: X0.0 Y0.0 Z0.0
-BOOLEAN Riser Chanels.007 rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Riser Chanels.007 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Riser Chanels.007 groups: None
-BOOLEAN Riser Chanels.007 parent: Distal Phalanx.004
-
 Name: BOOLEAN riser combo
 BOOLEAN riser combo Type: MESH
 BOOLEAN riser combo transform: X51.106178283691406 Y51.77497100830078 Z-8.609909057617188
@@ -1617,20 +1570,6 @@ BOOLEAN Spring Dowel Pins.006 modifiers:
   #1 Name: Hook, Type: HOOK
   #2 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Top cover distal.002
-
-Name: BOOLEAN Spring Dowel Pins.007
-BOOLEAN Spring Dowel Pins.007 Type: MESH
-BOOLEAN Spring Dowel Pins.007 transform: X0.0 Y31.999996185302734 Z1.3000000715255737
-BOOLEAN Spring Dowel Pins.007 rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Spring Dowel Pins.007 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Spring Dowel Pins.007 groups: None
-BOOLEAN Spring Dowel Pins.007 parent: Proximal Phalanx.002
-BOOLEAN Spring Dowel Pins.007 mesh: Cylinder.022
-BOOLEAN Spring Dowel Pins.007 materials: Boolean difference, 
-BOOLEAN Spring Dowel Pins.007 modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Top cover proximal.001
 
 Name: BOOLEAN Tendon channels distal.001
 BOOLEAN Tendon channels distal.001 Type: MESH
@@ -2310,11 +2249,11 @@ Boolean Wedge Cut Outs.001 modifiers:
 
 Name: BrunelRightHandLigament Cover 
 BrunelRightHandLigament Cover  Type: MESH
-BrunelRightHandLigament Cover  transform: X23.721206665039062 Y-50.3308219909668 Z-3.6104588508605957
-BrunelRightHandLigament Cover  rotation: X0.0 Y-0.0 Z-0.0872664526104927
+BrunelRightHandLigament Cover  transform: X8.999998092651367 Y-48.89359664916992 Z-2.9508895874023438
+BrunelRightHandLigament Cover  rotation: X0.0 Y-0.0 Z0.0
 BrunelRightHandLigament Cover  scale: X1.0 Y1.0 Z1.0
 BrunelRightHandLigament Cover  groups: None
-BrunelRightHandLigament Cover  mesh: BrunelRightHandLigament Cover 
+BrunelRightHandLigament Cover  mesh: BrunelRightHandLigament Cover .001
 BrunelRightHandLigament Cover  materials: None
 BrunelRightHandLigament Cover  modifiers: None
 
@@ -2859,6 +2798,16 @@ Cube.038 mesh: Cube.032
 Cube.038 materials: None
 Cube.038 modifiers: None
 
+Name: Cube.039
+Cube.039 Type: MESH
+Cube.039 transform: X0.0 Y-1.4373142719268799 Z0.702254593372345
+Cube.039 rotation: X0.0 Y0.0 Z0.0
+Cube.039 scale: X0.002500000176951289 Y0.004000001586973667 Z0.002500000176951289
+Cube.039 groups: None
+Cube.039 mesh: Cube.034
+Cube.039 materials: None
+Cube.039 modifiers: None
+
 Name: Cylinder
 Cylinder Type: MESH
 Cylinder transform: X0.20616674423217773 Y-5.542596817016602 Z2.2583723068237305
@@ -2961,6 +2910,46 @@ Cylinder.008 groups: None
 Cylinder.008 mesh: Cylinder.001
 Cylinder.008 materials: Boolean difference, 
 Cylinder.008 modifiers: None
+
+Name: Cylinder.009
+Cylinder.009 Type: MESH
+Cylinder.009 transform: X5.347441673278809 Y25.448503494262695 Z-0.3604884147644043
+Cylinder.009 rotation: X0.0 Y0.0 Z0.0
+Cylinder.009 scale: X1.0 Y1.0 Z1.0
+Cylinder.009 groups: None
+Cylinder.009 mesh: Cylinder.024
+Cylinder.009 materials: Boolean difference, 
+Cylinder.009 modifiers: None
+
+Name: Cylinder.010
+Cylinder.010 Type: MESH
+Cylinder.010 transform: X5.347441673278809 Y25.448503494262695 Z-0.3604884147644043
+Cylinder.010 rotation: X0.0 Y0.0 Z0.0
+Cylinder.010 scale: X1.0 Y1.0 Z1.0
+Cylinder.010 groups: None
+Cylinder.010 mesh: Cylinder.016
+Cylinder.010 materials: Boolean difference, 
+Cylinder.010 modifiers: None
+
+Name: Cylinder.011
+Cylinder.011 Type: MESH
+Cylinder.011 transform: X5.347441673278809 Y25.448503494262695 Z-0.3604884147644043
+Cylinder.011 rotation: X0.0 Y0.0 Z0.0
+Cylinder.011 scale: X1.0 Y1.0 Z1.0
+Cylinder.011 groups: None
+Cylinder.011 mesh: Cylinder.023
+Cylinder.011 materials: Boolean difference, 
+Cylinder.011 modifiers: None
+
+Name: Cylinder.012
+Cylinder.012 Type: MESH
+Cylinder.012 transform: X5.347441673278809 Y25.448503494262695 Z-0.3604884147644043
+Cylinder.012 rotation: X0.0 Y0.0 Z0.0
+Cylinder.012 scale: X1.0 Y1.0 Z1.0
+Cylinder.012 groups: None
+Cylinder.012 mesh: Cylinder.025
+Cylinder.012 materials: Boolean difference, 
+Cylinder.012 modifiers: None
 
 Name: Distal Phalanx.001
 Distal Phalanx.001 Type: EMPTY
@@ -3094,6 +3083,17 @@ Distal Step.007 mesh: Cube.023
 Distal Step.007 materials: None
 Distal Step.007 modifiers: None
 
+Name: Extensor spring pin Distal.000
+Extensor spring pin Distal.000 Type: MESH
+Extensor spring pin Distal.000 transform: X0.0 Y32.047645568847656 Z3.027381658554077
+Extensor spring pin Distal.000 rotation: X0.0 Y0.0 Z0.0
+Extensor spring pin Distal.000 scale: X1.0 Y1.0 Z1.0
+Extensor spring pin Distal.000 groups: None
+Extensor spring pin Distal.000 mesh: BOOLEAN Spring pin.002
+Extensor spring pin Distal.000 materials: Boolean difference, 
+Extensor spring pin Distal.000 modifiers: 
+  #1 Name: Hook, Type: HOOK
+
 Name: Extensor spring pin Distal.001
 Extensor spring pin Distal.001 Type: MESH
 Extensor spring pin Distal.001 transform: X0.0 Y32.047645568847656 Z3.027381658554077
@@ -3105,6 +3105,39 @@ Extensor spring pin Distal.001 materials: Boolean difference,
 Extensor spring pin Distal.001 modifiers: 
   #1 Name: Hook, Type: HOOK
 
+Name: Extensor spring pin Distal.002
+Extensor spring pin Distal.002 Type: MESH
+Extensor spring pin Distal.002 transform: X0.0 Y32.047645568847656 Z3.027381658554077
+Extensor spring pin Distal.002 rotation: X0.0 Y0.0 Z0.0
+Extensor spring pin Distal.002 scale: X1.0 Y1.0 Z1.0
+Extensor spring pin Distal.002 groups: None
+Extensor spring pin Distal.002 mesh: BOOLEAN Spring pin.002
+Extensor spring pin Distal.002 materials: Boolean difference, 
+Extensor spring pin Distal.002 modifiers: 
+  #1 Name: Hook, Type: HOOK
+
+Name: Extensor spring pin Distal.003
+Extensor spring pin Distal.003 Type: MESH
+Extensor spring pin Distal.003 transform: X0.0 Y32.047645568847656 Z3.027381658554077
+Extensor spring pin Distal.003 rotation: X0.0 Y0.0 Z0.0
+Extensor spring pin Distal.003 scale: X1.0 Y1.0 Z1.0
+Extensor spring pin Distal.003 groups: None
+Extensor spring pin Distal.003 mesh: BOOLEAN Spring pin.002
+Extensor spring pin Distal.003 materials: Boolean difference, 
+Extensor spring pin Distal.003 modifiers: 
+  #1 Name: Hook, Type: HOOK
+
+Name: Extensor spring pin Distal.004
+Extensor spring pin Distal.004 Type: MESH
+Extensor spring pin Distal.004 transform: X0.0 Y32.047645568847656 Z3.027381658554077
+Extensor spring pin Distal.004 rotation: X0.0 Y0.0 Z0.0
+Extensor spring pin Distal.004 scale: X1.0 Y1.0 Z1.0
+Extensor spring pin Distal.004 groups: None
+Extensor spring pin Distal.004 mesh: BOOLEAN Spring pin.002
+Extensor spring pin Distal.004 materials: Boolean difference, 
+Extensor spring pin Distal.004 modifiers: 
+  #1 Name: Hook, Type: HOOK
+
 Name: Extensor spring pin Proximal Distal.001
 Extensor spring pin Proximal Distal.001 Type: MESH
 Extensor spring pin Proximal Distal.001 transform: X0.0 Y11.999996185302734 Z3.3024001121520996
@@ -3114,6 +3147,39 @@ Extensor spring pin Proximal Distal.001 groups: None
 Extensor spring pin Proximal Distal.001 mesh: BOOLEAN Spring pin.001
 Extensor spring pin Proximal Distal.001 materials: Boolean difference, 
 Extensor spring pin Proximal Distal.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
+
+Name: Extensor spring pin Proximal Distal.002
+Extensor spring pin Proximal Distal.002 Type: MESH
+Extensor spring pin Proximal Distal.002 transform: X0.0 Y11.999996185302734 Z3.3024001121520996
+Extensor spring pin Proximal Distal.002 rotation: X0.0 Y0.0 Z0.0
+Extensor spring pin Proximal Distal.002 scale: X1.0 Y1.0 Z1.0
+Extensor spring pin Proximal Distal.002 groups: None
+Extensor spring pin Proximal Distal.002 mesh: BOOLEAN Spring pin.001
+Extensor spring pin Proximal Distal.002 materials: Boolean difference, 
+Extensor spring pin Proximal Distal.002 modifiers: 
+  #1 Name: Hook, Type: HOOK
+
+Name: Extensor spring pin Proximal Distal.003
+Extensor spring pin Proximal Distal.003 Type: MESH
+Extensor spring pin Proximal Distal.003 transform: X0.0 Y11.999996185302734 Z3.3024001121520996
+Extensor spring pin Proximal Distal.003 rotation: X0.0 Y0.0 Z0.0
+Extensor spring pin Proximal Distal.003 scale: X1.0 Y1.0 Z1.0
+Extensor spring pin Proximal Distal.003 groups: None
+Extensor spring pin Proximal Distal.003 mesh: BOOLEAN Spring pin.001
+Extensor spring pin Proximal Distal.003 materials: Boolean difference, 
+Extensor spring pin Proximal Distal.003 modifiers: 
+  #1 Name: Hook, Type: HOOK
+
+Name: Extensor spring pin Proximal Distal.004
+Extensor spring pin Proximal Distal.004 Type: MESH
+Extensor spring pin Proximal Distal.004 transform: X0.0 Y11.999996185302734 Z3.3024001121520996
+Extensor spring pin Proximal Distal.004 rotation: X0.0 Y0.0 Z0.0
+Extensor spring pin Proximal Distal.004 scale: X1.0 Y1.0 Z1.0
+Extensor spring pin Proximal Distal.004 groups: None
+Extensor spring pin Proximal Distal.004 mesh: BOOLEAN Spring pin.001
+Extensor spring pin Proximal Distal.004 materials: Boolean difference, 
+Extensor spring pin Proximal Distal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
 
 Name: Finger cut out.000
@@ -3403,7 +3469,7 @@ HANDLE Distal Joint.001 modifiers: None
 
 Name: HANDLE Distal Joint.002
 HANDLE Distal Joint.002 Type: MESH
-HANDLE Distal Joint.002 transform: X0.0 Y44.999996185302734 Z0.0
+HANDLE Distal Joint.002 transform: X0.0 Y45.0 Z0.0
 HANDLE Distal Joint.002 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.002 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.002 groups: None
@@ -3425,7 +3491,7 @@ HANDLE Distal Joint.003 modifiers: None
 
 Name: HANDLE Distal Joint.004
 HANDLE Distal Joint.004 Type: MESH
-HANDLE Distal Joint.004 transform: X0.0 Y30.0 Z0.0
+HANDLE Distal Joint.004 transform: X0.0 Y30.999998092651367 Z0.0
 HANDLE Distal Joint.004 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal Joint.004 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal Joint.004 groups: None
@@ -3457,7 +3523,7 @@ HANDLE Fingertip.002 modifiers: None
 
 Name: HANDLE Fingertip.003
 HANDLE Fingertip.003 Type: MESH
-HANDLE Fingertip.003 transform: X0.0 Y42.0 Z0.0
+HANDLE Fingertip.003 transform: X0.0 Y40.0 Z0.0
 HANDLE Fingertip.003 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.003 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.003 groups: None
@@ -4422,14 +4488,14 @@ Inner distal.001 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels distal.001
   #10 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.001
-  #11 Name: top riser, Type: BOOLEAN
+  #11 Name: LABEL Identifier Inner distal.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.001
   #12 Name: Boolean.BOOLEAN Spring Dowel Pins.003, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Extensor spring pin Distal.001
   #13 Name: Boolean.LABEL identifier distal flat.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.001
   #14 Name: Boolean.Riser Chanel.000, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Riser Chanel.000
+        Operation: DIFFERENCE, Object: Cylinder.012
   #15 Name: Boolean.BOOLEAN Distial Joint Spring Profile.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Distial Joint Spring Profile.001
   #16 Name: Triangulate, Type: TRIANGULATE
@@ -4460,22 +4526,22 @@ Inner distal.002 modifiers:
         Operation: UNION, Object: BOOLEAN UNION M2 Bolt Holes.002
   #7 Name: Boolean.BOOLEAN UNION Ligament filler.002, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN UNION Ligament filler.002
-  #8 Name: Boolean.Ligament, Type: BOOLEAN
+  #8 Name: Boolean.BOOLEAN Ligament.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament.002
-  #9 Name: Boolean.TendonChannels, Type: BOOLEAN
+  #9 Name: Boolean.BOOLEAN Tendon channels distal.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels distal.002
-  #10 Name: Boolean.M2BoltHoles, Type: BOOLEAN
+  #10 Name: Boolean.BOOLEAN M2 Bolt Holes.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.002
   #11 Name: Boolean.LABEL Identifier Inner distal.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.002
-  #12 Name: Boolean.BOOLEAN Spring Dowel Pins.002, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Spring Dowel Pins.000
-  #13 Name: Boolean.LABEL identifier distal flat.002, Type: BOOLEAN
+  #12 Name: Boolean.LABEL identifier distal flat.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.002
-  #14 Name: Boolean.Riser Chanel.006, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Riser Chanel.006
-  #15 Name: Boolean.BOOLEAN Distal Joint Spring Profile, Type: BOOLEAN
+  #13 Name: Boolean.Riser Chanel.006, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cylinder.011
+  #14 Name: Boolean.BOOLEAN Distal Joint Spring Profile, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Distal Joint Spring Profile
+  #15 Name: Boolean.Extensor spring pin Distal.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Extensor spring pin Distal.002
   #16 Name: Triangulate, Type: TRIANGULATE
 
 Name: Inner distal.003
@@ -4512,14 +4578,14 @@ Inner distal.003 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.003
   #11 Name: Boolean.LABEL Identifier Inner distal.003, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.003
-  #12 Name: Boolean.BOOLEAN Spring Dowel Pins.005, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Spring Dowel Pins.005
-  #13 Name: Boolean.LABEL identifier distal flat.003, Type: BOOLEAN
+  #12 Name: Boolean.LABEL identifier distal flat.003, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.003
-  #14 Name: Boolean.Riser Chanel.013, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Riser Chanel.013
-  #15 Name: Boolean, Type: BOOLEAN
+  #13 Name: Boolean.Riser Chanel.013, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cylinder.010
+  #14 Name: Boolean.BOOLEAN Distal Joint Spring Profile.003, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Distal Joint Spring Profile.003
+  #15 Name: Boolean.Extensor spring pin Distal.003, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Extensor spring pin Distal.003
 
 Name: Inner distal.004 
 Inner distal.004  Type: MESH
@@ -4545,23 +4611,21 @@ Inner distal.004  modifiers:
         Operation: UNION, Object: BOOLEAN UNION Tendon channels distal.004
   #6 Name: Boolean UNION M2 Bolt Holes, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN UNION M2 Bolt Holes.004
-  #7 Name: Boolean.BOOLEAN UNION Ligament filler.004, Type: BOOLEAN
-        Operation: UNION, Object: BOOLEAN UNION Ligament filler.004
-  #8 Name: Boolean.Ligament, Type: BOOLEAN
+  #7 Name: Boolean.Ligament, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN ligament.004
-  #9 Name: Boolean.TendonChannels, Type: BOOLEAN
+  #8 Name: Boolean.TendonChannels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels distal.004
-  #10 Name: Boolean.M2BoltHoles, Type: BOOLEAN
+  #9 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.004
-  #11 Name: Boolean.BOOLEAN Spring Dowel Pins.006, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Spring Dowel Pins.006
-  #12 Name: Boolean, Type: BOOLEAN
+  #10 Name: Boolean.Extensor spring pin Distal.004, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Extensor spring pin Distal.004
+  #11 Name: Boolean.LABEL Identifier Inner distal.004, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.004
-  #13 Name: Boolean.002, Type: BOOLEAN
+  #12 Name: Boolean.LABEL identifier distal flat.004, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.004
-  #14 Name: Boolean.004, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Riser Chanel.023
-  #15 Name: Boolean.001, Type: BOOLEAN
+  #13 Name: Boolean.Riser Chanel.023, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cylinder.009
+  #14 Name: Boolean.BOOLEAN Distal Joint Spring Profile.004, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Distal Joint Spring Profile.004
 
 Name: Inner proximal 1 BLANK
@@ -4882,7 +4946,7 @@ Inner Proximal ORIGINAL.004 modifiers:
   #10 Name: Boolean.identifier, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.004
   #11 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Riser Chanel.021
+        Operation: DIFFERENCE, Object: None
 
 Name: Inner Proximal pad.001
 Inner Proximal pad.001 Type: MESH
@@ -5230,7 +5294,7 @@ Inner Proximal.001 modifiers:
   #10 Name: Boolean.identifier, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.001
   #11 Name: Boolean.Riser Chanel.002, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Riser Chanel.002
+        Operation: DIFFERENCE, Object: Cylinder.012
   #12 Name: Boolean.BOOLEAN Distial Joint Spring Profile.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Distial Joint Spring Profile.001
   #13 Name: Boolean.BOOLEAN Proximal Joint Spring Profile.001, Type: BOOLEAN
@@ -5265,14 +5329,14 @@ Inner Proximal.002 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels proximal.002
   #8 Name: Boolean.M2 bolt hole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.002
-  #9 Name: Boolean.ligament, Type: BOOLEAN
+  #9 Name: Boolean.BOOLEAN Ligament.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament.002
-  #10 Name: Boolean.BOOLEAN Spring Dowel Pins.002, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Spring Dowel Pins.002
+  #10 Name: Boolean.Extensor spring pin Proximal Distal.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Extensor spring pin Proximal Distal.002
   #11 Name: Boolean.LABEL Identifier Inner proximal.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.002
   #12 Name: Boolean.Riser Chanel.008, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Riser Chanel.008
+        Operation: DIFFERENCE, Object: Cylinder.011
   #13 Name: Boolean.BOOLEAN Distal Joint Spring Profile, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Distal Joint Spring Profile
   #14 Name: Boolean.BOOLEAN Proximal Joint Spring Profile, Type: BOOLEAN
@@ -5312,13 +5376,15 @@ Inner Proximal.003 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Spring Dowel Pins.004
   #10 Name: Boolean.identifier, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.003
-  #11 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Riser Chanel.017
-  #12 Name: Boolean.001, Type: BOOLEAN
+  #11 Name: Boolean.Riser Chanel.017, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cylinder.010
+  #12 Name: Boolean.BOOLEAN Distal Joint Spring Profile.003, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Distal Joint Spring Profile.003
-  #13 Name: Boolean.002, Type: BOOLEAN
+  #13 Name: Boolean.BOOLEAN Proximal Joint Spring Profile.003, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Proximal Joint Spring Profile.003
-  #14 Name: Triangulate, Type: TRIANGULATE
+  #14 Name: Boolean.Extensor spring pin Proximal Distal.003, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Extensor spring pin Proximal Distal.003
+  #15 Name: Triangulate, Type: TRIANGULATE
 
 Name: Inner Proximal.004
 Inner Proximal.004 Type: MESH
@@ -5348,12 +5414,12 @@ Inner Proximal.004 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Tendon channels proximal.004
   #8 Name: Boolean.M2 bolt hole, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN proximal M2 Bolt Hole.004
-  #9 Name: Boolean.BOOLEAN Spring Dowel Pins.007, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Spring Dowel Pins.007
+  #9 Name: Boolean.Extensor spring pin Proximal Distal.004, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Extensor spring pin Proximal Distal.004
   #10 Name: Boolean.LABEL Identifier Inner proximal.004, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.004
   #11 Name: Boolean.Riser Chanel.021, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Riser Chanel.021
+        Operation: DIFFERENCE, Object: Cylinder.009
   #12 Name: Boolean.BOOLEAN Distal Joint Spring Profile.004, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Distal Joint Spring Profile.004
   #13 Name: Boolean.BOOLEAN Proximal Joint Spring Profile.004, Type: BOOLEAN
@@ -5440,7 +5506,7 @@ LABEL identifier distal flat.004 modifiers:
 
 Name: LABEL Identifier Inner distal.001
 LABEL Identifier Inner distal.001 Type: MESH
-LABEL Identifier Inner distal.001 transform: X0.0 Y70.59722900390625 Z0.0
+LABEL Identifier Inner distal.001 transform: X0.0 Y70.04139709472656 Z-1.032230019569397
 LABEL Identifier Inner distal.001 rotation: X0.0 Y0.0 Z0.0
 LABEL Identifier Inner distal.001 scale: X1.0 Y1.0 Z1.0
 LABEL Identifier Inner distal.001 groups: None
@@ -5452,7 +5518,7 @@ LABEL Identifier Inner distal.001 modifiers:
 
 Name: LABEL Identifier Inner distal.002
 LABEL Identifier Inner distal.002 Type: MESH
-LABEL Identifier Inner distal.002 transform: X0.0 Y71.60433197021484 Z0.0
+LABEL Identifier Inner distal.002 transform: X0.0 Y70.92922973632812 Z-1.032230019569397
 LABEL Identifier Inner distal.002 rotation: X0.0 Y0.0 Z0.0
 LABEL Identifier Inner distal.002 scale: X1.0 Y1.0 Z1.0
 LABEL Identifier Inner distal.002 groups: None
@@ -5464,7 +5530,7 @@ LABEL Identifier Inner distal.002 modifiers:
 
 Name: LABEL Identifier Inner distal.003
 LABEL Identifier Inner distal.003 Type: MESH
-LABEL Identifier Inner distal.003 transform: X0.0 Y61.551326751708984 Z0.0
+LABEL Identifier Inner distal.003 transform: X0.0 Y58.70370101928711 Z-1.48076593875885
 LABEL Identifier Inner distal.003 rotation: X0.0 Y0.0 Z0.0
 LABEL Identifier Inner distal.003 scale: X1.0 Y1.0 Z1.0
 LABEL Identifier Inner distal.003 groups: None
@@ -5476,7 +5542,7 @@ LABEL Identifier Inner distal.003 modifiers:
 
 Name: LABEL Identifier Inner distal.004
 LABEL Identifier Inner distal.004 Type: MESH
-LABEL Identifier Inner distal.004 transform: X0.0 Y49.636802673339844 Z0.0
+LABEL Identifier Inner distal.004 transform: X0.0 Y49.636802673339844 Z-0.7320234775543213
 LABEL Identifier Inner distal.004 rotation: X0.0 Y0.0 Z0.0
 LABEL Identifier Inner distal.004 scale: X1.0 Y1.0 Z1.0
 LABEL Identifier Inner distal.004 groups: None
@@ -6351,154 +6417,6 @@ Riser Chanel.011 mesh: Cylinder
 Riser Chanel.011 materials: Boolean difference, 
 Riser Chanel.011 modifiers: None
 
-Name: Riser Chanel.012
-Riser Chanel.012 Type: MESH
-Riser Chanel.012 transform: X-6.407874584197998 Y44.19206619262695 Z-1.0705758333206177
-Riser Chanel.012 rotation: X0.0 Y0.0 Z0.0
-Riser Chanel.012 scale: X1.0 Y1.0 Z1.0
-Riser Chanel.012 groups: None
-Riser Chanel.012 parent: BOOLEAN Riser Chanels.004
-Riser Chanel.012 mesh: Cylinder
-Riser Chanel.012 materials: Boolean difference, 
-Riser Chanel.012 modifiers: None
-
-Name: Riser Chanel.013
-Riser Chanel.013 Type: MESH
-Riser Chanel.013 transform: X6.354879856109619 Y44.19206619262695 Z-1.0705758333206177
-Riser Chanel.013 rotation: X0.0 Y0.0 Z0.0
-Riser Chanel.013 scale: X1.0 Y1.0 Z1.0
-Riser Chanel.013 groups: None
-Riser Chanel.013 parent: BOOLEAN Riser Chanels.004
-Riser Chanel.013 mesh: Cylinder
-Riser Chanel.013 materials: Boolean difference, 
-Riser Chanel.013 modifiers: 
-  #1 Name: Boolean, Type: BOOLEAN
-        Operation: UNION, Object: Riser Chanel.012
-
-Name: Riser Chanel.014
-Riser Chanel.014 Type: MESH
-Riser Chanel.014 transform: X-5.047474384307861 Y31.1976318359375 Z-0.720871090888977
-Riser Chanel.014 rotation: X0.0 Y0.0 Z0.0
-Riser Chanel.014 scale: X1.0 Y1.0 Z1.0
-Riser Chanel.014 groups: None
-Riser Chanel.014 parent: BOOLEAN Riser Chanels.005
-Riser Chanel.014 mesh: Cylinder
-Riser Chanel.014 materials: Boolean difference, 
-Riser Chanel.014 modifiers: None
-
-Name: Riser Chanel.015
-Riser Chanel.015 Type: MESH
-Riser Chanel.015 transform: X-5.2030029296875 Y6.836778163909912 Z-0.6798560619354248
-Riser Chanel.015 rotation: X0.0 Y0.0 Z0.0
-Riser Chanel.015 scale: X1.0 Y1.0 Z1.0
-Riser Chanel.015 groups: None
-Riser Chanel.015 parent: BOOLEAN Riser Chanels.005
-Riser Chanel.015 mesh: Cylinder
-Riser Chanel.015 materials: Boolean difference, 
-Riser Chanel.015 modifiers: None
-
-Name: Riser Chanel.016
-Riser Chanel.016 Type: MESH
-Riser Chanel.016 transform: X5.052786350250244 Y31.14154052734375 Z-0.6783021688461304
-Riser Chanel.016 rotation: X0.0 Y0.0 Z0.0
-Riser Chanel.016 scale: X1.0 Y1.0 Z1.0
-Riser Chanel.016 groups: None
-Riser Chanel.016 parent: BOOLEAN Riser Chanels.005
-Riser Chanel.016 mesh: Cylinder
-Riser Chanel.016 materials: Boolean difference, 
-Riser Chanel.016 modifiers: None
-
-Name: Riser Chanel.017
-Riser Chanel.017 Type: MESH
-Riser Chanel.017 transform: X5.258023738861084 Y6.79490327835083 Z-0.6798560619354248
-Riser Chanel.017 rotation: X0.0 Y0.0 Z0.0
-Riser Chanel.017 scale: X1.0 Y1.0 Z1.0
-Riser Chanel.017 groups: None
-Riser Chanel.017 parent: BOOLEAN Riser Chanels.005
-Riser Chanel.017 mesh: Cylinder
-Riser Chanel.017 materials: Boolean difference, 
-Riser Chanel.017 modifiers: 
-  #1 Name: Boolean, Type: BOOLEAN
-        Operation: UNION, Object: Riser Chanel.015
-  #2 Name: Boolean.001, Type: BOOLEAN
-        Operation: UNION, Object: Riser Chanel.014
-  #3 Name: Boolean.002, Type: BOOLEAN
-        Operation: UNION, Object: Riser Chanel.016
-
-Name: Riser Chanel.018
-Riser Chanel.018 Type: MESH
-Riser Chanel.018 transform: X5.052786350250244 Y23.123950958251953 Z-0.6783021688461304
-Riser Chanel.018 rotation: X0.0 Y0.0 Z0.0
-Riser Chanel.018 scale: X1.0 Y1.0 Z1.0
-Riser Chanel.018 groups: None
-Riser Chanel.018 parent: BOOLEAN Riser Chanels.006
-Riser Chanel.018 mesh: Cylinder
-Riser Chanel.018 materials: Boolean difference, 
-Riser Chanel.018 modifiers: None
-
-Name: Riser Chanel.019
-Riser Chanel.019 Type: MESH
-Riser Chanel.019 transform: X-5.2030029296875 Y6.836778163909912 Z-0.6798560619354248
-Riser Chanel.019 rotation: X0.0 Y0.0 Z0.0
-Riser Chanel.019 scale: X1.0 Y1.0 Z1.0
-Riser Chanel.019 groups: None
-Riser Chanel.019 parent: BOOLEAN Riser Chanels.006
-Riser Chanel.019 mesh: Cylinder
-Riser Chanel.019 materials: Boolean difference, 
-Riser Chanel.019 modifiers: None
-
-Name: Riser Chanel.020
-Riser Chanel.020 Type: MESH
-Riser Chanel.020 transform: X-5.047474384307861 Y23.180042266845703 Z-0.720871090888977
-Riser Chanel.020 rotation: X0.0 Y0.0 Z0.0
-Riser Chanel.020 scale: X1.0 Y1.0 Z1.0
-Riser Chanel.020 groups: None
-Riser Chanel.020 parent: BOOLEAN Riser Chanels.006
-Riser Chanel.020 mesh: Cylinder
-Riser Chanel.020 materials: Boolean difference, 
-Riser Chanel.020 modifiers: None
-
-Name: Riser Chanel.021
-Riser Chanel.021 Type: MESH
-Riser Chanel.021 transform: X5.258023738861084 Y6.79490327835083 Z-0.6798560619354248
-Riser Chanel.021 rotation: X0.0 Y0.0 Z0.0
-Riser Chanel.021 scale: X1.0 Y1.0 Z1.0
-Riser Chanel.021 groups: None
-Riser Chanel.021 parent: BOOLEAN Riser Chanels.006
-Riser Chanel.021 mesh: Cylinder
-Riser Chanel.021 materials: Boolean difference, 
-Riser Chanel.021 modifiers: 
-  #1 Name: Boolean, Type: BOOLEAN
-        Operation: UNION, Object: Riser Chanel.019
-  #2 Name: Boolean.001, Type: BOOLEAN
-        Operation: UNION, Object: Riser Chanel.020
-  #3 Name: Boolean.002, Type: BOOLEAN
-        Operation: UNION, Object: Riser Chanel.018
-
-Name: Riser Chanel.022
-Riser Chanel.022 Type: MESH
-Riser Chanel.022 transform: X-6.407874584197998 Y36.147979736328125 Z-1.0705758333206177
-Riser Chanel.022 rotation: X0.0 Y0.0 Z0.0
-Riser Chanel.022 scale: X1.0 Y1.0 Z1.0
-Riser Chanel.022 groups: None
-Riser Chanel.022 parent: BOOLEAN Riser Chanels.007
-Riser Chanel.022 mesh: Cylinder
-Riser Chanel.022 materials: Boolean difference, 
-Riser Chanel.022 modifiers: None
-
-Name: Riser Chanel.023
-Riser Chanel.023 Type: MESH
-Riser Chanel.023 transform: X6.354879856109619 Y36.147979736328125 Z-1.0705758333206177
-Riser Chanel.023 rotation: X0.0 Y0.0 Z0.0
-Riser Chanel.023 scale: X1.0 Y1.0 Z1.0
-Riser Chanel.023 groups: None
-Riser Chanel.023 parent: BOOLEAN Riser Chanels.007
-Riser Chanel.023 mesh: Cylinder
-Riser Chanel.023 materials: Boolean difference, 
-Riser Chanel.023 modifiers: 
-  #1 Name: Boolean, Type: BOOLEAN
-        Operation: UNION, Object: Riser Chanel.022
-
 Name: Runner Guide
 Runner Guide Type: MESH
 Runner Guide transform: X0.0 Y0.0 Z0.0
@@ -6597,9 +6515,9 @@ Top cover distal.001 modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #6 Name: Boolean.M2BoltHoles, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.000
-  #7 Name: Boolean.ID, Type: BOOLEAN
+  #7 Name: Boolean.LABEL identifier distal flat.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.001
-  #8 Name: Boolean, Type: BOOLEAN
+  #8 Name: Boolean.BOOLEAN Inner distal pegs.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner distal pegs.001
 
 Name: Top cover distal.002
@@ -6655,7 +6573,7 @@ Top cover distal.003 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Holes.003
   #7 Name: Boolean.ID, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.003
-  #8 Name: Boolean, Type: BOOLEAN
+  #8 Name: Boolean.BOOLEAN Inner distal pegs.003, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner distal pegs.003
 
 Name: Top cover distal.004
