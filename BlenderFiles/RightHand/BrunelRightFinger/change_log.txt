@@ -20,13 +20,6 @@ BOOLEAN Distal 1 MOULD rotation: X0.0 Y0.0 Z0.7853981852531433
 BOOLEAN Distal 1 MOULD scale: X1.0 Y1.0 Z1.0
 BOOLEAN Distal 1 MOULD groups: None
 
-Name: BOOLEAN Distal 1 MOULD.001
-BOOLEAN Distal 1 MOULD.001 Type: EMPTY
-BOOLEAN Distal 1 MOULD.001 transform: X0.0 Y0.0 Z0.0
-BOOLEAN Distal 1 MOULD.001 rotation: X0.0 Y0.0 Z1.2566370964050293
-BOOLEAN Distal 1 MOULD.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Distal 1 MOULD.001 groups: None
-
 Name: BOOLEAN Distal 2 BLANK
 BOOLEAN Distal 2 BLANK Type: EMPTY
 BOOLEAN Distal 2 BLANK transform: X0.0 Y0.0 Z0.0
@@ -41,13 +34,6 @@ BOOLEAN Distal 2 MOULD transform: X0.0 Y0.0 Z0.0
 BOOLEAN Distal 2 MOULD rotation: X0.0 Y0.0 Z-0.7853981852531433
 BOOLEAN Distal 2 MOULD scale: X1.0 Y1.0 Z1.0
 BOOLEAN Distal 2 MOULD groups: None
-
-Name: BOOLEAN Distal 2 MOULD.001
-BOOLEAN Distal 2 MOULD.001 Type: EMPTY
-BOOLEAN Distal 2 MOULD.001 transform: X0.0 Y0.0 Z0.0
-BOOLEAN Distal 2 MOULD.001 rotation: X0.0 Y0.0 Z-0.6283185482025146
-BOOLEAN Distal 2 MOULD.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Distal 2 MOULD.001 groups: None
 
 Name: BOOLEAN Distal 3 BLANK
 BOOLEAN Distal 3 BLANK Type: EMPTY
@@ -64,13 +50,6 @@ BOOLEAN Distal 3 MOULD rotation: X0.0 Y0.0 Z-2.356194496154785
 BOOLEAN Distal 3 MOULD scale: X1.0 Y1.0 Z1.0
 BOOLEAN Distal 3 MOULD groups: None
 
-Name: BOOLEAN Distal 3 MOULD.001
-BOOLEAN Distal 3 MOULD.001 Type: EMPTY
-BOOLEAN Distal 3 MOULD.001 transform: X0.0 Y0.0 Z0.0
-BOOLEAN Distal 3 MOULD.001 rotation: X0.0 Y0.0 Z-1.884955644607544
-BOOLEAN Distal 3 MOULD.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Distal 3 MOULD.001 groups: None
-
 Name: BOOLEAN Distal 4 BLANK
 BOOLEAN Distal 4 BLANK Type: EMPTY
 BOOLEAN Distal 4 BLANK transform: X0.0 Y0.0 Z0.0
@@ -85,13 +64,6 @@ BOOLEAN Distal 4 MOULD transform: X0.0 Y0.0 Z0.0
 BOOLEAN Distal 4 MOULD rotation: X0.0 Y0.0 Z2.356194496154785
 BOOLEAN Distal 4 MOULD scale: X1.0 Y1.0 Z1.0
 BOOLEAN Distal 4 MOULD groups: None
-
-Name: BOOLEAN Distal 4 MOULD.001
-BOOLEAN Distal 4 MOULD.001 Type: EMPTY
-BOOLEAN Distal 4 MOULD.001 transform: X0.0 Y0.0 Z0.0
-BOOLEAN Distal 4 MOULD.001 rotation: X0.0 Y0.0 Z2.5132741928100586
-BOOLEAN Distal 4 MOULD.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Distal 4 MOULD.001 groups: None
 
 Name: BOOLEAN Distal Joint Spring Profile
 BOOLEAN Distal Joint Spring Profile Type: MESH
@@ -149,6 +121,17 @@ BOOLEAN Distial Joint Spring Profile.001 modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #3 Name: Bevel, Type: BEVEL
 
+Name: BOOLEAN Finger Compression Points
+BOOLEAN Finger Compression Points Type: MESH
+BOOLEAN Finger Compression Points transform: X0.0 Y0.0 Z3.2817254066467285
+BOOLEAN Finger Compression Points rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Finger Compression Points scale: X1.0 Y1.0 Z1.0
+BOOLEAN Finger Compression Points groups: None
+BOOLEAN Finger Compression Points mesh: Plane.021
+BOOLEAN Finger Compression Points materials: None
+BOOLEAN Finger Compression Points modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
 Name: BOOLEAN finger sections combined (Bottom)
 BOOLEAN finger sections combined (Bottom) Type: MESH
 BOOLEAN finger sections combined (Bottom) transform: X0.0 Y0.0 Z0.0
@@ -187,21 +170,21 @@ BOOLEAN finger sections combined (Bottom).001 mesh: Cube.016
 BOOLEAN finger sections combined (Bottom).001 materials: Boolean difference, 
 BOOLEAN finger sections combined (Bottom).001 modifiers: 
   #1 Name: Boolean, Type: BOOLEAN
-        Operation: UNION, Object: Inner Distal 1 MOULD.001
+        Operation: UNION, Object: None
   #2 Name: Boolean.001, Type: BOOLEAN
-        Operation: UNION, Object: Inner Distal 2 MOULD.001
+        Operation: UNION, Object: None
   #3 Name: Boolean.002, Type: BOOLEAN
-        Operation: UNION, Object: Inner Distal 3 MOULD.001
+        Operation: UNION, Object: None
   #4 Name: Boolean.003, Type: BOOLEAN
-        Operation: UNION, Object: Inner distal 4 MOULD.001
+        Operation: UNION, Object: None
   #5 Name: Boolean.004, Type: BOOLEAN
-        Operation: UNION, Object: Inner proximal 1 MOULD.001
+        Operation: UNION, Object: None
   #6 Name: Boolean.005, Type: BOOLEAN
-        Operation: UNION, Object: Inner proximal 2 MOULD.001
+        Operation: UNION, Object: None
   #7 Name: Boolean.006, Type: BOOLEAN
-        Operation: UNION, Object: Inner proximal 3 MOULD.001
+        Operation: UNION, Object: None
   #8 Name: Boolean.007, Type: BOOLEAN
-        Operation: UNION, Object: Inner proximal 4 MOULD.001
+        Operation: UNION, Object: None
   #9 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.10, Offset: 0.00 
         Even thickness: False, High Quality Normals: True
@@ -1215,17 +1198,10 @@ BOOLEAN Proximal 1 BLANK parent: Additional Geometry
 
 Name: BOOLEAN Proximal 1 MOULD
 BOOLEAN Proximal 1 MOULD Type: EMPTY
-BOOLEAN Proximal 1 MOULD transform: X0.0 Y0.0 Z0.0
+BOOLEAN Proximal 1 MOULD transform: X0.0 Y30.0 Z0.0
 BOOLEAN Proximal 1 MOULD rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Proximal 1 MOULD scale: X1.0 Y1.0 Z1.0
 BOOLEAN Proximal 1 MOULD groups: None
-
-Name: BOOLEAN Proximal 1 MOULD.001
-BOOLEAN Proximal 1 MOULD.001 Type: EMPTY
-BOOLEAN Proximal 1 MOULD.001 transform: X0.0 Y0.0 Z0.0
-BOOLEAN Proximal 1 MOULD.001 rotation: X0.0 Y0.0 Z0.6283185482025146
-BOOLEAN Proximal 1 MOULD.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Proximal 1 MOULD.001 groups: None
 
 Name: BOOLEAN Proximal 2 BLANK
 BOOLEAN Proximal 2 BLANK Type: EMPTY
@@ -1237,17 +1213,10 @@ BOOLEAN Proximal 2 BLANK parent: Additional Geometry
 
 Name: BOOLEAN Proximal 2 MOULD
 BOOLEAN Proximal 2 MOULD Type: EMPTY
-BOOLEAN Proximal 2 MOULD transform: X0.0 Y0.0 Z0.0
+BOOLEAN Proximal 2 MOULD transform: X30.0 Y0.0 Z0.0
 BOOLEAN Proximal 2 MOULD rotation: X0.0 Y0.0 Z-1.5707963705062866
 BOOLEAN Proximal 2 MOULD scale: X1.0 Y1.0 Z1.0
 BOOLEAN Proximal 2 MOULD groups: None
-
-Name: BOOLEAN Proximal 2 MOULD.001
-BOOLEAN Proximal 2 MOULD.001 Type: EMPTY
-BOOLEAN Proximal 2 MOULD.001 transform: X0.0 Y0.0 Z0.0
-BOOLEAN Proximal 2 MOULD.001 rotation: X0.0 Y0.0 Z-1.2566370964050293
-BOOLEAN Proximal 2 MOULD.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Proximal 2 MOULD.001 groups: None
 
 Name: BOOLEAN Proximal 3 BLANK
 BOOLEAN Proximal 3 BLANK Type: EMPTY
@@ -1259,17 +1228,10 @@ BOOLEAN Proximal 3 BLANK parent: Additional Geometry
 
 Name: BOOLEAN Proximal 3 MOULD
 BOOLEAN Proximal 3 MOULD Type: EMPTY
-BOOLEAN Proximal 3 MOULD transform: X0.0 Y0.0 Z0.0
+BOOLEAN Proximal 3 MOULD transform: X0.0 Y-30.0 Z0.0
 BOOLEAN Proximal 3 MOULD rotation: X0.0 Y0.0 Z-3.1415927410125732
 BOOLEAN Proximal 3 MOULD scale: X1.0 Y1.0 Z1.0
 BOOLEAN Proximal 3 MOULD groups: None
-
-Name: BOOLEAN Proximal 3 MOULD.001
-BOOLEAN Proximal 3 MOULD.001 Type: EMPTY
-BOOLEAN Proximal 3 MOULD.001 transform: X0.0 Y0.0 Z0.0
-BOOLEAN Proximal 3 MOULD.001 rotation: X0.0 Y0.0 Z-2.5132741928100586
-BOOLEAN Proximal 3 MOULD.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Proximal 3 MOULD.001 groups: None
 
 Name: BOOLEAN Proximal 4 BLANK
 BOOLEAN Proximal 4 BLANK Type: EMPTY
@@ -1281,17 +1243,10 @@ BOOLEAN Proximal 4 BLANK parent: Additional Geometry
 
 Name: BOOLEAN Proximal 4 MOULD
 BOOLEAN Proximal 4 MOULD Type: EMPTY
-BOOLEAN Proximal 4 MOULD transform: X0.0 Y0.0 Z0.0
+BOOLEAN Proximal 4 MOULD transform: X-30.0 Y0.0 Z0.0
 BOOLEAN Proximal 4 MOULD rotation: X0.0 Y0.0 Z-4.71238899230957
 BOOLEAN Proximal 4 MOULD scale: X1.0 Y1.0 Z1.0
 BOOLEAN Proximal 4 MOULD groups: None
-
-Name: BOOLEAN Proximal 4 MOULD.001
-BOOLEAN Proximal 4 MOULD.001 Type: EMPTY
-BOOLEAN Proximal 4 MOULD.001 transform: X0.0 Y0.0 Z0.0
-BOOLEAN Proximal 4 MOULD.001 rotation: X0.0 Y0.0 Z1.884955644607544
-BOOLEAN Proximal 4 MOULD.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Proximal 4 MOULD.001 groups: None
 
 Name: BOOLEAN Proximal Joint Spring Profile.001
 BOOLEAN Proximal Joint Spring Profile.001 Type: MESH
@@ -2939,6 +2894,50 @@ Cylinder.011 mesh: Cylinder.023
 Cylinder.011 materials: Boolean difference, 
 Cylinder.011 modifiers: None
 
+Name: Cylinder.012
+Cylinder.012 Type: MESH
+Cylinder.012 transform: X0.0 Y-1.9073486328125e-06 Z2.5
+Cylinder.012 rotation: X0.0 Y0.0 Z0.0
+Cylinder.012 scale: X0.9836937189102173 Y1.0 Z1.0
+Cylinder.012 groups: None
+Cylinder.012 mesh: Cylinder.008
+Cylinder.012 materials: None
+Cylinder.012 modifiers: 
+  #1 Name: Boolean.BOOLEAN Finger Compression Points, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Finger Compression Points
+  #2 Name: Boolean.BOOLEAN MOULD Location feature, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN MOULD Location feature
+  #3 Name: Boolean.Cylinder.013, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cylinder.013
+  #4 Name: Boolean.BOOLEAN M3 bolt hole.000, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M3 bolt hole.000
+  #5 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Plane
+  #6 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cylinder.014
+  #7 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Plane.001
+
+Name: Cylinder.013
+Cylinder.013 Type: MESH
+Cylinder.013 transform: X0.0 Y-1.9073486328125e-06 Z2.0
+Cylinder.013 rotation: X0.0 Y0.0 Z0.0
+Cylinder.013 scale: X0.9815250635147095 Y0.9815250635147095 Z0.9815250635147095
+Cylinder.013 groups: None
+Cylinder.013 mesh: Cylinder.013
+Cylinder.013 materials: Boolean difference, 
+Cylinder.013 modifiers: None
+
+Name: Cylinder.014
+Cylinder.014 Type: MESH
+Cylinder.014 transform: X-46.109596252441406 Y-47.077537536621094 Z3.9999985694885254
+Cylinder.014 rotation: X0.0 Y0.0 Z0.0
+Cylinder.014 scale: X1.0736650228500366 Y1.0736650228500366 Z1.0736650228500366
+Cylinder.014 groups: None
+Cylinder.014 mesh: Cylinder.015
+Cylinder.014 materials: Boolean difference, 
+Cylinder.014 modifiers: None
+
 Name: Distal Phalanx.001
 Distal Phalanx.001 Type: EMPTY
 Distal Phalanx.001 transform: X0.0 Y0.0 Z0.0
@@ -3265,31 +3264,6 @@ HANDLE Distal base 1.000 transform: X0.0 Y36.0 Z0.0
 HANDLE Distal base 1.000 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal base 1.000 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal base 1.000 groups: None
-HANDLE Distal base 1.000 parent: BOOLEAN Distal 3 MOULD.001
-
-Name: HANDLE distal base 1.001
-HANDLE distal base 1.001 Type: EMPTY
-HANDLE distal base 1.001 transform: X0.0 Y30.0 Z0.0
-HANDLE distal base 1.001 rotation: X0.0 Y0.0 Z0.0
-HANDLE distal base 1.001 scale: X1.0 Y1.0 Z1.0
-HANDLE distal base 1.001 groups: None
-HANDLE distal base 1.001 parent: BOOLEAN Distal 1 MOULD
-
-Name: HANDLE distal base 1.002
-HANDLE distal base 1.002 Type: EMPTY
-HANDLE distal base 1.002 transform: X0.0 Y30.0 Z0.0
-HANDLE distal base 1.002 rotation: X0.0 Y0.0 Z0.0
-HANDLE distal base 1.002 scale: X1.0 Y1.0 Z1.0
-HANDLE distal base 1.002 groups: None
-HANDLE distal base 1.002 parent: BOOLEAN Distal 2 MOULD
-
-Name: HANDLE Distal base 1.003
-HANDLE Distal base 1.003 Type: EMPTY
-HANDLE Distal base 1.003 transform: X0.0 Y30.0 Z0.0
-HANDLE Distal base 1.003 rotation: X0.0 Y0.0 Z0.0
-HANDLE Distal base 1.003 scale: X1.0 Y1.0 Z1.0
-HANDLE Distal base 1.003 groups: None
-HANDLE Distal base 1.003 parent: BOOLEAN Distal 3 MOULD
 
 Name: HANDLE distal base 1.003
 HANDLE distal base 1.003 Type: EMPTY
@@ -3297,7 +3271,6 @@ HANDLE distal base 1.003 transform: X0.0 Y33.0 Z0.0
 HANDLE distal base 1.003 rotation: X0.0 Y0.0 Z0.0
 HANDLE distal base 1.003 scale: X1.0 Y1.0 Z1.0
 HANDLE distal base 1.003 groups: None
-HANDLE distal base 1.003 parent: BOOLEAN Distal 2 MOULD.001
 
 Name: HANDLE distal base 1.005
 HANDLE distal base 1.005 Type: EMPTY
@@ -3305,7 +3278,6 @@ HANDLE distal base 1.005 transform: X0.0 Y32.0 Z0.0
 HANDLE distal base 1.005 rotation: X0.0 Y0.0 Z0.0
 HANDLE distal base 1.005 scale: X1.0 Y1.0 Z1.0
 HANDLE distal base 1.005 groups: None
-HANDLE distal base 1.005 parent: BOOLEAN Distal 1 MOULD.001
 
 Name: HANDLE distal base 1.006
 HANDLE distal base 1.006 Type: EMPTY
@@ -3313,7 +3285,6 @@ HANDLE distal base 1.006 transform: X0.0 Y41.999996185302734 Z0.0
 HANDLE distal base 1.006 rotation: X0.0 Y0.0 Z0.0
 HANDLE distal base 1.006 scale: X1.0 Y1.0 Z1.0
 HANDLE distal base 1.006 groups: None
-HANDLE distal base 1.006 parent: BOOLEAN Distal 4 MOULD.001
 
 Name: HANDLE distal base 2
 HANDLE distal base 2 Type: EMPTY
@@ -3339,14 +3310,6 @@ HANDLE distal base 4 scale: X1.0 Y1.0 Z1.0
 HANDLE distal base 4 groups: None
 HANDLE distal base 4 parent: BOOLEAN Distal 4 BLANK
 
-Name: HANDLE distal base 1.004
-HANDLE distal base 1.004 Type: EMPTY
-HANDLE distal base 1.004 transform: X0.0 Y30.0 Z0.0
-HANDLE distal base 1.004 rotation: X0.0 Y0.0 Z0.0
-HANDLE distal base 1.004 scale: X1.0 Y1.0 Z1.0
-HANDLE distal base 1.004 groups: None
-HANDLE distal base 1.004 parent: BOOLEAN Distal 4 MOULD
-
 Name: HANDLE distal fingertip 1
 HANDLE distal fingertip 1 Type: EMPTY
 HANDLE distal fingertip 1 transform: X0.0 Y44.0 Z0.0
@@ -3363,21 +3326,12 @@ HANDLE Distal fingertip 1.000 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal fingertip 1.000 groups: None
 HANDLE Distal fingertip 1.000 parent: HANDLE Distal base 1.000
 
-Name: HANDLE distal fingertip 1.002
-HANDLE distal fingertip 1.002 Type: EMPTY
-HANDLE distal fingertip 1.002 transform: X0.0 Y46.0 Z0.0
-HANDLE distal fingertip 1.002 rotation: X0.0 Y0.0 Z0.0
-HANDLE distal fingertip 1.002 scale: X1.0 Y1.0 Z1.0
-HANDLE distal fingertip 1.002 groups: None
-HANDLE distal fingertip 1.002 parent: HANDLE distal base 1.002
-
 Name: HANDLE Distal fingertip 1.003
 HANDLE Distal fingertip 1.003 Type: EMPTY
 HANDLE Distal fingertip 1.003 transform: X0.0 Y43.0 Z0.0
 HANDLE Distal fingertip 1.003 rotation: X0.0 Y0.0 Z0.0
 HANDLE Distal fingertip 1.003 scale: X1.0 Y1.0 Z1.0
 HANDLE Distal fingertip 1.003 groups: None
-HANDLE Distal fingertip 1.003 parent: HANDLE Distal base 1.003
 
 Name: HANDLE distal fingertip 1.003
 HANDLE distal fingertip 1.003 Type: EMPTY
@@ -3532,45 +3486,12 @@ HANDLE proximal 1 base scale: X1.0 Y1.0 Z1.0
 HANDLE proximal 1 base groups: None
 HANDLE proximal 1 base parent: BOOLEAN Proximal 1 BLANK
 
-Name: HANDLE proximal 1 base.001
-HANDLE proximal 1 base.001 Type: EMPTY
-HANDLE proximal 1 base.001 transform: X0.0 Y30.0 Z0.0
-HANDLE proximal 1 base.001 rotation: X0.0 Y0.0 Z0.0
-HANDLE proximal 1 base.001 scale: X1.0 Y1.0 Z1.0
-HANDLE proximal 1 base.001 groups: None
-HANDLE proximal 1 base.001 parent: BOOLEAN Proximal 1 MOULD
-
-Name: HANDLE proximal 1 base.002
-HANDLE proximal 1 base.002 Type: EMPTY
-HANDLE proximal 1 base.002 transform: X0.0 Y30.0 Z0.0
-HANDLE proximal 1 base.002 rotation: X0.0 Y0.0 Z0.0
-HANDLE proximal 1 base.002 scale: X1.0 Y1.0 Z1.0
-HANDLE proximal 1 base.002 groups: None
-HANDLE proximal 1 base.002 parent: BOOLEAN Proximal 2 MOULD
-
-Name: HANDLE proximal 1 base.003
-HANDLE proximal 1 base.003 Type: EMPTY
-HANDLE proximal 1 base.003 transform: X0.0 Y30.0 Z0.0
-HANDLE proximal 1 base.003 rotation: X0.0 Y0.0 Z0.0
-HANDLE proximal 1 base.003 scale: X1.0 Y1.0 Z1.0
-HANDLE proximal 1 base.003 groups: None
-HANDLE proximal 1 base.003 parent: BOOLEAN Proximal 3 MOULD
-
-Name: HANDLE proximal 1 base.004
-HANDLE proximal 1 base.004 Type: EMPTY
-HANDLE proximal 1 base.004 transform: X0.0 Y30.0 Z0.0
-HANDLE proximal 1 base.004 rotation: X0.0 Y0.0 Z0.0
-HANDLE proximal 1 base.004 scale: X1.0 Y1.0 Z1.0
-HANDLE proximal 1 base.004 groups: None
-HANDLE proximal 1 base.004 parent: BOOLEAN Proximal 4 MOULD
-
 Name: HANDLE proximal 1 base.005
 HANDLE proximal 1 base.005 Type: EMPTY
 HANDLE proximal 1 base.005 transform: X0.0 Y48.0 Z0.0
 HANDLE proximal 1 base.005 rotation: X0.0 Y0.0 Z0.0
 HANDLE proximal 1 base.005 scale: X1.0 Y1.0 Z1.0
 HANDLE proximal 1 base.005 groups: None
-HANDLE proximal 1 base.005 parent: BOOLEAN Proximal 4 MOULD.001
 
 Name: HANDLE proximal 1 base.006
 HANDLE proximal 1 base.006 Type: EMPTY
@@ -3578,7 +3499,6 @@ HANDLE proximal 1 base.006 transform: X0.0 Y40.0 Z0.0
 HANDLE proximal 1 base.006 rotation: X0.0 Y0.0 Z0.0
 HANDLE proximal 1 base.006 scale: X1.0 Y1.0 Z1.0
 HANDLE proximal 1 base.006 groups: None
-HANDLE proximal 1 base.006 parent: BOOLEAN Proximal 3 MOULD.001
 
 Name: HANDLE proximal 1 base.007
 HANDLE proximal 1 base.007 Type: EMPTY
@@ -3586,7 +3506,6 @@ HANDLE proximal 1 base.007 transform: X0.0 Y29.0 Z0.0
 HANDLE proximal 1 base.007 rotation: X0.0 Y0.0 Z0.0
 HANDLE proximal 1 base.007 scale: X1.0 Y1.0 Z1.0
 HANDLE proximal 1 base.007 groups: None
-HANDLE proximal 1 base.007 parent: BOOLEAN Proximal 2 MOULD.001
 
 Name: HANDLE proximal 1 base.008
 HANDLE proximal 1 base.008 Type: EMPTY
@@ -3594,7 +3513,6 @@ HANDLE proximal 1 base.008 transform: X0.0 Y29.0 Z0.0
 HANDLE proximal 1 base.008 rotation: X0.0 Y0.0 Z0.0
 HANDLE proximal 1 base.008 scale: X1.0 Y1.0 Z1.0
 HANDLE proximal 1 base.008 groups: None
-HANDLE proximal 1 base.008 parent: BOOLEAN Proximal 1 MOULD.001
 
 Name: HANDLE proximal 1 distal joint
 HANDLE proximal 1 distal joint Type: EMPTY
@@ -3603,38 +3521,6 @@ HANDLE proximal 1 distal joint rotation: X0.0 Y0.0 Z0.0
 HANDLE proximal 1 distal joint scale: X1.0 Y1.0 Z1.0
 HANDLE proximal 1 distal joint groups: None
 HANDLE proximal 1 distal joint parent: HANDLE proximal 1 base
-
-Name: HANDLE proximal 1 distal joint.001
-HANDLE proximal 1 distal joint.001 Type: EMPTY
-HANDLE proximal 1 distal joint.001 transform: X0.0 Y45.0 Z0.0
-HANDLE proximal 1 distal joint.001 rotation: X0.0 Y0.0 Z0.0
-HANDLE proximal 1 distal joint.001 scale: X1.0 Y1.0 Z1.0
-HANDLE proximal 1 distal joint.001 groups: None
-HANDLE proximal 1 distal joint.001 parent: HANDLE proximal 1 base.001
-
-Name: HANDLE proximal 1 distal joint.002
-HANDLE proximal 1 distal joint.002 Type: EMPTY
-HANDLE proximal 1 distal joint.002 transform: X0.0 Y45.0 Z0.0
-HANDLE proximal 1 distal joint.002 rotation: X0.0 Y0.0 Z0.0
-HANDLE proximal 1 distal joint.002 scale: X1.0 Y1.0 Z1.0
-HANDLE proximal 1 distal joint.002 groups: None
-HANDLE proximal 1 distal joint.002 parent: HANDLE proximal 1 base.002
-
-Name: HANDLE proximal 1 distal joint.003
-HANDLE proximal 1 distal joint.003 Type: EMPTY
-HANDLE proximal 1 distal joint.003 transform: X0.0 Y38.0 Z0.0
-HANDLE proximal 1 distal joint.003 rotation: X0.0 Y0.0 Z0.0
-HANDLE proximal 1 distal joint.003 scale: X1.0 Y1.0 Z1.0
-HANDLE proximal 1 distal joint.003 groups: None
-HANDLE proximal 1 distal joint.003 parent: HANDLE proximal 1 base.003
-
-Name: HANDLE proximal 1 distal joint.004
-HANDLE proximal 1 distal joint.004 Type: EMPTY
-HANDLE proximal 1 distal joint.004 transform: X0.0 Y30.0 Z0.0
-HANDLE proximal 1 distal joint.004 rotation: X0.0 Y0.0 Z0.0
-HANDLE proximal 1 distal joint.004 scale: X1.0 Y1.0 Z1.0
-HANDLE proximal 1 distal joint.004 groups: None
-HANDLE proximal 1 distal joint.004 parent: HANDLE proximal 1 base.004
 
 Name: HANDLE proximal 1 distal joint.005
 HANDLE proximal 1 distal joint.005 Type: EMPTY
@@ -4075,64 +3961,42 @@ Inner Distal 1 BLANK modifiers:
 
 Name: Inner Distal 1 MOULD
 Inner Distal 1 MOULD Type: MESH
-Inner Distal 1 MOULD transform: X0.0 Y0.0 Z0.0
+Inner Distal 1 MOULD transform: X0.0 Y30.000003814697266 Z0.0
 Inner Distal 1 MOULD rotation: X0.0 Y0.0 Z0.0
 Inner Distal 1 MOULD scale: X1.0 Y1.0 Z1.0
 Inner Distal 1 MOULD groups: None
 Inner Distal 1 MOULD parent: BOOLEAN Distal 1 MOULD
-Inner Distal 1 MOULD mesh: Inner distal MOULD
+Inner Distal 1 MOULD mesh: Distal MOULD 1ST
 Inner Distal 1 MOULD materials: PLA White, 
 Inner Distal 1 MOULD modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
+  #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
-        Levels: 4, Type: CATMULL_CLARK
-
-Name: Inner Distal 1 MOULD.001
-Inner Distal 1 MOULD.001 Type: MESH
-Inner Distal 1 MOULD.001 transform: X0.0 Y0.0 Z0.0
-Inner Distal 1 MOULD.001 rotation: X0.0 Y0.0 Z0.0
-Inner Distal 1 MOULD.001 scale: X1.0 Y1.0 Z1.0
-Inner Distal 1 MOULD.001 groups: None
-Inner Distal 1 MOULD.001 parent: BOOLEAN Distal 1 MOULD.001
-Inner Distal 1 MOULD.001 mesh: Inner distal MOULD
-Inner Distal 1 MOULD.001 materials: PLA White, 
-Inner Distal 1 MOULD.001 modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
+  #2 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner distal 1ST
 Inner distal 1ST Type: MESH
-Inner distal 1ST transform: X0.0 Y0.0 Z0.0
+Inner distal 1ST transform: X0.0 Y45.0 Z0.0
 Inner distal 1ST rotation: X0.0 Y0.0 Z0.0
 Inner distal 1ST scale: X1.0 Y1.0 Z1.0
 Inner distal 1ST groups: 1st Finger, 
 Inner distal 1ST parent: Distal Phalanx.001
-Inner distal 1ST mesh: Inner distal MOULD
+Inner distal 1ST mesh: Distal MOULD 1ST
 Inner distal 1ST materials: PLA White, 
 Inner distal 1ST modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
+  #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 1st Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
+  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL identifier distal flat.001
 
 Name: Inner Distal 2 BLANK
 Inner Distal 2 BLANK Type: MESH
@@ -4156,64 +4020,42 @@ Inner Distal 2 BLANK modifiers:
 
 Name: Inner Distal 2 MOULD
 Inner Distal 2 MOULD Type: MESH
-Inner Distal 2 MOULD transform: X0.0 Y0.0 Z0.0
+Inner Distal 2 MOULD transform: X0.0 Y30.000003814697266 Z0.0
 Inner Distal 2 MOULD rotation: X0.0 Y0.0 Z0.0
 Inner Distal 2 MOULD scale: X1.0 Y1.0 Z1.0
 Inner Distal 2 MOULD groups: None
 Inner Distal 2 MOULD parent: BOOLEAN Distal 2 MOULD
-Inner Distal 2 MOULD mesh: Inner distal.004
+Inner Distal 2 MOULD mesh: Distal MOULD 2ND 
 Inner Distal 2 MOULD materials: PLA White, 
 Inner Distal 2 MOULD modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
+  #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-
-Name: Inner Distal 2 MOULD.001
-Inner Distal 2 MOULD.001 Type: MESH
-Inner Distal 2 MOULD.001 transform: X0.0 Y0.0 Z0.0
-Inner Distal 2 MOULD.001 rotation: X0.0 Y0.0 Z0.0
-Inner Distal 2 MOULD.001 scale: X1.0 Y1.0 Z1.0
-Inner Distal 2 MOULD.001 groups: None
-Inner Distal 2 MOULD.001 parent: BOOLEAN Distal 2 MOULD.001
-Inner Distal 2 MOULD.001 mesh: Inner distal.004
-Inner Distal 2 MOULD.001 materials: PLA White, 
-Inner Distal 2 MOULD.001 modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
+  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Inner distal 2ND
 Inner distal 2ND Type: MESH
-Inner distal 2ND transform: X0.0 Y0.0 Z0.0
+Inner distal 2ND transform: X0.0 Y45.0 Z0.0
 Inner distal 2ND rotation: X0.0 Y0.0 Z0.0
 Inner distal 2ND scale: X1.0 Y1.0 Z1.0
-Inner distal 2ND groups: 1st Finger, 
-Inner distal 2ND parent: Distal Phalanx.001
-Inner distal 2ND mesh: Inner distal MOULD
+Inner distal 2ND groups: 2nd Finger, 
+Inner distal 2ND parent: Distal Phalanx.002
+Inner distal 2ND mesh: Distal MOULD 2ND 
 Inner distal 2ND materials: PLA White, 
 Inner distal 2ND modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
+  #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 1st Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
+  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean.LABEL identifier distal flat.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL identifier distal flat.002
 
 Name: Inner Distal 3 BLANK
 Inner Distal 3 BLANK Type: MESH
@@ -4237,64 +4079,42 @@ Inner Distal 3 BLANK modifiers:
 
 Name: Inner Distal 3 MOULD
 Inner Distal 3 MOULD Type: MESH
-Inner Distal 3 MOULD transform: X0.0 Y0.0 Z0.0
+Inner Distal 3 MOULD transform: X0.0 Y30.000003814697266 Z0.0
 Inner Distal 3 MOULD rotation: X0.0 Y0.0 Z0.0
 Inner Distal 3 MOULD scale: X1.0 Y1.0 Z1.0
 Inner Distal 3 MOULD groups: None
 Inner Distal 3 MOULD parent: BOOLEAN Distal 3 MOULD
-Inner Distal 3 MOULD mesh: Inner distal.004
+Inner Distal 3 MOULD mesh: Distal MOULD 3RD
 Inner Distal 3 MOULD materials: PLA White, 
 Inner Distal 3 MOULD modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
+  #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-
-Name: Inner Distal 3 MOULD.001
-Inner Distal 3 MOULD.001 Type: MESH
-Inner Distal 3 MOULD.001 transform: X0.0 Y0.0 Z0.0
-Inner Distal 3 MOULD.001 rotation: X0.0 Y0.0 Z0.0
-Inner Distal 3 MOULD.001 scale: X1.0 Y1.0 Z1.0
-Inner Distal 3 MOULD.001 groups: None
-Inner Distal 3 MOULD.001 parent: BOOLEAN Distal 3 MOULD.001
-Inner Distal 3 MOULD.001 mesh: Inner distal.004
-Inner Distal 3 MOULD.001 materials: PLA White, 
-Inner Distal 3 MOULD.001 modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
+  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Inner distal 3RD
 Inner distal 3RD Type: MESH
-Inner distal 3RD transform: X0.0 Y0.0 Z0.0
+Inner distal 3RD transform: X0.0 Y38.0 Z0.0
 Inner distal 3RD rotation: X0.0 Y0.0 Z0.0
 Inner distal 3RD scale: X1.0 Y1.0 Z1.0
-Inner distal 3RD groups: 1st Finger, 
-Inner distal 3RD parent: Distal Phalanx.001
-Inner distal 3RD mesh: Inner distal MOULD
+Inner distal 3RD groups: 3rd Finger, 
+Inner distal 3RD parent: Distal Phalanx.003
+Inner distal 3RD mesh: Distal MOULD 3RD
 Inner distal 3RD materials: PLA White, 
 Inner distal 3RD modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
+  #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 1st Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
+  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean.LABEL identifier distal flat.003, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL identifier distal flat.003
 
 Name: Inner Distal 4 BLANK
 Inner Distal 4 BLANK Type: MESH
@@ -4318,64 +4138,42 @@ Inner Distal 4 BLANK modifiers:
 
 Name: Inner distal 4 MOULD
 Inner distal 4 MOULD Type: MESH
-Inner distal 4 MOULD transform: X0.0 Y0.0 Z0.0
+Inner distal 4 MOULD transform: X0.0 Y30.000003814697266 Z0.0
 Inner distal 4 MOULD rotation: X0.0 Y0.0 Z0.0
 Inner distal 4 MOULD scale: X1.0 Y1.0 Z1.0
 Inner distal 4 MOULD groups: None
 Inner distal 4 MOULD parent: BOOLEAN Distal 4 MOULD
-Inner distal 4 MOULD mesh: Inner distal.006
+Inner distal 4 MOULD mesh: Distal MOULD 4TH
 Inner distal 4 MOULD materials: PLA White, 
 Inner distal 4 MOULD modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
+  #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-
-Name: Inner distal 4 MOULD.001
-Inner distal 4 MOULD.001 Type: MESH
-Inner distal 4 MOULD.001 transform: X0.0 Y0.0 Z0.0
-Inner distal 4 MOULD.001 rotation: X0.0 Y0.0 Z0.0
-Inner distal 4 MOULD.001 scale: X1.0 Y1.0 Z1.0
-Inner distal 4 MOULD.001 groups: None
-Inner distal 4 MOULD.001 parent: BOOLEAN Distal 4 MOULD.001
-Inner distal 4 MOULD.001 mesh: Inner distal.006
-Inner distal 4 MOULD.001 materials: PLA White, 
-Inner distal 4 MOULD.001 modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
+  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Inner distal 4TH
 Inner distal 4TH Type: MESH
-Inner distal 4TH transform: X0.0 Y0.0 Z0.0
+Inner distal 4TH transform: X0.0 Y31.0 Z0.0
 Inner distal 4TH rotation: X0.0 Y0.0 Z0.0
 Inner distal 4TH scale: X1.0 Y1.0 Z1.0
-Inner distal 4TH groups: 1st Finger, 
-Inner distal 4TH parent: Distal Phalanx.001
-Inner distal 4TH mesh: Inner distal MOULD
+Inner distal 4TH groups: 4th Finger, 
+Inner distal 4TH parent: Distal Phalanx.004
+Inner distal 4TH mesh: Distal MOULD 4TH
 Inner distal 4TH materials: PLA White, 
 Inner distal 4TH modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
+  #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 1st Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
+  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL identifier distal flat.004
 
 Name: Inner distal Dummy.002
 Inner distal Dummy.002 Type: MESH
@@ -4706,7 +4504,7 @@ Inner proximal 1 MOULD rotation: X0.0 Y0.0 Z0.0
 Inner proximal 1 MOULD scale: X1.0 Y1.0 Z1.0
 Inner proximal 1 MOULD groups: None
 Inner proximal 1 MOULD parent: BOOLEAN Proximal 1 MOULD
-Inner proximal 1 MOULD mesh: Inner proximal.006
+Inner proximal 1 MOULD mesh: Proximal MOULD 1ST
 Inner proximal 1 MOULD materials: PLA White, 
 Inner proximal 1 MOULD modifiers: 
   #1 Name: Mirror, Type: MIRROR
@@ -4714,29 +4512,7 @@ Inner proximal 1 MOULD modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
-  #2 Name: Hook, Type: HOOK
-  #3 Name: Hook.001, Type: HOOK
-  #4 Name: Subsurf, Type: SUBSURF
-        Levels: 4, Type: CATMULL_CLARK
-
-Name: Inner proximal 1 MOULD.001
-Inner proximal 1 MOULD.001 Type: MESH
-Inner proximal 1 MOULD.001 transform: X0.0 Y0.0 Z0.0
-Inner proximal 1 MOULD.001 rotation: X0.0 Y0.0 Z0.0
-Inner proximal 1 MOULD.001 scale: X1.0 Y1.0 Z1.0
-Inner proximal 1 MOULD.001 groups: None
-Inner proximal 1 MOULD.001 parent: BOOLEAN Proximal 1 MOULD.001
-Inner proximal 1 MOULD.001 mesh: Inner proximal.006
-Inner proximal 1 MOULD.001 materials: PLA White, 
-Inner proximal 1 MOULD.001 modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #2 Name: Hook, Type: HOOK
-  #3 Name: Hook.001, Type: HOOK
-  #4 Name: Subsurf, Type: SUBSURF
+  #2 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner Proximal 1ST
@@ -4746,18 +4522,19 @@ Inner Proximal 1ST rotation: X0.0 Y0.0 Z0.0
 Inner Proximal 1ST scale: X1.0 Y1.0 Z1.0
 Inner Proximal 1ST groups: 1st Finger, 
 Inner Proximal 1ST parent: Proximal Phalanx.001
-Inner Proximal 1ST mesh: Inner proximal MOULD
+Inner Proximal 1ST mesh: Proximal MOULD 1ST
 Inner Proximal 1ST materials: PLA White, 
 Inner Proximal 1ST modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Mirror, Type: MIRROR
+  #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 1st Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #3 Name: Subsurf, Type: SUBSURF
+  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.001
 
 Name: Inner proximal 2 BLANK
 Inner proximal 2 BLANK Type: MESH
@@ -4786,7 +4563,7 @@ Inner proximal 2 MOULD rotation: X0.0 Y0.0 Z0.0
 Inner proximal 2 MOULD scale: X1.0 Y1.0 Z1.0
 Inner proximal 2 MOULD groups: None
 Inner proximal 2 MOULD parent: BOOLEAN Proximal 2 MOULD
-Inner proximal 2 MOULD mesh: Inner proximal.006
+Inner proximal 2 MOULD mesh: Proximal MOULD 2ND
 Inner proximal 2 MOULD materials: PLA White, 
 Inner proximal 2 MOULD modifiers: 
   #1 Name: Mirror, Type: MIRROR
@@ -4794,29 +4571,7 @@ Inner proximal 2 MOULD modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
-  #2 Name: Hook, Type: HOOK
-  #3 Name: Hook.001, Type: HOOK
-  #4 Name: Subsurf, Type: SUBSURF
-        Levels: 4, Type: CATMULL_CLARK
-
-Name: Inner proximal 2 MOULD.001
-Inner proximal 2 MOULD.001 Type: MESH
-Inner proximal 2 MOULD.001 transform: X0.0 Y0.0 Z0.0
-Inner proximal 2 MOULD.001 rotation: X0.0 Y0.0 Z0.0
-Inner proximal 2 MOULD.001 scale: X1.0 Y1.0 Z1.0
-Inner proximal 2 MOULD.001 groups: None
-Inner proximal 2 MOULD.001 parent: BOOLEAN Proximal 2 MOULD.001
-Inner proximal 2 MOULD.001 mesh: Inner proximal.006
-Inner proximal 2 MOULD.001 materials: PLA White, 
-Inner proximal 2 MOULD.001 modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #2 Name: Hook, Type: HOOK
-  #3 Name: Hook.001, Type: HOOK
-  #4 Name: Subsurf, Type: SUBSURF
+  #2 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner Proximal 2ND
@@ -4824,20 +4579,22 @@ Inner Proximal 2ND Type: MESH
 Inner Proximal 2ND transform: X0.0 Y0.0 Z0.0
 Inner Proximal 2ND rotation: X0.0 Y0.0 Z0.0
 Inner Proximal 2ND scale: X1.0 Y1.0 Z1.0
-Inner Proximal 2ND groups: 1st Finger, 
-Inner Proximal 2ND parent: Proximal Phalanx.001
-Inner Proximal 2ND mesh: Inner proximal MOULD
+Inner Proximal 2ND groups: 2nd Finger, 
+Inner Proximal 2ND parent: Proximal Phalanx.002
+Inner Proximal 2ND mesh: Proximal MOULD 2ND
 Inner Proximal 2ND materials: PLA White, 
 Inner Proximal 2ND modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Mirror, Type: MIRROR
+  #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 1st Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
+  #2 Name: Bevel, Type: BEVEL
   #3 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+  #4 Name: Boolean.LABEL Identifier Inner proximal.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.002
 
 Name: Inner proximal 3 BLANK
 Inner proximal 3 BLANK Type: MESH
@@ -4866,7 +4623,7 @@ Inner proximal 3 MOULD rotation: X0.0 Y0.0 Z0.0
 Inner proximal 3 MOULD scale: X1.0 Y1.0 Z1.0
 Inner proximal 3 MOULD groups: None
 Inner proximal 3 MOULD parent: BOOLEAN Proximal 3 MOULD
-Inner proximal 3 MOULD mesh: Inner proximal.007
+Inner proximal 3 MOULD mesh: Proximal MOULD 3RD
 Inner proximal 3 MOULD materials: PLA White, 
 Inner proximal 3 MOULD modifiers: 
   #1 Name: Mirror, Type: MIRROR
@@ -4874,29 +4631,7 @@ Inner proximal 3 MOULD modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
-  #2 Name: Hook, Type: HOOK
-  #3 Name: Hook.001, Type: HOOK
-  #4 Name: Subsurf, Type: SUBSURF
-        Levels: 4, Type: CATMULL_CLARK
-
-Name: Inner proximal 3 MOULD.001
-Inner proximal 3 MOULD.001 Type: MESH
-Inner proximal 3 MOULD.001 transform: X0.0 Y0.0 Z0.0
-Inner proximal 3 MOULD.001 rotation: X0.0 Y0.0 Z0.0
-Inner proximal 3 MOULD.001 scale: X1.0 Y1.0 Z1.0
-Inner proximal 3 MOULD.001 groups: None
-Inner proximal 3 MOULD.001 parent: BOOLEAN Proximal 3 MOULD.001
-Inner proximal 3 MOULD.001 mesh: Inner proximal.007
-Inner proximal 3 MOULD.001 materials: PLA White, 
-Inner proximal 3 MOULD.001 modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #2 Name: Hook, Type: HOOK
-  #3 Name: Hook.001, Type: HOOK
-  #4 Name: Subsurf, Type: SUBSURF
+  #2 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner Proximal 3RD
@@ -4904,20 +4639,21 @@ Inner Proximal 3RD Type: MESH
 Inner Proximal 3RD transform: X0.0 Y0.0 Z0.0
 Inner Proximal 3RD rotation: X0.0 Y0.0 Z0.0
 Inner Proximal 3RD scale: X1.0 Y1.0 Z1.0
-Inner Proximal 3RD groups: 1st Finger, 
-Inner Proximal 3RD parent: Proximal Phalanx.001
-Inner Proximal 3RD mesh: Inner proximal MOULD
+Inner Proximal 3RD groups: 3rd Finger, 
+Inner Proximal 3RD parent: Proximal Phalanx.003
+Inner Proximal 3RD mesh: Proximal MOULD 3RD
 Inner Proximal 3RD materials: PLA White, 
 Inner Proximal 3RD modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Mirror, Type: MIRROR
+  #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
         Mirror object: HANDLE 1st Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #3 Name: Subsurf, Type: SUBSURF
+  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean.identifier, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.003
 
 Name: Inner proximal 4 BLANK
 Inner proximal 4 BLANK Type: MESH
@@ -4941,12 +4677,12 @@ Inner proximal 4 BLANK modifiers:
 
 Name: Inner proximal 4 MOULD
 Inner proximal 4 MOULD Type: MESH
-Inner proximal 4 MOULD transform: X0.0 Y0.0 Z0.0
+Inner proximal 4 MOULD transform: X0.0 Y7.0 Z0.0
 Inner proximal 4 MOULD rotation: X0.0 Y0.0 Z0.0
 Inner proximal 4 MOULD scale: X1.0 Y1.0 Z1.0
 Inner proximal 4 MOULD groups: None
 Inner proximal 4 MOULD parent: BOOLEAN Proximal 4 MOULD
-Inner proximal 4 MOULD mesh: Inner proximal.010
+Inner proximal 4 MOULD mesh: Proximal MOULD 4TH
 Inner proximal 4 MOULD materials: PLA White, 
 Inner proximal 4 MOULD modifiers: 
   #1 Name: Mirror, Type: MIRROR
@@ -4954,29 +4690,7 @@ Inner proximal 4 MOULD modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
-  #2 Name: Hook, Type: HOOK
-  #3 Name: Hook.001, Type: HOOK
-  #4 Name: Subsurf, Type: SUBSURF
-        Levels: 4, Type: CATMULL_CLARK
-
-Name: Inner proximal 4 MOULD.001
-Inner proximal 4 MOULD.001 Type: MESH
-Inner proximal 4 MOULD.001 transform: X0.0 Y0.0 Z0.0
-Inner proximal 4 MOULD.001 rotation: X0.0 Y0.0 Z0.0
-Inner proximal 4 MOULD.001 scale: X1.0 Y1.0 Z1.0
-Inner proximal 4 MOULD.001 groups: None
-Inner proximal 4 MOULD.001 parent: BOOLEAN Proximal 4 MOULD.001
-Inner proximal 4 MOULD.001 mesh: Inner proximal.010
-Inner proximal 4 MOULD.001 materials: PLA White, 
-Inner proximal 4 MOULD.001 modifiers: 
-  #1 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #2 Name: Hook, Type: HOOK
-  #3 Name: Hook.001, Type: HOOK
-  #4 Name: Subsurf, Type: SUBSURF
+  #2 Name: Subsurf, Type: SUBSURF
         Levels: 4, Type: CATMULL_CLARK
 
 Name: Inner Proximal 4TH
@@ -4984,20 +4698,20 @@ Inner Proximal 4TH Type: MESH
 Inner Proximal 4TH transform: X0.0 Y0.0 Z0.0
 Inner Proximal 4TH rotation: X0.0 Y0.0 Z0.0
 Inner Proximal 4TH scale: X1.0 Y1.0 Z1.0
-Inner Proximal 4TH groups: 1st Finger, 
-Inner Proximal 4TH parent: Proximal Phalanx.001
-Inner Proximal 4TH mesh: Inner proximal MOULD
+Inner Proximal 4TH groups: 4th Finger, 
+Inner Proximal 4TH parent: Proximal Phalanx.004
+Inner Proximal 4TH mesh: Proximal MOULD 4TH
 Inner Proximal 4TH materials: PLA White, 
 Inner Proximal 4TH modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Mirror, Type: MIRROR
+  #1 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
-        Mirror object: HANDLE 1st Finger
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: True
         Vertex group mirroring: True
-  #3 Name: Subsurf, Type: SUBSURF
+  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean.LABEL Identifier Inner proximal.004, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL Identifier Inner proximal.004
 
 Name: Inner Proximal Dummy.001
 Inner Proximal Dummy.001 Type: MESH
@@ -6243,6 +5957,26 @@ MOULD Top modifiers:
   #6 Name: Boolean risers, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN riser combo
 
+Name: Plane
+Plane Type: MESH
+Plane transform: X0.0 Y0.0 Z-0.5
+Plane rotation: X0.0 Y0.0 Z0.0
+Plane scale: X0.03585972636938095 Y1.0 Z1.0
+Plane groups: None
+Plane mesh: Plane.022
+Plane materials: Boolean difference, 
+Plane modifiers: None
+
+Name: Plane.001
+Plane.001 Type: MESH
+Plane.001 transform: X0.2003173828125 Y0.0 Z5.749998092651367
+Plane.001 rotation: X0.0 Y-0.0 Z-0.7853981852531433
+Plane.001 scale: X1.0 Y1.0 Z1.0
+Plane.001 groups: None
+Plane.001 mesh: Plane.023
+Plane.001 materials: Boolean difference, 
+Plane.001 modifiers: None
+
 Name: Proximal Phalanx.001
 Proximal Phalanx.001 Type: EMPTY
 Proximal Phalanx.001 transform: X0.0 Y0.0 Z0.0
@@ -6429,21 +6163,12 @@ Runner Guide mesh: Circle.006
 Runner Guide materials: None
 Runner Guide modifiers: None
 
-Name: HANDLE distal fingertip 1.004
-HANDLE distal fingertip 1.004 Type: EMPTY
-HANDLE distal fingertip 1.004 transform: X0.0 Y38.0 Z0.0
-HANDLE distal fingertip 1.004 rotation: X0.0 Y0.0 Z0.0
-HANDLE distal fingertip 1.004 scale: X1.0 Y1.0 Z1.0
-HANDLE distal fingertip 1.004 groups: None
-HANDLE distal fingertip 1.004 parent: HANDLE distal base 1.004
-
 Name: HANDLE distal fingertip 1.001
 HANDLE distal fingertip 1.001 Type: EMPTY
 HANDLE distal fingertip 1.001 transform: X0.0 Y44.0 Z0.0
 HANDLE distal fingertip 1.001 rotation: X0.0 Y0.0 Z0.0
 HANDLE distal fingertip 1.001 scale: X1.0 Y1.0 Z1.0
 HANDLE distal fingertip 1.001 groups: None
-HANDLE distal fingertip 1.001 parent: HANDLE distal base 1.001
 
 Name: BOOLEAN Spring Dowel Pins.002
 BOOLEAN Spring Dowel Pins.002 Type: MESH
@@ -6842,24 +6567,6 @@ Urethane Proximal.002 groups: None
 Urethane Proximal.002 mesh: Plane.003
 Urethane Proximal.002 materials: None
 Urethane Proximal.002 modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #3 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-
-Name: Urethane Proximal.003
-Urethane Proximal.003 Type: MESH
-Urethane Proximal.003 transform: X0.0 Y9.911975860595703 Z-8.890584945678711
-Urethane Proximal.003 rotation: X0.0 Y0.0 Z0.0
-Urethane Proximal.003 scale: X1.0 Y1.0 Z1.0
-Urethane Proximal.003 groups: None
-Urethane Proximal.003 mesh: Plane.003
-Urethane Proximal.003 materials: None
-Urethane Proximal.003 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Mirror, Type: MIRROR
         Reflecting in local: X, 
