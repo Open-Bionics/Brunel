@@ -61,7 +61,7 @@ Back Cover (Integrated Wrist) Flat modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
   #8 Name: Triangulate, Type: TRIANGULATE
   #9 Name: Boolean.OB Logo, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: OB Logo
+        Operation: DIFFERENCE, Object: BOOLEAN OB Logo
   #10 Name: Boolean.BOOLEAN Headphone / Micro USB, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Headphone / Micro USB
   #11 Name: Boolean.BOOLEAN Power Cable , Type: BOOLEAN
@@ -786,6 +786,20 @@ BOOLEAN New Wrist connector M2 bolt holes for stand mesh: BOOLEAN M2 Bolt Hole.0
 BOOLEAN New Wrist connector M2 bolt holes for stand materials: Boolean difference, 
 BOOLEAN New Wrist connector M2 bolt holes for stand modifiers: None
 
+Name: BOOLEAN OB Logo
+BOOLEAN OB Logo Type: MESH
+BOOLEAN OB Logo transform: X9.790599822998047 Y-50.413448333740234 Z23.4310302734375
+BOOLEAN OB Logo rotation: X-0.09449195116758347 Y-0.0019028843380510807 Z-6.300146102905273
+BOOLEAN OB Logo scale: X1.0 Y1.0 Z1.0
+BOOLEAN OB Logo groups: None
+BOOLEAN OB Logo mesh: OB Logo
+BOOLEAN OB Logo materials: Boolean difference, 
+BOOLEAN OB Logo modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.15, Offset: 1.00 
+        Even thickness: False, High Quality Normals: True  #2 Name: Boolean.Cylinder.001, Type: BOOLEAN
+        Operation: UNION, Object: Cylinder.001
+
 Name: BOOLEAN OB Logo Cut Through
 BOOLEAN OB Logo Cut Through Type: MESH
 BOOLEAN OB Logo Cut Through transform: X10.612403869628906 Y-59.249786376953125 Z24.935691833496094
@@ -1153,6 +1167,16 @@ BOOLEAN Thumb attachment dowel mesh: BOOLEAN Thumb attachment dowel
 BOOLEAN Thumb attachment dowel materials: Boolean difference, 
 BOOLEAN Thumb attachment dowel modifiers: None
 
+Name: BOOLEAN Thumb attachment dowel.001
+BOOLEAN Thumb attachment dowel.001 Type: MESH
+BOOLEAN Thumb attachment dowel.001 transform: X16.549999237060547 Y-80.01099395751953 Z-3.000030040740967
+BOOLEAN Thumb attachment dowel.001 rotation: X-0.0 Y1.570796251296997 Z0.0
+BOOLEAN Thumb attachment dowel.001 scale: X1.0 Y0.9999999403953552 Z0.9999999403953552
+BOOLEAN Thumb attachment dowel.001 groups: None
+BOOLEAN Thumb attachment dowel.001 mesh: BOOLEAN Thumb attahment dowel.001
+BOOLEAN Thumb attachment dowel.001 materials: Boolean difference.001, 
+BOOLEAN Thumb attachment dowel.001 modifiers: None
+
 Name: BOOLEAN Thumb Dowel
 BOOLEAN Thumb Dowel Type: MESH
 BOOLEAN Thumb Dowel transform: X8.699999809265137 Y-48.893592834472656 Z-2.9508914947509766
@@ -1270,6 +1294,16 @@ BOOLEAN Thumb pivot combined modifiers:
         Operation: UNION, Object: None
   #4 Name: Boolean.003, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Thumb tendon channel
+
+Name: BOOLEAN Thumb pivot dowel for GALA cover
+BOOLEAN Thumb pivot dowel for GALA cover Type: MESH
+BOOLEAN Thumb pivot dowel for GALA cover transform: X16.549999237060547 Y-84.01099395751953 Z-3.000030040740967
+BOOLEAN Thumb pivot dowel for GALA cover rotation: X-1.5707961320877075 Y2.356194496154785 Z-1.570796251296997
+BOOLEAN Thumb pivot dowel for GALA cover scale: X0.9999998807907104 Y0.9999998807907104 Z0.9999999403953552
+BOOLEAN Thumb pivot dowel for GALA cover groups: None
+BOOLEAN Thumb pivot dowel for GALA cover mesh: BOOLEAN Thumb pivot dowel for GALA cover
+BOOLEAN Thumb pivot dowel for GALA cover materials: Boolean difference.004, 
+BOOLEAN Thumb pivot dowel for GALA cover modifiers: None
 
 Name: BOOLEAN Thumb Pivot dowel Lower
 BOOLEAN Thumb Pivot dowel Lower Type: MESH
@@ -1635,6 +1669,16 @@ Cylinder mesh: Cylinder.005
 Cylinder materials: Boolean difference, 
 Cylinder modifiers: None
 
+Name: Cylinder.001
+Cylinder.001 Type: MESH
+Cylinder.001 transform: X9.790312767028809 Y-50.32117462158203 Z24.404420852661133
+Cylinder.001 rotation: X3.0358612537384033 Y-0.002270619384944439 Z-0.016738813370466232
+Cylinder.001 scale: X1.0 Y1.0 Z1.0
+Cylinder.001 groups: None
+Cylinder.001 mesh: Cylinder.006
+Cylinder.001 materials: None
+Cylinder.001 modifiers: None
+
 Name: DC jack cover.001
 DC jack cover.001 Type: MESH
 DC jack cover.001 transform: X-11.954212188720703 Y-80.6868667602539 Z9.304691314697266
@@ -1742,11 +1786,11 @@ Gala Cover modifiers:
   #3 Name: Boolean.BOOLEAN PQ12 exteneed 0.3 mm tolerance, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
   #4 Name: Boolean.BOOLEAN Thumb attahment dowel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb attachment dowel
   #5 Name: Boolean.BOOLEAN PCB Chestnut for GALA cover.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for GALA cover.000
   #6 Name: Boolean.BOOLEAN Thumb pivot dowel for GALA cover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel for GALA cover
   #7 Name: Boolean.Back cover proximal attachment point, Type: BOOLEAN
         Operation: UNION, Object: Back cover proximal attachment point
   #8 Name: Boolean.BOOLEAN Back cover M2 bolt holes, Type: BOOLEAN
@@ -1764,7 +1808,9 @@ Gala Cover modifiers:
   #14 Name: Boolean.BOOLEAN PCB Gala Cover Tidy, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PCB Gala Cover Tidy
   #15 Name: Boolean.BOOLEAN Headphone / Micro USB, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Headphone / Micro USB
+        Operation: DIFFERENCE, Object: Headphone / Micro USB.002
+  #16 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Plane.008
 
 Name: Gala Cover Tidy
 Gala Cover Tidy Type: MESH
@@ -1827,19 +1873,56 @@ Headphone / Micro USB rotation: X0.0 Y1.5707963705062866 Z0.0
 Headphone / Micro USB scale: X1.0 Y1.0 Z1.0
 Headphone / Micro USB groups: None
 Headphone / Micro USB mesh: Headphone / Micro USB
-Headphone / Micro USB materials: NF Black, 
+Headphone / Micro USB materials: Boolean difference, 
 Headphone / Micro USB modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
         Thickness: 2.00, Offset: -1.00 
         Even thickness: False, High Quality Normals: False  #2 Name: Subsurf, Type: SUBSURF
         Levels: 1, Type: CATMULL_CLARK
   #3 Name: Bevel, Type: BEVEL
-  #4 Name: Boolean.BOOLEAN Gala Cheetah Tidy, Type: BOOLEAN
+  #4 Name: Boolean.Headphone / Micro USB.002, Type: BOOLEAN
+        Operation: UNION, Object: Headphone / Micro USB.002
+  #5 Name: Boolean.BOOLEAN Gala Cheetah Tidy, Type: BOOLEAN
         Operation: INTERSECT, Object: BOOLEAN Gala Cheetah Tidy
-  #5 Name: Boolean.BOOLEAN Headphone Jack, Type: BOOLEAN
+  #6 Name: Boolean.Plane.006, Type: BOOLEAN
+        Operation: UNION, Object: Plane.006
+  #7 Name: Boolean.BOOLEAN Headphone Jack, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Headphone Jack
-  #6 Name: Boolean.BOOLEAN Micro USB, Type: BOOLEAN
+  #8 Name: Boolean.BOOLEAN Micro USB, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Micro USB
+  #9 Name: Triangulate, Type: TRIANGULATE
+
+Name: Headphone / Micro USB.001
+Headphone / Micro USB.001 Type: MESH
+Headphone / Micro USB.001 transform: X41.40483093261719 Y-71.2712631225586 Z13.241729736328125
+Headphone / Micro USB.001 rotation: X0.0 Y1.5707963705062866 Z0.0
+Headphone / Micro USB.001 scale: X1.0 Y1.0 Z1.0
+Headphone / Micro USB.001 groups: None
+Headphone / Micro USB.001 mesh: Headphone / Micro USB
+Headphone / Micro USB.001 materials: Boolean difference, 
+Headphone / Micro USB.001 modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 3.00, Offset: 1.00 
+        Even thickness: False, High Quality Normals: False  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 1, Type: CATMULL_CLARK
+  #3 Name: Bevel, Type: BEVEL
+
+Name: Headphone / Micro USB.002
+Headphone / Micro USB.002 Type: MESH
+Headphone / Micro USB.002 transform: X41.40483093261719 Y-71.2712631225586 Z13.241729736328125
+Headphone / Micro USB.002 rotation: X0.0 Y1.5707963705062866 Z0.0
+Headphone / Micro USB.002 scale: X1.0 Y1.0 Z1.0
+Headphone / Micro USB.002 groups: None
+Headphone / Micro USB.002 mesh: Headphone / Micro USB.001
+Headphone / Micro USB.002 materials: Boolean difference, 
+Headphone / Micro USB.002 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 1, Type: CATMULL_CLARK
+  #2 Name: Bevel, Type: BEVEL
+  #3 Name: Boolean.BOOLEAN Gala Cheetah Tidy, Type: BOOLEAN
+        Operation: INTERSECT, Object: BOOLEAN Gala Cheetah Tidy
+  #4 Name: Boolean, Type: BOOLEAN
+        Operation: INTERSECT, Object: TARGET Outer Surface -3.001
 
 Name: HOOK 1st Finger
 HOOK 1st Finger Type: EMPTY
@@ -2085,13 +2168,15 @@ New Wrist Connector modifiers:
 
 Name: OB Logo
 OB Logo Type: MESH
-OB Logo transform: X9.819339752197266 Y-55.24462890625 Z25.502775192260742
-OB Logo rotation: X-0.08576655387878418 Y-0.0017548120813444257 Z-6.300161838531494
+OB Logo transform: X9.790599822998047 Y-50.413448333740234 Z23.4310302734375
+OB Logo rotation: X-0.09449195116758347 Y-0.0019028843380510807 Z-6.300146102905273
 OB Logo scale: X1.0 Y1.0 Z1.0
 OB Logo groups: None
 OB Logo mesh: OB Logo
 OB Logo materials: Boolean difference, 
-OB Logo modifiers: None
+OB Logo modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: Cylinder.001
 
 Name: Palm Inner
 Palm Inner Type: MESH
@@ -2434,6 +2519,17 @@ Plane.005 mesh: Plane.010
 Plane.005 materials: None
 Plane.005 modifiers: None
 
+Name: Plane.006
+Plane.006 Type: MESH
+Plane.006 transform: X36.54582595825195 Y-63.26966094970703 Z12.823905944824219
+Plane.006 rotation: X-0.0 Y1.570796251296997 Z0.0
+Plane.006 scale: X1.0 Y1.0 Z1.0
+Plane.006 groups: None
+Plane.006 mesh: Plane.015
+Plane.006 materials: Boolean difference, 
+Plane.006 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
 Name: Plane.007
 Plane.007 Type: MESH
 Plane.007 transform: X31.513839721679688 Y-30.68157196044922 Z14.486104965209961
@@ -2446,6 +2542,35 @@ Plane.007 modifiers:
   #1 Name: Solidify, Type: SOLIDIFY
         Thickness: 3.00, Offset: 0.50 
         Even thickness: False, High Quality Normals: False  #2 Name: Bevel, Type: BEVEL
+
+Name: Plane.008
+Plane.008 Type: MESH
+Plane.008 transform: X36.72990417480469 Y-63.26966094970703 Z12.823905944824219
+Plane.008 rotation: X-0.0 Y1.570796251296997 Z0.0
+Plane.008 scale: X1.0 Y1.0 Z1.0
+Plane.008 groups: None
+Plane.008 mesh: Plane.016
+Plane.008 materials: Boolean difference, 
+Plane.008 modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.25, Offset: 1.00 
+        Even thickness: False, High Quality Normals: False  #2 Name: Bevel, Type: BEVEL
+
+Name: Plane.009
+Plane.009 Type: MESH
+Plane.009 transform: X41.531028747558594 Y-63.26966094970703 Z12.834586143493652
+Plane.009 rotation: X-0.0 Y1.570796251296997 Z0.0
+Plane.009 scale: X1.0 Y1.0 Z1.0
+Plane.009 groups: None
+Plane.009 mesh: Plane.014
+Plane.009 materials: None
+Plane.009 modifiers: 
+  #1 Name: Boolean.TARGET Outer Surface -3, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: TARGET Outer Surface -3
+  #2 Name: Boolean.TARGET Outer Surface -3.001, Type: BOOLEAN
+        Operation: INTERSECT, Object: TARGET Outer Surface -3.001
+  #3 Name: Boolean.Headphone / Micro USB.001, Type: BOOLEAN
+        Operation: INTERSECT, Object: Headphone / Micro USB.001
 
 Name: PQ12 Caps
 PQ12 Caps Type: MESH
@@ -2583,6 +2708,20 @@ TARGET Outer Surface -3 modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
+Name: TARGET Outer Surface -3.001
+TARGET Outer Surface -3.001 Type: MESH
+TARGET Outer Surface -3.001 transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+TARGET Outer Surface -3.001 rotation: X3.725290298461914e-09 Y-0.0 Z0.0
+TARGET Outer Surface -3.001 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+TARGET Outer Surface -3.001 groups: Actuator Block, 
+TARGET Outer Surface -3.001 mesh: Hand/Palm Outer Surface.003
+TARGET Outer Surface -3.001 materials: PLA, 
+TARGET Outer Surface -3.001 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.98, Offset: 1.00 
+        Even thickness: False, High Quality Normals: True
 Name: TARGET Outer Surface Midlevel
 TARGET Outer Surface Midlevel Type: MESH
 TARGET Outer Surface Midlevel transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
@@ -2811,7 +2950,7 @@ Thumb spring channel modifiers:
 Name: Thumb.001
 Thumb.001 Type: EMPTY
 Thumb.001 transform: X-10.47809886932373 Y-65.51439666748047 Z-16.575899124145508
-Thumb.001 rotation: X-1.5707963705062866 Y-1.4901159417490817e-08 Z1.3962633609771729
+Thumb.001 rotation: X0.0 Y-1.4901161193847656e-08 Z1.3962633609771729
 Thumb.001 scale: X1.0 Y1.0 Z1.0
 Thumb.001 groups: None
 
