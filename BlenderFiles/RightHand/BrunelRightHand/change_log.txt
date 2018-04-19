@@ -70,6 +70,8 @@ Back Cover (Integrated Wrist) Flat modifiers:
         Operation: INTERSECT, Object: BOOLEAN Flat Faces (Ligament Cover)
   #13 Name: Boolean.BOOLEAN Wrist M2 connection points , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Wrist M2 connection points 
+  #14 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Plane.010
 
 Name: Back cover proximal attachment point
 Back cover proximal attachment point Type: MESH
@@ -1157,6 +1159,21 @@ BOOLEAN Tendon Channels modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
+Name: BOOLEAN Tendon Channels Palm
+BOOLEAN Tendon Channels Palm Type: MESH
+BOOLEAN Tendon Channels Palm transform: X37.21470260620117 Y-3.9833755493164062 Z-3.200835704803467
+BOOLEAN Tendon Channels Palm rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Tendon Channels Palm scale: X1.0 Y1.0 Z1.0
+BOOLEAN Tendon Channels Palm groups: None
+BOOLEAN Tendon Channels Palm mesh: Plane.018
+BOOLEAN Tendon Channels Palm materials: Boolean difference, 
+BOOLEAN Tendon Channels Palm modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 2, Type: CATMULL_CLARK
+  #2 Name: Skin, Type: SKIN
+  #3 Name: Subsurf.001, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: BOOLEAN Thumb attachment dowel
 BOOLEAN Thumb attachment dowel Type: MESH
 BOOLEAN Thumb attachment dowel transform: X16.550033569335938 Y-80.01124572753906 Z-3.0000033378601074
@@ -1671,7 +1688,7 @@ Cylinder modifiers: None
 
 Name: Cylinder.001
 Cylinder.001 Type: MESH
-Cylinder.001 transform: X9.790312767028809 Y-50.32117462158203 Z24.404420852661133
+Cylinder.001 transform: X9.790557861328125 Y-50.37395095825195 Z23.90721321105957
 Cylinder.001 rotation: X3.0358612537384033 Y-0.002270619384944439 Z-0.016738813370466232
 Cylinder.001 scale: X1.0 Y1.0 Z1.0
 Cylinder.001 groups: None
@@ -2281,8 +2298,8 @@ Palm Inner body modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon channel
   #17 Name: Boolean.BOOLEAN Conical spring for palm inner, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Conical spring for palm inner
-  #18 Name: Boolean.BOOLEAN Tendon Channels, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Tendon Channels
+  #18 Name: Boolean.BOOLEAN Tendon Channels Palm, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
   #19 Name: Boolean.BOOLEAN Thumb Ligament Cover, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Thumb Ligament Cover .001
   #20 Name: Boolean.BOOLEAN Ligament cover M2 bolt hole, Type: BOOLEAN
@@ -2317,6 +2334,8 @@ Palm Inner body modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Section Print 
   #35 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Plane.004
+  #36 Name: Boolean.003, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Plane.010
 
 Name: Palm Inner phlange
 Palm Inner phlange Type: MESH
@@ -2571,6 +2590,16 @@ Plane.009 modifiers:
         Operation: INTERSECT, Object: TARGET Outer Surface -3.001
   #3 Name: Boolean.Headphone / Micro USB.001, Type: BOOLEAN
         Operation: INTERSECT, Object: Headphone / Micro USB.001
+
+Name: Plane.010
+Plane.010 Type: MESH
+Plane.010 transform: X9.304827690124512 Y-94.95054626464844 Z4.2693047523498535
+Plane.010 rotation: X0.07012420892715454 Y1.3635979890823364 Z-1.4995228052139282
+Plane.010 scale: X1.0 Y1.0 Z1.0
+Plane.010 groups: None
+Plane.010 mesh: Plane.017
+Plane.010 materials: Boolean difference, 
+Plane.010 modifiers: None
 
 Name: PQ12 Caps
 PQ12 Caps Type: MESH
