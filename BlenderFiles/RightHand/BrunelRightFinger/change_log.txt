@@ -1752,6 +1752,20 @@ BOOLEAN Spring Dowel Pins.006 modifiers:
   #2 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Top cover distal.002
 
+Name: BOOLEAN Tendon channels distal.000
+BOOLEAN Tendon channels distal.000 Type: MESH
+BOOLEAN Tendon channels distal.000 transform: X0.0 Y0.0 Z0.0
+BOOLEAN Tendon channels distal.000 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Tendon channels distal.000 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Tendon channels distal.000 groups: None
+BOOLEAN Tendon channels distal.000 parent: Distal Phalanx.002
+BOOLEAN Tendon channels distal.000 mesh: BOOLEAN Tendon channels distal.001
+BOOLEAN Tendon channels distal.000 materials: Boolean difference, 
+BOOLEAN Tendon channels distal.000 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: BOOLEAN Tendon channels distal.001
 BOOLEAN Tendon channels distal.001 Type: MESH
 BOOLEAN Tendon channels distal.001 transform: X0.0 Y0.0 Z0.0
@@ -1769,6 +1783,8 @@ BOOLEAN Tendon channels distal.001 modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Tendon channels distal.002
 BOOLEAN Tendon channels distal.002 Type: MESH
@@ -1787,6 +1803,8 @@ BOOLEAN Tendon channels distal.002 modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Tendon channels distal.003
 BOOLEAN Tendon channels distal.003 Type: MESH
@@ -1799,6 +1817,8 @@ BOOLEAN Tendon channels distal.003 mesh: BOOLEAN Tendon channels distal.003
 BOOLEAN Tendon channels distal.003 materials: Boolean difference, 
 BOOLEAN Tendon channels distal.003 modifiers: 
   #1 Name: Hook, Type: HOOK
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Tendon channels distal.004
 BOOLEAN Tendon channels distal.004 Type: MESH
@@ -1807,10 +1827,26 @@ BOOLEAN Tendon channels distal.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels distal.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Tendon channels distal.004 groups: None
 BOOLEAN Tendon channels distal.004 parent: Distal Phalanx.004
-BOOLEAN Tendon channels distal.004 mesh: BOOLEAN Tendon channels distal.004
+BOOLEAN Tendon channels distal.004 mesh: BOOLEAN Tendon channels distal.001
 BOOLEAN Tendon channels distal.004 materials: Boolean difference, 
 BOOLEAN Tendon channels distal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN Tendon channels proximal.000
+BOOLEAN Tendon channels proximal.000 Type: MESH
+BOOLEAN Tendon channels proximal.000 transform: X0.0 Y0.0 Z0.0
+BOOLEAN Tendon channels proximal.000 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Tendon channels proximal.000 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Tendon channels proximal.000 groups: None
+BOOLEAN Tendon channels proximal.000 parent: Proximal Phalanx.002
+BOOLEAN Tendon channels proximal.000 mesh: BOOLEAN Tendon channels proximal.001
+BOOLEAN Tendon channels proximal.000 materials: Boolean difference, 
+BOOLEAN Tendon channels proximal.000 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Tendon channels proximal.001
 BOOLEAN Tendon channels proximal.001 Type: MESH
@@ -1829,6 +1865,8 @@ BOOLEAN Tendon channels proximal.001 modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Tendon channels proximal.002
 BOOLEAN Tendon channels proximal.002 Type: MESH
@@ -1847,6 +1885,8 @@ BOOLEAN Tendon channels proximal.002 modifiers:
         Merge: True, Merge Limit: 0.0010000000474974513 mm
         Clipping: False
         Vertex group mirroring: True
+  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Tendon channels proximal.003
 BOOLEAN Tendon channels proximal.003 Type: MESH
@@ -1859,6 +1899,8 @@ BOOLEAN Tendon channels proximal.003 mesh: BOOLEAN Tendon channels proximal.003
 BOOLEAN Tendon channels proximal.003 materials: Boolean difference, 
 BOOLEAN Tendon channels proximal.003 modifiers: 
   #1 Name: Hook, Type: HOOK
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Tendon channels proximal.004
 BOOLEAN Tendon channels proximal.004 Type: MESH
@@ -1867,10 +1909,12 @@ BOOLEAN Tendon channels proximal.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Tendon channels proximal.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Tendon channels proximal.004 groups: None
 BOOLEAN Tendon channels proximal.004 parent: Proximal Phalanx.004
-BOOLEAN Tendon channels proximal.004 mesh: BOOLEAN Tendon channels proximal.004
+BOOLEAN Tendon channels proximal.004 mesh: BOOLEAN Tendon channels proximal.001
 BOOLEAN Tendon channels proximal.004 materials: Boolean difference, 
 BOOLEAN Tendon channels proximal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Thumb tendon termination M2 bolt hole
 BOOLEAN Thumb tendon termination M2 bolt hole Type: MESH
@@ -2344,7 +2388,7 @@ BOOLEAN UNION Tendon channels distal.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN UNION Tendon channels distal.003 scale: X1.0 Y1.0 Z1.0
 BOOLEAN UNION Tendon channels distal.003 groups: None
 BOOLEAN UNION Tendon channels distal.003 parent: Distal Phalanx.003
-BOOLEAN UNION Tendon channels distal.003 mesh: BOOLEAN Tendon channels distal.003
+BOOLEAN UNION Tendon channels distal.003 mesh: BOOLEAN Tendon channels distal.001
 BOOLEAN UNION Tendon channels distal.003 materials: Boolean difference, 
 BOOLEAN UNION Tendon channels distal.003 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -2352,6 +2396,7 @@ BOOLEAN UNION Tendon channels distal.003 modifiers:
         Thickness: 1.00, Offset: 1.00 
         Even thickness: False, High Quality Normals: False  #3 Name: Boolean, Type: BOOLEAN
         Operation: INTERSECT, Object: Inner distal TARGET.003
+  #4 Name: Triangulate, Type: TRIANGULATE
 
 Name: BOOLEAN UNION Tendon channels distal.004
 BOOLEAN UNION Tendon channels distal.004 Type: MESH
@@ -2360,7 +2405,7 @@ BOOLEAN UNION Tendon channels distal.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN UNION Tendon channels distal.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN UNION Tendon channels distal.004 groups: None
 BOOLEAN UNION Tendon channels distal.004 parent: Distal Phalanx.004
-BOOLEAN UNION Tendon channels distal.004 mesh: BOOLEAN Tendon channels distal.004
+BOOLEAN UNION Tendon channels distal.004 mesh: BOOLEAN Tendon channels distal.001
 BOOLEAN UNION Tendon channels distal.004 materials: Boolean difference, 
 BOOLEAN UNION Tendon channels distal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -2420,7 +2465,7 @@ BOOLEAN UNION Tendon channels proximal.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN UNION Tendon channels proximal.003 scale: X1.0 Y1.0 Z1.0
 BOOLEAN UNION Tendon channels proximal.003 groups: None
 BOOLEAN UNION Tendon channels proximal.003 parent: Proximal Phalanx.003
-BOOLEAN UNION Tendon channels proximal.003 mesh: BOOLEAN Tendon channels proximal.003
+BOOLEAN UNION Tendon channels proximal.003 mesh: BOOLEAN Tendon channels proximal.001
 BOOLEAN UNION Tendon channels proximal.003 materials: Boolean difference, 
 BOOLEAN UNION Tendon channels proximal.003 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -2428,6 +2473,7 @@ BOOLEAN UNION Tendon channels proximal.003 modifiers:
         Thickness: 1.00, Offset: 1.00 
         Even thickness: True, High Quality Normals: True  #3 Name: Boolean, Type: BOOLEAN
         Operation: INTERSECT, Object: Inner Proximal TARGET.003
+  #4 Name: Triangulate, Type: TRIANGULATE
 
 Name: BOOLEAN UNION Tendon channels proximal.004
 BOOLEAN UNION Tendon channels proximal.004 Type: MESH
@@ -2436,7 +2482,7 @@ BOOLEAN UNION Tendon channels proximal.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN UNION Tendon channels proximal.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN UNION Tendon channels proximal.004 groups: None
 BOOLEAN UNION Tendon channels proximal.004 parent: Proximal Phalanx.004
-BOOLEAN UNION Tendon channels proximal.004 mesh: BOOLEAN Tendon channels proximal.004
+BOOLEAN UNION Tendon channels proximal.004 mesh: BOOLEAN Tendon channels proximal.001
 BOOLEAN UNION Tendon channels proximal.004 materials: Boolean difference, 
 BOOLEAN UNION Tendon channels proximal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -2955,6 +3001,26 @@ Cylinder.000 groups: None
 Cylinder.000 mesh: Cylinder.007
 Cylinder.000 materials: Boolean difference.002, 
 Cylinder.000 modifiers: None
+
+Name: Cylinder.001
+Cylinder.001 Type: MESH
+Cylinder.001 transform: X3.0 Y45.00395584106445 Z-3.6437292098999023
+Cylinder.001 rotation: X1.5707963705062866 Y-0.0 Z0.0
+Cylinder.001 scale: X0.19582615792751312 Y0.19582615792751312 Z1.305507779121399
+Cylinder.001 groups: None
+Cylinder.001 mesh: Cylinder.003
+Cylinder.001 materials: None
+Cylinder.001 modifiers: None
+
+Name: Cylinder.002
+Cylinder.002 Type: MESH
+Cylinder.002 transform: X0.00016023844364099205 Y36.86795425415039 Z-3.6138272285461426
+Cylinder.002 rotation: X1.5707963705062866 Y-0.0 Z0.0
+Cylinder.002 scale: X1.0 Y1.0 Z1.0
+Cylinder.002 groups: None
+Cylinder.002 mesh: Cylinder.005
+Cylinder.002 materials: None
+Cylinder.002 modifiers: None
 
 Name: Cylinder.003
 Cylinder.003 Type: MESH
@@ -3644,7 +3710,7 @@ HANDLE Fingertip.003 modifiers: None
 
 Name: HANDLE Fingertip.004
 HANDLE Fingertip.004 Type: MESH
-HANDLE Fingertip.004 transform: X0.0 Y37.999996185302734 Z0.0
+HANDLE Fingertip.004 transform: X0.0 Y38.0 Z0.0
 HANDLE Fingertip.004 rotation: X0.0 Y0.0 Z0.0
 HANDLE Fingertip.004 scale: X1.0 Y1.0 Z1.0
 HANDLE Fingertip.004 groups: None
@@ -4372,7 +4438,6 @@ Inner distal.002 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Distal Joint Spring Profile
   #14 Name: Boolean.Extensor spring pin Distal.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Extensor spring pin Distal.002
-  #15 Name: Triangulate, Type: TRIANGULATE
 
 Name: Inner distal.003
 Inner distal.003 Type: MESH
@@ -4403,7 +4468,7 @@ Inner distal.003 modifiers:
   #8 Name: Boolean.BOOLEAN ligament.003, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN ligament.003
   #9 Name: Boolean.BOOLEAN Tendon channels distal.003, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Tendon channels distal.003
+        Operation: DIFFERENCE, Object: BOOLEAN Tendon channels distal.000
   #10 Name: Boolean.LABEL Identifier Inner distal.003, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL Identifier Inner distal.003
   #11 Name: Boolean.LABEL identifier distal flat.003, Type: BOOLEAN
@@ -4993,7 +5058,7 @@ Inner Proximal.003 modifiers:
   #6 Name: Boolean.ligament, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN ligament.003
   #7 Name: Boolean.Tendon channels, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Tendon channels proximal.003
+        Operation: DIFFERENCE, Object: BOOLEAN Tendon channels proximal.000
   #8 Name: Boolean.BOOLEAN Proximal M2 Top cover.003, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Proximal M2 Top cover.003
   #9 Name: Boolean.LABEL Identifier Inner proximal.003, Type: BOOLEAN
