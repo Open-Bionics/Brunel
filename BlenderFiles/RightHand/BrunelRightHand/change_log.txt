@@ -72,7 +72,7 @@ Back Cover (Integrated Wrist) Flat modifiers:
         Operation: INTERSECT, Object: BOOLEAN Palm and Back Cover Divide
   #8 Name: Boolean.BOOLEAN Back cover M2 bolt holes, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
-  #9 Name: Boolean.OB Logo, Type: BOOLEAN
+  #9 Name: Boolean.OB Logo cutout, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN OB Logo
   #10 Name: Boolean.BOOLEAN Headphone / Micro USB, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Headphone / Micro USB
@@ -84,6 +84,8 @@ Back Cover (Integrated Wrist) Flat modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Wrist M2 connection points 
   #14 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Plane.010
+  #15 Name: Boolean.001, Type: BOOLEAN
+        Operation: UNION, Object: OB Logo Embossed
 
 Name: Back cover proximal attachment point
 Back cover proximal attachment point Type: MESH
@@ -2211,17 +2213,28 @@ New Wrist Connector modifiers:
   #2 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN New Wrist connector M2 bolt holes
 
-Name: OB Logo
-OB Logo Type: MESH
-OB Logo transform: X9.790599822998047 Y-50.413448333740234 Z23.4310302734375
-OB Logo rotation: X-0.09449195116758347 Y-0.0019028843380510807 Z-6.300146102905273
-OB Logo scale: X1.0 Y1.0 Z1.0
-OB Logo groups: None
-OB Logo mesh: OB Logo
-OB Logo materials: Boolean difference, 
-OB Logo modifiers: 
+Name: OB Logo Cutout
+OB Logo Cutout Type: MESH
+OB Logo Cutout transform: X9.790599822998047 Y-50.413448333740234 Z23.4310302734375
+OB Logo Cutout rotation: X-0.09449195116758347 Y-0.0019028843380510807 Z-6.300146102905273
+OB Logo Cutout scale: X1.0 Y1.0 Z1.0
+OB Logo Cutout groups: None
+OB Logo Cutout mesh: OB Logo
+OB Logo Cutout materials: Boolean difference, 
+OB Logo Cutout modifiers: 
   #1 Name: Boolean, Type: BOOLEAN
         Operation: UNION, Object: Cylinder.001
+
+Name: OB Logo Embossed
+OB Logo Embossed Type: MESH
+OB Logo Embossed transform: X9.790599822998047 Y-45.413448333740234 Z22.9310302734375
+OB Logo Embossed rotation: X-0.11853443831205368 Y-0.002310117008164525 Z-6.300096035003662
+OB Logo Embossed scale: X1.0 Y1.0 Z1.0
+OB Logo Embossed groups: None
+OB Logo Embossed mesh: OB Logo.001
+OB Logo Embossed materials: Boolean difference, 
+OB Logo Embossed modifiers: 
+  #1 Name: Bevel, Type: BEVEL
 
 Name: Palm Inner
 Palm Inner Type: MESH
