@@ -453,6 +453,21 @@ BOOLEAN Gala Cover M2 attachment point mesh: BOOLEAN Gala Cover M2 attachment po
 BOOLEAN Gala Cover M2 attachment point materials: Boolean difference, 
 BOOLEAN Gala Cover M2 attachment point modifiers: None
 
+Name: BOOLEAN Gala Cover.001
+BOOLEAN Gala Cover.001 Type: MESH
+BOOLEAN Gala Cover.001 transform: X8.992074966430664 Y-73.18128967285156 Z-2.800001621246338
+BOOLEAN Gala Cover.001 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Gala Cover.001 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Gala Cover.001 groups: None
+BOOLEAN Gala Cover.001 mesh: Gala Cover.001
+BOOLEAN Gala Cover.001 materials: Boolean difference, 
+BOOLEAN Gala Cover.001 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: BOOLEAN New Gala Cover attachment point, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN New Gala Cover attachment point
+  #3 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.30, Offset: 1.00 
+        Even thickness: False, High Quality Normals: False
 Name: BOOLEAN Headphone / Micro USB
 BOOLEAN Headphone / Micro USB Type: MESH
 BOOLEAN Headphone / Micro USB transform: X43.07521438598633 Y-71.2712631225586 Z13.241729736328125
@@ -853,7 +868,7 @@ BOOLEAN Palm Mould Plunger modifiers:
 
 Name: BOOLEAN Palm Mould Securing Dowels.001
 BOOLEAN Palm Mould Securing Dowels.001 Type: MESH
-BOOLEAN Palm Mould Securing Dowels.001 transform: X50.499996185302734 Y-95.47972106933594 Z-10.643102645874023
+BOOLEAN Palm Mould Securing Dowels.001 transform: X50.499996185302734 Y-95.47972106933594 Z-9.643102645874023
 BOOLEAN Palm Mould Securing Dowels.001 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Palm Mould Securing Dowels.001 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Palm Mould Securing Dowels.001 groups: None
@@ -1126,7 +1141,7 @@ BOOLEAN Tendon Channels Palm modifiers:
 
 Name: BOOLEAN Thumb attachment dowel
 BOOLEAN Thumb attachment dowel Type: MESH
-BOOLEAN Thumb attachment dowel transform: X16.550033569335938 Y-80.01124572753906 Z-3.0332536697387695
+BOOLEAN Thumb attachment dowel transform: X16.550033569335938 Y-80.01124572753906 Z-3.133253574371338
 BOOLEAN Thumb attachment dowel rotation: X3.725290742551124e-09 Y1.570796251296997 Z0.0
 BOOLEAN Thumb attachment dowel scale: X1.0 Y0.9999999403953552 Z0.9999999403953552
 BOOLEAN Thumb attachment dowel groups: Actuator Block, Booleans, Thumb, 
@@ -1193,8 +1208,8 @@ BOOLEAN Thumb Ligament Cover  modifiers:
 
 Name: BOOLEAN Thumb ligament cover clip
 BOOLEAN Thumb ligament cover clip Type: MESH
-BOOLEAN Thumb ligament cover clip transform: X0.9801771640777588 Y-78.43441009521484 Z-13.024401664733887
-BOOLEAN Thumb ligament cover clip rotation: X3.6120995083877006e-09 Y9.678590151551703e-10 Z-0.1745329201221466
+BOOLEAN Thumb ligament cover clip transform: X0.9798269271850586 Y-78.43628692626953 Z-13.024401664733887
+BOOLEAN Thumb ligament cover clip rotation: X3.6121021729229597e-09 Y9.678592371997752e-10 Z-0.174532949924469
 BOOLEAN Thumb ligament cover clip scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 BOOLEAN Thumb ligament cover clip groups: Actuator Block, Thumb, 
 BOOLEAN Thumb ligament cover clip mesh: BOOLEAN Thumb ligament cover clip
@@ -2189,18 +2204,18 @@ Palm Inner body modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Palm and Back Cover Divide Clearance
   #8 Name: Boolean.TARGET Outer Surface, Type: BOOLEAN
         Operation: INTERSECT, Object: TARGET Outer Surface
-  #9 Name: Boolean.BOOLEAN PQ12 exteneed 0.3 mm tolerance, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
-  #10 Name: Boolean.BOOLEAN Gala Cover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Gala Cover
-  #11 Name: Boolean.BOOLEAN Palm Hollow (Beneath Gala), Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Palm Hollow (Beneath Gala)
-  #12 Name: Boolean.BOOLEAN Thumb Dowel , Type: BOOLEAN
+  #9 Name: Boolean.BOOLEAN Gala Cover.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Gala Cover.001
+  #10 Name: Boolean.BOOLEAN Palm Hollow (Beneath Gala), Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
+  #11 Name: Boolean.BOOLEAN Thumb Dowel , Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Thumb Dowel
-  #13 Name: Boolean.BOOLEAN Thumb Dowel Level Surface, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb Dowel Level Surface
-  #14 Name: Boolean.BOOLEAN Thumb attachment dowel, Type: BOOLEAN
+  #12 Name: Boolean.BOOLEAN PQ12 exteneed 0.3 mm tolerance, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
+  #13 Name: Boolean.BOOLEAN Thumb attachment dowel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb attachment dowel
+  #14 Name: Boolean.BOOLEAN Thumb Dowel Level Surface, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb Dowel Level Surface
   #15 Name: Boolean.BOOLEAN Thumb pivot dowel top, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel top
   #16 Name: Boolean.BOOLEAN Thumb Pivot dowel Lower, Type: BOOLEAN
@@ -2295,10 +2310,10 @@ Palm Mould mesh: Palm Mould
 Palm Mould materials: None
 Palm Mould modifiers: 
   #1 Name: Bevel, Type: BEVEL
-  #2 Name: Boolean.TARGET Outer Surface, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: TARGET Outer Surface.002
-  #3 Name: Boolean.BOOLEAN Thumb Ligament Cover , Type: BOOLEAN
-        Operation: UNION, Object: BOOLEAN Thumb Ligament Cover 
+  #2 Name: Boolean.TARGET Outer Surface.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: TARGET Outer Surface.003
+  #3 Name: Boolean.Thumb Ligament Cover .001, Type: BOOLEAN
+        Operation: UNION, Object: Thumb Ligament Cover .001
   #4 Name: Boolean.BOOLEAN Palm Mould Urethane Channel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm Mould Urethane Channel
   #5 Name: Boolean.Palm Mould Plunger, Type: BOOLEAN
@@ -2338,7 +2353,7 @@ Palm Mould Plunger modifiers:
 
 Name: Palm Mould Securing Dowels
 Palm Mould Securing Dowels Type: MESH
-Palm Mould Securing Dowels transform: X50.499996185302734 Y-95.47972106933594 Z-10.643102645874023
+Palm Mould Securing Dowels transform: X50.499996185302734 Y-95.47972106933594 Z-9.643102645874023
 Palm Mould Securing Dowels rotation: X0.0 Y0.0 Z0.0
 Palm Mould Securing Dowels scale: X1.0 Y1.0 Z1.0
 Palm Mould Securing Dowels groups: None
@@ -2347,6 +2362,23 @@ Palm Mould Securing Dowels materials: Boolean difference,
 Palm Mould Securing Dowels modifiers: 
   #1 Name: Boolean.BOOLEAN 3mm Inserts Palm Mould, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN 3mm Inserts Palm Mould
+
+Name: Palm Mould.001
+Palm Mould.001 Type: MESH
+Palm Mould.001 transform: X9.0 Y-48.89358901977539 Z0.04910898208618164
+Palm Mould.001 rotation: X0.0 Y0.0 Z0.0
+Palm Mould.001 scale: X1.0 Y1.0 Z1.0
+Palm Mould.001 groups: None
+Palm Mould.001 mesh: Palm Mould.004
+Palm Mould.001 materials: None
+Palm Mould.001 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: Palm Mould Securing Dowels
+  #3 Name: Boolean.BOOLEAN Palm Mould Plunger, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm Mould Plunger
+  #4 Name: Boolean.BOOLEAN Palm Mould Urethane Channel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm Mould Urethane Channel
 
 Name: Palm Urethane 
 Palm Urethane  Type: MESH
@@ -2380,6 +2412,16 @@ PCB Chestnut FLIPPED transform: X9.0 Y-57.44186782836914 Z17.317607879638672
 PCB Chestnut FLIPPED rotation: X3.1415932178497314 Y3.4835568267889763e-14 Z1.570796012878418
 PCB Chestnut FLIPPED scale: X1.0 Y1.0 Z1.0
 PCB Chestnut FLIPPED groups: None
+
+Name: Plane
+Plane Type: MESH
+Plane transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+Plane rotation: X0.0 Y0.0 Z0.0
+Plane scale: X1.0 Y1.0 Z1.0
+Plane groups: None
+Plane mesh: Plane.008
+Plane materials: None
+Plane modifiers: None
 
 Name: Plane.001
 Plane.001 Type: MESH
@@ -2666,6 +2708,22 @@ TARGET Outer Surface.002 modifiers:
   #3 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Plane.005
 
+Name: TARGET Outer Surface.003
+TARGET Outer Surface.003 Type: MESH
+TARGET Outer Surface.003 transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+TARGET Outer Surface.003 rotation: X3.725290298461914e-09 Y-0.0 Z0.0
+TARGET Outer Surface.003 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+TARGET Outer Surface.003 groups: Actuator Block, 
+TARGET Outer Surface.003 mesh: Hand/Palm Outer Surface.006
+TARGET Outer Surface.003 materials: PLA, 
+TARGET Outer Surface.003 modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 3.00, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Plane
+
 Name: TARGET Urethane Pad 
 TARGET Urethane Pad  Type: MESH
 TARGET Urethane Pad  transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
@@ -2683,7 +2741,7 @@ TARGET Urethane Pad  modifiers:
 Name: Thumb Ligament Cover 
 Thumb Ligament Cover  Type: MESH
 Thumb Ligament Cover  transform: X-6.998700141906738 Y-66.19110870361328 Z-17.999996185302734
-Thumb Ligament Cover  rotation: X3.137685775756836 Y-0.015713384374976158 Z1.3962633609771729
+Thumb Ligament Cover  rotation: X3.137685775756836 Y0.0 Z1.3962633609771729
 Thumb Ligament Cover  scale: X1.0 Y1.0 Z1.0
 Thumb Ligament Cover  groups: None
 Thumb Ligament Cover  mesh: Thumb Ligament Cover 
@@ -2710,7 +2768,7 @@ Thumb Ligament Cover  modifiers:
 Name: Thumb Ligament Cover .001
 Thumb Ligament Cover .001 Type: MESH
 Thumb Ligament Cover .001 transform: X-6.998704433441162 Y-66.19110870361328 Z-17.999996185302734
-Thumb Ligament Cover .001 rotation: X3.137685775756836 Y-0.015713384374976158 Z1.3962633609771729
+Thumb Ligament Cover .001 rotation: X3.137685775756836 Y0.0 Z1.3962633609771729
 Thumb Ligament Cover .001 scale: X1.0 Y1.0 Z1.0
 Thumb Ligament Cover .001 groups: None
 Thumb Ligament Cover .001 mesh: Thumb Ligament Cover .002
@@ -2719,7 +2777,7 @@ Thumb Ligament Cover .001 modifiers:
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.20, Offset: 1.00 
-        Even thickness: False, High Quality Normals: False
+        Even thickness: True, High Quality Normals: True
 Name: Thumb ligament cover clip
 Thumb ligament cover clip Type: MESH
 Thumb ligament cover clip transform: X-13.561469078063965 Y-67.4251480102539 Z-15.07447624206543
@@ -2795,7 +2853,7 @@ Thumb spring channel modifiers:
 Name: Thumb.001
 Thumb.001 Type: EMPTY
 Thumb.001 transform: X-10.47809886932373 Y-65.51439666748047 Z-16.575899124145508
-Thumb.001 rotation: X0.0 Y-1.4901161193847656e-08 Z1.3962633609771729
+Thumb.001 rotation: X0.0 Y-2.9802322387695312e-08 Z1.3962633609771729
 Thumb.001 scale: X1.0 Y1.0 Z1.0
 Thumb.001 groups: None
 
