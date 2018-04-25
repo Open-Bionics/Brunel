@@ -298,6 +298,16 @@ BOOLEAN Central mould cavity mesh: Cylinder.013
 BOOLEAN Central mould cavity materials: Boolean difference, 
 BOOLEAN Central mould cavity modifiers: None
 
+Name: BOOLEAN Clamping Point Subtraction
+BOOLEAN Clamping Point Subtraction Type: MESH
+BOOLEAN Clamping Point Subtraction transform: X-55.459922790527344 Y-8.142390583998349e-07 Z0.7504973411560059
+BOOLEAN Clamping Point Subtraction rotation: X0.0 Y-0.0 Z1.5707963705062866
+BOOLEAN Clamping Point Subtraction scale: X0.32341328263282776 Y0.32341328263282776 Z1.0
+BOOLEAN Clamping Point Subtraction groups: None
+BOOLEAN Clamping Point Subtraction mesh: Plane.002
+BOOLEAN Clamping Point Subtraction materials: Boolean difference, 
+BOOLEAN Clamping Point Subtraction modifiers: None
+
 Name: BOOLEAN Distal 1 BLANK
 BOOLEAN Distal 1 BLANK Type: EMPTY
 BOOLEAN Distal 1 BLANK transform: X0.0 Y0.0 Z0.0
@@ -3042,6 +3052,16 @@ Cylinder.004 mesh: Cylinder.021
 Cylinder.004 materials: Boolean difference.002, 
 Cylinder.004 modifiers: None
 
+Name: Cylinder.005
+Cylinder.005 Type: MESH
+Cylinder.005 transform: X0.0 Y0.0 Z0.0
+Cylinder.005 rotation: X0.0 Y0.0 Z0.0
+Cylinder.005 scale: X1.0 Y1.0 Z1.0
+Cylinder.005 groups: None
+Cylinder.005 mesh: Cylinder.006
+Cylinder.005 materials: None
+Cylinder.005 modifiers: None
+
 Name: Cylinder.006
 Cylinder.006 Type: MESH
 Cylinder.006 transform: X-0.08533477783203125 Y-45.71010208129883 Z2.303454637527466
@@ -5648,7 +5668,7 @@ MOULD Identifiers groups: None
 
 Name: MOULD Location feature
 MOULD Location feature Type: MESH
-MOULD Location feature transform: X0.12131524831056595 Y87.49420166015625 Z-10.25
+MOULD Location feature transform: X0.12131524831056595 Y87.99420166015625 Z-10.25
 MOULD Location feature rotation: X0.0 Y-0.0 Z-1.5707963705062866
 MOULD Location feature scale: X1.0 Y1.0 Z1.0
 MOULD Location feature groups: None
@@ -5766,12 +5786,12 @@ MOULD Top Clamping plate modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Central mould cavity
   #4 Name: Boolean.BOOLEAN M3 bolt hole.000, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M3 bolt hole.000
-  #5 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #6 Name: Boolean.001, Type: BOOLEAN
+  #5 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN MOULD Top plate finger clearance 
-  #7 Name: Boolean.002, Type: BOOLEAN
+  #6 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Orientation Indicator
+  #7 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Clamping Point Subtraction
 
 Name: Proximal Phalanx.001
 Proximal Phalanx.001 Type: EMPTY
