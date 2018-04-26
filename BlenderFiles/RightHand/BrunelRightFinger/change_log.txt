@@ -300,7 +300,7 @@ BOOLEAN Central mould cavity modifiers: None
 
 Name: BOOLEAN Clamping Point Subtraction
 BOOLEAN Clamping Point Subtraction Type: MESH
-BOOLEAN Clamping Point Subtraction transform: X-55.459922790527344 Y-8.142390583998349e-07 Z0.7504973411560059
+BOOLEAN Clamping Point Subtraction transform: X-55.459922790527344 Y-8.142390583998349e-07 Z-0.24950265884399414
 BOOLEAN Clamping Point Subtraction rotation: X0.0 Y-0.0 Z1.5707963705062866
 BOOLEAN Clamping Point Subtraction scale: X0.32341328263282776 Y0.32341328263282776 Z1.0
 BOOLEAN Clamping Point Subtraction groups: None
@@ -446,7 +446,7 @@ BOOLEAN Distial Joint Spring Profile.001 modifiers:
 
 Name: BOOLEAN Finger Compression Points
 BOOLEAN Finger Compression Points Type: MESH
-BOOLEAN Finger Compression Points transform: X0.0 Y0.0 Z3.2817254066467285
+BOOLEAN Finger Compression Points transform: X0.0 Y0.0 Z5.7817254066467285
 BOOLEAN Finger Compression Points rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Finger Compression Points scale: X1.0 Y1.0 Z1.0
 BOOLEAN Finger Compression Points groups: None
@@ -1090,7 +1090,7 @@ BOOLEAN M3 Bolt Hole groups: None
 
 Name: BOOLEAN M3 bolt hole.000
 BOOLEAN M3 bolt hole.000 Type: MESH
-BOOLEAN M3 bolt hole.000 transform: X1.9073486328125e-06 Y0.0 Z0.9999999403953552
+BOOLEAN M3 bolt hole.000 transform: X1.9073486328125e-06 Y0.0 Z3.499999761581421
 BOOLEAN M3 bolt hole.000 rotation: X0.0 Y-0.0 Z-6.67588472366333
 BOOLEAN M3 bolt hole.000 scale: X0.9624822735786438 Y0.9624822735786438 Z0.9624822735786438
 BOOLEAN M3 bolt hole.000 groups: None
@@ -1115,7 +1115,7 @@ BOOLEAN M3 bolt hole.000 modifiers:
 
 Name: BOOLEAN M3 bolt hole.001
 BOOLEAN M3 bolt hole.001 Type: MESH
-BOOLEAN M3 bolt hole.001 transform: X1.9073486328125e-06 Y0.0 Z0.9999999403953552
+BOOLEAN M3 bolt hole.001 transform: X1.9073486328125e-06 Y0.0 Z3.499999761581421
 BOOLEAN M3 bolt hole.001 rotation: X0.0 Y-0.0 Z-6.67588472366333
 BOOLEAN M3 bolt hole.001 scale: X0.9624822735786438 Y0.9624822735786438 Z0.9624822735786438
 BOOLEAN M3 bolt hole.001 groups: None
@@ -1126,7 +1126,7 @@ BOOLEAN M3 bolt hole.001 modifiers: None
 
 Name: BOOLEAN M3 bolt hole.002
 BOOLEAN M3 bolt hole.002 Type: MESH
-BOOLEAN M3 bolt hole.002 transform: X1.9073486328125e-06 Y0.0 Z0.9999999403953552
+BOOLEAN M3 bolt hole.002 transform: X1.9073486328125e-06 Y0.0 Z3.499999761581421
 BOOLEAN M3 bolt hole.002 rotation: X0.0 Y-0.0 Z-6.67588472366333
 BOOLEAN M3 bolt hole.002 scale: X0.9624822735786438 Y0.9624822735786438 Z0.9624822735786438
 BOOLEAN M3 bolt hole.002 groups: None
@@ -1137,7 +1137,7 @@ BOOLEAN M3 bolt hole.002 modifiers: None
 
 Name: BOOLEAN M3 bolt hole.003
 BOOLEAN M3 bolt hole.003 Type: MESH
-BOOLEAN M3 bolt hole.003 transform: X1.9073486328125e-06 Y0.0 Z0.9999999403953552
+BOOLEAN M3 bolt hole.003 transform: X1.9073486328125e-06 Y0.0 Z3.499999761581421
 BOOLEAN M3 bolt hole.003 rotation: X0.0 Y-0.0 Z-6.67588472366333
 BOOLEAN M3 bolt hole.003 scale: X0.9624822735786438 Y0.9624822735786438 Z0.9624822735786438
 BOOLEAN M3 bolt hole.003 groups: None
@@ -1148,7 +1148,7 @@ BOOLEAN M3 bolt hole.003 modifiers: None
 
 Name: BOOLEAN M3 bolt hole.004
 BOOLEAN M3 bolt hole.004 Type: MESH
-BOOLEAN M3 bolt hole.004 transform: X1.9073486328125e-06 Y0.0 Z0.9999999403953552
+BOOLEAN M3 bolt hole.004 transform: X1.9073486328125e-06 Y0.0 Z3.499999761581421
 BOOLEAN M3 bolt hole.004 rotation: X0.0 Y-0.0 Z-6.67588472366333
 BOOLEAN M3 bolt hole.004 scale: X0.9624822735786438 Y0.9624822735786438 Z0.9624822735786438
 BOOLEAN M3 bolt hole.004 groups: None
@@ -1159,7 +1159,7 @@ BOOLEAN M3 bolt hole.004 modifiers: None
 
 Name: BOOLEAN M3 bolt hole.005
 BOOLEAN M3 bolt hole.005 Type: MESH
-BOOLEAN M3 bolt hole.005 transform: X1.9073486328125e-06 Y0.0 Z0.9999999403953552
+BOOLEAN M3 bolt hole.005 transform: X1.9073486328125e-06 Y0.0 Z3.499999761581421
 BOOLEAN M3 bolt hole.005 rotation: X0.0 Y-0.0 Z-6.67588472366333
 BOOLEAN M3 bolt hole.005 scale: X0.9624822735786438 Y0.9624822735786438 Z0.9624822735786438
 BOOLEAN M3 bolt hole.005 groups: None
@@ -1170,7 +1170,7 @@ BOOLEAN M3 bolt hole.005 modifiers: None
 
 Name: BOOLEAN M3 bolt hole.006
 BOOLEAN M3 bolt hole.006 Type: MESH
-BOOLEAN M3 bolt hole.006 transform: X1.9073486328125e-06 Y0.0 Z0.9999999403953552
+BOOLEAN M3 bolt hole.006 transform: X1.9073486328125e-06 Y0.0 Z3.499999761581421
 BOOLEAN M3 bolt hole.006 rotation: X0.0 Y-0.0 Z-6.67588472366333
 BOOLEAN M3 bolt hole.006 scale: X0.9624822735786438 Y0.9624822735786438 Z0.9624822735786438
 BOOLEAN M3 bolt hole.006 groups: None
@@ -1181,7 +1181,7 @@ BOOLEAN M3 bolt hole.006 modifiers: None
 
 Name: BOOLEAN M3 bolt hole.007
 BOOLEAN M3 bolt hole.007 Type: MESH
-BOOLEAN M3 bolt hole.007 transform: X1.9073486328125e-06 Y0.0 Z0.9999999403953552
+BOOLEAN M3 bolt hole.007 transform: X1.9073486328125e-06 Y0.0 Z3.499999761581421
 BOOLEAN M3 bolt hole.007 rotation: X0.0 Y-0.0 Z-6.67588472366333
 BOOLEAN M3 bolt hole.007 scale: X0.9624822735786438 Y0.9624822735786438 Z0.9624822735786438
 BOOLEAN M3 bolt hole.007 groups: None
@@ -5771,7 +5771,7 @@ MOULD Top modifiers:
 
 Name: MOULD Top Clamping plate
 MOULD Top Clamping plate Type: MESH
-MOULD Top Clamping plate transform: X0.0 Y-1.9073486328125e-06 Z2.5
+MOULD Top Clamping plate transform: X0.0 Y-1.9073486328125e-06 Z5.0
 MOULD Top Clamping plate rotation: X0.0 Y0.0 Z0.0
 MOULD Top Clamping plate scale: X0.9836937189102173 Y1.0 Z1.0
 MOULD Top Clamping plate groups: None
