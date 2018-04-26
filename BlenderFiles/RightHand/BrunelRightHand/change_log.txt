@@ -2313,9 +2313,9 @@ Palm Mould modifiers:
   #2 Name: Boolean.TARGET Outer Surface.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: TARGET Outer Surface.003
   #3 Name: Boolean.Thumb Ligament Cover .001, Type: BOOLEAN
-        Operation: UNION, Object: Thumb Ligament Cover .001
+        Operation: UNION, Object: Thumb Ligament Cover .002
   #4 Name: Boolean.BOOLEAN Palm Mould Urethane Channel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Palm Mould Urethane Channel
+        Operation: DIFFERENCE, Object: Vert
   #5 Name: Boolean.Palm Mould Plunger, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm Mould Plunger
   #6 Name: Boolean.BOOLEAN Palm Mould Securing Dowels.001, Type: BOOLEAN
@@ -2378,7 +2378,7 @@ Palm Mould.001 modifiers:
   #3 Name: Boolean.BOOLEAN Palm Mould Plunger, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm Mould Plunger
   #4 Name: Boolean.BOOLEAN Palm Mould Urethane Channel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Palm Mould Urethane Channel
+        Operation: DIFFERENCE, Object: Vert
 
 Name: Palm Urethane 
 Palm Urethane  Type: MESH
@@ -2452,6 +2452,16 @@ Plane.003 groups: None
 Plane.003 mesh: Plane.002
 Plane.003 materials: Boolean difference, 
 Plane.003 modifiers: None
+
+Name: Plane.004
+Plane.004 Type: MESH
+Plane.004 transform: X9.473856925964355 Y-95.40499877929688 Z6.7095866203308105
+Plane.004 rotation: X1.5707963705062866 Y-0.0 Z0.0
+Plane.004 scale: X1.0 Y1.0 Z1.0
+Plane.004 groups: None
+Plane.004 mesh: Plane.009
+Plane.004 materials: Boolean difference, 
+Plane.004 modifiers: None
 
 Name: Plane.005
 Plane.005 Type: MESH
@@ -2723,6 +2733,8 @@ TARGET Outer Surface.003 modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #3 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Plane
+  #4 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
 
 Name: TARGET Urethane Pad 
 TARGET Urethane Pad  Type: MESH
@@ -2772,11 +2784,24 @@ Thumb Ligament Cover .001 rotation: X3.137685775756836 Y0.0 Z1.3962633609771729
 Thumb Ligament Cover .001 scale: X1.0 Y1.0 Z1.0
 Thumb Ligament Cover .001 groups: None
 Thumb Ligament Cover .001 mesh: Thumb Ligament Cover .002
-Thumb Ligament Cover .001 materials: PLA White.002, 
+Thumb Ligament Cover .001 materials: Boolean difference, 
 Thumb Ligament Cover .001 modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.20, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True
+Name: Thumb Ligament Cover .002
+Thumb Ligament Cover .002 Type: MESH
+Thumb Ligament Cover .002 transform: X-6.998704433441162 Y-66.19110870361328 Z-17.999996185302734
+Thumb Ligament Cover .002 rotation: X3.137685775756836 Y0.0 Z1.3962633609771729
+Thumb Ligament Cover .002 scale: X1.0 Y1.0 Z1.0
+Thumb Ligament Cover .002 groups: None
+Thumb Ligament Cover .002 mesh: Thumb Ligament Cover .002
+Thumb Ligament Cover .002 materials: Boolean difference, 
+Thumb Ligament Cover .002 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.10, Offset: 1.00 
         Even thickness: True, High Quality Normals: True
 Name: Thumb ligament cover clip
 Thumb ligament cover clip Type: MESH
@@ -2880,6 +2905,21 @@ Urethane Pad and inner palm (one mesh) modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Inner Palm (Flat plane cut)
   #7 Name: Boolean.Inner Palm Lip, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
+
+Name: Vert
+Vert Type: MESH
+Vert transform: X9.000000953674316 Y-73.98606872558594 Z-22.608531951904297
+Vert rotation: X0.0 Y-0.0 Z0.0
+Vert scale: X1.0 Y1.0 Z1.0
+Vert groups: None
+Vert mesh: Vert
+Vert materials: Boolean difference, 
+Vert modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 1, Type: CATMULL_CLARK
+  #2 Name: Skin, Type: SKIN
+  #3 Name: Subsurf.001, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: Wrist / Stand Connector 
 Wrist / Stand Connector  Type: MESH
