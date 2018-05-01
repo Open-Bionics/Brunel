@@ -355,7 +355,8 @@ BOOLEAN Finger Wave Profile Outer modifiers:
   #4 Name: Hook.003, Type: HOOK
   #5 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #6 Name: Boolean.BOOLEAN Finger Wave Profile (Urethane Channel), Type: BOOLEAN
+  #6 Name: Bevel, Type: BEVEL
+  #7 Name: Boolean.BOOLEAN Finger Wave Profile (Urethane Channel), Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Finger Wave Profile (Urethane Channel)
 
 Name: BOOLEAN Fixing points back cover
