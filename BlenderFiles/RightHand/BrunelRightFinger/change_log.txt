@@ -3375,6 +3375,7 @@ Extensor spring pin Distal.003 mesh: BOOLEAN Spring pin.002
 Extensor spring pin Distal.003 materials: Boolean difference, 
 Extensor spring pin Distal.003 modifiers: 
   #1 Name: Hook, Type: HOOK
+  #2 Name: Displace, Type: DISPLACE
 
 Name: Extensor spring pin Distal.004
 Extensor spring pin Distal.004 Type: MESH
@@ -3386,6 +3387,7 @@ Extensor spring pin Distal.004 mesh: BOOLEAN Spring pin.002
 Extensor spring pin Distal.004 materials: Boolean difference, 
 Extensor spring pin Distal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
+  #2 Name: Displace, Type: DISPLACE
 
 Name: Extensor spring pin Proximal Distal.001
 Extensor spring pin Proximal Distal.001 Type: MESH
@@ -3419,6 +3421,7 @@ Extensor spring pin Proximal Distal.003 mesh: BOOLEAN Spring pin.001
 Extensor spring pin Proximal Distal.003 materials: Boolean difference, 
 Extensor spring pin Proximal Distal.003 modifiers: 
   #1 Name: Hook, Type: HOOK
+  #2 Name: Displace, Type: DISPLACE
 
 Name: Extensor spring pin Proximal Distal.004
 Extensor spring pin Proximal Distal.004 Type: MESH
@@ -3430,6 +3433,7 @@ Extensor spring pin Proximal Distal.004 mesh: BOOLEAN Spring pin.001
 Extensor spring pin Proximal Distal.004 materials: Boolean difference, 
 Extensor spring pin Proximal Distal.004 modifiers: 
   #1 Name: Hook, Type: HOOK
+  #2 Name: Displace, Type: DISPLACE
 
 Name: Finger cut out.003
 Finger cut out.003 Type: MESH
