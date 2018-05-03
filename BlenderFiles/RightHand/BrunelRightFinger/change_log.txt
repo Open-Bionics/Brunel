@@ -3376,6 +3376,7 @@ Extensor spring pin Distal.003 materials: Boolean difference,
 Extensor spring pin Distal.003 modifiers: 
   #1 Name: Hook, Type: HOOK
   #2 Name: Displace, Type: DISPLACE
+  #3 Name: Triangulate, Type: TRIANGULATE
 
 Name: Extensor spring pin Distal.004
 Extensor spring pin Distal.004 Type: MESH
