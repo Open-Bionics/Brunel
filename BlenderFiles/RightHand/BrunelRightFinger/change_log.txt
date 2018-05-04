@@ -4504,6 +4504,7 @@ Inner distal.003 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Distal Joint Spring Profile.003
   #14 Name: Boolean.Extensor spring pin Distal.003, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Extensor spring pin Distal.003
+  #15 Name: Triangulate, Type: TRIANGULATE
 
 Name: Inner distal.004 
 Inner distal.004  Type: MESH
