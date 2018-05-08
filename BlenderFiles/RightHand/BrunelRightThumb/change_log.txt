@@ -357,81 +357,56 @@ HANDLE Distal Joint.001 modifiers: None
 
 Name: MOULD
 MOULD Type: MESH
-MOULD transform: X44.98893356323242 Y61.36853790283203 Z0.9999998807907104
-MOULD rotation: X1.5707963705062866 Y9.254307542505558e-09 Z1.1681866645812988
+MOULD transform: X47.50300979614258 Y59.73164367675781 Z0.9999997615814209
+MOULD rotation: X1.5707963705062866 Y1.6704117200561086e-08 Z0.9936537742614746
 MOULD scale: X1.0 Y1.0 Z1.0
 MOULD groups: None
 MOULD mesh: Plane.015
 MOULD materials: PLA White, 
 MOULD modifiers: 
-  #1 Name: Boolean, Type: BOOLEAN
+  #1 Name: Boolean.MOULD BOOLEAN Thumb, Type: BOOLEAN
         Operation: DIFFERENCE, Object: MOULD BOOLEAN Thumb
   #2 Name: Boolean.MOULD BOOLEAN Plunger, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: MOULD BOOLEAN Plunger
-  #3 Name: Boolean.MOULD BOOLEAN Urethane Channel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: MOULD BOOLEAN Urethane Channel
-  #4 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: MOULD Plunger
+  #3 Name: Boolean.MOULD Plug, Type: BOOLEAN
         Operation: DIFFERENCE, Object: MOULD Plug
+  #4 Name: Boolean.MOULD BOOLEAN Urethane Channel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Plane.002
+  #5 Name: Boolean.BOOLEAN Distal M2 Top cover.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Distal M2 Top cover.001
 
 Name: MOULD Base
 MOULD Base Type: MESH
-MOULD Base transform: X47.74905776977539 Y60.19306945800781 Z0.9999997615814209
-MOULD Base rotation: X1.5707963705062866 Y9.254307542505558e-09 Z1.1681866645812988
+MOULD Base transform: X50.54575729370117 Y58.372161865234375 Z0.9999997615814209
+MOULD Base rotation: X1.5707963705062866 Y1.6704118976917925e-08 Z0.9936538338661194
 MOULD Base scale: X1.0 Y1.0 Z1.0
 MOULD Base groups: None
 MOULD Base mesh: Plane.012
 MOULD Base materials: None
 MOULD Base modifiers: 
   #1 Name: Bevel, Type: BEVEL
-  #2 Name: Boolean.MOULD BOOLEAN Base, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: MOULD BOOLEAN Base
-  #3 Name: Boolean.MOULD BOOLEAN Urethane Channel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: MOULD BOOLEAN Urethane Channel
-  #4 Name: Boolean.MOULD Clamping points, Type: BOOLEAN
+  #2 Name: Boolean.MOULD Clamping points, Type: BOOLEAN
         Operation: UNION, Object: MOULD Clamping points
+  #3 Name: Boolean.MOULD.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: MOULD.001
+  #4 Name: Boolean.MOULD BOOLEAN Urethane Channel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Plane.002
+  #5 Name: Boolean.MOULD BOOLEAN Thumb, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: MOULD BOOLEAN Thumb
 
-Name: MOULD BOOLEAN Base
-MOULD BOOLEAN Base Type: MESH
-MOULD BOOLEAN Base transform: X44.98893356323242 Y61.36853790283203 Z0.9999998807907104
-MOULD BOOLEAN Base rotation: X1.5707963705062866 Y9.254307542505558e-09 Z1.1681866645812988
-MOULD BOOLEAN Base scale: X1.0 Y1.0 Z1.0
-MOULD BOOLEAN Base groups: None
-MOULD BOOLEAN Base mesh: Plane.015
-MOULD BOOLEAN Base materials: PLA White, 
-MOULD BOOLEAN Base modifiers: 
-  #1 Name: Solidify, Type: SOLIDIFY
-        Thickness: 0.25, Offset: 1.00 
-        Even thickness: False, High Quality Normals: False
 Name: MOULD BOOLEAN M2 Clamp Fixings
 MOULD BOOLEAN M2 Clamp Fixings Type: MESH
-MOULD BOOLEAN M2 Clamp Fixings transform: X10.023001670837402 Y55.829986572265625 Z24.000001907348633
-MOULD BOOLEAN M2 Clamp Fixings rotation: X-1.5707964897155762 Y-1.168186068534851 Z1.1681861877441406
+MOULD BOOLEAN M2 Clamp Fixings transform: X22.849637985229492 Y51.50978469848633 Z24.000001907348633
+MOULD BOOLEAN M2 Clamp Fixings rotation: X-1.5707964897155762 Y-1.168186068534851 Z0.9936532378196716
 MOULD BOOLEAN M2 Clamp Fixings scale: X0.2500000298023224 Y0.2500000298023224 Z1.0
 MOULD BOOLEAN M2 Clamp Fixings groups: None
 MOULD BOOLEAN M2 Clamp Fixings mesh: Cylinder.008
 MOULD BOOLEAN M2 Clamp Fixings materials: Boolean difference, 
 MOULD BOOLEAN M2 Clamp Fixings modifiers: None
 
-Name: MOULD BOOLEAN Plunger
-MOULD BOOLEAN Plunger Type: MESH
-MOULD BOOLEAN Plunger transform: X31.255552291870117 Y88.4516372680664 Z1.0000015497207642
-MOULD BOOLEAN Plunger rotation: X1.5707966089248657 Y1.3833608627319336 Z1.1681870222091675
-MOULD BOOLEAN Plunger scale: X1.0 Y1.0 Z1.0
-MOULD BOOLEAN Plunger groups: None
-MOULD BOOLEAN Plunger mesh: Cylinder
-MOULD BOOLEAN Plunger materials: None
-MOULD BOOLEAN Plunger modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Boolean.MOULD BOOLEAN Plunger Pull Point, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: MOULD BOOLEAN Plunger Pull Point
-  #4 Name: Solidify, Type: SOLIDIFY
-        Thickness: 0.10, Offset: 1.00 
-        Even thickness: False, High Quality Normals: False
 Name: MOULD BOOLEAN Plunger Pull Point
 MOULD BOOLEAN Plunger Pull Point Type: MESH
-MOULD BOOLEAN Plunger Pull Point transform: X18.587371826171875 Y93.84667205810547 Z1.0000026226043701
+MOULD BOOLEAN Plunger Pull Point transform: X32.0369987487793 Y93.3148422241211 Z1.0000015497207642
 MOULD BOOLEAN Plunger Pull Point rotation: X-9.280430646185778e-09 Y7.321029338314133e-10 Z-0.2151740938425064
 MOULD BOOLEAN Plunger Pull Point scale: X0.40000003576278687 Y0.40000003576278687 Z2.000000238418579
 MOULD BOOLEAN Plunger Pull Point groups: None
@@ -445,31 +420,23 @@ MOULD BOOLEAN Thumb transform: X-7.62939453125e-06 Y-7.152557373046875e-07 Z0.0
 MOULD BOOLEAN Thumb rotation: X0.0 Y0.0 Z0.0
 MOULD BOOLEAN Thumb scale: X0.9999999403953552 Y0.9999998211860657 Z0.9999999403953552
 MOULD BOOLEAN Thumb groups: Thumb, 
-MOULD BOOLEAN Thumb mesh: Thumb.000
+MOULD BOOLEAN Thumb mesh: Thumb.004
 MOULD BOOLEAN Thumb materials: PLA White, Urethane, 
 MOULD BOOLEAN Thumb modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #2 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.10, Offset: 1.00 
-        Even thickness: False, High Quality Normals: False  #3 Name: Displace, Type: DISPLACE
-  #4 Name: Boolean, Type: BOOLEAN
-        Operation: UNION, Object: MOULD Plug
-
-Name: MOULD BOOLEAN Urethane Channel
-MOULD BOOLEAN Urethane Channel Type: MESH
-MOULD BOOLEAN Urethane Channel transform: X45.491458892822266 Y70.28975677490234 Z1.0000011920928955
-MOULD BOOLEAN Urethane Channel rotation: X1.5707963705062866 Y-0.18743541836738586 Z-0.402609646320343
-MOULD BOOLEAN Urethane Channel scale: X0.10000000894069672 Y0.10000000894069672 Z1.0
-MOULD BOOLEAN Urethane Channel groups: None
-MOULD BOOLEAN Urethane Channel mesh: Cylinder.005
-MOULD BOOLEAN Urethane Channel materials: Boolean difference, 
-MOULD BOOLEAN Urethane Channel modifiers: None
+        Even thickness: False, High Quality Normals: False  #3 Name: Boolean.BOOLEAN Thumb Cover 0.2mm Clearance, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb Cover 0.2mm Clearance
+  #4 Name: Displace, Type: DISPLACE
+  #5 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Distal M2 Top cover.001
 
 Name: MOULD Clamping points
 MOULD Clamping points Type: MESH
-MOULD Clamping points transform: X8.182916641235352 Y56.61363220214844 Z21.231815338134766
-MOULD Clamping points rotation: X3.141592502593994 Y2.9802322387695312e-08 Z-1.9734065532684326
+MOULD Clamping points transform: X36.38066101074219 Y42.649051666259766 Z1.0000001192092896
+MOULD Clamping points rotation: X3.1415929794311523 Y-1.3027012033724476e-15 Z0.9936537742614746
 MOULD Clamping points scale: X1.0 Y1.0 Z1.0
 MOULD Clamping points groups: None
 MOULD Clamping points mesh: Plane.021
@@ -481,8 +448,8 @@ MOULD Clamping points modifiers:
 
 Name: MOULD Plug
 MOULD Plug Type: MESH
-MOULD Plug transform: X10.378805160522461 Y65.75160217285156 Z-0.6250662803649902
-MOULD Plug rotation: X-9.280430646185778e-09 Y7.321029338314133e-10 Z-0.2151740938425064
+MOULD Plug transform: X14.536235809326172 Y69.8260269165039 Z-0.6250664591789246
+MOULD Plug rotation: X-1.7403980479002712e-08 Y-3.6075586962169837e-12 Z-0.3897070586681366
 MOULD Plug scale: X1.0 Y1.0 Z1.0
 MOULD Plug groups: None
 MOULD Plug mesh: Cube.001
@@ -492,8 +459,8 @@ MOULD Plug modifiers:
 
 Name: MOULD Plunger
 MOULD Plunger Type: MESH
-MOULD Plunger transform: X31.255552291870117 Y88.4516372680664 Z1.0000015497207642
-MOULD Plunger rotation: X1.5707966089248657 Y1.3833608627319336 Z1.1681870222091675
+MOULD Plunger transform: X43.71769332885742 Y85.70962524414062 Z1.0000015497207642
+MOULD Plunger rotation: X1.5707963705062866 Y1.4901160305669237e-08 Z0.9936537742614746
 MOULD Plunger scale: X1.0 Y1.0 Z1.0
 MOULD Plunger groups: None
 MOULD Plunger mesh: Cylinder
@@ -505,6 +472,18 @@ MOULD Plunger modifiers:
   #3 Name: Boolean.MOULD BOOLEAN Plunger Pull Point, Type: BOOLEAN
         Operation: DIFFERENCE, Object: MOULD BOOLEAN Plunger Pull Point
 
+Name: MOULD.001
+MOULD.001 Type: MESH
+MOULD.001 transform: X47.50300979614258 Y59.73164367675781 Z0.9999997615814209
+MOULD.001 rotation: X1.5707963705062866 Y1.6704117200561086e-08 Z0.9936537742614746
+MOULD.001 scale: X1.0 Y1.0 Z1.0
+MOULD.001 groups: None
+MOULD.001 mesh: Plane.015
+MOULD.001 materials: PLA White, 
+MOULD.001 modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.20, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True
 Name: Plane
 Plane Type: MESH
 Plane transform: X-2.45361065864563 Y6.517271041870117 Z1.49506676197052
@@ -528,6 +507,19 @@ Plane.001 modifiers:
   #1 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.50, Offset: 1.00 
         Even thickness: False, High Quality Normals: False
+Name: Plane.002
+Plane.002 Type: MESH
+Plane.002 transform: X36.78807067871094 Y65.26764678955078 Z1.0000009536743164
+Plane.002 rotation: X0.0 Y0.0 Z0.0
+Plane.002 scale: X1.0 Y1.0 Z1.0
+Plane.002 groups: None
+Plane.002 mesh: Plane.002
+Plane.002 materials: Boolean difference, 
+Plane.002 modifiers: 
+  #1 Name: Skin, Type: SKIN
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: Plane.003
 Plane.003 Type: MESH
 Plane.003 transform: X10.023000717163086 Y55.829986572265625 Z1.0000019073486328
@@ -556,6 +548,19 @@ Plane.004 groups: None
 Plane.004 mesh: Plane.013
 Plane.004 materials: None
 Plane.004 modifiers: None
+
+Name: Plane.005
+Plane.005 Type: MESH
+Plane.005 transform: X20.482818603515625 Y51.210121154785156 Z1.0000076293945312
+Plane.005 rotation: X1.5707963705062866 Y1.6704117200561086e-08 Z0.9936538338661194
+Plane.005 scale: X1.0 Y1.0 Z1.0
+Plane.005 groups: None
+Plane.005 mesh: Plane.011
+Plane.005 materials: None
+Plane.005 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: MOULD BOOLEAN M2 Clamp Fixings
 
 Name: Plane.006
 Plane.006 Type: MESH
@@ -601,35 +606,33 @@ Thumb transform: X-7.62939453125e-06 Y-7.152557373046875e-07 Z0.0
 Thumb rotation: X0.0 Y0.0 Z0.0
 Thumb scale: X0.9999999403953552 Y0.9999998211860657 Z0.9999999403953552
 Thumb groups: Thumb, 
-Thumb mesh: Thumb.002
+Thumb mesh: Thumb.001
 Thumb materials: PLA White, 
 Thumb modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #2 Name: Displace, Type: DISPLACE
   #3 Name: Boolean.BOOLEAN Thumb tendon channel for thumb, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #4 Name: Boolean.ThumbTendonTerminationM2BoltHole, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #5 Name: Boolean.BOOLEAN Thumb Cover M2 Bolt Hole , Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #6 Name: Boolean.BOOLEAN Ligament extra thumb cut, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon channel for thumb
+  #4 Name: Boolean.BOOLEAN Distal M2 Top cover.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Distal M2 Top cover.001
+  #5 Name: Boolean.BOOLEAN Ligament extra thumb cut, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament extra thumb cut
-  #7 Name: Boolean.BOOLEAN Thumb Cover 0.2mm Clearance, Type: BOOLEAN
+  #6 Name: Boolean.BOOLEAN Thumb Cover 0.2mm Clearance, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb Cover 0.2mm Clearance
-  #8 Name: Boolean.BOOLEAN Riser Channels, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #9 Name: Boolean.BOOLEAN Thumb Ligament Clamp, Type: BOOLEAN
+  #7 Name: Boolean.BOOLEAN Riser Channels, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Riser Channels
+  #8 Name: Boolean.BOOLEAN Thumb Ligament Clamp, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb Ligament Clamp
-  #10 Name: Boolean.Plane, Type: BOOLEAN
+  #9 Name: Boolean.Plane, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Plane
-  #11 Name: Boolean.BOOLEAN 1.4mm spring termonation plinth , Type: BOOLEAN
+  #10 Name: Boolean.BOOLEAN 1.4mm spring termonation plinth , Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN 1.4mm spring termonation plinth 
-  #12 Name: Boolean.BOOLEAN Spring termination point, Type: BOOLEAN
+  #11 Name: Boolean.BOOLEAN Spring termination point, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Spring termination point
-  #13 Name: Boolean.BOOLEAN M2 Bolt Hole.002, Type: BOOLEAN
+  #12 Name: Boolean.BOOLEAN M2 Bolt Hole.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole.002
-  #14 Name: Boolean.BOOLEAN Ligament Clamp Radius, Type: BOOLEAN
+  #13 Name: Boolean.BOOLEAN Ligament Clamp Radius, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament Clamp Radius
 
 Name: Thumb Cover
@@ -772,66 +775,17 @@ Thumb TEST modifiers:
   #14 Name: Boolean.BOOLEAN Ligament Clamp Radius, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament Clamp Radius
 
-Name: Thumb urethane pad
-Thumb urethane pad Type: MESH
-Thumb urethane pad transform: X-8.095602035522461 Y5.418328285217285 Z1.957442045211792
-Thumb urethane pad rotation: X1.8260031938552856 Y1.570796251296997 Z0.0
-Thumb urethane pad scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
-Thumb urethane pad groups: Thumb, 
-Thumb urethane pad mesh: Thumb urethane pad
-Thumb urethane pad materials: Urethane, 
-Thumb urethane pad modifiers: 
+Name: Thumb urethane pad 
+Thumb urethane pad  Type: MESH
+Thumb urethane pad  transform: X-8.095602035522461 Y5.418328285217285 Z1.957442045211792
+Thumb urethane pad  rotation: X1.8260031938552856 Y1.570796251296997 Z0.0
+Thumb urethane pad  scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+Thumb urethane pad  groups: Thumb, 
+Thumb urethane pad  mesh: Thumb urethane pad.001
+Thumb urethane pad  materials: Urethane, 
+Thumb urethane pad  modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #2 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Thumb
-
-Name: Thumb urethane pad TEST
-Thumb urethane pad TEST Type: MESH
-Thumb urethane pad TEST transform: X-8.095602035522461 Y5.418328285217285 Z1.957442045211792
-Thumb urethane pad TEST rotation: X1.8260031938552856 Y1.570796251296997 Z0.0
-Thumb urethane pad TEST scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
-Thumb urethane pad TEST groups: Thumb, 
-Thumb urethane pad TEST mesh: Thumb urethane pad.001
-Thumb urethane pad TEST materials: Urethane, 
-Thumb urethane pad TEST modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #2 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Thumb
-
-Name: Thumb.001
-Thumb.001 Type: MESH
-Thumb.001 transform: X-7.62939453125e-06 Y-7.152557373046875e-07 Z0.0
-Thumb.001 rotation: X0.0 Y0.0 Z0.0
-Thumb.001 scale: X0.9999999403953552 Y0.9999998211860657 Z0.9999999403953552
-Thumb.001 groups: Thumb, 
-Thumb.001 mesh: Thumb.001
-Thumb.001 materials: PLA White, 
-Thumb.001 modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #2 Name: Displace, Type: DISPLACE
-  #3 Name: Boolean.BOOLEAN Thumb tendon channel for thumb, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb tendon channel for thumb
-  #4 Name: Boolean.BOOLEAN Distal M2 Top cover.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Distal M2 Top cover.001
-  #5 Name: Boolean.BOOLEAN Ligament extra thumb cut, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Ligament extra thumb cut
-  #6 Name: Boolean.BOOLEAN Thumb Cover 0.2mm Clearance, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb Cover 0.2mm Clearance
-  #7 Name: Boolean.BOOLEAN Riser Channels, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Riser Channels
-  #8 Name: Boolean.BOOLEAN Thumb Ligament Clamp, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb Ligament Clamp
-  #9 Name: Boolean.Plane, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Plane
-  #10 Name: Boolean.BOOLEAN 1.4mm spring termonation plinth , Type: BOOLEAN
-        Operation: UNION, Object: BOOLEAN 1.4mm spring termonation plinth 
-  #11 Name: Boolean.BOOLEAN Spring termination point, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Spring termination point
-  #12 Name: Boolean.BOOLEAN M2 Bolt Hole.002, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole.002
-  #13 Name: Boolean.BOOLEAN Ligament Clamp Radius, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Ligament Clamp Radius
+        Operation: DIFFERENCE, Object: None
 

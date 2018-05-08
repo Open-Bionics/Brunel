@@ -233,7 +233,7 @@ BOOLEAN DC Jack for GALA cover modifiers:
 
 Name: BOOLEAN Dowel Thumb Ligament Cover
 BOOLEAN Dowel Thumb Ligament Cover Type: MESH
-BOOLEAN Dowel Thumb Ligament Cover transform: X4.554749965667725 Y-79.61302947998047 Z-15.421695709228516
+BOOLEAN Dowel Thumb Ligament Cover transform: X4.554749965667725 Y-79.61302947998047 Z-14.921695709228516
 BOOLEAN Dowel Thumb Ligament Cover rotation: X1.5707963705062866 Y-0.0 Z-0.1655530482530594
 BOOLEAN Dowel Thumb Ligament Cover scale: X0.16249996423721313 Y0.16250000894069672 Z0.5000000596046448
 BOOLEAN Dowel Thumb Ligament Cover groups: None
@@ -494,7 +494,7 @@ Name: BOOLEAN Headphone Jack
 BOOLEAN Headphone Jack Type: MESH
 BOOLEAN Headphone Jack transform: X42.252445220947266 Y-71.34187316894531 Z12.777480125427246
 BOOLEAN Headphone Jack rotation: X-0.0 Y1.570796251296997 Z0.0
-BOOLEAN Headphone Jack scale: X1.0 Y1.0 Z1.0
+BOOLEAN Headphone Jack scale: X1.1999999284744263 Y1.1999999284744263 Z1.0
 BOOLEAN Headphone Jack groups: None
 BOOLEAN Headphone Jack mesh: BOOLEAN Headphone Jack
 BOOLEAN Headphone Jack materials: Boolean difference, 
@@ -703,12 +703,22 @@ Name: BOOLEAN Micro USB
 BOOLEAN Micro USB Type: MESH
 BOOLEAN Micro USB transform: X41.365840911865234 Y-57.0728759765625 Z14.627598762512207
 BOOLEAN Micro USB rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Micro USB scale: X1.0 Y1.0 Z1.0
+BOOLEAN Micro USB scale: X1.2000442743301392 Y1.149999976158142 Z1.4166665077209473
 BOOLEAN Micro USB groups: None
 BOOLEAN Micro USB mesh: Cube.046
 BOOLEAN Micro USB materials: Boolean difference, 
 BOOLEAN Micro USB modifiers: 
   #1 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN MOULD M3 Reinforcing
+BOOLEAN MOULD M3 Reinforcing Type: MESH
+BOOLEAN MOULD M3 Reinforcing transform: X-33.5000114440918 Y-93.47972106933594 Z7.956809043884277
+BOOLEAN MOULD M3 Reinforcing rotation: X0.0 Y0.0 Z0.0
+BOOLEAN MOULD M3 Reinforcing scale: X1.0 Y1.0 Z1.0
+BOOLEAN MOULD M3 Reinforcing groups: None
+BOOLEAN MOULD M3 Reinforcing mesh: Cylinder.023
+BOOLEAN MOULD M3 Reinforcing materials: None
+BOOLEAN MOULD M3 Reinforcing modifiers: None
 
 Name: BOOLEAN New Gala Cover attachment point
 BOOLEAN New Gala Cover attachment point Type: MESH
@@ -1583,6 +1593,26 @@ Connector cover.001 modifiers:
   #5 Name: Boolean.PQ12, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
 
+Name: Cube
+Cube Type: MESH
+Cube transform: X9.000001907348633 Y-49.4797248840332 Z1.6913127899169922
+Cube rotation: X0.0 Y0.0 Z0.0
+Cube scale: X1.0 Y1.0 Z1.0
+Cube groups: None
+Cube mesh: Cube
+Cube materials: None
+Cube modifiers: None
+
+Name: Cube.001
+Cube.001 Type: MESH
+Cube.001 transform: X-21.999998092651367 Y-49.4797248840332 Z1.6913127899169922
+Cube.001 rotation: X0.0 Y0.0 Z0.0
+Cube.001 scale: X1.0 Y1.0 Z1.0
+Cube.001 groups: None
+Cube.001 mesh: Cube.002
+Cube.001 materials: None
+Cube.001 modifiers: None
+
 Name: Cube.003
 Cube.003 Type: MESH
 Cube.003 transform: X0.7618672847747803 Y-68.0503158569336 Z-17.059587478637695
@@ -1624,6 +1654,26 @@ Cylinder.002 groups: None
 Cylinder.002 mesh: Cylinder.008
 Cylinder.002 materials: Boolean difference, 
 Cylinder.002 modifiers: None
+
+Name: Cylinder.003
+Cylinder.003 Type: MESH
+Cylinder.003 transform: X32.005401611328125 Y-44.93330764770508 Z1.823883056640625
+Cylinder.003 rotation: X0.0 Y0.0 Z0.0
+Cylinder.003 scale: X1.0 Y1.0 Z1.0
+Cylinder.003 groups: None
+Cylinder.003 mesh: Cylinder.007
+Cylinder.003 materials: None
+Cylinder.003 modifiers: None
+
+Name: Cylinder.004
+Cylinder.004 Type: MESH
+Cylinder.004 transform: X-29.039173126220703 Y-11.516891479492188 Z4.739970684051514
+Cylinder.004 rotation: X0.0 Y0.0 Z0.0
+Cylinder.004 scale: X1.0 Y1.0 Z1.0
+Cylinder.004 groups: None
+Cylinder.004 mesh: Cylinder.010
+Cylinder.004 materials: None
+Cylinder.004 modifiers: None
 
 Name: DC jack cover.001
 DC jack cover.001 Type: MESH
@@ -1821,23 +1871,9 @@ Headphone / Micro USB.000 groups: None
 Headphone / Micro USB.000 mesh: Headphone / Micro USB.002
 Headphone / Micro USB.000 materials: Boolean difference, 
 Headphone / Micro USB.000 modifiers: 
-  #1 Name: Solidify, Type: SOLIDIFY
-        Thickness: 2.00, Offset: -1.00 
-        Even thickness: False, High Quality Normals: False  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 1, Type: CATMULL_CLARK
-  #3 Name: Bevel, Type: BEVEL
-  #4 Name: Boolean.Headphone / Micro USB.002, Type: BOOLEAN
-        Operation: UNION, Object: Headphone / Micro USB.002
-  #5 Name: Boolean.BOOLEAN Gala Cheetah Tidy, Type: BOOLEAN
-        Operation: INTERSECT, Object: BOOLEAN Gala Cheetah Tidy
-  #6 Name: Boolean.Plane.006, Type: BOOLEAN
-        Operation: UNION, Object: Plane.006
-  #7 Name: Boolean.BOOLEAN Headphone Jack, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Headphone Jack
-  #8 Name: Boolean.BOOLEAN Micro USB, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Micro USB
-  #9 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: Headphone / Micro USB.001
 Headphone / Micro USB.001 Type: MESH
@@ -2087,6 +2123,21 @@ MARKER modifiers:
   #10 Name: Boolean.BOOLEAN Wrist Flat, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Wrist Flat
 
+Name: MOULD Tendon Channel Plug
+MOULD Tendon Channel Plug Type: MESH
+MOULD Tendon Channel Plug transform: X8.992074966430664 Y-73.18128967285156 Z-2.800001621246338
+MOULD Tendon Channel Plug rotation: X0.0 Y0.0 Z0.0
+MOULD Tendon Channel Plug scale: X1.0 Y1.0 Z1.0
+MOULD Tendon Channel Plug groups: None
+MOULD Tendon Channel Plug mesh: Gala Cover.003
+MOULD Tendon Channel Plug materials: Boolean difference, 
+MOULD Tendon Channel Plug modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: BOOLEAN New Gala Cover attachment point, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN New Gala Cover attachment point
+  #3 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.30, Offset: 1.00 
+        Even thickness: True, High Quality Normals: False
 Name: New Stand
 New Stand Type: MESH
 New Stand transform: X9.066848754882812 Y-95.41497802734375 Z9.511549949645996
@@ -2291,7 +2342,7 @@ Palm Inner body modifiers:
   #27 Name: Boolean.Thumb spring channel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Thumb spring channel
   #28 Name: Boolean.BOOLEAN Palm Riser Channels, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Palm Riser Channels
+        Operation: DIFFERENCE, Object: None
   #29 Name: Boolean.BOOLEAN Flat Faces (Ligament Cover), Type: BOOLEAN
         Operation: INTERSECT, Object: BOOLEAN Flat Faces (Ligament Cover)
   #30 Name: Boolean.BOOLEAN Ligament Prongs Raised, Type: BOOLEAN
@@ -2383,10 +2434,16 @@ Palm Mould Lid mesh: Palm Mould Lid
 Palm Mould Lid materials: PLA, 
 Palm Mould Lid modifiers: 
   #1 Name: Bevel, Type: BEVEL
-  #2 Name: Boolean.BOOLEAN Palm Riser Channels, Type: BOOLEAN
+  #2 Name: Boolean.002, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN MOULD M3 Reinforcing
+  #3 Name: Boolean.BOOLEAN Palm Riser Channels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm Riser Channels
-  #3 Name: Boolean.BOOLEAN 3mm Inserts Palm Mould, Type: BOOLEAN
+  #4 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cylinder.004
+  #5 Name: Boolean.BOOLEAN 3mm Inserts Palm Mould, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN 3mm Inserts Palm Mould
+  #6 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cylinder.003
 
 Name: Palm Mould Plunger
 Palm Mould Plunger Type: MESH
