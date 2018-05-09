@@ -730,16 +730,6 @@ BOOLEAN New Gala Cover attachment point mesh: BOOLEAN New Gala Cover attachment 
 BOOLEAN New Gala Cover attachment point materials: Material, 
 BOOLEAN New Gala Cover attachment point modifiers: None
 
-Name: BOOLEAN New Gala Cover attachment point.001
-BOOLEAN New Gala Cover attachment point.001 Type: MESH
-BOOLEAN New Gala Cover attachment point.001 transform: X37.62656021118164 Y-86.90995025634766 Z-8.564687728881836
-BOOLEAN New Gala Cover attachment point.001 rotation: X0.0 Y-0.0 Z13.163959503173828
-BOOLEAN New Gala Cover attachment point.001 scale: X0.30000004172325134 Y0.30000004172325134 Z1.0
-BOOLEAN New Gala Cover attachment point.001 groups: None
-BOOLEAN New Gala Cover attachment point.001 mesh: BOOLEAN New Gala Cover attachment point.001
-BOOLEAN New Gala Cover attachment point.001 materials: Material, 
-BOOLEAN New Gala Cover attachment point.001 modifiers: None
-
 Name: BOOLEAN New Wrist connector M2 bolt holes
 BOOLEAN New Wrist connector M2 bolt holes Type: MESH
 BOOLEAN New Wrist connector M2 bolt holes transform: X9.064352035522461 Y-91.38917541503906 Z10.123432159423828
@@ -1803,10 +1793,10 @@ Gala Cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN PCB Gala Cover Tidy
   #14 Name: Boolean.BOOLEAN Headphone / Micro USB, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Headphone / Micro USB.002
-  #15 Name: Boolean, Type: BOOLEAN
+  #15 Name: Boolean.Plane.008, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Plane.008
-  #16 Name: Boolean.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
+  #16 Name: Boolean.BOOLEAN PQ12 exteneed 0.3 mm tolerance, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
 
 Name: Gala Cover Tidy
 Gala Cover Tidy Type: MESH
