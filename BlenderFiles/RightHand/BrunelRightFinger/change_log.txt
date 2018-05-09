@@ -934,7 +934,7 @@ BOOLEAN ligament for target.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN ligament for target.003 scale: X1.0 Y1.0 Z1.0
 BOOLEAN ligament for target.003 groups: None
 BOOLEAN ligament for target.003 parent: Proximal Phalanx.003
-BOOLEAN ligament for target.003 mesh: Ligament
+BOOLEAN ligament for target.003 mesh: Ligament.001
 BOOLEAN ligament for target.003 materials: NF Black, NF Black.001, NF Black.002, NF Black.003, 
 BOOLEAN ligament for target.003 modifiers: 
   #1 Name: Hook, Type: HOOK
@@ -970,7 +970,8 @@ BOOLEAN Ligament.001 modifiers:
   #4 Name: Displace, Type: DISPLACE
   #5 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.20, Offset: 1.00 
-        Even thickness: False, High Quality Normals: True  #6 Name: Subsurf, Type: SUBSURF
+        Even thickness: True, High Quality Normals: True  #6 Name: Displace.002, Type: DISPLACE
+  #7 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN ligament.003
@@ -994,7 +995,8 @@ BOOLEAN ligament.003 modifiers:
   #4 Name: Displace, Type: DISPLACE
   #5 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.20, Offset: 1.00 
-        Even thickness: False, High Quality Normals: True  #6 Name: Subsurf, Type: SUBSURF
+        Even thickness: False, High Quality Normals: True  #6 Name: Displace.002, Type: DISPLACE
+  #7 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN ligament.004
@@ -1018,7 +1020,8 @@ BOOLEAN ligament.004 modifiers:
   #4 Name: Displace, Type: DISPLACE
   #5 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.20, Offset: 1.00 
-        Even thickness: True, High Quality Normals: True  #6 Name: Subsurf, Type: SUBSURF
+        Even thickness: True, High Quality Normals: True  #6 Name: Displace.002, Type: DISPLACE
+  #7 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN M2 Bolt Holes.000
@@ -1925,6 +1928,58 @@ BOOLEAN Tendon channels proximal.004 modifiers:
   #1 Name: Hook, Type: HOOK
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+
+Name: BOOLEAN Tendonline clearance Top Cover.001
+BOOLEAN Tendonline clearance Top Cover.001 Type: MESH
+BOOLEAN Tendonline clearance Top Cover.001 transform: X0.0 Y51.936309814453125 Z0.7521188259124756
+BOOLEAN Tendonline clearance Top Cover.001 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Tendonline clearance Top Cover.001 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Tendonline clearance Top Cover.001 groups: None
+BOOLEAN Tendonline clearance Top Cover.001 mesh: Plane.004
+BOOLEAN Tendonline clearance Top Cover.001 materials: Boolean difference, 
+BOOLEAN Tendonline clearance Top Cover.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN Tendonline clearance Top Cover.002
+BOOLEAN Tendonline clearance Top Cover.002 Type: MESH
+BOOLEAN Tendonline clearance Top Cover.002 transform: X0.0 Y51.936309814453125 Z0.7521188259124756
+BOOLEAN Tendonline clearance Top Cover.002 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Tendonline clearance Top Cover.002 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Tendonline clearance Top Cover.002 groups: None
+BOOLEAN Tendonline clearance Top Cover.002 mesh: Plane.004
+BOOLEAN Tendonline clearance Top Cover.002 materials: Boolean difference, 
+BOOLEAN Tendonline clearance Top Cover.002 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN Tendonline clearance Top Cover.003
+BOOLEAN Tendonline clearance Top Cover.003 Type: MESH
+BOOLEAN Tendonline clearance Top Cover.003 transform: X0.0 Y51.936309814453125 Z0.7521188259124756
+BOOLEAN Tendonline clearance Top Cover.003 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Tendonline clearance Top Cover.003 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Tendonline clearance Top Cover.003 groups: None
+BOOLEAN Tendonline clearance Top Cover.003 mesh: Plane.004
+BOOLEAN Tendonline clearance Top Cover.003 materials: Boolean difference, 
+BOOLEAN Tendonline clearance Top Cover.003 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN Tendonline clearance Top Cover.004
+BOOLEAN Tendonline clearance Top Cover.004 Type: MESH
+BOOLEAN Tendonline clearance Top Cover.004 transform: X0.0 Y51.936309814453125 Z0.7521188259124756
+BOOLEAN Tendonline clearance Top Cover.004 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Tendonline clearance Top Cover.004 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Tendonline clearance Top Cover.004 groups: None
+BOOLEAN Tendonline clearance Top Cover.004 mesh: Plane.004
+BOOLEAN Tendonline clearance Top Cover.004 materials: Boolean difference, 
+BOOLEAN Tendonline clearance Top Cover.004 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN Thumb tendon termination M2 bolt hole
 BOOLEAN Thumb tendon termination M2 bolt hole Type: MESH
@@ -5393,7 +5448,8 @@ BOOLEAN Ligament.002 modifiers:
   #4 Name: Displace, Type: DISPLACE
   #5 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.20, Offset: 1.00 
-        Even thickness: False, High Quality Normals: True  #6 Name: Subsurf, Type: SUBSURF
+        Even thickness: False, High Quality Normals: True  #6 Name: Displace.002, Type: DISPLACE
+  #7 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Ligament.003
@@ -6068,6 +6124,8 @@ Top cover distal.001 modifiers:
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.001
   #8 Name: Boolean.BOOLEAN Inner distal pegs.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner distal pegs.001
+  #9 Name: Boolean.BOOLEAN Tendonline clearance Top Cover.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Tendonline clearance Top Cover.001
 
 Name: Top cover distal.002
 Top cover distal.002 Type: MESH
@@ -6096,6 +6154,8 @@ Top cover distal.002 modifiers:
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.002
   #8 Name: Boolean.BOOLEAN Inner distal pegs.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner distal pegs.002
+  #9 Name: Boolean.BOOLEAN Tendonline clearance Top Cover.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Tendonline clearance Top Cover.002
 
 Name: Top cover distal.003
 Top cover distal.003 Type: MESH
@@ -6124,6 +6184,8 @@ Top cover distal.003 modifiers:
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.003
   #8 Name: Boolean.BOOLEAN Inner distal pegs.003, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner distal pegs.003
+  #9 Name: Boolean.BOOLEAN Tendonline clearance Top Cover.003, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Tendonline clearance Top Cover.003
 
 Name: Top cover distal.004
 Top cover distal.004 Type: MESH
@@ -6152,6 +6214,8 @@ Top cover distal.004 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Inner distal pegs.004
   #8 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.004
+  #9 Name: Boolean.BOOLEAN Tendonline clearance Top Cover.004, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Tendonline clearance Top Cover.004
 
 Name: Top cover proximal.001
 Top cover proximal.001 Type: MESH
