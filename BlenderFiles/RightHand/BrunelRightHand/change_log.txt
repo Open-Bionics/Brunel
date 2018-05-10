@@ -72,17 +72,19 @@ Back Cover (Integrated Wrist) Flat modifiers:
   #12 Name: Triangulate, Type: TRIANGULATE
   #13 Name: Boolean.BOOLEAN Back cover M2 bolt holes, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
-  #14 Name: Boolean.BOOLEAN Headphone / Micro USB, Type: BOOLEAN
+  #14 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Back Cover M2 Countersinks
+  #15 Name: Boolean.BOOLEAN Headphone / Micro USB, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Headphone / Micro USB
-  #15 Name: Boolean.BOOLEAN Power Cable , Type: BOOLEAN
+  #16 Name: Boolean.BOOLEAN Power Cable , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Power Cable 
-  #16 Name: Boolean.BOOLEAN Flat Faces (Ligament Cover), Type: BOOLEAN
+  #17 Name: Boolean.BOOLEAN Flat Faces (Ligament Cover), Type: BOOLEAN
         Operation: INTERSECT, Object: BOOLEAN Flat Faces (Ligament Cover)
-  #17 Name: Boolean.BOOLEAN Wrist M2 connection points , Type: BOOLEAN
+  #18 Name: Boolean.BOOLEAN Wrist M2 connection points , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Wrist M2 connection points 
-  #18 Name: Boolean.Plane.010, Type: BOOLEAN
+  #19 Name: Boolean.Plane.010, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Plane.010
-  #19 Name: Boolean.OB Logo Embossed, Type: BOOLEAN
+  #20 Name: Boolean.OB Logo Embossed, Type: BOOLEAN
         Operation: UNION, Object: OB Logo Embossed
 
 Name: Back cover proximal attachment point
@@ -183,6 +185,16 @@ BOOLEAN Back cover M2 bolt holes groups: None
 BOOLEAN Back cover M2 bolt holes mesh: BOOLEAN Back cover M2 bolt holes
 BOOLEAN Back cover M2 bolt holes materials: Boolean difference, 
 BOOLEAN Back cover M2 bolt holes modifiers: None
+
+Name: BOOLEAN Back Cover M2 Countersinks
+BOOLEAN Back Cover M2 Countersinks Type: MESH
+BOOLEAN Back Cover M2 Countersinks transform: X-25.000511169433594 Y-25.500293731689453 Z11.138753890991211
+BOOLEAN Back Cover M2 Countersinks rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Back Cover M2 Countersinks scale: X1.0 Y1.0 Z1.0
+BOOLEAN Back Cover M2 Countersinks groups: None
+BOOLEAN Back Cover M2 Countersinks mesh: Cylinder.012
+BOOLEAN Back Cover M2 Countersinks materials: Boolean difference, 
+BOOLEAN Back Cover M2 Countersinks modifiers: None
 
 Name: BOOLEAN Capacitors for connector cover
 BOOLEAN Capacitors for connector cover Type: MESH
