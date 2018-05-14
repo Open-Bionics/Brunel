@@ -72,7 +72,7 @@ Back Cover (Integrated Wrist) Flat modifiers:
   #12 Name: Triangulate, Type: TRIANGULATE
   #13 Name: Boolean.BOOLEAN Back cover M2 bolt holes, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
-  #14 Name: Boolean, Type: BOOLEAN
+  #14 Name: Boolean.BOOLEAN Back Cover M2 Countersinks, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back Cover M2 Countersinks
   #15 Name: Boolean.BOOLEAN Headphone / Micro USB, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Headphone / Micro USB
@@ -86,6 +86,8 @@ Back Cover (Integrated Wrist) Flat modifiers:
         Operation: DIFFERENCE, Object: Plane.010
   #20 Name: Boolean.OB Logo Embossed, Type: BOOLEAN
         Operation: UNION, Object: OB Logo Embossed
+  #21 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Back Cover M2 Insert Ooze clearance 
 
 Name: Back cover proximal attachment point
 Back cover proximal attachment point Type: MESH
@@ -195,6 +197,16 @@ BOOLEAN Back Cover M2 Countersinks groups: None
 BOOLEAN Back Cover M2 Countersinks mesh: Cylinder.012
 BOOLEAN Back Cover M2 Countersinks materials: Boolean difference, 
 BOOLEAN Back Cover M2 Countersinks modifiers: None
+
+Name: BOOLEAN Back Cover M2 Insert Ooze clearance 
+BOOLEAN Back Cover M2 Insert Ooze clearance  Type: MESH
+BOOLEAN Back Cover M2 Insert Ooze clearance  transform: X42.999488830566406 Y-25.500295639038086 Z2.727790117263794
+BOOLEAN Back Cover M2 Insert Ooze clearance  rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Back Cover M2 Insert Ooze clearance  scale: X0.2500000298023224 Y0.2500000298023224 Z0.2500000298023224
+BOOLEAN Back Cover M2 Insert Ooze clearance  groups: None
+BOOLEAN Back Cover M2 Insert Ooze clearance  mesh: Cylinder.018
+BOOLEAN Back Cover M2 Insert Ooze clearance  materials: Boolean difference, 
+BOOLEAN Back Cover M2 Insert Ooze clearance  modifiers: None
 
 Name: BOOLEAN Capacitors for connector cover
 BOOLEAN Capacitors for connector cover Type: MESH
@@ -506,7 +518,7 @@ Name: BOOLEAN Headphone Jack
 BOOLEAN Headphone Jack Type: MESH
 BOOLEAN Headphone Jack transform: X42.252445220947266 Y-71.34187316894531 Z12.777480125427246
 BOOLEAN Headphone Jack rotation: X-0.0 Y1.570796251296997 Z0.0
-BOOLEAN Headphone Jack scale: X1.1999999284744263 Y1.1999999284744263 Z1.0
+BOOLEAN Headphone Jack scale: X1.0999999046325684 Y1.0999999046325684 Z1.0
 BOOLEAN Headphone Jack groups: None
 BOOLEAN Headphone Jack mesh: BOOLEAN Headphone Jack
 BOOLEAN Headphone Jack materials: Boolean difference, 
@@ -715,7 +727,7 @@ Name: BOOLEAN Micro USB
 BOOLEAN Micro USB Type: MESH
 BOOLEAN Micro USB transform: X41.365840911865234 Y-57.0728759765625 Z14.627598762512207
 BOOLEAN Micro USB rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Micro USB scale: X1.2000442743301392 Y1.149999976158142 Z1.4166665077209473
+BOOLEAN Micro USB scale: X1.0 Y0.95652174949646 Z0.8235294222831726
 BOOLEAN Micro USB groups: None
 BOOLEAN Micro USB mesh: Cube.046
 BOOLEAN Micro USB materials: Boolean difference, 
