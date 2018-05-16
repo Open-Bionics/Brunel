@@ -197,7 +197,7 @@ BOOLEAN Thumb Cover M2 Bolt Clearance modifiers:
         Even thickness: False, High Quality Normals: True
 Name: BOOLEAN Thumb Ligament Clamp
 BOOLEAN Thumb Ligament Clamp Type: MESH
-BOOLEAN Thumb Ligament Clamp transform: X2.9788036346435547 Y5.645124435424805 Z1.5663089752197266
+BOOLEAN Thumb Ligament Clamp transform: X2.9919347763061523 Y5.596879482269287 Z1.5663089752197266
 BOOLEAN Thumb Ligament Clamp rotation: X1.0322008005270167e-12 Y9.007009547923328e-15 Z0.2657412588596344
 BOOLEAN Thumb Ligament Clamp scale: X1.0 Y1.0 Z1.0
 BOOLEAN Thumb Ligament Clamp groups: Thumb, 
@@ -206,7 +206,7 @@ BOOLEAN Thumb Ligament Clamp materials: Boolean difference,
 BOOLEAN Thumb Ligament Clamp modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Solidify, Type: SOLIDIFY
-        Thickness: 0.20, Offset: 1.00 
+        Thickness: 0.30, Offset: 1.00 
         Even thickness: False, High Quality Normals: False
 Name: BOOLEAN Thumb Ligament Clamp Chamfer
 BOOLEAN Thumb Ligament Clamp Chamfer Type: MESH
