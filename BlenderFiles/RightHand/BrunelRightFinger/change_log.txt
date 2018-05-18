@@ -755,7 +755,8 @@ BOOLEAN Inner proximal pegs.004 modifiers:
         Vertex group mirroring: True
   #4 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.20, Offset: 1.00 
-        Even thickness: True, High Quality Normals: True
+        Even thickness: True, High Quality Normals: True  #5 Name: Bevel, Type: BEVEL
+
 Name: BOOLEAN inner proximal.001
 BOOLEAN inner proximal.001 Type: MESH
 BOOLEAN inner proximal.001 transform: X0.0 Y0.0 Z0.0
@@ -3934,6 +3935,36 @@ HANDLE Thickness.003 mesh: Plane
 HANDLE Thickness.003 materials: None
 HANDLE Thickness.003 modifiers: None
 
+Name: Heat Fit Insert
+Heat Fit Insert Type: MESH
+Heat Fit Insert transform: X0.0 Y14.991395950317383 Z12.121990203857422
+Heat Fit Insert rotation: X0.0 Y0.0 Z0.0
+Heat Fit Insert scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert groups: None
+Heat Fit Insert mesh: Heat Fit Insert
+Heat Fit Insert materials: Material.001, 
+Heat Fit Insert modifiers: None
+
+Name: Heat Fit Insert.001
+Heat Fit Insert.001 Type: MESH
+Heat Fit Insert.001 transform: X0.0 Y48.32826614379883 Z12.121990203857422
+Heat Fit Insert.001 rotation: X0.0 Y0.0 Z0.0
+Heat Fit Insert.001 scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert.001 groups: None
+Heat Fit Insert.001 mesh: Heat Fit Insert.001
+Heat Fit Insert.001 materials: Material.001, 
+Heat Fit Insert.001 modifiers: None
+
+Name: Heat Fit Insert.002
+Heat Fit Insert.002 Type: MESH
+Heat Fit Insert.002 transform: X0.0 Y55.96682357788086 Z12.121990203857422
+Heat Fit Insert.002 rotation: X0.0 Y0.0 Z0.0
+Heat Fit Insert.002 scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert.002 groups: None
+Heat Fit Insert.002 mesh: Heat Fit Insert.002
+Heat Fit Insert.002 materials: Material.001, 
+Heat Fit Insert.002 modifiers: None
+
 Name: ID.000
 ID.000 Type: MESH
 ID.000 transform: X11.999994277954102 Y64.67157745361328 Z0.5626349449157715
@@ -6061,6 +6092,13 @@ BOOLEAN Spring Dowel Pins.002 modifiers:
   #1 Name: Hook, Type: HOOK
   #2 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Top cover proximal.001
+
+Name: Sun
+Sun Type: LAMP
+Sun transform: X-32.73686599731445 Y-23.138917922973633 Z39.745025634765625
+Sun rotation: X0.0 Y0.0 Z0.0
+Sun scale: X1.0 Y1.0 Z1.0
+Sun groups: None
 
 Name: Thumb
 Thumb Type: EMPTY
