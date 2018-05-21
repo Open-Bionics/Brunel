@@ -6160,8 +6160,8 @@ Top cover distal.001 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Distal M2 Top cover.001
   #7 Name: Boolean.LABEL identifier distal flat.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.001
-  #8 Name: Boolean.BOOLEAN Inner distal pegs.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Inner distal pegs.001
+  #8 Name: Boolean.BOOLEAN Inner proximal pegs.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Inner proximal pegs.001
   #9 Name: Boolean.BOOLEAN Tendonline clearance Top Cover.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendonline clearance Top Cover.001
 
@@ -6191,7 +6191,7 @@ Top cover distal.002 modifiers:
   #7 Name: Boolean.LABEL identifier distal flat.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.002
   #8 Name: Boolean.BOOLEAN Inner distal pegs.002, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Inner distal pegs.002
+        Operation: DIFFERENCE, Object: BOOLEAN Inner proximal pegs.002
   #9 Name: Boolean.BOOLEAN Tendonline clearance Top Cover.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendonline clearance Top Cover.002
 
@@ -6220,8 +6220,8 @@ Top cover distal.003 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Distal M2 Top cover.003
   #7 Name: Boolean.ID, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.003
-  #8 Name: Boolean.BOOLEAN Inner distal pegs.003, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Inner distal pegs.003
+  #8 Name: Boolean.BOOLEAN Inner proximal pegs.003, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Inner proximal pegs.003
   #9 Name: Boolean.BOOLEAN Tendonline clearance Top Cover.003, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendonline clearance Top Cover.003
 
@@ -6248,8 +6248,8 @@ Top cover distal.004 modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #6 Name: Boolean.BOOLEAN Distal M2 Top cover.004, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Distal M2 Top cover.004
-  #7 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Inner distal pegs.004
+  #7 Name: Boolean.BOOLEAN Inner proximal pegs.004, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Inner proximal pegs.004
   #8 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LABEL identifier distal flat.004
   #9 Name: Boolean.BOOLEAN Tendonline clearance Top Cover.004, Type: BOOLEAN
