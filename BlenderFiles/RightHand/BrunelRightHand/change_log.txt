@@ -476,6 +476,26 @@ BOOLEAN Gala Cover modifiers:
         Thickness: 0.30, Offset: 1.00 
         Even thickness: False, High Quality Normals: False  #3 Name: Bevel, Type: BEVEL
 
+Name: BOOLEAN GALA Cover attachment point
+BOOLEAN GALA Cover attachment point Type: MESH
+BOOLEAN GALA Cover attachment point transform: X33.8948974609375 Y-91.56292724609375 Z0.9440408945083618
+BOOLEAN GALA Cover attachment point rotation: X0.0 Y0.0 Z0.0
+BOOLEAN GALA Cover attachment point scale: X1.0 Y1.0 Z1.0
+BOOLEAN GALA Cover attachment point groups: None
+BOOLEAN GALA Cover attachment point mesh: Cylinder.000
+BOOLEAN GALA Cover attachment point materials: Boolean difference, 
+BOOLEAN GALA Cover attachment point modifiers: None
+
+Name: BOOLEAN GALA Cover attachment point.001
+BOOLEAN GALA Cover attachment point.001 Type: MESH
+BOOLEAN GALA Cover attachment point.001 transform: X-0.4077262878417969 Y-75.80711364746094 Z-23.252506256103516
+BOOLEAN GALA Cover attachment point.001 rotation: X-0.0 Y3.1415929794311523 Z-0.0
+BOOLEAN GALA Cover attachment point.001 scale: X1.0 Y1.0 Z1.0
+BOOLEAN GALA Cover attachment point.001 groups: None
+BOOLEAN GALA Cover attachment point.001 mesh: Cylinder.020
+BOOLEAN GALA Cover attachment point.001 materials: Boolean difference, 
+BOOLEAN GALA Cover attachment point.001 modifiers: None
+
 Name: BOOLEAN GALA Cover Edge Chamfer
 BOOLEAN GALA Cover Edge Chamfer Type: MESH
 BOOLEAN GALA Cover Edge Chamfer transform: X-21.738479614257812 Y-74.01437377929688 Z19.032398223876953
@@ -485,16 +505,6 @@ BOOLEAN GALA Cover Edge Chamfer groups: None
 BOOLEAN GALA Cover Edge Chamfer mesh: BOOLEAN GALA Cover Edge Chamfer
 BOOLEAN GALA Cover Edge Chamfer materials: None
 BOOLEAN GALA Cover Edge Chamfer modifiers: None
-
-Name: BOOLEAN Gala Cover M2 attachment point
-BOOLEAN Gala Cover M2 attachment point Type: MESH
-BOOLEAN Gala Cover M2 attachment point transform: X33.94978713989258 Y-91.54631042480469 Z-1.8538700342178345
-BOOLEAN Gala Cover M2 attachment point rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Gala Cover M2 attachment point scale: X1.0 Y1.0 Z1.0
-BOOLEAN Gala Cover M2 attachment point groups: None
-BOOLEAN Gala Cover M2 attachment point mesh: BOOLEAN Gala Cover M2 attachment point
-BOOLEAN Gala Cover M2 attachment point materials: Boolean difference, 
-BOOLEAN Gala Cover M2 attachment point modifiers: None
 
 Name: BOOLEAN Gala Cover.001
 BOOLEAN Gala Cover.001 Type: MESH
@@ -1294,16 +1304,6 @@ BOOLEAN Thumb Ligament Cover latch  modifiers:
   #2 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.30, Offset: 1.00 
         Even thickness: False, High Quality Normals: False
-Name: BOOLEAN Thumb ligament cover M2 Bolt Hole
-BOOLEAN Thumb ligament cover M2 Bolt Hole Type: MESH
-BOOLEAN Thumb ligament cover M2 Bolt Hole transform: X9.78909969329834 Y-67.75509643554688 Z-17.281688690185547
-BOOLEAN Thumb ligament cover M2 Bolt Hole rotation: X3.141592502593994 Y4.397166364356053e-08 Z-7.285712513294129e-07
-BOOLEAN Thumb ligament cover M2 Bolt Hole scale: X1.0 Y1.0 Z1.0
-BOOLEAN Thumb ligament cover M2 Bolt Hole groups: Actuator Block, Booleans, Thumb, 
-BOOLEAN Thumb ligament cover M2 Bolt Hole mesh: BOOLEAN Thumb ligament cover M2 Bolt Hole
-BOOLEAN Thumb ligament cover M2 Bolt Hole materials: Boolean difference, 
-BOOLEAN Thumb ligament cover M2 Bolt Hole modifiers: None
-
 Name: BOOLEAN Thumb pivot combined
 BOOLEAN Thumb pivot combined Type: MESH
 BOOLEAN Thumb pivot combined transform: X-23.537893295288086 Y-77.7562026977539 Z-4.8428544998168945
@@ -1883,8 +1883,8 @@ Gala Cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
   #9 Name: Boolean.BOOLEAN Thumb Dowel Clearance, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb Dowel Clearance
-  #10 Name: Boolean.BOOLEAN New Gala Cover M2 attachment point, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Gala Cover M2 attachment point
+  #10 Name: Boolean.BOOLEAN GALA Cover attachment point, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN GALA Cover attachment point
   #11 Name: Boolean.BOOLEAN Screwdriver Leaver Point, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Screwdriver Leaver Point
   #12 Name: Boolean.BOOLEAN GALA Cover Edge Chamfer, Type: BOOLEAN
@@ -2511,12 +2511,12 @@ Palm Inner body modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Dowel Thumb Ligament Cover
   #22 Name: Boolean.BOOLEAN Finger Ligament , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Finger Ligament
-  #23 Name: Boolean.BOOLEAN New Gala Cover M2 attachment point, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Gala Cover M2 attachment point
+  #23 Name: Boolean.BOOLEAN GALA Cover attachment point, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN GALA Cover attachment point
   #24 Name: Boolean.BOOLEAN Back cover M2 bolt holes, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back cover M2 bolt holes
-  #25 Name: Boolean.BOOLEAN Thumb ligament cover M2 Bolt Hole, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 Bolt Hole
+  #25 Name: Boolean.BOOLEAN GALA Cover attachment point.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN GALA Cover attachment point.001
   #26 Name: Boolean.Thumb spring channel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Thumb spring channel
   #27 Name: Boolean.BOOLEAN Palm Riser Channels, Type: BOOLEAN
@@ -3134,8 +3134,8 @@ Thumb Ligament Cover  modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover clip
   #8 Name: Boolean.BOOLEAN Ligament anchor prongs, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN UNION Ligament anchor prongs
-  #9 Name: Boolean.BOOLEAN Thumb ligament cover M2 Bolt Hole, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb ligament cover M2 Bolt Hole
+  #9 Name: Boolean.BOOLEAN GALA Cover attachment point.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN GALA Cover attachment point.001
 
 Name: Thumb Ligament Cover .001
 Thumb Ligament Cover .001 Type: MESH
