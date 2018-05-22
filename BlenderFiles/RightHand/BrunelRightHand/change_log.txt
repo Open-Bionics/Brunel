@@ -79,7 +79,7 @@ Back Cover (Integrated Wrist) Flat modifiers:
   #16 Name: Boolean.BOOLEAN Power Cable , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Power Cable 
   #17 Name: Boolean.BOOLEAN Flat Faces (Ligament Cover), Type: BOOLEAN
-        Operation: INTERSECT, Object: BOOLEAN Flat Faces (Ligament Cover)
+        Operation: INTERSECT, Object: BOOLEAN Flat Faces (Ligament Cover).001
   #18 Name: Boolean.BOOLEAN Wrist M2 connection points , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Wrist M2 connection points 
   #19 Name: Boolean.Plane.010, Type: BOOLEAN
@@ -415,6 +415,16 @@ BOOLEAN Flat Faces (Ligament Cover) groups: None
 BOOLEAN Flat Faces (Ligament Cover) mesh: BOOLEAN Flat Faces (Ligament Cover)
 BOOLEAN Flat Faces (Ligament Cover) materials: Boolean difference, 
 BOOLEAN Flat Faces (Ligament Cover) modifiers: None
+
+Name: BOOLEAN Flat Faces (Ligament Cover).001
+BOOLEAN Flat Faces (Ligament Cover).001 Type: MESH
+BOOLEAN Flat Faces (Ligament Cover).001 transform: X0.0 Y0.0 Z0.0
+BOOLEAN Flat Faces (Ligament Cover).001 rotation: X1.3962634801864624 Y-0.0 Z0.0
+BOOLEAN Flat Faces (Ligament Cover).001 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Flat Faces (Ligament Cover).001 groups: None
+BOOLEAN Flat Faces (Ligament Cover).001 mesh: BOOLEAN Flat Faces (Ligament Cover).003
+BOOLEAN Flat Faces (Ligament Cover).001 materials: Boolean difference, 
+BOOLEAN Flat Faces (Ligament Cover).001 modifiers: None
 
 Name: BOOLEAN Flat Faces Finger Ligament Cover (Displace)
 BOOLEAN Flat Faces Finger Ligament Cover (Displace) Type: MESH
@@ -2217,7 +2227,7 @@ Ligament Cover  mesh: Hand/Palm Outer Surface.004
 Ligament Cover  materials: PLA White, 
 Ligament Cover  modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
-        Thickness: 0.80, Offset: 1.00 
+        Thickness: 0.70, Offset: 1.00 
         Even thickness: True, High Quality Normals: True  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #3 Name: Boolean.Plane.BOOLEAN Palm and Back Cover Divide, Type: BOOLEAN
@@ -2225,7 +2235,7 @@ Ligament Cover  modifiers:
   #4 Name: Boolean.BOOLEAN Finger Ligament .004, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Finger Ligament .004
   #5 Name: Boolean.BOOLEAN Flat Faces (Ligament Cover), Type: BOOLEAN
-        Operation: INTERSECT, Object: BOOLEAN Flat Faces (Ligament Cover)
+        Operation: INTERSECT, Object: BOOLEAN Flat Faces (Ligament Cover).001
   #6 Name: Boolean.BOOLEAN Ligament cover termination point, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover termination point
   #7 Name: Boolean.BOOLEAN Ligament Prongs Recessed, Type: BOOLEAN
@@ -2237,47 +2247,13 @@ Ligament Cover  modifiers:
   #10 Name: Boolean.BOOLEAN Finger Ligament Cover M2 Fixings, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Finger Ligament Cover M2 Fixings
 
-Name: Ligament Cover .001
-Ligament Cover .001 Type: MESH
-Ligament Cover .001 transform: X9.0 Y-48.89358139038086 Z-2.9508910179138184
-Ligament Cover .001 rotation: X0.0 Y0.0 Z0.0
-Ligament Cover .001 scale: X1.0 Y1.0 Z1.0
-Ligament Cover .001 groups: None
-Ligament Cover .001 mesh: Hand/Palm Outer Surface.002
-Ligament Cover .001 materials: PLA, 
-Ligament Cover .001 modifiers: 
-  #1 Name: Solidify, Type: SOLIDIFY
-        Thickness: 0.80, Offset: 1.00 
-        Even thickness: True, High Quality Normals: True  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Boolean.Plane.BOOLEAN Palm and Back Cover Divide, Type: BOOLEAN
-        Operation: INTERSECT, Object: BOOLEAN Palm and Back Cover Divide
-  #4 Name: Boolean.BOOLEAN Finger Ligament .004, Type: BOOLEAN
-        Operation: UNION, Object: BOOLEAN Finger Ligament .004
-  #5 Name: Boolean.BOOLEAN Flat Faces (Ligament Cover), Type: BOOLEAN
-        Operation: INTERSECT, Object: BOOLEAN Flat Faces (Ligament Cover)
-  #6 Name: Boolean.BOOLEAN Ligament cover termination point, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Plane.003
-  #7 Name: Boolean.BOOLEAN Ligament Prongs Recessed, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Ligament Prongs Recessed
-  #8 Name: Boolean.BOOLEAN Proximal Spring Channel Combo, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Proximal Spring Channel Combo
-  #9 Name: Boolean.BOOLEAN finger spring bolt holes combined, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN finger spring bolt holes combined
-  #10 Name: Boolean.BOOLEAN Ligament cover M2 bolt hole, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Ligament cover M2 bolt hole
-  #11 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Plane.007
-  #12 Name: Boolean.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
-
 Name: MARKER
 MARKER Type: MESH
 MARKER transform: X7.5 Y-37.89358901977539 Z-4.624060153961182
 MARKER rotation: X0.0 Y-0.0 Z0.0
 MARKER scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 MARKER groups: Actuator Block, 
-MARKER mesh: Hand/Palm Outer Surface.001
+MARKER mesh: Hand/Palm Outer Surface.007
 MARKER materials: PLA, 
 MARKER modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
@@ -2522,7 +2498,7 @@ Palm Inner body modifiers:
   #27 Name: Boolean.BOOLEAN Palm Riser Channels, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm Riser Channels
   #28 Name: Boolean.BOOLEAN Flat Faces (Ligament Cover), Type: BOOLEAN
-        Operation: INTERSECT, Object: BOOLEAN Flat Faces (Ligament Cover)
+        Operation: INTERSECT, Object: BOOLEAN Flat Faces (Ligament Cover).001
   #29 Name: Boolean.BOOLEAN Ligament Prongs Raised, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Ligament Prongs Raised
   #30 Name: Boolean.BOOLEAN Wrist M2 connection points , Type: BOOLEAN

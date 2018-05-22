@@ -653,7 +653,7 @@ Plane.005 modifiers:
   #2 Name: Boolean.MOULD BOOLEAN M2 Clamp Fixings, Type: BOOLEAN
         Operation: DIFFERENCE, Object: MOULD BOOLEAN M2 Clamp Fixings
   #3 Name: Boolean.MOULD BOOLEAN Thumb, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: MOULD BOOLEAN Thumb
+        Operation: DIFFERENCE, Object: MOULD Thumb V2
   #4 Name: Boolean.MOULD Thumb Cover, Type: BOOLEAN
         Operation: UNION, Object: MOULD Thumb Cover
   #5 Name: Boolean.BOOLEAN Riser Channels, Type: BOOLEAN
