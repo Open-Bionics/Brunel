@@ -8,6 +8,16 @@ Name: 1st Finger
 1st Finger materials: Material, 
 1st Finger modifiers: None
 
+Name: 1st FingerInner Proximal 001
+1st FingerInner Proximal 001 Type: MESH
+1st FingerInner Proximal 001 transform: X-19.0 Y-0.8107600212097168 Z0.0
+1st FingerInner Proximal 001 rotation: X0.0 Y-0.0 Z0.0872664526104927
+1st FingerInner Proximal 001 scale: X1.0 Y1.0 Z1.0
+1st FingerInner Proximal 001 groups: None
+1st FingerInner Proximal 001 mesh: 1st FingerInner Proximal 001
+1st FingerInner Proximal 001 materials: None
+1st FingerInner Proximal 001 modifiers: None
+
 Name: 2nd Finger
 2nd Finger Type: MESH
 2nd Finger transform: X0.0 Y0.0 Z0.0
@@ -17,6 +27,16 @@ Name: 2nd Finger
 2nd Finger mesh: 2nd Finger.003
 2nd Finger materials: Material, 
 2nd Finger modifiers: None
+
+Name: 2nd FingerInner Proximal 002
+2nd FingerInner Proximal 002 Type: MESH
+2nd FingerInner Proximal 002 transform: X0.0 Y0.0 Z0.0
+2nd FingerInner Proximal 002 rotation: X0.0 Y0.0 Z0.0
+2nd FingerInner Proximal 002 scale: X1.0 Y1.0 Z1.0
+2nd FingerInner Proximal 002 groups: None
+2nd FingerInner Proximal 002 mesh: 2nd FingerInner Proximal 002.002
+2nd FingerInner Proximal 002 materials: None
+2nd FingerInner Proximal 002 modifiers: None
 
 Name: 3rd Finger
 3rd Finger Type: MESH
@@ -28,6 +48,16 @@ Name: 3rd Finger
 3rd Finger materials: Material, 
 3rd Finger modifiers: None
 
+Name: 3rd FingerInner Proximal 003
+3rd FingerInner Proximal 003 Type: MESH
+3rd FingerInner Proximal 003 transform: X18.999998092651367 Y-0.8505200147628784 Z0.0
+3rd FingerInner Proximal 003 rotation: X0.0 Y-0.0 Z-0.0872664526104927
+3rd FingerInner Proximal 003 scale: X1.0 Y1.0 Z1.0
+3rd FingerInner Proximal 003 groups: None
+3rd FingerInner Proximal 003 mesh: 3rd FingerInner Proximal 003
+3rd FingerInner Proximal 003 materials: None
+3rd FingerInner Proximal 003 modifiers: None
+
 Name: 4th Finger
 4th Finger Type: MESH
 4th Finger transform: X37.874996185302734 Y-3.327399969100952 Z0.0
@@ -37,6 +67,16 @@ Name: 4th Finger
 4th Finger mesh: 4th Finger.004
 4th Finger materials: Material, 
 4th Finger modifiers: None
+
+Name: 4th FingerInner Proximal 004
+4th FingerInner Proximal 004 Type: MESH
+4th FingerInner Proximal 004 transform: X37.874996185302734 Y-3.327399969100952 Z0.0
+4th FingerInner Proximal 004 rotation: X0.0 Y-0.0 Z-0.1745329201221466
+4th FingerInner Proximal 004 scale: X1.0 Y1.0 Z1.0
+4th FingerInner Proximal 004 groups: None
+4th FingerInner Proximal 004 mesh: 4th FingerInner Proximal 004.001
+4th FingerInner Proximal 004 materials: None
+4th FingerInner Proximal 004 modifiers: None
 
 Name: Back Cover (Integrated Wrist) Flat
 Back Cover (Integrated Wrist) Flat Type: MESH
@@ -337,7 +377,7 @@ BOOLEAN Finger Ligament Cover M2 Fixings modifiers: None
 
 Name: BOOLEAN finger spring bolt holes combined
 BOOLEAN finger spring bolt holes combined Type: MESH
-BOOLEAN finger spring bolt holes combined transform: X2.234074592590332 Y-8.927351951599121 Z3.5991902351379395
+BOOLEAN finger spring bolt holes combined transform: X2.234074592590332 Y-8.927350044250488 Z7.0
 BOOLEAN finger spring bolt holes combined rotation: X0.0 Y0.0 Z0.0
 BOOLEAN finger spring bolt holes combined scale: X1.0 Y1.0 Z1.0
 BOOLEAN finger spring bolt holes combined groups: None
@@ -1103,19 +1143,19 @@ BOOLEAN Proximal Spring Channel Combo groups: None
 BOOLEAN Proximal Spring Channel Combo mesh: Empty
 BOOLEAN Proximal Spring Channel Combo materials: None
 BOOLEAN Proximal Spring Channel Combo modifiers: 
-  #1 Name: Boolean, Type: BOOLEAN
+  #1 Name: Boolean.BOOLEAN Proximal Spring Channel.001, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Proximal Spring Channel.001
-  #2 Name: Boolean.001, Type: BOOLEAN
+  #2 Name: Boolean.BOOLEAN Proximal Spring Channel.002, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Proximal Spring Channel.002
-  #3 Name: Boolean.003, Type: BOOLEAN
+  #3 Name: Boolean.BOOLEAN Proximal Spring Channel.003, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Proximal Spring Channel.003
-  #4 Name: Boolean.002, Type: BOOLEAN
+  #4 Name: Boolean.BOOLEAN Proximal Spring Channel.004, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Proximal Spring Channel.004
   #5 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN Proximal Spring Channel.001
 BOOLEAN Proximal Spring Channel.001 Type: MESH
-BOOLEAN Proximal Spring Channel.001 transform: X-17.944578170776367 Y-11.435635566711426 Z5.75
+BOOLEAN Proximal Spring Channel.001 transform: X-18.069488525390625 Y-11.446563720703125 Z5.75
 BOOLEAN Proximal Spring Channel.001 rotation: X0.0 Y0.0 Z0.0872664600610733
 BOOLEAN Proximal Spring Channel.001 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Proximal Spring Channel.001 groups: None
@@ -1125,7 +1165,7 @@ BOOLEAN Proximal Spring Channel.001 modifiers: None
 
 Name: BOOLEAN Proximal Spring Channel.002
 BOOLEAN Proximal Spring Channel.002 Type: MESH
-BOOLEAN Proximal Spring Channel.002 transform: X0.31689929962158203 Y-10.434542655944824 Z5.75
+BOOLEAN Proximal Spring Channel.002 transform: X0.0 Y-10.434542655944824 Z5.75
 BOOLEAN Proximal Spring Channel.002 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Proximal Spring Channel.002 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Proximal Spring Channel.002 groups: None
@@ -1135,7 +1175,7 @@ BOOLEAN Proximal Spring Channel.002 modifiers: None
 
 Name: BOOLEAN Proximal Spring Channel.003
 BOOLEAN Proximal Spring Channel.003 Type: MESH
-BOOLEAN Proximal Spring Channel.003 transform: X17.97585105895996 Y-11.133517265319824 Z5.75
+BOOLEAN Proximal Spring Channel.003 transform: X18.099407196044922 Y-11.144327163696289 Z5.75
 BOOLEAN Proximal Spring Channel.003 rotation: X0.0 Y0.0 Z-0.0872664600610733
 BOOLEAN Proximal Spring Channel.003 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Proximal Spring Channel.003 groups: None
@@ -1145,7 +1185,7 @@ BOOLEAN Proximal Spring Channel.003 modifiers: None
 
 Name: BOOLEAN Proximal Spring Channel.004
 BOOLEAN Proximal Spring Channel.004 Type: MESH
-BOOLEAN Proximal Spring Channel.004 transform: X36.33353805541992 Y-13.619690895080566 Z5.75
+BOOLEAN Proximal Spring Channel.004 transform: X36.06843185424805 Y-13.572945594787598 Z5.75
 BOOLEAN Proximal Spring Channel.004 rotation: X0.0 Y0.0 Z-0.1745329201221466
 BOOLEAN Proximal Spring Channel.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Proximal Spring Channel.004 groups: None
@@ -1165,7 +1205,7 @@ BOOLEAN Screwdriver Leaver Point modifiers: None
 
 Name: BOOLEAN Spring M2 Countersinks.001
 BOOLEAN Spring M2 Countersinks.001 Type: MESH
-BOOLEAN Spring M2 Countersinks.001 transform: X-18.23844337463379 Y-8.076763153076172 Z9.592523574829102
+BOOLEAN Spring M2 Countersinks.001 transform: X-18.23844337463379 Y-8.076763153076172 Z3.0330066680908203
 BOOLEAN Spring M2 Countersinks.001 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Spring M2 Countersinks.001 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Spring M2 Countersinks.001 groups: None
@@ -1175,7 +1215,7 @@ BOOLEAN Spring M2 Countersinks.001 modifiers: None
 
 Name: BOOLEAN Spring M2 Countersinks.002
 BOOLEAN Spring M2 Countersinks.002 Type: MESH
-BOOLEAN Spring M2 Countersinks.002 transform: X0.31690025329589844 Y-6.418392658233643 Z9.792519569396973
+BOOLEAN Spring M2 Countersinks.002 transform: X0.0 Y-7.368350505828857 Z3.2330026626586914
 BOOLEAN Spring M2 Countersinks.002 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Spring M2 Countersinks.002 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Spring M2 Countersinks.002 groups: None
@@ -1185,7 +1225,7 @@ BOOLEAN Spring M2 Countersinks.002 modifiers: None
 
 Name: BOOLEAN Spring M2 Countersinks.003
 BOOLEAN Spring M2 Countersinks.003 Type: MESH
-BOOLEAN Spring M2 Countersinks.003 transform: X18.185407638549805 Y-8.738300323486328 Z9.792519569396973
+BOOLEAN Spring M2 Countersinks.003 transform: X18.361051559448242 Y-8.153725624084473 Z3.2330026626586914
 BOOLEAN Spring M2 Countersinks.003 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Spring M2 Countersinks.003 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Spring M2 Countersinks.003 groups: None
@@ -1195,7 +1235,7 @@ BOOLEAN Spring M2 Countersinks.003 modifiers: None
 
 Name: BOOLEAN Spring M2 Countersinks.004
 BOOLEAN Spring M2 Countersinks.004 Type: MESH
-BOOLEAN Spring M2 Countersinks.004 transform: X36.33353805541992 Y-13.619690895080566 Z9.592519760131836
+BOOLEAN Spring M2 Countersinks.004 transform: X36.61198425292969 Y-10.4902982711792 Z3.0330028533935547
 BOOLEAN Spring M2 Countersinks.004 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Spring M2 Countersinks.004 scale: X1.0 Y1.0 Z1.0
 BOOLEAN Spring M2 Countersinks.004 groups: None
@@ -2930,6 +2970,16 @@ PQ12 extended groups: Actuator Block,
 PQ12 extended mesh: PQ12 extended
 PQ12 extended materials: PQ12 housing plastic, 
 PQ12 extended modifiers: None
+
+Name: Proximal Spring Pretention Distance
+Proximal Spring Pretention Distance Type: MESH
+Proximal Spring Pretention Distance transform: X-18.23844337463379 Y-8.076763153076172 Z3.0330066680908203
+Proximal Spring Pretention Distance rotation: X0.0 Y-0.0 Z0.0
+Proximal Spring Pretention Distance scale: X1.0 Y1.0 Z1.0
+Proximal Spring Pretention Distance groups: None
+Proximal Spring Pretention Distance mesh: Vert.008
+Proximal Spring Pretention Distance materials: None
+Proximal Spring Pretention Distance modifiers: None
 
 Name: Riser Chanel.008
 Riser Chanel.008 Type: MESH
