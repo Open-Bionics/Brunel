@@ -112,6 +112,16 @@ Back Cover Wrist Wedge modifiers:
   #2 Name: Boolean.TARGET Outer Surface Midlevel, Type: BOOLEAN
         Operation: INTERSECT, Object: TARGET Outer Surface Midlevel
 
+Name: Body1
+Body1 Type: MESH
+Body1 transform: X9.175361633300781 Y-226.91587829589844 Z31.6013240814209
+Body1 rotation: X3.1367452144622803 Y-1.364725947380066 Z1.5754464864730835
+Body1 scale: X1.0 Y1.0 Z1.0
+Body1 groups: None
+Body1 mesh: Body1
+Body1 materials: None
+Body1 modifiers: None
+
 Name: BOOLEAN 1st finger spring bolt hole
 BOOLEAN 1st finger spring bolt hole Type: MESH
 BOOLEAN 1st finger spring bolt hole transform: X-18.23844337463379 Y-8.076765060424805 Z4.449999809265137
@@ -257,7 +267,7 @@ BOOLEAN DC Jack for GALA cover modifiers:
 
 Name: BOOLEAN Dowel Thumb Ligament Cover
 BOOLEAN Dowel Thumb Ligament Cover Type: MESH
-BOOLEAN Dowel Thumb Ligament Cover transform: X4.554749965667725 Y-79.61302947998047 Z-14.921695709228516
+BOOLEAN Dowel Thumb Ligament Cover transform: X4.554749965667725 Y-79.61302947998047 Z-14.421695709228516
 BOOLEAN Dowel Thumb Ligament Cover rotation: X1.5707963705062866 Y-0.0 Z-0.1655530482530594
 BOOLEAN Dowel Thumb Ligament Cover scale: X1.0 Y1.0 Z1.0
 BOOLEAN Dowel Thumb Ligament Cover groups: None
@@ -303,6 +313,7 @@ BOOLEAN Finger Ligament .004 modifiers:
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
   #3 Name: Hook.002, Type: HOOK
+  #4 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN Finger Ligament Clamp
 BOOLEAN Finger Ligament Clamp Type: MESH
@@ -656,7 +667,8 @@ BOOLEAN Ligament Prongs Raised modifiers:
   #1 Name: Hook, Type: HOOK
   #2 Name: Hook.001, Type: HOOK
   #3 Name: Hook.002, Type: HOOK
-  #4 Name: Boolean, Type: BOOLEAN
+  #4 Name: Bevel, Type: BEVEL
+  #5 Name: Boolean.BOOLEAN Palm and Back Cover Divide Clearance, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm and Back Cover Divide Clearance
 
 Name: BOOLEAN Ligament Prongs Recessed
@@ -1775,6 +1787,28 @@ Cylinder.005 mesh: Cylinder.009
 Cylinder.005 materials: None
 Cylinder.005 modifiers: None
 
+Name: Cylinder.006
+Cylinder.006 Type: MESH
+Cylinder.006 transform: X-8.824284553527832 Y-130.03526306152344 Z12.937438011169434
+Cylinder.006 rotation: X1.5705891847610474 Y-0.01164117269217968 Z0.017143409699201584
+Cylinder.006 scale: X0.6000000834465027 Y0.6000000834465027 Z1.0
+Cylinder.006 groups: None
+Cylinder.006 mesh: Cylinder.024
+Cylinder.006 materials: Boolean difference, 
+Cylinder.006 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 1, Type: CATMULL_CLARK
+
+Name: Cylinder.007
+Cylinder.007 Type: MESH
+Cylinder.007 transform: X-4.334570407867432 Y-230.77288818359375 Z46.22966384887695
+Cylinder.007 rotation: X2.85520339012146 Y-0.7637237906455994 Z0.20061978697776794
+Cylinder.007 scale: X0.15064261853694916 Y0.15000002086162567 Z0.5000000596046448
+Cylinder.007 groups: None
+Cylinder.007 mesh: Cylinder.025
+Cylinder.007 materials: Boolean difference, 
+Cylinder.007 modifiers: None
+
 Name: DC jack cover.001
 DC jack cover.001 Type: MESH
 DC jack cover.001 transform: X-11.954212188720703 Y-80.6868667602539 Z9.304691314697266
@@ -1937,6 +1971,33 @@ Gala Cover Tidy.001 modifiers:
         Operation: UNION, Object: None
   #3 Name: Boolean.BOOLEAN PCB Bracket Tidy , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PCB Bracket Tidy 
+
+Name: HANDle
+HANDle Type: MESH
+HANDle transform: X9.066848754882812 Y-95.41497802734375 Z9.511549949645996
+HANDle rotation: X0.13962633907794952 Y-0.0 Z0.0
+HANDle scale: X1.0 Y1.0 Z1.0
+HANDle groups: None
+HANDle mesh: Circle.003
+HANDle materials: PLA, 
+HANDle modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Bevel, Type: BEVEL
+  #3 Name: Boolean.BOOLEAN New Wrist connector M2 bolt holes for stand, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN New Wrist connector M2 bolt holes for stand
+  #4 Name: Boolean.Plane.012, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Plane.012
+  #5 Name: Boolean.Plane.013, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cylinder.006
+  #6 Name: Boolean.Plane.010, Type: BOOLEAN
+        Operation: INTERSECT, Object: Plane.010
+  #7 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Stand Grip Band
+  #8 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Body1
+  #9 Name: Boolean.Cylinder.007, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cylinder.007
 
 Name: HANDLE 1st Finger
 HANDLE 1st Finger Type: EMPTY
@@ -2234,7 +2295,7 @@ Ligament Cover  modifiers:
         Operation: INTERSECT, Object: BOOLEAN Palm and Back Cover Divide
   #4 Name: Boolean.BOOLEAN Finger Ligament .004, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Finger Ligament .004
-  #5 Name: Boolean.BOOLEAN Flat Faces (Ligament Cover), Type: BOOLEAN
+  #5 Name: Boolean.BOOLEAN Flat Faces (Ligament Cover).001, Type: BOOLEAN
         Operation: INTERSECT, Object: BOOLEAN Flat Faces (Ligament Cover).001
   #6 Name: Boolean.BOOLEAN Ligament cover termination point, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament cover termination point
@@ -2298,28 +2359,9 @@ New Stand transform: X9.066848754882812 Y-95.41497802734375 Z9.511549949645996
 New Stand rotation: X0.13962633907794952 Y-0.0 Z0.0
 New Stand scale: X1.0 Y1.0 Z1.0
 New Stand groups: None
-New Stand mesh: Circle
+New Stand mesh: Circle.001
 New Stand materials: PLA, 
 New Stand modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Boolean.BOOLEAN New Wrist connector M2 bolt holes for stand, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN New Wrist connector M2 bolt holes for stand
-  #4 Name: Boolean.Plane.012, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Plane.012
-  #5 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: Plane.013
-
-Name: New Stand.001
-New Stand.001 Type: MESH
-New Stand.001 transform: X9.066848754882812 Y-95.41497802734375 Z9.511549949645996
-New Stand.001 rotation: X0.13962633907794952 Y-0.0 Z0.0
-New Stand.001 scale: X1.0 Y1.0 Z1.0
-New Stand.001 groups: None
-New Stand.001 mesh: Circle.001
-New Stand.001 materials: PLA, 
-New Stand.001 modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
@@ -2333,7 +2375,7 @@ New Stand.001 modifiers:
         Operation: DIFFERENCE, Object: Cylinder.005
   #7 Name: Boolean, Type: BOOLEAN
         Operation: UNION, Object: Plane.014
-  #8 Name: Boolean.001, Type: BOOLEAN
+  #8 Name: Boolean.Plane.010, Type: BOOLEAN
         Operation: INTERSECT, Object: Plane.010
   #9 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Stand Grip Band
