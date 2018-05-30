@@ -207,7 +207,7 @@ BOOLEAN Thumb Ligament Clamp materials: Boolean difference,
 BOOLEAN Thumb Ligament Clamp modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Solidify, Type: SOLIDIFY
-        Thickness: 0.35, Offset: 1.00 
+        Thickness: 0.40, Offset: 1.00 
         Even thickness: False, High Quality Normals: False
 Name: BOOLEAN Thumb Ligament Clamp Chamfer
 BOOLEAN Thumb Ligament Clamp Chamfer Type: MESH
@@ -742,8 +742,8 @@ Thumb modifiers:
         Operation: UNION, Object: BOOLEAN 1.4mm spring termonation plinth 
   #11 Name: Boolean.BOOLEAN Spring termination point, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Spring termination point
-  #12 Name: Boolean.BOOLEAN M2 Bolt Hole.002, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole.002
+  #12 Name: Boolean.BOOLEAN Thumb Ligament Cover M2 Countersink, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb Ligament Cover M2 Countersink
   #13 Name: Boolean.BOOLEAN Ligament Clamp Radius, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament Clamp Radius
 
