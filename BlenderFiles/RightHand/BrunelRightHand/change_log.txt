@@ -272,7 +272,7 @@ BOOLEAN Cable Tidy Origin  modifiers:
         Even thickness: False, High Quality Normals: False
 Name: BOOLEAN Cable Tidy Termination
 BOOLEAN Cable Tidy Termination Type: MESH
-BOOLEAN Cable Tidy Termination transform: X43.41875457763672 Y-42.441871643066406 Z2.390026092529297
+BOOLEAN Cable Tidy Termination transform: X43.318756103515625 Y-42.441871643066406 Z2.390026092529297
 BOOLEAN Cable Tidy Termination rotation: X-0.0 Y1.570796251296997 Z0.0
 BOOLEAN Cable Tidy Termination scale: X1.0 Y1.0 Z1.0
 BOOLEAN Cable Tidy Termination groups: None
@@ -478,6 +478,25 @@ BOOLEAN Finger Wave Profile Outer modifiers:
   #7 Name: Boolean.BOOLEAN Finger Wave Profile (Urethane Channel), Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Finger Wave Profile (Urethane Channel)
 
+Name: BOOLEAN Finger Wave Profile Outer.001
+BOOLEAN Finger Wave Profile Outer.001 Type: MESH
+BOOLEAN Finger Wave Profile Outer.001 transform: X0.0 Y0.0 Z0.0
+BOOLEAN Finger Wave Profile Outer.001 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Finger Wave Profile Outer.001 scale: X1.0 Y1.0 Z1.0
+BOOLEAN Finger Wave Profile Outer.001 groups: None
+BOOLEAN Finger Wave Profile Outer.001 mesh: BOOLEAN Finger Wave Profile.001
+BOOLEAN Finger Wave Profile Outer.001 materials: None
+BOOLEAN Finger Wave Profile Outer.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Hook.002, Type: HOOK
+  #4 Name: Hook.003, Type: HOOK
+  #5 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #6 Name: Bevel, Type: BEVEL
+  #7 Name: Boolean.BOOLEAN Finger Wave Profile (Urethane Channel), Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Finger Wave Profile (Urethane Channel)
+
 Name: BOOLEAN Fixing points back cover
 BOOLEAN Fixing points back cover Type: MESH
 BOOLEAN Fixing points back cover transform: X44.574703216552734 Y-21.999696731567383 Z7.396658897399902
@@ -581,7 +600,7 @@ BOOLEAN Gala Cover mesh: Gala Cover
 BOOLEAN Gala Cover materials: Boolean difference, 
 BOOLEAN Gala Cover modifiers: 
   #1 Name: BOOLEAN New Gala Cover attachment point, Type: BOOLEAN
-        Operation: UNION, Object: BOOLEAN New Gala Cover attachment point
+        Operation: UNION, Object: BOOLEAN UNION New Gala Cover attachment point
   #2 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.30, Offset: 1.00 
         Even thickness: False, High Quality Normals: False  #3 Name: Bevel, Type: BEVEL
@@ -616,7 +635,7 @@ BOOLEAN Gala Cover.001 mesh: Gala Cover.001
 BOOLEAN Gala Cover.001 materials: Boolean difference, 
 BOOLEAN Gala Cover.001 modifiers: 
   #1 Name: Bevel, Type: BEVEL
-  #2 Name: BOOLEAN New Gala Cover attachment point, Type: BOOLEAN
+  #2 Name: Boolean.BOOLEAN New Gala Cover attachment point, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN New Gala Cover attachment point
   #3 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.30, Offset: 1.00 
@@ -873,7 +892,8 @@ BOOLEAN New Gala Cover attachment point scale: X0.30000004172325134 Y0.300000041
 BOOLEAN New Gala Cover attachment point groups: None
 BOOLEAN New Gala Cover attachment point mesh: BOOLEAN New Gala Cover attachment point
 BOOLEAN New Gala Cover attachment point materials: Material, 
-BOOLEAN New Gala Cover attachment point modifiers: None
+BOOLEAN New Gala Cover attachment point modifiers: 
+  #1 Name: Displace, Type: DISPLACE
 
 Name: BOOLEAN New Wrist connector M2 bolt holes
 BOOLEAN New Wrist connector M2 bolt holes Type: MESH
@@ -1536,6 +1556,16 @@ BOOLEAN UNION Ligament anchor prongs mesh: Plane.004
 BOOLEAN UNION Ligament anchor prongs materials: None
 BOOLEAN UNION Ligament anchor prongs modifiers: None
 
+Name: BOOLEAN UNION New Gala Cover attachment point
+BOOLEAN UNION New Gala Cover attachment point Type: MESH
+BOOLEAN UNION New Gala Cover attachment point transform: X33.943756103515625 Y-91.48683166503906 Z-8.796171188354492
+BOOLEAN UNION New Gala Cover attachment point rotation: X0.0 Y-0.0 Z12.566370964050293
+BOOLEAN UNION New Gala Cover attachment point scale: X0.30000004172325134 Y0.30000004172325134 Z1.0
+BOOLEAN UNION New Gala Cover attachment point groups: None
+BOOLEAN UNION New Gala Cover attachment point mesh: BOOLEAN New Gala Cover attachment point
+BOOLEAN UNION New Gala Cover attachment point materials: Material, 
+BOOLEAN UNION New Gala Cover attachment point modifiers: None
+
 Name: BOOLEAN UNION proximal M2 Bolt Hole
 BOOLEAN UNION proximal M2 Bolt Hole Type: MESH
 BOOLEAN UNION proximal M2 Bolt Hole transform: X0.0 Y0.0 Z0.0
@@ -1814,6 +1844,26 @@ Cube.003 modifiers:
   #1 Name: Boolean, Type: BOOLEAN
         Operation: INTERSECT, Object: None
 
+Name: Cube.004
+Cube.004 Type: MESH
+Cube.004 transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+Cube.004 rotation: X0.0 Y0.0 Z0.0
+Cube.004 scale: X1.0 Y1.0 Z1.0
+Cube.004 groups: None
+Cube.004 mesh: Cube.006
+Cube.004 materials: None
+Cube.004 modifiers: 
+  #1 Name: Boolean.001, Type: BOOLEAN
+        Operation: INTERSECT, Object: TARGET Outer Surface
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Palm Inner shell
+  #3 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Finger Wave Profile Outer.001
+  #4 Name: Boolean.003, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb Ligament Cover 
+  #5 Name: Boolean.004, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Palm and Back Cover Divide Clearance
+
 Name: Cylinder
 Cylinder Type: MESH
 Cylinder transform: X9.000000953674316 Y-124.34595489501953 Z5.658014297485352
@@ -1898,6 +1948,60 @@ Cylinder.007 mesh: Cylinder.025
 Cylinder.007 materials: Boolean difference, 
 Cylinder.007 modifiers: None
 
+Name: Cylinder.008
+Cylinder.008 Type: MESH
+Cylinder.008 transform: X-13.64989948272705 Y-12.987308502197266 Z-8.0
+Cylinder.008 rotation: X-0.0 Y1.570796251296997 Z0.0
+Cylinder.008 scale: X0.10000000894069672 Y0.10000000894069672 Z1.0000001192092896
+Cylinder.008 groups: None
+Cylinder.008 mesh: Cylinder.030
+Cylinder.008 materials: None
+Cylinder.008 modifiers: None
+
+Name: Cylinder.009
+Cylinder.009 Type: MESH
+Cylinder.009 transform: X16.59545135498047 Y-80.67747497558594 Z-2.800001621246338
+Cylinder.009 rotation: X-0.0 Y1.570796251296997 Z0.0
+Cylinder.009 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
+Cylinder.009 groups: None
+Cylinder.009 mesh: Cylinder.031
+Cylinder.009 materials: Material.005, 
+Cylinder.009 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Cylinder.010
+Cylinder.010 Type: MESH
+Cylinder.010 transform: X16.59545135498047 Y-85.5470962524414 Z-2.800001621246338
+Cylinder.010 rotation: X-0.0 Y1.570796251296997 Z0.0
+Cylinder.010 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
+Cylinder.010 groups: None
+Cylinder.010 mesh: Cylinder.031
+Cylinder.010 materials: Material.005, 
+Cylinder.010 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Cylinder.011
+Cylinder.011 Type: MESH
+Cylinder.011 transform: X14.950235366821289 Y-85.08428192138672 Z-8.358660697937012
+Cylinder.011 rotation: X1.7561436891555786 Y1.570796251296997 Z0.0
+Cylinder.011 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
+Cylinder.011 groups: None
+Cylinder.011 mesh: Cylinder.031
+Cylinder.011 materials: Material.005, 
+Cylinder.011 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Cylinder.012
+Cylinder.012 Type: MESH
+Cylinder.012 transform: X4.522032737731934 Y-79.74132537841797 Z-13.976897239685059
+Cylinder.012 rotation: X1.7561436891555786 Y1.570796251296997 Z0.0
+Cylinder.012 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
+Cylinder.012 groups: None
+Cylinder.012 mesh: Cylinder.031
+Cylinder.012 materials: Material.005, 
+Cylinder.012 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
 Name: DC jack cover.001
 DC jack cover.001 Type: MESH
 DC jack cover.001 transform: X-11.954212188720703 Y-80.6868667602539 Z9.304691314697266
@@ -1908,6 +2012,19 @@ DC jack cover.001 mesh: DC jack cover.003
 DC jack cover.001 materials: None
 DC jack cover.001 modifiers: 
   #1 Name: Bevel, Type: BEVEL
+
+Name: Dowel Pin
+Dowel Pin Type: MESH
+Dowel Pin transform: X-13.64989948272705 Y-17.987308502197266 Z-3.0
+Dowel Pin rotation: X-0.0 Y1.570796251296997 Z0.0
+Dowel Pin scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
+Dowel Pin groups: None
+Dowel Pin mesh: Cylinder.027
+Dowel Pin materials: None
+Dowel Pin modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.30, Offset: 1.00 
+        Even thickness: False, High Quality Normals: False  #2 Name: Bevel, Type: BEVEL
 
 Name: Empty.004
 Empty.004 Type: EMPTY
@@ -2001,7 +2118,7 @@ Gala Cover materials: Boolean difference,
 Gala Cover modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Boolean.BOOLEAN New Gala Cover attachment point, Type: BOOLEAN
-        Operation: UNION, Object: BOOLEAN New Gala Cover attachment point
+        Operation: UNION, Object: BOOLEAN UNION New Gala Cover attachment point
   #3 Name: Boolean.BOOLEAN Conical spring, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Conical spring GALA Cover
   #4 Name: Boolean.BOOLEAN Thumb attahment dowel, Type: BOOLEAN
@@ -2275,6 +2392,16 @@ Heat Fit Insert.008 mesh: Heat Fit Insert.008
 Heat Fit Insert.008 materials: Material.001, 
 Heat Fit Insert.008 modifiers: None
 
+Name: Heat Fit Insert.009
+Heat Fit Insert.009 Type: MESH
+Heat Fit Insert.009 transform: X8.992074966430664 Y-84.2574462890625 Z43.669639587402344
+Heat Fit Insert.009 rotation: X0.0 Y0.0 Z0.0
+Heat Fit Insert.009 scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert.009 groups: None
+Heat Fit Insert.009 mesh: Heat Fit Insert.009
+Heat Fit Insert.009 materials: Material.001, 
+Heat Fit Insert.009 modifiers: None
+
 Name: HOOK 1st Finger
 HOOK 1st Finger Type: EMPTY
 HOOK 1st Finger transform: X-19.0 Y-0.8107600212097168 Z0.0
@@ -2442,7 +2569,7 @@ MOULD Tendon Channel Plug materials: Boolean difference,
 MOULD Tendon Channel Plug modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: BOOLEAN New Gala Cover attachment point, Type: BOOLEAN
-        Operation: UNION, Object: BOOLEAN New Gala Cover attachment point
+        Operation: UNION, Object: BOOLEAN UNION New Gala Cover attachment point
   #3 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.30, Offset: 1.00 
         Even thickness: True, High Quality Normals: False
@@ -3001,6 +3128,68 @@ Plane.015 mesh: Plane.021
 Plane.015 materials: None
 Plane.015 modifiers: None
 
+Name: Plane.016
+Plane.016 Type: MESH
+Plane.016 transform: X9.062156677246094 Y-29.439083099365234 Z2.191312074661255
+Plane.016 rotation: X0.0 Y0.0 Z0.0
+Plane.016 scale: X1.0 Y1.0 Z1.0
+Plane.016 groups: None
+Plane.016 mesh: Plane.025
+Plane.016 materials: None
+Plane.016 modifiers: 
+  #1 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Cable Tidy Origin 
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Cable Tidy Termination
+
+Name: Plane.017
+Plane.017 Type: MESH
+Plane.017 transform: X-13.649920463562012 Y-17.987308502197266 Z-3.0
+Plane.017 rotation: X-0.0 Y1.570796251296997 Z0.0
+Plane.017 scale: X1.0000001192092896 Y1.0000001192092896 Z0.75
+Plane.017 groups: None
+Plane.017 mesh: Plane.026
+Plane.017 materials: None
+Plane.017 modifiers: None
+
+Name: PQ12 Dowel Motor Jig
+PQ12 Dowel Motor Jig Type: MESH
+PQ12 Dowel Motor Jig transform: X-13.649920463562012 Y-17.987308502197266 Z-3.0
+PQ12 Dowel Motor Jig rotation: X0.0 Y0.0 Z0.0
+PQ12 Dowel Motor Jig scale: X1.0 Y1.0 Z0.9999998211860657
+PQ12 Dowel Motor Jig groups: None
+PQ12 Dowel Motor Jig mesh: Cube.005
+PQ12 Dowel Motor Jig materials: None
+PQ12 Dowel Motor Jig modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Plane.017
+  #3 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: PQ12 extended.001
+  #4 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Dowel Pin
+  #5 Name: Boolean.003, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cylinder.008
+
+Name: PQ12 Dowel Motor Jig.001
+PQ12 Dowel Motor Jig.001 Type: MESH
+PQ12 Dowel Motor Jig.001 transform: X-13.649920463562012 Y-17.987308502197266 Z-3.0
+PQ12 Dowel Motor Jig.001 rotation: X0.0 Y0.0 Z0.0
+PQ12 Dowel Motor Jig.001 scale: X1.0 Y1.0 Z0.9999998211860657
+PQ12 Dowel Motor Jig.001 groups: None
+PQ12 Dowel Motor Jig.001 mesh: Cube.004
+PQ12 Dowel Motor Jig.001 materials: None
+PQ12 Dowel Motor Jig.001 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Plane.017
+  #3 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: PQ12 extended.001
+  #4 Name: Boolean.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Dowel Pin
+  #5 Name: Boolean.003, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cylinder.008
+
 Name: PQ12 End Cap
 PQ12 End Cap Type: MESH
 PQ12 End Cap transform: X-13.649959564208984 Y-80.01123046875 Z-3.0000030994415283
@@ -3028,6 +3217,18 @@ PQ12 extended mesh: PQ12 extended
 PQ12 extended materials: PQ12 housing plastic, 
 PQ12 extended modifiers: None
 
+Name: PQ12 extended.001
+PQ12 extended.001 Type: MESH
+PQ12 extended.001 transform: X9.0 Y-42.441871643066406 Z2.390026092529297
+PQ12 extended.001 rotation: X-3.725290298461914e-09 Y-8.437548238693078e-16 Z3.141592502593994
+PQ12 extended.001 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+PQ12 extended.001 groups: Actuator Block, 
+PQ12 extended.001 mesh: PQ12 extended.001
+PQ12 extended.001 materials: PQ12 housing plastic, 
+PQ12 extended.001 modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.30, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True
 Name: Proximal Spring Pretention Distance
 Proximal Spring Pretention Distance Type: MESH
 Proximal Spring Pretention Distance transform: X-18.23844337463379 Y-8.076763153076172 Z3.0330066680908203
@@ -3415,6 +3616,28 @@ Urethane Pad and inner palm (one mesh) modifiers:
   #6 Name: Boolean.BOOLEAN Inner Palm (Flat plane cut), Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Inner Palm (Flat plane cut)
   #7 Name: Boolean.Inner Palm Lip, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
+
+Name: Urethane Pad and inner palm (one mesh).001
+Urethane Pad and inner palm (one mesh).001 Type: MESH
+Urethane Pad and inner palm (one mesh).001 transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+Urethane Pad and inner palm (one mesh).001 rotation: X3.725290298461914e-09 Y-0.0 Z0.0
+Urethane Pad and inner palm (one mesh).001 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+Urethane Pad and inner palm (one mesh).001 groups: Actuator Block, 
+Urethane Pad and inner palm (one mesh).001 mesh: Hand/Palm Outer Surface.001
+Urethane Pad and inner palm (one mesh).001 materials: PLA White, 
+Urethane Pad and inner palm (one mesh).001 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Boolean.BOOLEAN Thumb Ligament Cover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb Ligament Cover
+  #3 Name: Boolean.BOOLEAN Inner Palm Terimination point, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Inner Palm Terimination point
+  #4 Name: Boolean.BOOLEAN Finger Wave Profile, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
+  #5 Name: Boolean.BOOLEAN Inner Palm (Flat plane cut), Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Inner Palm (Flat plane cut)
+  #6 Name: Boolean.Inner Palm Lip, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
 
 Name: Vert
@@ -7591,7 +7814,7 @@ BOOLEAN Thumb Ligament Clamp materials: Boolean difference,
 BOOLEAN Thumb Ligament Clamp modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Solidify, Type: SOLIDIFY
-        Thickness: 0.35, Offset: 1.00 
+        Thickness: 0.40, Offset: 1.00 
         Even thickness: False, High Quality Normals: False
 Name: MOULD Thumb Clearance 0.15mm
 MOULD Thumb Clearance 0.15mm Type: MESH
@@ -7945,8 +8168,8 @@ Thumb modifiers:
         Operation: UNION, Object: BOOLEAN 1.4mm spring termonation plinth 
   #11 Name: Boolean.BOOLEAN Spring termination point, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Spring termination point
-  #12 Name: Boolean.BOOLEAN M2 Bolt Hole.002, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M2 Bolt Hole.002
+  #12 Name: Boolean.BOOLEAN Thumb Ligament Cover M2 Countersink, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Thumb Ligament Cover M2 Countersink
   #13 Name: Boolean.BOOLEAN Ligament Clamp Radius, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament Clamp Radius
 
