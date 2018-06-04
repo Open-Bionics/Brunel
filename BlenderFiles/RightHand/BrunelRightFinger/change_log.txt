@@ -6100,6 +6100,126 @@ Sun rotation: X0.0 Y0.0 Z0.0
 Sun scale: X1.0 Y1.0 Z1.0
 Sun groups: None
 
+Name: TENDON TERMINATION JIG
+TENDON TERMINATION JIG Type: MESH
+TENDON TERMINATION JIG transform: X0.0 Y0.0 Z0.0
+TENDON TERMINATION JIG rotation: X0.0 Y0.0 Z0.0
+TENDON TERMINATION JIG scale: X1.0 Y1.0 Z1.0
+TENDON TERMINATION JIG groups: 1st Finger, 
+TENDON TERMINATION JIG parent: Distal Phalanx.001
+TENDON TERMINATION JIG mesh: Top cover distal.001
+TENDON TERMINATION JIG materials: PLA White, 
+TENDON TERMINATION JIG modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Bevel, Type: BEVEL
+  #4 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #5 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #6 Name: Boolean.M2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Distal M2 Top cover.001
+  #7 Name: Boolean.LABEL identifier distal flat.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL identifier distal flat.001
+  #8 Name: Boolean.BOOLEAN Inner proximal pegs.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Inner proximal pegs.001
+  #9 Name: Boolean.BOOLEAN Tendonline clearance Top Cover.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Tendonline clearance Top Cover.001
+
+Name: TENDON TERMINATION JIG.001
+TENDON TERMINATION JIG.001 Type: MESH
+TENDON TERMINATION JIG.001 transform: X0.0 Y0.0 Z0.0
+TENDON TERMINATION JIG.001 rotation: X0.0 Y0.0 Z0.0
+TENDON TERMINATION JIG.001 scale: X1.0 Y1.0 Z1.0
+TENDON TERMINATION JIG.001 groups: 1st Finger, 
+TENDON TERMINATION JIG.001 parent: Distal Phalanx.001
+TENDON TERMINATION JIG.001 mesh: Top cover distal.001
+TENDON TERMINATION JIG.001 materials: PLA White, 
+TENDON TERMINATION JIG.001 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Bevel, Type: BEVEL
+  #4 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #5 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #6 Name: Boolean.M2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Distal M2 Top cover.001
+  #7 Name: Boolean.LABEL identifier distal flat.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL identifier distal flat.001
+  #8 Name: Boolean.BOOLEAN Inner proximal pegs.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Inner proximal pegs.001
+  #9 Name: Boolean.BOOLEAN Tendonline clearance Top Cover.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Tendonline clearance Top Cover.001
+
+Name: TENDON TERMINATION JIG.002
+TENDON TERMINATION JIG.002 Type: MESH
+TENDON TERMINATION JIG.002 transform: X0.0 Y0.0 Z0.0
+TENDON TERMINATION JIG.002 rotation: X0.0 Y0.0 Z0.0
+TENDON TERMINATION JIG.002 scale: X1.0 Y1.0 Z1.0
+TENDON TERMINATION JIG.002 groups: 1st Finger, 
+TENDON TERMINATION JIG.002 parent: Distal Phalanx.001
+TENDON TERMINATION JIG.002 mesh: Top cover distal.001
+TENDON TERMINATION JIG.002 materials: PLA White, 
+TENDON TERMINATION JIG.002 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Bevel, Type: BEVEL
+  #4 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #5 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #6 Name: Boolean.M2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Distal M2 Top cover.001
+  #7 Name: Boolean.LABEL identifier distal flat.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL identifier distal flat.001
+  #8 Name: Boolean.BOOLEAN Inner proximal pegs.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Inner proximal pegs.001
+  #9 Name: Boolean.BOOLEAN Tendonline clearance Top Cover.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Tendonline clearance Top Cover.001
+
+Name: TENDON TERMINATION JIG.003
+TENDON TERMINATION JIG.003 Type: MESH
+TENDON TERMINATION JIG.003 transform: X0.0 Y0.0 Z0.0
+TENDON TERMINATION JIG.003 rotation: X0.0 Y0.0 Z0.0
+TENDON TERMINATION JIG.003 scale: X1.0 Y1.0 Z1.0
+TENDON TERMINATION JIG.003 groups: 1st Finger, 
+TENDON TERMINATION JIG.003 parent: Distal Phalanx.001
+TENDON TERMINATION JIG.003 mesh: Top cover distal.001
+TENDON TERMINATION JIG.003 materials: PLA White, 
+TENDON TERMINATION JIG.003 modifiers: 
+  #1 Name: Hook, Type: HOOK
+  #2 Name: Hook.001, Type: HOOK
+  #3 Name: Bevel, Type: BEVEL
+  #4 Name: Mirror, Type: MIRROR
+        Reflecting in local: X, 
+        Mirror object: HANDLE 1st Finger
+        Merge: True, Merge Limit: 0.0010000000474974513 mm
+        Clipping: True
+        Vertex group mirroring: True
+  #5 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #6 Name: Boolean.M2BoltHoles, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Distal M2 Top cover.001
+  #7 Name: Boolean.LABEL identifier distal flat.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LABEL identifier distal flat.001
+  #8 Name: Boolean.BOOLEAN Inner proximal pegs.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Inner proximal pegs.001
+  #9 Name: Boolean.BOOLEAN Tendonline clearance Top Cover.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Tendonline clearance Top Cover.001
+
 Name: Thumb
 Thumb Type: EMPTY
 Thumb transform: X-32.96725082397461 Y103.9889144897461 Z1.0
