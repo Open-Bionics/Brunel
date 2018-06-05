@@ -74,19 +74,17 @@ Back Cover (Integrated Wrist) Flat modifiers:
         Operation: DIFFERENCE, Object: None
   #14 Name: Boolean.BOOLEAN Back Cover M2 Countersinks, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back Cover M2 Countersinks
-  #15 Name: Boolean.BOOLEAN Headphone / Micro USB, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Headphone / Micro USB
-  #16 Name: Boolean.BOOLEAN Power Cable , Type: BOOLEAN
+  #15 Name: Boolean.BOOLEAN Power Cable , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Power Cable 
-  #17 Name: Boolean.BOOLEAN Flat Faces (Ligament Cover), Type: BOOLEAN
+  #16 Name: Boolean.BOOLEAN Flat Faces (Ligament Cover), Type: BOOLEAN
         Operation: INTERSECT, Object: BOOLEAN Flat Faces (Ligament Cover).001
-  #18 Name: Boolean.BOOLEAN Wrist Connector M2 Countersinks, Type: BOOLEAN
+  #17 Name: Boolean.BOOLEAN Wrist Connector M2 Countersinks, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Wrist Connector M2 Countersinks
-  #19 Name: Boolean.BOOLEAN Wrist Flatten, Type: BOOLEAN
+  #18 Name: Boolean.BOOLEAN Wrist Flatten, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Wrist Flatten
-  #20 Name: Boolean.OB Logo Embossed, Type: BOOLEAN
+  #19 Name: Boolean.OB Logo Embossed, Type: BOOLEAN
         Operation: UNION, Object: OB Logo Embossed
-  #21 Name: Boolean.BOOLEAN Back Cover M2 Insert Ooze clearance , Type: BOOLEAN
+  #20 Name: Boolean.BOOLEAN Back Cover M2 Insert Ooze clearance , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back Cover M2 Insert Ooze clearance 
 
 Name: Back cover proximal attachment point
@@ -664,6 +662,16 @@ BOOLEAN Ligament.002 modifiers:
         Even thickness: True, High Quality Normals: True  #5 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
+Name: BOOLEAN M2 Countersink Wrist Connector
+BOOLEAN M2 Countersink Wrist Connector Type: MESH
+BOOLEAN M2 Countersink Wrist Connector transform: X9.27890396118164 Y-105.61195373535156 Z-11.665422439575195
+BOOLEAN M2 Countersink Wrist Connector rotation: X0.20951250195503235 Y-3.123795509338379 Z0.08974475413560867
+BOOLEAN M2 Countersink Wrist Connector scale: X1.0 Y1.0 Z1.0
+BOOLEAN M2 Countersink Wrist Connector groups: None
+BOOLEAN M2 Countersink Wrist Connector mesh: Cylinder.028
+BOOLEAN M2 Countersink Wrist Connector materials: Boolean difference, 
+BOOLEAN M2 Countersink Wrist Connector modifiers: None
+
 Name: BOOLEAN Micro USB
 BOOLEAN Micro USB Type: MESH
 BOOLEAN Micro USB transform: X41.365840911865234 Y-57.0728759765625 Z14.627598762512207
@@ -705,16 +713,6 @@ BOOLEAN New Wrist connector M2 bolt holes groups: None
 BOOLEAN New Wrist connector M2 bolt holes mesh: BOOLEAN M2 Bolt Hole.000
 BOOLEAN New Wrist connector M2 bolt holes materials: Boolean difference, 
 BOOLEAN New Wrist connector M2 bolt holes modifiers: None
-
-Name: BOOLEAN New Wrist connector M2 bolt holes for stand
-BOOLEAN New Wrist connector M2 bolt holes for stand Type: MESH
-BOOLEAN New Wrist connector M2 bolt holes for stand transform: X9.28110408782959 Y-105.73121643066406 Z-12.142841339111328
-BOOLEAN New Wrist connector M2 bolt holes for stand rotation: X6.643955230712891 Y0.438511461019516 Z1.072121500968933
-BOOLEAN New Wrist connector M2 bolt holes for stand scale: X1.0 Y1.0 Z1.0
-BOOLEAN New Wrist connector M2 bolt holes for stand groups: None
-BOOLEAN New Wrist connector M2 bolt holes for stand mesh: BOOLEAN M2 Bolt Hole.001
-BOOLEAN New Wrist connector M2 bolt holes for stand materials: Boolean difference, 
-BOOLEAN New Wrist connector M2 bolt holes for stand modifiers: None
 
 Name: BOOLEAN Palm and Back Cover Divide
 BOOLEAN Palm and Back Cover Divide Type: MESH
@@ -999,7 +997,7 @@ BOOLEAN Proximal Spring Channel.004 modifiers: None
 Name: BOOLEAN Screwdriver Leaver Point
 BOOLEAN Screwdriver Leaver Point Type: MESH
 BOOLEAN Screwdriver Leaver Point transform: X39.580875396728516 Y-71.4024887084961 Z1.566150188446045
-BOOLEAN Screwdriver Leaver Point rotation: X0.0 Y-0.0 Z-0.05969508737325668
+BOOLEAN Screwdriver Leaver Point rotation: X0.0 Y-0.0 Z-0.12078161537647247
 BOOLEAN Screwdriver Leaver Point scale: X0.2500000298023224 Y0.5000000596046448 Z0.15000002086162567
 BOOLEAN Screwdriver Leaver Point groups: None
 BOOLEAN Screwdriver Leaver Point mesh: BOOLEAN Screwdriver Leaver Point
@@ -1758,41 +1756,6 @@ Gala Cover Tidy.001 modifiers:
   #3 Name: Boolean.BOOLEAN PCB Bracket Tidy , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PCB Bracket Tidy 
 
-Name: Gala Cover.001
-Gala Cover.001 Type: MESH
-Gala Cover.001 transform: X8.992074966430664 Y-73.18128967285156 Z-2.800001621246338
-Gala Cover.001 rotation: X0.0 Y0.0 Z0.0
-Gala Cover.001 scale: X1.0 Y1.0 Z1.0
-Gala Cover.001 groups: None
-Gala Cover.001 mesh: Gala Cover
-Gala Cover.001 materials: Boolean difference, 
-Gala Cover.001 modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-  #2 Name: Boolean.BOOLEAN New Gala Cover attachment point, Type: BOOLEAN
-        Operation: UNION, Object: BOOLEAN UNION New Gala Cover attachment point
-  #3 Name: Boolean.BOOLEAN Conical spring, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Conical spring GALA Cover
-  #4 Name: Boolean.BOOLEAN Thumb attahment dowel, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb attachment dowel
-  #5 Name: Boolean.BOOLEAN PCB Chestnut for GALA cover.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for GALA cover.000
-  #6 Name: Boolean.BOOLEAN Thumb pivot dowel for GALA cover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel for GALA cover
-  #7 Name: Boolean.Back cover proximal attachment point, Type: BOOLEAN
-        Operation: UNION, Object: Back cover proximal attachment point
-  #8 Name: Boolean.BOOLEAN Back cover M2 bolt holes, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Back Cover M2 Countersinks
-  #9 Name: Boolean.BOOLEAN Thumb Dowel Clearance, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb Dowel Clearance.001
-  #10 Name: Boolean.BOOLEAN GALA Cover attachment point, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN GALA Cover attachment point
-  #11 Name: Boolean.BOOLEAN Screwdriver Leaver Point, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Screwdriver Leaver Point
-  #12 Name: Boolean.BOOLEAN Headphone / Micro USB, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Headphone / Micro USB
-  #13 Name: Boolean.BOOLEAN PQ12 exteneed 0.3 mm tolerance, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
-
 Name: HANDle
 HANDle Type: MESH
 HANDle transform: X9.066848754882812 Y-95.41497802734375 Z9.511549949645996
@@ -1806,9 +1769,9 @@ HANDle modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #2 Name: Bevel, Type: BEVEL
   #3 Name: Boolean.BOOLEAN New Wrist connector M2 bolt holes for stand, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN New Wrist connector M2 bolt holes for stand
+        Operation: DIFFERENCE, Object: None
   #4 Name: Boolean.Plane.012, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: STAND BOOLEAN Connector Block
+        Operation: DIFFERENCE, Object: None
   #5 Name: Boolean.Plane.013, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cylinder.006
   #6 Name: Boolean.Plane.010, Type: BOOLEAN
@@ -1995,6 +1958,254 @@ HOOK 4th Finger rotation: X0.0 Y-0.0 Z-0.1745329201221466
 HOOK 4th Finger scale: X1.0 Y1.0 Z1.0
 HOOK 4th Finger groups: None
 
+Name: LH Back Cover (Integrated Wrist) Flat
+LH Back Cover (Integrated Wrist) Flat Type: MESH
+LH Back Cover (Integrated Wrist) Flat transform: X9.0 Y-48.89358139038086 Z-2.9508910179138184
+LH Back Cover (Integrated Wrist) Flat rotation: X0.0 Y0.0 Z0.0
+LH Back Cover (Integrated Wrist) Flat scale: X1.0 Y1.0 Z1.0
+LH Back Cover (Integrated Wrist) Flat groups: None
+LH Back Cover (Integrated Wrist) Flat mesh: Hand/Palm Outer Surface.007
+LH Back Cover (Integrated Wrist) Flat materials: PLA White, 
+LH Back Cover (Integrated Wrist) Flat modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 1.00, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #2 Name: Solidify.001, Type: SOLIDIFY
+        Thickness: 2.00, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #3 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #4 Name: Boolean.Back Cover Wrist Wedge, Type: BOOLEAN
+        Operation: UNION, Object: Back Cover Wrist Wedge
+  #5 Name: Boolean.Headphone / Micro USB.000, Type: BOOLEAN
+        Operation: UNION, Object: Headphone / Micro USB.000
+  #6 Name: Boolean.LH BOOLEAN Gala Cheetah Tidy, Type: BOOLEAN
+        Operation: INTERSECT, Object: LH BOOLEAN Gala Cheetah Tidy
+  #7 Name: Boolean.BOOLEAN Headphone Jack, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Headphone Jack
+  #8 Name: Boolean.BOOLEAN Micro USB, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Micro USB
+  #9 Name: Boolean.BOOLEAN PQ12 exteneed 0.3 mm tolerance, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
+  #10 Name: Boolean.LH BOOLEAN Palm and Back Cover Divide, Type: BOOLEAN
+        Operation: INTERSECT, Object: LH BOOLEAN Palm and Back Cover Divide
+  #11 Name: Triangulate, Type: TRIANGULATE
+  #12 Name: Boolean.BOOLEAN Fixing points back cover, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN Fixing points back cover
+  #13 Name: Boolean.BOOLEAN Back cover M2 bolt holes, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
+  #14 Name: Boolean.BOOLEAN Back Cover M2 Countersinks, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Back Cover M2 Countersinks
+  #15 Name: Boolean.BOOLEAN Power Cable , Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Power Cable 
+  #16 Name: Boolean.LH BOOLEAN Flat Faces (Ligament Cover), Type: BOOLEAN
+        Operation: INTERSECT, Object: LH BOOLEAN Flat Faces (Ligament Cover)
+  #17 Name: Boolean.LH BOOLEAN Wrist Connector M2 Countersinks, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LH BOOLEAN Wrist Connector M2 Countersinks
+  #18 Name: Boolean.BOOLEAN Wrist Flatten, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Wrist Flatten
+  #19 Name: Boolean.OB Logo Embossed, Type: BOOLEAN
+        Operation: UNION, Object: OB Logo Embossed
+  #20 Name: Boolean.BOOLEAN Back Cover M2 Insert Ooze clearance , Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Back Cover M2 Insert Ooze clearance 
+
+Name: LH BOOLEAN Conical spring GALA Cover
+LH BOOLEAN Conical spring GALA Cover Type: MESH
+LH BOOLEAN Conical spring GALA Cover transform: X31.663448333740234 Y-57.498046875 Z-8.230681419372559
+LH BOOLEAN Conical spring GALA Cover rotation: X0.0 Y-0.0 Z0.0
+LH BOOLEAN Conical spring GALA Cover scale: X1.0 Y1.0 Z1.0
+LH BOOLEAN Conical spring GALA Cover groups: Actuator Block, Booleans, 
+LH BOOLEAN Conical spring GALA Cover parent: Conical spring
+LH BOOLEAN Conical spring GALA Cover mesh: BOOLEAN Conical spring for palm inner.002
+LH BOOLEAN Conical spring GALA Cover materials: Boolean difference, 
+LH BOOLEAN Conical spring GALA Cover modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 2, Type: CATMULL_CLARK
+
+Name: LH BOOLEAN Flat Faces (Ligament Cover)
+LH BOOLEAN Flat Faces (Ligament Cover) Type: MESH
+LH BOOLEAN Flat Faces (Ligament Cover) transform: X18.0 Y0.0 Z0.0
+LH BOOLEAN Flat Faces (Ligament Cover) rotation: X1.3962634801864624 Y-0.0 Z0.0
+LH BOOLEAN Flat Faces (Ligament Cover) scale: X1.0 Y1.0 Z1.0
+LH BOOLEAN Flat Faces (Ligament Cover) groups: None
+LH BOOLEAN Flat Faces (Ligament Cover) mesh: BOOLEAN Flat Faces (Ligament Cover).001
+LH BOOLEAN Flat Faces (Ligament Cover) materials: Boolean difference, 
+LH BOOLEAN Flat Faces (Ligament Cover) modifiers: None
+
+Name: LH BOOLEAN Gala Cheetah Tidy
+LH BOOLEAN Gala Cheetah Tidy Type: MESH
+LH BOOLEAN Gala Cheetah Tidy transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+LH BOOLEAN Gala Cheetah Tidy rotation: X3.725290298461914e-09 Y-0.0 Z0.0
+LH BOOLEAN Gala Cheetah Tidy scale: X1.0 Y1.0 Z1.0
+LH BOOLEAN Gala Cheetah Tidy groups: Actuator Block, 
+LH BOOLEAN Gala Cheetah Tidy mesh: Hand/Palm Outer Surface.008
+LH BOOLEAN Gala Cheetah Tidy materials: PLA White, 
+LH BOOLEAN Gala Cheetah Tidy modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 3.20, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: LH BOOLEAN GALA Cover attachment point
+LH BOOLEAN GALA Cover attachment point Type: MESH
+LH BOOLEAN GALA Cover attachment point transform: X-15.8948974609375 Y-91.56292724609375 Z0.9440407752990723
+LH BOOLEAN GALA Cover attachment point rotation: X0.0 Y0.0 Z0.0
+LH BOOLEAN GALA Cover attachment point scale: X1.0 Y1.0 Z1.0
+LH BOOLEAN GALA Cover attachment point groups: None
+LH BOOLEAN GALA Cover attachment point mesh: Cylinder.006
+LH BOOLEAN GALA Cover attachment point materials: Boolean difference, 
+LH BOOLEAN GALA Cover attachment point modifiers: None
+
+Name: LH BOOLEAN Palm and Back Cover Divide
+LH BOOLEAN Palm and Back Cover Divide Type: MESH
+LH BOOLEAN Palm and Back Cover Divide transform: X8.937841415405273 Y-49.39783477783203 Z2.191311836242676
+LH BOOLEAN Palm and Back Cover Divide rotation: X0.0 Y0.0 Z0.0
+LH BOOLEAN Palm and Back Cover Divide scale: X1.0 Y1.0 Z1.0
+LH BOOLEAN Palm and Back Cover Divide groups: None
+LH BOOLEAN Palm and Back Cover Divide mesh: Palm and Back Cover Divide.001
+LH BOOLEAN Palm and Back Cover Divide materials: Boolean difference, 
+LH BOOLEAN Palm and Back Cover Divide modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: LH BOOLEAN Screwdriver Leaver Point
+LH BOOLEAN Screwdriver Leaver Point Type: MESH
+LH BOOLEAN Screwdriver Leaver Point transform: X-21.580875396728516 Y-71.4024887084961 Z1.566150188446045
+LH BOOLEAN Screwdriver Leaver Point rotation: X0.0 Y-0.0 Z0.11483784765005112
+LH BOOLEAN Screwdriver Leaver Point scale: X1.0 Y1.0 Z1.0
+LH BOOLEAN Screwdriver Leaver Point groups: None
+LH BOOLEAN Screwdriver Leaver Point mesh: BOOLEAN Screwdriver Leaver Point.001
+LH BOOLEAN Screwdriver Leaver Point materials: Boolean difference, 
+LH BOOLEAN Screwdriver Leaver Point modifiers: None
+
+Name: LH BOOLEAN Thumb attachment dowel
+LH BOOLEAN Thumb attachment dowel Type: MESH
+LH BOOLEAN Thumb attachment dowel transform: X1.4499664306640625 Y-80.01124572753906 Z-3.133253574371338
+LH BOOLEAN Thumb attachment dowel rotation: X3.725290742551124e-09 Y1.570796251296997 Z0.0
+LH BOOLEAN Thumb attachment dowel scale: X1.0 Y1.0 Z1.0
+LH BOOLEAN Thumb attachment dowel groups: Actuator Block, Booleans, Thumb, 
+LH BOOLEAN Thumb attachment dowel mesh: BOOLEAN Thumb attachment dowel.001
+LH BOOLEAN Thumb attachment dowel materials: Boolean difference, 
+LH BOOLEAN Thumb attachment dowel modifiers: None
+
+Name: LH BOOLEAN Thumb Dowel Clearance
+LH BOOLEAN Thumb Dowel Clearance Type: MESH
+LH BOOLEAN Thumb Dowel Clearance transform: X9.300000190734863 Y-48.893592834472656 Z-2.9508914947509766
+LH BOOLEAN Thumb Dowel Clearance rotation: X3.725290298461914e-09 Y-0.0 Z0.0
+LH BOOLEAN Thumb Dowel Clearance scale: X1.0 Y1.0 Z1.0
+LH BOOLEAN Thumb Dowel Clearance groups: Actuator Block, 
+LH BOOLEAN Thumb Dowel Clearance mesh: BOOLEAN Thumb Dowel.001
+LH BOOLEAN Thumb Dowel Clearance materials: PLA White, 
+LH BOOLEAN Thumb Dowel Clearance modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.10, Offset: 1.00 
+        Even thickness: False, High Quality Normals: True  #2 Name: Bevel, Type: BEVEL
+
+Name: LH BOOLEAN Thumb pivot dowel for GALA cover
+LH BOOLEAN Thumb pivot dowel for GALA cover Type: MESH
+LH BOOLEAN Thumb pivot dowel for GALA cover transform: X1.4500007629394531 Y-84.01099395751953 Z-3.000030040740967
+LH BOOLEAN Thumb pivot dowel for GALA cover rotation: X-1.5707961320877075 Y2.356194496154785 Z-1.570796251296997
+LH BOOLEAN Thumb pivot dowel for GALA cover scale: X1.0 Y1.0 Z1.0
+LH BOOLEAN Thumb pivot dowel for GALA cover groups: None
+LH BOOLEAN Thumb pivot dowel for GALA cover mesh: BOOLEAN Thumb pivot dowel for GALA cover.001
+LH BOOLEAN Thumb pivot dowel for GALA cover materials: Boolean difference.004, 
+LH BOOLEAN Thumb pivot dowel for GALA cover modifiers: None
+
+Name: LH BOOLEAN UNION New Gala Cover attachment point
+LH BOOLEAN UNION New Gala Cover attachment point Type: MESH
+LH BOOLEAN UNION New Gala Cover attachment point transform: X33.943756103515625 Y-91.48683166503906 Z-8.796171188354492
+LH BOOLEAN UNION New Gala Cover attachment point rotation: X0.0 Y-0.0 Z12.566370964050293
+LH BOOLEAN UNION New Gala Cover attachment point scale: X0.30000004172325134 Y0.30000004172325134 Z1.0
+LH BOOLEAN UNION New Gala Cover attachment point groups: None
+LH BOOLEAN UNION New Gala Cover attachment point mesh: BOOLEAN New Gala Cover attachment point.001
+LH BOOLEAN UNION New Gala Cover attachment point materials: Material, 
+LH BOOLEAN UNION New Gala Cover attachment point modifiers: None
+
+Name: LH BOOLEAN Wrist Connector M2 Countersinks
+LH BOOLEAN Wrist Connector M2 Countersinks Type: MESH
+LH BOOLEAN Wrist Connector M2 Countersinks transform: X13.788555145263672 Y-103.7271499633789 Z-0.05665731430053711
+LH BOOLEAN Wrist Connector M2 Countersinks rotation: X1.3704185485839844 Y-0.0 Z0.0
+LH BOOLEAN Wrist Connector M2 Countersinks scale: X1.0 Y1.0 Z1.0
+LH BOOLEAN Wrist Connector M2 Countersinks groups: None
+LH BOOLEAN Wrist Connector M2 Countersinks mesh: Cylinder.025
+LH BOOLEAN Wrist Connector M2 Countersinks materials: Boolean difference, 
+LH BOOLEAN Wrist Connector M2 Countersinks modifiers: None
+
+Name: LH Gala Cover
+LH Gala Cover Type: MESH
+LH Gala Cover transform: X8.992074966430664 Y-73.18128967285156 Z-2.800001621246338
+LH Gala Cover rotation: X0.0 Y0.0 Z0.0
+LH Gala Cover scale: X1.0 Y1.0 Z1.0
+LH Gala Cover groups: None
+LH Gala Cover mesh: Gala Cover.004
+LH Gala Cover materials: Boolean difference, 
+LH Gala Cover modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean.LH BOOLEAN UNION New Gala Cover attachment point, Type: BOOLEAN
+        Operation: UNION, Object: LH BOOLEAN UNION New Gala Cover attachment point
+  #3 Name: Boolean.LH BOOLEAN Conical spring GALA Cover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LH BOOLEAN Conical spring GALA Cover
+  #4 Name: Boolean.LH BOOLEAN Thumb attachment dowel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LH BOOLEAN Thumb attachment dowel
+  #5 Name: Boolean.BOOLEAN PCB Chestnut for GALA cover.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for GALA cover.000
+  #6 Name: Boolean.LH BOOLEAN Thumb pivot dowel for GALA cover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LH BOOLEAN Thumb pivot dowel for GALA cover
+  #7 Name: Boolean.Back cover proximal attachment point, Type: BOOLEAN
+        Operation: UNION, Object: Back cover proximal attachment point
+  #8 Name: Boolean.BOOLEAN Back cover M2 bolt holes, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Back Cover M2 Countersinks
+  #9 Name: Boolean.LH BOOLEAN Thumb Dowel Clearance, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LH BOOLEAN Thumb Dowel Clearance
+  #10 Name: Boolean.LH BOOLEAN GALA Cover attachment point, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LH BOOLEAN GALA Cover attachment point
+  #11 Name: Boolean.BOOLEAN Headphone / Micro USB, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Headphone / Micro USB
+  #12 Name: Boolean.LH BOOLEAN Screwdriver Leaver Point, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LH BOOLEAN Screwdriver Leaver Point
+  #13 Name: Triangulate, Type: TRIANGULATE
+  #14 Name: Boolean.BOOLEAN PQ12 exteneed 0.3 mm tolerance, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
+
+Name: LH STAND Base
+LH STAND Base Type: MESH
+LH STAND Base transform: X8.933151245117188 Y-95.41497802734375 Z9.511549949645996
+LH STAND Base rotation: X0.13962633907794952 Y-0.0 Z0.0
+LH STAND Base scale: X1.0 Y1.0 Z1.0
+LH STAND Base groups: None
+LH STAND Base mesh: Circle.004
+LH STAND Base materials: PLA, 
+LH STAND Base modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean.BOOLEAN M2 Countersink Wrist Connector, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Countersink Wrist Connector
+  #4 Name: Boolean.STAND BOOLEAN Connector Block, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: STAND BOOLEAN Connector Block
+  #5 Name: Boolean.BOOLEAN Power Cable Stand, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Power Cable Stand
+  #6 Name: Boolean.STAND BOOLEAN Cable Channel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: STAND BOOLEAN Cable Channel
+  #7 Name: Boolean.STAND BOOLEAN Cable Tidy, Type: BOOLEAN
+        Operation: UNION, Object: STAND BOOLEAN Cable Tidy
+  #8 Name: Boolean.BOOLEAN Wrist Flatten, Type: BOOLEAN
+        Operation: INTERSECT, Object: BOOLEAN Wrist Flatten
+  #9 Name: Boolean.BOOLEAN Stand Grip Band, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Stand Grip Band
+
+Name: LH STAND Connector Block
+LH STAND Connector Block Type: MESH
+LH STAND Connector Block transform: X9.019871711730957 Y-94.9280776977539 Z4.087913990020752
+LH STAND Connector Block rotation: X-0.012630564160645008 Y1.7820649147033691 Z1.5576081275939941
+LH STAND Connector Block scale: X1.0 Y1.0 Z1.0
+LH STAND Connector Block groups: None
+LH STAND Connector Block mesh: Plane.002
+LH STAND Connector Block materials: Material, 
+LH STAND Connector Block modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean.LH BOOLEAN Wrist Connector M2 Countersinks, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LH BOOLEAN Wrist Connector M2 Countersinks
+  #3 Name: Boolean.BOOLEAN M2 Countersink Wrist Connector, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Countersink Wrist Connector
+
 Name: Ligament Cover 
 Ligament Cover  Type: MESH
 Ligament Cover  transform: X9.0 Y-48.89358139038086 Z-2.9508910179138184
@@ -2028,6 +2239,13 @@ Ligament Cover  modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Finger Ligament Cover Motor Clamp
   #12 Name: Boolean.BOOLEAN Fixing points back cover.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Fixing points back cover.001
+
+Name: MIRROR AXIS LH
+MIRROR AXIS LH Type: EMPTY
+MIRROR AXIS LH transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+MIRROR AXIS LH rotation: X0.0 Y0.0 Z0.0
+MIRROR AXIS LH scale: X21.205768585205078 Y21.205768585205078 Z21.205768585205078
+MIRROR AXIS LH groups: None
 
 Name: MOULD BOOLEAN 3mm Inserts Palm Mould
 MOULD BOOLEAN 3mm Inserts Palm Mould Type: MESH
@@ -2651,8 +2869,8 @@ STAND Base modifiers:
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #3 Name: Boolean.BOOLEAN New Wrist connector M2 bolt holes for stand, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN New Wrist connector M2 bolt holes for stand
+  #3 Name: Boolean.BOOLEAN M2 Countersink Wrist Connector, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Countersink Wrist Connector
   #4 Name: Boolean.STAND BOOLEAN Connector Block, Type: BOOLEAN
         Operation: DIFFERENCE, Object: STAND BOOLEAN Connector Block
   #5 Name: Boolean.BOOLEAN Power Cable Stand, Type: BOOLEAN
@@ -2690,31 +2908,31 @@ STAND BOOLEAN Cable Tidy modifiers:
 
 Name: STAND BOOLEAN Connector Block
 STAND BOOLEAN Connector Block Type: MESH
-STAND BOOLEAN Connector Block transform: X9.28167724609375 Y-95.07101440429688 Z4.078739643096924
-STAND BOOLEAN Connector Block rotation: X-0.01298031210899353 Y1.7762898206710815 Z1.5572506189346313
+STAND BOOLEAN Connector Block transform: X9.019871711730957 Y-94.9280776977539 Z4.087913990020752
+STAND BOOLEAN Connector Block rotation: X-0.012630564160645008 Y1.7820649147033691 Z1.5576081275939941
 STAND BOOLEAN Connector Block scale: X1.0 Y1.0 Z1.0
 STAND BOOLEAN Connector Block groups: None
-STAND BOOLEAN Connector Block mesh: Plane.011
+STAND BOOLEAN Connector Block mesh: Plane.002
 STAND BOOLEAN Connector Block materials: Material, 
 STAND BOOLEAN Connector Block modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
-        Thickness: 0.20, Offset: 1.00 
+        Thickness: 0.01, Offset: -1.00 
         Even thickness: True, High Quality Normals: True  #2 Name: Bevel, Type: BEVEL
 
 Name: STAND Connector Block
 STAND Connector Block Type: MESH
-STAND Connector Block transform: X9.28167724609375 Y-95.07101440429688 Z4.078739643096924
-STAND Connector Block rotation: X-0.01298031210899353 Y1.7762898206710815 Z1.5572506189346313
+STAND Connector Block transform: X9.019871711730957 Y-94.9280776977539 Z4.087913990020752
+STAND Connector Block rotation: X-0.012630564160645008 Y1.7820649147033691 Z1.5576081275939941
 STAND Connector Block scale: X1.0 Y1.0 Z1.0
 STAND Connector Block groups: None
-STAND Connector Block mesh: Plane.011
+STAND Connector Block mesh: Plane.002
 STAND Connector Block materials: Material, 
 STAND Connector Block modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Boolean.BOOLEAN Wrist Connector M2 Countersinks, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Wrist Connector M2 Countersinks
   #3 Name: Boolean.BOOLEAN New Wrist connector M2 bolt holes for stand, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN New Wrist connector M2 bolt holes for stand
+        Operation: DIFFERENCE, Object: BOOLEAN M2 Countersink Wrist Connector
 
 Name: Stand Grip Band
 Stand Grip Band Type: MESH
