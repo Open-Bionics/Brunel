@@ -1103,7 +1103,8 @@ BOOLEAN Thumb Dowel Clearance scale: X1.0 Y1.0 Z1.0
 BOOLEAN Thumb Dowel Clearance groups: None
 BOOLEAN Thumb Dowel Clearance mesh: Cube.003
 BOOLEAN Thumb Dowel Clearance materials: Boolean difference.003, 
-BOOLEAN Thumb Dowel Clearance modifiers: None
+BOOLEAN Thumb Dowel Clearance modifiers: 
+  #1 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN Thumb Dowel Clearance.001
 BOOLEAN Thumb Dowel Clearance.001 Type: MESH
@@ -1710,7 +1711,7 @@ Gala Cover modifiers:
   #5 Name: Boolean.BOOLEAN PCB Chestnut for GALA cover.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for GALA cover.000
   #6 Name: Boolean.BOOLEAN Thumb pivot dowel for GALA cover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Thumb pivot dowel for GALA cover
+        Operation: DIFFERENCE, Object: None
   #7 Name: Boolean.Back cover proximal attachment point, Type: BOOLEAN
         Operation: UNION, Object: Back cover proximal attachment point
   #8 Name: Boolean.BOOLEAN Back cover M2 bolt holes, Type: BOOLEAN
@@ -1990,21 +1991,19 @@ LH Back Cover (Integrated Wrist) Flat modifiers:
   #11 Name: Triangulate, Type: TRIANGULATE
   #12 Name: Boolean.BOOLEAN Fixing points back cover, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Fixing points back cover
-  #13 Name: Boolean.BOOLEAN Back cover M2 bolt holes, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #14 Name: Boolean.BOOLEAN Back Cover M2 Countersinks, Type: BOOLEAN
+  #13 Name: Boolean.BOOLEAN Back Cover M2 Countersinks, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back Cover M2 Countersinks
-  #15 Name: Boolean.BOOLEAN Power Cable , Type: BOOLEAN
+  #14 Name: Boolean.BOOLEAN Power Cable , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Power Cable 
-  #16 Name: Boolean.LH BOOLEAN Flat Faces (Ligament Cover), Type: BOOLEAN
+  #15 Name: Boolean.LH BOOLEAN Flat Faces (Ligament Cover), Type: BOOLEAN
         Operation: INTERSECT, Object: LH BOOLEAN Flat Faces (Ligament Cover)
-  #17 Name: Boolean.LH BOOLEAN Wrist Connector M2 Countersinks, Type: BOOLEAN
+  #16 Name: Boolean.LH BOOLEAN Wrist Connector M2 Countersinks, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LH BOOLEAN Wrist Connector M2 Countersinks
-  #18 Name: Boolean.BOOLEAN Wrist Flatten, Type: BOOLEAN
+  #17 Name: Boolean.BOOLEAN Wrist Flatten, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Wrist Flatten
-  #19 Name: Boolean.OB Logo Embossed, Type: BOOLEAN
+  #18 Name: Boolean.OB Logo Embossed, Type: BOOLEAN
         Operation: UNION, Object: OB Logo Embossed
-  #20 Name: Boolean.BOOLEAN Back Cover M2 Insert Ooze clearance , Type: BOOLEAN
+  #19 Name: Boolean.BOOLEAN Back Cover M2 Insert Ooze clearance , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back Cover M2 Insert Ooze clearance 
 
 Name: LH BOOLEAN Conical spring GALA Cover
@@ -2147,7 +2146,7 @@ LH Gala Cover modifiers:
   #5 Name: Boolean.BOOLEAN PCB Chestnut for GALA cover.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PCB Chestnut for GALA cover.000
   #6 Name: Boolean.LH BOOLEAN Thumb pivot dowel for GALA cover, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: LH BOOLEAN Thumb pivot dowel for GALA cover
+        Operation: DIFFERENCE, Object: None
   #7 Name: Boolean.Back cover proximal attachment point, Type: BOOLEAN
         Operation: UNION, Object: Back cover proximal attachment point
   #8 Name: Boolean.BOOLEAN Back cover M2 bolt holes, Type: BOOLEAN
@@ -2163,6 +2162,136 @@ LH Gala Cover modifiers:
   #13 Name: Triangulate, Type: TRIANGULATE
   #14 Name: Boolean.BOOLEAN PQ12 exteneed 0.3 mm tolerance, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
+
+Name: LH MOULD BOOLEAN Palm Mould Plunger PLA
+LH MOULD BOOLEAN Palm Mould Plunger PLA Type: MESH
+LH MOULD BOOLEAN Palm Mould Plunger PLA transform: X9.000000953674316 Y-128.345947265625 Z11.961967468261719
+LH MOULD BOOLEAN Palm Mould Plunger PLA rotation: X0.0 Y0.0 Z0.0
+LH MOULD BOOLEAN Palm Mould Plunger PLA scale: X1.0 Y1.0 Z1.0
+LH MOULD BOOLEAN Palm Mould Plunger PLA groups: None
+LH MOULD BOOLEAN Palm Mould Plunger PLA mesh: Cylinder.026
+LH MOULD BOOLEAN Palm Mould Plunger PLA materials: Boolean difference, 
+LH MOULD BOOLEAN Palm Mould Plunger PLA modifiers: 
+  #1 Name: Bevel.001, Type: BEVEL
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 4, Type: CATMULL_CLARK
+
+Name: LH MOULD BOOLEAN Palm Riser Channels
+LH MOULD BOOLEAN Palm Riser Channels Type: MESH
+LH MOULD BOOLEAN Palm Riser Channels transform: X-24.00063705444336 Y-87.86579895019531 Z-4.7600274085998535
+LH MOULD BOOLEAN Palm Riser Channels rotation: X0.0 Y0.0 Z0.0
+LH MOULD BOOLEAN Palm Riser Channels scale: X1.0 Y1.0 Z1.0
+LH MOULD BOOLEAN Palm Riser Channels groups: None
+LH MOULD BOOLEAN Palm Riser Channels mesh: BOOLEAN Palm Riser Channels.001
+LH MOULD BOOLEAN Palm Riser Channels materials: Boolean difference, 
+LH MOULD BOOLEAN Palm Riser Channels modifiers: None
+
+Name: LH MOULD BOOLEAN Thumb Union
+LH MOULD BOOLEAN Thumb Union Type: MESH
+LH MOULD BOOLEAN Thumb Union transform: X24.99870491027832 Y-66.19110870361328 Z-17.999996185302734
+LH MOULD BOOLEAN Thumb Union rotation: X0.0 Y0.0 Z0.0
+LH MOULD BOOLEAN Thumb Union scale: X1.0 Y1.0 Z1.0
+LH MOULD BOOLEAN Thumb Union groups: None
+LH MOULD BOOLEAN Thumb Union mesh: Thumb Ligament Cover .004
+LH MOULD BOOLEAN Thumb Union materials: Boolean difference, 
+LH MOULD BOOLEAN Thumb Union modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.10, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True
+Name: LH MOULD BOOLEAN Urethane Channel
+LH MOULD BOOLEAN Urethane Channel Type: MESH
+LH MOULD BOOLEAN Urethane Channel transform: X8.999999046325684 Y-73.98606872558594 Z-22.608531951904297
+LH MOULD BOOLEAN Urethane Channel rotation: X0.0 Y-0.0 Z0.0
+LH MOULD BOOLEAN Urethane Channel scale: X1.0 Y1.0 Z1.0
+LH MOULD BOOLEAN Urethane Channel groups: None
+LH MOULD BOOLEAN Urethane Channel mesh: Vert.001
+LH MOULD BOOLEAN Urethane Channel materials: Boolean difference, 
+LH MOULD BOOLEAN Urethane Channel modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 1, Type: CATMULL_CLARK
+  #2 Name: Skin, Type: SKIN
+  #3 Name: Subsurf.001, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: LH MOULD BOOLEAN Urethane Pooling Areas
+LH MOULD BOOLEAN Urethane Pooling Areas Type: MESH
+LH MOULD BOOLEAN Urethane Pooling Areas transform: X47.0391731262207 Y-11.516891479492188 Z4.739970684051514
+LH MOULD BOOLEAN Urethane Pooling Areas rotation: X0.0 Y0.0 Z0.0
+LH MOULD BOOLEAN Urethane Pooling Areas scale: X1.0 Y1.0 Z1.0
+LH MOULD BOOLEAN Urethane Pooling Areas groups: None
+LH MOULD BOOLEAN Urethane Pooling Areas mesh: Cylinder.027
+LH MOULD BOOLEAN Urethane Pooling Areas materials: Boolean difference, 
+LH MOULD BOOLEAN Urethane Pooling Areas modifiers: None
+
+Name: LH MOULD Palm Mould Base PLA.001
+LH MOULD Palm Mould Base PLA.001 Type: MESH
+LH MOULD Palm Mould Base PLA.001 transform: X9.0 Y-48.89358901977539 Z0.04910898208618164
+LH MOULD Palm Mould Base PLA.001 rotation: X0.0 Y0.0 Z0.0
+LH MOULD Palm Mould Base PLA.001 scale: X1.0 Y1.0 Z1.0
+LH MOULD Palm Mould Base PLA.001 groups: None
+LH MOULD Palm Mould Base PLA.001 mesh: Palm Mould.002
+LH MOULD Palm Mould Base PLA.001 materials: None
+LH MOULD Palm Mould Base PLA.001 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: MOULD Palm Mould Securing Dowels
+  #3 Name: Boolean.BOOLEAN Palm Mould Plunger, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: MOULD BOOLEAN Palm Mould Plunger PLA
+  #4 Name: Boolean.LH MOULD BOOLEAN Urethane Channel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LH MOULD BOOLEAN Urethane Channel
+
+Name: LH MOULD Palm Mould Cheetah.001
+LH MOULD Palm Mould Cheetah.001 Type: MESH
+LH MOULD Palm Mould Cheetah.001 transform: X9.0 Y-48.89358901977539 Z-2.9508910179138184
+LH MOULD Palm Mould Cheetah.001 rotation: X0.0 Y0.0 Z0.0
+LH MOULD Palm Mould Cheetah.001 scale: X1.0 Y1.0 Z1.0
+LH MOULD Palm Mould Cheetah.001 groups: None
+LH MOULD Palm Mould Cheetah.001 mesh: Palm Mould.001
+LH MOULD Palm Mould Cheetah.001 materials: None
+LH MOULD Palm Mould Cheetah.001 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean.LH TARGET Outer Surface, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LH TARGET Outer Surface
+  #3 Name: Boolean.LH MOULD BOOLEAN Thumb Union, Type: BOOLEAN
+        Operation: UNION, Object: LH MOULD BOOLEAN Thumb Union
+  #4 Name: Boolean.LH MOULD BOOLEAN Urethane Channel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LH MOULD BOOLEAN Urethane Channel
+  #5 Name: Boolean.MOULD BOOLEAN Palm Mould Plunger PLA, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: MOULD BOOLEAN Palm Mould Plunger PLA
+  #6 Name: Boolean.BOOLEAN Palm Mould Securing Dowels.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: MOULD BOOLEAN Palm Mould Securing Dowels.001
+
+Name: LH MOULD Palm Mould Lid
+LH MOULD Palm Mould Lid Type: MESH
+LH MOULD Palm Mould Lid transform: X8.999998092651367 Y-49.4797248840332 Z1.6913127899169922
+LH MOULD Palm Mould Lid rotation: X0.0 Y0.0 Z0.0
+LH MOULD Palm Mould Lid scale: X1.0 Y1.0 Z1.0
+LH MOULD Palm Mould Lid groups: None
+LH MOULD Palm Mould Lid mesh: Palm Mould Lid.001
+LH MOULD Palm Mould Lid materials: PLA, 
+LH MOULD Palm Mould Lid modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean.BOOLEAN MOULD M3 Reinforcing, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN MOULD M3 Reinforcing
+  #3 Name: Boolean.LH MOULD BOOLEAN Palm Riser Channels, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LH MOULD BOOLEAN Palm Riser Channels
+  #4 Name: Boolean.LH MOULD BOOLEAN Urethane Pooling Areas, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LH MOULD BOOLEAN Urethane Pooling Areas
+  #5 Name: Boolean.MOULD BOOLEAN 3mm Inserts Palm Mould, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: MOULD BOOLEAN 3mm Inserts Palm Mould
+  #6 Name: Boolean.LH MOULD Viewing Area for Riser, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LH MOULD Viewing Area for Riser
+
+Name: LH MOULD Viewing Area for Riser
+LH MOULD Viewing Area for Riser Type: MESH
+LH MOULD Viewing Area for Riser transform: X-14.005401611328125 Y-44.93330764770508 Z1.823883056640625
+LH MOULD Viewing Area for Riser rotation: X0.0 Y0.0 Z0.0
+LH MOULD Viewing Area for Riser scale: X1.0 Y1.0 Z1.0
+LH MOULD Viewing Area for Riser groups: None
+LH MOULD Viewing Area for Riser mesh: Cylinder.030
+LH MOULD Viewing Area for Riser materials: Boolean difference, 
+LH MOULD Viewing Area for Riser modifiers: None
 
 Name: LH STAND Base
 LH STAND Base Type: MESH
@@ -2205,6 +2334,24 @@ LH STAND Connector Block modifiers:
         Operation: DIFFERENCE, Object: LH BOOLEAN Wrist Connector M2 Countersinks
   #3 Name: Boolean.BOOLEAN M2 Countersink Wrist Connector, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Countersink Wrist Connector
+
+Name: LH TARGET Outer Surface
+LH TARGET Outer Surface Type: MESH
+LH TARGET Outer Surface transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+LH TARGET Outer Surface rotation: X3.725290298461914e-09 Y-0.0 Z0.0
+LH TARGET Outer Surface scale: X1.0 Y1.0 Z1.0
+LH TARGET Outer Surface groups: Actuator Block, 
+LH TARGET Outer Surface mesh: Hand/Palm Outer Surface.002
+LH TARGET Outer Surface materials: PLA, 
+LH TARGET Outer Surface modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 3.00, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
+  #4 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
 
 Name: Ligament Cover 
 Ligament Cover  Type: MESH
@@ -2327,7 +2474,7 @@ MOULD BOOLEAN Urethane Pooling Areas rotation: X0.0 Y0.0 Z0.0
 MOULD BOOLEAN Urethane Pooling Areas scale: X1.0 Y1.0 Z1.0
 MOULD BOOLEAN Urethane Pooling Areas groups: None
 MOULD BOOLEAN Urethane Pooling Areas mesh: Cylinder.010
-MOULD BOOLEAN Urethane Pooling Areas materials: None
+MOULD BOOLEAN Urethane Pooling Areas materials: Boolean difference, 
 MOULD BOOLEAN Urethane Pooling Areas modifiers: None
 
 Name: MOULD Palm Mould Base PLA
@@ -2423,7 +2570,7 @@ MOULD Viewing Area for Riser  rotation: X0.0 Y0.0 Z0.0
 MOULD Viewing Area for Riser  scale: X1.0 Y1.0 Z1.0
 MOULD Viewing Area for Riser  groups: None
 MOULD Viewing Area for Riser  mesh: Cylinder.007
-MOULD Viewing Area for Riser  materials: None
+MOULD Viewing Area for Riser  materials: Boolean difference, 
 MOULD Viewing Area for Riser  modifiers: None
 
 Name: OB Logo Embossed
@@ -2570,9 +2717,9 @@ Palm Inner body modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Thumb Ligament Cover latch 
   #32 Name: Boolean.BOOLEAN Wrist Flatten, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Wrist Flatten
-  #33 Name: Boolean.BOOLEAN Thumb Dowel Clearance, Type: BOOLEAN
+  #33 Name: Triangulate, Type: TRIANGULATE
+  #34 Name: Boolean.BOOLEAN Thumb Dowel Clearance, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb Dowel Clearance
-  #34 Name: Triangulate, Type: TRIANGULATE
   #35 Name: Boolean.BOOLEAN Cable Tidy Origin , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Cable Tidy Origin 
   #36 Name: Boolean.BOOLEAN Cable Tidy Termination, Type: BOOLEAN
@@ -7252,7 +7399,7 @@ BOOLEAN Thumb Ligament Clamp Chamfer Type: MESH
 BOOLEAN Thumb Ligament Clamp Chamfer transform: X11.538647651672363 Y8.333989143371582 Z4.064368724822998
 BOOLEAN Thumb Ligament Clamp Chamfer rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Thumb Ligament Clamp Chamfer scale: X1.0 Y1.0 Z1.0
-BOOLEAN Thumb Ligament Clamp Chamfer groups: None
+BOOLEAN Thumb Ligament Clamp Chamfer groups: Thumb, 
 BOOLEAN Thumb Ligament Clamp Chamfer mesh: Plane.005
 BOOLEAN Thumb Ligament Clamp Chamfer materials: Boolean difference, 
 BOOLEAN Thumb Ligament Clamp Chamfer modifiers: 
@@ -7263,7 +7410,7 @@ BOOLEAN Thumb Ligament Plane Type: MESH
 BOOLEAN Thumb Ligament Plane transform: X6.740169525146484 Y0.705286979675293 Z3.9950666427612305
 BOOLEAN Thumb Ligament Plane rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Thumb Ligament Plane scale: X1.0 Y1.0 Z1.0
-BOOLEAN Thumb Ligament Plane groups: None
+BOOLEAN Thumb Ligament Plane groups: Thumb, 
 BOOLEAN Thumb Ligament Plane mesh: Plane.004
 BOOLEAN Thumb Ligament Plane materials: None
 BOOLEAN Thumb Ligament Plane modifiers: 
@@ -7275,7 +7422,7 @@ BOOLEAN Thumb Ligament Plane.001 Type: MESH
 BOOLEAN Thumb Ligament Plane.001 transform: X6.740169525146484 Y0.8891887664794922 Z3.1529130935668945
 BOOLEAN Thumb Ligament Plane.001 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Thumb Ligament Plane.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Thumb Ligament Plane.001 groups: None
+BOOLEAN Thumb Ligament Plane.001 groups: Thumb, 
 BOOLEAN Thumb Ligament Plane.001 mesh: Plane.006
 BOOLEAN Thumb Ligament Plane.001 materials: Boolean difference, 
 BOOLEAN Thumb Ligament Plane.001 modifiers: 
@@ -7299,7 +7446,7 @@ Plane.002 Type: MESH
 Plane.002 transform: X40.65549087524414 Y68.45843505859375 Z1.0000009536743164
 Plane.002 rotation: X0.0 Y0.0 Z0.0
 Plane.002 scale: X1.0 Y1.0 Z1.0
-Plane.002 groups: None
+Plane.002 groups: Thumb, 
 Plane.002 mesh: Plane.002
 Plane.002 materials: Boolean difference, 
 Plane.002 modifiers: 
