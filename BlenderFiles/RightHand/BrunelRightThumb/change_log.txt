@@ -214,7 +214,7 @@ BOOLEAN Thumb Ligament Clamp Chamfer Type: MESH
 BOOLEAN Thumb Ligament Clamp Chamfer transform: X11.538647651672363 Y8.333989143371582 Z4.064368724822998
 BOOLEAN Thumb Ligament Clamp Chamfer rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Thumb Ligament Clamp Chamfer scale: X1.0 Y1.0 Z1.0
-BOOLEAN Thumb Ligament Clamp Chamfer groups: None
+BOOLEAN Thumb Ligament Clamp Chamfer groups: Thumb, 
 BOOLEAN Thumb Ligament Clamp Chamfer mesh: Plane.005
 BOOLEAN Thumb Ligament Clamp Chamfer materials: Boolean difference, 
 BOOLEAN Thumb Ligament Clamp Chamfer modifiers: 
@@ -269,7 +269,7 @@ BOOLEAN Thumb Ligament Plane Type: MESH
 BOOLEAN Thumb Ligament Plane transform: X6.740169525146484 Y0.705286979675293 Z3.9950666427612305
 BOOLEAN Thumb Ligament Plane rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Thumb Ligament Plane scale: X1.0 Y1.0 Z1.0
-BOOLEAN Thumb Ligament Plane groups: None
+BOOLEAN Thumb Ligament Plane groups: Thumb, 
 BOOLEAN Thumb Ligament Plane mesh: Plane.004
 BOOLEAN Thumb Ligament Plane materials: None
 BOOLEAN Thumb Ligament Plane modifiers: 
@@ -281,7 +281,7 @@ BOOLEAN Thumb Ligament Plane.001 Type: MESH
 BOOLEAN Thumb Ligament Plane.001 transform: X6.740169525146484 Y0.8891887664794922 Z3.1529130935668945
 BOOLEAN Thumb Ligament Plane.001 rotation: X0.0 Y0.0 Z0.0
 BOOLEAN Thumb Ligament Plane.001 scale: X1.0 Y1.0 Z1.0
-BOOLEAN Thumb Ligament Plane.001 groups: None
+BOOLEAN Thumb Ligament Plane.001 groups: Thumb, 
 BOOLEAN Thumb Ligament Plane.001 mesh: Plane.006
 BOOLEAN Thumb Ligament Plane.001 materials: Boolean difference, 
 BOOLEAN Thumb Ligament Plane.001 modifiers: 
@@ -624,7 +624,7 @@ Plane.002 Type: MESH
 Plane.002 transform: X40.65549087524414 Y68.45843505859375 Z1.0000009536743164
 Plane.002 rotation: X0.0 Y0.0 Z0.0
 Plane.002 scale: X1.0 Y1.0 Z1.0
-Plane.002 groups: None
+Plane.002 groups: Thumb, 
 Plane.002 mesh: Plane.002
 Plane.002 materials: Boolean difference, 
 Plane.002 modifiers: 
@@ -694,7 +694,7 @@ Riser channels modifiers: None
 
 Name: Sun
 Sun Type: LAMP
-Sun transform: X-22.703292846679688 Y79.828125 Z11.458824157714844
+Sun transform: X-22.70329475402832 Y79.828125 Z-45.145721435546875
 Sun rotation: X4.7123894691467285 Y-0.0 Z0.0
 Sun scale: X1.0 Y1.0 Z1.0
 Sun groups: None
