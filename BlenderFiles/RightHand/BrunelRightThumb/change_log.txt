@@ -1,3 +1,23 @@
+Name: 1.4mm Cap HeadCylinder 026
+1.4mm Cap HeadCylinder 026 Type: MESH
+1.4mm Cap HeadCylinder 026 transform: X-1.0081300735473633 Y5.882246494293213 Z0.6552505493164062
+1.4mm Cap HeadCylinder 026 rotation: X0.0 Y0.0 Z0.0
+1.4mm Cap HeadCylinder 026 scale: X1.0 Y1.0 Z1.0
+1.4mm Cap HeadCylinder 026 groups: None
+1.4mm Cap HeadCylinder 026 mesh: 1.4mm Cap HeadCylinder 026
+1.4mm Cap HeadCylinder 026 materials: Steel, 
+1.4mm Cap HeadCylinder 026 modifiers: None
+
+Name: 1.4mm Cap HeadCylinder 026.001
+1.4mm Cap HeadCylinder 026.001 Type: MESH
+1.4mm Cap HeadCylinder 026.001 transform: X-1.1146240234375 Y-13.85504150390625 Z-1.0396289825439453
+1.4mm Cap HeadCylinder 026.001 rotation: X0.0 Y0.0 Z0.0
+1.4mm Cap HeadCylinder 026.001 scale: X1.0 Y1.0 Z1.0
+1.4mm Cap HeadCylinder 026.001 groups: None
+1.4mm Cap HeadCylinder 026.001 mesh: 1.4mm Cap HeadCylinder 026.001
+1.4mm Cap HeadCylinder 026.001 materials: Steel, 
+1.4mm Cap HeadCylinder 026.001 modifiers: None
+
 Name: BOOLEAN 1.4mm spring termonation plinth 
 BOOLEAN 1.4mm spring termonation plinth  Type: MESH
 BOOLEAN 1.4mm spring termonation plinth  transform: X-1.0081299543380737 Y5.882246494293213 Z3.7783737182617188
@@ -146,7 +166,7 @@ BOOLEAN Thumb Cover  Type: MESH
 BOOLEAN Thumb Cover  transform: X16.158498764038086 Y53.10859680175781 Z0.0
 BOOLEAN Thumb Cover  rotation: X1.5707963705062866 Y-0.0 Z0.5859454274177551
 BOOLEAN Thumb Cover  scale: X1.0 Y1.0 Z1.0
-BOOLEAN Thumb Cover  groups: Thumb, 
+BOOLEAN Thumb Cover  groups: None
 BOOLEAN Thumb Cover  mesh: Plane.001
 BOOLEAN Thumb Cover  materials: Boolean difference, 
 BOOLEAN Thumb Cover  modifiers: 
@@ -158,7 +178,7 @@ BOOLEAN Thumb Cover 0.2mm Clearance Type: MESH
 BOOLEAN Thumb Cover 0.2mm Clearance transform: X16.15850830078125 Y53.10857391357422 Z0.0
 BOOLEAN Thumb Cover 0.2mm Clearance rotation: X1.5707963705062866 Y-0.0 Z0.5859462022781372
 BOOLEAN Thumb Cover 0.2mm Clearance scale: X1.0 Y1.0 Z1.0
-BOOLEAN Thumb Cover 0.2mm Clearance groups: Thumb, 
+BOOLEAN Thumb Cover 0.2mm Clearance groups: None
 BOOLEAN Thumb Cover 0.2mm Clearance mesh: Plane.001
 BOOLEAN Thumb Cover 0.2mm Clearance materials: Boolean difference, 
 BOOLEAN Thumb Cover 0.2mm Clearance modifiers: 
@@ -372,6 +392,16 @@ Cylinder.001 mesh: Cylinder.014
 Cylinder.001 materials: Boolean difference, 
 Cylinder.001 modifiers: None
 
+Name: Extension SpringCylinder 041
+Extension SpringCylinder 041 Type: MESH
+Extension SpringCylinder 041 transform: X-1.0081300735473633 Y-1.1181234121322632 Z1.9481791257858276
+Extension SpringCylinder 041 rotation: X1.6501598358154297 Y-0.0 Z0.0
+Extension SpringCylinder 041 scale: X1.0 Y1.0 Z1.0
+Extension SpringCylinder 041 groups: None
+Extension SpringCylinder 041 mesh: Extension SpringCylinder 041
+Extension SpringCylinder 041 materials: Steel, 
+Extension SpringCylinder 041 modifiers: None
+
 Name: HANDLE Distal Joint.001
 HANDLE Distal Joint.001 Type: MESH
 HANDLE Distal Joint.001 transform: X0.0 Y45.0 Z0.0
@@ -384,7 +414,7 @@ HANDLE Distal Joint.001 modifiers: None
 
 Name: Heat Fit Insert
 Heat Fit Insert Type: MESH
-Heat Fit Insert transform: X10.74777603149414 Y56.901641845703125 Z0.6887726187705994
+Heat Fit Insert transform: X18.78185272216797 Y47.692665100097656 Z0.6887726187705994
 Heat Fit Insert rotation: X-0.8534303307533264 Y-1.570796251296997 Z0.0
 Heat Fit Insert scale: X1.0 Y1.0 Z1.0
 Heat Fit Insert groups: None
@@ -394,7 +424,7 @@ Heat Fit Insert modifiers: None
 
 Name: Heat Fit Insert.001
 Heat Fit Insert.001 Type: MESH
-Heat Fit Insert.001 transform: X15.595476150512695 Y61.13087463378906 Z0.6887726187705994
+Heat Fit Insert.001 transform: X23.60295295715332 Y51.952388763427734 Z0.6887726187705994
 Heat Fit Insert.001 rotation: X-0.8534303307533264 Y-1.570796251296997 Z0.0
 Heat Fit Insert.001 scale: X1.0 Y1.0 Z1.0
 Heat Fit Insert.001 groups: None
@@ -404,7 +434,7 @@ Heat Fit Insert.001 modifiers: None
 
 Name: Heat Fit Insert.002
 Heat Fit Insert.002 Type: MESH
-Heat Fit Insert.002 transform: X-15.246201515197754 Y6.526706218719482 Z10.946231842041016
+Heat Fit Insert.002 transform: X-14.810906410217285 Y6.936989784240723 Z0.4925578236579895
 Heat Fit Insert.002 rotation: X-8.940698137394065e-08 Y9.334387129911192e-08 Z-0.8534303903579712
 Heat Fit Insert.002 scale: X1.0 Y1.0 Z1.0
 Heat Fit Insert.002 groups: None
@@ -414,7 +444,7 @@ Heat Fit Insert.002 modifiers: None
 
 Name: Heat Fit Insert.003
 Heat Fit Insert.003 Type: MESH
-Heat Fit Insert.003 transform: X13.834365844726562 Y8.283830642700195 Z10.946227073669434
+Heat Fit Insert.003 transform: X13.834365844726562 Y8.283830642700195 Z0.49255305528640747
 Heat Fit Insert.003 rotation: X-8.940698137394065e-08 Y9.334387129911192e-08 Z-0.8534303903579712
 Heat Fit Insert.003 scale: X1.0 Y1.0 Z1.0
 Heat Fit Insert.003 groups: None
@@ -796,6 +826,16 @@ Thumb ligament  modifiers:
   #6 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb Spring Termination Clearance
 
+Name: Thumb ligament .001
+Thumb ligament .001 Type: MESH
+Thumb ligament .001 transform: X-7.62939453125e-06 Y-9.5367431640625e-07 Z0.0
+Thumb ligament .001 rotation: X3.7112233286507035e-08 Y-3.8849226058346176e-08 Z-1.5707961320877075
+Thumb ligament .001 scale: X0.9999999403953552 Y0.9999998807907104 Z1.0
+Thumb ligament .001 groups: Thumb, 
+Thumb ligament .001 mesh: Thumb Ligament .001
+Thumb ligament .001 materials: Urethane, 
+Thumb ligament .001 modifiers: None
+
 Name: Thumb ligament bent
 Thumb ligament bent Type: MESH
 Thumb ligament bent transform: X-7.62939453125e-06 Y-9.5367431640625e-07 Z0.0
@@ -840,6 +880,16 @@ Thumb Ligament Clamp modifiers:
   #9 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN 1.4mm spring termonation plinth +1mm tolerance
 
+Name: Thumb Ligament Clamp.001
+Thumb Ligament Clamp.001 Type: MESH
+Thumb Ligament Clamp.001 transform: X0.10961323976516724 Y4.8092241287231445 Z1.5663089752197266
+Thumb Ligament Clamp.001 rotation: X8.940696716308594e-08 Y7.450580596923828e-09 Z0.2666022777557373
+Thumb Ligament Clamp.001 scale: X1.0 Y1.0 Z1.0
+Thumb Ligament Clamp.001 groups: Thumb, 
+Thumb Ligament Clamp.001 mesh: Plane.018
+Thumb Ligament Clamp.001 materials: PLA White, 
+Thumb Ligament Clamp.001 modifiers: None
+
 Name: Thumb Ligament CoverThumb Ligament Cover 
 Thumb Ligament CoverThumb Ligament Cover  Type: MESH
 Thumb Ligament CoverThumb Ligament Cover  transform: X0.0 Y-1.4515715837478638 Z0.5884749293327332
@@ -847,8 +897,28 @@ Thumb Ligament CoverThumb Ligament Cover  rotation: X3.1415929794311523 Y-0.0 Z0
 Thumb Ligament CoverThumb Ligament Cover  scale: X1.0 Y1.0 Z1.0
 Thumb Ligament CoverThumb Ligament Cover  groups: None
 Thumb Ligament CoverThumb Ligament Cover  mesh: Thumb Ligament CoverThumb Ligament Cover .001
-Thumb Ligament CoverThumb Ligament Cover  materials: None
+Thumb Ligament CoverThumb Ligament Cover  materials: PLA White, 
 Thumb Ligament CoverThumb Ligament Cover  modifiers: None
+
+Name: Thumb Ligament CoverThumb Ligament Cover .001
+Thumb Ligament CoverThumb Ligament Cover .001 Type: MESH
+Thumb Ligament CoverThumb Ligament Cover .001 transform: X0.0 Y-1.4515715837478638 Z0.5884742736816406
+Thumb Ligament CoverThumb Ligament Cover .001 rotation: X3.1415929794311523 Y-0.0 Z0.0
+Thumb Ligament CoverThumb Ligament Cover .001 scale: X1.0 Y1.0 Z1.0
+Thumb Ligament CoverThumb Ligament Cover .001 groups: None
+Thumb Ligament CoverThumb Ligament Cover .001 mesh: Thumb Ligament CoverThumb Ligament Cover .002
+Thumb Ligament CoverThumb Ligament Cover .001 materials: PLA White, 
+Thumb Ligament CoverThumb Ligament Cover .001 modifiers: None
+
+Name: Thumb Ligament CoverThumb Ligament Cover .002
+Thumb Ligament CoverThumb Ligament Cover .002 Type: MESH
+Thumb Ligament CoverThumb Ligament Cover .002 transform: X0.0 Y-3.2714858055114746 Z-1.64076828956604
+Thumb Ligament CoverThumb Ligament Cover .002 rotation: X3.1415927410125732 Y0.0 Z0.0
+Thumb Ligament CoverThumb Ligament Cover .002 scale: X1.0 Y1.0 Z1.0
+Thumb Ligament CoverThumb Ligament Cover .002 groups: None
+Thumb Ligament CoverThumb Ligament Cover .002 mesh: Thumb Ligament CoverThumb Ligament Cover 
+Thumb Ligament CoverThumb Ligament Cover .002 materials: PLA White, 
+Thumb Ligament CoverThumb Ligament Cover .002 modifiers: None
 
 Name: Thumb TEST
 Thumb TEST Type: MESH
@@ -914,4 +984,24 @@ Thumb urethane pad v2 modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #2 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
+
+Name: Torx Countersunk Screws 5mm
+Torx Countersunk Screws 5mm Type: MESH
+Torx Countersunk Screws 5mm transform: X-14.810905456542969 Y6.936989784240723 Z1.995713233947754
+Torx Countersunk Screws 5mm rotation: X0.0 Y0.0 Z0.0
+Torx Countersunk Screws 5mm scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 5mm groups: None
+Torx Countersunk Screws 5mm mesh: Torx Countersunk Screws 5mm
+Torx Countersunk Screws 5mm materials: Steel, 
+Torx Countersunk Screws 5mm modifiers: None
+
+Name: Torx Countersunk Screws 5mm.001
+Torx Countersunk Screws 5mm.001 Type: MESH
+Torx Countersunk Screws 5mm.001 transform: X13.834366798400879 Y8.283831596374512 Z1.9957094192504883
+Torx Countersunk Screws 5mm.001 rotation: X0.0 Y0.0 Z0.0
+Torx Countersunk Screws 5mm.001 scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 5mm.001 groups: None
+Torx Countersunk Screws 5mm.001 mesh: Torx Countersunk Screws 5mm.001
+Torx Countersunk Screws 5mm.001 materials: Steel, 
+Torx Countersunk Screws 5mm.001 modifiers: None
 
