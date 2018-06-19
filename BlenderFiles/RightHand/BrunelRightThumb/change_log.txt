@@ -1,19 +1,9 @@
-Name: 1.4mm Cap HeadCylinder 026
-1.4mm Cap HeadCylinder 026 Type: MESH
-1.4mm Cap HeadCylinder 026 transform: X-1.0081300735473633 Y5.882246494293213 Z0.6552505493164062
-1.4mm Cap HeadCylinder 026 rotation: X0.0 Y0.0 Z0.0
-1.4mm Cap HeadCylinder 026 scale: X1.0 Y1.0 Z1.0
-1.4mm Cap HeadCylinder 026 groups: None
-1.4mm Cap HeadCylinder 026 mesh: 1.4mm Cap HeadCylinder 026
-1.4mm Cap HeadCylinder 026 materials: Steel, 
-1.4mm Cap HeadCylinder 026 modifiers: None
-
 Name: 1.4mm Cap HeadCylinder 026.001
 1.4mm Cap HeadCylinder 026.001 Type: MESH
 1.4mm Cap HeadCylinder 026.001 transform: X-1.1146240234375 Y-13.85504150390625 Z-1.0396289825439453
 1.4mm Cap HeadCylinder 026.001 rotation: X0.0 Y0.0 Z0.0
 1.4mm Cap HeadCylinder 026.001 scale: X1.0 Y1.0 Z1.0
-1.4mm Cap HeadCylinder 026.001 groups: None
+1.4mm Cap HeadCylinder 026.001 groups: Thumb, 
 1.4mm Cap HeadCylinder 026.001 mesh: 1.4mm Cap HeadCylinder 026.001
 1.4mm Cap HeadCylinder 026.001 materials: Steel, 
 1.4mm Cap HeadCylinder 026.001 modifiers: None
@@ -412,22 +402,12 @@ HANDLE Distal Joint.001 mesh: HANDLE Distal Joint
 HANDLE Distal Joint.001 materials: HANDLE, 
 HANDLE Distal Joint.001 modifiers: None
 
-Name: Heat Fit Insert
-Heat Fit Insert Type: MESH
-Heat Fit Insert transform: X18.78185272216797 Y47.692665100097656 Z0.6887726187705994
-Heat Fit Insert rotation: X-0.8534303307533264 Y-1.570796251296997 Z0.0
-Heat Fit Insert scale: X1.0 Y1.0 Z1.0
-Heat Fit Insert groups: None
-Heat Fit Insert mesh: Heat Fit Insert
-Heat Fit Insert materials: Material.001, 
-Heat Fit Insert modifiers: None
-
 Name: Heat Fit Insert.001
 Heat Fit Insert.001 Type: MESH
 Heat Fit Insert.001 transform: X23.60295295715332 Y51.952388763427734 Z0.6887726187705994
 Heat Fit Insert.001 rotation: X-0.8534303307533264 Y-1.570796251296997 Z0.0
 Heat Fit Insert.001 scale: X1.0 Y1.0 Z1.0
-Heat Fit Insert.001 groups: None
+Heat Fit Insert.001 groups: Thumb, 
 Heat Fit Insert.001 mesh: Heat Fit Insert.001
 Heat Fit Insert.001 materials: Material.001, 
 Heat Fit Insert.001 modifiers: None
@@ -985,22 +965,12 @@ Thumb urethane pad v2 modifiers:
   #2 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
 
-Name: Torx Countersunk Screws 5mm
-Torx Countersunk Screws 5mm Type: MESH
-Torx Countersunk Screws 5mm transform: X-14.810905456542969 Y6.936989784240723 Z1.995713233947754
-Torx Countersunk Screws 5mm rotation: X0.0 Y0.0 Z0.0
-Torx Countersunk Screws 5mm scale: X1.0 Y1.0 Z1.0
-Torx Countersunk Screws 5mm groups: None
-Torx Countersunk Screws 5mm mesh: Torx Countersunk Screws 5mm
-Torx Countersunk Screws 5mm materials: Steel, 
-Torx Countersunk Screws 5mm modifiers: None
-
 Name: Torx Countersunk Screws 5mm.001
 Torx Countersunk Screws 5mm.001 Type: MESH
 Torx Countersunk Screws 5mm.001 transform: X13.834366798400879 Y8.283831596374512 Z1.9957094192504883
 Torx Countersunk Screws 5mm.001 rotation: X0.0 Y0.0 Z0.0
 Torx Countersunk Screws 5mm.001 scale: X1.0 Y1.0 Z1.0
-Torx Countersunk Screws 5mm.001 groups: None
+Torx Countersunk Screws 5mm.001 groups: Thumb, 
 Torx Countersunk Screws 5mm.001 mesh: Torx Countersunk Screws 5mm.001
 Torx Countersunk Screws 5mm.001 materials: Steel, 
 Torx Countersunk Screws 5mm.001 modifiers: None
