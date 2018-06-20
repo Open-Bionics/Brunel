@@ -8,6 +8,16 @@ Name: 1st Finger
 1st Finger materials: Material, 
 1st Finger modifiers: None
 
+Name: 1st Finger LigamentLigament 001
+1st Finger LigamentLigament 001 Type: MESH
+1st Finger LigamentLigament 001 transform: X-19.0 Y-0.8107600212097168 Z0.0
+1st Finger LigamentLigament 001 rotation: X0.0 Y-0.0 Z0.0872664526104927
+1st Finger LigamentLigament 001 scale: X1.0 Y1.0 Z1.0
+1st Finger LigamentLigament 001 groups: None
+1st Finger LigamentLigament 001 mesh: 1st Finger LigamentLigament 001
+1st Finger LigamentLigament 001 materials: Boolean difference, 
+1st Finger LigamentLigament 001 modifiers: None
+
 Name: 2nd Finger
 2nd Finger Type: MESH
 2nd Finger transform: X0.0 Y0.0 Z0.0
@@ -17,6 +27,16 @@ Name: 2nd Finger
 2nd Finger mesh: 2nd Finger.003
 2nd Finger materials: Material, 
 2nd Finger modifiers: None
+
+Name: 2nd Finger LigamentLigament 000
+2nd Finger LigamentLigament 000 Type: MESH
+2nd Finger LigamentLigament 000 transform: X0.0 Y0.0 Z0.0
+2nd Finger LigamentLigament 000 rotation: X0.0 Y0.0 Z0.0
+2nd Finger LigamentLigament 000 scale: X1.0 Y1.0 Z1.0
+2nd Finger LigamentLigament 000 groups: None
+2nd Finger LigamentLigament 000 mesh: 2nd Finger LigamentLigament 000
+2nd Finger LigamentLigament 000 materials: Boolean difference, 
+2nd Finger LigamentLigament 000 modifiers: None
 
 Name: 3rd Finger
 3rd Finger Type: MESH
@@ -28,6 +48,16 @@ Name: 3rd Finger
 3rd Finger materials: Material, 
 3rd Finger modifiers: None
 
+Name: 3rd Finger LigamentLigament 003
+3rd Finger LigamentLigament 003 Type: MESH
+3rd Finger LigamentLigament 003 transform: X18.999998092651367 Y-0.8505200147628784 Z0.0
+3rd Finger LigamentLigament 003 rotation: X0.0 Y-0.0 Z-0.0872664526104927
+3rd Finger LigamentLigament 003 scale: X1.0 Y1.0 Z1.0
+3rd Finger LigamentLigament 003 groups: None
+3rd Finger LigamentLigament 003 mesh: 3rd Finger LigamentLigament 003
+3rd Finger LigamentLigament 003 materials: Boolean difference, 
+3rd Finger LigamentLigament 003 modifiers: None
+
 Name: 4th Finger
 4th Finger Type: MESH
 4th Finger transform: X37.874996185302734 Y-3.327399969100952 Z0.0
@@ -37,6 +67,16 @@ Name: 4th Finger
 4th Finger mesh: 4th Finger.004
 4th Finger materials: Material, 
 4th Finger modifiers: None
+
+Name: 4th Finger LigamentLigament 004
+4th Finger LigamentLigament 004 Type: MESH
+4th Finger LigamentLigament 004 transform: X37.874996185302734 Y-3.327399969100952 Z0.0
+4th Finger LigamentLigament 004 rotation: X0.0 Y-0.0 Z-0.1745329201221466
+4th Finger LigamentLigament 004 scale: X1.0 Y1.0 Z1.0
+4th Finger LigamentLigament 004 groups: None
+4th Finger LigamentLigament 004 mesh: 4th Finger LigamentLigament 004
+4th Finger LigamentLigament 004 materials: Boolean difference, 
+4th Finger LigamentLigament 004 modifiers: None
 
 Name: Back Cover (Integrated Wrist) Flat
 Back Cover (Integrated Wrist) Flat Type: MESH
@@ -86,6 +126,18 @@ Back Cover (Integrated Wrist) Flat modifiers:
         Operation: UNION, Object: OB Logo Embossed
   #20 Name: Boolean.BOOLEAN Back Cover M2 Insert Ooze clearance , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back Cover M2 Insert Ooze clearance 
+
+Name: Back Cover (Integrated Wrist) Flat.001
+Back Cover (Integrated Wrist) Flat.001 Type: MESH
+Back Cover (Integrated Wrist) Flat.001 transform: X9.0 Y-48.89358139038086 Z-2.9508895874023438
+Back Cover (Integrated Wrist) Flat.001 rotation: X0.0 Y0.0 Z0.0
+Back Cover (Integrated Wrist) Flat.001 scale: X1.0 Y1.0 Z1.0
+Back Cover (Integrated Wrist) Flat.001 groups: None
+Back Cover (Integrated Wrist) Flat.001 mesh: Hand/Palm Outer Surface.011
+Back Cover (Integrated Wrist) Flat.001 materials: PLA White, 
+Back Cover (Integrated Wrist) Flat.001 modifiers: 
+  #1 Name: Boolean.BOOLEAN Back cover M2 bolt holes, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
 
 Name: Back cover proximal attachment point
 Back cover proximal attachment point Type: MESH
@@ -756,7 +808,7 @@ Name: BOOLEAN Micro USB
 BOOLEAN Micro USB Type: MESH
 BOOLEAN Micro USB transform: X41.365840911865234 Y-57.0728759765625 Z14.627598762512207
 BOOLEAN Micro USB rotation: X0.0 Y0.0 Z0.0
-BOOLEAN Micro USB scale: X1.0 Y0.95652174949646 Z0.8235294222831726
+BOOLEAN Micro USB scale: X1.0 Y1.0434781312942505 Z0.8823529481887817
 BOOLEAN Micro USB groups: None
 BOOLEAN Micro USB mesh: Cube.046
 BOOLEAN Micro USB materials: Boolean difference, 
@@ -1627,6 +1679,16 @@ BOOLEAN Wrist Flatten mesh: Plane.017
 BOOLEAN Wrist Flatten materials: Boolean difference, 
 BOOLEAN Wrist Flatten modifiers: None
 
+Name: Brunel 12v Power Cable
+Brunel 12v Power Cable Type: MESH
+Brunel 12v Power Cable transform: X-67.2732162475586 Y-358.60546875 Z-11.841658592224121
+Brunel 12v Power Cable rotation: X7.0075993896523414e-09 Y0.15896257758140564 Z1.5707963705062866
+Brunel 12v Power Cable scale: X1.0 Y1.0 Z1.0
+Brunel 12v Power Cable groups: None
+Brunel 12v Power Cable mesh: Brunel 12v Power Cable.001
+Brunel 12v Power Cable materials: None
+Brunel 12v Power Cable modifiers: None
+
 Name: BrunelThumbThumb
 BrunelThumbThumb Type: MESH
 BrunelThumbThumb transform: X-10.38058090209961 Y-65.57479858398438 Z-16.441970825195312
@@ -1667,6 +1729,96 @@ BrunelThumbThumb urethane pad mesh: BrunelThumbThumb urethane pad
 BrunelThumbThumb urethane pad materials: None
 BrunelThumbThumb urethane pad modifiers: None
 
+Name: Cable end Stage 1
+Cable end Stage 1 Type: MESH
+Cable end Stage 1 transform: X1.3500595092773438 Y36.445701599121094 Z66.55040740966797
+Cable end Stage 1 rotation: X2.0968680125577066e-09 Y0.6378945112228394 Z-1.5707963705062866
+Cable end Stage 1 scale: X0.20000001788139343 Y0.30000004172325134 Z1.0
+Cable end Stage 1 groups: None
+Cable end Stage 1 mesh: Plane.041
+Cable end Stage 1 materials: Material.001, 
+Cable end Stage 1 modifiers: None
+
+Name: Cable end stage 2
+Cable end stage 2 Type: MESH
+Cable end stage 2 transform: X1.0929698944091797 Y1.2852567434310913 Z40.6248893737793
+Cable end stage 2 rotation: X2.0968680125577066e-09 Y0.6378945112228394 Z-1.5707963705062866
+Cable end stage 2 scale: X0.20000001788139343 Y0.30000004172325134 Z1.0
+Cable end stage 2 groups: None
+Cable end stage 2 mesh: Plane.038
+Cable end stage 2 materials: Material.001, 
+Cable end stage 2 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Cable end stage 3
+Cable end stage 3 Type: MESH
+Cable end stage 3 transform: X46.09297180175781 Y-37.22004699707031 Z14.48957633972168
+Cable end stage 3 rotation: X3.5277203380701394e-08 Y-0.20919263362884521 Z-1.5707963705062866
+Cable end stage 3 scale: X0.20000001788139343 Y0.30000004172325134 Z1.0
+Cable end stage 3 groups: None
+Cable end stage 3 mesh: Plane.054
+Cable end stage 3 materials: Material.001, 
+Cable end stage 3 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Cable Stage 1
+Cable Stage 1 Type: MESH
+Cable Stage 1 transform: X-13.649937629699707 Y-54.606101989746094 Z21.871543884277344
+Cable Stage 1 rotation: X1.5707963705062866 Y-0.0 Z0.0
+Cable Stage 1 scale: X0.30000004172325134 Y1.0 Z1.0
+Cable Stage 1 groups: None
+Cable Stage 1 mesh: Plane.040
+Cable Stage 1 materials: Material.003, 
+Cable Stage 1 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.50, Offset: -1.00 
+        Even thickness: False, High Quality Normals: False
+Name: Cable Stage 2
+Cable Stage 2 Type: MESH
+Cable Stage 2 transform: X1.350062370300293 Y-54.606101989746094 Z21.871543884277344
+Cable Stage 2 rotation: X1.5707963705062866 Y-0.0 Z0.0
+Cable Stage 2 scale: X0.30000004172325134 Y1.0 Z1.0
+Cable Stage 2 groups: None
+Cable Stage 2 mesh: Plane.042
+Cable Stage 2 materials: Material.003, 
+Cable Stage 2 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.50, Offset: -1.00 
+        Even thickness: False, High Quality Normals: False
+Name: Cable stage 3
+Cable stage 3 Type: MESH
+Cable stage 3 transform: X16.35006332397461 Y-54.606101989746094 Z21.871543884277344
+Cable stage 3 rotation: X1.5707963705062866 Y-0.0 Z0.0
+Cable stage 3 scale: X1.0 Y1.0 Z1.0
+Cable stage 3 groups: None
+Cable stage 3 mesh: Plane.049
+Cable stage 3 materials: Material.003, PQ12 housing plastic, 
+Cable stage 3 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.50, Offset: -1.00 
+        Even thickness: False, High Quality Normals: False
+Name: Cable stage 3.001
+Cable stage 3.001 Type: MESH
+Cable stage 3.001 transform: X16.35006332397461 Y-54.606101989746094 Z21.871543884277344
+Cable stage 3.001 rotation: X1.5707963705062866 Y-0.0 Z0.0
+Cable stage 3.001 scale: X1.0 Y1.0 Z1.0
+Cable stage 3.001 groups: None
+Cable stage 3.001 mesh: Plane.056
+Cable stage 3.001 materials: Material.003, PQ12 housing plastic, 
+Cable stage 3.001 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.50, Offset: -1.00 
+        Even thickness: False, High Quality Normals: False
 Name: Cheetah Cable Tidy 
 Cheetah Cable Tidy  Type: MESH
 Cheetah Cable Tidy  transform: X24.10006332397461 Y-39.24954605102539 Z14.019598960876465
@@ -1681,15 +1833,85 @@ Cheetah Cable Tidy  modifiers:
   #2 Name: Boolean.BOOLEAN UNION Cable Tidy, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN UNION Cable Tidy
 
+Name: Cheetah Cable Tidy .001
+Cheetah Cable Tidy .001 Type: MESH
+Cheetah Cable Tidy .001 transform: X24.10006332397461 Y-43.955570220947266 Z22.057857513427734
+Cheetah Cable Tidy .001 rotation: X2.95532488822937 Y-0.0 Z0.0
+Cheetah Cable Tidy .001 scale: X1.0 Y1.0 Z1.0
+Cheetah Cable Tidy .001 groups: None
+Cheetah Cable Tidy .001 mesh: Plane.035
+Cheetah Cable Tidy .001 materials: NF Black.001, 
+Cheetah Cable Tidy .001 modifiers: None
+
 Name: Conical spring
 Conical spring Type: MESH
-Conical spring transform: X-13.663448333740234 Y-57.49905014038086 Z-3.000001907348633
+Conical spring transform: X-13.663448333740234 Y-57.499053955078125 Z-3.000001907348633
 Conical spring rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 Conical spring scale: X0.0009999868925660849 Y0.0009999870089814067 Z0.000999986776150763
 Conical spring groups: Actuator Block, Thumb, 
 Conical spring mesh: Conical spring
 Conical spring materials: Steel, 
 Conical spring modifiers: None
+
+Name: Conical spring Compressed.001
+Conical spring Compressed.001 Type: MESH
+Conical spring Compressed.001 transform: X31.336551666259766 Y-58.14609146118164 Z-3.000001907348633
+Conical spring Compressed.001 rotation: X3.725290298461914e-09 Y-7.603313446044922 Z0.0
+Conical spring Compressed.001 scale: X0.0009999868925660849 Y0.0009999870089814067 Z0.000999986776150763
+Conical spring Compressed.001 groups: Actuator Block, Thumb, 
+Conical spring Compressed.001 mesh: Conical spring.006
+Conical spring Compressed.001 materials: Steel, 
+Conical spring Compressed.001 modifiers: None
+
+Name: Conical spring Compressed
+Conical spring Compressed Type: MESH
+Conical spring Compressed transform: X1.3365516662597656 Y-57.499053955078125 Z-3.000001907348633
+Conical spring Compressed rotation: X5.124765056763181e-09 Y4.057063579559326 Z-6.093906268489491e-09
+Conical spring Compressed scale: X0.0009999868925660849 Y0.0009999870089814067 Z0.000999986776150763
+Conical spring Compressed groups: Actuator Block, Thumb, 
+Conical spring Compressed mesh: Conical spring.004
+Conical spring Compressed materials: Steel, 
+Conical spring Compressed modifiers: None
+
+Name: Conical spring Compressed.002
+Conical spring Compressed.002 Type: MESH
+Conical spring Compressed.002 transform: X-13.663448333740234 Y-58.14609146118164 Z-3.000001907348633
+Conical spring Compressed.002 rotation: X3.725290742551124e-09 Y-1.7552491426467896 Z-0.0
+Conical spring Compressed.002 scale: X0.0009999868925660849 Y0.0009999870089814067 Z0.000999986776150763
+Conical spring Compressed.002 groups: Actuator Block, Thumb, 
+Conical spring Compressed.002 mesh: Conical spring.002
+Conical spring Compressed.002 materials: Steel, 
+Conical spring Compressed.002 modifiers: None
+
+Name: Conical spring Compressed.003
+Conical spring Compressed.003 Type: MESH
+Conical spring Compressed.003 transform: X31.336551666259766 Y-58.14609146118164 Z-3.000001907348633
+Conical spring Compressed.003 rotation: X-3.003646042998298e-07 Y-7.603313446044922 Z4.205105028631806e-07
+Conical spring Compressed.003 scale: X0.0009999868925660849 Y0.0009999870089814067 Z0.000999986776150763
+Conical spring Compressed.003 groups: Actuator Block, Thumb, 
+Conical spring Compressed.003 mesh: Conical spring.016
+Conical spring Compressed.003 materials: Steel, 
+Conical spring Compressed.003 modifiers: None
+
+Name: Conical spring Compressed.004
+Conical spring Compressed.004 Type: MESH
+Conical spring Compressed.004 transform: X1.3365516662597656 Y-57.4983024597168 Z-3.008580207824707
+Conical spring Compressed.004 rotation: X-0.0 Y4.057064056396484 Z-1.2225756051975623e-07
+Conical spring Compressed.004 scale: X0.0009999868925660849 Y0.0009999870089814067 Z0.000999986776150763
+Conical spring Compressed.004 groups: Actuator Block, Thumb, 
+Conical spring Compressed.004 mesh: Conical spring.017
+Conical spring Compressed.004 materials: Steel, 
+Conical spring Compressed.004 modifiers: None
+
+Name: Conical spring Compressed.005
+Conical spring Compressed.005 Type: MESH
+Conical spring Compressed.005 transform: X-13.663448333740234 Y-58.14609146118164 Z-3.000001907348633
+Conical spring Compressed.005 rotation: X-8.124568751100014e-08 Y-1.7552491426467896 Z8.124568040557278e-08
+Conical spring Compressed.005 scale: X0.0009999868925660849 Y0.0009999870089814067 Z0.000999986776150763
+Conical spring Compressed.005 groups: Actuator Block, Thumb, 
+Conical spring Compressed.005 mesh: Conical spring.018
+Conical spring Compressed.005 materials: Steel, 
+Conical spring Compressed.005 modifiers: None
 
 Name: Connector cover.001
 Connector cover.001 Type: MESH
@@ -1731,6 +1953,82 @@ Cube.004 modifiers:
   #5 Name: Boolean.004, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Palm and Back Cover Divide Clearance
 
+Name: Cylinder
+Cylinder Type: MESH
+Cylinder transform: X-22.05118179321289 Y34.06440734863281 Z3.4195899963378906
+Cylinder rotation: X0.0 Y0.0 Z0.0
+Cylinder scale: X1.0 Y1.0 Z1.0
+Cylinder groups: None
+Cylinder mesh: Cylinder.076
+Cylinder materials: Steel, 
+Cylinder modifiers: None
+
+Name: Cylinder.000
+Cylinder.000 Type: MESH
+Cylinder.000 transform: X4.522032737731934 Y-79.74132537841797 Z-13.976898193359375
+Cylinder.000 rotation: X1.7561436891555786 Y1.570796251296997 Z0.0
+Cylinder.000 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
+Cylinder.000 groups: None
+Cylinder.000 mesh: Cylinder.035
+Cylinder.000 materials: Material.005, 
+Cylinder.000 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Cylinder.001
+Cylinder.001 Type: MESH
+Cylinder.001 transform: X14.950235366821289 Y-85.08428192138672 Z-8.358660697937012
+Cylinder.001 rotation: X1.7561436891555786 Y1.570796251296997 Z0.0
+Cylinder.001 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
+Cylinder.001 groups: None
+Cylinder.001 mesh: Cylinder.035
+Cylinder.001 materials: Material.005, 
+Cylinder.001 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Cylinder.002
+Cylinder.002 Type: MESH
+Cylinder.002 transform: X16.59545135498047 Y-85.5470962524414 Z-2.800001621246338
+Cylinder.002 rotation: X-0.0 Y1.570796251296997 Z0.0
+Cylinder.002 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
+Cylinder.002 groups: None
+Cylinder.002 mesh: Cylinder.035
+Cylinder.002 materials: Material.005, 
+Cylinder.002 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Cylinder.003
+Cylinder.003 Type: MESH
+Cylinder.003 transform: X-13.649959564208984 Y-18.00390625 Z-3.000002384185791
+Cylinder.003 rotation: X-6.5801537552090394e-09 Y1.570796251296997 Z0.0
+Cylinder.003 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
+Cylinder.003 groups: None
+Cylinder.003 mesh: Cylinder.068
+Cylinder.003 materials: Material.005, 
+Cylinder.003 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Cylinder.004
+Cylinder.004 Type: MESH
+Cylinder.004 transform: X-13.649959564208984 Y-61.45756530761719 Z-3.0000033378601074
+Cylinder.004 rotation: X-0.0 Y1.570796251296997 Z0.0
+Cylinder.004 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
+Cylinder.004 groups: None
+Cylinder.004 mesh: Cylinder.036
+Cylinder.004 materials: Material.005, 
+Cylinder.004 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Cylinder.005
+Cylinder.005 Type: MESH
+Cylinder.005 transform: X1.3500404357910156 Y-61.45756530761719 Z-3.0000033378601074
+Cylinder.005 rotation: X-0.0 Y1.570796251296997 Z0.0
+Cylinder.005 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
+Cylinder.005 groups: None
+Cylinder.005 mesh: Cylinder.037
+Cylinder.005 materials: Material.005, 
+Cylinder.005 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
 Name: Cylinder.006
 Cylinder.006 Type: MESH
 Cylinder.006 transform: X-8.824284553527832 Y-130.03526306152344 Z12.937438011169434
@@ -1743,9 +2041,31 @@ Cylinder.006 modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 1, Type: CATMULL_CLARK
 
+Name: Cylinder.007
+Cylinder.007 Type: MESH
+Cylinder.007 transform: X31.850040435791016 Y-61.45756530761719 Z-3.0000033378601074
+Cylinder.007 rotation: X-0.0 Y1.570796251296997 Z0.0
+Cylinder.007 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
+Cylinder.007 groups: None
+Cylinder.007 mesh: Cylinder.038
+Cylinder.007 materials: Material.005, 
+Cylinder.007 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Cylinder.008
+Cylinder.008 Type: MESH
+Cylinder.008 transform: X16.600040435791016 Y-80.06063079833984 Z-3.0000033378601074
+Cylinder.008 rotation: X-0.0 Y1.570796251296997 Z0.0
+Cylinder.008 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
+Cylinder.008 groups: None
+Cylinder.008 mesh: Cylinder.039
+Cylinder.008 materials: Material.005, 
+Cylinder.008 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
 Name: Cylinder.009
 Cylinder.009 Type: MESH
-Cylinder.009 transform: X16.59545135498047 Y-80.67747497558594 Z-2.800001621246338
+Cylinder.009 transform: X16.59545135498047 Y-70.67747497558594 Z-2.800001621246338
 Cylinder.009 rotation: X-0.0 Y1.570796251296997 Z0.0
 Cylinder.009 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
 Cylinder.009 groups: None
@@ -1756,7 +2076,7 @@ Cylinder.009 modifiers:
 
 Name: Cylinder.010
 Cylinder.010 Type: MESH
-Cylinder.010 transform: X16.59545135498047 Y-85.5470962524414 Z-2.800001621246338
+Cylinder.010 transform: X16.59545135498047 Y-95.5470962524414 Z12.19999885559082
 Cylinder.010 rotation: X-0.0 Y1.570796251296997 Z0.0
 Cylinder.010 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
 Cylinder.010 groups: None
@@ -1767,7 +2087,7 @@ Cylinder.010 modifiers:
 
 Name: Cylinder.011
 Cylinder.011 Type: MESH
-Cylinder.011 transform: X14.950235366821289 Y-85.08428192138672 Z-8.358660697937012
+Cylinder.011 transform: X10.473878860473633 Y-108.95824432373047 Z-8.358660697937012
 Cylinder.011 rotation: X1.7561436891555786 Y1.570796251296997 Z0.0
 Cylinder.011 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
 Cylinder.011 groups: None
@@ -1786,6 +2106,360 @@ Cylinder.012 mesh: Cylinder.031
 Cylinder.012 materials: Material.005, 
 Cylinder.012 modifiers: 
   #1 Name: Bevel, Type: BEVEL
+
+Name: Cylinder.013
+Cylinder.013 Type: MESH
+Cylinder.013 transform: X16.350040435791016 Y-18.00389862060547 Z-3.0000033378601074
+Cylinder.013 rotation: X-0.0 Y1.570796251296997 Z0.0
+Cylinder.013 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
+Cylinder.013 groups: None
+Cylinder.013 mesh: Cylinder.040
+Cylinder.013 materials: Material.005, 
+Cylinder.013 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Cylinder.014
+Cylinder.014 Type: MESH
+Cylinder.014 transform: X31.350040435791016 Y-18.00389862060547 Z-3.0000033378601074
+Cylinder.014 rotation: X-0.0 Y1.570796251296997 Z0.0
+Cylinder.014 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
+Cylinder.014 groups: None
+Cylinder.014 mesh: Cylinder.041
+Cylinder.014 materials: Material.005, 
+Cylinder.014 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Cylinder.015
+Cylinder.015 Type: MESH
+Cylinder.015 transform: X1.3500404357910156 Y-18.00389862060547 Z-3.0000033378601074
+Cylinder.015 rotation: X-0.0 Y1.570796251296997 Z0.0
+Cylinder.015 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
+Cylinder.015 groups: None
+Cylinder.015 mesh: Cylinder.042
+Cylinder.015 materials: Material.005, 
+Cylinder.015 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Cylinder.016
+Cylinder.016 Type: MESH
+Cylinder.016 transform: X-13.649959564208984 Y-18.00389862060547 Z-3.0000033378601074
+Cylinder.016 rotation: X-0.0 Y1.570796251296997 Z0.0
+Cylinder.016 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
+Cylinder.016 groups: None
+Cylinder.016 mesh: Cylinder.043
+Cylinder.016 materials: Material.005, 
+Cylinder.016 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Cylinder.017
+Cylinder.017 Type: MESH
+Cylinder.017 transform: X16.59545135498047 Y-61.37206268310547 Z-2.989750623703003
+Cylinder.017 rotation: X-0.0 Y1.570796251296997 Z0.0
+Cylinder.017 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
+Cylinder.017 groups: None
+Cylinder.017 mesh: Cylinder.059
+Cylinder.017 materials: Material.005, 
+Cylinder.017 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Cylinder.018
+Cylinder.018 Type: MESH
+Cylinder.018 transform: X1.3500404357910156 Y-18.003154754638672 Z-3.0085816383361816
+Cylinder.018 rotation: X-6.5801537552090394e-09 Y1.570796251296997 Z0.0
+Cylinder.018 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
+Cylinder.018 groups: None
+Cylinder.018 mesh: Cylinder.069
+Cylinder.018 materials: Material.005, 
+Cylinder.018 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Cylinder.019
+Cylinder.019 Type: MESH
+Cylinder.019 transform: X31.350040435791016 Y-18.003902435302734 Z-3.0000033378601074
+Cylinder.019 rotation: X-6.5801537552090394e-09 Y1.570796251296997 Z0.0
+Cylinder.019 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
+Cylinder.019 groups: None
+Cylinder.019 mesh: Cylinder.070
+Cylinder.019 materials: Material.005, 
+Cylinder.019 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Cylinder.020
+Cylinder.020 Type: MESH
+Cylinder.020 transform: X16.350040435791016 Y-15.374221801757812 Z9.558834075927734
+Cylinder.020 rotation: X1.5707958936691284 Y1.3962633609771729 Z1.5707958936691284
+Cylinder.020 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
+Cylinder.020 groups: None
+Cylinder.020 mesh: Cylinder.071
+Cylinder.020 materials: Material.005, 
+Cylinder.020 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Cylinder.021
+Cylinder.021 Type: MESH
+Cylinder.021 transform: X16.600040435791016 Y-76.48817443847656 Z-1.2172040939331055
+Cylinder.021 rotation: X1.5707958936691284 Y1.3962633609771729 Z1.5707958936691284
+Cylinder.021 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
+Cylinder.021 groups: None
+Cylinder.021 mesh: Cylinder.072
+Cylinder.021 materials: Material.005, 
+Cylinder.021 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Cylinder.022
+Cylinder.022 Type: MESH
+Cylinder.022 transform: X31.850040435791016 Y-61.45756530761719 Z-3.0000033378601074
+Cylinder.022 rotation: X-6.5801537552090394e-09 Y1.570796251296997 Z0.0
+Cylinder.022 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
+Cylinder.022 groups: None
+Cylinder.022 mesh: Cylinder.073
+Cylinder.022 materials: Material.005, 
+Cylinder.022 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Cylinder.023
+Cylinder.023 Type: MESH
+Cylinder.023 transform: X1.3500404357910156 Y-61.45681381225586 Z-3.0085816383361816
+Cylinder.023 rotation: X-6.5801537552090394e-09 Y1.570796251296997 Z0.0
+Cylinder.023 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
+Cylinder.023 groups: None
+Cylinder.023 mesh: Cylinder.074
+Cylinder.023 materials: Material.005, 
+Cylinder.023 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Cylinder.024
+Cylinder.024 Type: MESH
+Cylinder.024 transform: X-13.649959564208984 Y-61.45756530761719 Z-3.0000033378601074
+Cylinder.024 rotation: X-6.5801537552090394e-09 Y1.570796251296997 Z0.0
+Cylinder.024 scale: X0.15000002086162567 Y0.15000002086162567 Z0.5000000596046448
+Cylinder.024 groups: None
+Cylinder.024 mesh: Cylinder.075
+Cylinder.024 materials: Material.005, 
+Cylinder.024 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Cylinder.026
+Cylinder.026 Type: MESH
+Cylinder.026 transform: X-23.79471778869629 Y53.99299240112305 Z3.4195899963378906
+Cylinder.026 rotation: X0.0 Y0.0 Z0.0
+Cylinder.026 scale: X1.0 Y1.0 Z1.0
+Cylinder.026 groups: None
+Cylinder.026 mesh: Cylinder.079
+Cylinder.026 materials: Steel, 
+Cylinder.026 modifiers: None
+
+Name: Cylinder.027
+Cylinder.027 Type: MESH
+Cylinder.027 transform: X0.0 Y35.008384704589844 Z3.419586181640625
+Cylinder.027 rotation: X0.0 Y0.0 Z0.0
+Cylinder.027 scale: X1.0 Y1.0 Z1.0
+Cylinder.027 groups: None
+Cylinder.027 mesh: Cylinder.080
+Cylinder.027 materials: Steel, 
+Cylinder.027 modifiers: None
+
+Name: Cylinder.028
+Cylinder.028 Type: MESH
+Cylinder.028 transform: X0.0 Y55.01011657714844 Z3.419588088989258
+Cylinder.028 rotation: X0.0 Y0.0 Z0.0
+Cylinder.028 scale: X1.0 Y1.0 Z1.0
+Cylinder.028 groups: None
+Cylinder.028 mesh: Cylinder.081
+Cylinder.028 materials: Steel, 
+Cylinder.028 modifiers: None
+
+Name: Cylinder.029
+Cylinder.029 Type: MESH
+Cylinder.029 transform: X21.69384002685547 Y29.94024658203125 Z3.401885986328125
+Cylinder.029 rotation: X0.0 Y0.0 Z0.0
+Cylinder.029 scale: X1.0 Y1.0 Z1.0
+Cylinder.029 groups: None
+Cylinder.029 mesh: Cylinder.082
+Cylinder.029 materials: Steel, 
+Cylinder.029 modifiers: None
+
+Name: Cylinder.030
+Cylinder.030 Type: MESH
+Cylinder.030 transform: X22.931602478027344 Y44.08793640136719 Z3.402446746826172
+Cylinder.030 rotation: X0.0 Y0.0 Z0.0
+Cylinder.030 scale: X1.0 Y1.0 Z1.0
+Cylinder.030 groups: None
+Cylinder.030 mesh: Cylinder.083
+Cylinder.030 materials: Steel, 
+Cylinder.030 modifiers: None
+
+Name: Cylinder.031
+Cylinder.031 Type: MESH
+Cylinder.031 transform: X42.026641845703125 Y20.21776008605957 Z3.401885986328125
+Cylinder.031 rotation: X0.0 Y0.0 Z0.0
+Cylinder.031 scale: X1.0 Y1.0 Z1.0
+Cylinder.031 groups: None
+Cylinder.031 mesh: Cylinder.084
+Cylinder.031 materials: Steel, 
+Cylinder.031 modifiers: None
+
+Name: Cylinder.032
+Cylinder.032 Type: MESH
+Cylinder.032 transform: X44.49274826049805 Y34.2037353515625 Z3.402446746826172
+Cylinder.032 rotation: X0.0 Y0.0 Z0.0
+Cylinder.032 scale: X1.0 Y1.0 Z1.0
+Cylinder.032 groups: None
+Cylinder.032 mesh: Cylinder.085
+Cylinder.032 materials: Steel, 
+Cylinder.032 modifiers: None
+
+Name: Cylinder.033
+Cylinder.033 Type: MESH
+Cylinder.033 transform: X-19.611085891723633 Y6.173984527587891 Z2.295238494873047
+Cylinder.033 rotation: X0.0 Y0.0 Z0.0
+Cylinder.033 scale: X1.0 Y1.0 Z1.0
+Cylinder.033 groups: None
+Cylinder.033 mesh: Cylinder.086
+Cylinder.033 materials: Steel, 
+Cylinder.033 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Cylinder.034
+Cylinder.034 Type: MESH
+Cylinder.034 transform: X0.0 Y7.011425018310547 Z2.295238494873047
+Cylinder.034 rotation: X0.0 Y0.0 Z0.0
+Cylinder.034 scale: X1.0 Y1.0 Z1.0
+Cylinder.034 groups: None
+Cylinder.034 mesh: Cylinder.087
+Cylinder.034 materials: Steel, 
+Cylinder.034 modifiers: None
+
+Name: Cylinder.035
+Cylinder.035 Type: MESH
+Cylinder.035 transform: X19.611083984375 Y6.134223937988281 Z2.295238494873047
+Cylinder.035 rotation: X0.0 Y0.0 Z0.0
+Cylinder.035 scale: X1.0 Y1.0 Z1.0
+Cylinder.035 groups: None
+Cylinder.035 mesh: Cylinder.088
+Cylinder.035 materials: Steel, 
+Cylinder.035 modifiers: None
+
+Name: Cylinder.036
+Cylinder.036 Type: MESH
+Cylinder.036 transform: X39.0925178527832 Y3.577505111694336 Z2.295238494873047
+Cylinder.036 rotation: X0.0 Y0.0 Z0.0
+Cylinder.036 scale: X1.0 Y1.0 Z1.0
+Cylinder.036 groups: None
+Cylinder.036 mesh: Cylinder.089
+Cylinder.036 materials: Steel, 
+Cylinder.036 modifiers: None
+
+Name: Cylinder.037
+Cylinder.037 Type: MESH
+Cylinder.037 transform: X-22.922950744628906 Y44.02870178222656 Z5.163876056671143
+Cylinder.037 rotation: X1.5707963705062866 Y0.0872664600610733 Z0.0872664600610733
+Cylinder.037 scale: X1.0 Y1.0 Z1.0
+Cylinder.037 groups: None
+Cylinder.037 mesh: Cylinder.090
+Cylinder.037 materials: None
+Cylinder.037 modifiers: None
+
+Name: Cylinder.038
+Cylinder.038 Type: MESH
+Cylinder.038 transform: X-22.922950744628906 Y44.02870178222656 Z5.163876056671143
+Cylinder.038 rotation: X1.5707963705062866 Y0.0872664600610733 Z0.0872664600610733
+Cylinder.038 scale: X1.0 Y1.0 Z1.0
+Cylinder.038 groups: None
+Cylinder.038 mesh: Cylinder.091
+Cylinder.038 materials: Steel, 
+Cylinder.038 modifiers: None
+
+Name: Cylinder.039
+Cylinder.039 Type: MESH
+Cylinder.039 transform: X0.0 Y45.00925064086914 Z5.163879871368408
+Cylinder.039 rotation: X1.5707963705062866 Y-7.450581485102248e-09 Z-3.814995874762417e-09
+Cylinder.039 scale: X1.0 Y1.0 Z1.0
+Cylinder.039 groups: None
+Cylinder.039 mesh: Cylinder.092
+Cylinder.039 materials: Steel, 
+Cylinder.039 modifiers: None
+
+Name: Cylinder.040
+Cylinder.040 Type: MESH
+Cylinder.040 transform: X22.312721252441406 Y37.01409149169922 Z5.16387939453125
+Cylinder.040 rotation: X1.5707963705062866 Y-7.450580596923828e-09 Z-0.0872664526104927
+Cylinder.040 scale: X1.0 Y1.0 Z1.0
+Cylinder.040 groups: None
+Cylinder.040 mesh: Cylinder.093
+Cylinder.040 materials: Steel, 
+Cylinder.040 modifiers: None
+
+Name: Cylinder.041
+Cylinder.041 Type: MESH
+Cylinder.041 transform: X43.25969696044922 Y27.21074676513672 Z5.16387939453125
+Cylinder.041 rotation: X1.5707963705062866 Y4.470347647611561e-08 Z-0.174532949924469
+Cylinder.041 scale: X1.0 Y1.0 Z1.0
+Cylinder.041 groups: None
+Cylinder.041 mesh: Cylinder.094
+Cylinder.041 materials: Steel, 
+Cylinder.041 modifiers: None
+
+Name: Cylinder.042
+Cylinder.042 Type: MESH
+Cylinder.042 transform: X0.0382118821144104 Y42.05498123168945 Z5.16387939453125
+Cylinder.042 rotation: X1.5707963705062866 Y-7.450580596923828e-09 Z-0.003466698806732893
+Cylinder.042 scale: X1.0 Y1.0 Z1.0
+Cylinder.042 groups: None
+Cylinder.042 mesh: Cylinder.104
+Cylinder.042 materials: Steel, 
+Cylinder.042 modifiers: None
+
+Name: Cylinder.043
+Cylinder.043 Type: MESH
+Cylinder.043 transform: X-22.643409729003906 Y40.935054779052734 Z5.16387939453125
+Cylinder.043 rotation: X1.5707963705062866 Y-7.450580596923828e-09 Z0.08828983455896378
+Cylinder.043 scale: X1.0 Y1.0 Z1.0
+Cylinder.043 groups: None
+Cylinder.043 mesh: Cylinder.105
+Cylinder.043 materials: Steel, 
+Cylinder.043 modifiers: None
+
+Name: Cylinder.046
+Cylinder.046 Type: MESH
+Cylinder.046 transform: X37.868526458740234 Y-3.363924026489258 Z4.265775203704834
+Cylinder.046 rotation: X1.5707963705062866 Y4.470347647611561e-08 Z-0.174532949924469
+Cylinder.046 scale: X1.0 Y1.0 Z1.0
+Cylinder.046 groups: None
+Cylinder.046 mesh: Cylinder.100
+Cylinder.046 materials: Steel, 
+Cylinder.046 modifiers: None
+
+Name: Cylinder.047
+Cylinder.047 Type: MESH
+Cylinder.047 transform: X19.002742767333984 Y-0.8188514709472656 Z4.265775203704834
+Cylinder.047 rotation: X1.5707963705062866 Y-1.423571605358053e-23 Z-0.0872664526104927
+Cylinder.047 scale: X1.0 Y1.0 Z1.0
+Cylinder.047 groups: None
+Cylinder.047 mesh: Cylinder.101
+Cylinder.047 materials: Steel, 
+Cylinder.047 modifiers: None
+
+Name: Cylinder.048
+Cylinder.048 Type: MESH
+Cylinder.048 transform: X0.0 Y0.0 Z4.265775203704834
+Cylinder.048 rotation: X1.5707963705062866 Y-1.423571920902415e-23 Z3.256752743733323e-16
+Cylinder.048 scale: X1.0 Y1.0 Z1.0
+Cylinder.048 groups: None
+Cylinder.048 mesh: Cylinder.102
+Cylinder.048 materials: Steel, 
+Cylinder.048 modifiers: None
+
+Name: Cylinder.049
+Cylinder.049 Type: MESH
+Cylinder.049 transform: X-18.965023040771484 Y-0.8649101257324219 Z4.265775203704834
+Cylinder.049 rotation: X1.5707963705062866 Y0.1745329201221466 Z0.0872664600610733
+Cylinder.049 scale: X1.0 Y1.0 Z1.0
+Cylinder.049 groups: None
+Cylinder.049 mesh: Cylinder.103
+Cylinder.049 materials: Steel, 
+Cylinder.049 modifiers: None
 
 Name: DC jack cover.001
 DC jack cover.001 Type: MESH
@@ -1937,6 +2611,18 @@ Gala Cover Tidy.001 modifiers:
   #3 Name: Boolean.BOOLEAN PCB Bracket Tidy , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PCB Bracket Tidy 
 
+Name: Gala Cover.001
+Gala Cover.001 Type: MESH
+Gala Cover.001 transform: X8.992067337036133 Y-73.18128967285156 Z-2.799997329711914
+Gala Cover.001 rotation: X0.0 Y2.980232594040899e-08 Z0.0
+Gala Cover.001 scale: X1.0 Y1.0 Z1.0
+Gala Cover.001 groups: None
+Gala Cover.001 mesh: Gala Cover.006
+Gala Cover.001 materials: Boolean difference, 
+Gala Cover.001 modifiers: 
+  #1 Name: Boolean.BOOLEAN Thumb pivot dowel for GALA cover, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: None
+
 Name: HANDle
 HANDle Type: MESH
 HANDle transform: X9.066848754882812 Y-95.41497802734375 Z9.511549949645996
@@ -2011,105 +2697,225 @@ Headphone / Micro USB.000 modifiers:
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
-Name: Heat Fit Insert
-Heat Fit Insert Type: MESH
-Heat Fit Insert transform: X-5.965660095214844 Y-14.520187377929688 Z29.710018157958984
-Heat Fit Insert rotation: X0.0 Y0.0 Z0.0
-Heat Fit Insert scale: X1.0 Y1.0 Z1.0
-Heat Fit Insert groups: None
-Heat Fit Insert mesh: Heat Fit Insert
-Heat Fit Insert materials: Material.001, 
-Heat Fit Insert modifiers: None
+Name: Heat Fit Insert Exploded 
+Heat Fit Insert Exploded  Type: MESH
+Heat Fit Insert Exploded  transform: X-5.965660095214844 Y-14.520187377929688 Z29.710018157958984
+Heat Fit Insert Exploded  rotation: X0.0 Y0.0 Z0.0
+Heat Fit Insert Exploded  scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert Exploded  groups: None
+Heat Fit Insert Exploded  mesh: Heat Fit Insert
+Heat Fit Insert Exploded  materials: Material.001, 
+Heat Fit Insert Exploded  modifiers: None
 
-Name: Heat Fit Insert.001
-Heat Fit Insert.001 Type: MESH
-Heat Fit Insert.001 transform: X24.3128719329834 Y-14.520187377929688 Z29.710018157958984
-Heat Fit Insert.001 rotation: X0.0 Y0.0 Z0.0
-Heat Fit Insert.001 scale: X1.0 Y1.0 Z1.0
-Heat Fit Insert.001 groups: None
-Heat Fit Insert.001 mesh: Heat Fit Insert.001
-Heat Fit Insert.001 materials: Material.001, 
-Heat Fit Insert.001 modifiers: None
+Name: Heat Fit Insert Exploded .001
+Heat Fit Insert Exploded .001 Type: MESH
+Heat Fit Insert Exploded .001 transform: X-5.965660095214844 Y-14.520187377929688 Z2.150541305541992
+Heat Fit Insert Exploded .001 rotation: X0.0 Y0.0 Z0.0
+Heat Fit Insert Exploded .001 scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert Exploded .001 groups: None
+Heat Fit Insert Exploded .001 mesh: Heat Fit Insert.019
+Heat Fit Insert Exploded .001 materials: Material.001, 
+Heat Fit Insert Exploded .001 modifiers: None
 
-Name: Heat Fit Insert.002
-Heat Fit Insert.002 Type: MESH
-Heat Fit Insert.002 transform: X43.110328674316406 Y-25.325912475585938 Z29.710018157958984
-Heat Fit Insert.002 rotation: X0.0 Y0.0 Z0.0
-Heat Fit Insert.002 scale: X1.0 Y1.0 Z1.0
-Heat Fit Insert.002 groups: None
-Heat Fit Insert.002 mesh: Heat Fit Insert.002
-Heat Fit Insert.002 materials: Material.001, 
-Heat Fit Insert.002 modifiers: None
+Name: Heat Fit Insert Exploded.001
+Heat Fit Insert Exploded.001 Type: MESH
+Heat Fit Insert Exploded.001 transform: X24.3128719329834 Y-14.520187377929688 Z29.710018157958984
+Heat Fit Insert Exploded.001 rotation: X0.0 Y0.0 Z0.0
+Heat Fit Insert Exploded.001 scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert Exploded.001 groups: None
+Heat Fit Insert Exploded.001 mesh: Heat Fit Insert.001
+Heat Fit Insert Exploded.001 materials: Material.001, 
+Heat Fit Insert Exploded.001 modifiers: None
 
-Name: Heat Fit Insert.003
-Heat Fit Insert.003 Type: MESH
-Heat Fit Insert.003 transform: X-25.10077667236328 Y-25.325912475585938 Z29.710018157958984
-Heat Fit Insert.003 rotation: X0.0 Y0.0 Z0.0
-Heat Fit Insert.003 scale: X1.0 Y1.0 Z1.0
-Heat Fit Insert.003 groups: None
-Heat Fit Insert.003 mesh: Heat Fit Insert.003
-Heat Fit Insert.003 materials: Material.001, 
-Heat Fit Insert.003 modifiers: None
+Name: Heat Fit Insert Exploded.002
+Heat Fit Insert Exploded.002 Type: MESH
+Heat Fit Insert Exploded.002 transform: X43.110328674316406 Y-25.325912475585938 Z29.710018157958984
+Heat Fit Insert Exploded.002 rotation: X0.0 Y0.0 Z0.0
+Heat Fit Insert Exploded.002 scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert Exploded.002 groups: None
+Heat Fit Insert Exploded.002 mesh: Heat Fit Insert.002
+Heat Fit Insert Exploded.002 materials: Material.001, 
+Heat Fit Insert Exploded.002 modifiers: None
 
-Name: Heat Fit Insert.004
-Heat Fit Insert.004 Type: MESH
-Heat Fit Insert.004 transform: X33.96486282348633 Y-91.61903381347656 Z29.710018157958984
-Heat Fit Insert.004 rotation: X0.0 Y0.0 Z0.0
-Heat Fit Insert.004 scale: X1.0 Y1.0 Z1.0
-Heat Fit Insert.004 groups: None
-Heat Fit Insert.004 mesh: Heat Fit Insert.004
-Heat Fit Insert.004 materials: Material.001, 
-Heat Fit Insert.004 modifiers: None
+Name: Heat Fit Insert Exploded.003
+Heat Fit Insert Exploded.003 Type: MESH
+Heat Fit Insert Exploded.003 transform: X-25.10077667236328 Y-25.325912475585938 Z29.710018157958984
+Heat Fit Insert Exploded.003 rotation: X0.0 Y0.0 Z0.0
+Heat Fit Insert Exploded.003 scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert Exploded.003 groups: None
+Heat Fit Insert Exploded.003 mesh: Heat Fit Insert.003
+Heat Fit Insert Exploded.003 materials: Material.001, 
+Heat Fit Insert Exploded.003 modifiers: None
 
-Name: Heat Fit Insert.005
-Heat Fit Insert.005 Type: MESH
-Heat Fit Insert.005 transform: X3.9699573516845703 Y-117.67890167236328 Z3.4953575134277344
-Heat Fit Insert.005 rotation: X1.3528635501861572 Y-0.0 Z0.0
-Heat Fit Insert.005 scale: X1.0 Y1.0 Z1.0
-Heat Fit Insert.005 groups: None
-Heat Fit Insert.005 mesh: Heat Fit Insert.005
-Heat Fit Insert.005 materials: Material.001, 
-Heat Fit Insert.005 modifiers: None
+Name: Heat Fit Insert Exploded.004
+Heat Fit Insert Exploded.004 Type: MESH
+Heat Fit Insert Exploded.004 transform: X33.96486282348633 Y-91.61903381347656 Z29.710018157958984
+Heat Fit Insert Exploded.004 rotation: X0.0 Y0.0 Z0.0
+Heat Fit Insert Exploded.004 scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert Exploded.004 groups: None
+Heat Fit Insert Exploded.004 mesh: Heat Fit Insert.004
+Heat Fit Insert Exploded.004 materials: Material.001, 
+Heat Fit Insert Exploded.004 modifiers: None
 
-Name: Heat Fit Insert.006
-Heat Fit Insert.006 Type: MESH
-Heat Fit Insert.006 transform: X3.4296693801879883 Y-53.81104278564453 Z-37.440460205078125
-Heat Fit Insert.006 rotation: X3.1415929794311523 Y-0.0 Z0.0
-Heat Fit Insert.006 scale: X1.0 Y1.0 Z1.0
-Heat Fit Insert.006 groups: None
-Heat Fit Insert.006 mesh: Heat Fit Insert.006
-Heat Fit Insert.006 materials: Material.001, 
-Heat Fit Insert.006 modifiers: None
+Name: Heat Fit Insert Exploded.005
+Heat Fit Insert Exploded.005 Type: MESH
+Heat Fit Insert Exploded.005 transform: X3.9699573516845703 Y-117.67890167236328 Z3.4953575134277344
+Heat Fit Insert Exploded.005 rotation: X1.3528635501861572 Y-0.0 Z0.0
+Heat Fit Insert Exploded.005 scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert Exploded.005 groups: None
+Heat Fit Insert Exploded.005 mesh: Heat Fit Insert.005
+Heat Fit Insert Exploded.005 materials: Material.001, 
+Heat Fit Insert Exploded.005 modifiers: None
 
-Name: Heat Fit Insert.007
-Heat Fit Insert.007 Type: MESH
-Heat Fit Insert.007 transform: X-0.4786500930786133 Y-75.77579498291016 Z-37.440460205078125
-Heat Fit Insert.007 rotation: X3.1415929794311523 Y-0.0 Z0.0
-Heat Fit Insert.007 scale: X1.0 Y1.0 Z1.0
-Heat Fit Insert.007 groups: None
-Heat Fit Insert.007 mesh: Heat Fit Insert.007
-Heat Fit Insert.007 materials: Material.001, 
-Heat Fit Insert.007 modifiers: None
+Name: Heat Fit Insert Exploded.006
+Heat Fit Insert Exploded.006 Type: MESH
+Heat Fit Insert Exploded.006 transform: X3.4296693801879883 Y-53.81104278564453 Z-37.440460205078125
+Heat Fit Insert Exploded.006 rotation: X3.1415929794311523 Y-0.0 Z0.0
+Heat Fit Insert Exploded.006 scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert Exploded.006 groups: None
+Heat Fit Insert Exploded.006 mesh: Heat Fit Insert.006
+Heat Fit Insert Exploded.006 materials: Material.001, 
+Heat Fit Insert Exploded.006 modifiers: None
 
-Name: Heat Fit Insert.008
-Heat Fit Insert.008 Type: MESH
-Heat Fit Insert.008 transform: X14.19775390625 Y-115.17640686035156 Z14.795809745788574
-Heat Fit Insert.008 rotation: X1.3528635501861572 Y-0.0 Z0.0
-Heat Fit Insert.008 scale: X1.0 Y1.0 Z1.0
-Heat Fit Insert.008 groups: None
-Heat Fit Insert.008 mesh: Heat Fit Insert.008
-Heat Fit Insert.008 materials: Material.001, 
-Heat Fit Insert.008 modifiers: None
+Name: Heat Fit Insert Exploded.007
+Heat Fit Insert Exploded.007 Type: MESH
+Heat Fit Insert Exploded.007 transform: X-0.4786500930786133 Y-75.77579498291016 Z-37.440460205078125
+Heat Fit Insert Exploded.007 rotation: X3.1415929794311523 Y-0.0 Z0.0
+Heat Fit Insert Exploded.007 scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert Exploded.007 groups: None
+Heat Fit Insert Exploded.007 mesh: Heat Fit Insert.007
+Heat Fit Insert Exploded.007 materials: Material.001, 
+Heat Fit Insert Exploded.007 modifiers: None
 
-Name: Heat Fit Insert.009
-Heat Fit Insert.009 Type: MESH
-Heat Fit Insert.009 transform: X8.992074966430664 Y-84.2574462890625 Z43.669639587402344
-Heat Fit Insert.009 rotation: X0.0 Y0.0 Z0.0
-Heat Fit Insert.009 scale: X1.0 Y1.0 Z1.0
-Heat Fit Insert.009 groups: None
-Heat Fit Insert.009 mesh: Heat Fit Insert.009
-Heat Fit Insert.009 materials: Material.001, 
-Heat Fit Insert.009 modifiers: None
+Name: Heat Fit Insert Exploded
+Heat Fit Insert Exploded Type: MESH
+Heat Fit Insert Exploded transform: X8.992074966430664 Y-84.2574462890625 Z17.510921478271484
+Heat Fit Insert Exploded rotation: X0.0 Y-0.0 Z0.0
+Heat Fit Insert Exploded scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert Exploded groups: None
+Heat Fit Insert Exploded mesh: Heat Fit Insert.009
+Heat Fit Insert Exploded materials: Material.001, 
+Heat Fit Insert Exploded modifiers: None
+
+Name: Heat Fit Insert Exploded.008
+Heat Fit Insert Exploded.008 Type: MESH
+Heat Fit Insert Exploded.008 transform: X14.19775390625 Y-115.17640686035156 Z14.795809745788574
+Heat Fit Insert Exploded.008 rotation: X1.3528635501861572 Y-0.0 Z0.0
+Heat Fit Insert Exploded.008 scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert Exploded.008 groups: None
+Heat Fit Insert Exploded.008 mesh: Heat Fit Insert.008
+Heat Fit Insert Exploded.008 materials: Material.001, 
+Heat Fit Insert Exploded.008 modifiers: None
+
+Name: Heat Fit Insert Exploded.009
+Heat Fit Insert Exploded.009 Type: MESH
+Heat Fit Insert Exploded.009 transform: X8.992074966430664 Y-84.2574462890625 Z43.669639587402344
+Heat Fit Insert Exploded.009 rotation: X0.0 Y0.0 Z0.0
+Heat Fit Insert Exploded.009 scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert Exploded.009 groups: None
+Heat Fit Insert Exploded.009 mesh: Heat Fit Insert.010
+Heat Fit Insert Exploded.009 materials: Material.001, 
+Heat Fit Insert Exploded.009 modifiers: None
+
+Name: Heat Fit Insert Exploded.010
+Heat Fit Insert Exploded.010 Type: MESH
+Heat Fit Insert Exploded.010 transform: X14.19775390625 Y-93.72393035888672 Z10.045173645019531
+Heat Fit Insert Exploded.010 rotation: X1.3528635501861572 Y-0.0 Z0.0
+Heat Fit Insert Exploded.010 scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert Exploded.010 groups: None
+Heat Fit Insert Exploded.010 mesh: Heat Fit Insert.011
+Heat Fit Insert Exploded.010 materials: Material.001, 
+Heat Fit Insert Exploded.010 modifiers: None
+
+Name: Heat Fit Insert Exploded.011
+Heat Fit Insert Exploded.011 Type: MESH
+Heat Fit Insert Exploded.011 transform: X-0.4786500930786133 Y-75.77579498291016 Z-14.488014221191406
+Heat Fit Insert Exploded.011 rotation: X3.1415929794311523 Y-0.0 Z0.0
+Heat Fit Insert Exploded.011 scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert Exploded.011 groups: None
+Heat Fit Insert Exploded.011 mesh: Heat Fit Insert.012
+Heat Fit Insert Exploded.011 materials: Material.001, 
+Heat Fit Insert Exploded.011 modifiers: None
+
+Name: Heat Fit Insert Exploded.012
+Heat Fit Insert Exploded.012 Type: MESH
+Heat Fit Insert Exploded.012 transform: X3.391146183013916 Y-54.19692611694336 Z-14.488014221191406
+Heat Fit Insert Exploded.012 rotation: X3.1415929794311523 Y-0.0 Z0.0
+Heat Fit Insert Exploded.012 scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert Exploded.012 groups: None
+Heat Fit Insert Exploded.012 mesh: Heat Fit Insert.020
+Heat Fit Insert Exploded.012 materials: Material.001, 
+Heat Fit Insert Exploded.012 modifiers: None
+
+Name: Heat Fit Insert Exploded.013
+Heat Fit Insert Exploded.013 Type: MESH
+Heat Fit Insert Exploded.013 transform: X4.063329696655273 Y-96.21077728271484 Z-1.5259828567504883
+Heat Fit Insert Exploded.013 rotation: X1.3528635501861572 Y-0.0 Z0.0
+Heat Fit Insert Exploded.013 scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert Exploded.013 groups: None
+Heat Fit Insert Exploded.013 mesh: Heat Fit Insert.014
+Heat Fit Insert Exploded.013 materials: Material.001, 
+Heat Fit Insert Exploded.013 modifiers: None
+
+Name: Heat Fit Insert Exploded.014
+Heat Fit Insert Exploded.014 Type: MESH
+Heat Fit Insert Exploded.014 transform: X33.96486282348633 Y-91.61903381347656 Z-2.711771011352539
+Heat Fit Insert Exploded.014 rotation: X0.0 Y0.0 Z0.0
+Heat Fit Insert Exploded.014 scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert Exploded.014 groups: None
+Heat Fit Insert Exploded.014 mesh: Heat Fit Insert.015
+Heat Fit Insert Exploded.014 materials: Material.001, 
+Heat Fit Insert Exploded.014 modifiers: None
+
+Name: Heat Fit Insert Exploded.015
+Heat Fit Insert Exploded.015 Type: MESH
+Heat Fit Insert Exploded.015 transform: X-25.10077667236328 Y-25.325912475585938 Z2.150541305541992
+Heat Fit Insert Exploded.015 rotation: X0.0 Y0.0 Z0.0
+Heat Fit Insert Exploded.015 scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert Exploded.015 groups: None
+Heat Fit Insert Exploded.015 mesh: Heat Fit Insert.016
+Heat Fit Insert Exploded.015 materials: Material.001, 
+Heat Fit Insert Exploded.015 modifiers: None
+
+Name: Heat Fit Insert Exploded.016
+Heat Fit Insert Exploded.016 Type: MESH
+Heat Fit Insert Exploded.016 transform: X43.110328674316406 Y-25.325912475585938 Z2.150541305541992
+Heat Fit Insert Exploded.016 rotation: X0.0 Y0.0 Z0.0
+Heat Fit Insert Exploded.016 scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert Exploded.016 groups: None
+Heat Fit Insert Exploded.016 mesh: Heat Fit Insert.017
+Heat Fit Insert Exploded.016 materials: Material.001, 
+Heat Fit Insert Exploded.016 modifiers: None
+
+Name: Heat Fit Insert Exploded.017
+Heat Fit Insert Exploded.017 Type: MESH
+Heat Fit Insert Exploded.017 transform: X24.3128719329834 Y-14.520187377929688 Z2.150541305541992
+Heat Fit Insert Exploded.017 rotation: X0.0 Y0.0 Z0.0
+Heat Fit Insert Exploded.017 scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert Exploded.017 groups: None
+Heat Fit Insert Exploded.017 mesh: Heat Fit Insert.018
+Heat Fit Insert Exploded.017 materials: Material.001, 
+Heat Fit Insert Exploded.017 modifiers: None
+
+Name: Heat Fit Insert Exploded.018
+Heat Fit Insert Exploded.018 Type: MESH
+Heat Fit Insert Exploded.018 transform: X14.276599884033203 Y-93.84343719482422 Z9.831871032714844
+Heat Fit Insert Exploded.018 rotation: X1.3528635501861572 Y-0.0 Z0.0
+Heat Fit Insert Exploded.018 scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert Exploded.018 groups: None
+Heat Fit Insert Exploded.018 mesh: Heat Fit Insert.013
+Heat Fit Insert Exploded.018 materials: Material.001, 
+Heat Fit Insert Exploded.018 modifiers: None
+
+Name: Heat Fit Insert Exploded.019
+Heat Fit Insert Exploded.019 Type: MESH
+Heat Fit Insert Exploded.019 transform: X9.471229553222656 Y-120.62775421142578 Z-8.895081520080566
+Heat Fit Insert Exploded.019 rotation: X0.22525739669799805 Y-3.1078014373779297 Z0.14246447384357452
+Heat Fit Insert Exploded.019 scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert Exploded.019 groups: None
+Heat Fit Insert Exploded.019 mesh: Heat Fit Insert.021
+Heat Fit Insert Exploded.019 materials: Material.001, 
+Heat Fit Insert Exploded.019 modifiers: None
 
 Name: HOOK 1st Finger
 HOOK 1st Finger Type: EMPTY
@@ -2522,7 +3328,7 @@ LH STAND Connector Block rotation: X-0.012630564160645008 Y1.7820649147033691 Z1
 LH STAND Connector Block scale: X1.0 Y1.0 Z1.0
 LH STAND Connector Block groups: None
 LH STAND Connector Block mesh: Plane.002
-LH STAND Connector Block materials: Material, 
+LH STAND Connector Block materials: PLA White, 
 LH STAND Connector Block modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Boolean.LH BOOLEAN Wrist Connector M2 Countersinks, Type: BOOLEAN
@@ -2602,6 +3408,16 @@ Ligament Cover  modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Finger Ligament Cover Motor Clamp
   #12 Name: Boolean.BOOLEAN Fixing points back cover.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Fixing points back cover.001
+
+Name: Ligament Cover .001
+Ligament Cover .001 Type: MESH
+Ligament Cover .001 transform: X9.0 Y-48.89358139038086 Z-2.912935733795166
+Ligament Cover .001 rotation: X0.0 Y0.0 Z0.0
+Ligament Cover .001 scale: X1.0 Y1.0 Z1.0
+Ligament Cover .001 groups: None
+Ligament Cover .001 mesh: Hand/Palm Outer Surface.001
+Ligament Cover .001 materials: PLA White, 
+Ligament Cover .001 modifiers: None
 
 Name: MIRROR AXIS LH
 MIRROR AXIS LH Type: EMPTY
@@ -3018,6 +3834,66 @@ PCB Chestnut FLIPPED rotation: X3.1415932178497314 Y3.4835568267889763e-14 Z1.57
 PCB Chestnut FLIPPED scale: X1.0 Y1.0 Z1.0
 PCB Chestnut FLIPPED groups: None
 
+Name: PCB Clips
+PCB Clips Type: MESH
+PCB Clips transform: X8.999998092651367 Y-57.84048080444336 Z17.265125274658203
+PCB Clips rotation: X3.1415932178497314 Y-0.0 Z1.5707964897155762
+PCB Clips scale: X1.0 Y1.0 Z1.0
+PCB Clips groups: None
+PCB Clips mesh: PCB.001
+PCB Clips materials: PQ12 housing plastic, 
+PCB Clips modifiers: None
+
+Name: PCB Entire
+PCB Entire Type: MESH
+PCB Entire transform: X9.0 Y-58.610565185546875 Z23.114513397216797
+PCB Entire rotation: X3.1415929794311523 Y-0.2617993950843811 Z1.5707963705062866
+PCB Entire scale: X1.0 Y1.0 Z1.0
+PCB Entire groups: None
+PCB Entire mesh: PCB
+PCB Entire materials: PQ12 housing plastic, 
+PCB Entire modifiers: None
+
+Name: PCB.002
+PCB.002 Type: MESH
+PCB.002 transform: X8.999998092651367 Y-57.840476989746094 Z17.265125274658203
+PCB.002 rotation: X3.1415932178497314 Y-0.0 Z1.5707964897155762
+PCB.002 scale: X1.0 Y1.0 Z1.0
+PCB.002 groups: None
+PCB.002 mesh: PCB.002
+PCB.002 materials: PQ12 housing plastic, 
+PCB.002 modifiers: None
+
+Name: Plane
+Plane Type: MESH
+Plane transform: X-19.808422088623047 Y-75.80702209472656 Z6.706226825714111
+Plane rotation: X0.0 Y0.0 Z0.0
+Plane scale: X1.0 Y1.0 Z1.0
+Plane groups: None
+Plane mesh: Plane.011
+Plane materials: Boolean difference, 
+Plane modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Skin, Type: SKIN
+  #3 Name: Subsurf.001, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Plane.001
+Plane.001 Type: MESH
+Plane.001 transform: X-16.758277893066406 Y-75.06654357910156 Z-15.68941879272461
+Plane.001 rotation: X0.0 Y0.0 Z0.0
+Plane.001 scale: X1.0 Y1.0 Z1.0
+Plane.001 groups: None
+Plane.001 mesh: Plane.021
+Plane.001 materials: Boolean difference, 
+Plane.001 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Skin, Type: SKIN
+  #3 Name: Subsurf.001, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: Plane.009
 Plane.009 Type: MESH
 Plane.009 transform: X41.531028747558594 Y-63.26966094970703 Z12.834586143493652
@@ -3033,6 +3909,178 @@ Plane.009 modifiers:
         Operation: INTERSECT, Object: TARGET Outer Surface -3.001
   #3 Name: Boolean.Headphone / Micro USB.001, Type: BOOLEAN
         Operation: INTERSECT, Object: None
+
+Name: Power Cable
+Power Cable Type: MESH
+Power Cable transform: X-67.48389434814453 Y-332.31390380859375 Z-18.769287109375
+Power Cable rotation: X1.5740002393722534 Y0.003948728553950787 Z1.5901446342468262
+Power Cable scale: X1.0 Y1.0 Z1.0
+Power Cable groups: None
+Power Cable mesh: Cube
+Power Cable materials: Material.008, 
+Power Cable modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: Power Cable.004
+
+Name: Power Cable.001
+Power Cable.001 Type: MESH
+Power Cable.001 transform: X-94.36693572998047 Y-353.9093933105469 Z-29.598785400390625
+Power Cable.001 rotation: X1.5740002393722534 Y0.003948728553950787 Z1.5901446342468262
+Power Cable.001 scale: X0.20000001788139343 Y0.30000004172325134 Z1.0
+Power Cable.001 groups: None
+Power Cable.001 mesh: Cube.011
+Power Cable.001 materials: Material.008, 
+Power Cable.001 modifiers: None
+
+Name: Power Cable.002
+Power Cable.002 Type: MESH
+Power Cable.002 transform: X-106.4604721069336 Y-333.87188720703125 Z-18.64116096496582
+Power Cable.002 rotation: X5.394122123718262 Y-1.575880765914917 Z-2.2331862449645996
+Power Cable.002 scale: X0.20000001788139343 Y0.30000004172325134 Z1.0
+Power Cable.002 groups: None
+Power Cable.002 mesh: Cube.010
+Power Cable.002 materials: Material.008, 
+Power Cable.002 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Power Cable.003
+Power Cable.003 Type: MESH
+Power Cable.003 transform: X-102.1043472290039 Y-354.05902099609375 Z-29.573989868164062
+Power Cable.003 rotation: X1.5740002393722534 Y0.003948728553950787 Z1.5901446342468262
+Power Cable.003 scale: X0.20000001788139343 Y0.30000004172325134 Z1.0
+Power Cable.003 groups: None
+Power Cable.003 mesh: Cube.009
+Power Cable.003 materials: Material.007, 
+Power Cable.003 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Power Cable.004
+Power Cable.004 Type: MESH
+Power Cable.004 transform: X-84.08521270751953 Y-353.0767517089844 Z-18.634113311767578
+Power Cable.004 rotation: X1.5740002393722534 Y0.003948728553950787 Z1.5901446342468262
+Power Cable.004 scale: X1.0 Y1.0 Z1.0
+Power Cable.004 groups: None
+Power Cable.004 mesh: Cube.008
+Power Cable.004 materials: Material.006, 
+Power Cable.004 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Power Cable.005
+Power Cable.005 Type: MESH
+Power Cable.005 transform: X-11.682165145874023 Y-107.57418823242188 Z9.771011352539062
+Power Cable.005 rotation: X-6.283156394958496 Y1.567905306816101 Z-1.5707664489746094
+Power Cable.005 scale: X1.0 Y1.0 Z1.0
+Power Cable.005 groups: None
+Power Cable.005 mesh: Cylinder.047
+Power Cable.005 materials: Material.008, 
+Power Cable.005 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: Power Cable.006
+Power Cable.006 Type: MESH
+Power Cable.006 transform: X-67.25201416015625 Y-290.04803466796875 Z-19.985748291015625
+Power Cable.006 rotation: X0.45327311754226685 Y1.563378930091858 Z2.0546517372131348
+Power Cable.006 scale: X1.0 Y1.0 Z1.0
+Power Cable.006 groups: None
+Power Cable.006 mesh: Cylinder.046
+Power Cable.006 materials: Material.008, 
+Power Cable.006 modifiers: None
+
+Name: Power Cable.007
+Power Cable.007 Type: MESH
+Power Cable.007 transform: X64.73220825195312 Y-60.84522247314453 Z14.733335494995117
+Power Cable.007 rotation: X-0.0 Y1.570796251296997 Z0.0
+Power Cable.007 scale: X0.15000002086162567 Y0.15000002086162567 Z1.0
+Power Cable.007 groups: None
+Power Cable.007 mesh: Cylinder.045
+Power Cable.007 materials: None
+Power Cable.007 modifiers: None
+
+Name: Power Cable.008
+Power Cable.008 Type: MESH
+Power Cable.008 transform: X-67.56791687011719 Y-319.16485595703125 Z-10.56789779663086
+Power Cable.008 rotation: X0.20093028247356415 Y-7.14552896852183e-08 Z3.1415934562683105
+Power Cable.008 scale: X1.0 Y1.0 Z1.0
+Power Cable.008 groups: None
+Power Cable.008 mesh: Plane.059
+Power Cable.008 materials: Material.008, 
+Power Cable.008 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Skin, Type: SKIN
+  #3 Name: Subsurf.001, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Power Cable.009
+Power Cable.009 Type: MESH
+Power Cable.009 transform: X-11.682165145874023 Y-67.94833374023438 Z9.65645980834961
+Power Cable.009 rotation: X-6.283156394958496 Y1.567905306816101 Z-1.5707664489746094
+Power Cable.009 scale: X0.27500003576278687 Y0.27500003576278687 Z0.5500000715255737
+Power Cable.009 groups: None
+Power Cable.009 mesh: Cylinder.044
+Power Cable.009 materials: Material.004, 
+Power Cable.009 modifiers: None
+
+Name: PQ12 compressed
+PQ12 compressed Type: MESH
+PQ12 compressed transform: X9.0 Y-42.441871643066406 Z2.390026092529297
+PQ12 compressed rotation: X-3.725290298461914e-09 Y-8.437548238693078e-16 Z3.141592502593994
+PQ12 compressed scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+PQ12 compressed groups: Actuator Block, 
+PQ12 compressed mesh: PQ12 extended.005
+PQ12 compressed materials: PQ12 housing plastic, 
+PQ12 compressed modifiers: None
+
+Name: PQ12 compressed.001
+PQ12 compressed.001 Type: MESH
+PQ12 compressed.001 transform: X9.0 Y-45.66673278808594 Z15.610179901123047
+PQ12 compressed.001 rotation: X-0.1745329201221466 Y-2.622014605435652e-08 Z3.141592502593994
+PQ12 compressed.001 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+PQ12 compressed.001 groups: Actuator Block, 
+PQ12 compressed.001 mesh: PQ12 extended.007
+PQ12 compressed.001 materials: PQ12 housing plastic, 
+PQ12 compressed.001 modifiers: None
+
+Name: PQ12 compressed.002
+PQ12 compressed.002 Type: MESH
+PQ12 compressed.002 transform: X9.0 Y-40.37689971923828 Z10.623367309570312
+PQ12 compressed.002 rotation: X-0.1745329201221466 Y-2.5827855409943368e-08 Z3.141592502593994
+PQ12 compressed.002 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+PQ12 compressed.002 groups: Actuator Block, 
+PQ12 compressed.002 mesh: PQ12 extended.008
+PQ12 compressed.002 materials: PQ12 housing plastic, 
+PQ12 compressed.002 modifiers: None
+
+Name: PQ12 compressed.003
+PQ12 compressed.003 Type: MESH
+PQ12 compressed.003 transform: X-6.0 Y-42.441123962402344 Z2.381448745727539
+PQ12 compressed.003 rotation: X0.0 Y7.846736593819514e-10 Z3.141592502593994
+PQ12 compressed.003 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+PQ12 compressed.003 groups: Actuator Block, 
+PQ12 compressed.003 mesh: PQ12 extended.013
+PQ12 compressed.003 materials: PQ12 housing plastic, 
+PQ12 compressed.003 modifiers: None
+
+Name: PQ12 compressed.004
+PQ12 compressed.004 Type: MESH
+PQ12 compressed.004 transform: X-21.0 Y-42.441871643066406 Z2.390026092529297
+PQ12 compressed.004 rotation: X0.0 Y7.846736593819514e-10 Z3.141592502593994
+PQ12 compressed.004 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+PQ12 compressed.004 groups: Actuator Block, 
+PQ12 compressed.004 mesh: PQ12 extended.014
+PQ12 compressed.004 materials: PQ12 housing plastic, 
+PQ12 compressed.004 modifiers: None
+
+Name: PQ12 compressed.005
+PQ12 compressed.005 Type: MESH
+PQ12 compressed.005 transform: X24.0 Y-42.441871643066406 Z2.390026092529297
+PQ12 compressed.005 rotation: X0.0 Y3.9834269216498797e-10 Z3.141592502593994
+PQ12 compressed.005 scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
+PQ12 compressed.005 groups: Actuator Block, 
+PQ12 compressed.005 mesh: PQ12 extended.016
+PQ12 compressed.005 materials: PQ12 housing plastic, 
+PQ12 compressed.005 modifiers: None
 
 Name: PQ12 Dowel Motor Jig
 PQ12 Dowel Motor Jig Type: MESH
@@ -3079,7 +4127,7 @@ PQ12 End Cap rotation: X0.0 Y0.0 Z0.0
 PQ12 End Cap scale: X1.0 Y1.0 Z1.0
 PQ12 End Cap groups: None
 PQ12 End Cap mesh: Cube.001
-PQ12 End Cap materials: None
+PQ12 End Cap materials: PLA White, 
 PQ12 End Cap modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: BOOLEAN PQ12 Dowel Hole, Type: BOOLEAN
@@ -3088,6 +4136,66 @@ PQ12 End Cap modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 Motor
   #4 Name: Boolean.BOOLEAN PQ12 End Cap, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 End Cap
+
+Name: PQ12 End Cap.001
+PQ12 End Cap.001 Type: MESH
+PQ12 End Cap.001 transform: X-13.649959564208984 Y-61.408164978027344 Z-3.0000030994415283
+PQ12 End Cap.001 rotation: X0.0 Y0.0 Z0.0
+PQ12 End Cap.001 scale: X1.0 Y1.0 Z1.0
+PQ12 End Cap.001 groups: None
+PQ12 End Cap.001 mesh: Cube.000
+PQ12 End Cap.001 materials: PLA White, 
+PQ12 End Cap.001 modifiers: None
+
+Name: PQ12 End Cap.002
+PQ12 End Cap.002 Type: MESH
+PQ12 End Cap.002 transform: X31.850040435791016 Y-61.408164978027344 Z-3.0000030994415283
+PQ12 End Cap.002 rotation: X0.0 Y0.0 Z0.0
+PQ12 End Cap.002 scale: X1.0 Y1.0 Z1.0
+PQ12 End Cap.002 groups: None
+PQ12 End Cap.002 mesh: Cube.002
+PQ12 End Cap.002 materials: PLA White, 
+PQ12 End Cap.002 modifiers: None
+
+Name: PQ12 End Cap.003
+PQ12 End Cap.003 Type: MESH
+PQ12 End Cap.003 transform: X1.3500404357910156 Y-61.408164978027344 Z-3.0000030994415283
+PQ12 End Cap.003 rotation: X0.0 Y0.0 Z0.0
+PQ12 End Cap.003 scale: X1.0 Y1.0 Z1.0
+PQ12 End Cap.003 groups: None
+PQ12 End Cap.003 mesh: Cube.007
+PQ12 End Cap.003 materials: PLA White, 
+PQ12 End Cap.003 modifiers: None
+
+Name: PQ12 End Cap.004
+PQ12 End Cap.004 Type: MESH
+PQ12 End Cap.004 transform: X1.3500404357910156 Y-61.407413482666016 Z-3.0085811614990234
+PQ12 End Cap.004 rotation: X0.0 Y-0.0 Z0.0
+PQ12 End Cap.004 scale: X1.0 Y1.0 Z1.0
+PQ12 End Cap.004 groups: None
+PQ12 End Cap.004 mesh: Cube.017
+PQ12 End Cap.004 materials: PLA White, 
+PQ12 End Cap.004 modifiers: None
+
+Name: PQ12 End Cap.005
+PQ12 End Cap.005 Type: MESH
+PQ12 End Cap.005 transform: X31.850040435791016 Y-61.408164978027344 Z-3.000002861022949
+PQ12 End Cap.005 rotation: X0.0 Y-0.0 Z0.0
+PQ12 End Cap.005 scale: X1.0 Y1.0 Z1.0
+PQ12 End Cap.005 groups: None
+PQ12 End Cap.005 mesh: Cube.018
+PQ12 End Cap.005 materials: PLA White, 
+PQ12 End Cap.005 modifiers: None
+
+Name: PQ12 End Cap.006
+PQ12 End Cap.006 Type: MESH
+PQ12 End Cap.006 transform: X-13.649959564208984 Y-61.408164978027344 Z-3.000002861022949
+PQ12 End Cap.006 rotation: X0.0 Y-0.0 Z0.0
+PQ12 End Cap.006 scale: X1.0 Y1.0 Z1.0
+PQ12 End Cap.006 groups: None
+PQ12 End Cap.006 mesh: Cube.019
+PQ12 End Cap.006 materials: PLA White, 
+PQ12 End Cap.006 modifiers: None
 
 Name: PQ12 extended
 PQ12 extended Type: MESH
@@ -3187,7 +4295,7 @@ Spring Positions 1st FingerInner Proximal 001 rotation: X0.0 Y-0.0 Z0.0872664526
 Spring Positions 1st FingerInner Proximal 001 scale: X1.0 Y1.0 Z1.0
 Spring Positions 1st FingerInner Proximal 001 groups: None
 Spring Positions 1st FingerInner Proximal 001 mesh: 1st FingerInner Proximal 001
-Spring Positions 1st FingerInner Proximal 001 materials: None
+Spring Positions 1st FingerInner Proximal 001 materials: PLA White, 
 Spring Positions 1st FingerInner Proximal 001 modifiers: None
 
 Name: Spring Positions 3rd FingerInner Proximal 003
@@ -3197,7 +4305,7 @@ Spring Positions 3rd FingerInner Proximal 003 rotation: X0.0 Y-0.0 Z-0.087266452
 Spring Positions 3rd FingerInner Proximal 003 scale: X1.0 Y1.0 Z1.0
 Spring Positions 3rd FingerInner Proximal 003 groups: None
 Spring Positions 3rd FingerInner Proximal 003 mesh: 3rd FingerInner Proximal 003
-Spring Positions 3rd FingerInner Proximal 003 materials: None
+Spring Positions 3rd FingerInner Proximal 003 materials: PLA White, 
 Spring Positions 3rd FingerInner Proximal 003 modifiers: None
 
 Name: Spring Positions 4th FingerInner Proximal 004
@@ -3207,7 +4315,7 @@ Spring Positions 4th FingerInner Proximal 004 rotation: X0.0 Y-0.0 Z-0.174532920
 Spring Positions 4th FingerInner Proximal 004 scale: X1.0 Y1.0 Z1.0
 Spring Positions 4th FingerInner Proximal 004 groups: None
 Spring Positions 4th FingerInner Proximal 004 mesh: 4th FingerInner Proximal 004.001
-Spring Positions 4th FingerInner Proximal 004 materials: None
+Spring Positions 4th FingerInner Proximal 004 materials: PLA White, 
 Spring Positions 4th FingerInner Proximal 004 modifiers: None
 
 Name: Sprint Positions 2nd FingerInner Proximal 002
@@ -3217,7 +4325,7 @@ Sprint Positions 2nd FingerInner Proximal 002 rotation: X0.0 Y0.0 Z0.0
 Sprint Positions 2nd FingerInner Proximal 002 scale: X1.0 Y1.0 Z1.0
 Sprint Positions 2nd FingerInner Proximal 002 groups: None
 Sprint Positions 2nd FingerInner Proximal 002 mesh: 2nd FingerInner Proximal 002.002
-Sprint Positions 2nd FingerInner Proximal 002 materials: None
+Sprint Positions 2nd FingerInner Proximal 002 materials: PLA White, 
 Sprint Positions 2nd FingerInner Proximal 002 modifiers: None
 
 Name: STAND Base
@@ -3227,7 +4335,7 @@ STAND Base rotation: X0.13962633907794952 Y-0.0 Z0.0
 STAND Base scale: X1.0 Y1.0 Z1.0
 STAND Base groups: None
 STAND Base mesh: Circle.001
-STAND Base materials: PLA, 
+STAND Base materials: PLA White, 
 STAND Base modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Subsurf, Type: SUBSURF
@@ -3246,6 +4354,16 @@ STAND Base modifiers:
         Operation: INTERSECT, Object: BOOLEAN Wrist Flatten
   #9 Name: Boolean.BOOLEAN Stand Grip Band, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Stand Grip Band
+
+Name: STAND Base.001
+STAND Base.001 Type: MESH
+STAND Base.001 transform: X9.049964904785156 Y-144.2971649169922 Z20.024940490722656
+STAND Base.001 rotation: X0.13962633907794952 Y-0.0 Z0.0
+STAND Base.001 scale: X1.0 Y1.0 Z1.0
+STAND Base.001 groups: None
+STAND Base.001 mesh: Circle.000
+STAND Base.001 materials: PLA White, 
+STAND Base.001 modifiers: None
 
 Name: STAND BOOLEAN Cable Channel
 STAND BOOLEAN Cable Channel Type: MESH
@@ -3276,10 +4394,10 @@ STAND BOOLEAN Connector Block rotation: X-0.012630564160645008 Y1.78206491470336
 STAND BOOLEAN Connector Block scale: X1.0 Y1.0 Z1.0
 STAND BOOLEAN Connector Block groups: None
 STAND BOOLEAN Connector Block mesh: Plane.002
-STAND BOOLEAN Connector Block materials: Material, 
+STAND BOOLEAN Connector Block materials: PLA White, 
 STAND BOOLEAN Connector Block modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
-        Thickness: 0.01, Offset: -1.00 
+        Thickness: 0.20, Offset: 1.00 
         Even thickness: True, High Quality Normals: True  #2 Name: Bevel, Type: BEVEL
 
 Name: STAND Connector Block
@@ -3289,13 +4407,23 @@ STAND Connector Block rotation: X-0.012630564160645008 Y1.7820649147033691 Z1.55
 STAND Connector Block scale: X1.0 Y1.0 Z1.0
 STAND Connector Block groups: None
 STAND Connector Block mesh: Plane.002
-STAND Connector Block materials: Material, 
+STAND Connector Block materials: PLA White, 
 STAND Connector Block modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Boolean.BOOLEAN Wrist Connector M2 Countersinks, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Wrist Connector M2 Countersinks
   #3 Name: Boolean.BOOLEAN New Wrist connector M2 bolt holes for stand, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M2 Countersink Wrist Connector
+
+Name: STAND Connector Block.001
+STAND Connector Block.001 Type: MESH
+STAND Connector Block.001 transform: X7.0170488357543945 Y-95.12955474853516 Z3.877882480621338
+STAND Connector Block.001 rotation: X-0.012630564160645008 Y1.7820649147033691 Z1.5576081275939941
+STAND Connector Block.001 scale: X1.0 Y1.0 Z1.0
+STAND Connector Block.001 groups: None
+STAND Connector Block.001 mesh: Plane.058
+STAND Connector Block.001 materials: PLA White, 
+STAND Connector Block.001 modifiers: None
 
 Name: Stand Grip Band
 Stand Grip Band Type: MESH
@@ -3309,6 +4437,16 @@ Stand Grip Band modifiers:
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+
+Name: Stand Grip Band.001
+Stand Grip Band.001 Type: MESH
+Stand Grip Band.001 transform: X9.050057411193848 Y-144.47891235351562 Z20.06428337097168
+Stand Grip Band.001 rotation: X0.13962633907794952 Y-0.0 Z0.0
+Stand Grip Band.001 scale: X1.0 Y1.0 Z1.0
+Stand Grip Band.001 groups: None
+Stand Grip Band.001 mesh: Circle.005
+Stand Grip Band.001 materials: NF Black, 
+Stand Grip Band.001 modifiers: None
 
 Name: Sun
 Sun Type: LAMP
@@ -3435,6 +4573,81 @@ TARGET Urethane Pad  modifiers:
         Even thickness: False, High Quality Normals: False  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
+Name: Tendon Lines VISUAL 
+Tendon Lines VISUAL  Type: MESH
+Tendon Lines VISUAL  transform: X37.21470260620117 Y-3.9833755493164062 Z-3.200835704803467
+Tendon Lines VISUAL  rotation: X0.0 Y0.0 Z0.0
+Tendon Lines VISUAL  scale: X1.0 Y1.0 Z1.0
+Tendon Lines VISUAL  groups: None
+Tendon Lines VISUAL  mesh: Plane.001
+Tendon Lines VISUAL  materials: Boolean difference, 
+Tendon Lines VISUAL  modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 5, Type: CATMULL_CLARK
+  #2 Name: Skin, Type: SKIN
+  #3 Name: Subsurf.001, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Tendon Lines VISUAL .001
+Tendon Lines VISUAL .001 Type: MESH
+Tendon Lines VISUAL .001 transform: X37.21470260620117 Y-3.9833755493164062 Z-3.200835704803467
+Tendon Lines VISUAL .001 rotation: X0.0 Y0.0 Z0.0
+Tendon Lines VISUAL .001 scale: X1.0 Y1.0 Z1.0
+Tendon Lines VISUAL .001 groups: None
+Tendon Lines VISUAL .001 mesh: Plane.009
+Tendon Lines VISUAL .001 materials: Green metallic, 
+Tendon Lines VISUAL .001 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 5, Type: CATMULL_CLARK
+  #2 Name: Skin, Type: SKIN
+  #3 Name: Subsurf.001, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Tendon Lines VISUAL .002
+Tendon Lines VISUAL .002 Type: MESH
+Tendon Lines VISUAL .002 transform: X37.21470260620117 Y79.0306396484375 Z-3.200835704803467
+Tendon Lines VISUAL .002 rotation: X0.0 Y0.0 Z0.0
+Tendon Lines VISUAL .002 scale: X1.0 Y1.0 Z1.0
+Tendon Lines VISUAL .002 groups: None
+Tendon Lines VISUAL .002 mesh: Plane.010
+Tendon Lines VISUAL .002 materials: Green metallic, 
+Tendon Lines VISUAL .002 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 5, Type: CATMULL_CLARK
+  #2 Name: Skin, Type: SKIN
+  #3 Name: Subsurf.001, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Tendon Lines VISUAL .003
+Tendon Lines VISUAL .003 Type: MESH
+Tendon Lines VISUAL .003 transform: X37.21470260620117 Y-3.9833755493164062 Z-3.200835704803467
+Tendon Lines VISUAL .003 rotation: X0.0 Y0.0 Z0.0
+Tendon Lines VISUAL .003 scale: X1.0 Y1.0 Z1.0
+Tendon Lines VISUAL .003 groups: None
+Tendon Lines VISUAL .003 mesh: Plane.027
+Tendon Lines VISUAL .003 materials: Boolean difference, 
+Tendon Lines VISUAL .003 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 5, Type: CATMULL_CLARK
+  #2 Name: Skin, Type: SKIN
+  #3 Name: Subsurf.001, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Tendon Lines VISUAL .004
+Tendon Lines VISUAL .004 Type: MESH
+Tendon Lines VISUAL .004 transform: X37.21470260620117 Y-3.9833755493164062 Z-3.200835704803467
+Tendon Lines VISUAL .004 rotation: X0.0 Y0.0 Z0.0
+Tendon Lines VISUAL .004 scale: X1.0 Y1.0 Z1.0
+Tendon Lines VISUAL .004 groups: None
+Tendon Lines VISUAL .004 mesh: Plane.029
+Tendon Lines VISUAL .004 materials: Boolean difference, 
+Tendon Lines VISUAL .004 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 5, Type: CATMULL_CLARK
+  #2 Name: Skin, Type: SKIN
+  #3 Name: Subsurf.001, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: Thumb Ligament Cover 
 Thumb Ligament Cover  Type: MESH
 Thumb Ligament Cover  transform: X-6.998700141906738 Y-66.19110870361328 Z-17.999996185302734
@@ -3475,6 +4688,16 @@ Thumb Ligament Cover .001 modifiers:
   #2 Name: Solidify, Type: SOLIDIFY
         Thickness: 0.20, Offset: 1.00 
         Even thickness: True, High Quality Normals: True
+Name: Thumb Ligament Cover .002
+Thumb Ligament Cover .002 Type: MESH
+Thumb Ligament Cover .002 transform: X-6.998700141906738 Y-66.19110870361328 Z-18.0
+Thumb Ligament Cover .002 rotation: X3.137685775756836 Y0.0 Z1.3962633609771729
+Thumb Ligament Cover .002 scale: X1.0 Y1.0 Z1.0
+Thumb Ligament Cover .002 groups: None
+Thumb Ligament Cover .002 mesh: Thumb Ligament Cover .003
+Thumb Ligament Cover .002 materials: PLA White, 
+Thumb Ligament Cover .002 modifiers: None
+
 Name: Thumb ligament cover clip
 Thumb ligament cover clip Type: MESH
 Thumb ligament cover clip transform: X-13.561469078063965 Y-67.4251480102539 Z-15.07447624206543
@@ -3548,12 +4771,347 @@ Thumb spring channel modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 2, Type: CATMULL_CLARK
 
+Name: Thumb Tendon.000
+Thumb Tendon.000 Type: MESH
+Thumb Tendon.000 transform: X16.600040435791016 Y-80.06063079833984 Z-3.0000033378601074
+Thumb Tendon.000 rotation: X0.0 Y0.0 Z0.0
+Thumb Tendon.000 scale: X1.0 Y1.0 Z1.0
+Thumb Tendon.000 groups: None
+Thumb Tendon.000 mesh: Plane.019
+Thumb Tendon.000 materials: Green metallic, 
+Thumb Tendon.000 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Skin, Type: SKIN
+  #3 Name: Subsurf.001, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Thumb Tendon.001
+Thumb Tendon.001 Type: MESH
+Thumb Tendon.001 transform: X16.600040435791016 Y-80.06063079833984 Z-3.0000033378601074
+Thumb Tendon.001 rotation: X0.0 Y0.0 Z0.0
+Thumb Tendon.001 scale: X1.0 Y1.0 Z1.0
+Thumb Tendon.001 groups: None
+Thumb Tendon.001 mesh: Plane.015
+Thumb Tendon.001 materials: Boolean difference, 
+Thumb Tendon.001 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Skin, Type: SKIN
+  #3 Name: Subsurf.001, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Thumb Tendon.002
+Thumb Tendon.002 Type: MESH
+Thumb Tendon.002 transform: X16.600040435791016 Y-80.06063079833984 Z-3.0000033378601074
+Thumb Tendon.002 rotation: X0.0 Y0.0 Z0.0
+Thumb Tendon.002 scale: X1.0 Y1.0 Z1.0
+Thumb Tendon.002 groups: None
+Thumb Tendon.002 mesh: Plane.026
+Thumb Tendon.002 materials: Boolean difference, 
+Thumb Tendon.002 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Skin, Type: SKIN
+  #3 Name: Subsurf.001, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Thumb Tendon.003
+Thumb Tendon.003 Type: MESH
+Thumb Tendon.003 transform: X16.600040435791016 Y-80.06063079833984 Z-3.0000033378601074
+Thumb Tendon.003 rotation: X0.0 Y0.0 Z0.0
+Thumb Tendon.003 scale: X1.0 Y1.0 Z1.0
+Thumb Tendon.003 groups: None
+Thumb Tendon.003 mesh: Plane.003
+Thumb Tendon.003 materials: Boolean difference, 
+Thumb Tendon.003 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Skin, Type: SKIN
+  #3 Name: Subsurf.001, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Thumb Tendon.004
+Thumb Tendon.004 Type: MESH
+Thumb Tendon.004 transform: X16.600040435791016 Y-80.06063079833984 Z-3.0000033378601074
+Thumb Tendon.004 rotation: X0.0 Y0.0 Z0.0
+Thumb Tendon.004 scale: X1.0 Y1.0 Z1.0
+Thumb Tendon.004 groups: None
+Thumb Tendon.004 mesh: Plane.008
+Thumb Tendon.004 materials: Boolean difference, 
+Thumb Tendon.004 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Skin, Type: SKIN
+  #3 Name: Subsurf.001, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Thumb Top CoverThumb Cover
+Thumb Top CoverThumb Cover Type: MESH
+Thumb Top CoverThumb Cover transform: X-10.37289047241211 Y-65.43588256835938 Z-16.557376861572266
+Thumb Top CoverThumb Cover rotation: X-5.408954395491605e-10 Y1.0703397057554298e-09 Z1.3973556756973267
+Thumb Top CoverThumb Cover scale: X1.0 Y1.0 Z1.0
+Thumb Top CoverThumb Cover groups: None
+Thumb Top CoverThumb Cover mesh: Thumb Top CoverThumb Cover
+Thumb Top CoverThumb Cover materials: PLA White, 
+Thumb Top CoverThumb Cover modifiers: None
+
 Name: Thumb.001
 Thumb.001 Type: EMPTY
-Thumb.001 transform: X-10.47809886932373 Y-65.51439666748047 Z-16.575899124145508
+Thumb.001 transform: X-10.47809886932373 Y-65.51439666748047 Z-16.575897216796875
 Thumb.001 rotation: X0.0 Y-2.9802322387695312e-08 Z1.3962633609771729
 Thumb.001 scale: X1.0 Y1.0 Z1.0
 Thumb.001 groups: None
+
+Name: Torx Countersunk Screws 10mm
+Torx Countersunk Screws 10mm Type: MESH
+Torx Countersunk Screws 10mm transform: X-18.23844337463379 Y-8.076763153076172 Z11.394247055053711
+Torx Countersunk Screws 10mm rotation: X0.0 Y0.0 Z0.0
+Torx Countersunk Screws 10mm scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 10mm groups: None
+Torx Countersunk Screws 10mm mesh: Torx Countersunk Screws 10mm
+Torx Countersunk Screws 10mm materials: Steel, 
+Torx Countersunk Screws 10mm modifiers: None
+
+Name: Torx Countersunk Screws 10mm.001
+Torx Countersunk Screws 10mm.001 Type: MESH
+Torx Countersunk Screws 10mm.001 transform: X0.0 Y-7.368350028991699 Z11.594244003295898
+Torx Countersunk Screws 10mm.001 rotation: X0.0 Y0.0 Z0.0
+Torx Countersunk Screws 10mm.001 scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 10mm.001 groups: None
+Torx Countersunk Screws 10mm.001 mesh: Torx Countersunk Screws 10mm.001
+Torx Countersunk Screws 10mm.001 materials: Steel, 
+Torx Countersunk Screws 10mm.001 modifiers: None
+
+Name: Torx Countersunk Screws 10mm.002
+Torx Countersunk Screws 10mm.002 Type: MESH
+Torx Countersunk Screws 10mm.002 transform: X18.361051559448242 Y-8.153725624084473 Z11.594244003295898
+Torx Countersunk Screws 10mm.002 rotation: X0.0 Y0.0 Z0.0
+Torx Countersunk Screws 10mm.002 scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 10mm.002 groups: None
+Torx Countersunk Screws 10mm.002 mesh: Torx Countersunk Screws 10mm.002
+Torx Countersunk Screws 10mm.002 materials: Steel, 
+Torx Countersunk Screws 10mm.002 modifiers: None
+
+Name: Torx Countersunk Screws 10mm.003
+Torx Countersunk Screws 10mm.003 Type: MESH
+Torx Countersunk Screws 10mm.003 transform: X36.61198425292969 Y-10.4902982711792 Z11.394247055053711
+Torx Countersunk Screws 10mm.003 rotation: X0.0 Y0.0 Z0.0
+Torx Countersunk Screws 10mm.003 scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 10mm.003 groups: None
+Torx Countersunk Screws 10mm.003 mesh: Torx Countersunk Screws 10mm.003
+Torx Countersunk Screws 10mm.003 materials: Steel, 
+Torx Countersunk Screws 10mm.003 modifiers: None
+
+Name: Torx Countersunk Screws 10mm.004
+Torx Countersunk Screws 10mm.004 Type: MESH
+Torx Countersunk Screws 10mm.004 transform: X-20.869747161865234 Y20.560531616210938 Z9.198127746582031
+Torx Countersunk Screws 10mm.004 rotation: X0.0 Y0.0 Z0.0
+Torx Countersunk Screws 10mm.004 scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 10mm.004 groups: None
+Torx Countersunk Screws 10mm.004 mesh: Torx Countersunk Screws 10mm.004
+Torx Countersunk Screws 10mm.004 materials: Steel, 
+Torx Countersunk Screws 10mm.004 modifiers: None
+
+Name: Torx Countersunk Screws 10mm.005
+Torx Countersunk Screws 10mm.005 Type: MESH
+Torx Countersunk Screws 10mm.005 transform: X0.0 Y21.452926635742188 Z9.165740966796875
+Torx Countersunk Screws 10mm.005 rotation: X0.0 Y0.0 Z0.0
+Torx Countersunk Screws 10mm.005 scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 10mm.005 groups: None
+Torx Countersunk Screws 10mm.005 mesh: Torx Countersunk Screws 10mm.005
+Torx Countersunk Screws 10mm.005 materials: Steel, 
+Torx Countersunk Screws 10mm.005 modifiers: None
+
+Name: Torx Countersunk Screws 10mm.006
+Torx Countersunk Screws 10mm.006 Type: MESH
+Torx Countersunk Screws 10mm.006 transform: X20.570354461669922 Y17.098739624023438 Z9.149482727050781
+Torx Countersunk Screws 10mm.006 rotation: X0.0 Y0.0 Z0.0
+Torx Countersunk Screws 10mm.006 scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 10mm.006 groups: None
+Torx Countersunk Screws 10mm.006 mesh: Torx Countersunk Screws 10mm.006
+Torx Countersunk Screws 10mm.006 materials: Steel, 
+Torx Countersunk Screws 10mm.006 modifiers: None
+
+Name: Torx Countersunk Screws 10mm.007
+Torx Countersunk Screws 10mm.007 Type: MESH
+Torx Countersunk Screws 10mm.007 transform: X40.36982727050781 Y10.821493148803711 Z9.135883331298828
+Torx Countersunk Screws 10mm.007 rotation: X0.0 Y0.0 Z0.0
+Torx Countersunk Screws 10mm.007 scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 10mm.007 groups: None
+Torx Countersunk Screws 10mm.007 mesh: Torx Countersunk Screws 10mm.007
+Torx Countersunk Screws 10mm.007 materials: Steel, 
+Torx Countersunk Screws 10mm.007 modifiers: None
+
+Name: Torx Countersunk Screws 10mm.008
+Torx Countersunk Screws 10mm.008 Type: MESH
+Torx Countersunk Screws 10mm.008 transform: X-24.443607330322266 Y61.409950256347656 Z4.796722412109375
+Torx Countersunk Screws 10mm.008 rotation: X0.0 Y0.0 Z0.0
+Torx Countersunk Screws 10mm.008 scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 10mm.008 groups: None
+Torx Countersunk Screws 10mm.008 mesh: Torx Countersunk Screws 10mm.008
+Torx Countersunk Screws 10mm.008 materials: Steel, 
+Torx Countersunk Screws 10mm.008 modifiers: None
+
+Name: Torx Countersunk Screws 10mm.009
+Torx Countersunk Screws 10mm.009 Type: MESH
+Torx Countersunk Screws 10mm.009 transform: X0.0 Y62.49565124511719 Z4.796722412109375
+Torx Countersunk Screws 10mm.009 rotation: X0.0 Y0.0 Z0.0
+Torx Countersunk Screws 10mm.009 scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 10mm.009 groups: None
+Torx Countersunk Screws 10mm.009 mesh: Torx Countersunk Screws 10mm.009
+Torx Countersunk Screws 10mm.009 materials: Steel, 
+Torx Countersunk Screws 10mm.009 modifiers: None
+
+Name: Torx Countersunk Screws 10mm.010
+Torx Countersunk Screws 10mm.010 Type: MESH
+Torx Countersunk Screws 10mm.010 transform: X23.830669403076172 Y54.36433792114258 Z4.534624099731445
+Torx Countersunk Screws 10mm.010 rotation: X0.0 Y0.0 Z0.0
+Torx Countersunk Screws 10mm.010 scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 10mm.010 groups: None
+Torx Countersunk Screws 10mm.010 mesh: Torx Countersunk Screws 10mm.010
+Torx Countersunk Screws 10mm.010 materials: Steel, 
+Torx Countersunk Screws 10mm.010 modifiers: None
+
+Name: Torx Countersunk Screws 10mm.011
+Torx Countersunk Screws 10mm.011 Type: MESH
+Torx Countersunk Screws 10mm.011 transform: X46.267112731933594 Y44.26664733886719 Z4.35989236831665
+Torx Countersunk Screws 10mm.011 rotation: X0.0 Y0.0 Z0.0
+Torx Countersunk Screws 10mm.011 scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 10mm.011 groups: None
+Torx Countersunk Screws 10mm.011 mesh: Torx Countersunk Screws 10mm.011
+Torx Countersunk Screws 10mm.011 materials: Steel, 
+Torx Countersunk Screws 10mm.011 modifiers: None
+
+Name: Torx Countersunk Screws 10mm.012
+Torx Countersunk Screws 10mm.012 Type: MESH
+Torx Countersunk Screws 10mm.012 transform: X3.400318145751953 Y-54.210594177246094 Z-20.851165771484375
+Torx Countersunk Screws 10mm.012 rotation: X-0.0 Y3.1415929794311523 Z-0.0
+Torx Countersunk Screws 10mm.012 scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 10mm.012 groups: None
+Torx Countersunk Screws 10mm.012 mesh: Torx Countersunk Screws 10mm.012
+Torx Countersunk Screws 10mm.012 materials: Steel, 
+Torx Countersunk Screws 10mm.012 modifiers: None
+
+Name: Torx Countersunk Screws 10mm.013
+Torx Countersunk Screws 10mm.013 Type: MESH
+Torx Countersunk Screws 10mm.013 transform: X-0.4077262878417969 Y-75.8071060180664 Z-20.851173400878906
+Torx Countersunk Screws 10mm.013 rotation: X-0.0 Y3.1415929794311523 Z-0.0
+Torx Countersunk Screws 10mm.013 scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 10mm.013 groups: None
+Torx Countersunk Screws 10mm.013 mesh: Torx Countersunk Screws 10mm.013
+Torx Countersunk Screws 10mm.013 materials: Steel, 
+Torx Countersunk Screws 10mm.013 modifiers: None
+
+Name: Torx Countersunk Screws 10mm.014
+Torx Countersunk Screws 10mm.014 Type: MESH
+Torx Countersunk Screws 10mm.014 transform: X-60.62425994873047 Y-35.08761978149414 Z-15.853815078735352
+Torx Countersunk Screws 10mm.014 rotation: X1.5675852298736572 Y-0.6584158539772034 Z-1.0193920135498047
+Torx Countersunk Screws 10mm.014 scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 10mm.014 groups: None
+Torx Countersunk Screws 10mm.014 mesh: Torx Countersunk Screws 10mm.014
+Torx Countersunk Screws 10mm.014 materials: Steel, 
+Torx Countersunk Screws 10mm.014 modifiers: None
+
+Name: Torx Countersunk Screws 10mm.015
+Torx Countersunk Screws 10mm.015 Type: MESH
+Torx Countersunk Screws 10mm.015 transform: X33.96486282348633 Y-91.61903381347656 Z-0.042392730712890625
+Torx Countersunk Screws 10mm.015 rotation: X0.0 Y0.0 Z0.0
+Torx Countersunk Screws 10mm.015 scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 10mm.015 groups: None
+Torx Countersunk Screws 10mm.015 mesh: Torx Countersunk Screws 10mm.015
+Torx Countersunk Screws 10mm.015 materials: Steel, 
+Torx Countersunk Screws 10mm.015 modifiers: None
+
+Name: Torx Countersunk Screws 10mm.016
+Torx Countersunk Screws 10mm.016 Type: MESH
+Torx Countersunk Screws 10mm.016 transform: X8.999736785888672 Y-84.34910583496094 Z21.67920684814453
+Torx Countersunk Screws 10mm.016 rotation: X0.0 Y0.0 Z0.0
+Torx Countersunk Screws 10mm.016 scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 10mm.016 groups: None
+Torx Countersunk Screws 10mm.016 mesh: Torx Countersunk Screws 10mm.016
+Torx Countersunk Screws 10mm.016 materials: Steel, 
+Torx Countersunk Screws 10mm.016 modifiers: None
+
+Name: Torx Countersunk Screws 16mm
+Torx Countersunk Screws 16mm Type: MESH
+Torx Countersunk Screws 16mm transform: X-5.9503326416015625 Y-14.500178337097168 Z13.547119140625
+Torx Countersunk Screws 16mm rotation: X0.0 Y0.0 Z0.0
+Torx Countersunk Screws 16mm scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 16mm groups: None
+Torx Countersunk Screws 16mm mesh: Torx Countersunk Screws 16mm
+Torx Countersunk Screws 16mm materials: Steel, 
+Torx Countersunk Screws 16mm modifiers: None
+
+Name: Torx Countersunk Screws 16mm.001
+Torx Countersunk Screws 16mm.001 Type: MESH
+Torx Countersunk Screws 16mm.001 transform: X24.24966812133789 Y-14.500177383422852 Z13.547119140625
+Torx Countersunk Screws 16mm.001 rotation: X0.0 Y0.0 Z0.0
+Torx Countersunk Screws 16mm.001 scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 16mm.001 groups: None
+Torx Countersunk Screws 16mm.001 mesh: Torx Countersunk Screws 16mm.001
+Torx Countersunk Screws 16mm.001 materials: Steel, 
+Torx Countersunk Screws 16mm.001 modifiers: None
+
+Name: Torx Countersunk Screws 16mm.002
+Torx Countersunk Screws 16mm.002 Type: MESH
+Torx Countersunk Screws 16mm.002 transform: X-25.000511169433594 Y-25.500293731689453 Z12.819786071777344
+Torx Countersunk Screws 16mm.002 rotation: X0.0 Y0.0 Z0.0
+Torx Countersunk Screws 16mm.002 scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 16mm.002 groups: None
+Torx Countersunk Screws 16mm.002 mesh: Torx Countersunk Screws 16mm.002
+Torx Countersunk Screws 16mm.002 materials: Steel, 
+Torx Countersunk Screws 16mm.002 modifiers: None
+
+Name: Torx Countersunk Screws 16mm.003
+Torx Countersunk Screws 16mm.003 Type: MESH
+Torx Countersunk Screws 16mm.003 transform: X43.033203125 Y-25.479267120361328 Z12.819786071777344
+Torx Countersunk Screws 16mm.003 rotation: X0.0 Y0.0 Z0.0
+Torx Countersunk Screws 16mm.003 scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 16mm.003 groups: None
+Torx Countersunk Screws 16mm.003 mesh: Torx Countersunk Screws 16mm.003
+Torx Countersunk Screws 16mm.003 materials: Steel, 
+Torx Countersunk Screws 16mm.003 modifiers: None
+
+Name: Torx Countersunk Screws 16mm.004
+Torx Countersunk Screws 16mm.004 Type: MESH
+Torx Countersunk Screws 16mm.004 transform: X14.276599884033203 Y-103.4529037475586 Z11.959885597229004
+Torx Countersunk Screws 16mm.004 rotation: X1.3528635501861572 Y-0.0 Z0.0
+Torx Countersunk Screws 16mm.004 scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 16mm.004 groups: None
+Torx Countersunk Screws 16mm.004 mesh: Torx Countersunk Screws 16mm.004
+Torx Countersunk Screws 16mm.004 materials: Steel, 
+Torx Countersunk Screws 16mm.004 modifiers: None
+
+Name: Torx Countersunk Screws 16mm.005
+Torx Countersunk Screws 16mm.005 Type: MESH
+Torx Countersunk Screws 16mm.005 transform: X4.063329696655273 Y-105.82024383544922 Z0.6020307540893555
+Torx Countersunk Screws 16mm.005 rotation: X1.3528635501861572 Y-0.0 Z0.0
+Torx Countersunk Screws 16mm.005 scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 16mm.005 groups: None
+Torx Countersunk Screws 16mm.005 mesh: Torx Countersunk Screws 16mm.005
+Torx Countersunk Screws 16mm.005 materials: Steel, 
+Torx Countersunk Screws 16mm.005 modifiers: None
+
+Name: Torx Countersunk Screws 16mm.006
+Torx Countersunk Screws 16mm.006 Type: MESH
+Torx Countersunk Screws 16mm.006 transform: X9.274079322814941 Y-104.83651733398438 Z-8.032379150390625
+Torx Countersunk Screws 16mm.006 rotation: X0.20951250195503235 Y3.1593899726867676 Z0.08974475413560867
+Torx Countersunk Screws 16mm.006 scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 16mm.006 groups: None
+Torx Countersunk Screws 16mm.006 mesh: Torx Countersunk Screws 16mm.006
+Torx Countersunk Screws 16mm.006 materials: Steel, 
+Torx Countersunk Screws 16mm.006 modifiers: None
+
+Name: Torx Countersunk Screws 5mm
+Torx Countersunk Screws 5mm Type: MESH
+Torx Countersunk Screws 5mm transform: X-93.59620666503906 Y19.096179962158203 Z-1.2555122375488281
+Torx Countersunk Screws 5mm rotation: X0.0 Y0.0 Z0.0
+Torx Countersunk Screws 5mm scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 5mm groups: None
+Torx Countersunk Screws 5mm mesh: Torx Countersunk Screws 5mm
+Torx Countersunk Screws 5mm materials: Steel, 
+Torx Countersunk Screws 5mm modifiers: None
 
 Name: UNION Headphone / Micro USB
 UNION Headphone / Micro USB Type: MESH
@@ -3642,6 +5200,416 @@ Urethane Visual modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Back Cover M2 Countersinks VISUAL
   #14 Name: Boolean.BOOLEAN Finger Ligament Cover M2 Fixings VISUAL, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Finger Ligament Cover M2 Fixings VISUAL
+
+Name: Visual 1 DistalHeat Fit Insert 003
+Visual 1 DistalHeat Fit Insert 003 Type: MESH
+Visual 1 DistalHeat Fit Insert 003 transform: X-19.0 Y-0.810760498046875 Z0.0
+Visual 1 DistalHeat Fit Insert 003 rotation: X0.0 Y-0.0 Z0.0872664526104927
+Visual 1 DistalHeat Fit Insert 003 scale: X1.0 Y1.0 Z1.0
+Visual 1 DistalHeat Fit Insert 003 groups: None
+Visual 1 DistalHeat Fit Insert 003 mesh: Visual 1 DistalHeat Fit Insert 003
+Visual 1 DistalHeat Fit Insert 003 materials: Material.001, 
+Visual 1 DistalHeat Fit Insert 003 modifiers: None
+
+Name: Visual 1 DistalHeat Fit Insert 005
+Visual 1 DistalHeat Fit Insert 005 Type: MESH
+Visual 1 DistalHeat Fit Insert 005 transform: X-19.0 Y-0.810760498046875 Z0.0
+Visual 1 DistalHeat Fit Insert 005 rotation: X0.0 Y-0.0 Z0.0872664526104927
+Visual 1 DistalHeat Fit Insert 005 scale: X1.0 Y1.0 Z1.0
+Visual 1 DistalHeat Fit Insert 005 groups: None
+Visual 1 DistalHeat Fit Insert 005 mesh: Visual 1 DistalHeat Fit Insert 005
+Visual 1 DistalHeat Fit Insert 005 materials: Material.001, 
+Visual 1 DistalHeat Fit Insert 005 modifiers: None
+
+Name: Visual 1 DistalInner distal 001
+Visual 1 DistalInner distal 001 Type: MESH
+Visual 1 DistalInner distal 001 transform: X-19.0 Y-0.810760498046875 Z0.0
+Visual 1 DistalInner distal 001 rotation: X0.0 Y-0.0 Z0.0872664526104927
+Visual 1 DistalInner distal 001 scale: X1.0 Y1.0 Z1.0
+Visual 1 DistalInner distal 001 groups: None
+Visual 1 DistalInner distal 001 mesh: Visual 1 DistalInner distal 001
+Visual 1 DistalInner distal 001 materials: PLA White, 
+Visual 1 DistalInner distal 001 modifiers: None
+
+Name: Visual 1 DistalUrethane Distal 
+Visual 1 DistalUrethane Distal  Type: MESH
+Visual 1 DistalUrethane Distal  transform: X-19.0 Y-0.810760498046875 Z0.0
+Visual 1 DistalUrethane Distal  rotation: X0.0 Y-0.0 Z0.0872664526104927
+Visual 1 DistalUrethane Distal  scale: X1.0 Y1.0 Z1.0
+Visual 1 DistalUrethane Distal  groups: None
+Visual 1 DistalUrethane Distal  mesh: Visual 1 DistalUrethane Distal 
+Visual 1 DistalUrethane Distal  materials: None
+Visual 1 DistalUrethane Distal  modifiers: None
+
+Name: Visual 1 ProximalHeat Fit Insert 004
+Visual 1 ProximalHeat Fit Insert 004 Type: MESH
+Visual 1 ProximalHeat Fit Insert 004 transform: X-19.0 Y-0.810760498046875 Z0.0
+Visual 1 ProximalHeat Fit Insert 004 rotation: X0.0 Y-0.0 Z0.0872664526104927
+Visual 1 ProximalHeat Fit Insert 004 scale: X1.0 Y1.0 Z1.0
+Visual 1 ProximalHeat Fit Insert 004 groups: None
+Visual 1 ProximalHeat Fit Insert 004 mesh: Visual 1 ProximalHeat Fit Insert 004.002
+Visual 1 ProximalHeat Fit Insert 004 materials: Material.001, 
+Visual 1 ProximalHeat Fit Insert 004 modifiers: None
+
+Name: Visual 1 ProximalInner Proximal 001
+Visual 1 ProximalInner Proximal 001 Type: MESH
+Visual 1 ProximalInner Proximal 001 transform: X-19.0 Y-0.810760498046875 Z0.0
+Visual 1 ProximalInner Proximal 001 rotation: X0.0 Y-0.0 Z0.0872664526104927
+Visual 1 ProximalInner Proximal 001 scale: X1.0 Y1.0 Z1.0
+Visual 1 ProximalInner Proximal 001 groups: None
+Visual 1 ProximalInner Proximal 001 mesh: Visual 1 ProximalInner Proximal 001.002
+Visual 1 ProximalInner Proximal 001 materials: PLA White, 
+Visual 1 ProximalInner Proximal 001 modifiers: None
+
+Name: Visual 1 ProximalUrethane Proximal
+Visual 1 ProximalUrethane Proximal Type: MESH
+Visual 1 ProximalUrethane Proximal transform: X-19.0 Y-0.810760498046875 Z0.0
+Visual 1 ProximalUrethane Proximal rotation: X0.0 Y-0.0 Z0.0872664526104927
+Visual 1 ProximalUrethane Proximal scale: X1.0 Y1.0 Z1.0
+Visual 1 ProximalUrethane Proximal groups: None
+Visual 1 ProximalUrethane Proximal mesh: Visual 1 ProximalUrethane Proximal.002
+Visual 1 ProximalUrethane Proximal materials: Boolean difference, 
+Visual 1 ProximalUrethane Proximal modifiers: None
+
+Name: Visual 1 Top CoverTop cover distal 001
+Visual 1 Top CoverTop cover distal 001 Type: MESH
+Visual 1 Top CoverTop cover distal 001 transform: X-19.0 Y-0.8107600212097168 Z0.0
+Visual 1 Top CoverTop cover distal 001 rotation: X0.0 Y-0.0 Z0.0872664526104927
+Visual 1 Top CoverTop cover distal 001 scale: X1.0 Y1.0 Z1.0
+Visual 1 Top CoverTop cover distal 001 groups: None
+Visual 1 Top CoverTop cover distal 001 mesh: Visual 1 Top CoverTop cover distal 001
+Visual 1 Top CoverTop cover distal 001 materials: PLA White, 
+Visual 1 Top CoverTop cover distal 001 modifiers: None
+
+Name: Visual 1 Top CoverTop cover proximal 001
+Visual 1 Top CoverTop cover proximal 001 Type: MESH
+Visual 1 Top CoverTop cover proximal 001 transform: X-19.0 Y-0.8107600212097168 Z0.0
+Visual 1 Top CoverTop cover proximal 001 rotation: X0.0 Y-0.0 Z0.0872664526104927
+Visual 1 Top CoverTop cover proximal 001 scale: X1.0 Y1.0 Z1.0
+Visual 1 Top CoverTop cover proximal 001 groups: None
+Visual 1 Top CoverTop cover proximal 001 mesh: Visual 1 Top CoverTop cover proximal 001
+Visual 1 Top CoverTop cover proximal 001 materials: PLA White, 
+Visual 1 Top CoverTop cover proximal 001 modifiers: None
+
+Name: Visual 2 DistalHeat Fit Insert 006
+Visual 2 DistalHeat Fit Insert 006 Type: MESH
+Visual 2 DistalHeat Fit Insert 006 transform: X0.0 Y0.0 Z0.0
+Visual 2 DistalHeat Fit Insert 006 rotation: X0.0 Y0.0 Z0.0
+Visual 2 DistalHeat Fit Insert 006 scale: X1.0 Y1.0 Z1.0
+Visual 2 DistalHeat Fit Insert 006 groups: None
+Visual 2 DistalHeat Fit Insert 006 mesh: Visual 2 DistalHeat Fit Insert 006
+Visual 2 DistalHeat Fit Insert 006 materials: Material.001, 
+Visual 2 DistalHeat Fit Insert 006 modifiers: None
+
+Name: Visual 2 DistalHeat Fit Insert 008
+Visual 2 DistalHeat Fit Insert 008 Type: MESH
+Visual 2 DistalHeat Fit Insert 008 transform: X0.0 Y0.0 Z0.0
+Visual 2 DistalHeat Fit Insert 008 rotation: X0.0 Y0.0 Z0.0
+Visual 2 DistalHeat Fit Insert 008 scale: X1.0 Y1.0 Z1.0
+Visual 2 DistalHeat Fit Insert 008 groups: None
+Visual 2 DistalHeat Fit Insert 008 mesh: Visual 2 DistalHeat Fit Insert 008
+Visual 2 DistalHeat Fit Insert 008 materials: Material.001, 
+Visual 2 DistalHeat Fit Insert 008 modifiers: None
+
+Name: Visual 2 DistalInner distal 002
+Visual 2 DistalInner distal 002 Type: MESH
+Visual 2 DistalInner distal 002 transform: X0.0 Y0.0 Z0.0
+Visual 2 DistalInner distal 002 rotation: X0.0 Y0.0 Z0.0
+Visual 2 DistalInner distal 002 scale: X1.0 Y1.0 Z1.0
+Visual 2 DistalInner distal 002 groups: None
+Visual 2 DistalInner distal 002 mesh: Visual 2 DistalInner distal 002
+Visual 2 DistalInner distal 002 materials: PLA White, 
+Visual 2 DistalInner distal 002 modifiers: None
+
+Name: Visual 2 DistalUrethane Distal  001
+Visual 2 DistalUrethane Distal  001 Type: MESH
+Visual 2 DistalUrethane Distal  001 transform: X0.0 Y0.0 Z0.0
+Visual 2 DistalUrethane Distal  001 rotation: X0.0 Y0.0 Z0.0
+Visual 2 DistalUrethane Distal  001 scale: X1.0 Y1.0 Z1.0
+Visual 2 DistalUrethane Distal  001 groups: None
+Visual 2 DistalUrethane Distal  001 mesh: Visual 2 DistalUrethane Distal  001
+Visual 2 DistalUrethane Distal  001 materials: None
+Visual 2 DistalUrethane Distal  001 modifiers: None
+
+Name: Visual 2 ProximalHeat Fit Insert 007
+Visual 2 ProximalHeat Fit Insert 007 Type: MESH
+Visual 2 ProximalHeat Fit Insert 007 transform: X0.0 Y0.0 Z0.0
+Visual 2 ProximalHeat Fit Insert 007 rotation: X0.0 Y0.0 Z0.0
+Visual 2 ProximalHeat Fit Insert 007 scale: X1.0 Y1.0 Z1.0
+Visual 2 ProximalHeat Fit Insert 007 groups: None
+Visual 2 ProximalHeat Fit Insert 007 mesh: Visual 2 ProximalHeat Fit Insert 007
+Visual 2 ProximalHeat Fit Insert 007 materials: Material.001, 
+Visual 2 ProximalHeat Fit Insert 007 modifiers: None
+
+Name: Visual 2 ProximalInner Proximal 002
+Visual 2 ProximalInner Proximal 002 Type: MESH
+Visual 2 ProximalInner Proximal 002 transform: X0.0 Y0.0 Z0.0
+Visual 2 ProximalInner Proximal 002 rotation: X0.0 Y0.0 Z0.0
+Visual 2 ProximalInner Proximal 002 scale: X1.0 Y1.0 Z1.0
+Visual 2 ProximalInner Proximal 002 groups: None
+Visual 2 ProximalInner Proximal 002 mesh: Visual 2 ProximalInner Proximal 002
+Visual 2 ProximalInner Proximal 002 materials: PLA White, 
+Visual 2 ProximalInner Proximal 002 modifiers: None
+
+Name: Visual 2 ProximalUrethane Proximal 001
+Visual 2 ProximalUrethane Proximal 001 Type: MESH
+Visual 2 ProximalUrethane Proximal 001 transform: X0.0 Y0.0 Z0.0
+Visual 2 ProximalUrethane Proximal 001 rotation: X0.0 Y0.0 Z0.0
+Visual 2 ProximalUrethane Proximal 001 scale: X1.0 Y1.0 Z1.0
+Visual 2 ProximalUrethane Proximal 001 groups: None
+Visual 2 ProximalUrethane Proximal 001 mesh: Visual 2 ProximalUrethane Proximal 001
+Visual 2 ProximalUrethane Proximal 001 materials: Boolean difference, 
+Visual 2 ProximalUrethane Proximal 001 modifiers: None
+
+Name: Visual 2 Top CoverTop cover distal 002
+Visual 2 Top CoverTop cover distal 002 Type: MESH
+Visual 2 Top CoverTop cover distal 002 transform: X0.0 Y0.0 Z0.0
+Visual 2 Top CoverTop cover distal 002 rotation: X0.0 Y0.0 Z0.0
+Visual 2 Top CoverTop cover distal 002 scale: X1.0 Y1.0 Z1.0
+Visual 2 Top CoverTop cover distal 002 groups: None
+Visual 2 Top CoverTop cover distal 002 mesh: Visual 2 Top CoverTop cover distal 002
+Visual 2 Top CoverTop cover distal 002 materials: PLA White, 
+Visual 2 Top CoverTop cover distal 002 modifiers: None
+
+Name: Visual 2 Top CoverTop cover proximal 002
+Visual 2 Top CoverTop cover proximal 002 Type: MESH
+Visual 2 Top CoverTop cover proximal 002 transform: X0.0 Y0.0 Z0.0
+Visual 2 Top CoverTop cover proximal 002 rotation: X0.0 Y0.0 Z0.0
+Visual 2 Top CoverTop cover proximal 002 scale: X1.0 Y1.0 Z1.0
+Visual 2 Top CoverTop cover proximal 002 groups: None
+Visual 2 Top CoverTop cover proximal 002 mesh: Visual 2 Top CoverTop cover proximal 002
+Visual 2 Top CoverTop cover proximal 002 materials: PLA White, 
+Visual 2 Top CoverTop cover proximal 002 modifiers: None
+
+Name: Visual 3 DistalHeat Fit Insert 009
+Visual 3 DistalHeat Fit Insert 009 Type: MESH
+Visual 3 DistalHeat Fit Insert 009 transform: X18.999998092651367 Y-0.8505191802978516 Z0.0
+Visual 3 DistalHeat Fit Insert 009 rotation: X0.0 Y-0.0 Z-0.0872664526104927
+Visual 3 DistalHeat Fit Insert 009 scale: X1.0 Y1.0 Z1.0
+Visual 3 DistalHeat Fit Insert 009 groups: None
+Visual 3 DistalHeat Fit Insert 009 mesh: Visual 3 DistalHeat Fit Insert 009
+Visual 3 DistalHeat Fit Insert 009 materials: Material.001, 
+Visual 3 DistalHeat Fit Insert 009 modifiers: None
+
+Name: Visual 3 DistalHeat Fit Insert 011
+Visual 3 DistalHeat Fit Insert 011 Type: MESH
+Visual 3 DistalHeat Fit Insert 011 transform: X18.999998092651367 Y-0.8505191802978516 Z0.0
+Visual 3 DistalHeat Fit Insert 011 rotation: X0.0 Y-0.0 Z-0.0872664526104927
+Visual 3 DistalHeat Fit Insert 011 scale: X1.0 Y1.0 Z1.0
+Visual 3 DistalHeat Fit Insert 011 groups: None
+Visual 3 DistalHeat Fit Insert 011 mesh: Visual 3 DistalHeat Fit Insert 011
+Visual 3 DistalHeat Fit Insert 011 materials: Material.001, 
+Visual 3 DistalHeat Fit Insert 011 modifiers: None
+
+Name: Visual 3 DistalInner distal 003
+Visual 3 DistalInner distal 003 Type: MESH
+Visual 3 DistalInner distal 003 transform: X18.999998092651367 Y-0.8505191802978516 Z0.0
+Visual 3 DistalInner distal 003 rotation: X0.0 Y-0.0 Z-0.0872664526104927
+Visual 3 DistalInner distal 003 scale: X1.0 Y1.0 Z1.0
+Visual 3 DistalInner distal 003 groups: None
+Visual 3 DistalInner distal 003 mesh: Visual 3 DistalInner distal 003
+Visual 3 DistalInner distal 003 materials: PLA White, 
+Visual 3 DistalInner distal 003 modifiers: None
+
+Name: Visual 3 DistalUrethane Distal  002
+Visual 3 DistalUrethane Distal  002 Type: MESH
+Visual 3 DistalUrethane Distal  002 transform: X18.999998092651367 Y-0.8505191802978516 Z0.0
+Visual 3 DistalUrethane Distal  002 rotation: X0.0 Y-0.0 Z-0.0872664526104927
+Visual 3 DistalUrethane Distal  002 scale: X1.0 Y1.0 Z1.0
+Visual 3 DistalUrethane Distal  002 groups: None
+Visual 3 DistalUrethane Distal  002 mesh: Visual 3 DistalUrethane Distal  002
+Visual 3 DistalUrethane Distal  002 materials: None
+Visual 3 DistalUrethane Distal  002 modifiers: None
+
+Name: Visual 3 ProximalHeat Fit Insert 010
+Visual 3 ProximalHeat Fit Insert 010 Type: MESH
+Visual 3 ProximalHeat Fit Insert 010 transform: X18.999998092651367 Y-0.8505210876464844 Z0.0
+Visual 3 ProximalHeat Fit Insert 010 rotation: X0.0 Y-0.0 Z-0.0872664526104927
+Visual 3 ProximalHeat Fit Insert 010 scale: X1.0 Y1.0 Z1.0
+Visual 3 ProximalHeat Fit Insert 010 groups: None
+Visual 3 ProximalHeat Fit Insert 010 mesh: Visual 3 ProximalHeat Fit Insert 010
+Visual 3 ProximalHeat Fit Insert 010 materials: Material.001, 
+Visual 3 ProximalHeat Fit Insert 010 modifiers: None
+
+Name: Visual 3 ProximalInner Proximal 003
+Visual 3 ProximalInner Proximal 003 Type: MESH
+Visual 3 ProximalInner Proximal 003 transform: X18.999998092651367 Y-0.8505210876464844 Z0.0
+Visual 3 ProximalInner Proximal 003 rotation: X0.0 Y-0.0 Z-0.0872664526104927
+Visual 3 ProximalInner Proximal 003 scale: X1.0 Y1.0 Z1.0
+Visual 3 ProximalInner Proximal 003 groups: None
+Visual 3 ProximalInner Proximal 003 mesh: Visual 3 ProximalInner Proximal 003
+Visual 3 ProximalInner Proximal 003 materials: PLA White, 
+Visual 3 ProximalInner Proximal 003 modifiers: None
+
+Name: Visual 3 ProximalUrethane Proximal 002
+Visual 3 ProximalUrethane Proximal 002 Type: MESH
+Visual 3 ProximalUrethane Proximal 002 transform: X18.999998092651367 Y-0.8505210876464844 Z0.0
+Visual 3 ProximalUrethane Proximal 002 rotation: X0.0 Y-0.0 Z-0.0872664526104927
+Visual 3 ProximalUrethane Proximal 002 scale: X1.0 Y1.0 Z1.0
+Visual 3 ProximalUrethane Proximal 002 groups: None
+Visual 3 ProximalUrethane Proximal 002 mesh: Visual 3 ProximalUrethane Proximal 002
+Visual 3 ProximalUrethane Proximal 002 materials: None
+Visual 3 ProximalUrethane Proximal 002 modifiers: None
+
+Name: Visual 3 Top CoverTop cover distal 003
+Visual 3 Top CoverTop cover distal 003 Type: MESH
+Visual 3 Top CoverTop cover distal 003 transform: X18.999998092651367 Y-0.8505200147628784 Z0.0
+Visual 3 Top CoverTop cover distal 003 rotation: X0.0 Y-0.0 Z-0.0872664526104927
+Visual 3 Top CoverTop cover distal 003 scale: X1.0 Y1.0 Z1.0
+Visual 3 Top CoverTop cover distal 003 groups: None
+Visual 3 Top CoverTop cover distal 003 mesh: Visual 3 Top CoverTop cover distal 003
+Visual 3 Top CoverTop cover distal 003 materials: PLA White, 
+Visual 3 Top CoverTop cover distal 003 modifiers: None
+
+Name: Visual 3 Top CoverTop cover proximal 003
+Visual 3 Top CoverTop cover proximal 003 Type: MESH
+Visual 3 Top CoverTop cover proximal 003 transform: X18.999998092651367 Y-0.8505200147628784 Z0.0
+Visual 3 Top CoverTop cover proximal 003 rotation: X0.0 Y-0.0 Z-0.0872664526104927
+Visual 3 Top CoverTop cover proximal 003 scale: X1.0 Y1.0 Z1.0
+Visual 3 Top CoverTop cover proximal 003 groups: None
+Visual 3 Top CoverTop cover proximal 003 mesh: Visual 3 Top CoverTop cover proximal 003
+Visual 3 Top CoverTop cover proximal 003 materials: PLA White, 
+Visual 3 Top CoverTop cover proximal 003 modifiers: None
+
+Name: Visual 4 DistalHeat Fit Insert 001
+Visual 4 DistalHeat Fit Insert 001 Type: MESH
+Visual 4 DistalHeat Fit Insert 001 transform: X37.874996185302734 Y-3.3274002075195312 Z0.0
+Visual 4 DistalHeat Fit Insert 001 rotation: X0.0 Y-0.0 Z-0.1745329201221466
+Visual 4 DistalHeat Fit Insert 001 scale: X1.0 Y1.0 Z1.0
+Visual 4 DistalHeat Fit Insert 001 groups: None
+Visual 4 DistalHeat Fit Insert 001 mesh: Visual 4 DistalHeat Fit Insert 001
+Visual 4 DistalHeat Fit Insert 001 materials: Material.001, 
+Visual 4 DistalHeat Fit Insert 001 modifiers: None
+
+Name: Visual 4 DistalHeat Fit Insert 002
+Visual 4 DistalHeat Fit Insert 002 Type: MESH
+Visual 4 DistalHeat Fit Insert 002 transform: X37.874996185302734 Y-3.3274002075195312 Z0.0
+Visual 4 DistalHeat Fit Insert 002 rotation: X0.0 Y-0.0 Z-0.1745329201221466
+Visual 4 DistalHeat Fit Insert 002 scale: X1.0 Y1.0 Z1.0
+Visual 4 DistalHeat Fit Insert 002 groups: None
+Visual 4 DistalHeat Fit Insert 002 mesh: Visual 4 DistalHeat Fit Insert 002
+Visual 4 DistalHeat Fit Insert 002 materials: Material.001, 
+Visual 4 DistalHeat Fit Insert 002 modifiers: None
+
+Name: Visual 4 DistalInner distal 004 
+Visual 4 DistalInner distal 004  Type: MESH
+Visual 4 DistalInner distal 004  transform: X37.874996185302734 Y-3.3274002075195312 Z0.0
+Visual 4 DistalInner distal 004  rotation: X0.0 Y-0.0 Z-0.1745329201221466
+Visual 4 DistalInner distal 004  scale: X1.0 Y1.0 Z1.0
+Visual 4 DistalInner distal 004  groups: None
+Visual 4 DistalInner distal 004  mesh: Visual 4 DistalInner distal 004 
+Visual 4 DistalInner distal 004  materials: PLA White, 
+Visual 4 DistalInner distal 004  modifiers: None
+
+Name: Visual 4 DistalUrethane Distal  003
+Visual 4 DistalUrethane Distal  003 Type: MESH
+Visual 4 DistalUrethane Distal  003 transform: X37.874996185302734 Y-3.3274002075195312 Z0.0
+Visual 4 DistalUrethane Distal  003 rotation: X0.0 Y-0.0 Z-0.1745329201221466
+Visual 4 DistalUrethane Distal  003 scale: X1.0 Y1.0 Z1.0
+Visual 4 DistalUrethane Distal  003 groups: None
+Visual 4 DistalUrethane Distal  003 mesh: Visual 4 DistalUrethane Distal  003
+Visual 4 DistalUrethane Distal  003 materials: None
+Visual 4 DistalUrethane Distal  003 modifiers: None
+
+Name: Visual 4 ProximalHeat Fit Insert
+Visual 4 ProximalHeat Fit Insert Type: MESH
+Visual 4 ProximalHeat Fit Insert transform: X37.874996185302734 Y-3.3274002075195312 Z0.0
+Visual 4 ProximalHeat Fit Insert rotation: X0.0 Y-0.0 Z-0.1745329201221466
+Visual 4 ProximalHeat Fit Insert scale: X1.0 Y1.0 Z1.0
+Visual 4 ProximalHeat Fit Insert groups: None
+Visual 4 ProximalHeat Fit Insert mesh: Visual 4 ProximalHeat Fit Insert
+Visual 4 ProximalHeat Fit Insert materials: Material.001, 
+Visual 4 ProximalHeat Fit Insert modifiers: None
+
+Name: Visual 4 ProximalInner Proximal 004
+Visual 4 ProximalInner Proximal 004 Type: MESH
+Visual 4 ProximalInner Proximal 004 transform: X37.874996185302734 Y-3.3274002075195312 Z0.0
+Visual 4 ProximalInner Proximal 004 rotation: X0.0 Y-0.0 Z-0.1745329201221466
+Visual 4 ProximalInner Proximal 004 scale: X1.0 Y1.0 Z1.0
+Visual 4 ProximalInner Proximal 004 groups: None
+Visual 4 ProximalInner Proximal 004 mesh: Visual 4 ProximalInner Proximal 004
+Visual 4 ProximalInner Proximal 004 materials: PLA White, 
+Visual 4 ProximalInner Proximal 004 modifiers: None
+
+Name: Visual 4 ProximalUrethane Proximal 003
+Visual 4 ProximalUrethane Proximal 003 Type: MESH
+Visual 4 ProximalUrethane Proximal 003 transform: X37.874996185302734 Y-3.3274002075195312 Z0.0
+Visual 4 ProximalUrethane Proximal 003 rotation: X0.0 Y-0.0 Z-0.1745329201221466
+Visual 4 ProximalUrethane Proximal 003 scale: X1.0 Y1.0 Z1.0
+Visual 4 ProximalUrethane Proximal 003 groups: None
+Visual 4 ProximalUrethane Proximal 003 mesh: Visual 4 ProximalUrethane Proximal 003
+Visual 4 ProximalUrethane Proximal 003 materials: Boolean difference, 
+Visual 4 ProximalUrethane Proximal 003 modifiers: None
+
+Name: Visual 4 Top CoverTop cover distal 004
+Visual 4 Top CoverTop cover distal 004 Type: MESH
+Visual 4 Top CoverTop cover distal 004 transform: X37.874996185302734 Y-3.327399969100952 Z0.0
+Visual 4 Top CoverTop cover distal 004 rotation: X0.0 Y-0.0 Z-0.1745329201221466
+Visual 4 Top CoverTop cover distal 004 scale: X1.0 Y1.0 Z1.0
+Visual 4 Top CoverTop cover distal 004 groups: None
+Visual 4 Top CoverTop cover distal 004 mesh: Visual 4 Top CoverTop cover distal 004.001
+Visual 4 Top CoverTop cover distal 004 materials: PLA White, 
+Visual 4 Top CoverTop cover distal 004 modifiers: None
+
+Name: Visual 4 Top CoverTop cover proximal 004
+Visual 4 Top CoverTop cover proximal 004 Type: MESH
+Visual 4 Top CoverTop cover proximal 004 transform: X37.874996185302734 Y-3.327399969100952 Z0.0
+Visual 4 Top CoverTop cover proximal 004 rotation: X0.0 Y-0.0 Z-0.1745329201221466
+Visual 4 Top CoverTop cover proximal 004 scale: X1.0 Y1.0 Z1.0
+Visual 4 Top CoverTop cover proximal 004 groups: None
+Visual 4 Top CoverTop cover proximal 004 mesh: Visual 4 Top CoverTop cover proximal 004.001
+Visual 4 Top CoverTop cover proximal 004 materials: PLA White, 
+Visual 4 Top CoverTop cover proximal 004 modifiers: None
+
+Name: Wafer Head Screw
+Wafer Head Screw Type: MESH
+Wafer Head Screw transform: X-25.098777770996094 Y68.89859008789062 Z2.70611572265625
+Wafer Head Screw rotation: X0.0 Y0.0 Z0.0
+Wafer Head Screw scale: X1.0 Y1.0 Z1.0
+Wafer Head Screw groups: None
+Wafer Head Screw mesh: Wafer Head Screw
+Wafer Head Screw materials: Steel, 
+Wafer Head Screw modifiers: None
+
+Name: Wafer Head Screw.001
+Wafer Head Screw.001 Type: MESH
+Wafer Head Screw.001 transform: X0.0 Y69.97563171386719 Z2.601207733154297
+Wafer Head Screw.001 rotation: X0.0 Y0.0 Z0.0
+Wafer Head Screw.001 scale: X1.0 Y1.0 Z1.0
+Wafer Head Screw.001 groups: None
+Wafer Head Screw.001 mesh: Wafer Head Screw.001
+Wafer Head Screw.001 materials: None
+Wafer Head Screw.001 modifiers: None
+
+Name: Wafer Head Screw.002
+Wafer Head Screw.002 Type: MESH
+Wafer Head Screw.002 transform: X24.482593536376953 Y61.81584930419922 Z2.2889442443847656
+Wafer Head Screw.002 rotation: X0.0 Y0.0 Z0.0
+Wafer Head Screw.002 scale: X1.0 Y1.0 Z1.0
+Wafer Head Screw.002 groups: None
+Wafer Head Screw.002 mesh: Wafer Head Screw.002
+Wafer Head Screw.002 materials: None
+Wafer Head Screw.002 modifiers: None
+
+Name: Wafer Head Screw.003
+Wafer Head Screw.003 Type: MESH
+Wafer Head Screw.003 transform: X47.59353256225586 Y51.789161682128906 Z2.4037342071533203
+Wafer Head Screw.003 rotation: X0.0 Y0.0 Z0.0
+Wafer Head Screw.003 scale: X1.0 Y1.0 Z1.0
+Wafer Head Screw.003 groups: None
+Wafer Head Screw.003 mesh: Wafer Head Screw.003
+Wafer Head Screw.003 materials: None
+Wafer Head Screw.003 modifiers: None
+
+Name: Wafer Head Screw.004
+Wafer Head Screw.004 Type: MESH
+Wafer Head Screw.004 transform: X-54.31397247314453 Y-38.79854202270508 Z-15.746013641357422
+Wafer Head Screw.004 rotation: X0.5291674733161926 Y-1.570796251296997 Z0.0
+Wafer Head Screw.004 scale: X1.0 Y1.0 Z1.0
+Wafer Head Screw.004 groups: None
+Wafer Head Screw.004 mesh: Wafer Head Screw.004
+Wafer Head Screw.004 materials: Steel, 
+Wafer Head Screw.004 modifiers: None
 
 Name: Wrist / Stand Connector 
 Wrist / Stand Connector  Type: MESH
@@ -7699,6 +9667,26 @@ Plane.002 modifiers:
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
+Name: 1.4mm Cap HeadCylinder 026.001
+1.4mm Cap HeadCylinder 026.001 Type: MESH
+1.4mm Cap HeadCylinder 026.001 transform: X-1.1146240234375 Y-13.85504150390625 Z-1.0396289825439453
+1.4mm Cap HeadCylinder 026.001 rotation: X0.0 Y0.0 Z0.0
+1.4mm Cap HeadCylinder 026.001 scale: X1.0 Y1.0 Z1.0
+1.4mm Cap HeadCylinder 026.001 groups: Thumb, 
+1.4mm Cap HeadCylinder 026.001 mesh: 1.4mm Cap HeadCylinder 026.001
+1.4mm Cap HeadCylinder 026.001 materials: Steel, 
+1.4mm Cap HeadCylinder 026.001 modifiers: None
+
+Name: Torx Countersunk Screws 5mm.001
+Torx Countersunk Screws 5mm.001 Type: MESH
+Torx Countersunk Screws 5mm.001 transform: X13.834366798400879 Y8.283831596374512 Z1.9957094192504883
+Torx Countersunk Screws 5mm.001 rotation: X0.0 Y0.0 Z0.0
+Torx Countersunk Screws 5mm.001 scale: X1.0 Y1.0 Z1.0
+Torx Countersunk Screws 5mm.001 groups: Thumb, 
+Torx Countersunk Screws 5mm.001 mesh: Torx Countersunk Screws 5mm.001
+Torx Countersunk Screws 5mm.001 materials: Steel, 
+Torx Countersunk Screws 5mm.001 modifiers: None
+
 Name: Thumb urethane pad v2
 Thumb urethane pad v2 Type: MESH
 Thumb urethane pad v2 transform: X-8.095602035522461 Y5.418328285217285 Z1.957442045211792
@@ -7712,6 +9700,16 @@ Thumb urethane pad v2 modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #2 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
+
+Name: Heat Fit Insert.001
+Heat Fit Insert.001 Type: MESH
+Heat Fit Insert.001 transform: X23.60295295715332 Y51.952388763427734 Z0.6887726187705994
+Heat Fit Insert.001 rotation: X-0.8534303307533264 Y-1.570796251296997 Z0.0
+Heat Fit Insert.001 scale: X1.0 Y1.0 Z1.0
+Heat Fit Insert.001 groups: Thumb, 
+Heat Fit Insert.001 mesh: Heat Fit Insert.001
+Heat Fit Insert.001 materials: Material.001, 
+Heat Fit Insert.001 modifiers: None
 
 Name: BOOLEAN Thumb Cover M2 Bolt Clearance
 BOOLEAN Thumb Cover M2 Bolt Clearance Type: MESH
@@ -7780,6 +9778,16 @@ BOOLEAN Spring termination point mesh: Cylinder.003
 BOOLEAN Spring termination point materials: Boolean difference, 
 BOOLEAN Spring termination point modifiers: None
 
+Name: Thumb ligament .001
+Thumb ligament .001 Type: MESH
+Thumb ligament .001 transform: X-7.62939453125e-06 Y-9.5367431640625e-07 Z0.0
+Thumb ligament .001 rotation: X3.7112233286507035e-08 Y-3.8849226058346176e-08 Z-1.5707961320877075
+Thumb ligament .001 scale: X0.9999999403953552 Y0.9999998807907104 Z1.0
+Thumb ligament .001 groups: Thumb, 
+Thumb ligament .001 mesh: Thumb Ligament .001
+Thumb ligament .001 materials: Urethane, 
+Thumb ligament .001 modifiers: None
+
 Name: Plane
 Plane Type: MESH
 Plane transform: X-2.45361065864563 Y6.517271041870117 Z1.49506676197052
@@ -7831,20 +9839,6 @@ BOOLEAN Thumb ligament for thumb.001 materials: Boolean difference,
 BOOLEAN Thumb ligament for thumb.001 modifiers: 
   #1 Name: Displace, Type: DISPLACE
 
-Name: BOOLEAN Thumb Cover 0.2mm Clearance
-BOOLEAN Thumb Cover 0.2mm Clearance Type: MESH
-BOOLEAN Thumb Cover 0.2mm Clearance transform: X16.15850830078125 Y53.10857391357422 Z0.0
-BOOLEAN Thumb Cover 0.2mm Clearance rotation: X1.5707963705062866 Y-0.0 Z0.5859462022781372
-BOOLEAN Thumb Cover 0.2mm Clearance scale: X1.0 Y1.0 Z1.0
-BOOLEAN Thumb Cover 0.2mm Clearance groups: Thumb, 
-BOOLEAN Thumb Cover 0.2mm Clearance mesh: Plane.001
-BOOLEAN Thumb Cover 0.2mm Clearance materials: Boolean difference, 
-BOOLEAN Thumb Cover 0.2mm Clearance modifiers: 
-  #1 Name: Solidify, Type: SOLIDIFY
-        Thickness: 0.20, Offset: 1.00 
-        Even thickness: False, High Quality Normals: True  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-
 Name: MOULD Thumb 
 MOULD Thumb  Type: MESH
 MOULD Thumb  transform: X-8.095602035522461 Y5.418328285217285 Z1.957442045211792
@@ -7858,18 +9852,6 @@ MOULD Thumb  modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #2 Name: Boolean.001.BOOLEAN Thumb Ligament Clamp, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb Ligament Clamp
-
-Name: BOOLEAN Thumb Cover 
-BOOLEAN Thumb Cover  Type: MESH
-BOOLEAN Thumb Cover  transform: X16.158498764038086 Y53.10859680175781 Z0.0
-BOOLEAN Thumb Cover  rotation: X1.5707963705062866 Y-0.0 Z0.5859454274177551
-BOOLEAN Thumb Cover  scale: X1.0 Y1.0 Z1.0
-BOOLEAN Thumb Cover  groups: Thumb, 
-BOOLEAN Thumb Cover  mesh: Plane.001
-BOOLEAN Thumb Cover  materials: Boolean difference, 
-BOOLEAN Thumb Cover  modifiers: 
-  #1 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Ligament extra thumb cut
 BOOLEAN Ligament extra thumb cut Type: MESH
@@ -7960,6 +9942,16 @@ TARGET Thumb modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #2 Name: Displace, Type: DISPLACE
+
+Name: Thumb Ligament Clamp.001
+Thumb Ligament Clamp.001 Type: MESH
+Thumb Ligament Clamp.001 transform: X0.10961323976516724 Y4.8092241287231445 Z1.5663089752197266
+Thumb Ligament Clamp.001 rotation: X8.940696716308594e-08 Y7.450580596923828e-09 Z0.2666022777557373
+Thumb Ligament Clamp.001 scale: X1.0 Y1.0 Z1.0
+Thumb Ligament Clamp.001 groups: Thumb, 
+Thumb Ligament Clamp.001 mesh: Plane.018
+Thumb Ligament Clamp.001 materials: PLA White, 
+Thumb Ligament Clamp.001 modifiers: None
 
 Name: Thumb ligament bent
 Thumb ligament bent Type: MESH
@@ -8161,6 +10153,30 @@ Thumb modifiers:
   #13 Name: Boolean.BOOLEAN Ligament Clamp Radius, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Ligament Clamp Radius
 
+Name: Extension SpringCylinder 041
+Extension SpringCylinder 041 Type: MESH
+Extension SpringCylinder 041 transform: X-1.0081300735473633 Y-1.1181234121322632 Z1.9481791257858276
+Extension SpringCylinder 041 rotation: X1.6501598358154297 Y-0.0 Z0.0
+Extension SpringCylinder 041 scale: X1.0 Y1.0 Z1.0
+Extension SpringCylinder 041 groups: Thumb, 
+Extension SpringCylinder 041 mesh: Extension SpringCylinder 041
+Extension SpringCylinder 041 materials: Steel, 
+Extension SpringCylinder 041 modifiers: None
+
+Name: BOOLEAN Thumb Cover 0.2mm Clearance
+BOOLEAN Thumb Cover 0.2mm Clearance Type: MESH
+BOOLEAN Thumb Cover 0.2mm Clearance transform: X16.15850830078125 Y53.10857391357422 Z0.0
+BOOLEAN Thumb Cover 0.2mm Clearance rotation: X1.5707963705062866 Y-0.0 Z0.5859462022781372
+BOOLEAN Thumb Cover 0.2mm Clearance scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb Cover 0.2mm Clearance groups: None
+BOOLEAN Thumb Cover 0.2mm Clearance mesh: Plane.001
+BOOLEAN Thumb Cover 0.2mm Clearance materials: Boolean difference, 
+BOOLEAN Thumb Cover 0.2mm Clearance modifiers: 
+  #1 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.20, Offset: 1.00 
+        Even thickness: False, High Quality Normals: True  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
 Name: BOOLEAN Thumb Spring Termination Clearance
 BOOLEAN Thumb Spring Termination Clearance Type: MESH
 BOOLEAN Thumb Spring Termination Clearance transform: X-1.0081286430358887 Y5.882246494293213 Z4.473217010498047
@@ -8181,6 +10197,18 @@ BOOLEAN Thumb Ligament Cover M2 Countersink groups: None
 BOOLEAN Thumb Ligament Cover M2 Countersink mesh: Cylinder.005
 BOOLEAN Thumb Ligament Cover M2 Countersink materials: Boolean difference.001, 
 BOOLEAN Thumb Ligament Cover M2 Countersink modifiers: None
+
+Name: BOOLEAN Thumb Cover 
+BOOLEAN Thumb Cover  Type: MESH
+BOOLEAN Thumb Cover  transform: X16.158498764038086 Y53.10859680175781 Z0.0
+BOOLEAN Thumb Cover  rotation: X1.5707963705062866 Y-0.0 Z0.5859454274177551
+BOOLEAN Thumb Cover  scale: X1.0 Y1.0 Z1.0
+BOOLEAN Thumb Cover  groups: None
+BOOLEAN Thumb Cover  mesh: Plane.001
+BOOLEAN Thumb Cover  materials: Boolean difference, 
+BOOLEAN Thumb Cover  modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
 
 Name: BOOLEAN Distal M2 Top cover.001
 BOOLEAN Distal M2 Top cover.001 Type: MESH
