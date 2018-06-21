@@ -662,15 +662,15 @@ BOOLEAN Ligament.002 modifiers:
         Even thickness: True, High Quality Normals: True  #5 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
-Name: BOOLEAN M2 Countersink Wrist Connector
-BOOLEAN M2 Countersink Wrist Connector Type: MESH
-BOOLEAN M2 Countersink Wrist Connector transform: X9.27890396118164 Y-105.61195373535156 Z-11.665422439575195
-BOOLEAN M2 Countersink Wrist Connector rotation: X0.20951250195503235 Y-3.123795509338379 Z0.08974475413560867
-BOOLEAN M2 Countersink Wrist Connector scale: X1.0 Y1.0 Z1.0
-BOOLEAN M2 Countersink Wrist Connector groups: None
-BOOLEAN M2 Countersink Wrist Connector mesh: Cylinder.028
-BOOLEAN M2 Countersink Wrist Connector materials: Boolean difference, 
-BOOLEAN M2 Countersink Wrist Connector modifiers: None
+Name: BOOLEAN M3 Insert for Winged Bolt
+BOOLEAN M3 Insert for Winged Bolt Type: MESH
+BOOLEAN M3 Insert for Winged Bolt transform: X9.013276100158691 Y-114.0118408203125 Z8.192394256591797
+BOOLEAN M3 Insert for Winged Bolt rotation: X1.840193271636963 Y-3.80509614944458 Z0.1681845635175705
+BOOLEAN M3 Insert for Winged Bolt scale: X1.0 Y1.0 Z1.0
+BOOLEAN M3 Insert for Winged Bolt groups: None
+BOOLEAN M3 Insert for Winged Bolt mesh: Cylinder.033
+BOOLEAN M3 Insert for Winged Bolt materials: Boolean difference, 
+BOOLEAN M3 Insert for Winged Bolt modifiers: None
 
 Name: BOOLEAN Micro USB
 BOOLEAN Micro USB Type: MESH
@@ -871,7 +871,7 @@ BOOLEAN Power Cable  modifiers: None
 
 Name: BOOLEAN Power Cable Stand
 BOOLEAN Power Cable Stand Type: MESH
-BOOLEAN Power Cable Stand transform: X-8.824284553527832 Y-130.03526306152344 Z12.937438011169434
+BOOLEAN Power Cable Stand transform: X-8.124372482299805 Y-130.03782653808594 Z12.926676750183105
 BOOLEAN Power Cable Stand rotation: X1.5705891847610474 Y-0.01164117269217968 Z0.017143409699201584
 BOOLEAN Power Cable Stand scale: X0.6000000834465027 Y0.6000000834465027 Z1.0
 BOOLEAN Power Cable Stand groups: None
@@ -2306,7 +2306,7 @@ LH STAND Base modifiers:
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #3 Name: Boolean.BOOLEAN M2 Countersink Wrist Connector, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M2 Countersink Wrist Connector
+        Operation: DIFFERENCE, Object: None
   #4 Name: Boolean.STAND BOOLEAN Connector Block, Type: BOOLEAN
         Operation: DIFFERENCE, Object: STAND BOOLEAN Connector Block
   #5 Name: Boolean.BOOLEAN Power Cable Stand, Type: BOOLEAN
@@ -2333,7 +2333,7 @@ LH STAND Connector Block modifiers:
   #2 Name: Boolean.LH BOOLEAN Wrist Connector M2 Countersinks, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LH BOOLEAN Wrist Connector M2 Countersinks
   #3 Name: Boolean.BOOLEAN M2 Countersink Wrist Connector, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M2 Countersink Wrist Connector
+        Operation: DIFFERENCE, Object: None
 
 Name: LH TARGET Outer Surface
 LH TARGET Outer Surface Type: MESH
@@ -3017,7 +3017,7 @@ STAND Base modifiers:
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
   #3 Name: Boolean.BOOLEAN M2 Countersink Wrist Connector, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M2 Countersink Wrist Connector
+        Operation: DIFFERENCE, Object: None
   #4 Name: Boolean.STAND BOOLEAN Connector Block, Type: BOOLEAN
         Operation: DIFFERENCE, Object: STAND BOOLEAN Connector Block
   #5 Name: Boolean.BOOLEAN Power Cable Stand, Type: BOOLEAN
@@ -3030,6 +3030,53 @@ STAND Base modifiers:
         Operation: INTERSECT, Object: BOOLEAN Wrist Flatten
   #9 Name: Boolean.BOOLEAN Stand Grip Band, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Stand Grip Band
+
+Name: STAND Base.001
+STAND Base.001 Type: MESH
+STAND Base.001 transform: X9.066848754882812 Y-95.41497802734375 Z9.511549949645996
+STAND Base.001 rotation: X0.13962633907794952 Y-0.0 Z0.0
+STAND Base.001 scale: X1.0 Y1.0 Z1.0
+STAND Base.001 groups: None
+STAND Base.001 mesh: Circle.000
+STAND Base.001 materials: PLA, 
+STAND Base.001 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #3 Name: Boolean.BOOLEAN M3 Insert for Winged Bolt, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M3 Insert for Winged Bolt
+  #4 Name: Boolean.STAND BOOLEAN Connector Block, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: STAND BOOLEAN Connector Block
+  #5 Name: Boolean.STAND BOOLEAN Cable Channel, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: STAND BOOLEAN Cable Channel
+  #6 Name: Boolean.BOOLEAN Power Cable Stand, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Power Cable Stand
+  #7 Name: Boolean.STAND BOOLEAN Cable Tidy, Type: BOOLEAN
+        Operation: UNION, Object: STAND BOOLEAN Cable Tidy
+  #8 Name: Boolean.STAND BOOLEAN Base Hollow, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: STAND BOOLEAN Base Hollow
+  #9 Name: Boolean.BOOLEAN Wrist Flatten, Type: BOOLEAN
+        Operation: INTERSECT, Object: BOOLEAN Wrist Flatten
+  #10 Name: Boolean.BOOLEAN Stand Grip Band, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Stand Grip Band
+  #11 Name: Boolean.BOOLEAN M3 Insert for Winged Bolt.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M3 Insert for Winged Bolt
+  #12 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Text
+
+Name: STAND BOOLEAN Base Hollow
+STAND BOOLEAN Base Hollow Type: MESH
+STAND BOOLEAN Base Hollow transform: X8.615761756896973 Y-107.89485168457031 Z7.842812538146973
+STAND BOOLEAN Base Hollow rotation: X0.13962633907794952 Y-0.0 Z0.0
+STAND BOOLEAN Base Hollow scale: X1.0 Y1.0 Z1.0
+STAND BOOLEAN Base Hollow groups: None
+STAND BOOLEAN Base Hollow mesh: Circle.005
+STAND BOOLEAN Base Hollow materials: PLA, 
+STAND BOOLEAN Base Hollow modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: STAND BOOLEAN Wing Nut Boss 
 
 Name: STAND BOOLEAN Cable Channel
 STAND BOOLEAN Cable Channel Type: MESH
@@ -3066,6 +3113,16 @@ STAND BOOLEAN Connector Block modifiers:
         Thickness: 0.01, Offset: -1.00 
         Even thickness: True, High Quality Normals: True  #2 Name: Bevel, Type: BEVEL
 
+Name: STAND BOOLEAN Wing Nut Boss 
+STAND BOOLEAN Wing Nut Boss  Type: MESH
+STAND BOOLEAN Wing Nut Boss  transform: X9.0148286819458 Y-107.91105651855469 Z6.8840742111206055
+STAND BOOLEAN Wing Nut Boss  rotation: X1.8401931524276733 Y2.4780893325805664 Z0.1681845784187317
+STAND BOOLEAN Wing Nut Boss  scale: X1.0 Y1.0 Z1.0
+STAND BOOLEAN Wing Nut Boss  groups: None
+STAND BOOLEAN Wing Nut Boss  mesh: Cylinder.034
+STAND BOOLEAN Wing Nut Boss  materials: None
+STAND BOOLEAN Wing Nut Boss  modifiers: None
+
 Name: STAND Connector Block
 STAND Connector Block Type: MESH
 STAND Connector Block transform: X9.019871711730957 Y-94.9280776977539 Z4.087913990020752
@@ -3078,8 +3135,8 @@ STAND Connector Block modifiers:
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Boolean.BOOLEAN Wrist Connector M2 Countersinks, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Wrist Connector M2 Countersinks
-  #3 Name: Boolean.BOOLEAN New Wrist connector M2 bolt holes for stand, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M2 Countersink Wrist Connector
+  #3 Name: Boolean.BOOLEAN M3 Insert for Winged Bolt, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M3 Insert for Winged Bolt
 
 Name: Stand Grip Band
 Stand Grip Band Type: MESH
@@ -3218,6 +3275,16 @@ TARGET Urethane Pad  modifiers:
         Thickness: 3.00, Offset: 1.00 
         Even thickness: False, High Quality Normals: False  #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+
+Name: Text
+Text Type: MESH
+Text transform: X25.61363983154297 Y-107.9569320678711 Z7.581482410430908
+Text rotation: X1.3589223623275757 Y0.015372962690889835 Z-0.003652416868135333
+Text scale: X1.0 Y1.0 Z1.0
+Text groups: None
+Text mesh: CUText
+Text materials: None
+Text modifiers: None
 
 Name: Thumb Ligament Cover 
 Thumb Ligament Cover  Type: MESH
