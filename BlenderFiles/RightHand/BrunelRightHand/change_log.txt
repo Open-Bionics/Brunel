@@ -3110,7 +3110,7 @@ STAND BOOLEAN Connector Block mesh: Plane.002
 STAND BOOLEAN Connector Block materials: Material, 
 STAND BOOLEAN Connector Block modifiers: 
   #1 Name: Solidify, Type: SOLIDIFY
-        Thickness: 0.01, Offset: -1.00 
+        Thickness: 0.20, Offset: 1.00 
         Even thickness: True, High Quality Normals: True  #2 Name: Bevel, Type: BEVEL
 
 Name: STAND BOOLEAN Wing Nut Boss 
