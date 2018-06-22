@@ -3178,6 +3178,16 @@ Cylinder.011 mesh: Cylinder.023
 Cylinder.011 materials: Boolean difference, 
 Cylinder.011 modifiers: None
 
+Name: Cylinder.012
+Cylinder.012 Type: MESH
+Cylinder.012 transform: X0.0032528284937143326 Y23.90154457092285 Z6.252425670623779
+Cylinder.012 rotation: X0.0 Y0.0 Z0.0
+Cylinder.012 scale: X0.0007000000332482159 Y0.0007000000332482159 Z0.0005000000237487257
+Cylinder.012 groups: None
+Cylinder.012 mesh: Cylinder.020
+Cylinder.012 materials: None
+Cylinder.012 modifiers: None
+
 Name: Distal Handle 1
 Distal Handle 1 Type: EMPTY
 Distal Handle 1 transform: X0.0 Y45.0 Z0.0
@@ -5885,6 +5895,16 @@ MOULD Top Clamping plate modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Orientation Indicator
   #7 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Clamping Point Subtraction
+
+Name: Plane
+Plane Type: MESH
+Plane transform: X-0.0021487935446202755 Y38.80856704711914 Z6.752277374267578
+Plane rotation: X0.0 Y0.0 Z0.0
+Plane scale: X1.0 Y1.0 Z1.0
+Plane groups: None
+Plane mesh: Plane.005
+Plane materials: None
+Plane modifiers: None
 
 Name: Proximal Phalanx.001
 Proximal Phalanx.001 Type: EMPTY
