@@ -1,243 +1,116 @@
-Name: Hand Ligament
-Hand Ligament Type: MESH
-Hand Ligament transform: X0.0 Y0.0 Z0.0
-Hand Ligament rotation: X0.0 Y0.0 Z0.0
-Hand Ligament scale: X1.0 Y1.0 Z1.0
-Hand Ligament groups: None
-Hand Ligament mesh: Hand Ligament
-Hand Ligament materials: NF Black.001, NF Black.002, NF Black, 
-Hand Ligament modifiers: 
+Name: HOOK 1st Finger
+HOOK 1st Finger Type: EMPTY
+HOOK 1st Finger transform: X-19.0 Y-0.8107600212097168 Z0.0
+HOOK 1st Finger rotation: X0.0 Y-0.0 Z0.0872664600610733
+HOOK 1st Finger scale: X1.0 Y1.0 Z1.0
+HOOK 1st Finger groups: None
+
+Name: HOOK 1st Finger.001
+HOOK 1st Finger.001 Type: EMPTY
+HOOK 1st Finger.001 transform: X-19.0 Y-0.8107600212097168 Z0.0
+HOOK 1st Finger.001 rotation: X0.0 Y-0.0 Z0.0872664600610733
+HOOK 1st Finger.001 scale: X1.0 Y1.0 Z1.0
+HOOK 1st Finger.001 groups: None
+
+Name: HOOK 2nd Finger
+HOOK 2nd Finger Type: EMPTY
+HOOK 2nd Finger transform: X0.0 Y0.0 Z0.0
+HOOK 2nd Finger rotation: X0.0 Y0.0 Z0.0
+HOOK 2nd Finger scale: X1.0 Y1.0 Z1.0
+HOOK 2nd Finger groups: None
+
+Name: HOOK 2nd Finger.001
+HOOK 2nd Finger.001 Type: EMPTY
+HOOK 2nd Finger.001 transform: X0.0 Y0.0 Z0.0
+HOOK 2nd Finger.001 rotation: X0.0 Y0.0 Z0.0
+HOOK 2nd Finger.001 scale: X1.0 Y1.0 Z1.0
+HOOK 2nd Finger.001 groups: None
+
+Name: HOOK 3rd Finger
+HOOK 3rd Finger Type: EMPTY
+HOOK 3rd Finger transform: X18.999998092651367 Y-0.8505200147628784 Z0.0
+HOOK 3rd Finger rotation: X0.0 Y-0.0 Z-0.0872664600610733
+HOOK 3rd Finger scale: X1.0 Y1.0 Z1.0
+HOOK 3rd Finger groups: None
+
+Name: HOOK 3rd Finger.001
+HOOK 3rd Finger.001 Type: EMPTY
+HOOK 3rd Finger.001 transform: X18.999998092651367 Y-0.8505200147628784 Z0.0
+HOOK 3rd Finger.001 rotation: X0.0 Y-0.0 Z-0.0872664600610733
+HOOK 3rd Finger.001 scale: X1.0 Y1.0 Z1.0
+HOOK 3rd Finger.001 groups: None
+
+Name: HOOK 4th Finger
+HOOK 4th Finger Type: EMPTY
+HOOK 4th Finger transform: X37.874996185302734 Y-3.327399969100952 Z0.0
+HOOK 4th Finger rotation: X0.0 Y-0.0 Z-0.1745329201221466
+HOOK 4th Finger scale: X1.0 Y1.0 Z1.0
+HOOK 4th Finger groups: None
+
+Name: HOOK 4th Finger.001
+HOOK 4th Finger.001 Type: EMPTY
+HOOK 4th Finger.001 transform: X37.874996185302734 Y-3.327399969100952 Z0.0
+HOOK 4th Finger.001 rotation: X0.0 Y-0.0 Z-0.1745329201221466
+HOOK 4th Finger.001 scale: X1.0 Y1.0 Z1.0
+HOOK 4th Finger.001 groups: None
+
+Name: Ligament.000
+Ligament.000 Type: MESH
+Ligament.000 transform: X0.0 Y0.0 Z0.0
+Ligament.000 rotation: X0.0 Y-0.0 Z0.0
+Ligament.000 scale: X1.0 Y1.0 Z1.0
+Ligament.000 groups: None
+Ligament.000 mesh: Ligament.001
+Ligament.000 materials: NF Black, NF Black.001, NF Black.002, NF Black.003, 
+Ligament.000 modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
-  #2 Name: Boolean, Type: BOOLEAN
-        Operation: UNION, Object: Ligament.001
-  #3 Name: Boolean.001, Type: BOOLEAN
-        Operation: UNION, Object: Ligament.002
-  #4 Name: Boolean.002, Type: BOOLEAN
-        Operation: UNION, Object: Ligament.003
-  #5 Name: Boolean.003, Type: BOOLEAN
-        Operation: UNION, Object: Ligament.004
-
-Name: HANDLE 1st Finger
-HANDLE 1st Finger Type: EMPTY
-HANDLE 1st Finger transform: X-18.910953521728516 Y-1.510380744934082 Z0.0
-HANDLE 1st Finger rotation: X0.0 Y-0.0 Z0.08700776100158691
-HANDLE 1st Finger scale: X1.0 Y1.0 Z1.0
-HANDLE 1st Finger groups: None
-
-Name: HANDLE 2nd Finger
-HANDLE 2nd Finger Type: EMPTY
-HANDLE 2nd Finger transform: X0.0 Y-0.5 Z0.0
-HANDLE 2nd Finger rotation: X0.0 Y0.0 Z0.0
-HANDLE 2nd Finger scale: X1.0 Y1.0 Z1.0
-HANDLE 2nd Finger groups: None
-
-Name: HANDLE 3rd Finger
-HANDLE 3rd Finger Type: EMPTY
-HANDLE 3rd Finger transform: X18.898723602294922 Y-1.504272699356079 Z-2.384185791015625e-07
-HANDLE 3rd Finger rotation: X0.0 Y-0.0 Z-0.08605600893497467
-HANDLE 3rd Finger scale: X1.0 Y1.0 Z1.0
-HANDLE 3rd Finger groups: None
-
-Name: HANDLE 4th Finger
-HANDLE 4th Finger Type: EMPTY
-HANDLE 4th Finger transform: X37.953880310058594 Y-3.916379928588867 Z0.0
-HANDLE 4th Finger rotation: X0.0 Y-0.0 Z-0.1752183437347412
-HANDLE 4th Finger scale: X1.0 Y1.0 Z1.0
-HANDLE 4th Finger groups: None
-
-Name: HANDLE Distal Joint.001
-HANDLE Distal Joint.001 Type: MESH
-HANDLE Distal Joint.001 transform: X0.0 Y45.0 Z0.0
-HANDLE Distal Joint.001 rotation: X0.0 Y0.0 Z0.0
-HANDLE Distal Joint.001 scale: X1.0 Y1.0 Z1.0
-HANDLE Distal Joint.001 groups: None
-HANDLE Distal Joint.001 parent: HANDLE 1st Finger
-HANDLE Distal Joint.001 mesh: HANDLE Distal Joint
-HANDLE Distal Joint.001 materials: HANDLE, 
-HANDLE Distal Joint.001 modifiers: None
-
-Name: HANDLE Distal Joint.002
-HANDLE Distal Joint.002 Type: MESH
-HANDLE Distal Joint.002 transform: X0.0 Y45.0 Z0.0
-HANDLE Distal Joint.002 rotation: X0.0 Y0.0 Z0.0
-HANDLE Distal Joint.002 scale: X1.0 Y1.0 Z1.0
-HANDLE Distal Joint.002 groups: None
-HANDLE Distal Joint.002 parent: HANDLE 2nd Finger
-HANDLE Distal Joint.002 mesh: HANDLE Distal Joint.001
-HANDLE Distal Joint.002 materials: HANDLE.001, 
-HANDLE Distal Joint.002 modifiers: None
-
-Name: HANDLE Distal Joint.003
-HANDLE Distal Joint.003 Type: MESH
-HANDLE Distal Joint.003 transform: X0.0 Y38.0 Z0.0
-HANDLE Distal Joint.003 rotation: X0.0 Y0.0 Z0.0
-HANDLE Distal Joint.003 scale: X1.0 Y1.0 Z1.0
-HANDLE Distal Joint.003 groups: None
-HANDLE Distal Joint.003 parent: HANDLE 3rd Finger
-HANDLE Distal Joint.003 mesh: HANDLE Distal Joint.002
-HANDLE Distal Joint.003 materials: HANDLE.002, 
-HANDLE Distal Joint.003 modifiers: None
-
-Name: HANDLE Distal Joint.004
-HANDLE Distal Joint.004 Type: MESH
-HANDLE Distal Joint.004 transform: X0.0 Y30.0 Z0.0
-HANDLE Distal Joint.004 rotation: X0.0 Y0.0 Z0.0
-HANDLE Distal Joint.004 scale: X1.0 Y1.0 Z1.0
-HANDLE Distal Joint.004 groups: None
-HANDLE Distal Joint.004 parent: HANDLE 4th Finger
-HANDLE Distal Joint.004 mesh: HANDLE Distal Joint.003
-HANDLE Distal Joint.004 materials: HANDLE.003, 
-HANDLE Distal Joint.004 modifiers: None
-
-Name: HANDLE Fingertip.001
-HANDLE Fingertip.001 Type: MESH
-HANDLE Fingertip.001 transform: X0.0 Y44.0 Z0.0
-HANDLE Fingertip.001 rotation: X0.0 Y0.0 Z0.0
-HANDLE Fingertip.001 scale: X1.0 Y1.0 Z1.0
-HANDLE Fingertip.001 groups: None
-HANDLE Fingertip.001 parent: HANDLE Distal Joint.001
-HANDLE Fingertip.001 mesh: HANDLE Fingertip
-HANDLE Fingertip.001 materials: HANDLE, 
-HANDLE Fingertip.001 modifiers: None
-
-Name: HANDLE Fingertip.002
-HANDLE Fingertip.002 Type: MESH
-HANDLE Fingertip.002 transform: X0.0 Y45.0 Z0.0
-HANDLE Fingertip.002 rotation: X0.0 Y0.0 Z0.0
-HANDLE Fingertip.002 scale: X1.0 Y1.0 Z1.0
-HANDLE Fingertip.002 groups: None
-HANDLE Fingertip.002 parent: HANDLE Distal Joint.002
-HANDLE Fingertip.002 mesh: HANDLE Fingertip.001
-HANDLE Fingertip.002 materials: HANDLE.001, 
-HANDLE Fingertip.002 modifiers: None
-
-Name: HANDLE Fingertip.003
-HANDLE Fingertip.003 Type: MESH
-HANDLE Fingertip.003 transform: X0.0 Y42.0 Z0.0
-HANDLE Fingertip.003 rotation: X0.0 Y0.0 Z0.0
-HANDLE Fingertip.003 scale: X1.0 Y1.0 Z1.0
-HANDLE Fingertip.003 groups: None
-HANDLE Fingertip.003 parent: HANDLE Distal Joint.003
-HANDLE Fingertip.003 mesh: HANDLE Fingertip.002
-HANDLE Fingertip.003 materials: HANDLE.002, 
-HANDLE Fingertip.003 modifiers: None
-
-Name: HANDLE Fingertip.004
-HANDLE Fingertip.004 Type: MESH
-HANDLE Fingertip.004 transform: X0.0 Y38.0 Z0.0
-HANDLE Fingertip.004 rotation: X0.0 Y0.0 Z0.0
-HANDLE Fingertip.004 scale: X1.0 Y1.0 Z1.0
-HANDLE Fingertip.004 groups: None
-HANDLE Fingertip.004 parent: HANDLE Distal Joint.004
-HANDLE Fingertip.004 mesh: HANDLE Fingertip.003
-HANDLE Fingertip.004 materials: HANDLE.003, 
-HANDLE Fingertip.004 modifiers: None
-
-Name: HANDLE Thickness.003
-HANDLE Thickness.003 Type: MESH
-HANDLE Thickness.003 transform: X0.0 Y0.0 Z0.6000000238418579
-HANDLE Thickness.003 rotation: X0.0 Y0.0 Z0.0
-HANDLE Thickness.003 scale: X1.0 Y1.0 Z1.0
-HANDLE Thickness.003 groups: None
-HANDLE Thickness.003 parent: HANDLE 3rd Finger
-HANDLE Thickness.003 mesh: HANDLE Distal Joint.004
-HANDLE Thickness.003 materials: HANDLE.002, 
-HANDLE Thickness.003 modifiers: None
-
-Name: HANDLE Thickness.004
-HANDLE Thickness.004 Type: MESH
-HANDLE Thickness.004 transform: X0.0 Y0.0 Z0.6000000238418579
-HANDLE Thickness.004 rotation: X0.0 Y0.0 Z0.0
-HANDLE Thickness.004 scale: X1.0 Y1.0 Z1.0
-HANDLE Thickness.004 groups: None
-HANDLE Thickness.004 parent: HANDLE 4th Finger
-HANDLE Thickness.004 mesh: HANDLE Distal Joint.005
-HANDLE Thickness.004 materials: HANDLE.003, 
-HANDLE Thickness.004 modifiers: None
 
 Name: Ligament.001
 Ligament.001 Type: MESH
-Ligament.001 transform: X-18.910951614379883 Y-1.5103808641433716 Z0.0
-Ligament.001 rotation: X0.0 Y0.0 Z0.0
+Ligament.001 transform: X-19.0 Y-0.8107600212097168 Z0.0
+Ligament.001 rotation: X0.0 Y-0.0 Z0.0872664526104927
 Ligament.001 scale: X1.0 Y1.0 Z1.0
 Ligament.001 groups: None
-Ligament.001 parent: HANDLE 1st Finger
-Ligament.001 mesh: Ligament.003
-Ligament.001 materials: NF Black.004, 
+Ligament.001 mesh: Ligament.002
+Ligament.001 materials: NF Black, NF Black.001, NF Black.002, NF Black.003, 
 Ligament.001 modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Mirror object: HANDLE 1st Finger
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-
-Name: Ligament.002
-Ligament.002 Type: MESH
-Ligament.002 transform: X0.0 Y-0.5 Z0.0
-Ligament.002 rotation: X0.0 Y0.0 Z0.0
-Ligament.002 scale: X1.0 Y1.0 Z1.0
-Ligament.002 groups: None
-Ligament.002 parent: HANDLE 2nd Finger
-Ligament.002 mesh: Ligament.001
-Ligament.002 materials: NF Black.004, 
-Ligament.002 modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Hook.001, Type: HOOK
-  #3 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #4 Name: Subsurf, Type: SUBSURF
+  #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Ligament.003
 Ligament.003 Type: MESH
-Ligament.003 transform: X18.89872169494629 Y-1.504272699356079 Z-2.384185791015625e-07
-Ligament.003 rotation: X0.0 Y0.0 Z0.0
+Ligament.003 transform: X18.999998092651367 Y-0.8505200147628784 Z0.0
+Ligament.003 rotation: X0.0 Y-0.0 Z-0.0872664526104927
 Ligament.003 scale: X1.0 Y1.0 Z1.0
 Ligament.003 groups: None
-Ligament.003 parent: HANDLE 3rd Finger
-Ligament.003 mesh: Ligament.004
-Ligament.003 materials: NF Black.004, 
+Ligament.003 mesh: Ligament.003
+Ligament.003 materials: NF Black, NF Black.001, NF Black.002, NF Black.003, 
 Ligament.003 modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Hook.001, Type: HOOK
-  #3 Name: Hook.002, Type: HOOK
-  #4 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Mirror object: HANDLE 3rd Finger
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #5 Name: Subsurf, Type: SUBSURF
+  #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Ligament.004
 Ligament.004 Type: MESH
-Ligament.004 transform: X37.953880310058594 Y-3.916379928588867 Z0.0
-Ligament.004 rotation: X0.0 Y0.0 Z0.0
+Ligament.004 transform: X37.874996185302734 Y-3.327399969100952 Z0.0
+Ligament.004 rotation: X0.0 Y-0.0 Z-0.1745329201221466
 Ligament.004 scale: X1.0 Y1.0 Z1.0
 Ligament.004 groups: None
-Ligament.004 parent: HANDLE 4th Finger
-Ligament.004 mesh: Ligament.002
-Ligament.004 materials: NF Black.004, 
+Ligament.004 mesh: Ligament
+Ligament.004 materials: NF Black, NF Black.001, NF Black.002, NF Black.003, 
 Ligament.004 modifiers: 
-  #1 Name: Hook, Type: HOOK
-  #2 Name: Hook.001, Type: HOOK
-  #3 Name: Hook.002, Type: HOOK
-  #4 Name: Mirror, Type: MIRROR
-        Reflecting in local: X, 
-        Mirror object: HANDLE 4th Finger
-        Merge: True, Merge Limit: 0.0010000000474974513 mm
-        Clipping: False
-        Vertex group mirroring: True
-  #5 Name: Subsurf, Type: SUBSURF
+  #1 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Ligament.007
+Ligament.007 Type: MESH
+Ligament.007 transform: X37.874996185302734 Y-3.327399969100952 Z0.0
+Ligament.007 rotation: X0.0 Y-0.0 Z-0.1745329201221466
+Ligament.007 scale: X1.0 Y1.0 Z1.0
+Ligament.007 groups: None
+Ligament.007 mesh: Ligament.007
+Ligament.007 materials: NF Black, NF Black.001, NF Black.002, NF Black.003, 
+Ligament.007 modifiers: 
+  #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
