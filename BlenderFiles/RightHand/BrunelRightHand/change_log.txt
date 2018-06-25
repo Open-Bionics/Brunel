@@ -56,35 +56,39 @@ Back Cover (Integrated Wrist) Flat modifiers:
   #4 Name: Boolean.Back Cover Wrist Wedge, Type: BOOLEAN
         Operation: UNION, Object: Back Cover Wrist Wedge
   #5 Name: Boolean.Headphone / Micro USB.000, Type: BOOLEAN
-        Operation: UNION, Object: Headphone / Micro USB.000
-  #6 Name: Boolean.BOOLEAN Gala Cheetah Tidy, Type: BOOLEAN
+        Operation: UNION, Object: Headphone / Micro USB.002
+  #6 Name: Boolean, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN UNION Headphone Jack Plinth
+  #7 Name: Boolean.BOOLEAN Gala Cheetah Tidy, Type: BOOLEAN
         Operation: INTERSECT, Object: BOOLEAN Gala Cheetah Tidy
-  #7 Name: Boolean.BOOLEAN Headphone Jack, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Headphone Jack
-  #8 Name: Boolean.BOOLEAN Micro USB, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Micro USB
-  #9 Name: Boolean.BOOLEAN PQ12 exteneed 0.3 mm tolerance, Type: BOOLEAN
+  #8 Name: Boolean.BOOLEAN Headphone Jack, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Headphone Jack.001
+  #9 Name: Boolean.BOOLEAN Micro USB, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Micro USB.001
+  #10 Name: Boolean.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Micro USB Small
+  #11 Name: Boolean.BOOLEAN PQ12 exteneed 0.3 mm tolerance, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
-  #10 Name: Boolean.BOOLEAN Palm and Back Cover Divide, Type: BOOLEAN
+  #12 Name: Boolean.BOOLEAN Palm and Back Cover Divide, Type: BOOLEAN
         Operation: INTERSECT, Object: BOOLEAN Palm and Back Cover Divide
-  #11 Name: Triangulate, Type: TRIANGULATE
-  #12 Name: Boolean.BOOLEAN Fixing points back cover, Type: BOOLEAN
+  #13 Name: Triangulate, Type: TRIANGULATE
+  #14 Name: Boolean.BOOLEAN Fixing points back cover, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Fixing points back cover
-  #13 Name: Boolean.BOOLEAN Back cover M2 bolt holes, Type: BOOLEAN
+  #15 Name: Boolean.BOOLEAN Back cover M2 bolt holes, Type: BOOLEAN
         Operation: DIFFERENCE, Object: None
-  #14 Name: Boolean.BOOLEAN Back Cover M2 Countersinks, Type: BOOLEAN
+  #16 Name: Boolean.BOOLEAN Back Cover M2 Countersinks, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back Cover M2 Countersinks
-  #15 Name: Boolean.BOOLEAN Power Cable , Type: BOOLEAN
+  #17 Name: Boolean.BOOLEAN Power Cable , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Power Cable 
-  #16 Name: Boolean.BOOLEAN Flat Faces (Ligament Cover), Type: BOOLEAN
+  #18 Name: Boolean.BOOLEAN Flat Faces (Ligament Cover), Type: BOOLEAN
         Operation: INTERSECT, Object: BOOLEAN Flat Faces (Ligament Cover).001
-  #17 Name: Boolean.BOOLEAN Wrist Connector M2 Countersinks, Type: BOOLEAN
+  #19 Name: Boolean.BOOLEAN Wrist Connector M2 Countersinks, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Wrist Connector M2 Countersinks
-  #18 Name: Boolean.BOOLEAN Wrist Flatten, Type: BOOLEAN
+  #20 Name: Boolean.BOOLEAN Wrist Flatten, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Wrist Flatten
-  #19 Name: Boolean.OB Logo Embossed, Type: BOOLEAN
+  #21 Name: Boolean.OB Logo Embossed, Type: BOOLEAN
         Operation: UNION, Object: OB Logo Embossed
-  #20 Name: Boolean.BOOLEAN Back Cover M2 Insert Ooze clearance , Type: BOOLEAN
+  #22 Name: Boolean.BOOLEAN Back Cover M2 Insert Ooze clearance , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back Cover M2 Insert Ooze clearance 
 
 Name: Back cover proximal attachment point
@@ -545,6 +549,16 @@ BOOLEAN Headphone Jack mesh: BOOLEAN Headphone Jack
 BOOLEAN Headphone Jack materials: Boolean difference, 
 BOOLEAN Headphone Jack modifiers: None
 
+Name: BOOLEAN Headphone Jack.001
+BOOLEAN Headphone Jack.001 Type: MESH
+BOOLEAN Headphone Jack.001 transform: X42.252445220947266 Y-71.34187316894531 Z12.777480125427246
+BOOLEAN Headphone Jack.001 rotation: X-0.0 Y1.570796251296997 Z0.0
+BOOLEAN Headphone Jack.001 scale: X1.0999999046325684 Y1.0999999046325684 Z1.0
+BOOLEAN Headphone Jack.001 groups: None
+BOOLEAN Headphone Jack.001 mesh: BOOLEAN Headphone Jack.001
+BOOLEAN Headphone Jack.001 materials: Boolean difference, 
+BOOLEAN Headphone Jack.001 modifiers: None
+
 Name: BOOLEAN Inner Palm (Flat plane cut)
 BOOLEAN Inner Palm (Flat plane cut) Type: MESH
 BOOLEAN Inner Palm (Flat plane cut) transform: X9.283166885375977 Y-50.67338562011719 Z4.499999523162842
@@ -681,6 +695,28 @@ BOOLEAN Micro USB groups: None
 BOOLEAN Micro USB mesh: Cube.046
 BOOLEAN Micro USB materials: Boolean difference, 
 BOOLEAN Micro USB modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN Micro USB Small
+BOOLEAN Micro USB Small Type: MESH
+BOOLEAN Micro USB Small transform: X41.5871696472168 Y-57.0728759765625 Z14.627598762512207
+BOOLEAN Micro USB Small rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Micro USB Small scale: X1.0 Y1.0 Z1.0
+BOOLEAN Micro USB Small groups: None
+BOOLEAN Micro USB Small mesh: Cube.002
+BOOLEAN Micro USB Small materials: Boolean difference, 
+BOOLEAN Micro USB Small modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
+Name: BOOLEAN Micro USB.001
+BOOLEAN Micro USB.001 Type: MESH
+BOOLEAN Micro USB.001 transform: X41.365840911865234 Y-57.0728759765625 Z14.627598762512207
+BOOLEAN Micro USB.001 rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Micro USB.001 scale: X1.0 Y0.95652174949646 Z0.8235294222831726
+BOOLEAN Micro USB.001 groups: None
+BOOLEAN Micro USB.001 mesh: Cube.000
+BOOLEAN Micro USB.001 materials: Boolean difference, 
+BOOLEAN Micro USB.001 modifiers: 
   #1 Name: Bevel, Type: BEVEL
 
 Name: BOOLEAN MOULD M3 Reinforcing
@@ -1289,6 +1325,16 @@ BOOLEAN Thumb tendon termination M2 bolt hole mesh: BOOLEAN Thumb tendon termina
 BOOLEAN Thumb tendon termination M2 bolt hole materials: Boolean difference.003, 
 BOOLEAN Thumb tendon termination M2 bolt hole modifiers: None
 
+Name: BOOLEAN UNION Headphone Jack Plinth
+BOOLEAN UNION Headphone Jack Plinth Type: MESH
+BOOLEAN UNION Headphone Jack Plinth transform: X42.252445220947266 Y-71.34187316894531 Z12.777480125427246
+BOOLEAN UNION Headphone Jack Plinth rotation: X-0.0 Y1.570796251296997 Z0.0
+BOOLEAN UNION Headphone Jack Plinth scale: X1.2624268531799316 Y1.2624268531799316 Z1.0
+BOOLEAN UNION Headphone Jack Plinth groups: None
+BOOLEAN UNION Headphone Jack Plinth mesh: BOOLEAN Headphone Jack.004
+BOOLEAN UNION Headphone Jack Plinth materials: Boolean difference, 
+BOOLEAN UNION Headphone Jack Plinth modifiers: None
+
 Name: BOOLEAN UNION Ligament anchor prongs
 BOOLEAN UNION Ligament anchor prongs Type: MESH
 BOOLEAN UNION Ligament anchor prongs transform: X-5.38040018081665 Y-59.86396408081055 Z-13.789163589477539
@@ -1827,6 +1873,32 @@ Headphone / Micro USB.000 groups: None
 Headphone / Micro USB.000 mesh: Headphone / Micro USB.002
 Headphone / Micro USB.000 materials: Boolean difference, 
 Headphone / Micro USB.000 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Headphone / Micro USB.001
+Headphone / Micro USB.001 Type: MESH
+Headphone / Micro USB.001 transform: X41.40483093261719 Y-71.2712631225586 Z13.241729736328125
+Headphone / Micro USB.001 rotation: X0.0 Y1.5707963705062866 Z0.0
+Headphone / Micro USB.001 scale: X1.0 Y1.0 Z1.0
+Headphone / Micro USB.001 groups: None
+Headphone / Micro USB.001 mesh: Headphone / Micro USB.001
+Headphone / Micro USB.001 materials: Boolean difference, 
+Headphone / Micro USB.001 modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Subsurf, Type: SUBSURF
+        Levels: 3, Type: CATMULL_CLARK
+
+Name: Headphone / Micro USB.002
+Headphone / Micro USB.002 Type: MESH
+Headphone / Micro USB.002 transform: X41.40483093261719 Y-71.2712631225586 Z13.241729736328125
+Headphone / Micro USB.002 rotation: X0.0 Y1.5707963705062866 Z0.0
+Headphone / Micro USB.002 scale: X1.0 Y1.0 Z1.0
+Headphone / Micro USB.002 groups: None
+Headphone / Micro USB.002 mesh: Headphone / Micro USB.003
+Headphone / Micro USB.002 materials: Boolean difference.003, 
+Headphone / Micro USB.002 modifiers: 
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
