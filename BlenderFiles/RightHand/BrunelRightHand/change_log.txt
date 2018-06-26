@@ -1768,8 +1768,8 @@ Gala Cover modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN GALA Cover attachment point
   #11 Name: Boolean.BOOLEAN Screwdriver Leaver Point, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Screwdriver Leaver Point
-  #12 Name: Boolean.BOOLEAN Headphone / Micro USB, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Headphone / Micro USB
+  #12 Name: Boolean.Headphone / Micro USB.000, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Headphone / Micro USB.000
   #13 Name: Boolean.BOOLEAN PQ12 exteneed 0.3 mm tolerance, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
 
@@ -1870,24 +1870,13 @@ Headphone / Micro USB.000 transform: X41.40483093261719 Y-71.2712631225586 Z13.2
 Headphone / Micro USB.000 rotation: X0.0 Y1.5707963705062866 Z0.0
 Headphone / Micro USB.000 scale: X1.0 Y1.0 Z1.0
 Headphone / Micro USB.000 groups: None
-Headphone / Micro USB.000 mesh: Headphone / Micro USB.002
-Headphone / Micro USB.000 materials: Boolean difference, 
+Headphone / Micro USB.000 mesh: Headphone / Micro USB.005
+Headphone / Micro USB.000 materials: Boolean difference.003, 
 Headphone / Micro USB.000 modifiers: 
   #1 Name: Bevel, Type: BEVEL
-  #2 Name: Subsurf, Type: SUBSURF
-        Levels: 3, Type: CATMULL_CLARK
-
-Name: Headphone / Micro USB.001
-Headphone / Micro USB.001 Type: MESH
-Headphone / Micro USB.001 transform: X41.40483093261719 Y-71.2712631225586 Z13.241729736328125
-Headphone / Micro USB.001 rotation: X0.0 Y1.5707963705062866 Z0.0
-Headphone / Micro USB.001 scale: X1.0 Y1.0 Z1.0
-Headphone / Micro USB.001 groups: None
-Headphone / Micro USB.001 mesh: Headphone / Micro USB.001
-Headphone / Micro USB.001 materials: Boolean difference, 
-Headphone / Micro USB.001 modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-  #2 Name: Subsurf, Type: SUBSURF
+  #2 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.50, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True  #3 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
 
 Name: Headphone / Micro USB.002
@@ -2049,7 +2038,7 @@ LH Back Cover (Integrated Wrist) Flat modifiers:
   #4 Name: Boolean.Back Cover Wrist Wedge, Type: BOOLEAN
         Operation: UNION, Object: Back Cover Wrist Wedge
   #5 Name: Boolean.Headphone / Micro USB.000, Type: BOOLEAN
-        Operation: UNION, Object: Headphone / Micro USB.000
+        Operation: UNION, Object: None
   #6 Name: Boolean.LH BOOLEAN Gala Cheetah Tidy, Type: BOOLEAN
         Operation: INTERSECT, Object: LH BOOLEAN Gala Cheetah Tidy
   #7 Name: Boolean.BOOLEAN Headphone Jack, Type: BOOLEAN
