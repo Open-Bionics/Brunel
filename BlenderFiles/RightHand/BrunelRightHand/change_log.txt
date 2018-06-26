@@ -55,13 +55,13 @@ Back Cover (Integrated Wrist) Flat modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #4 Name: Boolean.Back Cover Wrist Wedge, Type: BOOLEAN
         Operation: UNION, Object: Back Cover Wrist Wedge
-  #5 Name: Boolean.Headphone / Micro USB.000, Type: BOOLEAN
+  #5 Name: Boolean.Headphone / Micro USB.002, Type: BOOLEAN
         Operation: UNION, Object: Headphone / Micro USB.002
   #6 Name: Boolean, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN UNION Headphone Jack Plinth
   #7 Name: Boolean.BOOLEAN Gala Cheetah Tidy, Type: BOOLEAN
         Operation: INTERSECT, Object: BOOLEAN Gala Cheetah Tidy
-  #8 Name: Boolean.BOOLEAN Headphone Jack, Type: BOOLEAN
+  #8 Name: Boolean.BOOLEAN Headphone Jack.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Headphone Jack.001
   #9 Name: Boolean.BOOLEAN Micro USB, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Micro USB.001
@@ -2037,34 +2037,36 @@ LH Back Cover (Integrated Wrist) Flat modifiers:
         Levels: 3, Type: CATMULL_CLARK
   #4 Name: Boolean.Back Cover Wrist Wedge, Type: BOOLEAN
         Operation: UNION, Object: Back Cover Wrist Wedge
-  #5 Name: Boolean.Headphone / Micro USB.000, Type: BOOLEAN
-        Operation: UNION, Object: None
+  #5 Name: Boolean.Headphone / Micro USB.002, Type: BOOLEAN
+        Operation: UNION, Object: Headphone / Micro USB.002
   #6 Name: Boolean.LH BOOLEAN Gala Cheetah Tidy, Type: BOOLEAN
         Operation: INTERSECT, Object: LH BOOLEAN Gala Cheetah Tidy
   #7 Name: Boolean.BOOLEAN Headphone Jack, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Headphone Jack
-  #8 Name: Boolean.BOOLEAN Micro USB, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Micro USB
-  #9 Name: Boolean.BOOLEAN PQ12 exteneed 0.3 mm tolerance, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Headphone Jack.001
+  #8 Name: Boolean.BOOLEAN Micro USB.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Micro USB.001
+  #9 Name: Boolean.BOOLEAN Micro USB Small, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Micro USB Small
+  #10 Name: Boolean.BOOLEAN PQ12 exteneed 0.3 mm tolerance, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN PQ12 exteneed 0.3 mm tolerance
-  #10 Name: Boolean.LH BOOLEAN Palm and Back Cover Divide, Type: BOOLEAN
+  #11 Name: Boolean.LH BOOLEAN Palm and Back Cover Divide, Type: BOOLEAN
         Operation: INTERSECT, Object: LH BOOLEAN Palm and Back Cover Divide
-  #11 Name: Triangulate, Type: TRIANGULATE
-  #12 Name: Boolean.BOOLEAN Fixing points back cover, Type: BOOLEAN
+  #12 Name: Triangulate, Type: TRIANGULATE
+  #13 Name: Boolean.BOOLEAN Fixing points back cover, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Fixing points back cover
-  #13 Name: Boolean.BOOLEAN Back Cover M2 Countersinks, Type: BOOLEAN
+  #14 Name: Boolean.BOOLEAN Back Cover M2 Countersinks, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back Cover M2 Countersinks
-  #14 Name: Boolean.BOOLEAN Power Cable , Type: BOOLEAN
+  #15 Name: Boolean.BOOLEAN Power Cable , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Power Cable 
-  #15 Name: Boolean.LH BOOLEAN Flat Faces (Ligament Cover), Type: BOOLEAN
+  #16 Name: Boolean.LH BOOLEAN Flat Faces (Ligament Cover), Type: BOOLEAN
         Operation: INTERSECT, Object: LH BOOLEAN Flat Faces (Ligament Cover)
-  #16 Name: Boolean.LH BOOLEAN Wrist Connector M2 Countersinks, Type: BOOLEAN
+  #17 Name: Boolean.LH BOOLEAN Wrist Connector M2 Countersinks, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LH BOOLEAN Wrist Connector M2 Countersinks
-  #17 Name: Boolean.BOOLEAN Wrist Flatten, Type: BOOLEAN
+  #18 Name: Boolean.BOOLEAN Wrist Flatten, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Wrist Flatten
-  #18 Name: Boolean.OB Logo Embossed, Type: BOOLEAN
+  #19 Name: Boolean.OB Logo Embossed, Type: BOOLEAN
         Operation: UNION, Object: OB Logo Embossed
-  #19 Name: Boolean.BOOLEAN Back Cover M2 Insert Ooze clearance , Type: BOOLEAN
+  #20 Name: Boolean.BOOLEAN Back Cover M2 Insert Ooze clearance , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back Cover M2 Insert Ooze clearance 
 
 Name: LH BOOLEAN Conical spring GALA Cover
@@ -2216,8 +2218,8 @@ LH Gala Cover modifiers:
         Operation: DIFFERENCE, Object: LH BOOLEAN Thumb Dowel Clearance
   #10 Name: Boolean.LH BOOLEAN GALA Cover attachment point, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LH BOOLEAN GALA Cover attachment point
-  #11 Name: Boolean.BOOLEAN Headphone / Micro USB, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Headphone / Micro USB
+  #11 Name: Boolean.Headphone / Micro USB.000, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Headphone / Micro USB.000
   #12 Name: Boolean.LH BOOLEAN Screwdriver Leaver Point, Type: BOOLEAN
         Operation: DIFFERENCE, Object: LH BOOLEAN Screwdriver Leaver Point
   #13 Name: Triangulate, Type: TRIANGULATE
