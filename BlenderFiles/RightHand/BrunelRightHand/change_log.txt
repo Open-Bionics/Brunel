@@ -146,18 +146,16 @@ BOOLEAN Back Cover M2 Insert Ooze clearance  mesh: Cylinder.018
 BOOLEAN Back Cover M2 Insert Ooze clearance  materials: Boolean difference, 
 BOOLEAN Back Cover M2 Insert Ooze clearance  modifiers: None
 
-Name: BOOLEAN Cable Tidy Origin 
-BOOLEAN Cable Tidy Origin  Type: MESH
-BOOLEAN Cable Tidy Origin  transform: X-25.11841583251953 Y-42.441871643066406 Z2.390026092529297
-BOOLEAN Cable Tidy Origin  rotation: X-0.0 Y1.570796251296997 Z0.0
-BOOLEAN Cable Tidy Origin  scale: X0.3906816840171814 Y0.4670000374317169 Z0.2500000298023224
-BOOLEAN Cable Tidy Origin  groups: None
-BOOLEAN Cable Tidy Origin  mesh: Cylinder
-BOOLEAN Cable Tidy Origin  materials: Boolean difference, 
-BOOLEAN Cable Tidy Origin  modifiers: 
-  #1 Name: Solidify, Type: SOLIDIFY
-        Thickness: 5.00, Offset: -1.00 
-        Even thickness: False, High Quality Normals: False
+Name: BOOLEAN Cable Tidy 
+BOOLEAN Cable Tidy  Type: MESH
+BOOLEAN Cable Tidy  transform: X24.10006332397461 Y-39.24954605102539 Z14.019598960876465
+BOOLEAN Cable Tidy  rotation: X0.0 Y0.0 Z0.0
+BOOLEAN Cable Tidy  scale: X1.0 Y1.0 Z1.0
+BOOLEAN Cable Tidy  groups: None
+BOOLEAN Cable Tidy  mesh: Plane.025
+BOOLEAN Cable Tidy  materials: None
+BOOLEAN Cable Tidy  modifiers: None
+
 Name: BOOLEAN Cable Tidy Termination
 BOOLEAN Cable Tidy Termination Type: MESH
 BOOLEAN Cable Tidy Termination transform: X43.318756103515625 Y-42.441871643066406 Z2.390026092529297
@@ -1325,6 +1323,16 @@ BOOLEAN Thumb tendon termination M2 bolt hole mesh: BOOLEAN Thumb tendon termina
 BOOLEAN Thumb tendon termination M2 bolt hole materials: Boolean difference.003, 
 BOOLEAN Thumb tendon termination M2 bolt hole modifiers: None
 
+Name: BOOLEAN UNION Cable Tidy
+BOOLEAN UNION Cable Tidy Type: MESH
+BOOLEAN UNION Cable Tidy transform: X-6.099939823150635 Y-39.24953079223633 Z13.999585151672363
+BOOLEAN UNION Cable Tidy rotation: X0.0 Y0.0 Z0.0
+BOOLEAN UNION Cable Tidy scale: X1.0 Y1.0 Z1.0
+BOOLEAN UNION Cable Tidy groups: None
+BOOLEAN UNION Cable Tidy mesh: Plane.016
+BOOLEAN UNION Cable Tidy materials: None
+BOOLEAN UNION Cable Tidy modifiers: None
+
 Name: BOOLEAN UNION Headphone Jack Plinth
 BOOLEAN UNION Headphone Jack Plinth Type: MESH
 BOOLEAN UNION Headphone Jack Plinth transform: X42.252445220947266 Y-71.34187316894531 Z12.777480125427246
@@ -1557,6 +1565,20 @@ BrunelThumbThumb urethane pad mesh: BrunelThumbThumb urethane pad
 BrunelThumbThumb urethane pad materials: None
 BrunelThumbThumb urethane pad modifiers: None
 
+Name: Cheetah Cable Tidy 
+Cheetah Cable Tidy  Type: MESH
+Cheetah Cable Tidy  transform: X24.10006332397461 Y-39.24954605102539 Z14.019598960876465
+Cheetah Cable Tidy  rotation: X0.0 Y0.0 Z0.0
+Cheetah Cable Tidy  scale: X1.0 Y1.0 Z1.0
+Cheetah Cable Tidy  groups: None
+Cheetah Cable Tidy  mesh: Plane.030
+Cheetah Cable Tidy  materials: NF Black.001, 
+Cheetah Cable Tidy  modifiers: 
+  #1 Name: Boolean.BOOLEAN Cable Tidy , Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Cable Tidy 
+  #2 Name: Boolean.BOOLEAN UNION Cable Tidy, Type: BOOLEAN
+        Operation: UNION, Object: BOOLEAN UNION Cable Tidy
+
 Name: Conical spring
 Conical spring Type: MESH
 Conical spring transform: X-13.663448333740234 Y-57.49905014038086 Z-3.000001907348633
@@ -1732,21 +1754,6 @@ Finger spring bolt holes transform: X-6.617301940917969 Y-8.285255432128906 Z-12
 Finger spring bolt holes rotation: X0.0 Y0.0 Z0.0
 Finger spring bolt holes scale: X1.0 Y1.0 Z1.0
 Finger spring bolt holes groups: None
-
-Name: Flex Bracket
-Flex Bracket Type: MESH
-Flex Bracket transform: X-11.954208374023438 Y-98.3869400024414 Z14.455009460449219
-Flex Bracket rotation: X0.0 Y0.0 Z0.0
-Flex Bracket scale: X1.0 Y1.0 Z1.0
-Flex Bracket groups: None
-Flex Bracket mesh: Flex Bracket
-Flex Bracket materials: PLA, 
-Flex Bracket modifiers: 
-  #1 Name: Boolean, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN USB.001
-  #2 Name: Boolean.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: None
-  #3 Name: Bevel, Type: BEVEL
 
 Name: Gala Cover
 Gala Cover Type: MESH
@@ -2376,6 +2383,21 @@ LH MOULD Viewing Area for Riser mesh: Cylinder.030
 LH MOULD Viewing Area for Riser materials: Boolean difference, 
 LH MOULD Viewing Area for Riser modifiers: None
 
+Name: LH STAND Connector Block
+LH STAND Connector Block Type: MESH
+LH STAND Connector Block transform: X9.019871711730957 Y-94.9280776977539 Z4.087913990020752
+LH STAND Connector Block rotation: X-0.012630564160645008 Y1.7820649147033691 Z1.5576081275939941
+LH STAND Connector Block scale: X1.0 Y1.0 Z1.0
+LH STAND Connector Block groups: None
+LH STAND Connector Block mesh: Plane.001
+LH STAND Connector Block materials: Material, 
+LH STAND Connector Block modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Boolean.BOOLEAN Wrist Connector M2 Countersinks, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Wrist Connector M2 Countersinks.001
+  #3 Name: Boolean.BOOLEAN M3 Insert for Winged Bolt, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN M3 Insert for Winged Bolt
+
 Name: LH TARGET Outer Surface
 LH TARGET Outer Surface Type: MESH
 LH TARGET Outer Surface transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
@@ -2762,7 +2784,7 @@ Palm Inner body modifiers:
   #34 Name: Boolean.BOOLEAN Thumb Dowel Clearance, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Thumb Dowel Clearance
   #35 Name: Boolean.BOOLEAN Cable Tidy Origin , Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Cable Tidy Origin 
+        Operation: DIFFERENCE, Object: None
   #36 Name: Boolean.BOOLEAN Cable Tidy Termination, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Cable Tidy Termination
 
@@ -3073,9 +3095,7 @@ STAND Base modifiers:
         Operation: INTERSECT, Object: BOOLEAN Wrist Flatten
   #10 Name: Boolean.BOOLEAN Stand Grip Band, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Stand Grip Band
-  #11 Name: Boolean.BOOLEAN M3 Insert for Winged Bolt.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M3 Insert for Winged Bolt
-  #12 Name: Boolean, Type: BOOLEAN
+  #11 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Text
 
 Name: LH STAND Base
@@ -3180,21 +3200,6 @@ STAND Connector Block modifiers:
   #1 Name: Bevel, Type: BEVEL
   #2 Name: Boolean.BOOLEAN Wrist Connector M2 Countersinks, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Wrist Connector M2 Countersinks
-  #3 Name: Boolean.BOOLEAN M3 Insert for Winged Bolt, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN M3 Insert for Winged Bolt
-
-Name: STAND Connector Block.001
-STAND Connector Block.001 Type: MESH
-STAND Connector Block.001 transform: X9.019871711730957 Y-94.9280776977539 Z4.087913990020752
-STAND Connector Block.001 rotation: X-0.012630564160645008 Y1.7820649147033691 Z1.5576081275939941
-STAND Connector Block.001 scale: X1.0 Y1.0 Z1.0
-STAND Connector Block.001 groups: None
-STAND Connector Block.001 mesh: Plane.001
-STAND Connector Block.001 materials: Material, 
-STAND Connector Block.001 modifiers: 
-  #1 Name: Bevel, Type: BEVEL
-  #2 Name: Boolean.BOOLEAN Wrist Connector M2 Countersinks, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: BOOLEAN Wrist Connector M2 Countersinks.001
   #3 Name: Boolean.BOOLEAN M3 Insert for Winged Bolt, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M3 Insert for Winged Bolt
 
