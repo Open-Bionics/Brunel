@@ -40,7 +40,7 @@ Name: 4th Finger
 
 Name: Back Cover (Integrated Wrist) Flat
 Back Cover (Integrated Wrist) Flat Type: MESH
-Back Cover (Integrated Wrist) Flat transform: X9.0 Y-48.89358139038086 Z-2.9508910179138184
+Back Cover (Integrated Wrist) Flat transform: X9.0 Y-48.89359664916992 Z-2.950890064239502
 Back Cover (Integrated Wrist) Flat rotation: X0.0 Y0.0 Z0.0
 Back Cover (Integrated Wrist) Flat scale: X1.0 Y1.0 Z1.0
 Back Cover (Integrated Wrist) Flat groups: None
@@ -2011,7 +2011,7 @@ Heat Fit Insert.009 modifiers: None
 
 Name: HOOK 1st Finger
 HOOK 1st Finger Type: EMPTY
-HOOK 1st Finger transform: X-19.0 Y-0.8107600212097168 Z0.0
+HOOK 1st Finger transform: X-18.999998092651367 Y-0.8107600212097168 Z0.0
 HOOK 1st Finger rotation: X0.0 Y-0.0 Z0.0872664600610733
 HOOK 1st Finger scale: X1.0 Y1.0 Z1.0
 HOOK 1st Finger groups: None
@@ -2418,7 +2418,7 @@ LH TARGET Outer Surface modifiers:
 
 Name: Ligament Cover 
 Ligament Cover  Type: MESH
-Ligament Cover  transform: X9.0 Y-48.89358139038086 Z-2.9508910179138184
+Ligament Cover  transform: X9.0 Y-48.89359664916992 Z-2.950890064239502
 Ligament Cover  rotation: X0.0 Y0.0 Z0.0
 Ligament Cover  scale: X1.0 Y1.0 Z1.0
 Ligament Cover  groups: None
@@ -2709,7 +2709,7 @@ Palm Inner (ONE MESH) modifiers:
 
 Name: Palm Inner body
 Palm Inner body Type: MESH
-Palm Inner body transform: X9.0 Y-48.893592834472656 Z-2.9508914947509766
+Palm Inner body transform: X9.0 Y-48.89359664916992 Z-2.950890064239502
 Palm Inner body rotation: X3.725290298461914e-09 Y-0.0 Z0.0
 Palm Inner body scale: X0.9999999403953552 Y0.9999999403953552 Z1.0
 Palm Inner body groups: Actuator Block, 
@@ -3069,7 +3069,7 @@ Sprint Positions 2nd FingerInner Proximal 002 modifiers: None
 
 Name: STAND Base
 STAND Base Type: MESH
-STAND Base transform: X9.066848754882812 Y-95.41497802734375 Z9.511549949645996
+STAND Base transform: X9.066849708557129 Y-95.41499328613281 Z9.511549949645996
 STAND Base rotation: X0.13962633907794952 Y-0.0 Z0.0
 STAND Base scale: X1.0 Y1.0 Z1.0
 STAND Base groups: None
@@ -3353,7 +3353,7 @@ Text modifiers: None
 
 Name: Thumb Ligament Cover 
 Thumb Ligament Cover  Type: MESH
-Thumb Ligament Cover  transform: X-6.998700141906738 Y-66.19110870361328 Z-17.999996185302734
+Thumb Ligament Cover  transform: X-6.998700141906738 Y-66.19109344482422 Z-17.999998092651367
 Thumb Ligament Cover  rotation: X3.137685775756836 Y0.0 Z1.3962633609771729
 Thumb Ligament Cover  scale: X1.0 Y1.0 Z1.0
 Thumb Ligament Cover  groups: None
@@ -3454,7 +3454,7 @@ Thumb spring channel modifiers:
 Name: Thumb.001
 Thumb.001 Type: EMPTY
 Thumb.001 transform: X-10.47809886932373 Y-65.51439666748047 Z-16.575899124145508
-Thumb.001 rotation: X0.0 Y-2.9802322387695312e-08 Z1.3962633609771729
+Thumb.001 rotation: X0.0 Y-3.4906584289728926e-08 Z1.3962633609771729
 Thumb.001 scale: X1.0 Y1.0 Z1.0
 Thumb.001 groups: None
 
