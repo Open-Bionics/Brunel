@@ -5692,7 +5692,7 @@ M2 Bolts groups: None
 
 Name: MOULD Bottom
 MOULD Bottom Type: MESH
-MOULD Bottom transform: X0.0 Y0.0 Z0.0
+MOULD Bottom transform: X-0.04172515869140625 Y0.121307373046875 Z-13.559078216552734
 MOULD Bottom rotation: X0.0 Y0.0 Z0.0
 MOULD Bottom scale: X1.0 Y1.0 Z1.0
 MOULD Bottom groups: None
@@ -5734,7 +5734,7 @@ MOULD Bottom modifiers:
 
 Name: MOULD Bottom tray
 MOULD Bottom tray Type: MESH
-MOULD Bottom tray transform: X0.0 Y0.0 Z2.3499999046325684
+MOULD Bottom tray transform: X-0.04172515869140625 Y0.121307373046875 Z-13.559078216552734
 MOULD Bottom tray rotation: X0.0 Y0.0 Z0.0
 MOULD Bottom tray scale: X1.0 Y1.0 Z1.0
 MOULD Bottom tray groups: None
