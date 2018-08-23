@@ -1355,6 +1355,8 @@ BOOLEAN MOULD Runners materials: Boolean difference,
 BOOLEAN MOULD Runners modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cylinder.012
 
 Name: BOOLEAN MOULD Runners dup
 BOOLEAN MOULD Runners dup Type: MESH
@@ -3187,6 +3189,16 @@ Cylinder.011 groups: None
 Cylinder.011 mesh: Cylinder.023
 Cylinder.011 materials: Boolean difference, 
 Cylinder.011 modifiers: None
+
+Name: Cylinder.012
+Cylinder.012 Type: MESH
+Cylinder.012 transform: X-0.04172515869140625 Y0.121307373046875 Z-13.559078216552734
+Cylinder.012 rotation: X0.0 Y0.0 Z0.0
+Cylinder.012 scale: X1.0 Y1.0 Z1.0
+Cylinder.012 groups: None
+Cylinder.012 mesh: Cylinder.020
+Cylinder.012 materials: None
+Cylinder.012 modifiers: None
 
 Name: Distal Handle 1
 Distal Handle 1 Type: EMPTY
