@@ -308,6 +308,16 @@ BOOLEAN Clamping Point Subtraction mesh: Plane.002
 BOOLEAN Clamping Point Subtraction materials: Boolean difference, 
 BOOLEAN Clamping Point Subtraction modifiers: None
 
+Name: BOOLEAN Clamping Point Subtraction.002
+BOOLEAN Clamping Point Subtraction.002 Type: MESH
+BOOLEAN Clamping Point Subtraction.002 transform: X47.45260238647461 Y8.00731086730957 Z8.110918045043945
+BOOLEAN Clamping Point Subtraction.002 rotation: X0.0 Y0.0 Z4.7123894691467285
+BOOLEAN Clamping Point Subtraction.002 scale: X0.32341328263282776 Y0.32341328263282776 Z1.0
+BOOLEAN Clamping Point Subtraction.002 groups: None
+BOOLEAN Clamping Point Subtraction.002 mesh: Plane.014
+BOOLEAN Clamping Point Subtraction.002 materials: Boolean difference, 
+BOOLEAN Clamping Point Subtraction.002 modifiers: None
+
 Name: BOOLEAN Distal 1 BLANK
 BOOLEAN Distal 1 BLANK Type: EMPTY
 BOOLEAN Distal 1 BLANK transform: X0.0 Y0.0 Z0.0
@@ -1345,6 +1355,8 @@ BOOLEAN MOULD Runners materials: Boolean difference,
 BOOLEAN MOULD Runners modifiers: 
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 3, Type: CATMULL_CLARK
+  #2 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Cylinder.012
 
 Name: BOOLEAN MOULD Runners dup
 BOOLEAN MOULD Runners dup Type: MESH
@@ -1391,7 +1403,7 @@ BOOLEAN MOULD Wedges.001 modifiers:
 
 Name: BOOLEAN Orientation Indicator
 BOOLEAN Orientation Indicator Type: MESH
-BOOLEAN Orientation Indicator transform: X1.8924474716186523e-06 Y12.824713706970215 Z5.749998092651367
+BOOLEAN Orientation Indicator transform: X1.8924474716186523e-06 Y12.824713706970215 Z8.47761344909668
 BOOLEAN Orientation Indicator rotation: X0.0 Y-0.0 Z-2.356194496154785
 BOOLEAN Orientation Indicator scale: X1.0 Y1.0 Z1.0
 BOOLEAN Orientation Indicator groups: None
@@ -3177,6 +3189,16 @@ Cylinder.011 groups: None
 Cylinder.011 mesh: Cylinder.023
 Cylinder.011 materials: Boolean difference, 
 Cylinder.011 modifiers: None
+
+Name: Cylinder.012
+Cylinder.012 Type: MESH
+Cylinder.012 transform: X-0.04172515869140625 Y0.121307373046875 Z-13.559078216552734
+Cylinder.012 rotation: X0.0 Y0.0 Z0.0
+Cylinder.012 scale: X1.0 Y1.0 Z1.0
+Cylinder.012 groups: None
+Cylinder.012 mesh: Cylinder.020
+Cylinder.012 materials: None
+Cylinder.012 modifiers: None
 
 Name: Distal Handle 1
 Distal Handle 1 Type: EMPTY
@@ -5682,7 +5704,7 @@ M2 Bolts groups: None
 
 Name: MOULD Bottom
 MOULD Bottom Type: MESH
-MOULD Bottom transform: X0.0 Y0.0 Z0.0
+MOULD Bottom transform: X-0.04172515869140625 Y0.121307373046875 Z-13.559078216552734
 MOULD Bottom rotation: X0.0 Y0.0 Z0.0
 MOULD Bottom scale: X1.0 Y1.0 Z1.0
 MOULD Bottom groups: None
@@ -5724,7 +5746,7 @@ MOULD Bottom modifiers:
 
 Name: MOULD Bottom tray
 MOULD Bottom tray Type: MESH
-MOULD Bottom tray transform: X0.0 Y0.0 Z0.0
+MOULD Bottom tray transform: X-0.04172515869140625 Y0.121307373046875 Z-13.559078216552734
 MOULD Bottom tray rotation: X0.0 Y0.0 Z0.0
 MOULD Bottom tray scale: X1.0 Y1.0 Z1.0
 MOULD Bottom tray groups: None
@@ -5761,7 +5783,7 @@ MOULD Identifiers groups: None
 
 Name: MOULD Location feature
 MOULD Location feature Type: MESH
-MOULD Location feature transform: X0.12131524831056595 Y87.99420166015625 Z-10.25
+MOULD Location feature transform: X0.12131524831056595 Y87.99420166015625 Z-7.25
 MOULD Location feature rotation: X0.0 Y-0.0 Z-1.5707963705062866
 MOULD Location feature scale: X1.0 Y1.0 Z1.0
 MOULD Location feature groups: None
@@ -5871,19 +5893,21 @@ MOULD Top Clamping plate groups: None
 MOULD Top Clamping plate mesh: Cylinder.008
 MOULD Top Clamping plate materials: None
 MOULD Top Clamping plate modifiers: 
-  #1 Name: Boolean.BOOLEAN Finger Compression Points, Type: BOOLEAN
+  #1 Name: Boolean.BOOLEAN Clamping Point Subtraction.002, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Clamping Point Subtraction.002
+  #2 Name: Boolean.BOOLEAN Finger Compression Points, Type: BOOLEAN
         Operation: UNION, Object: BOOLEAN Finger Compression Points
-  #2 Name: Boolean.BOOLEAN MOULD Location feature, Type: BOOLEAN
+  #3 Name: Boolean.BOOLEAN MOULD Location feature, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN MOULD Location feature
-  #3 Name: Boolean.Cylinder.013, Type: BOOLEAN
+  #4 Name: Boolean.BOOLEAN Central mould cavity, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Central mould cavity
-  #4 Name: Boolean.BOOLEAN M3 bolt hole.000, Type: BOOLEAN
+  #5 Name: Boolean.BOOLEAN M3 bolt hole.000, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M3 bolt hole.000
-  #5 Name: Boolean.001, Type: BOOLEAN
+  #6 Name: Boolean.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN MOULD Top plate finger clearance 
-  #6 Name: Boolean.002, Type: BOOLEAN
+  #7 Name: Boolean.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Orientation Indicator
-  #7 Name: Boolean, Type: BOOLEAN
+  #8 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Clamping Point Subtraction
 
 Name: Proximal Phalanx.001
