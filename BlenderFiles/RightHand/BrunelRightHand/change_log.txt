@@ -90,6 +90,8 @@ Back Cover (Integrated Wrist) Flat modifiers:
         Operation: UNION, Object: OB Logo Embossed
   #22 Name: Boolean.BOOLEAN Back Cover M2 Insert Ooze clearance , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back Cover M2 Insert Ooze clearance 
+  #23 Name: Boolean.BOOLEAN Connector block orientation key, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: BOOLEAN Connector block orientation key
 
 Name: Back cover proximal attachment point
 Back cover proximal attachment point Type: MESH
@@ -203,6 +205,19 @@ BOOLEAN Conical spring GALA Cover modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 2, Type: CATMULL_CLARK
 
+Name: BOOLEAN Connector block orientation key
+BOOLEAN Connector block orientation key Type: MESH
+BOOLEAN Connector block orientation key transform: X3.709286689758301 Y-94.05614471435547 Z7.985557556152344
+BOOLEAN Connector block orientation key rotation: X-1.7820488214492798 Y0.003050154075026512 Z-0.0009245803812518716
+BOOLEAN Connector block orientation key scale: X1.0 Y1.0 Z1.0
+BOOLEAN Connector block orientation key groups: None
+BOOLEAN Connector block orientation key mesh: Connector block orientation key
+BOOLEAN Connector block orientation key materials: Boolean difference.002, 
+BOOLEAN Connector block orientation key modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.50, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True
 Name: BOOLEAN DC Jack for GALA cover
 BOOLEAN DC Jack for GALA cover Type: MESH
 BOOLEAN DC Jack for GALA cover transform: X9.0 Y-57.44187545776367 Z17.317607879638672
@@ -1589,6 +1604,17 @@ Conical spring mesh: Conical spring
 Conical spring materials: Steel, 
 Conical spring modifiers: None
 
+Name: Connector block orientation key
+Connector block orientation key Type: MESH
+Connector block orientation key transform: X3.709286689758301 Y-94.05614471435547 Z7.985557556152344
+Connector block orientation key rotation: X-1.7820488214492798 Y0.003050154075026512 Z-0.0009245803812518716
+Connector block orientation key scale: X1.0 Y1.0 Z1.0
+Connector block orientation key groups: None
+Connector block orientation key mesh: Connector block orientation key
+Connector block orientation key materials: Boolean difference.002, 
+Connector block orientation key modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+
 Name: Connector cover.001
 Connector cover.001 Type: MESH
 Connector cover.001 transform: X37.096534729003906 Y-71.34187316894531 Z12.777484893798828
@@ -2037,6 +2063,16 @@ HOOK 4th Finger rotation: X0.0 Y-0.0 Z-0.1745329201221466
 HOOK 4th Finger scale: X1.0 Y1.0 Z1.0
 HOOK 4th Finger groups: None
 
+Name: L Label 
+L Label  Type: MESH
+L Label  transform: X1.256987452507019 Y-96.5146713256836 Z-3.549001932144165
+L Label  rotation: X-1.3595441579818726 Y3.1442413330078125 Z-0.0008384466636925936
+L Label  scale: X6.0059990882873535 Y6.005999565124512 Z6.00600004196167
+L Label  groups: None
+L Label  mesh: CUText.003
+L Label  materials: None
+L Label  modifiers: None
+
 Name: LH Back Cover (Integrated Wrist) Flat
 LH Back Cover (Integrated Wrist) Flat Type: MESH
 LH Back Cover (Integrated Wrist) Flat transform: X9.0 Y-48.89358139038086 Z-2.9508910179138184
@@ -2085,6 +2121,8 @@ LH Back Cover (Integrated Wrist) Flat modifiers:
         Operation: UNION, Object: OB Logo Embossed
   #20 Name: Boolean.BOOLEAN Back Cover M2 Insert Ooze clearance , Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Back Cover M2 Insert Ooze clearance 
+  #21 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: LH BOOLEAN Connector block orientation key
 
 Name: LH BOOLEAN Conical spring GALA Cover
 LH BOOLEAN Conical spring GALA Cover Type: MESH
@@ -2099,6 +2137,19 @@ LH BOOLEAN Conical spring GALA Cover modifiers:
   #1 Name: Subsurf, Type: SUBSURF
         Levels: 2, Type: CATMULL_CLARK
 
+Name: LH BOOLEAN Connector block orientation key
+LH BOOLEAN Connector block orientation key Type: MESH
+LH BOOLEAN Connector block orientation key transform: X14.2907133102417 Y-94.05614471435547 Z7.985558032989502
+LH BOOLEAN Connector block orientation key rotation: X-1.7820488214492798 Y0.003050154075026512 Z-0.0009245803812518716
+LH BOOLEAN Connector block orientation key scale: X1.0 Y1.0 Z1.0
+LH BOOLEAN Connector block orientation key groups: None
+LH BOOLEAN Connector block orientation key mesh: Plane.003
+LH BOOLEAN Connector block orientation key materials: Boolean difference.002, 
+LH BOOLEAN Connector block orientation key modifiers: 
+  #1 Name: Bevel, Type: BEVEL
+  #2 Name: Solidify, Type: SOLIDIFY
+        Thickness: 0.50, Offset: 1.00 
+        Even thickness: True, High Quality Normals: True
 Name: LH BOOLEAN Flat Faces (Ligament Cover)
 LH BOOLEAN Flat Faces (Ligament Cover) Type: MESH
 LH BOOLEAN Flat Faces (Ligament Cover) transform: X18.0 Y0.0 Z0.0
@@ -2206,6 +2257,17 @@ LH BOOLEAN Wrist Connector M2 Countersinks groups: None
 LH BOOLEAN Wrist Connector M2 Countersinks mesh: Cylinder.025
 LH BOOLEAN Wrist Connector M2 Countersinks materials: Boolean difference, 
 LH BOOLEAN Wrist Connector M2 Countersinks modifiers: None
+
+Name: LH Connector block orientation key
+LH Connector block orientation key Type: MESH
+LH Connector block orientation key transform: X14.2907133102417 Y-94.05614471435547 Z7.985558032989502
+LH Connector block orientation key rotation: X-1.7820488214492798 Y0.003050154075026512 Z-0.0009245803812518716
+LH Connector block orientation key scale: X1.0 Y1.0 Z1.0
+LH Connector block orientation key groups: None
+LH Connector block orientation key mesh: Plane.003
+LH Connector block orientation key materials: Boolean difference.002, 
+LH Connector block orientation key modifiers: 
+  #1 Name: Bevel, Type: BEVEL
 
 Name: LH Gala Cover
 LH Gala Cover Type: MESH
@@ -2389,14 +2451,19 @@ LH STAND Connector Block transform: X9.019871711730957 Y-94.9280776977539 Z4.087
 LH STAND Connector Block rotation: X-0.012630564160645008 Y1.7820649147033691 Z1.5576081275939941
 LH STAND Connector Block scale: X1.0 Y1.0 Z1.0
 LH STAND Connector Block groups: None
-LH STAND Connector Block mesh: Plane.001
+LH STAND Connector Block mesh: Plane.010
 LH STAND Connector Block materials: Material, 
 LH STAND Connector Block modifiers: 
   #1 Name: Bevel, Type: BEVEL
-  #2 Name: Boolean.BOOLEAN Wrist Connector M2 Countersinks, Type: BOOLEAN
+  #2 Name: Chamfer, Type: BEVEL
+  #3 Name: Boolean.BOOLEAN Wrist Connector M2 Countersinks, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Wrist Connector M2 Countersinks.001
-  #3 Name: Boolean.BOOLEAN M3 Insert for Winged Bolt, Type: BOOLEAN
+  #4 Name: Boolean.BOOLEAN M3 Insert for Winged Bolt, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M3 Insert for Winged Bolt
+  #5 Name: Boolean.Connector block orientation key, Type: BOOLEAN
+        Operation: UNION, Object: LH Connector block orientation key
+  #6 Name: Boolean.L Label , Type: BOOLEAN
+        Operation: DIFFERENCE, Object: L Label 
 
 Name: LH TARGET Outer Surface
 LH TARGET Outer Surface Type: MESH
@@ -2980,6 +3047,16 @@ Proximal Spring Pretention Distance mesh: Vert.008
 Proximal Spring Pretention Distance materials: None
 Proximal Spring Pretention Distance modifiers: None
 
+Name: R Label 
+R Label  Type: MESH
+R Label  transform: X0.024000266566872597 Y-96.82636260986328 Z-3.5380842685699463
+R Label  rotation: X1.7826733589172363 Y-1.8384604061338905e-08 Z3.1415929794311523
+R Label  scale: X4.0 Y4.0 Z4.0
+R Label  groups: None
+R Label  mesh: CUText.001
+R Label  materials: None
+R Label  modifiers: None
+
 Name: Riser Chanel.008
 Riser Chanel.008 Type: MESH
 Riser Chanel.008 transform: X5.258023738861084 Y6.79490327835083 Z-0.6798560619354248
@@ -3210,10 +3287,15 @@ STAND Connector Block mesh: Plane.002
 STAND Connector Block materials: Material, 
 STAND Connector Block modifiers: 
   #1 Name: Bevel, Type: BEVEL
-  #2 Name: Boolean.BOOLEAN Wrist Connector M2 Countersinks, Type: BOOLEAN
+  #2 Name: Chamfer, Type: BEVEL
+  #3 Name: Boolean.BOOLEAN Wrist Connector M2 Countersinks, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Wrist Connector M2 Countersinks
-  #3 Name: Boolean.BOOLEAN M3 Insert for Winged Bolt, Type: BOOLEAN
+  #4 Name: Boolean.BOOLEAN M3 Insert for Winged Bolt, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN M3 Insert for Winged Bolt
+  #5 Name: Boolean.Connector block orientation key, Type: BOOLEAN
+        Operation: UNION, Object: Connector block orientation key
+  #6 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: R Label 
 
 Name: Stand Grip Band
 Stand Grip Band Type: MESH
