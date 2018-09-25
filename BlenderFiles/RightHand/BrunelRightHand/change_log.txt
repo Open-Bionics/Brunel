@@ -2623,9 +2623,9 @@ MOULD Palm Mould Base PLA modifiers:
         Operation: DIFFERENCE, Object: MOULD BOOLEAN Palm Mould Plunger PLA
   #4 Name: Boolean.BOOLEAN Palm Mould Urethane Channel, Type: BOOLEAN
         Operation: DIFFERENCE, Object: MOULD BOOLEAN Urethane Channel
-  #5 Name: Boolean.001, Type: BOOLEAN
+  #5 Name: Boolean.TEXT RIGHT.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: TEXT RIGHT.002
-  #6 Name: Boolean.002, Type: BOOLEAN
+  #6 Name: Boolean.TEXT LEFT.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: TEXT LEFT.001
 
 Name: MOULD Palm Mould Cheetah
@@ -2648,10 +2648,10 @@ MOULD Palm Mould Cheetah modifiers:
         Operation: DIFFERENCE, Object: MOULD BOOLEAN Palm Mould Plunger PLA
   #6 Name: Boolean.BOOLEAN Palm Mould Securing Dowels.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: MOULD BOOLEAN Palm Mould Securing Dowels.001
-  #7 Name: Boolean.TEXT RIGHT.001, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: TEXT RIGHT.001
-  #8 Name: Boolean.TEXT LEFT, Type: BOOLEAN
+  #7 Name: Boolean.TEXT LEFT, Type: BOOLEAN
         Operation: DIFFERENCE, Object: TEXT LEFT
+  #8 Name: Boolean.TEXT RIGHT.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: TEXT RIGHT.001
 
 Name: MOULD Palm Mould Lid
 MOULD Palm Mould Lid Type: MESH
@@ -2673,10 +2673,10 @@ MOULD Palm Mould Lid modifiers:
         Operation: DIFFERENCE, Object: MOULD BOOLEAN 3mm Inserts Palm Mould
   #6 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: MOULD Viewing Area for Riser 
-  #7 Name: Boolean.TEXT RIGHT, Type: BOOLEAN
-        Operation: DIFFERENCE, Object: TEXT RIGHT
-  #8 Name: Boolean.004, Type: BOOLEAN
+  #7 Name: Boolean.TEXT LEFT.002, Type: BOOLEAN
         Operation: DIFFERENCE, Object: TEXT LEFT.002
+  #8 Name: Boolean.TEXT RIGHT, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: TEXT RIGHT
 
 Name: MOULD Palm Mould Securing Dowels
 MOULD Palm Mould Securing Dowels Type: MESH
@@ -3475,13 +3475,23 @@ TEXT LEFT.002 mesh: LEFT
 TEXT LEFT.002 materials: None
 TEXT LEFT.002 modifiers: None
 
+Name: TEXT RIGHT
+TEXT RIGHT Type: MESH
+TEXT RIGHT transform: X9.0 Y-4.4797210693359375 Z5.191312789916992
+TEXT RIGHT rotation: X0.0 Y-0.0 Z0.0
+TEXT RIGHT scale: X3.261232852935791 Y3.261232852935791 Z3.261232852935791
+TEXT RIGHT groups: None
+TEXT RIGHT mesh: CUText.004
+TEXT RIGHT materials: None
+TEXT RIGHT modifiers: None
+
 Name: TEXT RIGHT.001
 TEXT RIGHT.001 Type: MESH
 TEXT RIGHT.001 transform: X9.0 Y-156.63490295410156 Z-13.379790306091309
 TEXT RIGHT.001 rotation: X1.5707963705062866 Y-0.0 Z0.0
 TEXT RIGHT.001 scale: X3.261232852935791 Y3.261232852935791 Z3.261232852935791
 TEXT RIGHT.001 groups: None
-TEXT RIGHT.001 mesh: CUText.001
+TEXT RIGHT.001 mesh: CUText.004
 TEXT RIGHT.001 materials: None
 TEXT RIGHT.001 modifiers: None
 
@@ -3491,19 +3501,9 @@ TEXT RIGHT.002 transform: X9.0 Y-159.13490295410156 Z-25.364900588989258
 TEXT RIGHT.002 rotation: X1.5707963705062866 Y-0.0 Z0.0
 TEXT RIGHT.002 scale: X3.261232852935791 Y3.261232852935791 Z3.261232852935791
 TEXT RIGHT.002 groups: None
-TEXT RIGHT.002 mesh: CUText.001
+TEXT RIGHT.002 mesh: CUText.004
 TEXT RIGHT.002 materials: None
 TEXT RIGHT.002 modifiers: None
-
-Name: TEXT RIGHT
-TEXT RIGHT Type: MESH
-TEXT RIGHT transform: X9.0 Y-4.4797210693359375 Z5.191312789916992
-TEXT RIGHT rotation: X0.0 Y-0.0 Z0.0
-TEXT RIGHT scale: X3.261232852935791 Y3.261232852935791 Z3.261232852935791
-TEXT RIGHT groups: None
-TEXT RIGHT mesh: CUText.001
-TEXT RIGHT materials: None
-TEXT RIGHT modifiers: None
 
 Name: Thumb Ligament Cover 
 Thumb Ligament Cover  Type: MESH
