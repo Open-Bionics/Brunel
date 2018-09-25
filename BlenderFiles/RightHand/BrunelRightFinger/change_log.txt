@@ -288,6 +288,13 @@ Additional Geometry rotation: X0.0 Y0.0 Z0.0
 Additional Geometry scale: X1.0 Y1.0 Z1.0
 Additional Geometry groups: None
 
+Name: BezierCircle
+BezierCircle Type: CURVE
+BezierCircle transform: X-0.041759490966796875 Y0.121307373046875 Z17.245582580566406
+BezierCircle rotation: X0.0 Y0.0 Z0.0
+BezierCircle scale: X0.026065247133374214 Y0.026065247133374214 Z0.026065247133374214
+BezierCircle groups: None
+
 Name: BOOLEAN Central mould cavity
 BOOLEAN Central mould cavity Type: MESH
 BOOLEAN Central mould cavity transform: X0.0 Y-1.9073486328125e-06 Z2.0
@@ -5743,6 +5750,8 @@ MOULD Bottom modifiers:
         Operation: DIFFERENCE, Object: 4th Finger Distal MOULD
   #16 Name: Boolean.4th Finger Proximal MOULD, Type: BOOLEAN
         Operation: DIFFERENCE, Object: 4th Finger Proximal MOULD
+  #17 Name: Boolean, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Text.002
 
 Name: MOULD Bottom tray
 MOULD Bottom tray Type: MESH
@@ -5766,6 +5775,8 @@ MOULD Bottom tray modifiers:
         Operation: DIFFERENCE, Object: Cross section 2
   #7 Name: xsec, Type: BOOLEAN
         Operation: DIFFERENCE, Object: Cross section 4
+  #8 Name: Boolean.Text.001, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Text.001
 
 Name: MOULD ID Tags
 MOULD ID Tags Type: EMPTY
@@ -5909,6 +5920,8 @@ MOULD Top Clamping plate modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Orientation Indicator
   #8 Name: Boolean, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Clamping Point Subtraction
+  #9 Name: Boolean.003, Type: BOOLEAN
+        Operation: DIFFERENCE, Object: Text
 
 Name: Proximal Phalanx.001
 Proximal Phalanx.001 Type: EMPTY
@@ -6243,6 +6256,36 @@ TENDON TERMINATION JIG.003 modifiers:
         Operation: DIFFERENCE, Object: BOOLEAN Inner proximal pegs.001
   #9 Name: Boolean.BOOLEAN Tendonline clearance Top Cover.001, Type: BOOLEAN
         Operation: DIFFERENCE, Object: BOOLEAN Tendonline clearance Top Cover.001
+
+Name: Text
+Text Type: MESH
+Text transform: X-4.928629095957149e-06 Y60.0 Z9.017610549926758
+Text rotation: X0.0 Y0.0 Z0.0
+Text scale: X4.0 Y4.0 Z4.0
+Text groups: None
+Text mesh: CUText
+Text materials: None
+Text modifiers: None
+
+Name: Text.001
+Text.001 Type: MESH
+Text.001 transform: X-0.04172515869140625 Y0.12130741775035858 Z-18.236251831054688
+Text.001 rotation: X-1.739317809779095e-07 Y3.1415929794311523 Z1.6428764126885653e-07
+Text.001 scale: X6.0 Y6.0 Z4.0
+Text.001 groups: None
+Text.001 mesh: CUText
+Text.001 materials: None
+Text.001 modifiers: None
+
+Name: Text.002
+Text.002 Type: MESH
+Text.002 transform: X-81.4700927734375 Y0.12130732834339142 Z17.745582580566406
+Text.002 rotation: X0.0 Y0.0 Z0.0
+Text.002 scale: X4.0 Y4.0 Z4.0
+Text.002 groups: None
+Text.002 mesh: CUText.002
+Text.002 materials: None
+Text.002 modifiers: None
 
 Name: Thumb
 Thumb Type: EMPTY
